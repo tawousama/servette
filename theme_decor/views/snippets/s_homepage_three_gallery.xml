@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_homepage_three_gallery"
+		name="Gallery block with image title">
+		<section
+			class="s_furniture_gallery gallery-full-width pt40 pb40">
+			<div class="">
+				<div class="sec-title text-center">
+					<h2>Our Gallery</h2>
+					<div class="text">The Love Boat promises something for wanna be
+						where everybody knows so join us
+					</div>
+				</div>
+
+				<div class="items-container clearfix">
+					<div
+						class="gallery-item masonry-item small-column all decoration">
+						<div class="inner-box">
+							<div class="image-box">
+								<div class="image">
+									<a href="#"
+										class="lightbox-image" data-fancybox="gallery">
+										<img src="/theme_decor/static/src/img/g1.jpg" alt="" />
+									</a>
+								</div>
+								<div class="overlay-box">
+									<div class="content">
+										<h3>
+											<a href="#">Kitchen</a>
+										</h3>
+										<span>New Orleans, USA</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="gallery-item masonry-item small-column all kitchen decoration">
+						<div class="inner-box">
+							<div class="image-box">
+								<div class="image">
+									<a href="#"
+										class="lightbox-image" data-fancybox="gallery">
+										<img src="/theme_decor/static/src/img/g2.jpg" alt="" />
+									</a>
+								</div>
+								<div class="overlay-box">
+									<div class="content">
+										<h3>
+											<a href="#">Kitchen</a>
+										</h3>
+										<span>New Orleans, USA</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="gallery-item masonry-item small-column all decoration living-room">
+						<div class="inner-box">
+							<div class="image-box">
+								<div class="image">
+									<a href="#"
+										class="lightbox-image" data-fancybox="gallery">
+										<img src="/theme_decor/static/src/img/g3.jpg" alt="" />
+									</a>
+								</div>
+								<div class="overlay-box">
+									<div class="content">
+										<h3>
+											<a href="#">Kitchen</a>
+										</h3>
+										<span>New Orleans, USA</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="gallery-item masonry-item decoration small-column all bath-room kitchen">
+						<div class="inner-box">
+							<div class="image-box">
+								<div class="image">
+									<a href="#"
+										class="lightbox-image" data-fancybox="gallery">
+										<img src="/theme_decor/static/src/img/g4.jpg" alt="" />
+									</a>
+								</div>
+								<div class="overlay-box">
+									<div class="content">
+										<h3>
+											<a href="#">Kitchen</a>
+										</h3>
+										<span>New Orleans, USA</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="gallery-item masonry-item small-column all living-room bath-room kitchen">
+						<div class="inner-box">
+							<div class="image-box">
+								<div class="image">
+									<a href="#"
+										class="lightbox-image" data-fancybox="gallery">
+										<img src="/theme_decor/static/src/img/g5.jpg" alt="" />
+									</a>
+								</div>
+								<div class="overlay-box">
+									<div class="content">
+										<h3>
+											<a href="#">Kitchen</a>
+										</h3>
+										<span>New Orleans, USA</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="gallery-item masonry-item small-column all kitchen decoration living-room">
+						<div class="inner-box">
+							<div class="image-box">
+								<div class="image">
+									<a href="#"
+										class="lightbox-image" data-fancybox="gallery">
+										<img src="/theme_decor/static/src/img/g6.jpg" alt="" />
+									</a>
+								</div>
+								<div class="overlay-box">
+									<div class="content">
+										<h3>
+											<a href="#">Kitchen</a>
+										</h3>
+										<span>New Orleans, USA</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="gallery-item masonry-item small-column all kitchen decoration living-room">
+						<div class="inner-box">
+							<div class="image-box">
+								<div class="image">
+									<a href="#"
+										class="lightbox-image" data-fancybox="gallery">
+										<img src="/theme_decor/static/src/img/g7.jpg" alt="" />
+									</a>
+								</div>
+								<div class="overlay-box">
+									<div class="content">
+										<h3>
+											<a href="#">Kitchen</a>
+										</h3>
+										<span>New Orleans, USA</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="btn-box">
+					<a href="/shop" class="theme-btn btn-style-one">VIEW ALL</a>
+				</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

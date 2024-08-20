@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="s_configurator_snippet_style3"  name="Snippet Style Two">
+        <section class="snippet_style_thtree pt16 pb16">
+            <div class="container">
+                <h3 class="text-center p-3 mb-0 heading_style">OUR PRODUCTS</h3>
+                <p class="text-center sub_heading mb-0"><i>Including these items, the latest models, updated daily.</i></p>
+                <section class="s_tabs so_colored_level mt16" data-vcss="001" data-snippet="s_tabs" data-name="Tabs">
+                    <div class="container">
+                        <div class="s_tabs_main o_no_link_popover">
+                            <div class="s_tabs_nav mb-3">
+                                <ul class="nav mx-auto" role="tablist">
+                                    <li class="nav-item ps-0 ms-0">
+                                        <a class="nav-link active o_default_snippet_text ps-0" id="nav_tabs_link_1627301498333_27" data-bs-toggle="tab" href="#nav_tabs_content_1627301498333_27" role="tab" aria-controls="nav_tabs_content_1627301498333_27" aria-selected="true">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link o_default_snippet_text" id="nav_tabs_link_1627301498333_28" data-bs-toggle="tab" href="#nav_tabs_content_1627301498333_28" role="tab" aria-controls="nav_tabs_content_1627301498333_28" aria-selected="false" contenteditable="true">Profile</a>
+                                    </li>
+                                    <li class="nav-item pe-0 me-0">
+                                        <a class="nav-link o_default_snippet_text pe-0" id="nav_tabs_link_1627301498334_29" data-bs-toggle="tab" href="#nav_tabs_content_1627301498334_29" role="tab" aria-controls="nav_tabs_content_1627301498334_29" aria-selected="false">Contact</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="s_tabs_content tab-content">
+                                <div class="tab-pane fade show active" id="nav_tabs_content_1627301498333_27" role="tabpanel" aria-labelledby="nav_tabs_link_1627301498333_27">
+                                    <div class="oe_structure oe_empty" data-editor-message="DRAG BUILDING BLOCKS HERE" contenteditable="false"></div>
+                                </div>
+                                <div class="tab-pane fade" id="nav_tabs_content_1627301498333_28" role="tabpanel" aria-labelledby="nav_tabs_link_1627301498333_28">
+                                    <div class="oe_structure oe_empty" data-editor-message="DRAG BUILDING BLOCKS HERE" contenteditable="false"></div>
+                                </div>
+                                <div class="tab-pane fade" id="nav_tabs_content_1627301498334_29" role="tabpanel" aria-labelledby="nav_tabs_link_1627301498334_29">
+                                    <div class="oe_structure oe_empty" data-editor-message="DRAG BUILDING BLOCKS HERE" contenteditable="false"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                
+            </div>
+        </section>
+        <div class="oe_structure oe_empty" data-editor-message="DRAG BUILDING BLOCKS HERE"/>
+    </template>
+</odoo>

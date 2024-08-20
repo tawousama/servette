@@ -1,0 +1,361 @@
+//walmart snippet - snippet_style_one
+
+.snippet_style_one{
+	.first_carousel,.second_carousel{
+		.s_carousel_wrapper{
+			border: 1px solid #eee;
+			transition: 0.3s;
+			--webkit-transition: 0.3s;
+			.carousel-control-prev,.carousel-control-next{
+				position: absolute;
+				left: auto !important;  
+				height: fit-content;
+				width: fit-content;
+				top: 1rem !important;
+				.carousel-control-prev-icon, .carousel-control-next-icon{
+					&:before{
+						color: #000;
+						font-size: 1rem !important;
+						margin: 0 !important;
+					}
+				}
+			}
+			.carousel-control-prev{
+				right: 1.5rem !important;
+			}
+			.carousel-control-next{
+				right: 0.5rem !important;
+			}
+		}
+
+		&:hover{
+			.s_carousel_wrapper{
+				border: 1px solid $primary;
+			}
+		}
+	} 
+}
+
+//special_products_snippet --- snippet_style_two
+
+.snippet_style_two{
+	.s_tabs_main{
+		border: 0px !important;
+		h3{
+			font-weight: 400;
+		    letter-spacing: 1.5px;
+		}
+		.s_tabs_nav{
+			border: 0px !important;
+			background-color: transparent !important;
+			ul{
+				li{
+					a{
+						padding: 0 10px;
+						margin: 0 5px;
+						color: #000;
+						border: 0;
+						transition: 0.3s;
+						text-transform: uppercase;
+						&:hover, &.active{
+							color: $primary;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+//outline_pos_snippet -- snippet_style_three
+
+.snippet_style_thtree{
+	padding-bottom: 72px !important;
+	.heading_style{
+		position: relative;
+		color: #121212;
+	}
+	.sub_heading{
+		color: #888888;
+	}
+	.s_tabs{
+		.s_tabs_main{
+			border: 0px !important;
+			.s_tabs_nav{
+				border: 0px !important;
+				background-color: transparent !important;
+				ul{
+					position: relative;
+					width: fit-content;
+					
+					li{
+						padding: 0px 10px;
+						margin: 0px 15px;
+						z-index: 2;
+						a{
+							color: #a2a2a2 !important;
+							border: 0;
+							transition: 0.3s ease-in;
+							&:hover{
+								color: #434343 !important;
+							}
+						}
+						a.active{
+							color: #434343 !important;
+							transition: 0.3s ease-in;
+						}
+					}
+				}
+				@include media-breakpoint-only(xs){
+					ul:after{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	.bizople_product_configurator.slider_style, .bizople_product_configurator.list_slider_style, .bizople_brand_configurator.slider_style, .bizople_category_configurator.slider_style{
+		.owl-carousel{
+			.owl-nav{
+				top: auto !important;
+				bottom: -15px;
+				opacity: 1 !important;
+				visibility: visible !important;
+				button{
+					&.owl-prev{
+						left: calc(50% - 46px) !important;
+					}
+					&.owl-next{
+						right: calc(50% - 46px) !important;
+					}
+					border-radius: 0 !important;
+				}
+			}
+		}
+	}
+}
+
+//timber_snippet -- snippet_style_four
+
+.snippet_style_four{
+	.holiday_sale{
+		min-height: 400px;
+		height: 100%;
+	    width: 100%;
+	    object-fit: cover;
+		.holiday_sale_content{
+			.heading{
+				letter-spacing: 1.5px;
+				color: #000;
+			}
+			.sub_heading{
+				color: #000;
+			}
+			padding: 60px;
+			a{
+				text-decoration: none;
+				position: relative;
+				color: #000;
+				font-weight: 600;
+				font-size: 14px;
+
+				.icon{
+					font-weight: 600;
+				}
+				&:before, &:after{
+					transition: 0.5s;
+					content: '';
+					display: block;
+					position: absolute;
+					width: 0;
+					bottom: 0;
+					height: 2px;
+					background: #000;
+				}
+				&:before{
+					left: 50%;
+				}
+				&:after{
+					right: 50%;
+				}
+
+				&:hover{
+					&:before, &:after{
+						width: 50% !important;
+					}
+				}
+			}
+		}
+	}
+	@include media-breakpoint-down(md){
+		.holiday_sale{
+			min-height: 500px;
+		}  
+	}
+}
+
+//brand_sale_snippet -- snippet_style_five
+
+.snippet_style_five{
+
+	.title-row{
+		.s_tabs_nav{
+			ul{
+				li{
+					padding: 0.5rem;
+					a{
+						color: black;
+						border-radius: 3rem !important;
+						transition: 0.3s;
+						&:hover{
+							color: $primary;
+							transition: 0.3s;
+						}
+					}
+					a.active{
+						border: 1px dashed $primary !important;
+						color: $primary;
+					}
+				}
+			}
+		}
+		.title-shop{
+			a{
+				font-weight: 400;
+				color: #000;
+				transition: 0.3s;
+				text-decoration: none;
+			    font-size: 14px;
+				span{
+					transition: 0.3s;
+					color: #000;
+				}
+				&:hover{
+					span{
+						color: $primary;
+					}
+					color: $primary;
+				}
+			}
+		}
+	}
+		
+	.content-row{
+		.s_tabs_main{
+			.s_tabs_content{
+
+			}
+		}
+		.tabs-bottom-image{
+			h3{
+				color: #fff;
+			}
+			h4{
+				color: #fff;
+			}
+			p{
+				color: #fff;
+			}
+			a{
+				display: flex;
+				width: fit-content;
+				color: #000;
+				cursor: pointer;
+				.fa{
+					height: 20px;
+					width: 20px;
+					border-radius: 50%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					color: white;
+					background-color: $primary;
+				}
+				&:hover{
+					.fa{
+						color: black;
+						background-color: white;
+					}
+				}
+			}
+			transition: 0.5s;
+			&:hover{
+				opacity: 0.9;
+			}
+		}
+		.right-list{
+			.heading{
+				h5{
+					color: #000;
+				}
+			}
+		}
+	}
+}
+
+//brand_sale_new_snippet  --  snippet_style_six
+
+.snippet_style_six{
+	.brand_content{
+		overflow: hidden;
+		height: 100%;
+		.img{
+			transition: 0.3s;
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+			&:hover{
+				transform: scale(1.1,1.1);
+			}
+		}
+		.image-content{
+			a{
+				display: flex;
+				width: fit-content;
+				.fa{
+					height: 20px;
+					width: 20px;
+					border-radius: 50%;
+					display: flex;
+					justify-content: center;
+					align-items: center;
+					color: white;
+					background-color: $primary;
+				}
+				&:hover{
+					.fa{
+						color: black;
+						background-color: white;
+					}
+				}
+			}
+		}
+	}
+	.s_tabs{
+		.s_tabs_main{
+			.s_tabs_nav{
+				h5{
+
+				}
+				ul{
+					li{
+						padding: 0.5rem;
+						a{
+							color: #000 !important;
+							border-radius: 3rem !important;
+							transition: 0.3s;
+							&:hover{
+								color: $primary !important;
+							}
+						}
+						a.active{
+							border: 1px dashed $primary !important;
+							border-radius: 3rem !important;
+							color: $primary !important;
+						}
+					}
+				}
+			}
+		}
+	}
+}

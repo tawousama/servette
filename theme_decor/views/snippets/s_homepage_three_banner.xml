@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_homepage_three_banner" name="Home Banner Three">
+		<section class="s_carousel_wrapper decor_home_banner_three" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
+			<div id="decor-home3-carousel2" class="s_carousel s_carousel_default carousel slide" data-bs-interval="10000">
+				<div class="carousel-inner">
+					<div class="carousel-item pt256 pb256 o_colored_level oe_img_bg active" style="background-image: url(&quot;/theme_decor/static/src/img/twelve-banner1.jpg&quot;); background-position: center; background-repeat: no-repeat;" data-name="Slide">
+						<div class="container">
+							<div class="row content">
+								<div class="carousel-content col-lg-6 o_colored_level">
+									<div class="border-start border-800 p-2 ps-3 mb-4">
+										<p class="mb-0 text-800">Decor Furniture</p>
+										<p class="mb-0 text-800">2021</p>
+									</div>
+									<p class="text-uppercase position-relative mini_title pb8 mb-3 text-800">new arrivals</p>
+									<h1 class="fw-light">Decor Top Collections</h1>
+									<p class="mt-5">
+										<a href="/shop" class="btn btn-primary mb-2 o_default_snippet_text btn-md">
+											Shop Now
+											<span class="ps-2 ri ri-arrow-right-line align-middle fw-light"/>
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item pt256 pb256 o_colored_level oe_img_bg" style="background-image: url(&quot;/theme_decor/static/src/img/twelve-banner2.jpg&quot;); background-position: center; background-repeat: no-repeat;" data-name="Slide">
+						<div class="container">
+							<div class="row content">
+								<div class="carousel-content col-lg-6 o_colored_level">
+									<div class="border-start border-800 p-2 ps-3 mb-4">
+										<p class="mb-0 text-800">Decor Furniture</p>
+										<p class="mb-0 text-800">2021</p>
+									</div>
+									<p class="text-uppercase position-relative mini_title pb8 mb-3 text-800">new arrivals</p>
+									<h1 class="fw-light">Modern Chairs</h1>
+									<p class="mt-5">
+										<a href="/shop" class="btn btn-primary mb-2 o_default_snippet_text btn-md">
+											Shop Now
+											<span class="ps-2 ri ri-arrow-right-line align-middle fw-light"/>
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item pt256 pb256 o_colored_level oe_img_bg" style="background-image: url(&quot;/theme_decor/static/src/img/twelve-banner3.jpg&quot;); background-position: center; background-repeat: no-repeat;" data-name="Slide">
+						<div class="container">
+							<div class="row content">
+								<div class="carousel-content col-lg-6 o_colored_level">
+									<div class="border-start border-800 p-2 ps-3 mb-4">
+										<p class="mb-0 text-800">Decor Furniture</p>
+										<p class="mb-0 text-800">2021</p>
+									</div>
+									<p class="text-uppercase position-relative mini_title pb8 mb-3 text-800">new arrivals</p>
+									<h1 class="fw-light">Classic Furniture Collections</h1>
+									<p class="mt-5">
+										<a href="/shop" class="btn btn-primary mb-2 o_default_snippet_text btn-md">
+											Shop Now
+											<span class="ps-2 ri ri-arrow-right-line align-middle fw-light"/>
+										</a>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<ol class="carousel-indicators o_we_no_overlay align-items-center mb-5">
+					<li data-bs-target="#decor-home3-carousel2" data-bs-slide-to="0" class="active"/>
+					<li data-bs-target="#decor-home3-carousel2" data-bs-slide-to="1"/>
+					<li data-bs-target="#decor-home3-carousel2" data-bs-slide-to="2"/>
+				</ol>
+				<a class="carousel-control-prev o_we_no_overlay d-none" href="#decor-home3-carousel2" data-bs-slide="prev" role="img" aria-label="Previous" title="Previous">
+					<span class="carousel-control-prev-icon"/>
+					<span class="sr-only o_default_snippet_text">Previous</span>
+				</a>
+				<a class="carousel-control-next o_we_no_overlay d-none" href="#decor-home3-carousel2" data-bs-slide="next" role="img" aria-label="Next" title="Next">
+					<span class="carousel-control-next-icon" data-original-title="" title="" aria-describedby="tooltip443139"/>
+					<span class="sr-only o_default_snippet_text">Next</span>
+				</a>
+			</div>
+		</section>
+	</template>
+</odoo>

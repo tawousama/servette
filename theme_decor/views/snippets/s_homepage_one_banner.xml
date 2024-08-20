@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="s_homepage_one_banner" name="Home Banner One">
+      	<div class="oe_structure"/>
+      	
+      	<section class="s_carousel_wrapper s_decor_first" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
+	        <div id="myCarousel1619765240920sn2" class="s_carousel s_carousel_default carousel slide" data-bs-interval="10000">
+	            <ol class="carousel-indicators o_we_no_overlay d-none">
+	                <li data-bs-target="#myCarousel1619765240920sn2" data-bs-slide-to="0" class=""></li>
+	                <li data-bs-target="#myCarousel1619765240920sn2" data-bs-slide-to="1" class=""></li>
+	            	<li data-bs-target="#myCarousel1619765240920sn2" data-bs-slide-to="2" class="active"></li>
+	            </ol>
+	            <div class="carousel-inner">
+	                <div class="carousel-item pt256 pb256 o_colored_level oe_img_bg active" style="background-image: url(/theme_decor/static/src/img/decor-banner1.jpg); min-height: 552.812px;" data-name="Slide">
+	                    <div class="container">
+	                        <div class="row content">
+	                            <div class="carousel-content col-lg-6 o_colored_level">
+	                            	<h5 class="text fw-light">Starting At<span class="price"><b> $20</b></span></h5>
+	                                <h1 class="fw-lighter o_default_snippet_text">Biggest Sale Of The Year</h1>
+                                    <a href="/contactus" class="mb-2 mt40 btn btn-primary flat btn-lg o_default_snippet_text">Contact us</a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="carousel-item pt256 pb256 o_colored_level oe_img_bg" style="background-image: url(/theme_decor/static/src/img/decor-banner2.jpg); min-height: 552.812px;" data-name="Slide">
+	                    <div class="container">
+	                        <div class="row content">
+	                            <div class="carousel-content col-lg-6 offset-lg-6 o_colored_level">
+	                            	<h5 class="text fw-light">Starting At<span class="price"><b> $20</b></span></h5>
+	                                <h1 class="fw-lighter o_default_snippet_text">Biggest Sale Of The Year</h1>
+                                    <a href="/contactus" class="mb-2 mt40 btn btn-primary flat btn-lg o_default_snippet_text">Contact us</a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	                <div class="carousel-item pt256 pb256 o_colored_level oe_img_bg" style="background-image: url(/theme_decor/static/src/img/decor-banner3.jpg); min-height: 552.812px;" data-name="Slide">
+	                    <div class="container">
+	                        <div class="row content">
+	                            <div class="carousel-content col-lg-6 o_colored_level">
+	                            	<h5 class="text fw-light">Starting At<span class="price"><b> $20</b></span></h5>
+	                                <h1 class="fw-lighter o_default_snippet_text">Biggest Sale Of The Year</h1>
+                                    <a href="/contactus" class="mb-2 mt40 btn btn-primary flat btn-lg o_default_snippet_text">Contact us</a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <a class="carousel-control-prev o_we_no_overlay" href="#myCarousel1619765240920sn2" data-bs-slide="prev" role="img" aria-label="Previous" title="Previous">
+	                <span class="carousel-control-prev-icon" data-original-title="" title="" aria-describedby="tooltip823297"></span>
+	                <span class="o_default_snippet_text sr-only"><font style="background-color: rgba(255, 255, 255, 0.08);">Previous</font></span>
+	            </a>
+	            <a class="carousel-control-next o_we_no_overlay" href="#myCarousel1619765240920sn2" data-bs-slide="next" role="img" aria-label="Next" title="Next">
+	                <span class="carousel-control-next-icon" data-original-title="" title="" aria-describedby="tooltip904045"></span>
+	                <span class="sr-only o_default_snippet_text">Next</span>
+	            </a>
+	        </div>
+	    </section>
+
+      	<div class="oe_structure"/>
+	</template>
+</odoo>

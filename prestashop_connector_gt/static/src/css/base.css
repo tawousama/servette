@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+.odoo .oe_kanban_view .oe_kanban_magento_operations_type {
+    width: 345px;
+    cursor: default;
+    min-height: 245px !important;
+}
+.odoo .oe_kanban_view {
+  display: block;
+  vertical-align: middle;
+  width: 150px;
+  height: 150px;
+  margin : 0px auto;
+
+}
+.odoo .oe_ept_center {
+	padding-top:15px;
+	display : block;
+	width : 100%;
+	margin : 0px auto;
+}

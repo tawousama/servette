@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="theme_decor_header1" inherit_id="website.layout" name="Header One" active="False">
+		<xpath expr="//header" position="attributes">
+			<attribute name="t-attf-class" add="decor-header" separator=" "></attribute>
+		</xpath>
+		<xpath expr="//header//nav" position="replace">
+			<nav data-name="Navbar" id="decor_header1" t-attf-class="decor_header_one">
+				<div class="top-header d-none d-lg-block">
+					<div class="container">
+						<div class="row">
+							<div class="header_left col-md-4 col-lg-6 d-none d-md-flex">
+								<!-- Language Selector -->
+								<t t-call="website.placeholder_header_language_selector">
+									<t t-set="_div_classes" t-valuef="my-auto ms-0 menu-language"/>
+								</t>
+								<!-- Pricelist Selector -->
+								<t t-call="theme_decor.placeholder_decor_header_pricelist"/>
+							</div>
+							<div class="header_right justify-content-end col-md-8 col-lg-6 d-none d-md-flex">
+								<span class="welcome-text">Welcome to Our Store!</span>
+								<div class="top-navigation">
+									<ul class="menus d-flex">
+										<li class="menu-item">
+											<a href="/blog" class="nav-link ps-0">
+												<span class="fa fa-folder-open-o me-2"/>
+												<span>BLOG</span>
+											</a>
+										</li>
+										<li class="menu-item">
+											<a href="/help-center" class="nav-link">
+												<span class="fa fa-clone me-2"/>
+												<span>FAQ</span>
+											</a>
+										</li>
+										<li class="menu-item">
+											<a href="/contactus" class="nav-link pe-0">
+												<span class="fa fa-envelope-o me-2"/>
+												<span>CONTACT US</span>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="middle-header">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="mobile-sidebar-toggle header_left col-lg-3 d-flex align-items-center">
+								<button type="button" id="show-sidebar" class="mobile-sidebar-toggle btn btn-md d-block d-lg-none ">
+									<span class="ti ti-view-grid text-secondary"></span>
+								</button>
+								<div class="website-logo-left align-items-center d-flex justify-content-center justify-content-md-start mx-auto mx-lg-0">
+									<a href="/" class="navbar-brand logo m-0">
+							            <span t-field="website.logo" t-options="{'widget': 'image'}" role="img" t-att-aria-label="'Logo of %s' % website.name" t-att-title="website.name" />
+							        </a>
+								</div>
+								<t t-call="theme_decor.decor_header_mobile_cart"/>
+							</div>
+							<div class="header-center col-md-6 col-xl-7 d-none d-lg-block">
+								<div class="">
+									<div class="bizople-search nav-search">
+										<div class="search">
+											<t t-call="theme_decor.desktop_search_bar" />
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="header_right col-md-3 col-xl-2 d-none d-lg-flex align-items-center ">
+								<t t-call="theme_decor.theme_decor_signin_main_template">
+									<t t-set="_myaccount_class" t-value="'d-flex align-items-center ms-auto'"/>
+									<t t-set="_icon" t-value="True"/>
+									<t t-set="_text" t-value="False"/>
+								</t>
+		                		<div class="bizople-add-to-cart align-middle" id="">
+		                			<!-- <t t-if="is_view_active('website_sale.products_add_to_cart')"> -->
+									<t t-set="website_sale_order" t-value="website.sale_get_order()" />
+									<t t-call="website_sale.header_cart_link">
+										<t t-set="_icon" t-value="True"/>
+										<t t-set="_item_class" t-value="'nav-item list-unstyled'"/>
+										<t t-set="_link_class" t-value="'nav-link'"/>
+									</t>
+							        <!-- </t> -->
+								</div>
+								<div class="wishlist align-middle">
+									<!-- <t t-if="is_view_active('website_sale_wishlist.add_to_wishlist')"> -->
+										<t t-call="website_sale_wishlist.header_wishlist_link">
+							                <t t-set="_icon" t-value="True"/>
+							                <t t-set="_item_class" t-value="'nav-item list-unstyled'"/>
+							                <t t-set="_link_class" t-value="'nav-link'"/>
+							            </t>
+									<!-- </t> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bottom-header d-none d-lg-block">
+					<div class="container">
+						<div class="row justify-content-center align-items-center">
+							<div class="col-md-3">
+								<div class="product-category">
+
+								</div>
+							</div>
+							<div class="col-md-7">
+								<nav class="navbar navbar-expand-md p-0" id="bizople-header-1">
+									<div class="collapse navbar-collapse" id="decor-header">
+										<ul class="nav navbar-nav justify-content-center" id="top_menu">
+											<t t-foreach="website.menu_id.child_id" t-as="submenu">
+												<t t-call="website.submenu">
+													<t t-set="item_class" t-value="'nav-item'" />
+													<t t-set="link_class" t-value="'nav-link'" />
+												</t>
+											</t>
+										</ul>
+									</div>
+								</nav>
+							</div>
+							<div class="col-md-2">
+								<t t-set="aut_assign_categs" t-value="website.get_auto_assign_category()" />
+								<t t-set="categ_count" t-value="1"></t>
+								<t t-foreach="aut_assign_categs" t-as="aut_assign_categ" t-if="categ_count == 1">
+									<t t-set="categ_count" t-value="categ_count + 1"></t>
+									<div class="deal-link nav-item text-end">
+										<a class="nav-link p-0" t-att-href="'/shop/category/%s' % slug(aut_assign_categ)">
+											<span t-field="aut_assign_categ.name" />
+										</a>
+									</div>
+								</t>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- <t t-call="theme_decor.bizople_mbl_side_bar"/> -->
+				<!-- <t t-call="theme_decor.bizople_mbl_category_bar"/> -->
+			</nav>
+		</xpath>
+		<xpath expr="//header" position="before">
+			<div class="d-block d-lg-none">
+				<t t-call="theme_decor.bizople_mobile_bottom_icon_bar"/>
+			</div>
+			<t t-call="theme_decor.bizople_mbl_category_bar"/>
+			<t t-call="theme_decor.search_popup"/>
+		</xpath>
+	</template>
+
+	<template id="bizople_mobile_bottom_icon_bar" name="Bizople Mobile Bottom Icon Bar">
+    	<div class="bizople-mbl-bottom-bar d-block d-xl-none bg-white">
+			<div class="container">
+				<div class="row align-items-center justify-content-center">
+					<div class="col text-center bottom-sidebar-menu">
+						<div class="text-center">
+	                   		<a role="button" class="nav-link bottom-show-sidebar">
+								<i class="ti ti-view-grid text-secondary" />
+							</a>
+						</div>
+						<div class="text-center">
+							<span class="text-secondary">Menu</span>
+						</div>
+					</div>
+					<div class="col text-center bottom-bar-shop">
+						<div class="text-center">
+	                   		<a href="/shop" class="nav-link">
+								<i class="text-secondary icon icon-House" />
+							</a>
+						</div>
+						<div class="text-center">
+							<span class="text-secondary">Shop</span>
+						</div>
+					</div>
+					<div class="col text-center bottom-bar-filter d-none">
+						<div class="text-center">
+	                   		<!-- <a role="button" class="nav-link bottom_bar_filter_button" style="cursor: pointer">
+								<i class="text-secondary icon icon-MusicMixer" />
+							</a> -->
+							<a t-attf-class="nav-link bottom_bar_filter_button" data-bs-toggle="offcanvas" data-bs-target="#o_wsale_offcanvas">
+								<span class="text-secondary icon icon-MusicMixer"/>
+							</a>
+						</div>
+						<div class="text-center">
+							<span class="text-secondary">Filter</span>
+						</div>
+					</div>
+					<div class="col text-center bottom-bar-extra-menu">
+						<div class="text-center">
+	                   		<a class="nav-link open-extra-menu">
+								<i class="text-secondary ti ti-angle-double-up" />
+							</a>
+						</div>
+						<div class="text-center">
+							<span class="text-secondary">More</span>
+						</div>
+					</div>
+					<div class="col text-center bottom-bar-search">
+						<div class="text-center">
+	                   		<a class="nav-link" onclick="openSearchPopup()">
+								<span class="text-secondary ri ri-search-2-line align-middle show-search"></span>
+							</a>
+						</div>
+						<div class="text-center">
+							<span class="text-secondary">Search</span>
+						</div>
+					</div>
+					<div class="col text-center">
+						<t t-call="theme_decor.theme_decor_signin_main_template">
+							<t t-set="_myaccount_class" t-value="'dropdown dropup bizople-acc-user'"/>
+							<t t-set="_icon" t-value="True"/>
+							<t t-set="_text" t-value="False"/>
+							<t t-set="_isBottomBar" t-value="True"/>
+						</t>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="bizople-mbl-bottom-bar extra-menu-bar d-block d-xl-none bg-white">
+			<div class="container">
+				<div class="row align-items-center justify-content-center">
+					<div class="col text-center">
+						<div class="wishlist">
+							<t t-if="is_view_active('website_sale_wishlist.add_to_wishlist')">
+								<t t-set="wishcount" t-value="len(request.env['product.wishlist'].current())"/>
+								<div id="my_wish" class="nav-item header_wishlist o_wsale_my_wish d-block">
+									<div class="text-center">
+										<a href="/shop/wishlist" class="nav-link">
+											<i class="text-secondary ri ri-heart-line" />
+											<sup
+												t-attf-class="my_wish_quantity o_animate_blink badge badge-primary text-bg-primary">
+												<t t-out='wishcount' />
+											</sup>
+										</a>
+									</div>
+									<div class="text-center">
+										<span class="text-secondary">Wishlist</span>
+									</div>
+								</div>
+							</t>
+						</div>
+					</div>
+					<div class="col text-center">
+						<div class="text-center">
+	                   		<a href="/category" class="nav-link">
+								<i class="text-secondary icofont-chair" />
+							</a>
+						</div>
+						<div class="text-center">
+							<span class="text-secondary">Category</span>
+						</div>
+					</div>
+					<div class="col text-center d-none">
+						<div class="text-center">
+	                   		<a href="/brand" class="nav-link">
+								<i class="text-secondary ti ti-view-grid" />
+							</a>
+						</div>
+						<div class="text-center">
+							<span class="text-secondary">Brand</span>
+						</div>
+					</div>
+					<t t-if="is_view_active('theme_decor.decor_header_pricelist')">
+						<div class="col text-center bottom-bar-pricelist">
+							<t t-set="website_sale_pricelists" t-value="website.get_pricelist_available(show_visible=True)" />
+							<div t-attf-class="dropdown dropup me-auto#{'' if website_sale_pricelists and len(website_sale_pricelists)&gt;1 else ' '} #{_classes}">
+								<t t-set="curr_pl" t-value="website.get_current_pricelist()" />
+								<a role="button" href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+									<i class="text-secondary ti ti-money" />
+								</a>
+								<div class="dropdown-menu" role="menu">
+									<t t-foreach="website_sale_pricelists" t-as="pl">
+										<a role="menuitem" t-att-href="'/shop/change_pricelist/%s' % pl.id" class="dropdown-item text-center">
+											<span class="switcher_pricelist" t-att-data-pl_id="pl.id" t-out="pl.name" />
+										</a>
+									</t>
+								</div>
+							</div>
+							<div class="text-center">
+								<span class="text-secondary"><t t-out="curr_pl and curr_pl.name or ' - '" /></span>
+							</div>
+						</div>
+				    </t>
+					<div class="col text-center bottom-bar-language">
+						<ul class="menu-language js_language_selector mb0 list-inline text-lg-center" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+		                    <li class="d-inline-block">
+					            <div class="dropup dropdown">
+					                <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					                    <t t-foreach="website.language_ids" t-as="lg">
+						                    <t t-if="request.context.get('lang') == lg.code">
+						                        <img t-att-src="website.image_url(lg, 'flag_image')" width="18" t-att-title="lg.name" />
+						                    </t>
+						                </t>
+					                </a>
+					                <div class="dropdown-menu" role="menu">
+					                    <t t-foreach="languages" t-as="lg">
+					                        <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
+					                           class="dropdown-item js_change_lang text-center"
+					                           t-att-data-url_code="lg[1]">
+				                            	<t t-out="lg[2].split('/').pop()"/>
+					                        </a>
+					                    </t>
+					                </div>
+					            </div>
+					        </li>
+					    </ul>
+					    <div class="text-center">
+							<span class="text-secondary lang_local_code text-uppercase" t-out="list(filter(lambda lg : lg[0] == lang, languages))[0][1]"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+    </template>
+
+    <template id="search_popup" name="search popup">
+		<div class="search-box">
+			<div class="container">
+				<div class="close-btn">
+					<span class="search-text">Search for the product you want</span>
+					<span class="close-text close-search">CLOSE
+						<span class="ri ri-close-fill align-middle"></span>
+					</span>
+				</div>
+				<a class="nav-link p-0">
+					<form method="get" data-snippet="s_products_searchbar_input" class="o_searchbar_form o_wsale_products_searchbar_form o_wait_lazy_js s_wsale_products_searchbar_input" action="/shop">
+						<t t-set="no_cat_listing" t-value="True"/>
+	            		<t t-set="action" t-value="shop" />
+	          		  	<input t-if="is_sbcatetgory" type="hidden" id="tvsearchCateg-popup" name="category" t-att-value="is_sbcatetgory.id"/>
+	                    <input t-elif="category" type="hidden" id="tvsearchCateg-popup" name="category" t-att-value="category.id"/>
+	                    <input t-else="" type="hidden" id="tvsearchCateg-popup" name="category"/>
+		                <div class="dropdown dropup d-block d-md-inline-block search-categ-popup text-center border border-secondary">
+	                    	<span class="ri ri-layout-grid-fill align-middle ms-3"/>
+		                    <button class="btn dropdown-toggle mx-auto" type="button" id="categbtn-popup" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		                        <span class="categ-name text-truncate align-middle">
+		                        	<t t-if="is_sbcatetgory" t-out="is_sbcatetgory.name"/>
+			                        <t t-elif="category" t-out="category.name"/>
+			                        <t t-else="">All Categories</t>
+		                        </span>
+		                    </button>
+		                    <div class="dropdown-menu rounded-0">
+		                        <!-- <t t-if="category">
+		                            <label class="dropdown-item text-primary"  t-att-data-id="category.id"><t t-out="category.name"/></label>
+		                        </t> -->
+		                        <label t-attf-class="dropdown-item select-category-popup #{'text-primary' if not category and not is_sbcatetgory else ''}"  t-att-data-id="0">All Categories</label>
+		                        <t t-foreach="request.env['product.public.category'].get_all_parent_category()" t-as="cat">
+		                            <label t-if="category" t-attf-class="dropdown-item #{'text-primary' if category.id == cat.id else ''}"  t-att-data-id="cat.id"><t t-out="cat.name"/></label>
+		                            <label t-else='' class="dropdown-item select-category-popup"  t-att-data-id="cat.id"><t t-out="cat.name"/></label>
+		                        </t>
+		                    </div>
+		                  
+		                </div>
+			            <div role="search" class="input-group pt-4">
+			              	<input type="search" name="search" class="search-query-bizople search-query-bizople-popup form-control oe_search_box" data-limit="5" data-display-description="true" data-display-price="true" data-display-image="true" data-search-type="products" data-display-extra-link="true" data-display-detail="true" data-order-by="name asc" placeholder="Search..."/>
+			                <div class="input-group-append">
+			                    <button type="submit" class="btn oe_search_button" aria-label="Search" title="Search">
+			                      	<i class="ri ri-search-2-line align-middle text-800"/>
+			                    </button>
+			                </div>
+			            </div>
+			            <input name="order" type="hidden" class="o_wsale_search_order_by o_search_order_by" value="name asc"/>
+			        </form>
+				</a>
+			</div>
+		</div>
+	</template>
+
+	<template id="decor_header_mobile_cart" name="decor Header Mobile Cart">
+    	<div class="mobile-cart d-block d-lg-none ">
+			<t t-set="website_sale_order" t-value="website.sale_get_order()" />
+	        <t t-set="show_cart" t-value="true"/>
+			<li t-attf-class="list-unstyled header_cart o_wsale_my_cart nav-item #{not show_cart and 'd-none'} ">
+	        	<a href="/shop/cart" t-attf-class="nav-link">
+	                <span class="text-secondary ri ri-shopping-cart-line align-middle"></span>
+	                <sup class="my_cart_quantity badge text-bg-secondary" t-out="website_sale_order and website_sale_order.cart_quantity or '0'" t-att-data-order-id="website_sale_order and website_sale_order.id or ''"/>
+	            </a>
+	        </li>
+		</div>
+    </template>
+
+	<template id="header1_product_category" inherit_id="theme_decor.theme_decor_header1" name="Show Header Product Category">
+		<xpath expr="//div[hasclass('product-category')]" postion="inside">
+	        <div class="dropdown dropup">
+	            <a href="#" class="dropdown-btn text-white dropdown-toggle nav-link" data-bs-toggle="dropdown">
+	                <span class="fa fa-bars me-2"/>
+	                <span class="d-none d-md-inline-block">CATEGORIES</span>
+	            </a>
+	            <ul class="dropdown-menu decor-header-category" id="mbl-target">
+	                <t t-set="categories" t-value="website.get_categories() if website else None"/>
+	                <t t-if="categories">
+	                    <t t-foreach="categories['categories']" t-as="categ">
+	                          	<t t-call="theme_decor.menu_categories_recursive"/>
+	                    </t>
+	                </t>
+	            </ul>
+	        </div>
+	    </xpath>
+    </template>
+
+	<!-- Pricelist Snippet Option Templates  -->
+
+	<!-- t-call added of this template in all headers to use pricelist  -->
+    <template id="placeholder_decor_header_pricelist" name="Decor Header Pricelist"/>
+
+	<template id="decor_header_pricelist" inherit_id="placeholder_decor_header_pricelist">
+        <xpath expr="." position="inside">
+			<div class="curruncy-selector">
+				<t t-set="website_sale_pricelists" t-value="website.get_pricelist_available(show_visible=True)" />
+				<div t-attf-class="dropdown dropup me-auto#{'' if website_sale_pricelists and len(website_sale_pricelists)&gt;1 else ' '} #{_classes}">
+					<t t-set="curr_pl" t-value="website.get_current_pricelist()" />
+					<a role="button" href="#" class="dropdown-toggle btn btn-link shadow-none" data-bs-toggle="dropdown">
+						<t t-out="curr_pl and curr_pl.name or ' - '" />
+					</a>
+					<div class="dropdown-menu" role="menu">
+						<t t-foreach="website_sale_pricelists" t-as="pl">
+							<a role="menuitem" t-att-href="'/shop/change_pricelist/%s' % pl.id" class="dropdown-item">
+								<span class="switcher_pricelist" t-att-data-pl_id="pl.id" t-out="pl.name" />
+							</a>
+						</t>
+					</div>
+				</div>
+			</div>
+		</xpath>
+	</template>
+
+	<template id="theme_decor_signin_main_template" name="Theme Decor Sign-in Option">
+		<t t-set="isShowSignIn" t-value="is_view_active('portal.user_sign_in')"/>
+		<t t-set="isLoginPopup" t-value="is_view_active('theme_decor.loginsignup_popup_bizt')"/>
+		<t t-set="is_connected" t-value="not user_id._is_public()"/>
+
+		<t t-nocache="Profile session and user group can change unrelated to parent caches and Each user is different regardless of the page visited"
+			t-nocache-_icon="_icon"
+			t-nocache-_text="_text"
+			t-nocache-_username="_username"
+			t-nocache-_myaccount_class="_myaccount_class"
+			t-nocache-isShowSignIn="isShowSignIn"
+			t-nocache-isLoginPopup="isLoginPopup"
+			t-nocache-_isBottomBar="_isBottomBar"
+			t-nocache-is_connected="is_connected">
+
+			<div t-attf-class="header-myaccount dropdown dropup #{_myaccount_class}">
+				<a t-if="is_connected" href="#" class="nav-link dropdown-toggle acc-dropdown" data-bs-toggle="dropdown">
+					<span t-ignore="true" t-if="not user_id._is_public() and _icon">
+						<t t-call="theme_decor.portal_frontend_user"/>
+					</span>
+					<span groups="base.group_public" t-if="_icon">
+						<span class="ri ri-user-line align-middle"></span>
+					</span>
+					<span class="account-text" t-if="_text">Account</span>
+					<span class="account-text" t-if="_username and is_connected">
+						<t t-out="user_id.name[:23] + '...' if user_id.name and len(user_id.name) &gt; 25 else user_id.name" />
+					</span>
+				</a>
+
+				<a t-if="isShowSignIn and not is_connected" href="#" class="nav-link dropdown-toggle acc-dropdown" data-bs-toggle="dropdown">
+					<span groups="base.group_public">
+						<span class="ri ri-user-line align-middle"></span>
+					</span>
+				</a>
+
+				<div class="dropdown-menu js_usermenu p-2" role="menu">
+					<div class="main-content text-center" t-ignore="true" t-if="not user_id._is_public()">
+						<div class="text-center fw-bold" t-if="not _username">
+							<span t-out="user_id.name[:23] + '...' if user_id.name and len(user_id.name) &gt; 25 else user_id.name" />
+						</div>
+						<a t-attf-href="/my/home" role="menuitem" class="dropdown-item my-acc text-center">My Account</a>
+						<t t-call="theme_decor.my_address_link"/>
+						<a id="o_logout" class="dropdown-item text-center"
+							t-attf-href="/web/session/logout?redirect=/"
+							role="menuitem">Logout</a>
+					</div>
+					<div groups="base.group_public" class="text-center">
+						<span t-if="isLoginPopup" class="nav-link openpop"
+							data-bs-toggle="modal" data-bs-target="#popupuserlogin" t-att-data-theme_name="request.website.sudo().theme_id.name">
+							<span>Sign in</span>
+						</span>
+						<span t-else=''>
+							<a class="dropdown-item" t-attf-href="/web/login">
+								<span>Sign in</span>
+							</a>
+							<a class="dropdown-item" t-attf-href="/web/signup">
+								<span>Register</span>
+							</a>
+						</span>
+					</div>
+				</div>
+
+				<div class="text-center" t-if="_isBottomBar">
+					<span class="">Account</span>
+				</div>
+			</div>
+		</t>
+	</template>
+</odoo>

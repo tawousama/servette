@@ -1,0 +1,96 @@
+.btn-bizople_button_5 {
+    letter-spacing: 0;
+    transition:all 1s;
+    color: black;
+    border: 0;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    border-top-right-radius:10px !important;
+	border-bottom-left-radius:10px !important;
+	border-top-left-radius:0 !important;
+	border-bottom-right-radius:0 !important;
+}
+
+.btn.btn-bizople_button_5{
+	border-top-right-radius:10px !important;
+	border-bottom-left-radius:10px !important;
+	border-top-left-radius:0 !important;
+	border-bottom-right-radius:0 !important;
+}
+
+.btn-bizople_button_5, .btn.btn-bizople_button_5{
+	&:after,&:before{
+		content:" ";
+		width:10px;
+		height:10px;
+		position:absolute;
+		transition:all 1s;
+		}
+	&:after{
+		top: 0;
+		left: 0;
+		border-top:5px solid black;
+		border-left:5px solid black;
+	}
+	&:before{
+		bottom: 0;
+		right: 0;
+		border-bottom:5px solid black;
+		border-right:5px solid black;
+	}
+	&:hover{
+		border-top-right-radius:0px !important;
+		border-bottom-left-radius:0px !important;
+		&:before,&:after{
+			width:100%;
+			height:100%;
+		}
+	}
+}
+
+
+/*::::::::::::: btn-primary and btn-outline-primary ::::::::::::::::::::::::::*/
+
+.btn-bizople_button_5.btn-primary, .btn-bizople_button_5.btn-outline-primary{
+  	color: $primary !important;
+}
+
+.btn-bizople_button_5.btn-primary:active, .btn-bizople_button_5.btn-outline-primary:active{
+  	color: $primary !important;
+}
+
+.btn-bizople_button_5.btn-primary, .btn.btn-bizople_button_5.btn-outline-primary{
+	&:after{
+		border-top:5px solid $primary !important;
+		border-left:5px solid $primary !important;
+	}
+	&:before{
+		border-bottom:5px solid $primary !important;
+		border-right:5px solid $primary !important;
+	}
+}
+
+/*::::::::::::: btn-secondary and btn-outline-secondary ::::::::::::::::::::::::::*/
+
+.btn-bizople_button_5.btn-secondary, .btn-bizople_button_5.btn-outline-secondary{
+  	color: $secondary !important;
+}
+
+.btn-bizople_button_5.btn-secondary:active, .btn-bizople_button_5.btn-outline-secondary:active, .btn-bizople_button_5.btn-secondary:active, .btn-bizople_button_5.btn-outline-secondary:active {
+  	color: $secondary !important;
+}
+
+.btn-bizople_button_5.btn-secondary, .btn.btn-bizople_button_5.btn-outline-secondary{
+	&:after{
+		border-top:5px solid $secondary !important;
+		border-left:5px solid $secondary !important;
+	}
+	&:before{
+		border-bottom:5px solid $secondary !important;
+		border-right:5px solid $secondary !important;
+	}
+}

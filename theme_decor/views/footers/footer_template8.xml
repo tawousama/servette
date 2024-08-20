@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="theme_common_footer8" inherit_id="website.layout" name="Footer Eight" active="False">
+       	<xpath expr="//div[@id='footer']" position="replace">
+       		<div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+				<!-- <section id="footer_theme_common8" class="footer_theme_common8 o_footer">
+					<section class="footer-section">
+						<div class="container extended-container">
+							<div class="row justify-content-center pt64 pb64">
+								<div class="col-md-4 mb-4 mb-md-0">
+									<div class="footer-logo mb-4">
+										<a href="/" class="navbar-brand logo p-0 m-0">
+								            <img src="/theme_decor/static/src/img/decor-white.png" class="img-fluid"/>
+								        </a>
+									</div>
+									<div class="contact-content">
+										<div class="contact-info">
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+										</div>
+										<div class="footer-pricelist d-flex mt16">
+											<p class="m-0 text-white"><span class="ti ti-money me-3"/></p>
+											<t t-set="website_sale_pricelists" t-value="website.get_pricelist_available(show_visible=True)" />
+											<div t-attf-class="dropdown me-auto#{'' if website_sale_pricelists and len(website_sale_pricelists)&gt;1 else ' '} #{_classes}">
+					           					<t t-set="curr_pl" t-value="website.get_current_pricelist()" />
+												<a role="button" href="#" class="text-white dropdown-toggle btn btn-link p-0" data-bs-toggle="dropdown">
+									            	<t t-out="curr_pl and curr_pl.name or ' - '" />
+									            </a>
+												<div class="dropdown-menu" role="menu">
+									                <t t-foreach="website_sale_pricelists" t-as="pl">
+									                    <a role="menuitem" t-att-href="'/shop/change_pricelist/%s' % pl.id" class="dropdown-item">
+									                        <span class="switcher_pricelist" t-att-data-pl_id="pl.id" t-out="pl.name" />
+									                    </a>
+									                </t>
+									            </div>
+									        </div>
+										</div>
+										<div class="footer-language">
+											<div class="d-flex menu-language js_language_selector mb0 text-lg-center" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+												<p class="mb-0 me-3">
+													<t t-foreach="website.language_ids" t-as="lg">
+									                    <t t-if="request.context.get('lang') == lg.code">
+									                        <img t-att-src="website.image_url(lg, 'flag_image')" width="18" t-att-title="lg.name" />
+									                    </t>
+									                </t>
+												</p>
+									            <div class="dropdown">
+									                <a href="#" class="text-white p-0 nav-link dropdown-toggle"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									                    <t t-foreach="website.language_ids" t-as="lg">
+										                    <t t-if="request.context.get('lang') == lg.code">
+										                        <span class="lang_local_code text-uppercase" t-out="list(filter(lambda lg : lg[0] == lang, languages))[0][1]"/>
+										                    </t>
+										                </t>
+									                </a>
+									                <div class="dropdown-menu" role="menu">
+									                    <t t-foreach="languages" t-as="lg">
+									                        <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
+									                           class="dropdown-item js_change_lang"
+									                           t-att-data-url_code="lg[1]">
+									                        	<t t-out="lg[2].split('/').pop()"/>
+									                        </a>
+									                    </t>
+									                </div>
+									            </div>
+										    </div>
+										</div>
+									</div>
+								</div>
+								<div class="col-md-2 mb-4 mb-md-0">
+									<div class="footer-links">
+										<h6 class="mb-5">Our Categories</h6>
+										<p><a href="#">Chairs</a></p>
+										<p><a href="#">Sofa</a></p>
+										<p><a href="#">Wardrobe</a></p>
+										<p><a href="#">Lamps</a></p>
+									</div>
+								</div>
+								<div class="col-md-2 mb-4 mb-md-0">
+									<div class="footer-links">
+										<h6 class="mb-5">Quick Links</h6>
+										<p><a href="#">Home</a></p>
+										<p><a href="#">Contact Us</a></p>
+										<p><a href="#">About Us</a></p>
+										<p><a href="#">Policy</a></p>
+									</div>
+								</div>
+								<div class="col-md-4 mb-4 mb-md-0">
+									<div class="apps-link">
+										<div class="title">
+											<h6>Contact Info</h6>
+											<p>
+												<span t-out="res_company.street"/>,<br/>
+												<span t-out="res_company.city"/>,
+												<span t-out="res_company.zip"/>
+											</p>
+										</div>
+										<p class="contact-info">
+											<a href="#">
+												<span class="fa fa-phone me-2"/>
+												<span t-out="res_company.phone"/>
+											</a>
+										</p>
+										<p class="contact-info">
+											<a href="#">
+												<span class="fa fa-envelope-o me-2"/>
+												<span t-out="res_company.email"/>
+											</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					
+				</section> -->
+
+				<div class="jms-row footer-navbar" style="padding: 50px;">
+					<div class="container">
+				<div class="row">
+					<div class="layout-column col-lg-3 col-md-3 col-sm-3 col-xs-12 first" style="">
+									<div class="addon-box">
+						<div class="addon-title">
+	<h3>Contactez-nous</h3>
+</div>
+<p><b>Servette Music SA</b><br />  Rue de la Servette 92<br /> CH-1202 Genève<br /> Suisse<br /><br /> Tél. +41 22 733 70 73<br /> Fax +41 22 734 56 51<br /> <a href="mailto:info@servette-music.ch" style="color: #929292;">info@servette-music.ch</a></p>					</div>
+							</div>
+					<div class="layout-column col-lg-3 col-md-3 col-sm-3 col-xs-12 second" style="">
+									<div class="addon-box">
+						<div class="addon-title">
+	<h3>Horaires</h3>
+</div>
+<p><b>Fermé le lundi</b><br /> <b>Mardi au Vendredi</b><br /> 10h00-13h30 / 15h00-18h30<br /> <b>Samedi</b><br />10h00-17h00</p>
+<p><b>Fermetures annuelles</b><br />du 29 mars au 1er avril inclus,<br />réouverture le 2 avril à 10h (Pâques)</p>					</div>
+							</div>
+					<div class="layout-column col-lg-3 col-md-3 col-sm-3 col-xs-12 third" style="">
+									<div class="addon-box">
+						<div class="addon-title">
+	<h3>Informations</h3>
+</div>
+<ul class="footer-list">
+<li><a href="http://www.servette-music.ch/fr/content/6-reservation" title="Réservation">Réservation</a></li>
+</ul>					</div>
+									<div class="addon-box">
+						<div style="height: 40px;"></div>					</div>
+									<div class="addon-box">
+						<div class="addon-title">
+	<h3>Newsletter</h3>
+</div>
+<p>Vous souhaitez rester informé ?<br />Inscrivez-vous à notre newsletter !</p>
+<p><a href=""><button class="btn btn-primary"><span>S'INSCRIRE</span></button></a></p>					</div>
+							</div>
+					<div class="layout-column col-lg-3 col-md-3 col-sm-3 col-xs-12 left" style="">
+									<div class="addon-box">
+											</div>
+									<div class="addon-box">
+						<div class="addon-title">
+	<h3>Informations</h3>
+</div>
+<p><a href="https://www.facebook.com/Servette-Music-395876700496107/" target="_blank"><i class="fa fa-facebook-f"></i> Servette-Music</a><br /> <br /> <a href="https://www.instagram.com/servette_music_guitar/" target="_blank"><i class="fa fa-instagram"></i> servette_music_guitar</a><br /> <a href="https://www.instagram.com/servette_music_winds/" target="_blank"><i class="fa fa-instagram"></i> servette_music_winds</a><br /> <a href="https://www.instagram.com/servette_music_drum_shop/" target="_blank"><i class="fa fa-instagram"></i> servette_music_drum_shop</a><br /> <br /> <a href="https://www.youtube.com/user/ServetteMusicTV" target="_blank"><i class="fa fa-youtube"></i> ServetteMusicTV</a></p>					</div>
+							</div>
+				</div>
+		</div>
+	</div>
+			</div>
+		</xpath>
+		<xpath expr="//div[hasclass('o_footer_copyright')]" position="replace">
+			<!-- <div t-if="not no_copyright" class="o_footer_copyright">
+				<section class="copyright-section py-4">
+					<div class="container extended-container">
+						<div class="row align-items-center">
+							<div class="col-md-7 mb-4 mb-md-0">
+								<p class="m-0 text-white">© 2021 | All Rights Are Reserved By <span t-field="res_company.name" /></p>
+							</div>
+							<div class="col-md-5">
+								<div class="social-share text-center text-md-end">
+									<a class="link" t-att-href="website.social_facebook" t-if="website.social_facebook" target="_blank">
+										<i class="fa fa-facebook" />
+									</a>
+									<a class="link" t-att-href="website.social_twitter" t-if="website.social_twitter" target="_blank">
+										<i class="fa fa-twitter" />
+									</a>
+									<a class="link" t-att-href="website.social_linkedin" t-if="website.social_linkedin" target="_blank">
+										<i class="fa fa-linkedin" />
+									</a>
+									<a class="link" t-att-href="website.social_youtube" t-if="website.social_youtube" target="_blank">
+										<i class="fa fa-youtube-play" />
+									</a>
+									<a class="link" t-att-href="website.social_instagram" t-if="website.social_instagram" target="_blank">
+										<i class="fa fa-instagram"></i>
+									</a>
+									<a class="link m-0" t-att-href="website.social_github" t-if="website.social_github" target="_blank">
+										<i class="fa fa-github"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div> -->
+			<div class="jms-row footer-copyright">
+				<div class="container" style="padding: 30px;">
+			<div class="row">
+				<div class="layout-column col-lg-12 col-md-12 col-sm-12 col-xs-12 center" style="">
+								<div class="addon-box">
+					<div class="copy-right"><span>© Servette Music - Genève | Tous Droits Réservés</span></div>					</div>
+						</div>
+			</div>
+	</div>
+</div>
+		</xpath>
+	</template>
+</odoo>

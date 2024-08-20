@@ -1,0 +1,672 @@
+<odoo>
+    <data>
+
+        <template id="custom_products_categories_list" inherit_id="website_sale.products_categories_list">
+            <xpath expr="//div[hasclass('wsale_products_categories_list')]" position="replace">
+                <div class="wsale_products_categories_list">
+                    <ul class="nav d-flex flex-column my-2">
+                        <li class="nav-item mb-1">
+                            <div t-att-data-link-href="keep('/shop', category=0)" class="form-check d-inline-block">
+                                <input type="radio" t-attf-name="wsale_categories_radios{{_radioGroup}}"
+                                       class="form-check-input pe-none o_not_editable" t-att-id="all_products"
+                                       t-att-value="all_products" t-att-checked="'true' if not category else None"/>
+                                <label class="form-check-label fw-normal" t-att-for="all_products">All Products</label>
+                            </div>
+                        </li>
+                        <t t-set="categories_to_show"
+                           t-value="category.get_categories_to_show() if category else categories"/>
+                        <t t-set="categories_to_show"
+                           t-value="categories_to_show if categories_to_show else categories"/>
+                        <t t-foreach="categories_to_show" t-as="c">
+                            <t t-call="website_sale.categories_recursive"/>
+                        </t>
+                    </ul>
+                </div>
+            </xpath>
+        </template>
+
+        <template id="products_tab_bizople" inherit_id="website_sale.product" name="Product Tab Bizople" priority="25">
+            <xpath expr="//div[@id='product_full_description']" position="attributes">
+                <attribute name="class" separator=" " add="d-none" />
+            </xpath>
+            <xpath expr="//section[@id='product_detail']" position="after">
+                <t t-set="first" t-value="0"/>
+                <t t-set="review_enabled" t-value="is_view_active('website_sale.product_comment')"/>
+                <t t-set="specification_enabled"
+                   t-value="is_view_active('website_sale_comparison.product_attributes_body')"/>
+                <div class="col-lg-12 col-md-12 pt48 pb48 product_tabs">
+                    <div class="container">
+                        <div class="main-tab">
+                            <ul class="nav nav-tabs tabs" role="tablist" id="product_detail_tabs">
+                                <t t-if="product.website_description or request.env.user._is_admin()">
+                                    <li class="nav-item" priority="1">
+                                        <a  style="color: #e32125!important;
+                                            font-family: Gotham-Bold, sans-serif;
+                                            font-weight: bold;
+                                            font-size: 17px;
+                                            background: none;
+                                            padding: 10px 0px;
+                                            border-bottom: 1px solid #e32125 !important;
+                                            color: #e32125 !important;
+                                        
+                                        "   class="nav-link active show" id="nav-home-tab1" data-bs-toggle="tab"
+                                           href="#nav-home1" role="tab" aria-controls="nav-home1" aria-selected="true">
+                                            DESCRIPTION 
+                                        </a>
+                                    </li>
+                                </t>
+                                <t t-if="specification_enabled">
+                                    <t t-if="product.valid_product_template_attribute_line_ids._prepare_categories_for_display()">
+                                        <li class="nav-item" priority="1">
+                                            <a class="nav-link product_description" id="nav-home-tab2"
+                                               data-bs-toggle="tab" href="#nav-home2" role="tab"
+                                               aria-controls="nav-home2" aria-selected="false">
+                                                Specification
+                                            </a>
+                                        </li>
+                                    </t>
+                                </t>
+
+                                <t t-if="review_enabled">
+                                    <li class="nav-item" priority="1">
+                                        <a class="nav-link" id="nav-home-tab3" data-bs-toggle="tab" href="#nav-home3"
+                                           role="tab" aria-controls="nav-home3" aria-selected="false">
+                                            Reviews
+                                        </a>
+                                    </li>
+                                </t>
+
+                                <t t-foreach="product.tab_ids" t-as="tab">
+                                    <li class="nav-item">
+                                        <a class="nav-link o_default_snippet_text"
+                                           t-att-id="'nav_link_%s_%s' % (product.id, tab.id)" data-bs-toggle="tab"
+                                           t-att-href="'#nav_tabs_body_%s_%s' % (product.id, tab.id)" role="tab"
+                                           t-att-aria-controls="'nav_link_%s_%s' % (product.id, tab.id)"
+                                           aria-selected="false">
+                                            <t t-out="tab.name"/>
+                                        </a>
+                                    </li>
+                                </t>
+                            </ul>
+                        </div>
+                        <div class="tab-content product-tab mt32">
+                            <div class="tab-pane fade active show" id="nav-home1" role="tabpanel"
+                                 aria-labelledby="nav-home-tab1">
+
+                                 <t t-if="product.video">
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe width="560" height="315" t-att-src="product.video"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                                allowfullscreen=""></iframe>
+                                    </div>
+                                 </t>
+                                    
+                                <div itemprop="description" t-field="product.website_description"
+                                     class="oe_structure mt16" id="product_full_description_decor">
+                                </div>
+                            </div>
+                            <t t-if="specification_enabled">
+                                <div class="tab-pane fade" id="nav-home2" role="tabpanel"
+                                     aria-labelledby="nav-home-tab2">
+                                    <section class="container" id="product_full_spec">
+                                        <t t-set="categories"
+                                           t-value="product.valid_product_template_attribute_line_ids._prepare_categories_for_display()"/>
+                                        <t t-if="categories">
+                                            <h3 class="text-center mb32 d-none">Specifications for
+                                                <t t-out="product.name"/>
+                                            </h3>
+                                            <div class="row">
+                                                <div class='col-lg-12' id='product_specifications'>
+                                                    <table class='table border table-sm'>
+                                                        <t t-foreach="categories" t-as="category">
+                                                            <t t-if="len(categories) > 1">
+                                                                <tr class="clickable" data-bs-toggle="collapse"
+                                                                    t-att-data-bs-target="'.o_ws_category_%d' % category.id">
+                                                                    <th class="text-start" t-att-colspan="2">
+                                                                        <span t-if="category" t-field="category.name"/>
+                                                                        <span t-else="">Uncategorized</span>
+                                                                    </th>
+                                                                </tr>
+                                                            </t>
+                                                            <tr t-foreach="categories[category].filtered(lambda l: len(l.value_ids) > 1)"
+                                                                t-as="ptal"
+                                                                t-att-class="'collapse show o_ws_category_%d' % category.id">
+                                                                <td>
+                                                                    <span t-field="ptal.attribute_id.name"/>
+                                                                </td>
+                                                                <td>
+                                                                    <t t-foreach="ptal.value_ids" t-as="pav">
+                                                                        <span t-field="pav.name"/>
+                                                                        <t t-if="not pav_last">or</t>
+                                                                    </t>
+                                                                </td>
+                                                            </tr>
+                                                            <t t-set="single_value_attributes"
+                                                               t-value="categories[category]._prepare_single_value_for_display()"/>
+                                                            <tr t-foreach="single_value_attributes" t-as="attribute"
+                                                                t-att-class="'collapse show o_ws_category_%d' % category.id">
+                                                                <td>
+                                                                    <span t-field="attribute.name"/>
+                                                                </td>
+                                                                <td>
+                                                                    <t t-foreach="single_value_attributes[attribute]"
+                                                                       t-as="ptal">
+                                                                        <span t-field="ptal.product_template_value_ids._only_active().name"/>
+                                                                        <t t-if="not ptal_last">,</t>
+                                                                    </t>
+                                                                </td>
+                                                            </tr>
+                                                        </t>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </t>
+                                    </section>
+                                </div>
+                            </t>
+                            <t t-if="review_enabled">
+                                <div class="tab-pane fade" id="nav-home3" role="tabpanel"
+                                     aria-labelledby="nav-home-tab3">
+                                    <div class="o_shop_discussion_rating">
+                                        <section class="container mt16 mb16">
+                                            <hr/>
+                                            <div class="row justify-content-center">
+                                                <!-- <div class="col-lg-8 offset-lg-2"> -->
+                                                <div class="col-lg-10">
+                                                    <t t-call="portal.message_thread">
+                                                        <t t-set="object" t-value="product"/>
+                                                        <t t-set="display_rating" t-value="True"/>
+                                                    </t>
+                                                </div>
+                                            </div>
+                                        </section>
+                                    </div>
+                                </div>
+                            </t>
+                            <t t-foreach="product.tab_ids" t-as="tab">
+                                <div t-att-id="'nav_tabs_body_%s_%s' % (product.id, tab.id)" class="tab-pane fade"
+                                     role="tabpanel" t-att-aria-labelledby="'nav_link_%s_%s' % (product.id, tab.id)">
+                                    <section class="mt16 mb16">
+                                        <div t-field="tab.content" class="oe_structure"/>
+                                    </section>
+                                </div>
+                            </t>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+
+
+         
+            <xpath expr="//div[@id='o_product_terms_and_share']" position="before">
+                <div>
+                            <p><span style="font-size: 15px!important; color: #e32125; font-weight:bold;"> SPÉCIFICATIONS TECHNIQUES
+                                 </span></p>
+                            <p>
+                                <span style="font-size: 14px!important;" t-esc="product.spec_technique"/>
+                                <br/>
+                            </p>
+                </div>
+            </xpath>
+
+            <xpath expr="//div[@id='o_product_terms_and_share']" position="after">
+                <div class="blockreassurance_product">
+                    <div>
+                    <span class="item-product">
+                                                                <img class="svg" src="https://www.servette-music.ch/modules/blockreassurance/img/ic_verified_user_black_36dp_1x.png" />
+                                            
+                    </span>
+                                  <p class="block-title" style="color:#ffffff;  display:inline">TVA 8.1% incluse</p>
+                            </div>
+                    <div>
+                    <br />
+                    <span class="item-product">
+                                                                <img class="svg" src="https://www.servette-music.ch/modules/blockreassurance/img/ic_local_shipping_black_36dp_1x.png" />
+                                          
+                    </span>
+                                  <p class="block-title" style="color:#ffffff; display:inline">Hors Frais de Port</p>
+                            </div>
+                <div class="clearfix"></div>
+        </div>
+            </xpath>
+        </template>
+        <template id="total_empty">
+            <div></div>
+        </template>
+        <template id="decor_cart_popover" inherit_id="website_sale.cart_popover" name="Decor Cart Popover">
+            <xpath expr="//div[hasclass('alert-info')]" position="replace">
+                <div t-if="not website_sale_order or not website_sale_order.website_order_line" class="empty-cart-button my-3 text-center">
+                    <img src="/theme_decor/static/src/img/empty_cart.svg" class="mb32 w-75 img img-fluid"/>
+                    <h5 class="text-secondary mb-3 fw-light mx-3">Oops! Your cart is empty!</h5>
+                    <a class="btn btn-secondary bizople_button rounded-0" href="/shop">
+                        <span class="ri ri-shopping-cart-line align-middle me-2"/>
+                        <span>Start Shopping</span>
+                    </a>
+                </div>
+            </xpath>
+            <xpath expr="//a[@role='button']" position="replace">
+                <a role="button" class="btn btn-primary" href="/shop/cart">
+                    Voir les réservations (<span class="o_wsale_cart_quantity" t-esc="website_sale_order.cart_quantity" /> items)
+                </a>
+            </xpath>
+            <xpath expr="//t[@t-call='website_sale.total']" position="replace">
+                <t t-call="custom_decor_theme.total_empty"/>
+            </xpath>
+        </template>
+
+        <template id="my_contactus">
+
+
+            <t t-set="logged_partner" t-value="request.env['website.visitor']._get_visitor_from_request().partner_id"/>
+
+            <div id="wrap" class="oe_structure oe_empty">
+                <section class="s_text_block pt40 pb40 o_colored_level " data-snippet="s_text_block">
+                    <div class="container s_allow_columns">
+                        <div class="row">
+                            <div class="col-lg-8 mt-4 mt-lg-0">
+                                <section class="s_website_form" data-vcss="001" data-snippet="s_website_form">
+                                    <div class="container">
+                                        <form id="contactus_form" action="/website/form/" method="post"
+                                              enctype="multipart/form-data" class="o_mark_required" data-mark="*"
+                                              data-model_name="crm.lead" data-success-mode="redirect"
+                                              data-success-page="/contactus-thank-you" data-pre-fill="false">
+                                            <div class="s_website_form_rows row s_col_no_bgcolor">
+
+                                                <div class="form-group col-12 s_website_form_field s_website_form_custom s_website_form_required"
+                                                     data-type="char" data-name="Field">
+                                                    <div class="row  s_col_no_bgcolor">
+                                                        <label class="col-form-label col-sm-auto s_website_form_label"
+                                                               style="width: 100px" for="last_name">
+                                                            <span class="s_website_form_label_content">Prénom</span>
+                                                            <span class="s_website_form_mark">*</span>
+                                                        </label>
+                                                        <div class="col">
+                                                            <input id="last_name" type="text"
+                                                                   class="form-control s_website_form_input"
+                                                                   name="last_name"
+                                                                   required="" data-fill-with="last_name"/>
+                                                        </div>
+                                                        <label class="col-form-label col-sm-auto s_website_form_label"
+                                                               style="width: 100px" for="contact1">
+                                                            <span class="s_website_form_label_content">Nom</span>
+                                                            <span class="s_website_form_mark">*</span>
+                                                        </label>
+                                                        <div class="col">
+                                                            <input id="contact1" type="text"
+                                                                   class="form-control s_website_form_input" name="name"
+                                                                   required="" data-fill-with="name"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group col-12 s_website_form_field s_website_form_custom"
+                                                     data-type="char" data-name="Field">
+                                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                        <label class="col-form-label col-sm-auto s_website_form_label"
+                                                               style="width: 100px" for="contact2">
+                                                            <span class="s_website_form_label_content">Téléphone
+                                                            </span>
+                                                        </label>
+                                                        <div class="col-sm">
+                                                            <input id="contact2" type="tel"
+                                                                   class="form-control s_website_form_input"
+                                                                   name="phone" data-fill-with="phone"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-12 s_website_form_field s_website_form_required"
+                                                     data-type="email" data-name="Field">
+                                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                        <label class="col-form-label col-sm-auto s_website_form_label"
+                                                               style="width: 100px" for="contact3">
+                                                            <span class="s_website_form_label_content">Email</span>
+                                                            <span class="s_website_form_mark">*</span>
+                                                        </label>
+                                                        <div class="col-sm">
+                                                            <input id="contact3" type="email"
+                                                                   class="form-control s_website_form_input"
+                                                                   name="email_from" required=""
+                                                                   data-fill-with="email"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-12 s_website_form_field s_website_form_required"
+                                                     data-type="char" data-name="Field">
+                                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                        <label class="col-form-label col-sm-auto s_website_form_label"
+                                                               style="width: 100px" for="contact5">
+                                                            <span class="s_website_form_label_content">Sujet</span>
+                                                            <span class="s_website_form_mark">*</span>
+                                                        </label>
+                                                        <div class="col-sm">
+                                                            <input id="contact5" type="text"
+                                                                   class="form-control s_website_form_input"
+                                                                   name="subject" required=""/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-12 s_website_form_field s_website_form_custom s_website_form_required"
+                                                     data-type="text" data-name="Field">
+                                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                        <label class="col-form-label col-sm-auto s_website_form_label"
+                                                               style="width: 100px" for="contact6">
+                                                            <span class="s_website_form_label_content">Message
+                                                            </span>
+                                                        </label>
+                                                        <div class="col-sm">
+                                                            <textarea id="contact6"
+                                                                      class="form-control s_website_form_input"
+                                                                      name="description" required=""></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-12 s_website_form_field s_website_form_custom s_website_form_required"
+                                                     data-type="text" data-name="Field">
+                                                    <div class="row s_col_no_resize s_col_no_bgcolor">
+                                                        <label class="col-form-label col-sm-auto s_website_form_label"
+                                                               style="width: 100px" for="files">
+                                                            <span class="s_website_form_label_content">Fichier joint
+                                                            </span>
+                                                        </label>
+                                                        <div class="col-sm">
+                                                            <input type="file" name="files" class="file" multiple="true"
+                                                                   data-show-upload="true" data-show-caption="true"
+                                                                   lass="file" data-show-preview="true" id="files"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-12 s_website_form_submit"
+                                                     data-name="Submit Button">
+                                                    <div style="width: 200px;" class="s_website_form_label"/>
+                                                    <a href="#" role="button"
+                                                       class="btn btn-primary btn-lg s_website_form_send">ENVOYER
+                                                        MAINTENANT
+                                                    </a>
+                                                    <input type="hidden" t-att-value="website_sale_order.id" name="products" id="products"/>
+                                                    <span id="s_website_form_result"></span>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+        </template>
+
+        <template id="hide_decor_checkout_pages" inherit_id="website_sale.cart">
+
+            <xpath expr="//div[hasclass('oe_website_sale')]/div[hasclass('row')]/div[1]" position="replace">
+                <head>
+                    <style type="text/css">
+                        .title_header {
+                        font: 600 18px/22px "Open Sans",sans-serif;
+                        color: #fff;
+                        background: #e32125;
+                        text-transform: uppercase;
+                        padding: 14px 5px 17px 20px;
+                        margin-bottom: 20px
+                        }
+                    </style>
+                </head>
+            </xpath>
+            <xpath expr="//div[hasclass('oe_cart')]" position="replace">
+                <div class="col-12 col-xl-8 oe_cart">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <h4 class="title_header">Votre Réservation</h4>
+                            <p>
+                                Merci d’avoir choisi Servette-Music.
+
+                                Notre présentation d’instruments de musique en ligne vous permet de réserver un ou
+                                plusieurs instruments en vue d’un essai ou d’un achat ultérieur à notre magasin ou à
+                                distance au gré de vos besoins et/ou de vos envies.
+
+                                Après avoir remplis le formulaire ci-après, nous vous invitons à confirmer votre
+                                réservation ci-après en cliquant sur le bouton « envoyer » afin que nous prenions
+                                contact avec vous dans les meilleurs délais.
+
+                                Chez Servette-Music, une réservation ne vous engage à rien. Elle vous permet juste de
+                                vous donner une priorité en vue d’un prochain achat. Lorsque vous faites une
+                                réservation, nous vous communiquons bien entendu notre meilleure offre en général par
+                                courriel ou encore par téléphone.
+                                <br/>
+                            </p>
+                            <t t-call="website_sale.cart_lines"/>
+                            <div class="clearfix"/>
+                            <div class="oe_structure" id="oe_structure_website_sale_cart_1"/>
+                        </div>
+                    </div>
+                </div>
+            </xpath>
+            <xpath expr="//div[@id='o_cart_summary']" position="replace">
+            </xpath>
+            <xpath expr="//div[hasclass('oe_website_sale')]" position="inside">
+                <div class="row">
+                    <div class="col-12 col-xl-12">
+                        <t t-call="custom_decor_theme.my_contactus"/>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+        <template id="hide_qty_price" inherit_id="website_sale.cart_lines">
+
+            <xpath expr="//th[hasclass('td-qty')]" position="attributes">
+                	<attribute name="t-attf-style" add="display: none;" separator=" "/>
+            </xpath>
+
+            <xpath expr="//th[hasclass('td-price')]" position="attributes">
+                <attribute name="t-attf-style" add="display: none;" separator=" "/>
+            </xpath>
+
+            <xpath expr="//td[hasclass('td-qty')]" position="attributes">
+                <attribute name="t-attf-style" add="display: none;" separator=" "/>
+            </xpath>
+
+            <xpath expr="//td[hasclass('td-price')]" position="attributes">
+                <attribute name="t-attf-style" add="display: none;" separator=" "/>
+            </xpath>
+
+            <xpath expr="//td[hasclass('td-action')]" position="replace">
+                <td class="td-action">
+                    <a href='#' aria-label="Remove from cart" title="Remove from cart"
+                       class='js_delete_product no-decoration'>
+                        <striong>
+                            <i class='fa fa-trash'></i>
+                        </striong>
+                    </a>
+                </td>
+            </xpath>
+        </template>
+
+        <!--<template id="ajax_cart_button" inherit_id="theme_decor.list_view_wishlist_and_compare">
+                &lt;!&ndash;<t t-call="theme_decor.decor_product_add_cart_main_template">
+                    <t t-set="_icon" t-value="True"/>
+                    <t t-set="_text" t-value="False"/>
+                </t>&ndash;&gt;
+        </template>-->
+
+
+        <template id="modal_demandeInfo">
+            <style>
+                .form-control {
+                    color: black!important;
+                    background-color: white!important;
+                }
+            </style>
+            <div class="modal fade"  style="max-width:100%; " id="demandeInfoModal" tabindex="-1" role="dialog" aria-labelledby="demandeInfoModalLabel" aria-hidden="true">
+                <div class="modal-dialog"  style="max-width:100%;" role="document">
+                  <div class="modal-content" style="max-width:100%; background-color: black!important; color:white;">
+                    <div id="loadingdiv" style="
+                                            position: absolute;
+                                            top: 0;
+                                            left: 0;
+                                            right: 0;
+                                            bottom: 0;
+                                            z-index:99;
+                                            background: #000000c4;
+                                            display: none;
+                                            justify-content: center;
+                                            align-items: center;
+                                ">
+                                <div id="loading">
+                                    <img  src="/web/static/img/spin.png"  class="m-2 fa-pulse"/>
+                                    <span style="font-size: 20px">Envoi du formulaire...</span>
+                                </div>
+                                <div id="loadingsuccess" style="display:none">
+                                    <span style="font-size: 20px">Envoi réussi, nous vous contacterons dans les plus bref delais</span>
+                                </div>
+                            </div>
+                    <div class="modal-header" style="max-width:100%">
+                                    <h4 class="modal-title" id="send_guest_formLabel">Envoyer une question sur ce produit</h4>
+                    </div>
+                    <div class="modal-body"  style="max-width:100%" id="send-guest-form-body">
+                                       
+                                        <!-- <div id="send_error_formproduct"></div> -->
+                                            <!-- <span class="required">* Champs requis.</span> -->
+                            
+                                <div id="demandeInfoForm"  >
+                                    <input type="hidden" id="product_template_id" name="product_template_id" />
+                                    <div class="form-outline">
+                                        <label class="form-label" for="product_template_name">Produit *</label>
+                                        <input class="form-control texte" id="product_template_name"  readonly="readonly"/>
+                                   </div>
+                                    <!-- Name input -->
+                                    <div  class="form-outline">
+                                        <label class="form-label" for="name2">Votre Nom *</label>
+                                        <input type="text" id="name2" name="Votre Nom" class="form-control" required="required" />
+                                    </div>
+                
+                                    <!-- Email input -->
+                                    <div  class="form-outline">
+                                        <label class="form-label" for="email2">Votre Adresse Mail *</label>
+                                        <input type="email" id="email2"  name="Votre Adresse Mail" class="form-control" required="required" />
+                                    </div>
+
+                                    <div  class="form-outline">
+                                        <label class="form-label" for="phone2">Votre Téléphone</label>
+                                        <input type="text" id="phone2" name="Votre Téléphone" class="form-control" />
+                                    </div>
+                
+                
+                                    <!-- password input -->
+                                    <div  class="form-outline mb-4">
+                                        <label for="message" class="col-md-4 form-control-label">Votre Question *</label>
+                                        
+                                        <textarea id="guest_questions" name="Votre Question" class="form-control" placeholder="" type="text" style="min-height:100px;width:100%;
+                                                resize:both;
+                                                resize: none;" required="required"></textarea>
+                                        
+                                    </div>
+                                    <div class="col-md-12"><label>Comment être contacté</label></div>
+                                                
+                                    <div class="col-md-12  mb-4">
+                                                    <label class="radio-inline">
+                                                            <input id="indifferent" name="guest_choix" type="radio" valeur="Indifférent" checked="checked" />
+                                                            Indifférent</label>
+                                                        <label class="radio-inline">
+                                                        <input id="email" name="guest_choix" type="radio" valeur="Email"/>
+                                                            Par Adresse Mail</label>
+                                                    <label class="radio-inline">
+                                                        <input id="phone" name="guest_choix" type="radio" valeur="Téléphone"/>
+                                                            Par Téléphone</label>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-md-12">
+                                            <p>En soumettant ce formulaire, j'accepte que les données saisies soient utilisées pour répondre à ma demande d'information concernant ce produit ou service.</p>
+                                        </div>
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="col-md-12">
+                                            <span id="warningMessage" style="color:red;"></span>
+                                        </div>
+                                    </div>
+                                    <!-- Submit button -->
+                                    <div style="text-align: right;">
+                                        <button type="submit" id="demande_info_submit" class="btn btn-primary btn-block ">Envoyer mon message</button>
+                                        <button type="button"  id="demande_info_close" class="btn btn-secondary ">Annuler</button>
+                                    </div>
+                                    
+                                </div>
+                             
+                            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- <div class="modal-footer">
+                     
+                      <button type="button" id="demande_info_submit" class="btn btn-primary" >Envoyer mon message</button>
+                    </div> -->
+                  
+    
+            </div>
+
+
+
+        </template>
+
+        <template id="products_inherit" inherit_id="website_sale.products">
+            
+            <xpath expr="//div[@id='wrap']" position="before">
+                <t t-call="custom_decor_theme.modal_demandeInfo"/>
+            </xpath>
+
+        </template>
+
+        <template id="product_inherit" inherit_id="website_sale.product">
+            
+            <xpath expr="//div[@id='product_detail_main']" position="before">
+                <t t-call="custom_decor_theme.modal_demandeInfo"/>
+            </xpath>
+
+        </template>
+
+        <template id="products_add_to_cart" inherit_id="website_sale.products_description" name="Add to Cart">
+            
+            <xpath expr="//div[hasclass('oe_subdescription')]" position="after">
+                
+                <input type="hidden" class="product_id" name="product_id" t-att-value="product.id" />
+                
+                <!-- <div id="contact_us_wrapper">
+                    <a t-att-href="website.contact_us_button_url" class="btn btn-link btn_cta"
+                       title="Contact Us" style="background-color: white;">
+                        <span class="fa fa-envelope"></span>
+                        <span class="">Demande d'informations</span>
+                    </a>
+                </div> -->
+                <button  class="btn btn-link btn_cta demande_info_button"   style="background-color: white; color:red;" type="button">
+                    <span class="fa fa-envelope"></span>
+                    <span class="">Demande d'informations</span>
+                  </button>
+                
+                <div id="add_to_cart" >
+                    <a style="background-color: white; margin-top:5px" href="#" role="button" class="btn btn-link a-submit shop-cart"
+                       aria-label="Add to Cart" title="Add to Cart">
+                        <span class="fa fa-music"></span>
+                    </a>
+                </div>
+
+                
+                
+                   
+                           
+                        
+                      
+                        
+                        
+                       
+
+                
+
+
+            </xpath>
+        </template>
+
+
+    </data>
+</odoo>

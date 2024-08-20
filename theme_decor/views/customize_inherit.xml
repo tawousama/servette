@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<record id="website_sale.products_categories" model="ir.ui.view">
+		<field name="priority" eval="20"/>
+	</record>
+
+	<record id="website_sale.products_attributes" model="ir.ui.view">
+		<field name="priority" eval="25"/>
+	</record>
+	
+	<record id="website_sale.product_custom_text" model="ir.ui.view">
+		<field name="active" eval="False"/>
+	</record>
+
+</odoo>

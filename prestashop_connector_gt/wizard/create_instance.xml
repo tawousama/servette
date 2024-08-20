@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="view_any_name_form">
+            <field name="name">any.name.form</field>
+            <field name="model">your.model</field>
+            <field name="groups_id"></field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="My Form">
+                    <sheet>
+                        <group>
+                            <field name="field_1"/>
+                        </group>
+                        <group col="4" colspan="4">
+                            <field name="field_2"/>
+                        </group>
+                        <group col="4" colspan="4">
+                            <field name="field_3"/>
+                            <field name="field_4"/>
+                        </group>
+                    </sheet>
+                    <footer>
+                        <button name="added" type="object" string="Add" class="oe_highlight"/>
+                            or
+                        <button special="cancel" string="Cancel"/>
+                    </footer>
+
+                </form>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="action_any_name_goes_here">
+            <field name="name">My Action</field>
+            <field name="res_model">your.model</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+        </record>
+    </data>
+</odoo>

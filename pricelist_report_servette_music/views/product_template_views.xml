@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_sm_product_template_price_list_report_ref" model="ir.actions.server">
+        <field name="name">Générer liste de prix Servette Music – Avec Réf</field>
+        <field name="groups_id" eval="[(4, ref('product.group_product_pricelist'))]"/>
+        <field name="model_id" ref="product.model_product_template"/>
+        <field name="binding_model_id" ref="product.model_product_template"/>
+        <field name="state">code</field>
+        <field name="code">
+ctx = env.context
+ctx.update({'default_pricelist': env['product.pricelist'].search([], limit=1).id, 'with_ref': True})
+action = {
+    'name': 'Pricelist Report Servette Music',
+    'type': 'ir.actions.client',
+    'tag': 'generate_pricelist_sm',
+    'context': ctx,
+}
+        </field>
+    </record>
+
+    <record id="action_sm_product_template_price_list_report_noref" model="ir.actions.server">
+        <field name="name">Générer liste de prix Servette Music – Sans Réf</field>
+        <field name="groups_id" eval="[(4, ref('product.group_product_pricelist'))]"/>
+        <field name="model_id" ref="product.model_product_template"/>
+        <field name="binding_model_id" ref="product.model_product_template"/>
+        <field name="state">code</field>
+        <field name="code">
+ctx = env.context
+ctx.update({'default_pricelist': env['product.pricelist'].search([], limit=1).id, 'with_ref': False})
+action = {
+    'name': 'Pricelist Report Servette Music',
+    'type': 'ir.actions.client',
+    'tag': 'generate_pricelist_sm',
+    'context': ctx,
+}
+        </field>
+    </record>
+</odoo>

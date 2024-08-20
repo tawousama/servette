@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <template id="product_services_template" inherit_id="theme_decor.decor_product_detail_inherited" name="Product Services Points" active="True" customize_show="True" priority="10">
+        <xpath expr="//div[hasclass('product_info_list')]" position="inside">
+           	<t t-if="product.service_ids">
+           	<div class="product-services mt16 mb16">
+                <div class="pull_left">
+                	<h6 class="headline">Services </h6>
+                </div>
+                 <div class="s-points">
+	                <ul class="flex-column point-ul">
+						<li t-foreach="product.service_ids" t-as="services">
+							<span t-out="services.name"/>
+							<t t-if="services.visible_desc">
+								<a class="" data-container="body" data-bs-toggle="popover" data-bs-placement="left" t-att-data-bs-content="services.description" data-bs-html="true">
+									<i class="fa fa fa-question info-icon"></i>
+								</a>
+							</t>
+						</li>
+					</ul>
+				</div>
+            </div>
+            </t>
+        </xpath>
+    </template>
+    
+    <template id="product_highlights_template" inherit_id="theme_decor.decor_product_detail_inherited" name="Product Highlights Points" active="True" customize_show="True" priority="11">
+        <xpath expr="//div[hasclass('product_info_list')]" position="inside">
+           	<t t-if="product.highlights_ids">
+           	<div class="product-services mt16 mb16">
+                <div class="pull_left">
+                	<h6 class="headline">Highlights </h6>
+                </div>
+                 <div class="s-points">
+		                <ul class="flex-column point-ul">
+							<li t-foreach="product.highlights_ids" t-as="high">
+								<span t-out="high.name"/>
+							</li>
+						</ul>
+					</div>
+            </div>
+            </t>
+        </xpath>
+    </template>
+    
+</odoo>

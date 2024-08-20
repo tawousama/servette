@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="decor_checkout_pages_banner_extra_info" inherit_id="website_sale.extra_info" name="decor Checkout Pages Banner Extra info">
+		<xpath expr="//div[hasclass('oe_website_sale')]" position="attributes">
+			<attribute name="class" add="extra_info_main" separator=" "></attribute>
+		</xpath>
+		<xpath expr="//div[@id='wrap']/div[hasclass('oe_website_sale')]" position="before">
+			<section class="cart_banner_extra pt80 pb80" style="background-image: url('/theme_decor/static/src/img/login-banner.jpg');">
+				<div class="container">
+					<div class="cart_banner_description text-center">
+						<h1>
+							<span>Extra Info</span>
+						</h1> 
+						<ol class="breadcrumb justify-content-center">
+							<li class="breadcrumb-item">
+								<a href="/">Home</a>
+							 </li>
+						    <li class="breadcrumb-item active">
+							   <span>Extra Info</span>
+						    </li>
+						</ol>
+					</div>
+				</div>
+			</section>
+		</xpath>
+
+		<xpath expr="//div[hasclass('order-xl-2','col-xl-auto')]" position="attributes">
+			<attribute name="class" add="col-xl-12 extra-product-detail" remove="col-xl-auto" separator=" "></attribute>
+		</xpath>
+	</template>
+
+	<template id="decor_checkout_pages_banner_cart" inherit_id="website_sale.cart" name="decor Checkout Pages Banner Cart">
+		<xpath expr="//div[hasclass('oe_website_sale')]" position="attributes">
+			<attribute name="class" add="cart_main" separator=" "></attribute>
+		</xpath>
+		<xpath expr="//div[@id='wrap']/div[hasclass('oe_website_sale')]" position="before">
+			<section class="cart_banner_cart pt80 pb80" style="background-image: url('/theme_decor/static/src/img/login-banner.jpg');">
+				<div class="container">
+					<div class="cart_banner_description text-center">
+						<h1>
+							<span>Cart</span>
+						</h1> 
+						<ol class="breadcrumb justify-content-center">
+							<li class="breadcrumb-item">
+								<a href="/">Home</a>
+							 </li>
+						    <li class="breadcrumb-item active">
+							   <span>Your Shopping Cart</span>
+						    </li>
+						</ol>
+					</div>
+				</div>
+			</section>
+		</xpath>
+
+		<xpath expr="//div[hasclass('oe_cart')]//div[hasclass('col-lg-12')]" position="attributes">
+			<attribute name="t-attf-class" add="col-lg-12 {{'' if website_sale_order and website_sale_order.website_order_line else 'text-center'}}" separator=" "></attribute>
+		</xpath>
+
+		<xpath expr="//div[hasclass('col-xl-8')]" position="attributes">
+			<attribute name="class" add="col-xl-12" remove="col-xl-8" separator=" "></attribute>
+		</xpath>
+
+		<xpath expr="//div[hasclass('col-xl-4')]" position="attributes">
+			<attribute name="class" remove="col-xl-4" add="col-xl-12" separator=" "></attribute>
+		</xpath>
+
+		<xpath expr="//div[@id='o_cart_summary']" position="attributes">
+			<attribute name="t-attf-class" add="col-12 col-xl-12 {{'' if website_sale_order and website_sale_order.website_order_line else 'text-center'}}" separator=" "></attribute>
+		</xpath>
+
+		<xpath expr="//a[hasclass('btn-secondary')]" position="attributes">
+			<attribute name="class" add="btn-primary continue-btn" remove="btn-secondary" separator=" "></attribute>
+		</xpath>
+	</template>
+
+	<template id="decor_cart_summary" inherit_id="website_sale.cart_summary" name="decor Cart Summary">
+		<xpath expr="//div[hasclass('alert')]" position="attributes">
+			<attribute name="class" add="empty-cart-line" remove="alert-info" separator=" "></attribute>
+		</xpath>
+
+		<xpath expr="//table[@id='cart_products']" position="attributes">
+			<attribute name="class" add="table-product" remove="table-sm" separator=" "></attribute>
+		</xpath>
+	</template>
+
+	<template id="decor_cart_lines" inherit_id="website_sale.cart_lines" name="decor Cart Lines">
+		<!-- empty cart "Your cart is empty!" page -->
+		<xpath expr="//div[hasclass('alert')]" position="attributes">
+			<attribute name="class" add="empty-cart-line" remove="alert-info" separator=" "></attribute>
+		</xpath>
+
+		<xpath expr="//table[@id='cart_products']" position="attributes">
+			<attribute name="class" add="table-product" remove="table-sm" separator=" "></attribute>
+		</xpath>
+
+		<xpath expr="//td[hasclass('td-product_name')]/div" position="before">
+			<span t-field="line.product_id.image_128" t-options="{'widget': 'image', 'qweb_img_responsive': False, 'class': 'rounded o_image_64_max'}" class="d-block d-md-none mb-1"/>
+		</xpath>
+	</template>
+
+	<template id="decor_cart_coupon_code" inherit_id="website_sale.cart" name="decor Coupon Code" active="False" customize_show="False">
+		<!-- <xpath expr="//div[hasclass('clearfix')]" position="after">
+        	<t t-if="website_sale_order and website_sale_order.website_order_line">
+            	<t t-call="website_sale.coupon_form"/>
+        	</t>
+		</xpath> -->
+		
+	</template>
+
+	<template id="decor_cart_coupon_form_btn" inherit_id="website_sale.coupon_form" name="decor Cart Coupon Form Btn">
+		<xpath expr="//a[hasclass('btn-secondary')]" position="attributes">
+			<attribute name="class" add="btn-primary" remove="btn-secondary" separator=" "></attribute>
+		</xpath>
+	</template>
+
+	<template id="decor_total_coupon_replace" inherit_id="website_sale.reduction_code" name="decor Total Coupon Replace">
+		<!-- <xpath expr="//tr[@t-if='not hide_promotions']" position="replace">
+		</xpath> -->
+	</template>
+	
+
+	<template id="decor_checkout_pages_banner_checkout" inherit_id="website_sale.checkout" name="decor Checkout Pages Banner Checkout">
+		<xpath expr="//div[hasclass('oe_website_sale')]" position="attributes">
+			<attribute name="class" add="checkout_main" separator=" "></attribute>
+		</xpath>
+		<xpath expr="//div[@id='wrap']/div[hasclass('oe_website_sale')]" position="before">
+			<section class="cart_banner_check pt80 pb80" style="background-image: url('/theme_decor/static/src/img/login-banner.jpg');">
+				<div class="container">
+					<div class="cart_banner_description text-center">
+						<h1>
+							<span>Address</span>
+						</h1> 
+						<ol class="breadcrumb justify-content-center">
+							<li class="breadcrumb-item">
+								<a href="/">Home</a>
+							 </li>
+						    <li class="breadcrumb-item active">
+							   <span>Address</span>
+						    </li>
+						</ol>
+					</div>
+				</div>
+			</section>
+		</xpath>
+
+		<xpath expr="//div[hasclass('order-xl-1')]" position="attributes">
+			<attribute name="class" add="col-xl-12 bill-check" remove="col-xl" separator=" "></attribute>
+		</xpath>
+
+		<!-- <xpath expr="//div[hasclass('all_shipping')]//div[hasclass('col-lg-12','one_kanban')]/form" position="attributes">
+			<attribute name="class" add="col-6 ps-0" separator=" "></attribute>
+		</xpath> -->
+
+		<xpath expr="//div[hasclass('order-xl-2','col-xl-auto')]" position="attributes">
+			<attribute name="class" add="col-xl-12 checkout-product-detail" remove="col-xl-auto" separator=" "></attribute>
+		</xpath>
+	</template>
+
+	<template id="decor_billing_checkout_address" inherit_id="website_sale.address" name="decor Billing Checkout Address">
+		<xpath expr="//div[hasclass('oe_website_sale')]" position="attributes">
+			<attribute name="class" add="add_address_main" separator=" "></attribute>
+		</xpath>
+		<xpath expr="//div[hasclass('order-xl-1')]" position="attributes">
+			<attribute name="class" add="col-xl-12 bill-address" remove="col-xl" separator=" "></attribute>
+		</xpath>
+
+		<xpath expr="//div[hasclass('order-xl-2','col-xl-auto')]" position="attributes">
+			<attribute name="class" add="col-xl-12 address-product-detail" remove="col-xl-auto" separator=" "></attribute>
+		</xpath>
+	</template>
+
+	<template id="decor_billing_payment" inherit_id="website_sale.payment" name="decor Billing payment">
+		<xpath expr="//div[hasclass('oe_website_sale')]" position="attributes">
+			<attribute name="class" add="cart_payment_main" separator=" "></attribute>
+		</xpath>
+
+		<xpath expr="//div[hasclass('order-xl-1')]" position="attributes">
+			<attribute name="class" add="col-xl-12 bill-payment" remove="col-xl" separator=" "></attribute>
+		</xpath>
+
+		<xpath expr="//div[hasclass('order-xl-2','col-xl-auto')]" position="attributes">
+			<attribute name="class" add="col-xl-12 payment-product-detail" remove="col-xl-auto" separator=" "></attribute>
+		</xpath>
+	</template>
+
+	<template id="decor_cart_suggested_products" inherit_id="website_sale.suggested_products_list" name="Decor Cart Suggested Products">
+		<xpath expr="//h5[hasclass('js_cart_lines')]" position="attributes">
+			<attribute name="class" add="decor_suggest_title mt32" separator=" "></attribute>
+		</xpath>
+		<xpath expr="//table[@id='suggested_products']" position="attributes">
+			<attribute name="class" add="decor_suggest_table" remove="table-striped" separator=" "></attribute>
+		</xpath>
+	</template>
+
+
+	<!-- icons change templates -->
+	<template id="decor_address_kanban_icons" inherit_id="website_sale.address_kanban" name="decor Address Kanban Icons">
+		<xpath expr="//div[hasclass('card-footer')]//i[hasclass('fa-check')]" position="attributes">
+			<attribute name="class" add="lnr lnr-location" remove="fa fa-check" separator=" "></attribute>
+		</xpath>
+
+		<xpath expr="//div[hasclass('card-body')]//i[hasclass('fa-edit')]" position="attributes">
+			<attribute name="class" add="lnr lnr-pencil" remove="fa fa-edit" separator=" "></attribute>
+		</xpath>
+	</template>
+
+	<!-- <template id="decor_checkout_icons" inherit_id="website_sale.checkout" name="decor Checkout Icons">
+		<xpath expr="//div[hasclass('order-xl-1')]//i[hasclass('fa-chevron-left')]" position="attributes">
+			<attribute name="class" add="lnr lnr-chevron-left" remove="fa fa-chevron-left" separator=" "></attribute>
+		</xpath>
+
+		<xpath expr="//div[hasclass('order-xl-1')]//i[hasclass('fa-chevron-right')]" position="attributes">
+			<attribute name="class" add="lnr lnr-chevron-right" remove="fa fa-chevron-right" separator=" "></attribute>
+		</xpath>
+	</template>
+
+	<template id="decor_address_icons" inherit_id="website_sale.address" name="decor Address Icons">
+		<xpath expr="//div[hasclass('d-flex','justify-content-between')]//i[hasclass('fa-chevron-left')]" position="attributes">
+			<attribute name="class" add="lnr lnr-chevron-left" remove="fa fa-chevron-left" separator=" "></attribute>
+		</xpath>
+
+		<xpath expr="//div[hasclass('d-flex','justify-content-between')]//i[hasclass('fa-chevron-right')]" position="attributes">
+			<attribute name="class" add="lnr lnr-chevron-right" remove="fa fa-chevron-right" separator=" "></attribute>
+		</xpath>
+	</template> -->
+
+	<template id="decor_payment_icons" inherit_id="website_sale.address_on_payment" name="decor Payment Icons">
+		<xpath expr="//div[hasclass('card-body')]//i[hasclass('fa-edit')]" position="attributes">
+			<attribute name="class" add="lnr lnr-pencil" remove="fa fa-edit" separator=" "></attribute>
+		</xpath>
+	</template>
+
+	<!-- <template id="decor_extra_info_icons" inherit_id="website_sale.extra_info" name="decor Extra Info Icons">
+		<xpath expr="//div[hasclass('s_website_form_submit')]//span[hasclass('fa-chevron-left')]" position="attributes">
+			<attribute name="class" add="lnr lnr-chevron-left" remove="fa fa-chevron-left" separator=" "></attribute>
+		</xpath>
+
+		<xpath expr="//div[hasclass('s_website_form_submit')]//span[hasclass('fa-chevron-right')]" position="attributes">
+			<attribute name="class" add="lnr lnr-chevron-right" remove="fa fa-chevron-right" separator=" "></attribute>
+		</xpath>
+	</template> -->
+</odoo>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_brand_configurator" name="Brand Configurator">
+		<section class="bizople_brand_configurator oe_website_sale grid_style layout_style_1" brand_config_id="1" brand_id="" brand_limit="10" column_limit="4">
+			<div class="container o_not_editable"></div>
+        </section>
+	</template>
+
+	<template id="brand_configurator_snippet_options_inherit" inherit_id="website.snippet_options">
+		<xpath expr="//div[@data-js='HeaderBox']" position="after">
+			<div data-selector=".bizople_brand_configurator" data-js="theme_decor_brand_configurator">
+				<we-row string="Select brand">
+	                <we-button class="biz_change_brand"><i class="fa fa-fw fa-plus"/> Change Brands</we-button>
+		        </we-row>
+			</div>
+		</xpath>
+	</template>
+
+	<template id="brand_configurator_modal_checkbox" name="Configurator brand Checkbox">
+		<t t-foreach="brand" t-as="b">
+			<div class="form-check d-none">
+	            <label class="form-check-label container" t-att-prod_id="b.id">
+	                <input type="checkbox" class="form-check-input" t-att-id="b.id" t-att-name="b.name" t-att-value="b.id"/><t t-out="b.name"/>
+	                <span class="checkmark"></span>
+	            </label>
+	        </div>
+	    </t>
+	</template>
+
+	<template id="brand_configurator_grid_style" name="brand Configurator Grid Style">
+		<div class="brand_configurator_content">
+			<div class="slider-titles" t-if="config_title">
+				<h3 class="text-center"><t t-out="config_title"/></h3>
+				<div class="slider-separator"/>
+			</div>
+			<div class="row">
+				<t t-set="biz_col_size" t-value="12 / column_limit"/>
+				<t t-set="biz_col_size_int" t-value="int(biz_col_size)"/>
+				<t t-foreach="brand_detail" t-as="b">
+					<div t-att-class="'col-lg-%s'%(biz_col_size_int)+' mb32 col-md-6'">
+						<div class="brand_preview">
+	                        <div class="item sli-cat">
+	                            <a t-attf-href="/brand/#{ slug(b) }"> 
+	                                <div class="sli-cat-img">
+	                                    <img t-att-alt="b.name" t-att-src="website.image_url(b, 'image')" t-att-title="b.name" class="img img-fluid"/>
+	                                </div>
+	                                <div class='comm_cat_title'>
+	                                	<a t-attf-href="/brand/#{ slug(b) }">
+		                                    <p class="sli-cat-title m-0">
+		                                        <t t-out="b.name"/>
+		                                    </p>
+		                                </a>
+	                                    <p class="product_count m-0 text-white">
+			                            	<span class="product_count">
+								                <span><t t-out="b.with_context(product_brand_search=search).brand_count" /></span>
+								                <span class="ms-1">Items</span>
+								            </span>
+			                            </p>
+	                                </div>
+	                            </a>
+	                        </div>
+	                    </div>
+					</div>
+				</t>
+			</div>
+		</div>
+	</template>
+
+	<template id="brand_configurator_slider_style" name="brand Configurator Slider Style">
+		<div class="brand_configurator_content">
+			<div class="slider-titles" t-if="config_title or config_slider_description">
+				<t t-if="config_title">
+					<h3 class="text-center text-secondary"><t t-out="config_title"/></h3>
+				</t>
+				<t t-if="config_slider_description">
+					<p class="text-center text-muted mb-0"><t t-out="config_slider_description"/></p>
+				</t>
+				<div class="slider-separator"/>
+			</div>
+			<div class="row align-items-center">
+				<div id="configurator-slider" class="col-md-12 owl-carousel">
+					<t t-foreach="brand_detail" t-as="b">
+						<div class="brand_preview">
+	                    	<div class="item sli-cat">
+	                            <a t-attf-href="/brand/#{ slug(b) }"> 
+	                                <div class="sli-cat-img">
+	                                    <img t-att-alt="b.name" t-att-src="website.image_url(b, 'image')" t-att-title="b.name" class="img img-fluid"/>
+	                                </div>
+	                                <div class='comm_cat_title'>
+	                                	<a t-attf-href="/brand/#{ slug(b) }">
+		                                    <p class="sli-cat-title m-0">
+		                                        <t t-out="b.name"/>
+		                                    </p>
+		                                </a>
+	                                    <p class="product_count m-0 text-white">
+			                            	<span class="product_count">
+								                <span><t t-out="b.with_context(product_brand_search=search).brand_count" /></span>
+								                <span class="ms-1">Items</span>
+								            </span>
+			                            </p>
+	                                </div>
+	                            </a>
+	                        </div>
+		                </div>
+					</t>
+				</div>
+			</div>
+		</div>
+	</template>
+</odoo>

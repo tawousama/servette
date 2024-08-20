@@ -1,0 +1,133 @@
+.contactus-section{
+	.page-title{
+		margin: 48px 0 15px;
+	    padding-left: 10px;
+	    border-left: 4px solid $primary;
+	    color: $primary;
+	}
+	.description {
+	    margin-bottom: 70px;
+	    color: #818181;
+	}
+	.block-title{
+		margin-bottom: 45px;
+		text-align: center;
+		line-height: 1;
+		font-size:25px;
+		color:$secondary;
+		font-weight: 400;
+	}
+	.form{
+		padding:50px;
+		border: 1px solid #efefef;
+	}
+	label{
+		min-width: 100px;
+	    margin-bottom: 15px;
+	    color: $secondary;
+	    font-size: 14px;
+	}
+	input:not([type='checkbox']):not([type='radio']):not([type='file']){
+		width: 100%;
+	    margin-bottom: 15px;
+	    padding: 15px 30px;
+	    border: 1px solid #c3c3c3;
+	    border-radius: 2px;
+	    font-size: 14px;
+	    letter-spacing: 0.05em;
+	    height: 50px;
+	}
+	.s_website_form_date, .s_website_form_datetime{
+		.input-group-text{
+			height: 50px;
+		}
+	}
+	textarea{
+		width: 100%;
+	    margin-bottom: 15px;
+	    padding: 15px 30px;
+	    border: 1px solid #c3c3c3;
+	    border-radius: 2px;
+	    font-size: 14px;
+	    letter-spacing: 0.05em;
+	    height: 100px;
+	}
+	.s_website_form_send{
+		color: #fff;
+    	border-radius:0px;
+    	font-weight: 600;
+    	padding: 10px;
+	}
+	.contact-details{
+		margin-top: 70px;
+		padding-left: 1rem;
+		.detail-container{
+			margin-bottom:40px;
+		}
+		.detail-icon{
+			font-size:2rem;
+		}
+		.detail-info{
+			a{
+				color: #444444;
+				text-decoration: none;
+			}
+			line-height:24px;
+			font-weight:400;
+			color: #444444;
+			margin-bottom:0;
+		}
+	}
+}
+.contact-service-section{
+	.promo-content{
+	    padding: 15px;
+	    background-color: #ffffff;
+	    border-left: 1px solid #e5e5e5;
+	}
+	.icon{
+		padding-right: 10px;
+		font-size:35px;
+	}
+	.info{
+		color: #999999;
+	}
+	@media (max-width: 767px) {
+		.promo-content{
+			border:none !important;
+		}
+	}
+}
+
+.oe_website_login_container{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding:100px 0;
+
+	.oe_login_form, .oe_signup_form, .oe_reset_password_form{
+		max-width: 400px !important;
+		padding: 50px;
+    	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.25);
+    	background-color:#fff;
+	}
+
+	.oe_login_form, .oe_signup_form, .oe_reset_password_form{
+		label{
+			color: $secondary;
+		}
+	}
+	a:hover{
+		text-decoration:none;
+	}
+	.btn:hover{
+		text-decoration:none;
+	}
+	@media(max-width:767px){
+		padding: 20px !important;
+		background-size: unset !important;
+	}
+	@media (min-width: 768px) and (max-width: 991.98px) {
+		padding: 30px 0 !important;
+	}
+}

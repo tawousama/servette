@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_homepage_two_sale" name="Sale">
+		<section class="furniture-sale pt192 pb192 mx-0 mx-xl-5" style="background-image: url('/theme_decor/static/src/img/furniture-sale.jpg');">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-md-7 col-lg-6 offset-md-5 offset-lg-6">
+						<div class="furniture-sale-content">
+							<div class="content">
+								<h3>Ceiling Lamps 2021</h3>
+								<h1>SALE 40%</h1>
+								<div class="s_btn" data-name="Button">
+        							<a href="#" class="btn btn-outline-secondary bizople_button banner-btn">Shop now</a>
+        						</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

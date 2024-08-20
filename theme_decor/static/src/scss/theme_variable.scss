@@ -1,0 +1,159 @@
+$primarycolor: #ff8a00 !default;
+$secondarycolor: #000000 !default;
+$primarygamma: #f6f6f6 !default;
+$ptextcolor: #999999 !default;
+
+
+// $h1-font-size: 60px;
+// $h2-font-size: 75px;
+// $h3-font-size: 35px;
+// $h4-font-size: 25px;
+// $h5-font-size: 20px;
+// $h6-font-size: 18px;
+
+$o-theme-h1-font-size-multiplier: 3.75;
+$o-theme-h2-font-size-multiplier: 4.6875;
+$o-theme-h3-font-size-multiplier: 2.1875;
+$o-theme-h4-font-size-multiplier: 1.5625;
+$o-theme-h5-font-size-multiplier: 1.25;
+$o-theme-h6-font-size-multiplier: 1.125;
+
+/* -------------------------- Main Colors ------------------------*/
+
+$o-color-palettes: map-merge($o-color-palettes,
+    (
+        'base-1': map-merge(map-get($o-color-palettes, 'base-1'), (
+            'o-color-1': $primarycolor,
+            'o-color-2': $secondarycolor,
+            'o-color-3': $primarygamma,
+            'o-color-4': #f8f8f8,
+            'o-color-5': #999999,
+        )),
+    )
+);
+
+/* -------------------------- Text Colors ------------------------*/
+$o-base-gray-color-palette: (
+    'white': #FFFFFF,
+    '100': #F8F9FA,
+    '200': #E9ECEF,
+    '300': #DEE2E6,
+    '400': #CED4DA,
+    '500': #ADB5BD,
+    '600': #6C757D,
+    '700': #999999,
+    '800': #181818,
+    '900': #616161,
+    'black': #000000,
+) !default;
+
+$o-base-color-combination: (
+    'bg': 'white',
+    'text': #999999, // Default to better contrast with the 'bg'
+    'headings': #000000, // Default to 'text'
+    'h2': #000000, // Default to 'h(x-1)'
+    'h3': #000000,
+    'h4': #000000,
+    'h5': #000000,
+    'h6': #000000,
+    'link': null, // Default to BS 'primary' (= first odoo color)
+    'btn-primary': null, // Default to BS 'primary' (= first odoo color)
+    'btn-primary-border': null, // Default to 'btn-primary'
+    'btn-secondary': null, // Default to BS 'secondary' (= second odoo color)
+    'btn-secondary-border': null, // Default to 'btn-secondary'
+) !default;
+
+$o-color-combinations-presets: (
+    (
+        (
+            'bg': 'white',
+        ),
+        (
+            'bg': 'o-color-3',
+            'headings': 'o-color-1',
+        ),
+        (
+            'bg': 'o-color-2',
+            'btn-secondary': 'o-color-3',
+        ),
+        (
+            'bg': 'o-color-1',
+            'link': 'o-color-5',
+            'btn-primary': 'o-color-5',
+            'btn-secondary': 'o-color-3',
+        ),
+        (
+            'bg': 'o-color-5',
+            'headings': 'o-color-4',
+            'btn-secondary': 'o-color-3',
+        ),
+    ),
+);
+$o-color-combinations-preset-number: 1;
+
+/* -------------------------- fonts -----------------------------*/
+
+$o-website-values-palettes: (
+    (
+        'headings-font': 'Poppins',
+        'navbar-font': 'Poppins',
+        'buttons-font': 'Poppins',
+        'h1-font': 'Poppins',
+        'h2-font': 'Poppins',
+        'h3-font': 'Poppins',
+        'h4-font': 'Poppins',
+        'h5-font': 'Poppins',
+        'h6-font': 'Poppins',
+
+        'h1-font-size': $o-theme-h1-font-size-multiplier,
+        'h2-font-size': $o-theme-h2-font-size-multiplier,
+        'h3-font-size': $o-theme-h3-font-size-multiplier,
+        'h4-font-size': $o-theme-h4-font-size-multiplier,
+        'h5-font-size': $o-theme-h5-font-size-multiplier,
+        'h6-font-size': $o-theme-h6-font-size-multiplier,
+        // 'h2-font-size': $h2-font-size,
+        // 'h3-font-size': $h3-font-size,
+        // 'h4-font-size': $h4-font-size,
+        // 'h5-font-size': $h5-font-size,
+        // 'h6-font-size': $h6-font-size,
+    ),
+);
+
+$o-theme-font-configs: (
+    'Poppins': (
+        'family': ('Poppins',null),
+        'url': 'Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i',
+    ),
+    'Rubik': (
+        'family': ('Rubik',null),
+        'url': 'Rubik:400,400i,700,700i',
+    ),
+    'Montserrat': (
+        'family': ('Montserrat', sans-serif),
+        'url': 'Montserrat:400,400i,700,700i',
+    ),
+    'Roboto': (
+        'family': ('Roboto', sans-serif),
+        'url': 'Roboto:300,300i,400,400i,700,700i',
+    ),
+    'Open Sans': (
+        'family': ('Open Sans', sans-serif),
+        'url': 'Open+Sans:300,300i,400,400i,700,700i',
+    ),
+    'Source Sans Pro': (
+        'family': ('Source Sans Pro', sans-serif),
+        'url': 'Source+Sans+Pro:300,300i,400,400i,700,700i',
+    ),
+    'Raleway': (
+        'family': ('Raleway', sans-serif),
+        'url': 'Raleway:300,300i,400,400i,700,700i',
+    ),
+    'Noto Serif': (
+        'family': ('Noto Serif', serif),
+        'url': 'Noto+Serif:300,300i,400,400i,700,700i',
+    ),
+    'Arvo': (
+        'family': ('Arvo', Times, serif),
+        'url': 'Arvo:300,300i,400,400i,700,700i',
+    ),
+);

@@ -1,0 +1,105 @@
+.btn-bizople_button_9 {
+    letter-spacing: 0;
+    transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+    color: black;
+    border: 0 !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-bizople_button_9:before, .btn-bizople_button_9:after {
+    content: '';
+    position: absolute; 
+    transition: inherit;
+    z-index: -1;
+    left: 0;
+    height: 0;
+    width: 100%;
+}
+
+.btn-bizople_button_9:before {
+    top: 0;  
+    border: 1px solid black;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.btn-bizople_button_9:after {
+    bottom: 0;
+    height: 0;
+}
+
+.btn-bizople_button_9:hover {
+    color: $light !important;
+    transition-delay: .5s;
+}
+.btn-bizople_button_9:active {
+    color: $light !important;
+    transition-delay: .5s;
+}
+
+.btn-bizople_button_9:hover:before {
+    transition-delay: 0s;
+}
+
+.btn-bizople_button_9:hover:after {
+    background-color: black;
+    transition-delay: .35s;
+}
+
+.btn-bizople_button_9:hover:before,
+.btn-bizople_button_9:hover:after {
+    height: 100%;
+}
+
+
+/*::::::::::::: btn-secondary and btn-outline-secondary ::::::::::::::::::::::::::*/
+
+.btn-bizople_button_9.btn-secondary, .btn-bizople_button_9.btn-outline-secondary{
+    color: $secondary !important;
+}
+
+.btn-bizople_button_9.btn-secondary:active, .btn-bizople_button_9.btn-outline-secondary:active {
+    background-color: $secondary !important;
+}
+
+.btn-bizople_button_9.btn-secondary, .btn.btn-bizople_button_9.btn-outline-secondary{
+    &:before{
+        border-color: $secondary !important;
+    }
+}
+
+.btn-bizople_button_9.btn-secondary:hover, .btn-bizople_button_9.btn-outline-secondary:hover {
+    color: $light !important;
+    &:after{
+        background-color: $secondary !important;
+    }
+}
+
+/*::::::::::::: btn-primary and btn-outline-primary ::::::::::::::::::::::::::*/
+
+.btn-bizople_button_9.btn-primary, .btn-bizople_button_9.btn-outline-primary{
+    color: $primary !important;
+}
+
+.btn-bizople_button_9.btn-primary:active, .btn-bizople_button_9.btn-outline-primary:active {
+    background-color: $primary !important;
+}
+
+.btn-bizople_button_9.btn-primary, .btn.btn-bizople_button_9.btn-outline-primary{
+    &:before{
+        border-color: $primary !important;
+    }
+}
+
+.btn-bizople_button_9.btn-primary:hover, .btn-bizople_button_9.btn-outline-primary:hover {
+    color: $light !important;
+    &:after{
+        background-color: $primary !important;
+    }
+}

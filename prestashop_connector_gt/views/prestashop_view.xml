@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="prestashop_instance_form_view" model="ir.ui.view">
+            <field name="name">prestashop.instance.form</field>
+            <field name="type">form</field>
+            <field name="model">prestashop.instance</field>
+            <field name="arch" type="xml">
+                <form create="0">
+                    <header>
+                        <button name="create_prestashop_shop_action" string="Create PrestaShop" type="object"
+                                class="btn-primary"/>
+                        <button name="prestashop_test_connection" string="Test" type="object"
+                                class="btn-primary"/>
+                    </header>
+                    <sheet>
+                        <!--                        <group colspan="3">-->
+                        <h1>
+                            <field name="name" select="1" required="True"/>
+                        </h1>
+                        <!--                        </group>-->
+                        <group>
+                            <field name="company_id"/>
+                        </group>
+                        <group>
+                            <field name="version" invisible="1"/>
+                        </group>
+                        <notebook colspan="4">
+                            <page string="Authentication">
+                                <separator string="Account Credentials"/>
+                                <group>
+                                    <field name="location"/>
+                                    <field name="webservice_key" password='True'/>
+                                    <field name="shipping_product_id" required='True'/>
+
+
+                                </group>
+                            </page>
+
+                            <page string="Configuration">
+                                <group name="Main_configuration" string="Main Configuration">
+                                    <field name="tax_type"/>
+                                    <field name="mapped_product_by"/>
+                                    <field name="warehouse_id" required="True"/>
+                                </group>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_prestashop_instance_info_tree">
+            <field name="name">prestashop.instance.tree</field>
+            <field name="model">prestashop.instance</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree create="0">
+                    <field name="name"/>
+                    <field name="location" colspan="4"/>
+                    <field name="webservice_key" colspan="4" password='True'/>
+                </tree>
+            </field>
+        </record>
+
+
+        <record id="action_wizard_prestashop_import_export_operation" model="ir.actions.server">
+            <field name="name">Presashop Instance</field>
+            <field name="model_id" ref="prestashop_connector_gt.model_prestashop_instance"/>
+            <field name="binding_model_id" ref="prestashop_connector_gt.model_prestashop_instance"/>
+            <field name="binding_view_types">form</field>
+            <field name="state">code</field>
+            <field name="code">
+                action = model.wizard_function()
+            </field>
+        </record>
+
+
+        Prestashop Instance Form,Tree Menu Action
+        <record model="ir.actions.act_window" id="action_prestashop_instance">
+            <field name="name">Prestashop Instances</field>
+            <field name="res_model">prestashop.instance</field>
+            <field name="type">ir.actions.act_window</field>
+            <!-- 			<field name="view_type">form</field>
+             -->
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_prestashop_instance_info_tree"/>
+        </record>
+
+
+        <record id="action_prestashop_connector" model="ir.actions.act_window">
+            <field name="name">Create Prestashop</field>
+            <field name="res_model">prestashop.instance</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="prestashop_instance_form_view"/>
+        </record>
+
+
+        <record id="res_config_settings_view_form" model="ir.ui.view">
+            <field name="name">res.config.settings.view.form.inherit.prestashop.dept</field>
+            <field name="model">res.config.settings</field>
+            <field name="priority" eval="5"/>
+            <field name="inherit_id" ref="base.res_config_settings_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[hasclass('settings')]" position="inside">
+                    <div class="app_settings_block" data-string="Prestashop Instance" string="Prestashop Instance"
+                         data-key="prestashop_instance">
+                        <h2>Create Prestashop Instances</h2>
+                        <div class='row mt16 o_settings_container' name="instance_setting_container">
+                            <div class='col-xs-12 col-md-6 o_setting_box' id="instance_setting">
+                                <div class="o_setting_left_pane"/>
+                                <div class="o_setting_right_pane">
+                                    <field name="select_instance" widget="selection"/>
+                                    <div class="mt8">
+                                        <button name="%(prestashop_connector_gt.action_create_prestashop_shop)d"
+                                                icon="fa-arrow-right"
+                                                type="action" string="Create More Instance" class="btn-link"/>
+                                    </div>
+                                    <!--                                    <br/>-->
+                                    <!--                                    <h2 style="font-size:25px;background-color:#e9ecef;"-->
+                                    <!--                                        attrs="{'invisible': [('select_instance', '=', False)]}">Prestashop Storeview-->
+                                    <!--                                    </h2>-->
+                                    <!--                                    <br/>-->
+                                    <!--                                    <br/>-->
+                                    <!--                                    <group>-->
+                                    <!--                                        <field name="prestashop_store_view_id"-->
+                                    <!--                                               attrs="{'invisible': [('select_instance', '=', False)]}"/>-->
+                                    <!--                                    </group>-->
+
+                                    <!--                                    <group>-->
+                                    <!--                                        <field name="sales_team"-->
+                                    <!--                                               attrs="{'invisible': [('prestashop_store_view_id', '=', False)]}"/>-->
+                                    <!--                                    </group>-->
+                                    <!--                                    <br/>-->
+                                    <!--                                    <group>-->
+                                    <!--                                        <field name="sales_person" style="width:100%"-->
+                                    <!--                                               attrs="{'invisible': [('prestashop_store_view_id', '=', False)]}"/>-->
+                                    <!--                                        &lt;!&ndash;                                        attrs="{'invisible': [('select_instance', '=', False)]}"&ndash;&gt;-->
+                                    <!--                                    </group>-->
+                                    <!--                                    <group>-->
+                                    <!--                                        <field name="is_use_odoo_order_sequence_prestashop" widget="boolean_toggle"-->
+                                    <!--                                               attrs="{'invisible': [('prestashop_store_view_id', '=', False)]}"/>-->
+                                    <!--                                    </group>-->
+
+                                    <!--                                    <group>-->
+                                    <!--                                        <field name="sale_order_prefix"-->
+                                    <!--                                               attrs="{'invisible': [('prestashop_store_view_id', '=', False)]}"/>-->
+                                    <!--                                    </group>-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="prestashop_settings_action" model="ir.actions.act_window">
+            <field name="name">Settings</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">res.config.settings</field>
+            <field name="view_id" ref="res_config_settings_view_form"/>
+            <field name="view_mode">form</field>
+            <field name="target">inline</field>
+            <field name="context">{'module': 'prestashop_instance', 'bin_size': False}</field>
+        </record>
+
+    </data>
+</odoo>

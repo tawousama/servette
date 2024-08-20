@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="theme_decor_header2" inherit_id="website.layout" name="Header Two" active="False">
+		<xpath expr="//header" position="attributes">
+			<attribute name="t-attf-class" add="decor-header" separator=" "></attribute>
+		</xpath>
+		<xpath expr="//header//nav" position="replace">
+			<nav data-name="Navbar" id="decor_header2" t-attf-class="decor_header_two">
+				<div class="top-header d-none d-lg-block border-bottom">
+					<div class="container-fluid px-5">
+						<div class="row py-2">
+							<div class="header_left col-lg-3 col-xl-5 d-none d-md-flex">
+								<!-- Language Selector -->
+								<t t-call="website.placeholder_header_language_selector">
+									<t t-set="_div_classes" t-valuef="my-auto ms-0 menu-language"/>
+								</t>
+								<!-- Pricelist Selector -->
+								<t t-call="theme_decor.placeholder_decor_header_pricelist"/>
+							</div>
+							<div class="header_right justify-content-end col-lg-9 col-xl-7 d-none d-md-flex">
+								<span class="welcome-text">Welcome to Our Store!</span>
+								<div class="top-navigation">
+									<ul class="menus d-flex">
+										<li class="menu-item">
+											<a href="/blog" class="nav-link ps-0">
+												<span class="fa fa-folder-open-o me-2"/>
+												<span>BLOG</span>
+											</a>
+										</li>
+										<li class="menu-item">
+											<a href="/help-center" class="nav-link">
+												<span class="fa fa-clone me-2"/>
+												<span>FAQ</span>
+											</a>
+										</li>
+										<li class="menu-item">
+											<a href="/contactus" class="nav-link">
+												<span class="fa fa-envelope-o me-2"/>
+												<span>CONTACT US</span>
+											</a>
+										</li>
+										<t t-call="theme_decor.theme_decor_signin_main_template">
+											<t t-set="_myaccount_class" t-value="'d-flex align-items-center ms-auto position-relative'"/>
+											<t t-set="_icon" t-value="False"/>
+											<t t-set="_text" t-value="False"/>
+											<t t-set="_username" t-value="True"/>
+										</t>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="middle-header">
+					<div class="container-fluid px-3 px-md-5">
+						<div class="row align-items-center">
+							<div class="mobile-sidebar-toggle header_left col-md-12 col-lg-7 d-flex align-items-center">
+								<button type="button" id="show-sidebar" class="mobile-sidebar-toggle btn btn-md d-block d-lg-none">
+									<span class="ti ti-view-grid text-secondary"></span>
+								</button>
+								<div class="website-logo-left align-items-center d-flex justify-content-center justify-content-lg-start mx-auto mx-lg-0">
+									<a href="/" class="navbar-brand logo m-0">
+							            <span t-field="website.logo" t-options="{'widget': 'image'}" role="img" t-att-aria-label="'Logo of %s' % website.name" t-att-title="website.name" />
+							        </a>
+								</div>
+								<t t-call="theme_decor.decor_header_mobile_cart"/>
+							<!-- </div> -->
+							<!-- <div class="header-center col-md-6 col-xl-7 d-none d-md-block"> -->
+								<nav class="navbar navbar-expand-lg p-0 ml24 w-lg-100" id="bizople-header-2">
+									<div class="collapse navbar-collapse" id="decor-header">
+										<ul class="nav navbar-nav justify-content-center" id="top_menu">
+											<t t-foreach="website.menu_id.child_id" t-as="submenu">
+												<t t-call="website.submenu">
+													<t t-set="item_class" t-value="'nav-item'" />
+													<t t-set="link_class" t-value="'nav-link'" />
+												</t>
+											</t>
+										</ul>
+									</div>
+								</nav>
+							</div>
+							<div class="header_right col-md-4 col-lg-5 d-none d-lg-flex align-items-center justify-content-end">
+		                		<div class="header-search-btn">
+		                			<button type="button" class="ri ri-search-2-line align-middle"></button>
+								  	<div class="bizople-search">
+									  	<div class="search">
+											<t t-call="theme_decor.desktop_search_bar" />
+										</div>
+								  	</div>
+								</div>
+								<div class="bizople-add-to-cart align-middle" id="">
+									<!-- <t t-if="is_view_active('website_sale.products_add_to_cart')"> -->
+									<t t-set="website_sale_order" t-value="website.sale_get_order()" />
+									<t t-call="website_sale.header_cart_link">
+										<t t-set="_icon" t-value="True"/>
+										<t t-set="_item_class" t-value="'nav-item'"/>
+										<t t-set="_link_class" t-value="'nav-link'"/>
+									</t>
+							        <!-- </t> -->
+								</div>
+								<div class="wishlist align-middle">
+									<!-- <t t-if="is_view_active('website_sale_wishlist.add_to_wishlist')"> -->
+										<t t-call="website_sale_wishlist.header_wishlist_link">
+							                <t t-set="_icon" t-value="True"/>
+							                <t t-set="_item_class" t-value="'nav-item'"/>
+							                <t t-set="_link_class" t-value="'nav-link'"/>
+							            </t>
+									<!-- </t> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bottom-header d-none d-lg-block">
+					<div class="container-fluid px-0">
+						<div class="row align-items-center gx-0">
+							<div class="col-md-4">
+								<div class="header-service bg-primary op-8 text-center py-2">
+									<div class="d-inline-flex align-items-center">
+										<span class="ri ri-truck-line align-middle text-white"/>
+										<span class="ps-2 text-uppercase text-white text">shipping and returns</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="header-service bg-primary text-center py-2">
+									<div class="d-inline-flex align-items-center">
+										<span class="ri ri-customer-service-line align-middle text-white"/>
+										<span class="ps-2 text-uppercase text-white text">24/7 SERVICES</span>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4">
+								<div class="header-service bg-primary op-8 text-center py-2">
+									<div class="d-inline-flex align-items-center">
+										<span class="ri ri-service-line align-middle text-white"/>
+										<span class="ps-2 text-uppercase text-white text">TRUSTED SERVICES</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- <t t-call="theme_decor.bizople_mbl_side_bar"/> -->
+				<!-- <t t-call="theme_decor.bizople_mbl_category_bar"/> -->
+			</nav>
+		</xpath>
+		<xpath expr="//header" position="before">
+			<div class="d-block d-lg-none">
+				<t t-call="theme_decor.bizople_mobile_bottom_icon_bar"/>
+			</div>
+			<t t-call="theme_decor.bizople_mbl_category_bar"/>
+			<t t-call="theme_decor.search_popup"/>
+		</xpath>
+	</template>
+
+</odoo>

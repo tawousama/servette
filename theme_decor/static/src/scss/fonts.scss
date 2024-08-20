@@ -1,0 +1,29 @@
+@font-face{
+    font-family:"Poppins";
+    src:url("/theme_decor/static/src/fonts/poppins/poppins-v15-latin-regular.woff2") format("woff2"),url("fonts/poppins/poppins-v15-latin-regular.woff") format("woff");
+}
+
+h1{
+	//font-size: $h1-font-size;
+	font-family: $h1-font;
+}
+h2 {
+	//font-size: $h2-font-size;
+  	font-family: $h2-font;
+}
+h3 {
+	//font-size: $h3-font-size;
+  	font-family: $h3-font;
+}
+h4 {
+	//font-size: $h4-font-size;
+  	font-family: $h4-font;
+}
+h5 {
+	//font-size: $h5-font-size;
+  	font-family: $h5-font;
+}
+h6 {
+	//font-size: $h6-font-size;
+  	font-family: $h6-font;
+}

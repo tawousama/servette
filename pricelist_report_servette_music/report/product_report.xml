@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+		    <record id="action_report_pricelist_sm" model="ir.actions.report">
+            <field name="name">Liste de prix Servette Music</field>
+            <field name="model">product.product</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">pricelist_report_servette_music.report_pricelist</field>
+            <field name="report_file">pricelist_report_servette_music.report_pricelist</field>
+        </record>
+    </data>
+</odoo>

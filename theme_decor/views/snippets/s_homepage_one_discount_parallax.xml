@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="s_homepage_one_discount_parallax" name="Discount Parallax">
+      	<div class="oe_structure"/>
+      	
+      	<section class="s_parallax parallax s_parallax_is_fixed o_half_screen_height o_colored_level pt120 pb120 s_decor_four" data-scroll-background-ratio="1" data-snippet="s_parallax" data-name="Parallax">
+	        <span class="s_parallax_bg oe_img_bg" style="background-image: url('/theme_decor/static/src/img/decor-discount.jpg'); background-position: 50% 75%;"></span>
+	        <div class="oe_structure oe_empty" data-editor-message="DRAG BUILDING BLOCKS HERE"></div>
+	        <div class="container">
+		        <div class="row">
+			        <div class="col-md-6">
+			        	<h2 class="title pb-2 fw-lighter">Discount Week</h2>
+			        	<h6 class="text pb-5">Over 400 Luxury Designer Brands</h6>
+			        	<a href="#" class="mb-2 mt40 btn btn-secondary flat btn-lg o_default_snippet_text">SHOP NOW</a>
+			        </div>
+			    </div>
+			</div>
+	    </section>
+					    
+      	<div class="oe_structure"/>
+	</template>
+</odoo>

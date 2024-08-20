@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="s_homepage_one_testimonial" name="Testimonial">
+      	<div class="oe_structure"/>
+      	
+      	<section class="s_parallax parallax s_parallax_is_fixed o_half_screen_height o_colored_level pt120 pb120 s_decor_five" data-scroll-background-ratio="1" data-snippet="s_parallax" data-name="Parallax">
+	        <span class="s_parallax_bg oe_img_bg" style="background-image: url('/theme_decor/static/src/img/decor-testimonial.jpg'); background-position: 50% 75%;"></span>
+	        <div class="oe_structure oe_empty" data-editor-message="DRAG BUILDING BLOCKS HERE"></div>
+	        <div class="container">
+		        <div class="row pt80 pb80">
+			        <div class="col-md-12 col-lg-7 text-center">
+			        	<h3 class="title">Our Clients</h3>
+			        	<section class="s_carousel_wrapper">
+							<div id="decor_carousel_222" class="s_carousel s_carousel_default carousel slide" data-bs-interval="10000">
+					            <ol class="carousel-indicators d-none o_we_no_overlay">
+					                <li data-bs-target="#decor_carousel_222" data-bs-slide-to="0" class="active"></li>
+					                <li data-bs-target="#decor_carousel_222" data-bs-slide-to="1" class=""></li>
+					                <li data-bs-target="#decor_carousel_222" data-bs-slide-to="2" class=""></li>
+					            </ol>
+					            <div class="carousel-inner">
+					                <div class="carousel-item  o_colored_level oe_img_bg active" data-name="Slide">
+					                    
+				                        <div class="row position-relative align-items-center m-0">
+				                            <div class="col-lg-12 col-md-12">
+				            					<section class="testimonial-box p-5 bg-white rounded-0">
+							                		<div class="d-flex align-items-center justify-content-between">
+								                		<div class="d-flex align-items-center">
+										              		<img class="img img-fluid" src="/theme_decor/static/src/img/app-team1.png"/>
+										              		<div class="name-posi ms-3">
+										              			<h5 class="text-800 mb-2"><b>Williamson</b></h5>
+										              			<p class=" text-uppercase">Web designer</p>
+										              		</div>
+										          		</div>
+										          		<div class="icon d-none d-md-block">
+										          			<span class="fa fa-quote-right fa-4x text-700"></span>
+										          		</div>
+										          	</div>
+									          		<p class="paragraph mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+									          	</section>
+				            				</div>
+				                        </div>
+					                </div>
+					                <div class="carousel-item o_colored_level oe_img_bg" data-name="Slide">
+				                        <div class="row position-relative align-items-center m-0">
+				                            <div class="col-lg-12 col-md-12">
+				            					<section class="testimonial-box p-5 bg-white rounded-0">
+							                		<div class="d-flex align-items-center justify-content-between">
+								                		<div class="d-flex align-items-center">
+										              		<img class="img img-fluid" src="/theme_decor/static/src/img/app-team2.png"/>
+										              		<div class="name-posi ms-3">
+										              			<h5 class="text-800 mb-2"><b>Williamson</b></h5>
+										              			<p class=" text-uppercase">Web designer</p>
+										              		</div>
+										          		</div>
+										          		<div class="icon d-none d-md-block">
+										          			<span class="fa fa-quote-right fa-4x text-700"></span>
+										          		</div>
+										          	</div>
+									          		<p class="paragraph mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+									          	</section>
+				            				</div>
+				                        </div>
+					                </div>
+					                <div class="carousel-item o_colored_level oe_img_bg" data-name="Slide">
+				                        <div class="row position-relative align-items-center m-0">
+				                            <div class="col-lg-12 col-md-12">
+				            					<section class="testimonial-box p-5 bg-white rounded-0">
+							                		<div class="d-flex align-items-center justify-content-between">
+								                		<div class="d-flex align-items-center">
+										              		<img class="img img-fluid" src="/theme_decor/static/src/img/app-team3.png"/>
+										              		<div class="name-posi ms-3">
+										              			<h5 class="text-800 mb-2"><b>Williamson</b></h5>
+										              			<p class=" text-uppercase">Web designer</p>
+										              		</div>
+										          		</div>
+										          		<div class="icon d-none d-md-block">
+										          			<span class="fa fa-quote-right fa-4x text-700"></span>
+										          		</div>
+										          	</div>
+									          		<p class="paragraph mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+									          	</section>
+				            				</div>
+				                        </div>
+					                </div>
+					            </div>
+	            				<div class="slider-control d-flex">
+						            <a class="carousel-control-prev o_not_editable o_we_no_overlay d-flex w-0" contenteditable="false" href="#decor_carousel_222" data-bs-slide="prev" role="img" aria-label="Previous" title="Previous">
+						                <span class="carousel-control-prev-icon text-800"></span>
+						            </a>
+						            <a class="carousel-control-next o_not_editable o_we_no_overlay d-flex w-0" contenteditable="false" href="#decor_carousel_222" data-bs-slide="next" role="img" aria-label="Next" title="Next">
+						               <span class="carousel-control-next-icon text-800"></span>
+						            </a>
+						        </div>
+	        				</div>
+	    				</section>
+    				</div>
+    			</div>
+    		</div>
+		</section>
+			    		
+      	<div class="oe_structure"/>
+	</template>
+</odoo>

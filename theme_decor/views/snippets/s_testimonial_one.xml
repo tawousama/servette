@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_testimonial_one" name="Testimonials One">
+		<section class="spa-client-testimonial" style="background-image: url('/theme_decor/static/src/img/transport-callaction.jpg');">
+			<div class="container extended-container">
+				<div class="row justify-content-center">
+					<div class="col-lg-12 col-md-12">
+						<div class="heading-content text-center">
+							<div class="title">
+								<h4 class="text-white">Testimonials</h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-12 col-md-12">
+						<div id="spa-testimonial-carousel" class="carousel bs-slider slide  control-round indicators-line" data-bs-ride="carousel" data-bs-pause="hover" data-bs-interval="7000">
+				          	<div class="carousel-inner" role="listbox">
+				            	<div class="carousel-item active">
+				            		<div class="container extended-container">
+				            			<div class="row position-relative justify-content-center">
+				            				<div class="col-lg-6 col-md-6 mb16">
+				            					<div class="client-content">
+				            						<div class="client-info">
+				            							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id lacinia nulla. Nulla suscipit semper mauris et dictum. Integer ut eros vel purus tristique finibus.</p>
+				            						</div>
+				            						<div class="image-info d-flex align-items-center">
+				            							<div class="image me-2">
+					            							<a href="#">
+																<img src="/theme_decor/static/src/img/decor-team1.png" class="img img-fluid"/>
+															</a>
+														</div>
+														<div class="author">
+															<h5>Anita Williams</h5>
+															<p>Happy Customer</p>
+														</div>
+				            						</div>
+				            					</div>
+				            				</div>
+				            				<div class="col-lg-6 col-md-6 mb16">
+				            					<div class="client-content">
+				            						<div class="client-info">
+				            							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id lacinia nulla. Nulla suscipit semper mauris et dictum. Integer ut eros vel purus tristique finibus.</p>
+				            						</div>
+				            						<div class="image-info d-flex align-items-center">
+				            							<div class="image me-2">
+					            							<a href="#">
+																<img src="/theme_decor/static/src/img/decor-team2.png" class="img img-fluid"/>
+															</a>
+														</div>
+														<div class="author">
+															<h5>Anita Williams</h5>
+															<p>Happy Customer</p>
+														</div>
+				            						</div>
+				            					</div>
+				            				</div>
+				            			</div>
+				            		</div>
+				            	</div>
+				            	<div class="carousel-item">
+				            		<div class="container extended-container">
+				            			<div class="row position-relative justify-content-center">
+				            				<div class="col-lg-6 col-md-6 mb16">
+				            					<div class="client-content">
+				            						<div class="client-info">
+				            							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id lacinia nulla. Nulla suscipit semper mauris et dictum. Integer ut eros vel purus tristique finibus.</p>
+				            						</div>
+				            						<div class="image-info d-flex align-items-center">
+				            							<div class="image me-2">
+					            							<a href="#">
+																<img src="/theme_decor/static/src/img/decor-team3.png" class="img img-fluid"/>
+															</a>
+														</div>
+														<div class="author">
+															<h5>Anita Williams</h5>
+															<p>Happy Customer</p>
+														</div>
+				            						</div>
+				            					</div>
+				            				</div>
+				            				<div class="col-lg-6 col-md-6 mb16">
+				            					<div class="client-content">
+				            						<div class="client-info">
+				            							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id lacinia nulla. Nulla suscipit semper mauris et dictum. Integer ut eros vel purus tristique finibus.</p>
+				            						</div>
+				            						<div class="image-info d-flex align-items-center">
+				            							<div class="image me-2">
+					            							<a href="#">
+																<img src="/theme_decor/static/src/img/decor-team4.png" class="img img-fluid"/>
+															</a>
+														</div>
+														<div class="author">
+															<h5>Anita Williams</h5>
+															<p>Happy Customer</p>
+														</div>
+				            						</div>
+				            					</div>
+				            				</div>
+				            			</div>
+				            		</div>
+				            	</div>
+				            	<div class="carousel-item">
+				            		<div class="container extended-container">
+				            			<div class="row position-relative justify-content-center">
+				            				<div class="col-lg-6 col-md-6 mb16">
+				            					<div class="client-content">
+				            						<div class="client-info">
+				            							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id lacinia nulla. Nulla suscipit semper mauris et dictum. Integer ut eros vel purus tristique finibus.</p>
+				            						</div>
+				            						<div class="image-info d-flex align-items-center">
+				            							<div class="image me-2">
+					            							<a href="#">
+																<img src="/theme_decor/static/src/img/decor-team1.png" class="img img-fluid"/>
+															</a>
+														</div>
+														<div class="author">
+															<h5>Anita Williams</h5>
+															<p>Happy Customer</p>
+														</div>
+				            						</div>
+				            					</div>
+				            				</div>
+				            				<div class="col-lg-6 col-md-6 mb16">
+				            					<div class="client-content">
+				            						<div class="client-info">
+				            							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id lacinia nulla. Nulla suscipit semper mauris et dictum. Integer ut eros vel purus tristique finibus.</p>
+				            						</div>
+				            						<div class="image-info d-flex align-items-center">
+				            							<div class="image me-2">
+					            							<a href="#">
+																<img src="/theme_decor/static/src/img/decor-team1.png" class="img img-fluid"/>
+															</a>
+														</div>
+														<div class="author">
+															<h5>Anita Williams</h5>
+															<p>Happy Customer</p>
+														</div>
+				            						</div>
+				            					</div>
+				            				</div>
+				            			</div>
+				            		</div>
+				            	</div>
+				          	</div>
+				          	<ol class="carousel-indicators">
+					            <li data-bs-target="#spa-testimonial-carousel" data-bs-slide-to="0" class="active"/>
+					            <li data-bs-target="#spa-testimonial-carousel" data-bs-slide-to="1"/>
+					            <li data-bs-target="#spa-testimonial-carousel" data-bs-slide-to="2"/>
+				        	</ol>
+				        	<a class="left carousel-control-prev d-none" data-bs-target="#spa-testimonial-carousel" role="button" data-bs-slide="prev">
+			                	<span class="fa fa-angle-left "/>
+			               	 	<b class="sr-only font-normal o_default_snippet_text">Previous</b>
+			              	</a>
+			              	<a class="right carousel-control-next d-none" data-bs-target="#spa-testimonial-carousel" role="button" data-bs-slide="next">
+			                	<span class="fa fa-angle-right"/>
+			                	<b class="sr-only font-normal o_default_snippet_text">Next</b>
+			              	</a>
+			        	</div>
+			        </div>
+				</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

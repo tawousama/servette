@@ -1,0 +1,108 @@
+.btn-bizople_button_4 {
+    z-index: 1;
+    letter-spacing: 0;
+    background-color: transparent !important;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    border-radius: 2px !important;
+    border:2px solid $primary;
+    color: $primary;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn-bizople_button_4:active {
+  background-color: $primary;
+}
+
+.btn-bizople_button_4 {
+  &:before {
+    -webkit-transition:0.5s all ease;
+    transition:0.5s all ease;
+    position:absolute;
+    top:0;
+    left:50%;
+    right:50%;
+    bottom:0;
+    opacity:0;
+    content:'';
+    background-color:$primary;
+    z-index:-1;
+  }
+  &:hover {
+    &:before {
+      -webkit-transition:0.5s all ease;
+      transition:0.5s all ease;
+      left:0;
+      right:0;
+      opacity:1;
+    }
+    color: #fff !important;
+    background-color: transparent !important;
+  }
+  &:focus {
+    &:before {
+      transition:0.5s all ease;
+      left:0;
+      right:0;
+      opacity:1;
+    }
+    color: #fff !important;
+  }
+}
+
+/*::::::::::::::::::::::::::::::::: Colors ::::::::::::::::::::::::::::::::::::::*/
+
+
+/*::::::::::::: btn-primary and btn-outline-primary ::::::::::::::::::::::::::*/
+
+.btn-bizople_button_4.btn-primary, .btn-bizople_button_4.btn-outline-primary{
+    color: $primary !important;
+    border:2px solid $primary !important;
+}
+
+.btn-bizople_button_4.btn-primary:active, .btn-bizople_button_4.btn-outline-primary:active {
+  background-color: $primary !important;
+  color: $light !important;
+}
+
+.btn-bizople_button_4.btn-primary:focus, .btn-bizople_button_4.btn-outline-primary:focus{
+  background-color: $primary !important;
+  color: $light !important;
+}
+
+.btn-bizople_button_4.btn-primary, .btn-bizople_button_4.btn-outline-primary {
+  &:hover{
+    color: $light !important;
+  }
+  &:before {
+    background-color: $primary !important;
+  }
+}
+
+/*::::::::::::: btn-secondary and btn-outline-secondary ::::::::::::::::::::::::::*/
+
+.btn-bizople_button_4.btn-secondary, .btn-bizople_button_4.btn-outline-secondary{
+    color: $secondary !important;
+    border:2px solid $secondary !important;
+}
+
+.btn-bizople_button_4.btn-secondary:active, .btn-bizople_button_4.btn-outline-secondary:active{
+  background-color: $secondary !important;
+  color: $light !important;
+}
+
+.btn-bizople_button_4.btn-secondary:focus, .btn-bizople_button_4.btn-outline-secondary:focus{
+  background-color: $secondary !important;
+  color: $light !important;
+}
+
+.btn-bizople_button_4.btn-secondary, .btn-bizople_button_4.btn-outline-secondary {
+  &:hover{
+    color: $light !important;
+  }
+  &:before {
+    background-color: $secondary !important;
+  }
+}

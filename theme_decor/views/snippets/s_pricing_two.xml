@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="s_pricing_two" name="Pricing Two">
+      	<div class="oe_structure"/>
+      	<section class="solarmodern-pricing pt104 pb104 bg-o-color-3">
+			<div class="container">
+				<div class="mb48 text-center w-md-75 mx-md-auto">
+	            	<p class="mb-2 text-primary"><b>PRICING PLAN</b></p>
+	              	<h3 class="o_default_snippet_text "><b>Choose Our Best Offers</b></h3>
+	              	<p class="my-2 o_default_snippet_text">Write one or two paragraphs describing your product or services. To be successful your content needs to be useful to your readers.Start with the customer – find out what they want and give it to them.</p>
+              	</div>
+				<div class="row">
+					<div class="col-md-4 py-2 py-md-0">
+						<div class="pricing_block  rounded shadow">
+							<section class="pricing_back_img o_colored_level oe_img_bg" style="background-position: center; background-image: url('/theme_decor/static/src/img/solar_banner1.jpg'); background-size: cover;">
+								<div class="o_we_bg_filter bg-black-50"></div>
+								<div class="px-lg-4 py-5 text-white text-center">
+									<p>STANDARD</p>
+									<h3 class="text-white fw-bolder mt-2">$ 99.00</h3>
+									<p class="mb-0 mt-2">Per Year</p>
+								</div>
+							</section>
+							<section class="pricing_content bg-white p-4 text-center">
+								<ul class="list-unstyled ">
+            						<li class="mb-2">Repair &amp; Replacement</li>
+									<li class="mb-2">Monitoring Work</li>
+									<li class="mb-2">Installation</li>
+									<li class="mb-2">Furniture Maintence</li>
+									<li class="mb-2">Product Warranty</li>
+									<li class="mb-2">24/7 Skilled Support</li>
+	                          	</ul>
+	                          	<p class="mt-3"> 
+		                          	<a href="#" class="btn btn-primary btn-lg">
+		                          		Read More
+		                          	</a>
+	                          	</p>
+							</section>
+						</div>
+					</div>
+					<div class="col-md-4 py-2 py-md-0">
+						<div class="pricing_block  rounded shadow">
+							<section class="pricing_back_img o_colored_level oe_img_bg" style="background-position: center; background-image: url('/theme_decor/static/src/img/solar_banner2.jpg'); background-size: cover;">
+								<div class="o_we_bg_filter" style="background-color: rgba(255, 138, 0, 0.75) !important;"></div>
+								<div class="px-lg-4 py-5 text-white text-center">
+									<p>PREMIUM</p>
+									<h3 class="text-white fw-bolder mt-2">$ 175.00</h3>
+									<p class="mb-0 mt-2">Per Year</p>
+								</div>
+							</section>
+							<section class="pricing_content bg-white p-4 text-center">
+								<ul class="list-unstyled ">
+            						<li class="mb-2">Repair &amp; Replacement</li>
+									<li class="mb-2">Monitoring Work</li>
+									<li class="mb-2">Installation</li>
+									<li class="mb-2">Furniture Maintence</li>
+									<li class="mb-2">Product Warranty</li>
+									<li class="mb-2">24/7 Skilled Support</li>
+	                          	</ul>
+	                          	<p class="mt-3"> 
+		                          	<a href="#" class="btn btn-primary btn-lg">
+		                          		Read More
+		                          	</a>
+	                          	</p>
+							</section>
+						</div>
+					</div>
+					<div class="col-md-4 py-2 py-md-0">
+						<div class="pricing_block  rounded shadow">
+							<section class="pricing_back_img o_colored_level oe_img_bg" style="background-position: center; background-image: url('/theme_decor/static/src/img/solar_banner3.jpg'); background-size: cover;">
+								<div class="o_we_bg_filter bg-black-50"></div>
+								<div class="px-lg-4 py-5 text-white text-center">
+									<p>LUX</p>
+									<h3 class="text-white fw-bolder mt-2">$ 225.00</h3>
+									<p class="mb-0 mt-2">Per Year</p>
+								</div>
+							</section>
+							<section class="pricing_content bg-white p-4 text-center">
+								<ul class="list-unstyled ">
+            						<li class="mb-2">Repair &amp; Replacement</li>
+									<li class="mb-2">Monitoring Work</li>
+									<li class="mb-2">Installation</li>
+									<li class="mb-2">Furniture Maintence</li>
+									<li class="mb-2">Product Warranty</li>
+									<li class="mb-2">24/7 Skilled Support</li>
+	                          	</ul>
+	                          	<p class="mt-3"> 
+		                          	<a href="#" class="btn btn-primary btn-lg">
+		                          		Read More
+		                          	</a>
+	                          	</p>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+      	<div class="oe_structure"/>
+	</template>
+</odoo>

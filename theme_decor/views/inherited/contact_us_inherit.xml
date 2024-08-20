@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="theme_common_contactus_inherited"
+		inherit_id="website.contactus">
+		<xpath expr="//section[hasclass('s_title')]" position="replace">
+		</xpath>
+		<xpath expr="//section[hasclass('s_text_block')]" position="replace">
+			<section class="s_text_block pt40 pb40 o_colored_level " data-snippet="s_text_block">
+                <div class="container s_allow_columns">
+                    <div class="row">
+						<section class="s_website_form contactus-section pt16 pb16 o_colored_level" data-vcss="001" data-snippet="s_website_form" data-name="Form">
+					        <div class="container">
+					        	<h3 class="page-title">Contact Us</h3>
+								<p class="description">Get in touch and let us know how we can help.</p>
+					        	<div class="row contact-form">
+					        		<div class="col-lg-9">
+					        			<div class="form">
+								          	<form action="/website/form/" method="post" enctype="multipart/form-data" class="o_mark_required" data-mark="*" data-success-mode="redirect" data-success-page="/thank-you" data-model_name="mail.mail">
+									            <div class="s_website_form_rows row s_col_no_bgcolor">
+									              <div class="form-group s_website_form_field col-12  s_website_form_required  " data-type="char" data-name="Field">
+									                <div class="row s_col_no_resize s_col_no_bgcolor">
+									                  <label class="col-form-label col-sm-auto s_website_form_label" style="width: 200px" for="kj6pq747e6">
+									                    <span class="s_website_form_label_content">Your Name</span>
+									                    <span class="s_website_form_mark"> *</span>
+									                  </label>
+									                  <div class="col-sm">
+									                    <input type="text" placeholder="Enter Your Name*" class="form-control s_website_form_input" name="contact_name" required="1" id="kj6pq747e6"/>
+									                  </div>
+									                </div>
+									              </div>
+									              <div class="form-group s_website_form_field col-12    " data-type="tel" data-name="Field">
+									                <div class="row s_col_no_resize s_col_no_bgcolor">
+									                  <label class="col-form-label col-sm-auto s_website_form_label " style="width: 200px" for="flfeznc5808">
+									                    <span class="s_website_form_label_content">Phone Number</span>
+									                  </label>
+									                  <div class="col-sm">
+									                    <input type="tel" placeholder="Enter Your Phone Number" class="form-control s_website_form_input" name="phone" id="flfeznc5808"/>
+									                  </div>
+									                </div>
+									              </div>
+									              <div class="form-group s_website_form_field col-12  s_website_form_required  " data-type="email" data-name="Field">
+									                <div class="row s_col_no_resize s_col_no_bgcolor">
+									                  <label class="col-form-label col-sm-auto s_website_form_label " style="width: 200px" for="us2sqky0hbl">
+									                    <span class="s_website_form_label_content">Your Email</span>
+									                    <span class="s_website_form_mark"> *</span>
+									                  </label>
+									                  <div class="col-sm">
+									                    <input type="email" placeholder="Enter Your E-mail*" class="form-control s_website_form_input" name="email_from" required="1" id="us2sqky0hbl"/>
+									                  </div>
+									                </div>
+									              </div>
+									              <div class="form-group s_website_form_field col-12  s_website_form_required  " data-type="char" data-name="Field">
+									                <div class="row s_col_no_resize s_col_no_bgcolor">
+									                  <label class="col-form-label col-sm-auto s_website_form_label " style="width: 200px" for="y63wxuoo9u">
+									                    <span class="s_website_form_label_content">Your Company</span>
+									                    <span class="s_website_form_mark"> *</span>
+									                  </label>
+									                  <div class="col-sm">
+									                    <input type="text" placeholder="Enter Your Company Name*" class="form-control s_website_form_input" name="partner_name" required="1" id="y63wxuoo9u"/>
+									                  </div>
+									                </div>
+									              </div>
+									              <div class="form-group s_website_form_field col-12  s_website_form_model_required  " data-type="char" data-name="Field">
+									                <div class="row s_col_no_resize s_col_no_bgcolor">
+									                  <label class="col-form-label col-sm-auto s_website_form_label " style="width: 200px" for="85vdrw47s64">
+									                    <span class="s_website_form_label_content">Subject</span>
+									                    <span class="s_website_form_mark"> *</span>
+									                  </label>
+									                  <div class="col-sm">
+									                    <input type="text" placeholder="Enter Your Subject*" class="form-control s_website_form_input" name="name" required="true" id="85vdrw47s64"/>
+									                  </div>
+									                </div>
+									              </div>
+												  <div class="form-group s_website_form_field col-12 s_website_form_custom s_website_form_required" data-type="text" data-name="Field">
+													<div class="row s_col_no_resize s_col_no_bgcolor">
+														<label class="col-form-label col-sm-auto s_website_form_label " style="width: 200px" for="oq8hv5hqsun">
+															<span class="s_website_form_label_content">Your Question</span>
+															<span class="s_website_form_mark">  *</span>
+														</label>
+														<div class="col-sm">
+															<textarea class="form-control s_website_form_input" name="Your Question" required="1" placeholder="Enter Your Question*" id="oq8hv5hqsun" rows="3"></textarea>
+														</div>
+													</div>
+												</div>
+									              <div class="form-group col-12 s_website_form_submit" data-name="Submit Button">
+									                <div style="width: 200px;" class="s_website_form_label"/>
+									                <a href="#" role="button" class="btn btn-primary btn-sm s_website_form_send o_default_snippet_text"><span class="icofont icofont-paper-plane me-2" style="font-size: 17px; vertical-align: middle;"/>SUBMIT MESSAGE</a>
+									                <span id="s_website_form_result"/>
+									              </div>
+									            </div>
+								          	</form>
+							          	</div>
+						          	</div>
+						          	<div class="col-lg-3">
+										<div class="contact-details">
+											<div class="detail-container">
+												<div class="detail-icon mb16">
+													<span class="icon icon-Pointer text-primary"/>
+												</div>
+												<h4 class="detail-title">Address</h4>
+												<p class="detail-info"><span>250 Executive Park Blvd, Suite 3400,</span></p>
+												<p class="detail-info"><span>San Francisco,</span><span> 94134</span></p>
+											</div>
+											<div class="detail-container">
+												<div class="detail-icon mb16">
+													<span class="icon icon-Mail text-primary"/>
+												</div>
+												<h4 class="detail-title">Email Us</h4>
+												<p class="detail-info"><span><a href="mailto:info@yourcompany.example.com">info@yourcompany.example.com</a></span></p>
+											</div>
+											<div class="detail-container">
+												<div class="detail-icon mb16">
+													<span class="icon icon-Phone2 text-primary"/>
+												</div>
+												<h4 class="detail-title">Call Us</h4>
+												<p class="detail-info"><span><a href="tel:+1 (650) 691-3277">+1 (650) 691-3277</a></span></p>
+											</div>
+										</div>
+									</div>
+					          	</div>
+					        </div>
+				      	</section>
+				      	<div class="oe_structure oe_empty"/>
+				      	<section class="contact-service-section shopify-section mt64 mb64">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-3">
+										<div class="promo-content d-flex align-items-center border-0">
+											<div class="icon">
+												<span class="icon icon-Truck text-primary"/>
+											</div>
+											<div class="content">
+												<h6 class="title">FREE DELIVERY</h6>
+												<p class="info">Cras pellentesque, nisi ac tempus pellentesqna</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3">
+										<div class="promo-content d-flex align-items-center">
+											<div class="icon">
+												<span class="icon icon-Headset text-primary"/>
+											</div>
+											<div class="content">
+												<h6 class="title">24/H SUPPORT</h6>
+												<p class="info">Pellenque habitnant morbi senectus et netus</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3">
+										<div class="promo-content d-flex align-items-center">
+											<div class="icon">
+												<span class="icon icon-Goto text-primary"/>
+											</div>
+											<div class="content">
+												<h6 class="title">30 - DAY RETURNS</h6>
+												<p class="info">In nec erat elementum, et venenatis purus nec</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-3">
+										<div class="promo-content d-flex align-items-center">
+											<div class="icon">
+												<span class="icon icon-ClosedLock text-primary"/>
+											</div>
+											<div class="content">
+												<h6 class="title">PAYMENT SECURED</h6>
+												<p class="info">Mauris indum nulla ante dignissim, vel males</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<div class="oe_structure oe_empty"/>
+					</div>
+				</div>
+			</section>
+		</xpath>
+	</template>
+</odoo>

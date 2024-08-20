@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record id="furniture_template" model="ir.ui.view">
+		<field name="name">Decor Home Two</field>
+		<field name="type">qweb</field>
+		<field name="key">website.furniture_template</field>
+		<field name="arch" type="xml">
+			<t name="Decor Home Two" t-name="theme_decor.furniture_template">
+				<t t-call="website.layout">
+					<div class="oe_structure oe_empty furniture-extended-container" id="wrap">
+						<section class="furniture-banner">
+							<div id="furniture-carousel" class="carousel bs-slider slide  control-round indicators-line" data-bs-ride="carousel" data-bs-pause="hover" data-bs-interval="7000">
+					          	<div class="carousel-inner" role="listbox">
+					            	<div class="carousel-item active ">
+					            		<div class="container-fluid">
+					            			<div class="row position-relative align-items-center">
+					            				<div class="col-md-3 col-lg-3 p-0">
+					            					<div class="single-banner">
+					            						<div class="banner-image">
+					            							<a href="#">
+					            								<img src="/theme_decor/static/src/img/furniture-banner1.jpg" class="img img-fluid"/>
+					            							</a>
+					            						</div>
+					            						<div class="banner-content">
+					            							<h3>Premium Bedroom</h3>
+					            							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare purus sit amet sapien condimentum maximus. Pellentesque habitant morbi tristique.</p>
+					            							<div class="s_btn" data-name="Button">
+						            							<a href="#" class="btn btn-outline-light bizople_button banner-btn">DISCOVER MORE</a>
+						            						</div>
+					            						</div>
+					            					</div>
+					            				</div>
+					            				<div class="col-md-3 col-lg-3 p-0">
+					            					<div class="single-banner">
+					            						<div class="banner-image">
+					            							<a href="#">
+					            								<img src="/theme_decor/static/src/img/furniture-banner2.jpg" class="img img-fluid"/>
+					            							</a>
+					            						</div>
+					            						<div class="banner-content">
+					            							<h3>Ceiling Lamp</h3>
+					            							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare purus sit amet sapien condimentum maximus. Pellentesque habitant morbi tristique.</p>
+					            							<div class="s_btn" data-name="Button">
+						            							<a href="#" class="btn btn-outline-light bizople_button banner-btn">DISCOVER MORE</a>
+						            						</div>
+					            						</div>
+					            					</div>
+					            				</div>
+					            				<div class="col-md-3 col-lg-3 p-0">
+					            					<div class="single-banner">
+					            						<div class="banner-image">
+					            							<a href="#">
+					            								<img src="/theme_decor/static/src/img/furniture-banner3.jpg" class="img img-fluid"/>
+					            							</a>
+					            						</div>
+					            						<div class="banner-content">
+					            							<h3>Balcony Plant</h3>
+					            							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare purus sit amet sapien condimentum maximus. Pellentesque habitant morbi tristique.</p>
+					            							<div class="s_btn" data-name="Button">
+						            							<a href="#" class="btn btn-outline-light bizople_button banner-btn">DISCOVER MORE</a>
+						            						</div>
+					            						</div>
+					            					</div>
+					            				</div>
+					            				<div class="col-md-3 col-lg-3 p-0">
+					            					<div class="single-banner">
+					            						<div class="banner-image">
+					            							<a href="#">
+					            								<img src="/theme_decor/static/src/img/furniture-banner6.jpg" class="img img-fluid"/>
+					            							</a>
+					            						</div>
+					            						<div class="banner-content">
+					            							<h3>Balcony Plant</h3>
+					            							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare purus sit amet sapien condimentum maximus. Pellentesque habitant morbi tristique.</p>
+					            							<div class="s_btn" data-name="Button">
+						            							<a href="#" class="btn btn-outline-light bizople_button banner-btn">DISCOVER MORE</a>
+						            						</div>
+					            						</div>
+					            					</div>
+					            				</div>
+					            			</div>
+					            		</div>
+					            	</div>
+					            	<div class="carousel-item">
+					            		<div class="container-fluid">
+					            			<div class="row position-relative align-items-center">
+					            				<div class="col-md-3 col-lg-3 p-0">
+					            					<div class="single-banner">
+					            						<div class="banner-image">
+					            							<a href="#">
+					            								<img src="/theme_decor/static/src/img/furniture-banner4.jpg" class="img img-fluid"/>
+					            							</a>
+					            						</div>
+					            						<div class="banner-content">
+					            							<h3>Balcony Plant</h3>
+					            							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare purus sit amet sapien condimentum maximus. Pellentesque habitant morbi tristique.</p>
+					            							<div class="s_btn" data-name="Button">
+						            							<a href="#" class="btn btn-outline-light bizople_button banner-btn">DISCOVER MORE</a>
+						            						</div>
+					            						</div>
+					            					</div>
+					            				</div>
+					            				<div class="col-md-3 col-lg-3 p-0">
+					            					<div class="single-banner">
+					            						<div class="banner-image">
+					            							<a href="#">
+					            								<img src="/theme_decor/static/src/img/furniture-banner5.jpg" class="img img-fluid"/>
+					            							</a>
+					            						</div>
+					            						<div class="banner-content">
+					            							<h3>Premium Lighting</h3>
+					            							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare purus sit amet sapien condimentum maximus. Pellentesque habitant morbi tristique.</p>
+					            							<div class="s_btn" data-name="Button">
+						            							<a href="#" class="btn btn-outline-light bizople_button banner-btn">DISCOVER MORE</a>
+						            						</div>
+					            						</div>
+					            					</div>
+					            				</div>
+					            				<div class="col-md-3 col-lg-3 p-0">
+					            					<div class="single-banner">
+					            						<div class="banner-image">
+					            							<a href="#">
+					            								<img src="/theme_decor/static/src/img/furniture-banner6.jpg" class="img img-fluid"/>
+					            							</a>
+					            						</div>
+					            						<div class="banner-content">
+					            							<h3>Premium Bedroom</h3>
+					            							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare purus sit amet sapien condimentum maximus. Pellentesque habitant morbi tristique.</p>
+					            							<div class="s_btn" data-name="Button">
+						            							<a href="#" class="btn btn-outline-light bizople_button banner-btn">DISCOVER MORE</a>
+						            						</div>
+					            						</div>
+					            					</div>
+					            				</div>
+					            				<div class="col-md-3 col-lg-3 p-0">
+					            					<div class="single-banner">
+					            						<div class="banner-image">
+					            							<a href="#">
+					            								<img src="/theme_decor/static/src/img/furniture-banner3.jpg" class="img img-fluid"/>
+					            							</a>
+					            						</div>
+					            						<div class="banner-content">
+					            							<h3>Premium Bedroom</h3>
+					            							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare purus sit amet sapien condimentum maximus. Pellentesque habitant morbi tristique.</p>
+					            							<div class="s_btn" data-name="Button">
+						            							<a href="#" class="btn btn-outline-light bizople_button banner-btn">DISCOVER MORE</a>
+						            						</div>
+					            						</div>
+					            					</div>
+					            				</div>
+					            			</div>
+					            		</div>
+					            	</div>
+					          	</div>
+						        <div class="slider-control d-none d-md-block">
+				              		<a class="left carousel-control-prev text-white font-14" data-bs-target="#furniture-carousel" role="button" data-bs-slide="prev">
+					                	<span class="lnr lnr-arrow-left"/>
+					               	 	<b class="sr-only font-normal o_default_snippet_text">Previous</b>
+					              	</a>
+					              	<a class="right carousel-control-next text-white font-14" data-bs-target="#furniture-carousel" role="button" data-bs-slide="next">
+					                	<span class="lnr lnr-arrow-right"/>
+					                	<b class="sr-only font-normal o_default_snippet_text">Next</b>
+					              	</a>
+					            </div>
+				        	</div>
+						</section>
+						<div class="oe_structure"/>
+						<section class="furniture-images pt32 pb64">
+							<div id="furniture-image-carousel" class="carousel bs-slider slide  control-round indicators-line" data-bs-ride="carousel" data-bs-pause="hover" data-bs-interval="7000">
+					          	<div class="carousel-inner" role="listbox">
+					            	<div class="carousel-item active ">
+										<div class="container-fluid p-0">
+											<div class="row">
+												<div class="col-lg-4 col-md-4">
+													<div class="single-banner">
+					            						<div class="banner-image">
+					            							<a href="#">
+					            								<img src="/theme_decor/static/src/img/furniture-img1.jpg" class="img img-fluid"/>
+					            							</a>
+					            						</div>
+					            						<div class="banner-content">
+					            							<h3>Luxurious Bedroom</h3>
+					            						</div>
+					            					</div>
+												</div>
+												<div class="col-lg-4 col-md-4">
+													<div class="single-banner">
+					            						<div class="banner-image">
+					            							<a href="#">
+					            								<img src="/theme_decor/static/src/img/furniture-img2.jpg" class="img img-fluid"/>
+					            							</a>
+					            						</div>
+					            						<div class="banner-content">
+					            							<h3>Premium chairs</h3>
+					            						</div>
+					            					</div>
+												</div>
+												<div class="col-lg-4 col-md-4">
+													<div class="single-banner">
+					            						<div class="banner-image">
+					            							<a href="#">
+					            								<img src="/theme_decor/static/src/img/furniture-img3.jpg" class="img img-fluid"/>
+					            							</a>
+					            						</div>
+					            						<div class="banner-content">
+					            							<h3>Blue Themed Sofa</h3>
+					            						</div>
+					            					</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item">
+										<div class="container-fluid p-0">
+											<div class="row">
+												<div class="col-lg-4 col-md-4">
+													<div class="single-banner">
+					            						<div class="banner-image">
+					            							<a href="#">
+					            								<img src="/theme_decor/static/src/img/furniture-img1.jpg" class="img img-fluid"/>
+					            							</a>
+					            						</div>
+					            						<div class="banner-content">
+					            							<h3>Luxurious Bedroom</h3>
+					            						</div>
+					            					</div>
+												</div>
+												<div class="col-lg-4 col-md-4">
+													<div class="single-banner">
+					            						<div class="banner-image">
+					            							<a href="#">
+					            								<img src="/theme_decor/static/src/img/furniture-img2.jpg" class="img img-fluid"/>
+					            							</a>
+					            						</div>
+					            						<div class="banner-content">
+					            							<h3>Premium chairs</h3>
+					            						</div>
+					            					</div>
+												</div>
+												<div class="col-lg-4 col-md-4">
+													<div class="single-banner">
+					            						<div class="banner-image">
+					            							<a href="#">
+					            								<img src="/theme_decor/static/src/img/furniture-img3.jpg" class="img img-fluid"/>
+					            							</a>
+					            						</div>
+					            						<div class="banner-content">
+					            							<h3>Blue Themed Sofa</h3>
+					            						</div>
+					            					</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<ol class="carousel-indicators">
+						            <li data-bs-target="#furniture-image-carousel" data-bs-slide-to="0" class="active"/>
+						            <li data-bs-target="#furniture-image-carousel" data-bs-slide-to="1"/>
+						        </ol>
+							</div>
+						</section>
+						<div class="oe_structure"/>
+						<section class="furniture-sale pt192 pb192 mx-0 mx-xl-5" style="background-image: url('/theme_decor/static/src/img/furniture-sale.jpg');">
+							<div class="container-fluid">
+								<div class="row">
+									<div class="col-md-7 col-lg-6 offset-md-5 offset-lg-6">
+										<div class="furniture-sale-content">
+											<div class="content">
+												<h3>Ceiling Lamps 2021</h3>
+												<h1>SALE 40%</h1>
+												<div class="s_btn" data-name="Button">
+			            							<a href="#" class="btn btn-outline-secondary bizople_button banner-btn">Shop now</a>
+			            						</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<div class="oe_structure"/>
+						<section class="furniture-history mx-0 mx-xl-5">
+							<div class="container-fluid">
+								<div class="row align-items-center">
+									<div class="col-xl-4 col-lg-6 my-4 my-lg-0 offset-xl-1">
+										<div class="history-content">
+											<h1 class="title">Our History</h1>
+											<p class="text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare purus sit amet sapien condimentum maximus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+											<p class="text2">Nulla bibendum nunc purus, eu pretium justo fringilla vitae. Curabitur suscipit mauris gravida nunc ultrices posuere et id enim. Aliquam dui ligula, pellentesque in rhoncus finibus, efficitur a nunc. Sed lobortis gravida magna quis hendrerit. Etiam lectus enim, aliquet non tempus vel, dapibus ut magna.</p>
+										</div>
+									</div>
+									<div class="col-lg-6 offset-xl-1 mb-4 mb-lg-0 pe-lg-0">
+										<div class="history-image">
+											<a href="#">
+												<img src="/theme_decor/static/src/img/furniture-history.jpg" class="img img-fluid"/>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<div class="oe_structure"/>
+						<section class="furniture-features mx-0 mx-xl-5">
+							<div class="container-fluid">
+								<div class="row feature-row">
+									<div class="col-xl-3 col-lg-6 col-md-6">
+										<div class="feature-box d-flex">
+											<div class="service-image">
+												<span class="fa fa-flash"></span>
+											</div>
+											<div class="service-info">
+												<h2>Premium &amp; Luxurious</h2>
+												<p>Great from Italy</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xl-3 col-lg-6 col-md-6">
+										<div class="feature-box d-flex">
+											<div class="service-image">
+												<span class="fa fa-rocket"></span>
+											</div>
+											<div class="service-info">
+												<h2>Free Shipping</h2>
+												<p>On order above $30</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xl-3 col-lg-6 col-md-6">
+										<div class="feature-box d-flex">
+											<div class="service-image">
+												<span class="fa fa-headphones"></span>
+											</div>
+											<div class="service-info">
+												<h2>Customer Support</h2>
+												<p>24/7 available</p>
+											</div>
+										</div>
+									</div>
+									<div class="col-xl-3 col-lg-6 col-md-6">
+										<div class="feature-box d-flex">
+											<div class="service-image">
+												<span class="fa fa-link"></span>
+											</div>
+											<div class="service-info">
+												<h2>Safe Payment</h2>
+												<p>100% money back</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<div class="oe_structure"/>
+						<section class="furniture-clients pt32 pb32">
+							<div class="container-fluid">
+								<div class="brand-title text-center pb32">
+									<h2>Client Section</h2>
+								</div>
+								<div class="row">
+									<div class="col-md-4 col-lg-4 col-xl-2 mb-4 mb-xl-0">
+										<div class="brand-image text-center">
+	            							<a href="#">
+	            								<img src="/theme_decor/static/src/img/furniture-brand1.png" class="img img-fluid"/>
+	            							</a>
+	            						</div>
+									</div>
+									<div class="col-md-4 col-lg-4 col-xl-2 mb-4 mb-xl-0">
+										<div class="brand-image text-center">
+	            							<a href="#">
+	            								<img src="/theme_decor/static/src/img/furniture-brand2.png" class="img img-fluid"/>
+	            							</a>
+	            						</div>
+									</div>
+									<div class="col-md-4 col-lg-4 col-xl-2 mb-4 mb-xl-0">
+										<div class="brand-image text-center">
+	            							<a href="#">
+	            								<img src="/theme_decor/static/src/img/furniture-brand3.png" class="img img-fluid"/>
+	            							</a>
+	            						</div>
+									</div>
+									<div class="col-md-4 col-lg-4 col-xl-2 mb-4 mb-xl-0">
+										<div class="brand-image text-center">
+	            							<a href="#">
+	            								<img src="/theme_decor/static/src/img/furniture-brand4.png" class="img img-fluid"/>
+	            							</a>
+	            						</div>
+									</div>
+									<div class="col-md-4 col-lg-4 col-xl-2 mb-4 mb-xl-0">
+										<div class="brand-image text-center">
+	            							<a href="#">
+	            								<img src="/theme_decor/static/src/img/furniture-brand5.png" class="img img-fluid"/>
+	            							</a>
+	            						</div>
+									</div>
+									<div class="col-md-4 col-lg-4 col-xl-2 mb-4 mb-xl-0">
+										<div class="brand-image text-center">
+	            							<a href="#">
+	            								<img src="/theme_decor/static/src/img/furniture-brand6.png" class="img img-fluid"/>
+	            							</a>
+	            						</div>
+									</div>
+								</div>
+							</div>
+						</section>
+						<div class="oe_structure"/>
+					</div>
+				</t>
+			</t>
+		</field>
+	</record>
+	<record id="furniture_template_menu" model="website.page">
+		<field name="website_published">True</field>
+		<field name="url">/decor-homepage-two</field>
+		<field name="view_id" ref="furniture_template" />
+	</record>
+</odoo>

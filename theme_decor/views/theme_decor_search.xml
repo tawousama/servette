@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="search_decor" >
+		<t t-if='results'>
+			<div class="dropdown-menu show w-100 bizople-search-results" style="min-width: 300px;top:100%;">
+				<t t-set='count' t-value='0'/>
+				<t t-foreach="results" t-as="product">
+					<t t-if="count &lt; 6">
+						<t t-set="combination_info" t-value="product._get_combination_info(only_template=True, add_qty=add_qty or 1, pricelist=pricelist)"/>
+				        <a t-att-href="product.website_url" class="dropdown-item p-2 text-wrap">
+				            <div class="media d-flex align-items-center o_search_result_item">
+				                    <img t-attf-src="/web/image/product.template/#{product.id}/image_128" class="flex-shrink-0 o_image_64_contain"/>
+				                <div class="media-body px-3">
+				                    <div class="h6 fw-bold mb-0"><t t-out="product.name"/></div>
+				                    <p t-if="product.website_meta_description" class="mb-0"><t t-out="product.website_meta_description"/></p>
+				                </div>
+				                <div class="flex-shrink-0 ms-auto">
+									<t t-call='website_sale.product_price'/>                
+					            </div>
+				            </div>
+				        </a>
+				    </t>
+			        <t t-set='count' t-value='count+1'/>
+			    </t>
+				<t t-if="count &gt; 5">
+			        <button type='submit' class="dropdown-item text-center text-primary">All results</button>
+		    	</t>
+	    	</div>
+	    </t>
+	    <t t-else=''>
+	    	<div class="dropdown-menu bizople-search-text show w-100" style="min-width: 300px;">
+			    <span class="dropdown-item-text text-muted ">No results found. Please try another search.</span>
+			</div>
+	    </t>
+	</template>
+</odoo>

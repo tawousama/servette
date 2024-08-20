@@ -1,0 +1,68 @@
+.btn-bizople_button_3 {
+    letter-spacing: 0;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    border-radius: 0 !important;
+    border: 1px solid transparent;
+    box-shadow: inset 0 0 20px rgba(#fff, 0);
+    outline: 1px solid;
+    outline-color: rgba(#fff, .5);
+    outline-offset: 0px;
+    text-shadow: none;
+    transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.btn.btn-bizople_button_3{
+    border-radius: 0 !important;
+}
+
+.btn-bizople_button_3:hover {
+    border: 1px solid;
+    box-shadow: inset 0 0 20px rgba(255, 255, 255, .5), 0 0 20px rgba(255, 255, 255, .2);
+    outline-color: rgba(255, 255, 255, 0);
+    outline-offset: 15px;
+    text-shadow: 1px 1px 2px #427388; 
+    background-color: transparent !important;
+}
+
+.btn-bizople_button_3:active {
+    background-color: transparent !important;
+}
+
+
+/*::::::::::::::::::::::::::::::::: Colors ::::::::::::::::::::::::::::::::::::::*/
+
+/*::::::::::::: btn-secondary and btn-outline-secondary ::::::::::::::::::::::::::*/
+
+.btn-bizople_button_3.btn-secondary, .btn-bizople_button_3.btn-outline-secondary{
+    color: $secondary !important;
+    box-shadow: inset 0 0 20px rgba($secondary, 0) !important;
+    outline: 1px solid white !important;
+    outline-color: rgba($secondary, .5) !important;
+}
+
+.btn-bizople_button_3.btn-secondary:hover, .btn-bizople_button_3.btn-outline-secondary:hover {
+    border: 1px solid $secondary !important;
+    box-shadow: inset 0 0 20px rgba($secondary, .5), 0 0 20px rgba($secondary, .2) !important;
+    outline-color: rgba($secondary, 0) !important;
+}
+
+/*::::::::::::: btn-primary and btn-outline-primary ::::::::::::::::::::::::::*/
+
+.btn-bizople_button_3.btn-primary, .btn-bizople_button_3.btn-outline-primary{
+    color: $primary !important;
+    box-shadow: inset 0 0 20px rgba($primary, 0) !important;
+    outline: 1px solid white !important;
+    outline-color: rgba($primary, .5) !important;
+}
+
+.btn-bizople_button_3.btn-primary:hover, .btn-bizople_button_3.btn-outline-primary:hover {
+    border: 1px solid $primary !important;
+    box-shadow: inset 0 0 20px rgba($primary, .5), 0 0 20px rgba($primary, .2) !important;
+    outline-color: rgba($primary, 0) !important;
+}
+

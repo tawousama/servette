@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="PartnerDetailsEdit" t-inherit="point_of_sale.PartnerDetailsEdit" t-inherit-mode="extension" owl="1">
+<!--        <xpath expr="//input[hasclass('vat')]/.." position="replace"/>-->
+        <!--                <xpath expr="//input[hasclass('barcode')]/.." position="replace"/>-->
+        <!--                <xpath expr="//input[@name='name']" position="attributes">-->
+        <!--                    <attribute name="readonly">readonly</attribute>-->
+        <!--                    <attribute name="style">background-color: #ccc;</attribute>-->
+        <!--                </xpath>-->
+
+
+        <xpath expr="//div[hasclass('partner-detail')]" position="after">
+
+
+        <div class="partner-detail">
+            <span class="label">Location completion</span>
+
+            <select class="detail client-address-location-completion" name="zip_id"
+                    t-on-change="captureChange"
+            >
+                <option value="">None</option>
+                <t t-foreach="env.pos.zips" t-as="zip" t-key="zip.id">
+                    <option
+                        class="opt"
+                        t-att-data-city="zip.city_id[1] or False"
+                        t-att-data-country="zip.country_id[0] or False"
+                        t-att-data-state="zip.state_id[0] or False"
+                        t-att-data-name="zip.name"
+                        t-att-value="zip.id"
+                        t-att-selected="props.partner.zip_id ? ((zip.id === props.partner.zip_id[0]) ? true : undefined) : undefined">
+                        <t t-esc="zip.display_name"/>
+                    </option>
+
+                </t>
+            </select>
+
+
+            <script type="text/javascript">
+
+
+
+                $(document).ready(function () {
+                    $("select.client-address-location-completion").select2(
+                {
+                    maximumSelectionSize: 5,
+
+                });
+                    $('.client-address-location-completion').on('change', function() {
+                        var obj=$(".client-address-location-completion option:selected");
+                        var name = obj.attr("data-name");
+                        var city = obj.attr("data-city");
+                        var country_id = obj.attr("data-country");
+                        var state_id = obj.attr("data-state");
+
+                        $(".detail").eq(6).val(city);
+                        $(".detail").eq(7).val(name);
+                        $(".detail").eq(8).val(state_id);
+                        $(".detail").eq(9).val(country_id);
+
+
+
+
+                });
+                });
+            </script>
+        </div>
+
+
+        </xpath>
+        <xpath expr="(//div[hasclass('partner-detail')])[last()-2]" position="replace">
+            <div class="partner-detail">
+
+<!--                            <label class="mb-1 text-primary" for="tags">-->
+                <!--                                <span class="font-weight-bold">Etiquettes</span>-->
+                <!--                            </label>-->
+                <!--                <div>-->
+                <!--                                <t t-foreach="env.pos.tags.filter(({id}) => props.partner.category_id.includes(id))"-->
+                <!--                                   t-as="tag" t-key="tag.id">-->
+                <!--                                                                    <span t-esc="tag.display_name"-->
+                <!--                                                                          style="font-size: 15px;"-->
+                <!--                                                                          class="badge badge-pill badge-info mb-2"/>-->
+                <!--                                                                </t>-->
+                <!--                                                            </div>-->
+
+                <span class="label">Étiquettes</span>
+                <select class="detail" multiple="multiple">
+<!--                                                        <t t-foreach="env.pos.tags.filter(({id}) => props.partner.category_id.includes(id))"-->
+                    <!--                                                           t-as="tag"-->
+                    <!--                                                           t-key="tag.id">-->
+                    <!--                                                            <option-->
+                    <!--                                                                t-att-value="tag.id"-->
+                    <!--                                                            >-->
+                    <!--                                                                <t t-esc="tag.display_name"/>-->
+                    <!--                                                            </option>-->
+
+                    <!--                                                    </t>-->
+                                         </select>
+                                     </div>
+
+            <!--             <div class="partner-detail">-->
+            <!--                                        <span class="label">Étiquettes</span>-->
+            <!--                 <select class="detail js-example-basic-multiple" multiple="multiple">-->
+            <!--                                            <t t-foreach="env.pos.tags"-->
+            <!--                                               t-as="tag"-->
+            <!--                                               t-key="tag.id">-->
+            <!--                                                <option-->
+            <!--                                                    t-att-value="tag.id"-->
+            <!--                                                >-->
+            <!--                                                    <t t-esc="tag.display_name"/>-->
+            <!--                                                </option>-->
+
+            <!--                                        </t>-->
+            <!--                             </select>-->
+            <!--                         </div>-->
+
+
+            <!--            env.pos.tags.filter(({id}) => props.partner.category_id.includes(id))-->
+            <!--            <style>-->
+            <!--                                        .detail .js-example-basic-multiple {-->
+            <!--                                        font-family: inherit;-->
+            <!--                                        width: 100%;-->
+            <!--                                        border: 0 !important;-->
+            <!--                                        border-bottom: 2px solid #9b9b9b !important;-->
+            <!--                                        outline: 0;-->
+            <!--                                        font-size: 1rem;-->
+            <!--                                        color: #000;-->
+            <!--                                        background: transparent;-->
+            <!--                                        transition: border-color 0.1s;-->
+            <!--                                        float: right;-->
+            <!--                                        border-radius: 0px;-->
+            <!--                                        }-->
+            <!--                                        .select2-container {-->
+            <!--                                        box-sizing: border-box;-->
+            <!--                                        display: inline-block;-->
+            <!--                                        margin: 0;-->
+            <!--                                        position: relative;-->
+            <!--                                        vertical-align: middle;-->
+            <!--                                        float: right;-->
+            <!--                                        }-->
+            <!--                                        .select2-container .select2-search&#45;&#45;inline .select2-search__field {-->
+            <!--                                        box-sizing: border-box;-->
+            <!--                                        border: none;-->
+            <!--                                        font-size: 100%;-->
+            <!--                                        margin-top: 0px;-->
+            <!--                                        }-->
+            <!--                                        .select2-container .select2-selection&#45;&#45;multiple .select2-selection__rendered {-->
+            <!--                                        display: block;-->
+            <!--                                        overflow: hidden;-->
+            <!--                                        padding-left: 8px;-->
+            <!--                                        text-overflow: ellipsis;-->
+            <!--                                        white-space: nowrap;-->
+            <!--                                        }-->
+            <!--                                    </style>-->
+            <!--            <div class="form-group col-6" id="tags">-->
+            <!--                <label class="mb-1 text-primary" for="tags">-->
+            <!--                    <span class="font-weight-bold">Etiquettes</span>-->
+            <!--                </label>-->
+            <!--                <div>-->
+            <!--                    <t t-foreach="env.pos.tags.filter(({id}) => props.partner.category_id.includes(id))" t-as="tag" t-key="tag.id">-->
+            <!--                                                        <span t-esc="tag.display_name"-->
+            <!--                                                              style="font-size: 15px;"-->
+            <!--                                                              class="badge badge-pill badge-info mb-2"/>-->
+            <!--                                                    </t>-->
+            <!--                                                </div>-->
+            <!--            &lt;!&ndash;                 </div>&ndash;&gt;-->
+            <!--            <div class="partner-detail">-->
+            <!--                        <span class="label">Étiquettes</span>-->
+            <!--                <input class="detail js-example-basic" name="mobilee" type="teel"-->
+            <!--                />-->
+            <!--                    </div>-->
+
+
+            <!--            <script type="text/javascript">-->
+            <!--                $(document).ready(function() {-->
+            <!--                $('.js-example-basic').select2('val', [192,193])-->
+
+            <!--                });-->
+
+            <!--            </script>-->
+
+
+
+
+
+
+
+        </xpath>
+
+        <xpath expr="(//div[hasclass('partner-detail')])[last()-3]" position="replace">
+
+        </xpath>
+
+
+        <xpath expr="//div[hasclass('partner-detail')]" position="before">
+            <div class="partner-detail">
+                <span class="label">Lastname</span>
+                <input class="detail partner-lastname" name="lastname" t-att-value="props.partner.lastname  || ''"
+                       placeholder="Lastname" t-on-change="_OnChangeName"/>
+            </div>
+            <div class="partner-detail">
+                <span class="label">Firstname</span>
+                <input class="detail partner-firstname" name="firstname" t-att-value="props.partner.firstname  || ''"
+                       placeholder="Firstname" t-on-change="_OnChangeName"/>
+            </div>
+        </xpath>
+
+        <!--        <xpath expr="//div[hasclass('partner-detail')]" position="after">-->
+        <!--                    <div class="partner-detail">-->
+        <!--                        <span class="label">Tags</span>-->
+        <!--                        <FieldMany2ManyTags tags="env.pos.tags" value="props.partner.category_id" changes="changes"-->
+        <!--                                            model="'res.partner.category'"/>-->
+        <!--                    </div>-->
+        <!--                </xpath>-->
+        <!--        <xpath expr="//input[@name='phone']/.." position="after">-->
+        <!--            <div class="partner-detail">-->
+        <!--                <span class="label">Mobile</span>-->
+        <!--                <input class="detail partner-mobile" name="mobile" type="tel"-->
+        <!--                       t-on-change="captureChange"-->
+        <!--                       t-att-value="props.partner.mobile || ''"/>-->
+        <!--            </div>-->
+        <!--        </xpath>-->
+    </t>
+
+ </templates>
+
+

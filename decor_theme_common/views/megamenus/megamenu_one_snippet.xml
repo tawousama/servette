@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="mega_menu_one_snippet" name="Mega Menu One" groups="base.group_user">
+		<section class="mega_menu_one_snippet py-3" style="background-image: url(/theme_decor/static/src/img/menu-blog.jpg); background-position: center;">
+			<div class="container extended-container">
+				<div class="row justify-content-center">
+					<div class="col-lg-3">
+						<div class="heading-contents">
+							<a class="headeing" href="#">Clothing</a>
+							<ul>
+								<li><a class="menu_item" href="#">Shirt</a></li>
+								<li><a class="menu_item" href="#">Jeans</a></li>
+								<li><a class="menu_item" href="#">T-Shirt</a></li>
+								<li><a class="menu_item" href="#">Winter Wears</a></li>
+								<li><a class="menu_item" href="#">Summer Wears</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="heading-contents">
+							<a class="headeing" href="#">Electronics</a>
+							<ul>
+								<li><a href="#" class="menu_item">Headphones</a></li>
+								<li><a href="#" class="menu_item">Mobiles</a></li>
+								<li><a href="#" class="menu_item">Tablets</a></li>
+								<li><a href="#" class="menu_item">Television</a></li>
+								<li><a href="#" class="menu_item">Computers</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="heading-contents">
+							<a class="headeing" href="#">Wine</a>
+							<ul>
+								<li><a href="#" class="menu_item">Red Wine</a></li>
+								<li><a href="#" class="menu_item">White Wine</a></li>
+								<li><a href="#" class="menu_item">Rose Wine</a></li>
+								<li><a href="#" class="menu_item">Cabernet Sauvignon</a></li>
+								<li><a href="#" class="menu_item">Pinot Noir</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+</odoo>

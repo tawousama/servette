@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+
+    <record id="view_synch_data_sm_form" model="ir.ui.view">
+        <field name="name">synch.data.sm.form</field>
+        <field name="model">synch.data.sm</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+
+                    <button
+                        type="object"
+                        string="Synch product presta categ"
+                        name="synch_product_categories"
+                        class="oe_highlight"
+                    />
+                    <button
+                        type="object"
+                        string="Synch product description"
+                        name="synch_product_descrip"
+                        class="oe_highlight"
+                    />
+                    <button
+                        type="object"
+                        string="Synch product presta categ_ids"
+                        name="synch_product_categories_ids"
+                        class="oe_highlight"
+                    />
+                    <button
+                        type="object"
+                        string="Add presta instance"
+                        name="set_prestas_shop_onproduct"
+                        class="oe_highlight"
+                    />
+                    <button
+                        type="object"
+                        string="EMPTY PRESTA FIELD"
+                        name="fix_empty_categ_presta"
+                        class="oe_highlight"
+                    />
+                    <button
+                        type="object"
+                        string="UPDATE CONTACT MANUFACTU"
+                        name="fix_manufacturer"
+                        class="oe_highlight"
+                    />
+
+                     <button
+                        type="object"
+                        string="update name english"
+                        name="synch_product_descrip_en"
+                        class="oe_highlight"
+                    />
+                     <button
+                        type="object"
+                        string="update name frech"
+                        name="synch_product_descrip_fr"
+                        class="oe_highlight"
+                    />
+
+
+
+                </header>
+                <sheet>
+                    <group>
+                        <group name="main" string="Login Data">
+                            <field name="url" required="1"/>
+                            <field name="login" required="1"/>
+                            <field name="pwd" password="True" required="1"/>
+                            <field name="db_name" required="1"/>
+
+
+                        </group>
+
+
+                    </group>
+                </sheet>
+
+            </form>
+
+        </field>
+    </record>
+
+    <record id="view_synch_data_sm_list" model="ir.ui.view">
+        <field name="name">synch.data.sm.tree</field>
+        <field name="model">synch.data.sm</field>
+        <field name="arch" type="xml">
+            <tree>
+
+                <field name="url"/>
+
+
+            </tree>
+        </field>
+    </record>
+    <record id="action_synch_data_sm" model="ir.actions.act_window">
+        <field name="name">Kzm Datas Migration</field>
+        <field name="res_model">synch.data.sm</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+
+    <menuitem
+        parent="base.next_id_9"
+        action="action_synch_data_sm"
+        name="Synchronisation DATA"
+        id="synch_data_sm_menu"
+    />
+
+
+</odoo>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="theme_decor_header7" inherit_id="website.layout" name="Header Seven" active="False">
+		<xpath expr="//header" position="attributes">
+			<attribute name="t-attf-class" add="decor-header" separator=" "></attribute>
+		</xpath>
+		<xpath expr="//header//nav" position="replace">
+			<nav data-name="Navbar" id="decor-header7" t-attf-class="decor-header7 navbar navbar-expand-lg navbar-light o_colored_level o_cc">
+				<div id="top_menu_container" class=" container justify-content-start justify-content-lg-between">
+					
+					<div class="mobile-sidebar-toggle d-block d-lg-none">
+						<button type="button" id="show-sidebar" class="btn ">
+							<span class="ti ti-view-grid text-secondary"></span>
+						</button>
+					</div>
+					<!-- Brand -->
+	                <t t-call="website.placeholder_header_brand">
+	                    <t t-set="_link_class" t-value="'mx-auto'"/>
+	                </t>
+					<t t-call="theme_decor.decor_header_mobile_cart"/>
+                	<!-- Navbar Collapse -->
+					<div id="top_menu_collapse" class="collapse navbar-collapse px-4 w-50">
+						<t t-call="website.navbar_nav">
+	                        <t t-set="_nav_class" t-value="'flex-grow-1'"/>
+	                        <!-- Menu -->
+	                        <t t-foreach="website.menu_id.child_id" t-as="submenu">
+	                            <t t-call="website.submenu">
+	                                <t t-set="item_class" t-value="'nav-item'"/>
+	                                <t t-set="link_class" t-value="'nav-link'"/>
+	                            </t>
+	                        </t>
+						</t>
+					</div>
+					<div class="bizople-search mt-3 mt-md-0 w-lg-25 d-none d-lg-block">
+						<div class="decor-search p-1 rounded">
+							<div class="search">
+								<t t-call="theme_decor.desktop_search_bar" />
+							</div>
+						</div>
+					</div>
+					<div class="text-end right_icons d-none d-md-flex header_right align-items-center">
+						<div class="bizople-add-to-cart cart align-middle d-none d-lg-inline-block" id="">
+							<!-- <t t-if="is_view_active('website_sale.products_add_to_cart')"> -->
+							<t t-set="website_sale_order" t-value="website.sale_get_order()" />
+							<t t-call="website_sale.header_cart_link">
+								<t t-set="_icon" t-value="True"/>
+								<t t-set="_item_class" t-value="'nav-item'"/>
+								<t t-set="_link_class" t-value="'nav-link'"/>
+							</t>
+					        <!-- </t> -->
+						</div>
+						<div class="wishlist align-middle d-none d-lg-inline-block">
+							<!-- <t t-if="is_view_active('website_sale_wishlist.add_to_wishlist')"> -->
+								<t t-call="website_sale_wishlist.header_wishlist_link">
+					                <t t-set="_icon" t-value="True"/>
+					                <t t-set="_item_class" t-value="'nav-item'"/>
+					                <t t-set="_link_class" t-value="'nav-link'"/>
+					            </t>
+							<!-- </t> -->
+						</div>
+						<t t-call="theme_decor.theme_decor_signin_main_template">
+							<t t-set="_myaccount_class" t-value="'align-items-center align-middle d-none d-lg-inline-block'"/>
+							<t t-set="_icon" t-value="True"/>
+							<t t-set="_text" t-value="False"/>
+						</t>
+					</div>
+				</div>
+			</nav>
+		</xpath>
+		<xpath expr="//header" position="before">
+			<div class="d-block d-lg-none">
+				<t t-call="theme_decor.bizople_mobile_bottom_icon_bar"/>
+			</div>
+			<t t-call="theme_decor.search_popup"/>
+			<t t-call="theme_decor.bizople_mbl_category_bar"/>
+		</xpath>
+	</template>
+</odoo>

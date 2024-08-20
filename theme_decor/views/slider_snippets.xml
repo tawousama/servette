@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- blog Slider  -->
+	
+	<template id="s_bizople_theme_blog_slider_snippet" name="Blog Slider">
+        <section id="biz_blog_slider_snippet" class="blog blog_slider_owl oe_img_bg oe_website_sale" data-blog-slider-id="" data-blog-slider-type="" data-disp="blog">
+            <div class="container">
+                <div class="block-title">
+                    <h3 class="filter">Blog post</h3>
+                </div>
+            </div>
+        </section>
+    </template>
+    <template id="s_bizople_theme_blog_slider_snippet_option" inherit_id="website.snippet_options" name="Filter Options">
+        <xpath expr="//div" position="after">
+            <div data-js="s_bizople_theme_blog_slider_snippet" data-selector=".blog_slider_owl" data-snippet-option-id="s_bizople_theme_blog_slider_snippet">
+                <li data-theme_decor_blog_slider="" class="list-unstyled">
+                    <we-row string="Blog Filter">
+                        <we-button class="dropdown-item blog_slider_owl" tabindex="-1" href="#" data-theme_decor_blog_slider="">Filter</we-button>
+                    </we-row>
+                </li>
+            </div>
+        </xpath>
+    </template>
+    <template id="bizcommon_blog_slider_view" name="Blog Slider View">
+        <div class="container">
+            <div class="block-title text-center">
+                <h3 class="filter" t-if="not slider_header">Blog post</h3>
+                <h3 class="" t-if="slider_header">
+                    <t t-out="slider_header.name"/>
+                </h3>
+                <p class="w-md-75 w-xl-50 mx-auto mb-0" t-if="slider_header.blog_subtitle"><t t-out="slider_header.blog_subtitle" /></p>
+                <div class="slider-separator"/>
+            </div>
+            <div t-attf-id='blog_2_owl_carosel-#{slider_header.id}' class="owl-carousel" t-if="blog_slider_details">
+                <t t-as="slide" t-foreach="blog_slider_details">
+                    <div class="comm_blog_box">
+                    	<a t-attf-href="/blog/#{slug(slide.blog_id)}/post/#{slug(slide)}" class='slider-blog-image' t-if="slide.cover_properties">
+                            <t t-set="cover_property" t-value="json.loads(slide.cover_properties)"/>
+                            <div class="section-post-media" t-attf-style="background-image: #{cover_property.get('background-image', 'none')}" t-if="slide.cover_properties">
+                            </div>
+                            <div class="date-post text-primary text-center">
+                            	<span class="date_span" t-field="slide.post_date"
+								t-options='{"format": "dd MMM, YYYY"}'/>
+							</div>
+                            <div class='comm_base_class'>
+                                <h3 t-field="slide.name" class=""/>
+                                <div class="comm_hover_blog_content">
+                                    <t t-out="slide.subtitle" class="text-secondary"/>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </t>
+            </div>
+        </div>
+    </template>
+
+</odoo>

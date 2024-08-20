@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_offers_three" name="Offers Three">
+		<section class="accessories-sale pt32 ">
+			<div class="container extended-container">
+				<div class="row">
+					<div class="col-md-4 col-xl-4 mb-4">
+						<div class="sale-content">
+							<div class="sale-image">
+								<a href="#">
+									<img src="/theme_decor/static/src/img/accesories-img1.jpg" class="img img-fluid"/>
+								</a>
+							</div>
+							<div class="sale-info3">
+								<div class="content">
+									<span class="">Furniture SALE</span>
+									<h4 class="title">Latest Style</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-xl-4 mb-4">
+						<div class="sale-content">
+							<div class="sale-image">
+								<a href="#">
+									<img src="/theme_decor/static/src/img/accesories-img2.jpg" class="img img-fluid"/>
+								</a>
+							</div>
+							<div class="sale-info3">
+								<div class="content">
+									<span class="">TRENDING NOW</span>
+									<h4 class="title">Office Chairs</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-xl-4 mb-4">
+						<div class="sale-content">
+							<div class="sale-image">
+								<a href="#">
+									<img src="/theme_decor/static/src/img/accesories-img3.jpg" class="img img-fluid"/>
+								</a>
+							</div>
+							<div class="sale-info3">
+								<div class="content">
+									<span class="">GET UP TO 40% OFF</span>
+									<h4 class="title">Home Furnitures</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

@@ -1,0 +1,925 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record id="furniture_template_three" model="ir.ui.view">
+		<field name="name">Decor Home Three</field>
+		<field name="type">qweb</field>
+		<field name="key">website.furniture_template_three</field>
+		<field name="arch" type="xml">
+			<t name="Decor Home Three" t-name="furniture_template_three">
+				<t t-call="website.layout">
+					<div id="wrap" class="oe_structure oe_empty">
+					<section class="s_carousel_wrapper decor_home_banner_three" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
+						<div id="decor-home3-carousel" class="s_carousel s_carousel_default carousel slide" data-bs-interval="10000">
+							<div class="carousel-inner">
+								<div class="carousel-item pt256 pb256 o_colored_level oe_img_bg active" style="background-image: url(&quot;/theme_decor/static/src/img/twelve-banner1.jpg&quot;); background-position: center; background-repeat: no-repeat;" data-name="Slide">
+									<div class="container">
+										<div class="row content">
+											<div class="carousel-content col-lg-6 o_colored_level">
+												<div class="border-start border-800 p-2 ps-3 mb-4">
+													<p class="mb-0 text-800">Decor Furniture</p>
+													<p class="mb-0 text-800">2021</p>
+												</div>
+												<p class="text-uppercase position-relative mini_title pb8 mb-3 text-800">new arrivals</p>
+												<h1 class="fw-light">Decor Top Collections</h1>
+												<p class="mt-5">
+													<a href="/shop" class="btn btn-primary mb-2 o_default_snippet_text btn-md">
+														Shop Now
+														<span class="ps-2 ri ri-arrow-right-line align-middle fw-light"/>
+													</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item pt256 pb256 o_colored_level oe_img_bg" style="background-image: url(&quot;/theme_decor/static/src/img/twelve-banner2.jpg&quot;); background-position: center; background-repeat: no-repeat;" data-name="Slide">
+									<div class="container">
+										<div class="row content">
+											<div class="carousel-content col-lg-6 o_colored_level">
+												<div class="border-start border-800 p-2 ps-3 mb-4">
+													<p class="mb-0 text-800">Decor Furniture</p>
+													<p class="mb-0 text-800">2021</p>
+												</div>
+												<p class="text-uppercase position-relative mini_title pb8 mb-3 text-800">new arrivals</p>
+												<h1 class="fw-light">Modern Chairs</h1>
+												<p class="mt-5">
+													<a href="/shop" class="btn btn-primary mb-2 o_default_snippet_text btn-md">
+														Shop Now
+														<span class="ps-2 ri ri-arrow-right-line align-middle fw-light"/>
+													</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="carousel-item pt256 pb256 o_colored_level oe_img_bg" style="background-image: url(&quot;/theme_decor/static/src/img/twelve-banner3.jpg&quot;); background-position: center; background-repeat: no-repeat;" data-name="Slide">
+									<div class="container">
+										<div class="row content">
+											<div class="carousel-content col-lg-6 o_colored_level">
+												<div class="border-start border-800 p-2 ps-3 mb-4">
+													<p class="mb-0 text-800">Decor Furniture</p>
+													<p class="mb-0 text-800">2021</p>
+												</div>
+												<p class="text-uppercase position-relative mini_title pb8 mb-3 text-800">new arrivals</p>
+												<h1 class="fw-light">Classic Furniture Collections</h1>
+												<p class="mt-5">
+													<a href="/shop" class="btn btn-primary mb-2 o_default_snippet_text btn-md">
+														Shop Now
+														<span class="ps-2 ri ri-arrow-right-line align-middle fw-light"/>
+													</a>
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<ol class="carousel-indicators o_we_no_overlay align-items-center mb-5">
+								<li data-bs-target="#decor-home3-carousel" data-bs-slide-to="0" class="active"/>
+								<li data-bs-target="#decor-home3-carousel" data-bs-slide-to="1"/>
+								<li data-bs-target="#decor-home3-carousel" data-bs-slide-to="2"/>
+							</ol>
+							<a class="carousel-control-prev o_we_no_overlay d-none" href="#decor-home3-carousel" data-bs-slide="prev" role="img" aria-label="Previous" title="Previous">
+								<span class="carousel-control-prev-icon"/>
+								<span class="sr-only o_default_snippet_text">Previous</span>
+							</a>
+							<a class="carousel-control-next o_we_no_overlay d-none" href="#decor-home3-carousel" data-bs-slide="next" role="img" aria-label="Next" title="Next">
+								<span class="carousel-control-next-icon" data-original-title="" title="" aria-describedby="tooltip443139"/>
+								<span class="sr-only o_default_snippet_text">Next</span>
+							</a>
+						</div>
+					</section>
+					<div class="oe_structure"></div>
+					<section class="s_furniture_about about-area section-pt">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-6">
+									<div class="about-image">
+										<a href="#">
+											<img src="/theme_decor/static/src/img/about-1.jpg"
+												alt="About Product images" />
+										</a>
+										<span class="text_left">Welcome To Furniture</span>
+									</div>
+								</div>
+								<div class="col-lg-6">
+									<div class="about-contents">
+										<h3>Top Selling!</h3>
+										<div class="price-box">
+											<span class="old-price">$330.00</span>
+											-
+											<span class="new-price"> $230.00</span>
+										</div>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+											sed do eius tem incidid ut labore et dolore mag aliqua. Ut
+											enim ad minim veniam, quis nostrud exercitati ullamco
+											laboris
+											nisi ut aliquip ex ea commodo consequ. Duis aute
+											irure dolor
+											in reprehenderit in voluptate velit esse cillum
+											dolore eu
+											fugiat nulla pariatur. Excepte sint occaecat
+											cupidatat non
+											proident, sunt in culpa qui.
+										</p>
+
+										<a class="btn btn-theme shop-btn-two" href="#">Shop Now</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<div class="oe_structure"></div>
+					<section
+						class="s_furniture_with_bg_imag_para  lg-banner-area lg-banner-bg pt80 pb80"
+						style="background-image: url(/theme_decor/static/src/img/furniture_01.jpg); margin-top:0px;margin-bottom:0px;">
+						<div class="container">
+							<div class="row">
+								<div class="col-lg-7 col-md-10">
+									<div class="lg-banner-info">
+										<h2>Contrary to popular belief is not simply rand.</h2>
+										<p>
+											Lorem ipsum dolor sit amet, consectetur adipisicing elit
+											<br />
+											sed do eiusmod tempor incid
+										</p>
+										<a class="btn btn-theme more-product-btn" href="#">MORE
+											PRODUCTS
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+
+					<div class="oe_structure"></div>
+					<section class="s_furniture_two_blocks_bg_img">
+						<div class="banner-area section-pb"
+							style="padding-top:0px;padding-bottom:96px;">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-6">
+										<div class="single-banner">
+											<div class="banner-bg">
+												<a href="#" class="hover_effect">
+													<img src="/theme_decor/static/src/img/chair1.jpg"
+														alt="" />
+												</a>
+											</div>
+											<div class="banner-contet">
+												<p>30% Off</p>
+												<h3>Chair Collection</h3>
+												<a href="#" class="btn-3">SHOP NOW</a>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-6">
+										<div class="single-banner">
+											<div class="banner-bg">
+												<a href="#">
+													<img src="/theme_decor/static/src/img/chair2.jpg"
+														alt="" />
+												</a>
+											</div>
+											<div class="banner-contet">
+												<p>30% Off</p>
+												<h3>Chair Collection</h3>
+												<a href="#" class="btn-3">SHOP NOW</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<div class="oe_structure"></div>
+					<section class="parallax s_furniture_testimonial " style="background-image: url(/theme_decor/static/src/img/bg_furniture_testimonial.jpg);">
+						<div class="o_we_bg_filter bg-black-50"></div>
+						<section class="testimonial-area testimonial-bg overlay">
+							<div class="container">
+								<div class="heading">
+								</div>
+								<div id="furniture_testimonial123"
+									class=" testi2 m-t-40 s_carousel_default carousel slide"
+									data-bs-interval="10000">
+									<ol class="carousel-indicators">
+										<li data-bs-target="#furniture_testimonial123" data-bs-slide-to="0"
+											class=""></li>
+										<li data-bs-target="#furniture_testimonial123" data-bs-slide-to="1"
+											class="active"></li>
+
+									</ol>
+									<div class="carousel-inner">
+										<div class="carousel-item" data-name="Slide">
+											<div class="container">
+												<div class="row">
+													<div class="col-lg-8 offset-md-2 col-md-8 col-sm-12">
+														<div class="testimonial-slider">
+															<div class="testimonial-inner text-center">
+																<div class="test-cont">
+																	<img src="/theme_decor/static/src/img/quote_1.png"
+																		alt="testimonial image" />
+																	<p>There are many variations of passages of Lorem
+																		Ipsum
+																		available, but the majority have suffered alteration
+																		in some
+																		form. There are many variations of passages.
+																	</p>
+																</div>
+																<div class="test-author">
+																	<h4>Michelle Mitchell</h4>
+																	<p>ui ux - Designer</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="carousel-item oe_img_bg active" data-name="Slide">
+											<div class="container">
+												<div class="row">
+													<div class="col-lg-8 offset-md-2 col-md-8 col-sm-12">
+														<div class="testimonial-slider">
+															<div class="testimonial-inner text-center">
+																<div class="test-cont">
+																	<img src="/theme_decor/static/src/img/quote_1.png"
+																		alt="testimonial image" />
+																	<p>There are many variations of passages of Lorem
+																		Ipsum
+																		available, but the majority have suffered alteration
+																		in some
+																		form. There are many variations of passages.
+																	</p>
+																</div>
+																<div class="test-author">
+																	<h4>Michelle Mitchell</h4>
+																	<p>ui ux - Designer</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</section>
+					<div class="oe_structure"></div>
+					<section class="s_furniture_two_imgs">
+							<div class="container">
+								<div class="row pt-100 pb-70">
+									<div class="col-sm-6 col-xs-12 mb-30">
+										<div class="single-banner">
+											<a href="#">
+												<img src="/theme_decor/static/src/img/fur_01.jpg" alt="" />
+											</a>
+										</div>
+									</div>
+									<div class="col-sm-6 col-xs-12 mb-30">
+										<div class="single-banner">
+											<a href="#">
+												<img src="/theme_decor/static/src/img/fur_02.jpg" alt="" />
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+					</section>
+					<div class="oe_structure"></div>
+					<section
+						class="s_furniture_gallery gallery-full-width pt40 pb40">
+						<div class="">
+							<div class="sec-title text-center">
+								<h2>Our Gallery</h2>
+								<div class="text">The Love Boat promises something for wanna be
+									where everybody knows so join us
+								</div>
+							</div>
+
+							<div class="items-container clearfix">
+								<div
+									class="gallery-item masonry-item small-column all decoration">
+									<div class="inner-box">
+										<div class="image-box">
+											<div class="image">
+												<a href="/theme_decor/static/src/img/g1.jpg"
+													class="lightbox-image" data-fancybox="gallery">
+													<img src="/theme_decor/static/src/img/g1.jpg" alt="" />
+												</a>
+											</div>
+											<div class="overlay-box">
+												<div class="content">
+													<h3>
+														<a href="#">Kitchen</a>
+													</h3>
+													<span>New Orleans, USA</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div
+									class="gallery-item masonry-item small-column all kitchen decoration">
+									<div class="inner-box">
+										<div class="image-box">
+											<div class="image">
+												<a href="/theme_decor/static/src/img/g2.jpg"
+													class="lightbox-image" data-fancybox="gallery">
+													<img src="/theme_decor/static/src/img/g2.jpg" alt="" />
+												</a>
+											</div>
+											<div class="overlay-box">
+												<div class="content">
+													<h3>
+														<a href="#">Kitchen</a>
+													</h3>
+													<span>New Orleans, USA</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div
+									class="gallery-item masonry-item small-column all decoration living-room">
+									<div class="inner-box">
+										<div class="image-box">
+											<div class="image">
+												<a href="/theme_decor/static/src/img/g3.jpg"
+													class="lightbox-image" data-fancybox="gallery">
+													<img src="/theme_decor/static/src/img/g3.jpg" alt="" />
+												</a>
+											</div>
+											<div class="overlay-box">
+												<div class="content">
+													<h3>
+														<a href="#">Kitchen</a>
+													</h3>
+													<span>New Orleans, USA</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div
+									class="gallery-item masonry-item decoration small-column all bath-room kitchen">
+									<div class="inner-box">
+										<div class="image-box">
+											<div class="image">
+												<a href="/theme_decor/static/src/img/g4.jpg"
+													class="lightbox-image" data-fancybox="gallery">
+													<img src="/theme_decor/static/src/img/g4.jpg" alt="" />
+												</a>
+											</div>
+											<div class="overlay-box">
+												<div class="content">
+													<h3>
+														<a href="#">Kitchen</a>
+													</h3>
+													<span>New Orleans, USA</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div
+									class="gallery-item masonry-item small-column all living-room bath-room kitchen">
+									<div class="inner-box">
+										<div class="image-box">
+											<div class="image">
+												<a href="/theme_decor/static/src/img/g5.jpg"
+													class="lightbox-image" data-fancybox="gallery">
+													<img src="/theme_decor/static/src/img/g5.jpg" alt="" />
+												</a>
+											</div>
+											<div class="overlay-box">
+												<div class="content">
+													<h3>
+														<a href="#">Kitchen</a>
+													</h3>
+													<span>New Orleans, USA</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div
+									class="gallery-item masonry-item small-column all kitchen decoration living-room">
+									<div class="inner-box">
+										<div class="image-box">
+											<div class="image">
+												<a href="/theme_decor/static/src/img/g6.jpg"
+													class="lightbox-image" data-fancybox="gallery">
+													<img src="/theme_decor/static/src/img/g6.jpg" alt="" />
+												</a>
+											</div>
+											<div class="overlay-box">
+												<div class="content">
+													<h3>
+														<a href="#">Kitchen</a>
+													</h3>
+													<span>New Orleans, USA</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div
+									class="gallery-item masonry-item small-column all kitchen decoration living-room">
+									<div class="inner-box">
+										<div class="image-box">
+											<div class="image">
+												<a href="/theme_decor/static/src/img/g7.jpg"
+													class="lightbox-image" data-fancybox="gallery">
+													<img src="/theme_decor/static/src/img/g7.jpg" alt="" />
+												</a>
+											</div>
+											<div class="overlay-box">
+												<div class="content">
+													<h3>
+														<a href="#">Kitchen</a>
+													</h3>
+													<span>New Orleans, USA</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="btn-box">
+								<a href="/shop" class="theme-btn btn-style-one">VIEW ALL</a>
+							</div>
+						</div>
+					</section>
+					<div class="oe_structure"></div>
+					<section class="s_furniture_fun-fact-section"
+						style="background-image:url(/theme_decor/static/src/img/bg_furniture_1.jpg);">
+						<div class="o_we_bg_filter bg-black-50"></div>
+						<div class="container">
+							<div class="row clearfix">
+								<div class="title-column col-lg-6 col-md-12 col-sm-12">
+									<div class="inner-column">
+										<h3>OUR Statistics</h3>
+										<div class="text">
+											Everyone so join us here each week my ends
+											<br />
+											who was busy with three boys offer.
+										</div>
+									</div>
+								</div>
+
+								<div class="content-column col-lg-6 col-md-12 col-sm-12">
+									<div class="inner-column">
+										<div class="row clearfix">
+											<div class="counter-column col-lg-4 col-md-4 col-sm-12">
+												<div class="count-box counter-box">
+													<span class="count-text counter">25
+													</span>
+													+
+													<h4 class="counter-title">Year of Experience</h4>
+												</div>
+											</div>
+											<div class="counter-column col-lg-4 col-md-4 col-sm-12">
+												<div class="count-box counter-box">
+													<span class="count-text counter">180</span>
+													K
+													<h4 class="counter-title">Projects Completed</h4>
+												</div>
+											</div>
+
+											<div class="counter-column col-lg-4 col-md-4 col-sm-12">
+												<div class="count-box counter-box">
+													<span class="count-text counter">100
+													</span>
+													%
+													<h4 class="counter-title">Client Satisfactions</h4>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<div class="oe_structure"></div>
+					<section class="s_furniture_services-section">
+						<div class="container custom">
+							<div class="sec-title text-center">
+								<h2>OUR SERVICES</h2>
+								<div class="text">The ship set ground on the shore of this
+									uncharted desert isle
+								</div>
+							</div>
+
+							<div class="row clearfix gx-0">
+								<div
+									class="blocks-column order-last col-lg-6 col-md-12 col-sm-12">
+									<div class="inner-column">
+										<div class="service-block">
+											<div class="inner-box">
+												<span class="icon fa fa-pencil"></span>
+												<h3>
+													<a href="#">INTERIOR DESIGN</a>
+												</h3>
+												<div class="text">The story of a man named Brady hoo busy with
+													desert islecome to knock on our door.
+												</div>
+											</div>
+										</div>
+										<div class="service-block">
+											<div class="inner-box">
+												<span class="icon fa fa-database"></span>
+												<h3>
+													<a href="#">DECORATION</a>
+												</h3>
+												<div class="text">The story of a man named Brady hoo busy with
+													desert islecome to knock on our door.
+												</div>
+											</div>
+										</div>
+										<div class="service-block">
+											<div class="inner-box">
+												<span class="icon fa fa-file"></span>
+												<h3>
+													<a href="#">EXTERIOR DESIGN</a>
+												</h3>
+												<div class="text">The story of a man named Brady hoo busy with
+													desert islecome to knock on our door.
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div
+									class="image-column col-lg-6 col-md-12 col-sm-12 wow fadeInLeft">
+									<div class="inner-column"
+										style="background-image: url(theme_decor/static/src/img/image-2.jpg);">
+										<div class="image">
+											<a href="images/resource/image-2.jpg"
+												class="lightbox-image" data-fancybox="image">
+												<img src="theme_decor/static/src/img/image-2.jpg"
+													alt="" />
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<div class="oe_structure"></div>
+					<section class="s_furniture_who-we-are" id="who-we-are">
+						<div class="container custom">
+							<div class="row clearfix">
+								<div class="title-column col-lg-4 col-md-12 col-sm-12">
+									<div class="inner-column">
+										<div class="sec-title">
+											<h2>WHO WE ARE</h2>
+											<div class="text">The Love Boat promises something for everyone
+												so join us here reachs sure to get a smile from own come and
+												knock on our door.
+											</div>
+										</div>
+										<div class="btn-box">
+											<a href="#" class="theme-btn btn-style-one">Hire Us</a>
+										</div>
+									</div>
+								</div>
+								<div class="blocks-column col-lg-8 col-md-12 col-sm-12">
+									<div class="inner-column">
+										<div class="row clearfix">
+											<div
+												class="feature-block col-lg-4 col-md-6 col-sm-12 wow fadeInDown">
+												<div class="inner-box">
+													<span class="icon fa fa-id-card"></span>
+													<h3>
+														<a href="#">Our mission</a>
+													</h3>
+												</div>
+											</div>
+											<div
+												class="feature-block col-lg-4 col-md-6 col-sm-12 wow fadeInDown"
+												data-wow-delay="600ms">
+												<div class="inner-box">
+													<span class="icon fa fa-picture-o"></span>
+													<h3>
+														<a href="#">Our VIsion</a>
+													</h3>
+												</div>
+											</div>
+											<div
+												class="feature-block col-lg-4 col-md-6 col-sm-12 wow fadeInDown"
+												data-wow-delay="1200ms">
+												<div class="inner-box">
+													<span class="icon fa fa-bar-chart"></span>
+													<h3>
+														<a href="#">Our goals</a>
+													</h3>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<div class="oe_structure"></div>
+					<section class="s_furniture_about_with_img mt64 mb32"
+						id="about-us">
+						<div class="container">
+							<div class="row clearfix">
+								<div
+									class="content-column col-lg-6 col-md-12 col-sm-12">
+									<div class="inner-column">
+										<span class="title">ABOUT US</span>
+										<h2>CAPTURING THE ESSENCE OF INTERIOR SPRIT</h2>
+										<div class="text">
+											<p>The Love Boat promises something for everyone so join us
+												here each week my friends you're sure to get a smile from
+												seven fees story of a man named Brady who was busy with
+												three boys offe his own come and knock on our door.
+											</p>
+										</div>
+										<div class="btn-box">
+											<a href="#" class="theme-btn btn-style-one">READ MORE</a>
+										</div>
+									</div>
+								</div>
+								<div
+									class="image-column wow fadeInLeft col-lg-6 col-md-12 col-sm-12">
+									<div class="image-box">
+										<div class="image">
+											<a href="#" class="lightbox-image" data-fancybox="gallery">
+												<img src="/theme_decor/static/src/img/image-1.jpg"
+													alt="" />
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<div class="oe_structure"></div>
+					<section class="s_furniture_services-section-two"  style="background-image: url(/theme_decor/static/src/img/pattern.png);">
+						<div class="container custom">
+							<div class="upper-box">
+								<div class="row clearfix">
+									<div class="title-column col-lg-5 col-md-12 col-sm-12">
+										<div class="inner-column">
+											<span class="title">OUR SERVICES</span>
+											<h2>art of EXPLORING interior space</h2>
+										</div>
+									</div>
+
+									<div class="text-column col-lg-7 col-md-12 col-sm-12">
+										<div class="inner-column">
+											<div class="text">The Love Boat promises something for everyone
+												so join us here each week my friends you're sure to of a man
+												named Brady who was busy with three boys offe his own come
+												and knock on our door get a smile from seven fees story of a
+												man named Brady who was busy with three boys offe his own
+												come and knock on our door.
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="row clearfix">
+								<div
+									class="service-block-two col-lg-4 col-md-12 col-sm-12 wow fadeInUp">
+									<section class="inner-box">
+										<span class="icon fa fa-pencil"></span>
+										<h3>
+											<a href="#">INTERIOR DESIGN</a>
+										</h3>
+										<div class="text">The story of a man named Brady hoo busy with
+											desert islecome right its to knock on our door.
+										</div>
+									</section>
+								</div>
+								<div
+									class="service-block-two col-lg-4 col-md-12 col-sm-12 wow fadeInUp"
+									data-wow-delay="600ms">
+									<section class="inner-box">
+										<span class="icon fa fa-book"></span>
+										<h3>
+											<a href="#">INTERIOR DESIGN</a>
+										</h3>
+										<div class="text">The story of a man named Brady hoo busy with
+											desert islecome right its to knock on our door.
+										</div>
+									</section>
+								</div>
+								<div
+									class="service-block-two col-lg-4 col-md-12 col-sm-12 wow fadeInUp"
+									data-wow-delay="1200ms">
+									<section class="inner-box">
+										<span class="icon fa fa-bar-chart"></span>
+										<h3>
+											<a href="#">INTERIOR DESIGN</a>
+										</h3>
+										<div class="text">The story of a man named Brady hoo busy with
+											desert islecome right its to knock on our door.
+										</div>
+									</section>
+								</div>
+							</div>
+
+							<div class="btn-box">
+								<div class="text">Let’s start talk about your project or idea and
+									find out how we can help you.
+								</div>
+								<a href="#" class="theme-btn btn-style-one">CONTACT US</a>
+							</div>
+						</div>
+					</section>
+
+					<div class="oe_structure"></div>
+
+					<section class="s_furniture_team_section">
+						<section class="title-box"
+							style="background-image: url(/theme_decor/static/src/img/6.jpg);">
+							<div class="o_we_bg_filter bg-black-50"></div>
+							<div class="container custom">
+								<div class="sec-title light text-center">
+									<h2>OUR CREWS</h2>
+									<div class="text">The Love Boat promises something for everyone so
+										join us
+									</div>
+								</div>
+							</div>
+						</section>
+						<div class="content-box">
+							<div class="container custom">
+								<div class="row clearfix">
+									<div
+										class="team-block col-lg-3 col-md-6 col-sm-6 wow fadeInDown">
+										<div class="inner-box">
+											<div class="image-box">
+												<figure class="image">
+													<img src="/theme_decor/static/src/img/team-1.jpg"
+														alt="" />
+												</figure>
+												<div class="icon">
+												<ul class="social-links">
+													<li>
+														<a href="#">
+															<i class="fa fa-facebook-f"></i>
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<i class="fa fa-twitter"></i>
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<i class="fa fa-linkedin"></i>
+														</a>
+													</li>
+												</ul>
+											</div>
+											</div>
+											<div class="info-box">
+												<h4 class="name">
+													<a href="contact.html">James Watson</a>
+												</h4>
+												<span class="designation">Interior Designer</span>
+											</div>
+										</div>
+									</div>
+									<div
+										class="team-block col-lg-3 col-md-6 col-sm-6 wow fadeInUp"
+										data-wow-delay="600ms">
+										<div class="inner-box">
+											<div class="image-box">
+												<figure class="image">
+													<img src="/theme_decor/static/src/img/team-2.jpg"
+														alt="" />
+												</figure>
+												<div class="icon">
+												<ul class="social-links">
+													<li>
+														<a href="#">
+															<i class="fa fa-facebook-f"></i>
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<i class="fa fa-twitter"></i>
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<i class="fa fa-linkedin"></i>
+														</a>
+													</li>
+												</ul>
+											</div>
+											</div>
+											<div class="info-box">
+												<h4 class="name">
+													<a href="contact.html">Sasha wilson</a>
+												</h4>
+												<span class="designation">Decorator</span>
+											</div>
+										</div>
+									</div>
+									<div
+										class="team-block col-lg-3 col-md-6 col-sm-6 wow fadeInDown">
+										<div class="inner-box">
+											<div class="image-box">
+												<figure class="image">
+													<img src="/theme_decor/static/src/img/team-3.jpg"
+														alt="" />
+												</figure>
+												<div class="icon">
+												<ul class="social-links">
+													<li>
+														<a href="#">
+															<i class="fa fa-facebook"></i>
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<i class="fa fa-twitter"></i>
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<i class="fa fa-linkedin"></i>
+														</a>
+													</li>
+												</ul>
+											</div>
+											</div>
+											<div class="info-box">
+												<h4 class="name">
+													<a href="contact.html">BECKY Lench</a>
+												</h4>
+												<span class="designation">Exterior Designer</span>
+											</div>
+										</div>
+									</div>
+									<div
+										class="team-block col-lg-3 col-md-6 col-sm-6 wow fadeInUp"
+										data-wow-delay="600ms">
+										<div class="inner-box">
+											<div class="image-box">
+												<figure class="image">
+													<img src="/theme_decor/static/src/img/team-4.jpg"
+														alt="" />
+												</figure>
+												<div class="icon">
+												<ul class="social-links">
+													<li>
+														<a href="#">
+															<i class="fa fa-facebook"></i>
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<i class="fa fa-twitter"></i>
+														</a>
+													</li>
+													<li>
+														<a href="#">
+															<i class="fa fa-linkedin"></i>
+														</a>
+													</li>
+												</ul>
+											</div>
+											</div>
+											<div class="info-box">
+												<h4 class="name">
+													<a href="contact.html">Robert Bellramin</a>
+												</h4>
+												<span class="designation">Marketing Lead</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					
+					<div class="oe_structure"></div>
+				</div>
+				</t>
+			</t>
+		</field>
+	</record>
+
+	<record id="furniture_template_three_menu" model="website.page">
+		<field name="website_published">True</field>
+		<field name="url">/decor-homepage-three</field>
+		<field name="view_id" ref="furniture_template_three" />
+	</record>
+
+	
+</odoo>
+

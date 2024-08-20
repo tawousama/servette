@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_offers_one" name="Offers One">
+		<section class="fashion-sale pt32 ">
+			<div class="container extended-container">
+				<div class="row">
+					<div class="col-md-4 col-xl-4 mb-4 ">
+						<div class="sale-content">
+							<div class="sale-image">
+								<a href="#">
+									<img src="/theme_decor/static/src/img/fashion-sale1.jpg" class="img img-fluid"/>
+								</a>
+							</div>
+							<div class="sale-info">
+								<span>NEW ARRIVALS</span>
+								<h3>Premium Collection Of Chiars</h3>
+								<a href="#" class="btn btn-link">Shop Now</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-xl-4 mb-4">
+						<div class="sale-content">
+							<div class="sale-image">
+								<a href="#">
+									<img src="/theme_decor/static/src/img/fashion-sale2.jpg" class="img img-fluid"/>
+								</a>
+							</div>
+							<section class="sale-info2">
+								<h3>Sale <br></br>UP TO <span>50%</span></h3>
+								<a href="#" class="btn btn-outline-secondary">Shop Now</a>
+							</section>
+						</div>
+					</div>
+					<div class="col-md-4 col-xl-4 mb-4">
+						<div class="sale-content">
+							<div class="sale-image">
+								<a href="#">
+									<img src="/theme_decor/static/src/img/fashion-sale3.jpg" class="img img-fluid"/>
+								</a>
+							</div>
+							<div class="sale-info">
+								<span>NEW ARRIVALS</span>
+								<h3>Sofa Collections</h3>
+								<a href="#" class="btn btn-link">Shop Now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

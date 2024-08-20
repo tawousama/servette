@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_info_block_one" name="Info Block One">
+		<section class="glass-collection pt64 pb64">
+			<div class="container extended-container">
+				<div class="row align-items-center">
+					<div class="col-xl-6 col-lg-6 col-md-6 mb-4">
+						<div class="collection-centent">
+							<h3>WHY BUY DECOR? <br/> Collection of 2021.</h3>
+							<p class="w-75">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id lacinia nulla. Nulla suscipit semper mauris et dictum.</p>
+							<div class="s_btn pt16" data-name="Button">
+    							<a href="#" class="btn btn-secondary rounded-circle">VIEW collection</a>
+    						</div>
+						</div>
+					</div>
+					<div class="col-xl-6 col-lg-6 col-md-6 mb-4">
+						<div class="image">
+							<a href="#">
+								<img src="/theme_decor/static/src/img/solar_banner1.jpg" class="img img-fluid"/>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

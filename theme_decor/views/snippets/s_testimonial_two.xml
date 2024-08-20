@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="s_testimonial_two" name="Testimonial Two">
+		<section class="home1-testimonial pt144 pb144" style="background-image: url('/theme_decor/static/src/img/info_blockbg.jpg');">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div id="home1-testimonial" class="carousel bs-slider slide  control-round indicators-line" data-bs-ride="carousel" data-bs-pause="hover" data-bs-interval="7000">
+				          	<div class="carousel-inner" role="listbox">
+				            	<div class="carousel-item active">
+	            					<div class="content">
+	            						<div class="quote">
+	            							<span class="fa fa-quote-left fa-2x text-primary bg-white"/>
+	            						</div>
+	            						<p class="quote-text text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et elementum urna, quis sollicitudin mi. Vestibulum pulvinar sem eget neque varius varius.</p>
+	            						<div class="author d-flex align-items-center">
+	            							<div class="image">
+	            								<img class="img img-fluid" src="/theme_decor/static/src/img/team2.jpg" />
+	            							</div>
+	            							<div class="author-info">
+	            								<p class="text-black">John Doe</p>
+	            								<span class="text-muted">Buyer</span>
+	            							</div>
+	            						</div>
+	            					</div>
+				            	</div>
+				            	<div class="carousel-item">
+				            		<div class="content">
+	            						<div class="quote">
+	            							<span class="fa fa-quote-left fa-2x text-primary bg-white"/>
+	            						</div>
+	            						<p class="quote-text text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et elementum urna, quis sollicitudin mi. Vestibulum pulvinar sem eget neque varius varius.</p>
+	            						<div class="author d-flex align-items-center">
+	            							<div class="image">
+	            								<img class="img img-fluid" src="/theme_decor/static/src/img/team3.jpg" />
+	            							</div>
+	            							<div class="author-info">
+	            								<p class="text-black">John Doe</p>
+	            								<span class="text-muted">Buyer</span>
+	            							</div>
+	            						</div>
+	            					</div>
+					            </div>
+					            <div class="carousel-item">
+					            	<div class="content">
+	            						<div class="quote">
+	            							<span class="fa fa-quote-left fa-2x text-primary bg-white"/>
+	            						</div>
+	            						<p class="quote-text text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et elementum urna, quis sollicitudin mi. Vestibulum pulvinar sem eget neque varius varius.</p>
+	            						<div class="author d-flex align-items-center">
+	            							<div class="image">
+	            								<img class="img img-fluid" src="/theme_decor/static/src/img/team1.jpg" />
+	            							</div>
+	            							<div class="author-info">
+	            								<p class="text-black">John Doe</p>
+	            								<span class="text-muted">Buyer</span>
+	            							</div>
+	            						</div>
+	            					</div>
+					            </div>
+				          	</div>
+				          	<ol class="carousel-indicators">
+					            <li data-bs-target="#home1-testimonial" data-bs-slide-to="0" class="active"/>
+					            <li data-bs-target="#home1-testimonial" data-bs-slide-to="1"/>
+					            <li data-bs-target="#home1-testimonial" data-bs-slide-to="2"/>
+					        </ol>
+					        <a class="left carousel-control-prev d-none" data-bs-target="#home1-testimonial" role="button" data-bs-slide="prev">
+			                	<span class="fa fa-angle-left "/>
+			               	 	<b class="sr-only font-normal o_default_snippet_text">Previous</b>
+			              	</a>
+			              	<a class="right carousel-control-next d-none" data-bs-target="#home1-testimonial" role="button" data-bs-slide="next">
+			                	<span class="fa fa-angle-right"/>
+			                	<b class="sr-only font-normal o_default_snippet_text">Next</b>
+			              	</a>
+			        	</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+</odoo>

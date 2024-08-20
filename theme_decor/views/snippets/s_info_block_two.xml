@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_info_block_two" name="Info Block Two">
+		<section class="jewellery-aboutus-welcome-shop pt32 pb32">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-lg-7 mb16">
+						<div class="title">
+							<h3 class="heading">Welcome To Decor<br/> Modern Furniture Store</h3>
+						</div>
+						<div class="description">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id lacinia nulla. Nulla suscipit semper mauris et dictum. Integer ut eros vel purus tristique finibus. Nulla tristique, tellus ut posuere facilisis, nunc dolor feugiat massa, sed gravida quam mi semper nunc.
+						</div>
+						<div class="signature">
+							<img src="/theme_decor/static/src/img/sign.png" class="img img-fluid"/>
+						</div>
+					</div>
+					<div class="col-lg-5 mb16">
+						<div class="image text-center">
+							<a href="#">
+								<img src="/theme_decor/static/src/img/fashion-sale3.jpg" class="img img-fluid"/>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

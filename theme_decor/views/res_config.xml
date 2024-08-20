@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record id="res_config_settings_view_form" model="ir.ui.view">
+        <field name="name">res.config.settings.load.more</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="website.res_config_settings_view_form"/>
+        <field name="arch" type="xml">
+            <div id="website_shop_checkout" position="after">
+                <h2>Decor Settings</h2>
+                <div class="row mt16 o_settings_container" id="website_shop_theme_decor_setting">
+                    <div class="col-12 col-lg-6 o_setting_box">
+                        <div class="o_setting_left_pane">
+                            <field name="is_infinite_load"/>
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <label for="is_infinite_load"/>
+                            <!-- <span class="fa fa-spinner"/> -->
+                            <div class="text-muted">
+                                Enable Infinite Product Load
+                            </div>
+                            <div class="content-group" attrs="{'invisible': [('is_infinite_load', '=', False)]}">
+                                <div class="mt8">
+                                </div>
+                                <div class="mt8">
+                                    <label string="Infinite Load Image" for="infinite_load_image"/>
+                                    <!-- <span class="fa fa-spinner"/> -->
+                                    <div class="text-muted">
+                                        Infinite Load Image 
+                                    </div>
+                                    <field name="infinite_load_image" class="w-35 mt-2" widget="image"
+                                        attrs="{'required': [('is_infinite_load', '=', True)]}"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 o_setting_box">
+                        <div class="o_setting_left_pane">
+                            <field name="is_lazy_load"/>
+                        </div>
+                        <div class="o_setting_right_pane">
+                            <label for="is_lazy_load"/>
+                            <!-- <span class="fa fa-spinner"/> -->
+                            <div class="text-muted">
+                                Enable Lazy Load
+                            </div>
+                            <div class="content-group" attrs="{'invisible': [('is_lazy_load', '=', False)]}">
+                                <div class="mt8">
+                                </div>
+                                <div class="mt8">
+                                    <label string="Lazy Load Image" for="lazy_load_image"/>
+                                    <!-- <span class="fa fa-spinner"/> -->
+                                    <div class="text-muted">
+                                        Lazy Load Image 
+                                    </div>
+                                    <field name="lazy_load_image" class="w-35 mt-2" widget="image"
+                                        attrs="{'required': [('is_lazy_load', '=', True)]}"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 o_setting_box">
+                        <div class="o_setting_right_pane">
+                            <label string="Shop Page Banner Image" for="shop_page_banner_image"/>
+                            <div class="text-muted">
+                                Shop Page Banner Image
+                            </div>
+                            <field name="shop_page_banner_image" class="w-35 mt-2" widget="image"/>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 o_setting_box">
+                        <div class="o_setting_right_pane">
+                            <label string="Login/Signup Page Banner Image" for="login_page_banner_image"/>
+                            <div class="text-muted">
+                                Login/Signup Page Banner Image
+                            </div>
+                            <field name="login_page_banner_image" class="w-35 mt-2" widget="image"/>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 o_setting_box">
+                        <div class="o_setting_right_pane">
+                            <label string="Login/Signup Popup Image" for="login_popup_image"/>
+                            <div class="text-muted">
+                                Login/Signup Popup Image
+                            </div>
+                            <field name="login_popup_image" class="w-35 mt-2" widget="image"/>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 o_setting_box">
+                        <div class="o_setting_right_pane">
+                            <label string="Website Footer Logo" for="website_footer_logo"/>
+                            <div class="text-muted">
+                                Website Footer Logo
+                            </div>
+                            <field name="website_footer_logo" class="w-35 mt-2" widget="image"/>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-6 o_setting_box">
+                        <div class="o_setting_right_pane">
+                            <label string="Transparent Header Logo" for="transparent_header_logo"/>
+                            <div class="text-muted">
+                                Transparent Header Logo
+                            </div>
+                            <field name="transparent_header_logo" class="w-35 mt-2" widget="image"/>
+                        </div>
+                    </div>
+                </div>
+                
+                <h2>Progressive Web Application Setting</h2>
+                <div class="row mt16 o_settings_container" id="website_pwa_setting">
+                     <div class="col-xs-12 col-md-6 o_setting_box" id="website PWA">
+                         <div class="">
+                             <div class="col-12 o_setting_box">
+                                <div class="o_setting_left_pane">
+                                    <field name="enable_pwa"/>
+                                </div>
+                                <div class="o_setting_right_pane">
+                                    <label for="enable_pwa"/>
+                                    <!-- <span class="fa fa-lg fa-mobile"/> -->
+                                    <div class="text-muted">
+                                        Enable Progressive Web Application
+                                    </div>
+                                </div>
+                            </div>
+                             
+                             <div class="mt16" attrs="{'invisible': [('enable_pwa', '=', False)]}">
+                                <div class="">
+                                    <label class="col-lg-5 o_light_label" string="PWA Name" for="app_name_pwa"/>
+                                    <field name="app_name_pwa" attrs="{'required': [('enable_pwa', '=', True)]}"/>
+                                </div>
+                                <div class="">
+                                <label class="col-lg-5 o_light_label" string="Short Name" for="app_name_pwa"/>
+                                <field name="short_name_pwa" attrs="{'required': [('enable_pwa', '=', True)]}"/>
+                                </div>
+                                <div class="">
+                                <label class="col-lg-5 o_light_label" string="Description" for="description_pwa"/>
+                                <field name="description_pwa" attrs="{'required': [('enable_pwa', '=', True)]}"/>
+                                </div>
+                                <div class="">
+                                <label class="col-lg-5 o_light_label" string="Start url" for="start_url_pwa"/>
+                                <field name="start_url_pwa" attrs="{'required': [('enable_pwa', '=', True)]}"/>
+                                </div>
+                                <div class="">
+                                <label class="col-lg-5 o_light_label" string="Background Color" for="background_color_pwa"/>
+                                <field name="background_color_pwa" widget="color" attrs="{'required': [('enable_pwa', '=', True)]}"/>
+                                </div>
+                                <div class="">
+                                <label class="col-lg-5 o_light_label" string="Theme Color" for="theme_color_pwa"/>
+                                <field name="theme_color_pwa" widget="color" attrs="{'required': [('enable_pwa', '=', True)]}"/>
+                                </div>
+                                <div class="">
+                                <label class="col-lg-5 o_light_label" string="PWA Icon 512" for="image_512_pwa"/>
+                                    <field name="image_512_pwa" widget="image" attrs="{'required': [('enable_pwa', '=', True)]}"/>
+                                </div>
+                                 <div class="">
+                                <label class="col-lg-5 o_light_label" string="PWA Icon 192" for="image_192_pwa"/>
+                                    <field name="image_192_pwa" widget="image" attrs="{'required': [('enable_pwa', '=', True)]}"/>
+                                </div>
+                             </div>
+                         </div>
+                     </div>
+                </div>
+            </div>
+        </field>
+    </record>
+</odoo>

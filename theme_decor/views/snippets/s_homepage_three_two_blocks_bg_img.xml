@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_homepage_three_two_blocks_bg_img" name="Two images block with paragraph and link">
+		<section class="s_furniture_two_blocks_bg_img">
+			<div class="banner-area section-pb"
+				style="padding-top:0px;padding-bottom:96px;">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-6">
+							<div class="single-banner">
+								<div class="banner-bg">
+									<a href="#" class="hover_effect">
+										<img src="/theme_decor/static/src/img/chair1.jpg"
+											alt="" />
+									</a>
+								</div>
+								<div class="banner-contet">
+									<p>30% Off</p>
+									<h3>Chair Collection</h3>
+									<a href="#" class="btn-3">SHOP NOW</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-lg-6">
+							<div class="single-banner">
+								<div class="banner-bg">
+									<a href="#">
+										<img src="/theme_decor/static/src/img/chair2.jpg"
+											alt="" />
+									</a>
+								</div>
+								<div class="banner-contet">
+									<p>30% Off</p>
+									<h3>Chair Collection</h3>
+									<a href="#" class="btn-3">SHOP NOW</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

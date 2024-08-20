@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_offers_seven" name="Offers Seven">
+		<section class="jewellery-products pt32 pb32">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-lg-6 mb16">
+						<div class="banner-box">
+							<a href="#">
+								<img src="/theme_decor/static/src/img/jewellery-pro1.jpg" class="img img-fluid"/>
+							</a>
+							<div class="banner_content">
+								<h1 class="title">Modern Chairs</h1>
+								<div class="title2">Get Great Deals</div>
+								<div class="s_btn" data-name="Button">
+        							<a href="#" class="btn btn-link bizople_button">SHOP NOW</a>
+        						</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-lg-6 mb16">
+						<div class="banner-box">
+							<a href="#">
+								<img src="/theme_decor/static/src/img/jewellery-pro2.jpg" class="img img-fluid"/>
+							</a>
+							<div class="banner_content">
+								<h1 class="title">Wing Chairs</h1>
+								<div class="title2">Get Great Deals</div>
+								<div class="s_btn" data-name="Button">
+        							<a href="#" class="btn btn-link bizople_button">SHOP NOW</a>
+        						</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="s_testimonial_four" name="Testimonial Four">
+      	<div class="oe_structure"/>
+      	<section class="solarhome-testimonial pt104 pb104 parallax s_parallax_is_fixed bg-black-50">
+      		<span class="s_parallax_bg oe_img_bg" style="background-image: url('/theme_decor/static/src/img/solar_banner3.jpg'); background-position: 50% 0;"></span>
+      		<div class="o_we_bg_filter bg-black-50"></div>
+      		<div class="container">
+	      		<div class="mb48 text-center w-md-75 mx-md-auto">
+	            	<p class="mb-2 text-primary"><b>OUR CLIENTS TESTIMONIAL</b></p>
+	              	<h4 class="o_default_snippet_text"><b>See Clients Say About Us</b></h4>
+	              	<p class="my-2 o_default_snippet_text">Write one or two paragraphs describing your product or services. To be successful your content needs to be useful to your readers.Start with the customer – find out what they want and give it to them.</p>
+              	</div>
+          	</div>
+          	<div class="container">
+	        	<div id="solar-home-carousel" class="s_carousel carousel slide s_carousel_rounded" data-bs-interval="10000">
+		          	<div class="carousel-inner">
+			            <div class="carousel-item active" data-name="Slide" style="">
+			              	<div class="row justify-content-center">
+			                	<div class="carousel-content col-md-10 o_colored_level">
+									<div class="carousel-box ">
+										<div class="details bg-white shadow p-5 rounded-lg">
+											<h5 class="py-4 px-md-4">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+											</h5>
+										</div>
+										<div class="client-detail text-center">
+											<img class="img rounded-circle img-fluid" src="/theme_decor/static/src/img/solar_testimonial2.jpg">
+											</img>
+											<div class="client-name mt-3">
+												<h5>James Carter</h5>
+												<p class="mt-2 mb-0 text-muted text-uppercase">Decor Expert</p>
+											</div>
+										</div> 
+									</div>
+								</div>
+			              	</div>
+			            </div>
+			            <div class="carousel-item" data-name="Slide" style="">
+			              	<div class="row justify-content-center">
+			                	<div class="carousel-content col-md-10 o_colored_level">
+									<div class="carousel-box ">
+										<div class="details bg-white shadow p-5 rounded-lg">
+											<h5 class="py-4 px-md-4">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+											</h5>
+										</div>
+										<div class="client-detail text-center">
+											<img class="img rounded-circle img-fluid" src="/theme_decor/static/src/img/solar_testimonial3.jpg">
+											</img>
+											<div class="client-name mt-3">
+												<h5>Arya Stark</h5>
+												<p class="mt-2 mb-0 text-muted text-uppercase">Decor Expert</p>
+											</div>
+										</div> 
+									</div>
+								</div>
+			              	</div>
+			            </div>
+		          	</div>
+		          	<ol class="carousel-indicators">
+			            <li data-bs-target="#solar-home-carousel" data-bs-slide-to="0" class="active"/>
+			            <li data-bs-target="#solar-home-carousel" data-bs-slide-to="1"/>
+		          	</ol>
+		          	<a class="left carousel-control-prev d-none" data-bs-target="#solar-home-carousel" role="button" data-bs-slide="prev">
+	                	<span class="fa fa-angle-left "/>
+	               	 	<b class="sr-only font-normal o_default_snippet_text">Previous</b>
+	              	</a>
+	              	<a class="right carousel-control-next d-none" data-bs-target="#solar-home-carousel" role="button" data-bs-slide="next">
+	                	<span class="fa fa-angle-right"/>
+	                	<b class="sr-only font-normal o_default_snippet_text">Next</b>
+	              	</a>
+		        </div>
+	        </div>
+      	</section>
+      	<div class="oe_structure"/>
+	</template>
+</odoo>

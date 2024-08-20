@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_ico_block_four" name="Icons Block Four">
+		<section class="s_medical_icons_block pt40 pb40 feature24">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-7 text-center">
+						<h3 class="title">Furniture Categories</h3>
+						<h6 class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</h6>
+					</div>
+				</div>
+				<div class="row wrap-feature-24">
+					<div class="col-lg-3 col-md-6">
+						<section class="card card-shadow">
+							<div class="service-24">
+								<div class="display-5 t-icon">
+									<i class="fa fa-sun-o"></i>
+								</div>
+								<h6 class="ser-title">Best Service</h6>
+							</div>
+						</section>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<section class="card card-shadow">
+							<div class="service-24">
+								<div class="display-5 t-icon">
+									<i class="fa fa-cog"></i>
+								</div>
+								<h6 class="ser-title">Natural Materials</h6>
+							</div>
+						</section>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<section class="card card-shadow">
+							<div class="service-24">
+								<div class="display-5 t-icon">
+									<i class="fa fa-heart"></i>
+								</div>
+								<h6 class="ser-title">Customer Satisfactions</h6>
+							</div>
+						</section>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<section class="card card-shadow">
+							<div class="service-24">
+								<div class="display-5 t-icon">
+									<i class="fa fa-music"></i>
+								</div>
+								<h6 class="ser-title">Premium Chairs</h6>
+							</div>
+						</section>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<section class="card card-shadow">
+							<div class="service-24">
+								<div class="display-5 t-icon">
+									<i class="fa fa-eye"></i>
+								</div>
+								<h6 class="ser-title">Modern Styles</h6>
+							</div>
+						</section>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<section class="card card-shadow">
+							<div class="service-24">
+								<div class="display-5 t-icon">
+									<i class="fa fa-laptop"></i>
+								</div>
+								<h6 class="ser-title">Wide Network</h6>
+							</div>
+						</section>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<section class="card card-shadow">
+							<div class="service-24">
+								<div class="display-5 t-icon">
+									<i class="fa fa-briefcase"></i>
+								</div>
+								<h6 class="ser-title">Office Furnitures</h6>
+							</div>
+						</section>
+					</div>
+					<div class="col-lg-3 col-md-6">
+						<section class="card card-shadow">
+							<div class="service-24">
+								<div class="display-5 t-icon">
+									<i class="fa fa-smile-o"></i>
+								</div>
+								<h6 class="ser-title">Work Satisfaction</h6>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</template>
+
+</odoo>

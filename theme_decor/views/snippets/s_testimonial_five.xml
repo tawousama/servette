@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="s_testimonial_five" name="Testimonial Five">
+      	<div class="oe_structure"/>
+      	
+      	<section class="corpo_transport_testimonial pt104 pb104 parallax s_parallax_is_fixed bg-black-50">
+      		<span class="s_parallax_bg oe_img_bg" style="background-image: url('/theme_decor/static/src/img/world-map.png'); background-position: 50% 0;"></span>
+      		<div class="o_we_bg_filter bg-black-50"></div>
+      		<div class="container">
+	      		<div class="mb48 text-center w-lg-75 mx-lg-auto">
+	            	<p class="m-0 section-heading one-side-heading-line two-line text-uppercase"><b>TESTIMONIAL</b></p>
+	              	<h4 class="o_default_snippet_text"><b>What Clients Say About Us?</b></h4>
+	              	<p class="my-2 o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+              	</div>
+          	</div>
+          	<div class="container">
+	        	<div id="corpo-transport-carousel" class="s_carousel carousel slide s_carousel_rounded" data-bs-interval="10000">
+		          	<div class="carousel-inner">
+			            <div class="carousel-item active" data-name="Slide" style="">
+			              	<div class="row">
+			                	<div class="col-lg-6">
+			                		<section class="testimonial-box mb-3 mb-lg-0 px-4 py-5 bg-white rounded-lg">
+				                		<div class="d-block d-md-flex justify-content-between">
+					                		<div class="d-flex align-items-center">
+							              		<img src="/theme_decor/static/src/img/transport-client1.jpg" class="img img-fluid rounded-lg me-3 shadow"/>
+							              		<div class="name-posi">
+							              			<h5 class="text-800 mb-2"><b>June Clark</b></h5>
+							              			<p class="text-primary text-uppercase">Founder &amp; CTO Decor</p>
+							              		</div>
+							          		</div>
+							          		<div class="rating mt-3 mt-md-0">
+							          			<span class="fa fa-star text-primary"/>
+							          			<span class="fa fa-star text-primary"/>
+							          			<span class="fa fa-star text-primary"/>
+							          			<span class="fa fa-star text-primary"/>
+							          			<span class="fa fa-star text-primary"/>
+							          		</div>
+							          	</div>
+						          		<p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						          	</section>
+			                	</div>
+			                	<div class="col-lg-6">
+			                		<section class="testimonial-box mb-3 mb-lg-0 px-4 py-5 bg-white rounded-lg">
+				                		<div class="d-block d-md-flex justify-content-between">
+					                		<div class="d-flex align-items-center">
+							              		<img src="/theme_decor/static/src/img/transport-client2.jpeg" class="img img-fluid rounded-lg me-3 shadow"/>
+							              		<div class="name-posi">
+							              			<h5 class="text-800 mb-2"><b>Paul Woods</b></h5>
+							              			<p class="text-primary text-uppercase">Founder &amp; CTO Decor</p>
+							              		</div>
+							          		</div>
+							          		<div class="rating mt-3 mt-md-0">
+							          			<span class="fa fa-star text-primary"/>
+							          			<span class="fa fa-star text-primary"/>
+							          			<span class="fa fa-star text-primary"/>
+							          			<span class="fa fa-star text-primary"/>
+							          			<span class="fa fa-star text-primary"/>
+							          		</div>
+							          	</div>
+						          		<p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						          	</section>
+			                	</div>
+			              	</div>
+			            </div>
+			            <div class="carousel-item" data-name="Slide" style="">
+			              	<div class="row">
+			                	<div class="col-lg-6">
+			                		<section class="testimonial-box px-4 py-5 mb-3 mb-lg-0 bg-white rounded-lg">
+				                		<div class="d-block d-md-flex justify-content-between">
+					                		<div class="d-flex align-items-center">
+							              		<img src="/theme_decor/static/src/img/transport-client3.jpg" class="img img-fluid rounded-lg me-3 shadow"/>
+							              		<div class="name-posi">
+							              			<h5 class="text-800 mb-2"><b>Del Burrows</b></h5>
+							              			<p class="text-primary text-uppercase">Founder &amp; CTO Decor</p>
+							              		</div>
+							          		</div>
+							          		<div class="rating mt-3 mt-md-0">
+							          			<span class="fa fa-star text-primary"/>
+							          			<span class="fa fa-star text-primary"/>
+							          			<span class="fa fa-star text-primary"/>
+							          			<span class="fa fa-star text-primary"/>
+							          			<span class="fa fa-star text-primary"/>
+							          		</div>
+							          	</div>
+						          		<p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						          	</section>
+			                	</div>
+			                	<div class="col-lg-6">
+			                		<section class="testimonial-box px-4 py-5 mb-3 mb-lg-0 bg-white rounded-lg">
+				                		<div class="d-block d-md-flex justify-content-between">
+					                		<div class="d-flex align-items-center">
+							              		<img src="/theme_decor/static/src/img/transport-client4.jpeg" class="img img-fluid rounded-lg me-3 shadow"/>
+							              		<div class="name-posi">
+							              			<h5 class="text-800 mb-2"><b>Stuart Mills</b></h5>
+							              			<p class="text-primary text-uppercase">Founder &amp; CTO Decor</p>
+							              		</div>
+							          		</div>
+							          		<div class="rating mt-3 mt-md-0">
+							          			<span class="fa fa-star text-primary"/>
+							          			<span class="fa fa-star text-primary"/>
+							          			<span class="fa fa-star text-primary"/>
+							          			<span class="fa fa-star text-primary"/>
+							          			<span class="fa fa-star text-primary"/>
+							          		</div>
+							          	</div>
+						          		<p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+						          	</section>
+			                	</div>
+			              	</div>
+			            </div>
+		          	</div>
+		          	<ol class="carousel-indicators position-relative justify-content-center m-0 mt-5">
+			            <li data-bs-target="#corpo-transport-carousel" data-bs-slide-to="0" class="active"/>
+			            <li data-bs-target="#corpo-transport-carousel" data-bs-slide-to="1"/>
+		          	</ol>
+		          	<a class="left carousel-control-prev d-none" data-bs-target="#corpo-transport-carousel" role="button" data-bs-slide="prev">
+	                	<span class="fa fa-angle-left "/>
+	               	 	<b class="sr-only font-normal o_default_snippet_text">Previous</b>
+	              	</a>
+	              	<a class="right carousel-control-next d-none" data-bs-target="#corpo-transport-carousel" role="button" data-bs-slide="next">
+	                	<span class="fa fa-angle-right"/>
+	                	<b class="sr-only font-normal o_default_snippet_text">Next</b>
+	              	</a>
+		        </div>
+	        </div>
+      	</section>
+	      	
+      	<div class="oe_structure"/>
+	</template>
+</odoo>

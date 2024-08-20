@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+        <!-- Product tab -->
+        <record id="view_product_tab_tree_bizople" model="ir.ui.view">
+            <field name="name">product.tab.tree</field>
+            <field name="model">product.tab</field>
+            <field name="type">tree</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <tree string="Product tab">
+                    <field name="sequence"/>
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record id="view_product_tab_form_bizople" model="ir.ui.view">
+            <field name="name">product.tab.form</field>
+            <field name="model">product.tab</field>
+            <field name="type">form</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Product tab">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name" required="1"/>
+                            </group>
+                            <group>
+                                <field name="sequence" required="1"/>
+                            </group>
+                            <field name="content" widget="html_frame" required="1"/>
+                            <field name="product_ids" invisible="1"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_product_tab_search_bizople" model="ir.ui.view">
+            <field name="name">product.tab.search</field>
+            <field name="model">product.tab</field>
+            <field name="type">search</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search string="Product Tab">
+                    <field name="name" select="True"/>
+                </search>
+            </field>
+        </record>
+        
+        <record model="ir.actions.act_window" id="act_open_product_tab_view_bizople">
+            <field name="name">Product tab</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.tab</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- <record id="view_product_tempalte_tab_form_bizople" model="ir.ui.view">
+            <field name="name">product.template.form</field>
+            <field name="model">product.template</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="product.product_template_only_form_view" />
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='inventory']" position="after">
+                    <page name="Tab" string="Tab">
+                        <group>
+                            <field name="tab_ids" colspan="5">
+                                <tree string="tab">
+                                    <field name="sequence"/>
+                                    <field name="name"/>
+                                </tree>
+                            </field>
+                        </group>
+                    </page>
+                </xpath>
+                 <xpath expr="//field[@name='public_categ_ids']" position="after">
+                        <field name="product_label_id"/>
+                </xpath>
+              
+                <xpath expr="//field[@name='website_ribbon_id']" position="after">
+                    <field name="hover_image" widget="image" class="oe_avatar float-start"/>
+                </xpath>
+               
+            </field>
+        </record> -->
+
+        <record id="view_product_tempalte_tab_form_bizople" model="ir.ui.view">
+            <field name="name">product.template.form</field>
+            <field name="model">product.template</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="product.product_template_only_form_view" />
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='inventory']" position="after">
+                    <page name="Tab" string="Tab">
+                        <label for="tab_ids" string="Product Tabs"/>
+                        <field name="tab_ids">
+                            <tree string="tab">
+                                <field name="sequence"/>
+                                <field name="name"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+                <xpath expr="//field[@name='public_categ_ids']" position="after">
+                    <field name="product_label_id"/>
+                </xpath>
+                <xpath expr="//field[@name='website_ribbon_id']" position="after">
+                    <field name="hover_image" widget="image" class="oe_avatar float-start"/>
+                </xpath>
+            </field>
+        </record>
+
+
+
+            <!-- Product Tab end -->
+
+            <!-- Product Label -->
+
+         <record id="product_label_tree_view_bizople" model="ir.ui.view">
+            <field name="name">product.label.tree</field>
+            <field name="model">product.label.bizople</field>
+            <field name="type">tree</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <tree string="Product Label">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+        
+        <record id="product_label_form_view_bizople" model="ir.ui.view">
+            <field name="name">product.label.form</field>
+            <field name="model">product.label.bizople</field>
+            <field name="type">form</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <form string="Product Label">
+                    <sheet>
+                        <group>
+                            <field name="name"/>
+                            <field name="label_bg_color" widget="color"/>
+                            <field name="label_font_color" widget="color"/>
+                            <field name="label_style" widget="radio"/>
+                        </group>
+                        <div class="text-info">
+                                <h4>Note: For Outline Styles Background color work as Border Color</h4>
+                        </div>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="product_label_search_view_bizople" model="ir.ui.view">
+            <field name="name">product.label.search</field>
+            <field name="model">product.label.bizople</field>
+            <field name="type">search</field>
+            <field name="priority" eval="8"/>
+            <field name="arch" type="xml">
+                <search string="Product Label">
+                    <field name="name" select="True"/>
+                </search>
+            </field>
+        </record>
+        
+        
+        
+        <record model="ir.actions.act_window" id="act_open_product_label_view_bizople">
+            <field name="name">Product Label</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.label.bizople</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+
+        <!-- end Product label -->
+
+        <!-- menu label -->
+       <record id="view_menu_label_form_bizople" model="ir.ui.view">
+            <field name="name">website.menu.form.inherit</field>
+            <field name="model">website.menu</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="website.website_menus_form_view" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='parent_id']" position="after">
+                    <field name="product_label_id"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="website_menu_label_tree_bizople" model="ir.ui.view">
+            <field name="name">website.menu.tree.inherit</field>
+            <field name="model">website.menu</field>
+            <field name="inherit_id" ref="website.menu_tree"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='is_mega_menu']" position="after">
+                    <field name="product_label_id"/>
+                </xpath>
+            </field>
+        </record>
+
+         <record id="view_product_tempalte_service_form" model="ir.ui.view">
+            <field name="name">product.template.form</field>
+            <field name="model">product.template</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="website_sale.product_template_form_view" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='accessory_product_ids']" position="after">
+                    <field name="service_ids" widget="many2many_tags"/>
+                    <field name="highlights_ids" widget="many2many_tags"/>
+                    <!-- <field name="tag_ids" widget="many2many_tags"/> -->
+                </xpath>
+            </field>
+        </record>
+
+        <!-- <record id="product_description_bizople" model="ir.ui.view">
+            <field name="name">product.public.category.form</field>
+            <field name="model">product.public.category</field>
+            <field name="inherit_id" ref="website_sale.product_public_category_form_view" />
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='sequence']" position="after">
+                    <field name="website_description"/>
+                </xpath>
+            </field>
+        </record> -->
+
+        <record model="ir.ui.view" id="product_website_description">
+            <field name="name">product.template.product.website.form</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[@name='sales']" position="after">
+                    <page name="product description" string="Product Description">
+                        <group name="shop">
+                            <field name="website_description" />
+                        </group>
+                    </page>
+                </xpath>
+            </field>
+        </record>
+
+    </data>
+</odoo>

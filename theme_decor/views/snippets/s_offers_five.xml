@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_offers_five" name="Offers Five">
+		<section class="accessories-sale pt32">
+			<div class="container extended-container">
+				<div class="row">
+					<div class="col-md-6 col-xl-6 mb-4">
+						<div class="sale-content">
+							<div class="sale-image">
+								<a href="#">
+									<img src="/theme_decor/static/src/img/accesories-img4.jpg" class="img img-fluid"/>
+								</a>
+							</div>
+							<div class="sale-info4">
+								<div class="content">
+									<span class="">GET UP TO 40% OFF</span>
+									<h3>Classic Comfortable Chairs</h3>
+									<a href="#" class="btn btn-link">Shop Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-xl-6 mb-4">
+						<div class="sale-content">
+							<div class="sale-image">
+								<a href="#">
+									<img src="/theme_decor/static/src/img/accesories-img5.jpg" class="img img-fluid"/>
+								</a>
+							</div>
+							<div class="sale-info4">
+								<div class="content text-end">
+									<span class="">GET UP TO 40% OFF</span>
+									<h3>Premium Furniture &amp; Sofas</h3>
+									<a href="#" class="btn btn-link">Shop Now</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

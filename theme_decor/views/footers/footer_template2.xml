@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="theme_common_footer2" inherit_id="website.layout" name="Footer Two" active="False">
+	    <xpath expr="//div[@id='footer']" position="replace">
+	    	<div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+				<section id="footer_theme_common" class="footer_theme_common2 o_footer">
+					<section class="top-footer font-14">
+						<div class="f2-middle">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-4 col-md-6">
+										<div class="block-footer">
+											<div class="title-block-footer">
+												<h4 class="text-white">About Store</h4>
+											</div>
+											<div class="content-block-footer">
+												<ul class="contact-list">
+													<li class="address-contact d-flex">
+														<p class="m-0 text-white"><span class="icon icon-House me-3"/></p>
+														<p class="m-0 text-white"><span t-out="res_company.street"/>,<span t-out="res_company.city"/>,<span t-out="res_company.zip"/></p>
+													</li>
+													<li class="address-contact d-flex">
+														<p class="m-0 text-white"><span class="ri ri-mail-send-line me-3"/></p>
+														<p class="m-0 text-white"><span t-out="res_company.email"/></p>
+													</li>
+													<li class="address-contact d-flex">
+														<p class="m-0 text-white"><span class="lnr lnr-phone-handset me-3"/></p>
+														<p class="m-0 text-white"><span t-out="res_company.phone"/></p>
+													</li>
+													<li class="address-contact d-flex">
+														<p class="m-0 text-white"><span class="icofont icofont-wall-clock me-3"/></p>
+														<p class="m-0 text-white"><span>Open Time: 8:00AM - 6:00PM</span></p>
+													</li>
+													<li class="footer-pricelist d-flex">
+														<p class="m-0 text-white"><span class="ti ti-money me-3"/></p>
+														<t t-set="website_sale_pricelists" t-value="website.get_pricelist_available(show_visible=True)" />
+														<div t-attf-class="dropdown me-auto#{'' if website_sale_pricelists and len(website_sale_pricelists)&gt;1 else ' '} #{_classes}">
+								           					<t t-set="curr_pl" t-value="website.get_current_pricelist()" />
+															<a role="button" href="#" class="text-white dropdown-toggle btn btn-link p-0" data-bs-toggle="dropdown">
+												            	<t t-out="curr_pl and curr_pl.name or ' - '" />
+												            </a>
+															<div class="dropdown-menu" role="menu">
+												                <t t-foreach="website_sale_pricelists" t-as="pl">
+												                    <a role="menuitem" t-att-href="'/shop/change_pricelist/%s' % pl.id" class="dropdown-item">
+												                        <span class="switcher_pricelist" t-att-data-pl_id="pl.id" t-out="pl.name" />
+												                    </a>
+												                </t>
+												            </div>
+												        </div>
+													</li>
+													<li class="footer-language ">
+														<div class="d-flex menu-language js_language_selector mb0 text-lg-center" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+															<p class="mb-0 me-3">
+																<t t-foreach="website.language_ids" t-as="lg">
+												                    <t t-if="request.context.get('lang') == lg.code">
+												                        <img t-att-src="website.image_url(lg, 'flag_image')" width="18" t-att-title="lg.name" />
+												                    </t>
+												                </t>
+															</p>
+												            <div class="dropdown">
+												                <a href="#" class="text-white p-0 nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+												                    <t t-foreach="website.language_ids" t-as="lg">
+													                    <t t-if="request.context.get('lang') == lg.code">
+													                        <span class="lang_local_code text-uppercase" t-out="list(filter(lambda lg : lg[0] == lang, languages))[0][1]"/>
+													                    </t>
+													                </t>
+												                </a>
+												                <div class="dropdown-menu" role="menu">
+												                    <t t-foreach="languages" t-as="lg">
+												                        <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
+												                           class="dropdown-item js_change_lang"
+												                           t-att-data-url_code="lg[1]">
+											                            	<t t-out="lg[2].split('/').pop()"/>
+												                        </a>
+												                    </t>
+												                </div>
+												            </div>
+													    </div>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 col-lg-2">
+										<div class="block-footer">
+											<div class="title-block-footer">
+												<h4 class="text-white">Our Services</h4>
+											</div>
+											<div class="content-block-footer">
+												<ul class="footer-links links2">
+													<li><a href="#">Chairs</a></li>
+													<li><a href="#">Sofa</a></li>
+													<li><a href="#">Wardrobe</a></li>
+													<li><a href="#">Lamps</a></li>
+													<li><a href="#">Tables</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-md-6 col-lg-2">
+										<div class="block-footer">
+											<div class="title-block-footer">
+												<h4 class="text-white">Information</h4>
+											</div>
+											<div class="content-block-footer">
+												<ul class="footer-links links2">
+													<li><a href="#">Home</a></li>
+													<li><a href="#">Contact Us</a></li>
+													<li><a href="#">About Us</a></li>
+													<li><a href="#">Policy</a></li>
+													<li><a href="#">FAQ</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-4 col-md-6">
+										<div class="block-footer">
+											<div class="title-block-footer">
+												<h4 class="text-white">Sign Up For Newsletter</h4>
+											</div>
+											<p class="newsletter-description">Register your email for news and get special offers</p>
+											<div class="block-subscribe-footer">
+												<form class="input-group js_subscribe mt16" data-list-id="1">
+													<input type="email" name="email" class="js_subscribe_value form-control bg-white" placeholder="Email Address"/>
+													<span class="input-group-append">
+											            <a role="button" href="#" class="btn btn-primary js_subscribe_btn h-100">Subscribe</a>
+											            <a role="button" href="#" class="btn btn-success js_subscribed_btn h-100 d-none" disabled="disabled">Thanks</a>
+											        </span>
+												</form>
+											</div>
+											<div class="footer-media mb-3">
+												<a class="link me-3" t-att-href="website.social_facebook"
+													t-if="website.social_facebook" target="_blank">
+													<i class="fa fa-facebook" />
+												</a>
+												<a class="link me-3" t-att-href="website.social_twitter"
+													t-if="website.social_twitter" target="_blank">
+													<i class="fa fa-twitter" />
+												</a>
+												<a class="link me-3" t-att-href="website.social_linkedin"
+													t-if="website.social_linkedin" target="_blank">
+													<i class="fa fa-linkedin" />
+												</a>
+												<a class="link me-3" t-att-href="website.social_youtube"
+													t-if="website.social_youtube" target="_blank">
+													<i class="fa fa-youtube-play" />
+												</a>
+												<a class="link me-3" t-att-href="website.social_instagram"
+													t-if="website.social_instagram" target="_blank">
+													<i class="fa fa-instagram"></i>
+												</a>
+												<a class="link me-3" t-att-href="website.social_github"
+													t-if="website.social_github" target="_blank">
+													<i class="fa fa-github"></i>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+					<section class="middle-footer links2 py-4">
+						<div class="container">
+							<div class="categories-footer">
+								<div class="label text-white">MOST SEARCHED KEYWORDS:</div>
+								<ul>
+									<li>
+										<span class="text-white">CHAIRS:</span>
+										<a href="#">Wing Chair</a> | <a href="#">Modern Chair</a> | <a href="#">Desk Chair</a> | <a href="#">View all</a>
+									</li>
+									<li>
+										<span class="text-white">SOFA:</span>
+										<a href="#">Sectional Sofa</a> | <a href="#">Modern Sofa</a> | <a href="#">Sofa Beds</a> | <a href="#">3 Seater Sofa</a> | <a href="#">Wooden Sofa</a> | <a href="#">L-Shaped Sofa</a> | <a href="#">View all</a>
+									</li>
+									<li>
+										<span class="text-white">Lamps:</span>
+										<a href="#">Desk Lamp</a> | <a href="#">Flexible Lamp</a> | <a href="#">Night Stand Lamp</a> | <a href="#">Banker's Lamp</a> | <a href="#">Candelabra Lamp</a> | <a href="#">Modern Lamp</a> | <a href="#">Indusrial Lamp</a> | <a href="#">View all</a>
+									</li>
+									<li>
+										<span class="text-white">TABLES:</span>
+										<a href="#">Cocktail Table</a> | <a href="#">Dining Room Table</a> | <a href="#">Dining Table</a> | <a href="#">Console Table</a> | <a href="#">Metal Table</a> | <a href="#">Wooden Sofa</a> | <a href="#">View all</a>
+									</li>
+									<li>
+										<span class="text-white">CHANDELIER:</span>
+										<a href="#">Braded Chandelier</a> | <a href="#">Candle Chandelier</a> | <a href="#">Crystal Chandelier</a> | <a href="#">Caged Chandelier</a> | <a href="#">Modern Chandelier</a> | <a href="#">Multi Level Chandelier</a> | <a href="#">View all</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</section>
+					
+				</section>
+			</div>
+		</xpath>
+		<xpath expr="//div[hasclass('o_footer_copyright')]" position="replace">
+			<div t-if="not no_copyright" class="o_footer_copyright">
+				<section class="copyright text-default py-4">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-5 col-md-6 mb-4 mb-md-0">
+								<div class="payment-content">
+									<img src="/theme_decor/static/src/img/payment-footer.png" class="img-fluid"/>
+								</div>
+							</div>
+							<div class="col-lg-7 col-md-6  company text-center text-md-end">
+								<span class="text-white">
+									© 2021 | All Rights Reserved By <span t-field="res_company.name" />
+								</span>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</xpath>
+	</template>
+</odoo>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_offers_two" name="Offers Two">
+		<section class="fashion-deal-of-the-day" style="background-image: url('/theme_decor/static/src/img/fashion-deal.jpg');">
+			<div class="container extended-container">
+				<div class="row">
+					<div class="deal-section">
+						<section class="products-content">
+							<div class="d-flex align-items-center title-banner">
+								<div class="icon">
+									<span class="fa fa-connectdevelop"/>
+								</div>
+								<h2 class="title">Deals<br></br>off the day.</h2>
+							</div>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+							<div class="s_btn mt32" data-name="Button">
+    							<a href="#" class="btn btn-outline-light">Shop now <span class="fa fa-arrow-right ms-1"/></a>
+    						</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

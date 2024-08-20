@@ -1,0 +1,255 @@
+#footer_theme_common4{
+	.footer-pricelist, .footer-language{
+		p{
+			span{
+			    font-size: 25px;
+			}
+			img{
+				width: 25px;
+				height: 25px;
+				border-radius: 50%;
+			}
+		}
+		a.dropdown-toggle{
+			&:after{
+			    font-family: 'remixicon' !important;
+			    border: 0;
+			    font-size: 12px;
+			    vertical-align: middle;
+			    content: '\ea4c';
+			}
+			font-size: 15px;
+		    color: #6d7175;
+		    text-decoration: none;
+		}
+	    margin-bottom: 10px;
+	}
+	.footer-logo{
+		img{
+	        max-height: 1.5rem;
+		}
+	}
+	.newsletter-description{
+		font-size: 14px;
+	    line-height: 1.66;
+	}
+	.block-subscribe-footer {
+	    margin-bottom: 25px;
+
+	    .subscribe {
+		    display: table;
+		    width: 100%;
+		}
+		.js_subscribe_value{
+			display: table-cell;
+		    vertical-align: top;
+		    width: 100%;
+		    border-radius: 0px !important;
+		    height: 48px !important;
+		}
+		.input-group-append a{
+			display: table-cell;
+    		vertical-align: top;
+    		height: 48px !important;
+		    line-height: 35px !important;
+		    border-radius: 0px !important;
+
+		}
+	}
+	.contact-content{
+		.contact-icon{
+			.icon{
+				font-size: 25px;
+			    margin-right: 15px;
+			    margin-top: 30px;
+			    display: inline-block;
+			}
+		}
+		.contact-info{
+			p{
+			    margin-bottom: 10px;
+    			font-size: 15px;
+			}
+			h6{
+			    font-size: 16px;
+			}
+		}
+	}
+	.social-share{
+		a.link{
+			font-size: 18px;
+			margin-right: 27px;
+		}
+	}
+	.footer-links{
+		h6{
+		    font-weight: 500;
+		    margin-bottom: 30px !important;
+		    font-size: 20px;
+		}
+		p{
+			a{	
+			    line-height: 30px;
+			    text-decoration: none;
+			    color: #333333;
+			    -webkit-transition: all 0.3s ease-in-out;
+			    -moz-transition: all 0.3s ease-in-out;
+			    -ms-transition: all 0.3s ease-in-out;
+			    -o-transition: all 0.3s ease-in-out;
+			    transition: all 0.3s ease-in-out;
+			    &:hover{
+			    	color: $primary;
+			    }
+			}
+			margin: 0;
+		}
+	}
+	.newsletter-content{
+		h4{
+			font-weight: 500;
+		    margin-bottom: 30px !important;
+		    font-size: 20px;
+		}
+		.newsletter-description{
+			line-height: 24px;
+    		color: #333333;
+		}
+	}
+	.apps-link{
+		.title h6{
+			color: #484848;
+		    font-weight: 500;
+		    font-size: 20px;
+		}
+		.app-box{
+		    padding: 13px 21px;
+		    border: 2px solid #e5e5e5;
+		    border-radius: 8px;
+		    display: inline-block;
+		    -webkit-transition: all 0.3s ease-in-out;
+		    -moz-transition: all 0.3s ease-in-out;
+		    -ms-transition: all 0.3s ease-in-out;
+		    -o-transition: all 0.3s ease-in-out;
+		    transition: all 0.3s ease-in-out;
+	        align-items: center;
+            justify-content: center;
+		    &:hover{
+		    	.apple-logo{
+					color: #1b1b1b !important;
+				}
+				.android-logo{
+					color: #238a23 !important;
+				}
+		    	border-color: $primary;
+		    }
+		}
+		.app-icon{
+			.fa{
+				color: #e5e5e5;
+			    font-size: 35px;
+    			margin-right: 15px;
+    			-webkit-transition: all 0.3s ease-in-out;
+			    -moz-transition: all 0.3s ease-in-out;
+			    -ms-transition: all 0.3s ease-in-out;
+			    -o-transition: all 0.3s ease-in-out;
+			    transition: all 0.3s ease-in-out;
+			}
+		}
+		.app-content{
+			h6{
+				a{
+			    	color: #484848;
+			    	text-decoration: none;
+			    	-webkit-transition: all 0.3s ease-in-out;
+				    -moz-transition: all 0.3s ease-in-out;
+				    -ms-transition: all 0.3s ease-in-out;
+				    -o-transition: all 0.3s ease-in-out;
+				    transition: all 0.3s ease-in-out;
+				    &:hover{
+				    	color: $primary;
+				    }
+				}
+				font-size: 20px;
+			}
+			p{
+				margin: 0;
+			}
+		}
+	}
+	.copyright-section{
+		background-color: #e6e6e6;
+	}
+	.top-footer{
+		background-color: #ffffff;
+	}
+	@media (min-width: 992px) and (max-width: 1199.98px) {
+		.footer-links{
+			h6{
+				font-size: 17px;
+			}
+			p{
+				a{
+					font-size: 12px;
+				}
+			}
+		}
+		.newsletter-content{
+			h4{
+			    font-size: 17px;
+			}
+			.newsletter-description{
+				font-size: 12px;
+			}
+		}
+	}
+	@media (min-width: 768px) and (max-width: 991.98px) {
+		.contact-content{
+			.contact-icon{
+				.icon{
+					font-size: 20px;
+				    margin-top: 25px;
+				}
+			}
+			.contact-info{
+				p{
+	    			font-size: 12px;
+				}
+				h6{
+				    font-size: 13px;
+				}
+			}
+		}
+		.social-share{
+			a.link{
+				font-size: 16px;
+				margin-right: 20px;
+			}
+		}
+		.footer-links{
+			h6{
+				font-size: 11px;
+			}
+			p{
+				a{
+					font-size: 10px;
+					line-height: 24px;
+				}
+			}
+		}
+		.newsletter-content{
+			h4{
+			    font-size: 11px;
+			}
+			.newsletter-description{
+				font-size: 10px;
+				line-height: 24px;
+			}
+		}
+	}
+	@media (max-width: 767.98px) {
+		.copyright-section{
+			padding-bottom: 83px !important;
+		}
+	}
+	border-top: 1px solid #e5e5e5;
+}

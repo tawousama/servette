@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<template id="s_configurator_snippet_style4"  name="Snippet Style Three">
+		<section class="snippet_style_four pt16 pb16">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-4">
+						<section class="holiday_sale" style="background-image:url('/theme_decor/static/src/img/config_snippet4.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+							<div class="holiday_sale_content">
+								<h3 class="heading">HOLIDAY SHOP</h3>
+								<h4 class="sub_heading">Up tp 70% Off</h4>
+								<div class="mt32">
+									<a class="" href="#">
+										SHOP NOW
+										<span class="icon fa fa-angle-right ps-2"/>
+									</a>
+								</div>
+							</div>
+						</section>
+					</div>
+					<div class="col-lg-8">
+						<div class="oe_structure oe_empty" data-editor-message="DRAG BUILDING BLOCKS HERE"/>
+					</div>
+				</div>
+			</div>
+		</section>
+		<div class="oe_structure oe_empty" data-editor-message="DRAG BUILDING BLOCKS HERE"/>
+	</template>
+</odoo>

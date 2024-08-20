@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <record id="paperformat_frenchcheck" model="report.paperformat">
+            <field name="name">Epson TM 80mm cs</field>
+            <field name="default" eval="True"/>
+            <field name="format">custom</field>
+            <field name="page_height">25</field>
+            <field name="page_width">80</field>
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">0</field>
+            <field name="margin_bottom">0</field>
+            <field name="margin_left">0</field>
+            <field name="margin_right">0</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">0</field>
+            <field name="dpi">180</field>
+        </record>
+
+        <record id="report_stock_production_lot_med" model="ir.actions.report">
+            <field name="name">Lot-Serial SM Medium without serial</field>
+            <field name="model">stock.lot</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">etiquette_sm_report.report_stock_production_lot_med_view</field>
+            <field name="report_file">etiquette_sm_report.report_stock_production_lot</field>
+            <field name="print_report_name">'Lot-Serial SM Medium without serial'</field>
+            <field name="binding_model_id" ref="stock.model_stock_lot"/>
+            <field name="paperformat_id" ref="paperformat_frenchcheck"/>
+            <field name="binding_type">report</field>
+        </record>
+
+        <template id="report_stock_production_lot_med_view">
+            <t t-call="web.basic_layout">
+                <div class="page">
+                    <t t-foreach="docs" t-as="o">
+                        <div class="my-3 text-left" style="width: 200mm; height: 15mm;">
+                            <div class="row" style="overflow: hidden; font-size: 30px; font-weight : bold;">
+                                <div class="col-12 text-left">
+                                    <strong t-field="o.product_id.name"/>
+                                </div>
+                            </div>
+                            <div class="row" style="font-size: 30px;">
+                                <div class="col-12 text-left">
+                                    <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%d/%m/%Y')"/>&#160;&#160;
+                                    <span t-field="o.product_id.barcode"/>&#160;&#160;
+                                    <span t-field="o.product_id.lst_price" t-options="{'widget': 'monetary', 'display_currency': o.product_id.company_id.currency_id}"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-9 text-left">
+                                    <t t-if="o.product_id.barcode">
+                                        <img t-if="o.product_id.barcode" t-att-src="'/report/barcode/?barcode_type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', o.product_id.barcode, 600, 100)" style="width:100%;height::3rem;"/>
+                                    </t>
+                                    <t t-else="">
+                                        <span class="text-muted">No barcode available</span>
+                                    </t>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="page-break-before:always;"/>
+                    </t>
+                </div>
+            </t>
+        </template>
+
+        <record id="paperformat_frenchcheck_small" model="report.paperformat">
+            <field name="name">Epson TM 80mm cs</field>
+            <field name="default" eval="True"/>
+            <field name="format">custom</field>
+            <field name="page_height">30</field>
+            <field name="page_width">120</field>
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">0</field>
+            <field name="margin_bottom">0</field>
+            <field name="margin_left">0</field>
+            <field name="margin_right">0</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">0</field>
+            <field name="dpi">180</field>
+        </record>
+
+        <record id="paperformat_frenchcheck_with_serial" model="report.paperformat">
+            <field name="name">Epson TM 80mm cs</field>
+            <field name="default" eval="True"/>
+            <field name="format">custom</field>
+            <field name="page_height">22</field>
+            <field name="page_width">80</field>
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">0</field>
+            <field name="margin_bottom">0</field>
+            <field name="margin_left">0</field>
+            <field name="margin_right">0</field>
+            <field name="header_line" eval="False"/>
+            <field name="header_spacing">0</field>
+            <field name="dpi">180</field>
+        </record>
+
+        <record id="report_stock_production_lot" model="ir.actions.report">
+            <field name="name">Lot-Serial SM Small without serial</field>
+            <field name="model">stock.lot</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">etiquette_sm_report.report_stock_production_lot_view</field>
+            <field name="report_file">etiquette_sm_report.report_stock_production_lot</field>
+            <field name="print_report_name">'Lot-Serial SM Small without serial'</field>
+            <field name="binding_model_id" ref="stock.model_stock_lot"/>
+            <field name="paperformat_id" ref="paperformat_frenchcheck_with_serial"/>
+            <field name="binding_type">report</field>
+        </record>
+
+        <template id="report_stock_production_lot_view">
+            <t t-call="web.basic_layout">
+                <div class="page">
+                    <t t-foreach="docs" t-as="o">
+                        <div class="my-3 text-left" style="width: 100%; height: 15mm;">
+                            <div class="row" style="overflow: hidden; font-size: 22px; font-weight : bold;">
+                                <div class="col-12 text-left">
+                                    <strong t-field="o.product_id.name"/>
+                                </div>
+                            </div>
+                            <div class="row" style="font-size: 20px;">
+                                <div class="col-12 text-left">
+                                    <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%d/%m/%Y')"/>&#160;&#160;
+                                    <span t-field="o.product_id.barcode"/>&#160;&#160;
+                                    <span t-field="o.product_id.lst_price" t-options="{'widget': 'monetary', 'display_currency': o.product_id.company_id.currency_id}"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-9 text-left">
+                                    <t t-if="o.product_id.barcode">
+                                        <img t-if="o.product_id.barcode" t-att-src="'/report/barcode/?barcode_type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', o.product_id.barcode, 600, 100)" style="width:350px;height:80px;"/>
+                                    </t>
+                                    <t t-else="">
+                                        <span class="text-muted">No barcode available</span>
+                                    </t>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="page-break-before:always;"/>
+                    </t>
+                </div>
+            </t>
+        </template>
+
+        <record id="report_stock_production_lot_product" model="ir.actions.report">
+            <field name="name">Lot-Serial SM Small with serial</field>
+            <field name="model">stock.lot</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">etiquette_sm_report.report_stock_production_lot_product_view</field>
+            <field name="report_file">etiquette_sm_report.report_stock_production_lot</field>
+            <field name="print_report_name">'Lot-Serial SM Small with serial'</field>
+            <field name="binding_model_id" ref="stock.model_stock_lot"/>
+            <field name="paperformat_id" ref="paperformat_frenchcheck_with_serial"/>
+            <field name="binding_type">report</field>
+        </record>
+
+        <template id="report_stock_production_lot_product_view">
+            <t t-call="web.basic_layout">
+                <div class="page">
+                    <t t-foreach="docs" t-as="o">
+                        <div class="my-3 text-left" style="width: 100%; height: 100%;">
+                            <div class="row" style="overflow: hidden; font-size: 22px; font-weight : bold;">
+                                <div class="col-12 text-left">
+                                    <strong t-field="o.product_id.name"/>
+                                </div>
+                            </div>
+                            <div class="row" style="font-size: 20px;">
+                                <div class="col-3 text-left">
+                                    <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%d/%m/%Y')"/>
+                                </div>
+                                <div class="col-3 text-left">
+                                    <span t-field="o.product_id.barcode"/>
+                                </div>
+                                 <div class="col-3 text-left">
+                                    <span t-field="o.name"/>
+                                </div>
+                                <div class="col-3 text-left">
+                                    <span t-field="o.product_id.lst_price" t-options="{'widget': 'monetary', 'display_currency': o.product_id.company_id.currency_id}"/>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-6 text-left">
+                                    <t t-if="o.product_id.barcode">
+                                        <img t-if="o.product_id.barcode" t-att-src="'/report/barcode/?barcode_type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', o.product_id.barcode, 600, 100)" style="width:350px;height:80px;"/>
+                                    </t>
+                                    <t t-else="">
+                                        <span class="text-muted">No barcode available</span>
+                                    </t>
+                                </div>
+                                <div class="col-6 text-left">
+                                    <t t-if="o.name">
+                                        <img t-if="o.name" t-att-src="'/report/barcode/?barcode_type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', o.name, 600, 100)" style="width:350px;height:100px;"/>
+                                    </t>
+                                    <t t-else="">
+                                        <span class="text-muted">No barcode available</span>
+                                    </t>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p style="page-break-before:always;"/>
+                    </t>
+                </div>
+
+            </t>
+        </template>
+
+        <record id="report_product_template_lot_med" model="ir.actions.report">
+            <field name="name">Lot-Serial SM Medium without serial</field>
+            <field name="model">product.template</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">etiquette_sm_report.report_product_template_med_view</field>
+            <field name="report_file">etiquette_sm_report.report_product_template</field>
+            <field name="print_report_name">'Lot-Serial SM Medium without serial'</field>
+            <field name="binding_model_id" ref="stock.model_product_template"/>
+            <field name="paperformat_id" ref="paperformat_frenchcheck"/>
+            <field name="binding_type">report</field>
+        </record>
+
+        <template id="report_product_template_med_view">
+            <t t-call="web.basic_layout">
+                <div class="page">
+                    <t t-foreach="docs" t-as="o">
+                        <div class="my-3 text-left" style="width: 200mm; height: 15mm;">
+                            <div class="row" style="overflow: hidden; font-size: 30px; font-weight : bold;">
+                                <div class="col-12 text-left">
+                                    <strong t-field="o.name"/>
+                                </div>
+                            </div>
+                            <div class="row" style="font-size: 30px;">
+                                <div class="col-12 text-left">
+                                    <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%d/%m/%Y')"/>&#160;&#160;
+                                    <span t-field="o.barcode"/>&#160;&#160;
+                                    <span t-field="o.list_price"
+                                            t-options="{'widget': 'monetary', 'display_currency': o.company_id.currency_id}"/>
+                                </div>
+
+                            </div>
+                            <div class="row">
+                                <div class="col-9 text-left">
+                                    <t t-if="o.barcode">
+                                        <img t-if="o.barcode"
+                                             t-att-src="'/report/barcode/?barcode_type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', o.barcode, 600, 100)"
+                                             style="width:100%;"/>
+                                    </t>
+                                    <t t-else="">
+                                        <span class="text-muted">No barcode available</span>
+                                    </t>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="page-break-before:always;"></p>
+                    </t>
+                </div>
+            </t>
+        </template>
+
+        <record id="report_product_template_lot" model="ir.actions.report">
+            <field name="name">Lot-Serial SM Small without serial</field>
+            <field name="model">product.template</field>
+            <field name="report_type">qweb-pdf</field>
+            <field name="report_name">etiquette_sm_report.report_product_template_view</field>
+            <field name="report_file">etiquette_sm_report.report_product_template</field>
+            <field name="print_report_name">'Lot-Serial SM Small without serial'</field>
+            <field name="binding_model_id" ref="stock.model_product_template"/>
+            <field name="paperformat_id" ref="paperformat_frenchcheck_with_serial"/>
+            <field name="binding_type">report</field>
+        </record>
+
+        <template id="report_product_template_view">
+            <t t-call="web.basic_layout">
+                <div class="page">
+                    <t t-foreach="docs" t-as="o">
+                        <div class="my-3 text-left" style="width: 100%; height: 15mm;">
+                            <div class="row" style="overflow: hidden; font-size: 22px; font-weight : bold;">
+                                <div class="col-12 text-left">
+                                    <strong t-field="o.name"/>
+                                </div>
+                            </div>
+                            <div class="row" style="font-size: 20px;">
+                                <div class="col-12 text-left">
+                                    <span t-esc="context_timestamp(datetime.datetime.now()).strftime('%d/%m/%Y')"/>&#160;&#160;
+                                    <span t-field="o.barcode"/>&#160;&#160;
+                                    <span t-field="o.list_price" t-options="{'widget': 'monetary', 'display_currency': o.company_id.currency_id}"/>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-9 text-left">
+                                    <t t-if="o.barcode">
+                                        <img t-if="o.barcode" t-att-src="'/report/barcode/?barcode_type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', o.barcode, 600, 100)" style="width:350px;height:100px;"/>
+                                    </t>
+                                    <t t-else="">
+                                        <span class="text-muted">No barcode available</span>
+                                    </t>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="page-break-before:always;"/>
+                    </t>
+                </div>
+            </t>
+        </template>
+
+    </data>
+</odoo>

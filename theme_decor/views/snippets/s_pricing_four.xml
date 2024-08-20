@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_pricing_four" name="Pricing Four">
+		<section class="app-pricing-plan" style="background-image: url('/theme_decor/static/src/img/app-pricing-bg.png');">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-10">
+						<div class="title">
+							<span>PRICING PLANS</span>
+							<h3>Choose your plan</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rhoncus enim turpis, et condimentum justo interdum in quisque.</p>
+						</div>
+					</div>
+				</div>
+				<div class="row justify-content-center">
+					<div class="col-lg-4 col-md-4">
+						<section class="pricing-plan-content">
+							<div class="price-header">
+								<h4>Executive Plan</h4>
+								<div class="price-info">
+									<span class="price">$299</span>
+									<span class="month">/Month</span>
+								</div>
+							</div>
+							<div class="price-body">
+								<ul>
+									<li>Monitoring Work</li>
+									<li>Installation</li>
+									<li>Furniture Maintence</li>
+									<li>Product Warranty</li>
+									<li>24/7 Skilled Support</li>
+								</ul>
+							</div>
+							<div class="price-footer">
+								<div class="s_btn" data-name="Button">
+        							<a href="#" class="btn btn-secondary btn-lg rounded-circle">Get Started</a>
+        						</div>
+							</div>
+						</section>
+					</div>
+					<div class="col-lg-4 col-md-4">
+						<section class="pricing-plan-content">
+							<div class="price-header">
+								<h4>BASIC PLAN</h4>
+								<div class="price-info">
+									<span class="price">$149</span>
+									<span class="month">/Month</span>
+								</div>
+							</div>
+							<div class="price-body">
+								<ul>
+									<li>Monitoring Work</li>
+									<li>Installation</li>
+									<li>Furniture Maintence</li>
+									<li>Product Warranty</li>
+									<li>24/7 Skilled Support</li>
+								</ul>
+							</div>
+							<div class="price-footer">
+								<div class="s_btn" data-name="Button">
+        							<a href="#" class="btn btn-secondary btn-lg rounded-circle">Get Started</a>
+        						</div>
+							</div>
+						</section>
+					</div>
+					<div class="col-lg-4 col-md-4">
+						<section class="pricing-plan-content">
+							<div class="price-header">
+								<h4>Premium Plan</h4>
+								<div class="price-info">
+									<span class="price">$499</span>
+									<span class="month">/Month</span>
+								</div>
+							</div>
+							<div class="price-body">
+								<ul>
+									<li>Monitoring Work</li>
+									<li>Installation</li>
+									<li>Furniture Maintence</li>
+									<li>Product Warranty</li>
+									<li>24/7 Skilled Support</li>
+								</ul>
+							</div>
+							<div class="price-footer">
+								<div class="s_btn" data-name="Button">
+        							<a href="#" class="btn btn-secondary btn-lg rounded-circle">Get Started</a>
+        						</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

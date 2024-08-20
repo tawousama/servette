@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_homepage_three_two_imgs" name="Two images block">
+		<section class="s_furniture_two_imgs">
+				<div class="container">
+					<div class="row pt-100 pb-70">
+						<div class="col-sm-6 col-xs-12 mb-30">
+							<div class="single-banner">
+								<a href="#">
+									<img src="/theme_decor/static/src/img/fur_01.jpg" alt="" />
+								</a>
+							</div>
+						</div>
+						<div class="col-sm-6 col-xs-12 mb-30">
+							<div class="single-banner">
+								<a href="#">
+									<img src="/theme_decor/static/src/img/fur_02.jpg" alt="" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+		</section>
+	</template>
+</odoo>

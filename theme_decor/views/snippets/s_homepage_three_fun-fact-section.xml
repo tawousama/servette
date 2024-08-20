@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_homepage_three_fun-fact-section" name="Counter with parallex image">
+		<section class="s_furniture_fun-fact-section"
+			style="background-image:url(/theme_decor/static/src/img/bg_furniture_1.jpg);">
+			<div class="container">
+				<div class="row clearfix">
+					<div class="title-column col-lg-6 col-md-12 col-sm-12">
+						<div class="inner-column">
+							<h3>OUR Statistics</h3>
+							<div class="text">
+								Everyone so join us here each week my ends
+								<br />
+								who was busy with three boys offer.
+							</div>
+						</div>
+					</div>
+					<div class="content-column col-lg-6 col-md-12 col-sm-12">
+						<div class="inner-column">
+							<div class="row clearfix">
+								<div class="counter-column col-lg-4 col-md-4 col-sm-12">
+									<div class="count-box counter-box">
+										<span class="count-text counter">25
+										</span>
+										+
+										<h4 class="counter-title">Year of Experience</h4>
+									</div>
+								</div>
+								<div class="counter-column col-lg-4 col-md-4 col-sm-12">
+									<div class="count-box counter-box">
+										<span class="count-text counter">180</span>
+										K
+										<h4 class="counter-title">Projects Completed</h4>
+									</div>
+								</div>
+								<div class="counter-column col-lg-4 col-md-4 col-sm-12">
+									<div class="count-box counter-box">
+										<span class="count-text counter">100
+										</span>
+										%
+										<h4 class="counter-title">Client Satisfactions</h4>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

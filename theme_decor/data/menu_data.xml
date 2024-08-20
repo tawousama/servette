@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<odoo>
+
+	<record id="menu_shopby_category_template" model="website.menu">
+		<field name="name">Category</field>
+		<field name="parent_id" ref="website.main_menu" />
+		<field name="sequence" type="int">21</field>
+		<field name="url">/category</field>
+	</record>
+	<record id="menu_shopby_brand_template" model="website.menu">
+		<field name="name">Brand</field>
+		<field name="parent_id" ref="website.main_menu" />
+		<field name="sequence" type="int">22</field>
+		<field name="url">/brand</field>
+	</record>
+
+</odoo>

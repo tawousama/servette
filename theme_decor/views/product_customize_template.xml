@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	
+     <template id="product_other_info" inherit_id="website_sale.product" name="Product Other Info Block" active="False" customize_show="False" >
+        <xpath expr="//section[@id='product_detail']/div[2]" position="inside">
+            <div class="col-md-3 col-sm-3 col-lg-2 col-xs-12">
+                <section class="product-services">
+                    <div class="container">
+                        <div class="row service-section">
+                            <ul class="">
+                                <li class="mb32">
+                                    <div class="service-image">
+                                        <img src="/theme_decor/static/src/img/icon-1.png"/>
+                                    </div>
+                                    <div class="service-info">
+                                        <h4 class="text-primary"> Free Delivery</h4>
+                                        <p>From $59.89</p>
+                                    </div>
+                                </li>
+                                <li class="mb32">
+                                    <div class="service-image">
+                                        <img src="/theme_decor/static/src/img/icon-2.png"/>
+                                    </div>
+                                    <div class="service-info">
+                                        <h4 class="text-primary">Support 24/7</h4>
+                                        <p>Online 24 hours</p>
+                                    </div>
+                                </li>
+                                <li class="mb32">
+                                    <div class="service-image">
+                                        <img src="/theme_decor/static/src/img/icon-3.png"/>
+                                    </div>
+                                    <div class="service-info">
+                                        <h4 class="text-primary">Free Return</h4>
+                                        <p>365 a day</p>
+                                    </div>
+                                </li>
+                                <li class="mb32">
+                                    <div class="service-image">
+                                        <img src="/theme_decor/static/src/img/icon-4.png"/>
+                                    </div>
+                                    <div class="service-info">
+                                        <h4 class="text-primary">Payment Method</h4>
+                                        <p>Secure payment</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </xpath>
+    </template>
+
+    <template id="decor_price_slider_layout" name="Product Price Slider" active="False" customize_show="False">
+       <!--  <xpath expr="//ul[hasclass('shop_attributes')]" position="inside">
+            <div class="oe_structure"/>
+            <div class="decor-price py-3">
+                <div class="left-title">
+                    <h4 class='attrb_title attribute-collapse-button'>Price</h4>
+                </div>
+                <div class="decor-price-slider">
+                    <form method="post" t-att-action="keep('/shop'+ ('/category/'+slug(category)) if category else '',search=0)">
+                        <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                        <div id="priceslider"/>
+                        <input id="decor_website_currency" name="website_currency" t-att-value="website.pricelist_id.currency_id.symbol" type="hidden"/>
+                        <input id="m1" name="min1" t-att-value="min1" type="hidden"/>
+                        <input id="m2" name="max1" t-att-value="max1" type="hidden"/>
+                        <input id="ra1" name="range1" t-att-value="range1" type="hidden"/>
+                        <input id="ra2" name="range2" t-att-value="range2" type="hidden"/>
+                    </form>
+                </div>
+            </div>
+            <div class="oe_structure"/>
+        </xpath> -->
+    </template>
+   
+</odoo>

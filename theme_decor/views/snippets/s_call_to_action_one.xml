@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="s_call_to_action_one" name="Call To Action One">
+      	<div class="oe_structure"/>
+      	
+      	<section class="corpo_transport_call_to_action s_parallax parallax s_parallax_is_fixed bg-black-50 o_colored_level o_half_screen_height" data-scroll-background-ratio="1" data-snippet="s_parallax" data-name="Parallax">
+			<span class="s_parallax_bg oe_img_bg" style="background-image: url('/theme_decor/static/src/img/transport-callaction.jpg'); background-position: center"/>
+			<div class="o_we_bg_filter bg-black-50"/>
+			<div class="oe_structure oe_empty" data-editor-message="DRAG BUILDING BLOCKS HERE">
+				<section class="s_call_to_action pt64 pb64 o_colored_level" data-snippet="s_call_to_action" data-name="Call to Action">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-8 pb16 o_colored_level">
+								<h3 class="o_default_snippet_text fw-bold">
+									Reach your destination 100% safe
+								</h3>
+								<p class="o_default_snippet_text mt-3">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								</p>
+							</div>
+							<div class="col-lg-4 pt8 o_colored_level">
+								<p class="text-center mt-3 mt-lg-0">
+									<a href="/contactus" class="btn btn-primary fw-bold flat py-3 px-4 rounded-0 o_default_snippet_text">Contact Now
+										<span class="lnr lnr-arrow-right align-middle ms-2 fw-bold"/>
+									</a>
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</section>
+			
+      	<div class="oe_structure"/>
+	</template>
+</odoo>

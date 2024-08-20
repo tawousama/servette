@@ -1,0 +1,95 @@
+.blured-bg{
+    position: relative;
+    &:after{
+        content: "";
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        transition: 0.5s;
+        z-index: -10;
+    }
+}
+.blured-bg.active{
+    &:after{
+        z-index: 1055;
+        backdrop-filter: blur(3px);
+        background-color: rgba(0,0,0,.10);
+    }
+}
+
+.category-sidebar{
+    position: fixed;
+    top: 0;
+    right: auto;
+    bottom: auto;
+    left: -105%;
+    height: 100%;
+    overflow-x: hidden;
+    z-index: 1056;
+    background-color: #FFFFFF;
+    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+    padding: 0px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    max-width: 100%;
+    width: 400px;
+    @media (max-width: 767.98px) {
+      width: 300px;
+    }
+}
+
+.category-sidebar.toggled{
+    left: 0;
+    padding: 12px;
+}
+
+@include media-breakpoint-down(lg){
+    .mobile-categ-sidebar{
+        position: fixed;
+        top: 0;
+        right: auto;
+        bottom: auto;
+        left: -105%;
+        height: 100%;
+        overflow-x: hidden;
+        z-index: 1056;
+        background-color: #FFFFFF;
+        box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15);
+        padding: 0px;
+        -webkit-transition: all 0.3s ease;
+        -moz-transition: all 0.3s ease;
+        -ms-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        max-width: 100%;
+        width: 400px;
+        @media (max-width: 767.98px) {
+          width: 300px;
+        }
+    }
+
+    .mobile-categ-sidebar.toggled{
+        left: 0;
+        padding: 12px;
+    }
+}
+
+.decor_shop{
+  #products_grid_before{
+    .category_side_bar_close{
+        #category_close{
+            font-size: 14px;
+            cursor: pointer;
+            z-index: 20;
+            letter-spacing: 1px;
+          }
+    }
+    .product-categories, .product-attributes{
+      position: relative;
+    }
+  }
+}

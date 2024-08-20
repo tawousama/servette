@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_homepage_two_clients" name="Clients">
+		<section class="furniture-clients pt32 pb32">
+			<div class="container-fluid">
+				<div class="brand-title text-center pb32">
+					<h2>Client Section</h2>
+				</div>
+				<div class="row">
+					<div class="col-md-4 col-lg-4 col-xl-2 mb-4 mb-xl-0">
+						<div class="brand-image text-center">
+							<a href="#">
+								<img src="/theme_decor/static/src/img/furniture-brand1.png" class="img img-fluid"/>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-4 col-xl-2 mb-4 mb-xl-0">
+						<div class="brand-image text-center">
+							<a href="#">
+								<img src="/theme_decor/static/src/img/furniture-brand2.png" class="img img-fluid"/>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-4 col-xl-2 mb-4 mb-xl-0">
+						<div class="brand-image text-center">
+							<a href="#">
+								<img src="/theme_decor/static/src/img/furniture-brand3.png" class="img img-fluid"/>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-4 col-xl-2 mb-4 mb-xl-0">
+						<div class="brand-image text-center">
+							<a href="#">
+								<img src="/theme_decor/static/src/img/furniture-brand4.png" class="img img-fluid"/>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-4 col-xl-2 mb-4 mb-xl-0">
+						<div class="brand-image text-center">
+							<a href="#">
+								<img src="/theme_decor/static/src/img/furniture-brand5.png" class="img img-fluid"/>
+							</a>
+						</div>
+					</div>
+					<div class="col-md-4 col-lg-4 col-xl-2 mb-4 mb-xl-0">
+						<div class="brand-image text-center">
+							<a href="#">
+								<img src="/theme_decor/static/src/img/furniture-brand6.png" class="img img-fluid"/>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

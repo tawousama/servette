@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="view_prestashop_import_export_operation" model="ir.ui.view">
+            <field name="name">Prestashop Opration</field>
+            <field name="model">gt.prestashop.import.export</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <field name="prestashops_instance_ids"
+                               options="{'no_create':True,'no_create_edit': True}"
+                               required="1" widget="many2many_tags"/>
+                    </group>
+
+
+                    <group>
+                        <button class="btn btn-primary" name="action_import_wizard" string="Import"
+                                type="object" context='{"from_import":True}'/>
+                    </group>
+                    <br/>
+                    <group>
+                        <button class="btn btn-primary" name="action_update_wizard" string="Update"
+                                type="object" context='{"from_update":True}'/>
+                    </group>
+                    <br/>
+                    <group>
+                        <button class="btn btn-primary" name="action_export_wizard" string="Export"
+                                type="object" context='{"from_export":True}'/>
+                    </group>
+
+
+                </form>
+            </field>
+        </record>
+
+        <!--        <record id="action_wizard_prestashop_import_export_operation" model="ir.actions.act_window">-->
+        <!--            <field name="name">Prestashop Operation</field>-->
+        <!--            <field name="type">ir.actions.act_window</field>-->
+        <!--            <field name="res_model">gt.prestashop.import.export</field>-->
+        <!--            <field name="view_mode">form</field>-->
+        <!--            <field name="target">new</field>-->
+        <!--        </record>-->
+
+        <record id="action_wizard_prestashop_instance_import_export_operations"
+                model="ir.actions.act_window">
+            <field name="name">Prestashop Operations</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">gt.prestashop.import.export</field>
+            <field name="view_mode">form</field>
+            <field name="view_id"
+                   ref="prestashop_connector_gt.view_prestashop_import_export_operation"/>
+            <field name="target">new</field>
+        </record>
+    </data>
+</odoo>

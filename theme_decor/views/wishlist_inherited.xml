@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="decor_wishlist_page" inherit_id="website_sale_wishlist.product_wishlist" name="Wishlist Page">
+		<xpath expr="//section[hasclass('wishlist-section')]" position="attributes">
+			<attribute name="class" add="decor-wishlist" separator=" "/>
+		</xpath>
+		<xpath expr="//table[hasclass('table-comparator')]" position="replace">
+			<table class="table table-bordered table-hover text-center mt16 table-comparator " style="table-layout:auto" id="o_comparelist_table">
+                <tbody class="row">
+                    <t t-foreach="wishes" t-as="wish">
+                        <tr t-att-data-wish-id='wish.id' t-att-data-product-id='wish.product_id.id' class="col-md-6 col-lg-4 col-xl-3 col-hd-4 col-12 mb-4 wishlist-box border-0">
+                        	<td class="position-relative">
+                        		<div class="button">
+                        			<button type="button" class="btn btn-link o_wish_rm no-decoration position-absolute"><small><span class="lnr lnr-cross d-block"></span></small></button>
+                        		</div>
+	                            <div class='td-img'>
+	                                <a class=" h-100" t-att-href="wish.product_id.website_url">
+	                                    <img t-attf-src="/web/image/product.product/#{wish.product_id.id}/image_1920" class="img img-fluid" style="margin:auto;" alt="Product image"/>
+	                                </a>
+	                            </div>
+	                            <div class='text-start product-name'>
+	                                <strong><a t-att-href="wish.product_id.website_url"><t t-out="wish.product_id.display_name" /></a></strong>
+	                            </div>
+	                            <div class="product-price">
+	                                <t t-set="combination_info" t-value="wish.product_id._get_combination_info_variant()"/>
+	                                <t t-out="combination_info['price']" t-options="{'widget': 'monetary', 'display_currency': website.pricelist_id.currency_id}"/>
+	                            </div>
+	                            <div class='text-center td-wish-btn'>
+	                                <input name="product_id" t-att-value="wish.product_id.id" type="hidden"/>
+	                                <button type="button" role="button" class="btn btn-primary btn-block o_wish_add mb4" >Add <span class='d-none d-md-inline'>to Cart</span></button>
+	                            </div>
+	                        </td>
+                        </tr>
+                    </t>
+                </tbody>
+            </table>
+		</xpath>
+	</template>
+</odoo>

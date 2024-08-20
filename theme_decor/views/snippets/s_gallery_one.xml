@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_gallery_one" name="Gallery One">
+		<section class="fashion-instagram" style="background-image: url('/theme_decor/static/src/img/slide-bg-1.jpg');">
+			<div class="container extended-container">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="instagram-heading">
+							<div class="icon">
+								<span class="fa fa-instagram fa-3x text-primary">
+								</span>
+							</div>
+							<h5>DECOR ON INSTAGRAM</h5>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+						</div>
+					</div>
+					<div id="fashion-insta-carousel" class="carousel bs-slider slide control-round indicators-line" data-bs-ride="carousel" data-bs-pause="hover" data-bs-interval="7000">
+						<ol class="carousel-indicators d-none">
+				            <li data-bs-target="#fashion-insta-carousel" data-bs-slide-to="0" class="active"/>
+				            <li data-bs-target="#fashion-insta-carousel" data-bs-slide-to="1"/>
+				        </ol>
+	          			<div class="carousel-inner" role="listbox">
+	          				<div class="carousel-item active">
+								<div class="col-lg-12">
+									<div class="row">
+										<div class="images_block col-6 col-md-3 col-lg-3 p-0">
+											<div class="icon-block position-relative">
+												<a href="/" target="_blank">
+													<img class="img img-fluid"
+														src="/theme_decor/static/src/img/image-gallary1.jpg" />
+												</a>
+												<div class="view-icon d-inline-block">
+													<span class="fa fa-instagram text-white"/>
+												</div>
+											</div>
+										</div>
+										<div class="images_block col-6 col-md-3 col-lg-3 p-0">
+											<div class="icon-block position-relative">
+												<a href="/" target="_blank">
+													<img class="img img-fluid"
+														src="/theme_decor/static/src/img/image-gallary2.jpg" />
+												</a>
+												<div class="view-icon d-inline-block">
+													<span class="fa fa-instagram text-white"/>
+												</div>
+											</div>
+										</div>
+										<div class="images_block col-6 col-md-3 col-lg-3 p-0">
+											<div class="icon-block position-relative">
+												<a href="/" target="_blank">
+													<img class="img img-fluid"
+														src="/theme_decor/static/src/img/image-gallary3.jpg" />
+												</a>
+												<div class="view-icon d-inline-block">
+													<span class="fa fa-instagram text-white"/>
+												</div>
+											</div>
+										</div>
+										<div class="images_block col-6 col-md-3 col-lg-3 p-0">
+											<div class="icon-block position-relative">
+												<a href="/" target="_blank">
+													<img class="img img-fluid"
+														src="/theme_decor/static/src/img/image-gallary4.jpg" />
+												</a>
+												<div class="view-icon d-inline-block">
+													<span class="fa fa-instagram text-white"/>
+												</div>
+											</div>
+										</div>
+										<div class="images_block col-6 col-md-3 col-lg-3 p-0">
+											<div class="icon-block position-relative">
+												<a href="/" target="_blank">
+													<img class="img img-fluid"
+														src="/theme_decor/static/src/img/image-gallary5.jpg" />
+												</a>
+												<div class="view-icon d-inline-block">
+													<span class="fa fa-instagram text-white"/>
+												</div>
+											</div>
+										</div>
+										<div class="images_block col-6 col-md-3 col-lg-3 p-0">
+											<div class="icon-block position-relative">
+												<a href="/" target="_blank">
+													<img class="img img-fluid"
+														src="/theme_decor/static/src/img/image-gallary6.jpg" />
+												</a>
+												<div class="view-icon d-inline-block">
+													<span class="fa fa-instagram text-white"/>
+												</div>
+											</div>
+										</div>
+										<div class="images_block col-6 col-md-3 col-lg-3 p-0">
+											<div class="icon-block position-relative">
+												<a href="/" target="_blank">
+													<img class="img img-fluid"
+														src="/theme_decor/static/src/img/image-gallary7.jpg" />
+												</a>
+												<div class="view-icon d-inline-block">
+													<span class="fa fa-instagram text-white"/>
+												</div>
+											</div>
+										</div>
+										<div class="images_block col-6 col-md-3 col-lg-3 p-0">
+											<div class="icon-block position-relative">
+												<a href="/" target="_blank">
+													<img class="img img-fluid"
+														src="/theme_decor/static/src/img/image-gallary8.jpg" />
+												</a>
+												<div class="view-icon d-inline-block">
+													<span class="fa fa-instagram text-white"/>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="col-lg-12">
+									<div class="row">
+										<div class="images_block col-6 col-md-3 col-lg-3 p-0">
+											<div class="icon-block position-relative">
+												<a href="/" target="_blank">
+													<img class="img img-fluid"
+														src="/theme_decor/static/src/img/image-gallary1.jpg" />
+												</a>
+												<div class="view-icon d-inline-block">
+													<span class="fa fa-instagram text-white"/>
+												</div>
+											</div>
+										</div>
+										<div class="images_block col-6 col-md-3 col-lg-3 p-0">
+											<div class="icon-block position-relative">
+												<a href="/" target="_blank">
+													<img class="img img-fluid"
+														src="/theme_decor/static/src/img/image-gallary2.jpg" />
+												</a>
+												<div class="view-icon d-inline-block">
+													<span class="fa fa-instagram text-white"/>
+												</div>
+											</div>
+										</div>
+										<div class="images_block col-6 col-md-3 col-lg-3 p-0">
+											<div class="icon-block position-relative">
+												<a href="/" target="_blank">
+													<img class="img img-fluid"
+														src="/theme_decor/static/src/img/image-gallary3.jpg" />
+												</a>
+												<div class="view-icon d-inline-block">
+													<span class="fa fa-instagram text-white"/>
+												</div>
+											</div>
+										</div>
+										<div class="images_block col-6 col-md-3 col-lg-3 p-0">
+											<div class="icon-block position-relative">
+												<a href="/" target="_blank">
+													<img class="img img-fluid"
+														src="/theme_decor/static/src/img/image-gallary4.jpg" />
+												</a>
+												<div class="view-icon d-inline-block">
+													<span class="fa fa-instagram text-white"/>
+												</div>
+											</div>
+										</div>
+										<div class="images_block col-6 col-md-3 col-lg-3 p-0">
+											<div class="icon-block position-relative">
+												<a href="/" target="_blank">
+													<img class="img img-fluid"
+														src="/theme_decor/static/src/img/image-gallary5.jpg" />
+												</a>
+												<div class="view-icon d-inline-block">
+													<span class="fa fa-instagram text-white"/>
+												</div>
+											</div>
+										</div>
+										<div class="images_block col-6 col-md-3 col-lg-3 p-0">
+											<div class="icon-block position-relative">
+												<a href="/" target="_blank">
+													<img class="img img-fluid"
+														src="/theme_decor/static/src/img/image-gallary6.jpg" />
+												</a>
+												<div class="view-icon d-inline-block">
+													<span class="fa fa-instagram text-white"/>
+												</div>
+											</div>
+										</div>
+										<div class="images_block col-6 col-md-3 col-lg-3 p-0">
+											<div class="icon-block position-relative">
+												<a href="/" target="_blank">
+													<img class="img img-fluid"
+														src="/theme_decor/static/src/img/image-gallary7.jpg" />
+												</a>
+												<div class="view-icon d-inline-block">
+													<span class="fa fa-instagram text-white"/>
+												</div>
+											</div>
+										</div>
+										<div class="images_block col-6 col-md-3 col-lg-3 p-0">
+											<div class="icon-block position-relative">
+												<a href="/" target="_blank">
+													<img class="img img-fluid"
+														src="/theme_decor/static/src/img/image-gallary8.jpg" />
+												</a>
+												<div class="view-icon d-inline-block">
+													<span class="fa fa-instagram text-white"/>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a class="carousel-control-prev d-none" data-bs-target="#fashion-insta-carousel" role="button" data-bs-slide="prev">
+		                	<span class="fa fa-angle-left "/>
+		               	 	<b class="sr-only font-normal o_default_snippet_text">Previous</b>
+		              	</a>
+		              	<a class="carousel-control-next d-none" data-bs-target="#fashion-insta-carousel" role="button" data-bs-slide="next">
+		                	<span class="fa fa-angle-right"/>
+		                	<b class="sr-only font-normal o_default_snippet_text">Next</b>
+		              	</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

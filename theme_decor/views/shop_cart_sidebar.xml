@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="decor_cart_popover" inherit_id="website_sale.cart_popover" name="Decor Cart Popover">
+        <xpath expr="//div[hasclass('alert','alert-info')]" position="replace">
+        	<div t-if="not website_sale_order or not website_sale_order.website_order_line" class="empty-cart-button my-3 text-center">
+        		<img src="/theme_decor/static/src/img/empty_cart.svg" class="mb32 w-75 img img-fluid"/>
+          		<h5 class="text-secondary mb-3 fw-light mx-3">Oops! Your cart is empty!</h5>
+          		<a class="btn btn-secondary bizople_button rounded-0" href="/shop">
+                   	<span class="ri ri-shopping-cart-line align-middle me-2"/>
+                   	<span>Start Shopping</span>
+             	</a>
+          	</div>
+        </xpath>
+        <xpath expr="//a[@role='button']" position="replace">
+			<a role="button" class="btn btn-primary" href="/shop/cart">
+				View Cart (<span class="o_wsale_cart_quantity" t-esc="website_sale_order.cart_quantity" /> items)
+			</a>
+         	<a role="button" class="btn btn-secondary rounded-0 bizople_button" href="/shop/checkout?express=1">
+                <span class="">Process Checkout</span>
+            </a>
+        </xpath>
+    </template>
+
+</odoo>

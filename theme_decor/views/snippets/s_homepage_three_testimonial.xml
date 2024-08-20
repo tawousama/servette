@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_homepage_three_testimonial"
+		name="Testimonial Thirteen">
+		<section class="s_furniture_testimonial " style="background-image: url(/theme_decor/static/src/img/bg_furniture_testimonial.jpg);">
+			<section class="testimonial-area testimonial-bg overlay">
+				<div class="container">
+					<div class="heading">
+					</div>
+					<div id="furniture_testimonial123"
+						class=" testi2 m-t-40 s_carousel_default carousel slide"
+						data-bs-interval="10000">
+						<ol class="carousel-indicators">
+							<li data-bs-target="#furniture_testimonial123" data-bs-slide-to="0"
+								class=""></li>
+							<li data-bs-target="#furniture_testimonial123" data-bs-slide-to="1"
+								class="active"></li>
+
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item" data-name="Slide">
+								<div class="container">
+									<div class="row">
+										<div class="col-lg-8 offset-md-2 col-md-8 col-sm-12">
+											<div class="testimonial-slider">
+												<div class="testimonial-inner text-center">
+													<div class="test-cont">
+														<img src="/theme_decor/static/src/img/quote_1.png"
+															alt="testimonial image" />
+														<p>There are many variations of passages of Lorem
+															Ipsum
+															available, but the majority have suffered alteration
+															in some
+															form. There are many variations of passages.
+														</p>
+													</div>
+													<div class="test-author">
+														<h4>Michelle Mitchell</h4>
+														<p>ui ux - Designer</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item oe_img_bg active" data-name="Slide">
+								<div class="container">
+									<div class="row">
+										<div class="col-lg-8 offset-md-2 col-md-8 col-sm-12">
+											<div class="testimonial-slider">
+												<div class="testimonial-inner text-center">
+													<div class="test-cont">
+														<img src="/theme_decor/static/src/img/quote_1.png"
+															alt="testimonial image" />
+														<p>There are many variations of passages of Lorem
+															Ipsum
+															available, but the majority have suffered alteration
+															in some
+															form. There are many variations of passages.
+														</p>
+													</div>
+													<div class="test-author">
+														<h4>Michelle Mitchell</h4>
+														<p>ui ux - Designer</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+
+	</template>
+
+</odoo>

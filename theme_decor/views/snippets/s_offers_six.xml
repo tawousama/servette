@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_offers_six" name="Offers Six">
+		<section class="sport-collection pt152 pb152" style="background-image: url('/theme_decor/static/src/img/sport-img4.jpg');">
+			<div class="container extended-container">
+				<div class="row">
+					<div class="col-md-5">
+						<div class="collection-content">
+							<div class="sale-info">
+								<h3>Winter Sale 2021 <br/>save up to 40%</h3>
+								<p>Limited time offer. Order now to avail<br></br> Discount.</p>
+								<div class="s_btn pt16" data-name="Button">
+        							<a href="#" class="btn btn-light bizople_button">Shop Now</a>
+        						</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

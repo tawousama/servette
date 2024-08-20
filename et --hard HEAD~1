@@ -1,0 +1,597 @@
+[33mcommit 0c0eb2985c699e6cb75dfd83494b60546eb8b8f5[m[33m ([m[1;36mHEAD -> [m[1;32mstaging[m[33m, [m[1;31morigin/staging[m[33m)[m
+Author: tawousama <kt_amara@esi.dz>
+Date:   Wed May 29 14:45:43 2024 +0200
+
+    version 29/05/2024
+
+[33mcommit cd02b9962da37eb43a6ec3f862c083609af448df[m
+Author: tawousamara <tawous.amara@finoutsource.dz>
+Date:   Tue Apr 9 11:27:54 2024 +0100
+
+     add theme customisation 5
+
+[33mcommit 455d89dc5aa59ee32f8c10c7bfdf7704a47622a7[m
+Author: tawousamara <tawous.amara@finoutsource.dz>
+Date:   Tue Apr 9 11:32:50 2024 +0200
+
+    add theme customisation 4
+
+[33mcommit c87f474b984a99dd5052e91c0aa4a6f7d74db604[m
+Author: tawousamara <tawous.amara@finoutsource.dz>
+Date:   Tue Apr 9 11:21:38 2024 +0200
+
+    add theme customisation 4
+
+[33mcommit 3d7ad4dda77f1b7cd5fe84aad145ad1f5721a21a[m
+Author: tawousamara <tawous.amara@finoutsource.dz>
+Date:   Tue Apr 9 11:17:31 2024 +0200
+
+    add theme customisation 3
+
+[33mcommit 84244d2d895322d05352bf9bb37e4b3a8d12a610[m
+Author: tawousamara <tawous.amara@finoutsource.dz>
+Date:   Tue Apr 9 10:59:15 2024 +0200
+
+    add theme customisation 2
+
+[33mcommit 176c4e77f2ad546a31beed2e8f64997d99240be8[m
+Author: tawousamara <tawous.amara@finoutsource.dz>
+Date:   Tue Apr 9 10:54:08 2024 +0200
+
+    add theme customisation 1
+
+[33mcommit b4543faaf9f70d150f8e49be28febd91863d978e[m
+Merge: c99c907 a35648f
+Author: tawousamara <tawous.amara@finoutsource.dz>
+Date:   Tue Apr 9 10:28:06 2024 +0200
+
+    Merge branch 'staging' of https://github.com/Openfuture-ch/SERVETTE-MUSIC into staging
+
+[33mcommit c99c9070801cd4f8e0251e0beeeca7a36f18a328[m
+Author: tawousamara <tawous.amara@finoutsource.dz>
+Date:   Tue Apr 9 10:27:35 2024 +0200
+
+    add theme customisation
+
+[33mcommit a35648f6f810f3e546e09fc1214ccf9a74b8f143[m
+Author: tawousamara <tawous.amara@finoutsource.dz>
+Date:   Fri Mar 29 12:14:27 2024 +0100
+
+    Theme
+
+[33mcommit b65b77aa55ef882d0852923e7cedb43058e224d6[m
+Author: tawousamara <tawous.amara@finoutsource.dz>
+Date:   Fri Mar 29 11:58:01 2024 +0100
+
+    Some changes in theme
+
+[33mcommit 9412957b66f5b8f20abd850d92eb390476e53dc8[m
+Author: tawousamara <tawous.amara@finoutsource.dz>
+Date:   Fri Mar 29 12:14:27 2024 +0100
+
+    Theme
+
+[33mcommit ff783a9c2acc71956a3623befdf1d1ed2cf74c53[m
+Author: tawousamara <tawous.amara@finoutsource.dz>
+Date:   Fri Mar 29 11:58:01 2024 +0100
+
+    Some changes in theme
+
+[33mcommit b6e80cb5ddc1e56047d2e62b236f6dfa033c3318[m
+Author: tawousamara <tawous.amara@finoutsource.dz>
+Date:   Tue Apr 9 10:12:32 2024 +0200
+
+    changing in sm_zip to not load data directly
+
+[33mcommit c99ff4d29b65900a841515a1f4219c43da56ecb0[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Wed Dec 6 10:33:25 2023 +0100
+
+    [FIX] multi write
+
+[33mcommit 57b9371c552fffacf3ff65dbaed739bd15e8e559[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Mon Nov 27 12:41:30 2023 +0100
+
+    [DEBUG] categ_id9
+
+[33mcommit 67730d00e3c73961a968a66a2190b7e8badec727[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Mon Nov 27 12:33:32 2023 +0100
+
+    [DEBUG] categ_id8
+
+[33mcommit 60c5d0389b2bf9d1f37f822843239ad1ae541877[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Mon Nov 27 12:22:05 2023 +0100
+
+    [DEBUG] categ_id7
+
+[33mcommit c5f43759db4624ddb62c3f5080319bba8a2cadf1[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Mon Nov 27 12:07:03 2023 +0100
+
+    [DEBUG] categ_id6
+
+[33mcommit 48088419ed7a5244bd9468b7834767fce40f9d2e[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Mon Nov 27 11:48:54 2023 +0100
+
+    [DEBUG] categ_id5
+
+[33mcommit e23547fa540ea3cd4fa1c02d0370dbaa696dea0e[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Mon Nov 27 11:35:44 2023 +0100
+
+    [DEBUG] categ_id4
+
+[33mcommit fc003da03da5fdc98cdca34ba7954c9cb7f23e25[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Mon Nov 27 11:19:27 2023 +0100
+
+    [DEBUG] categ_id3
+
+[33mcommit 7e9ce3247e950c4188bc815508e8fdccf29c6fff[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Mon Nov 27 10:38:11 2023 +0100
+
+    [DEBUG] categ_id2
+
+[33mcommit 17655f167157271585f1f06754a1cd1807429ad7[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Mon Nov 27 10:11:58 2023 +0100
+
+    [DEBUG] categ_id
+
+[33mcommit 59a2f968a8515fbe1d6ac2a77f2f292ba891d2b8[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Fri Nov 24 14:45:59 2023 +0100
+
+    [UPD] upd categ_id required
+
+[33mcommit 57968531919543716df8cb105a253580a2e8c9be[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Fri Nov 24 12:03:13 2023 +0100
+
+    [DEBUG] ...4
+
+[33mcommit d85c04d9e4c157fc73c0fef2a9cbb07f11541b5c[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Fri Nov 24 12:01:04 2023 +0100
+
+    [DEBUG] ...3
+
+[33mcommit 98d14085f4e72f2a82904655bec7b3da624b3805[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Fri Nov 24 11:53:53 2023 +0100
+
+    [DEBUG] ...2
+
+[33mcommit 6c7232ce68f7fd8c8022e2e49290967d4d824502[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Fri Nov 24 10:30:38 2023 +0100
+
+    [DEBUG] ...
+
+[33mcommit 82fe1faf1755b3669e5e236fd2297a39d87e6a37[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Thu Nov 23 14:43:04 2023 +0100
+
+    [UPD] categ upd
+
+[33mcommit 7246907ceb4127b7578404500e069d2c2fd738e7[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Thu Nov 23 13:55:19 2023 +0100
+
+    [UPD] ...1
+
+[33mcommit b69b53c6e1f684bf0a992a7f334a40d16e33206a[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Thu Nov 23 13:51:09 2023 +0100
+
+    [UPD] ...
+
+[33mcommit 0c0bd8484615fff6605de6e2130c553eae40f881[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Wed Nov 22 09:45:23 2023 +0100
+
+    [FIX] ...upd img suppression
+
+[33mcommit 461bbf6183dcd4a0953d063ab3ac9543d402d313[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Tue Nov 21 14:02:15 2023 +0100
+
+    [UPD] edit upgrading5
+
+[33mcommit 32fe7c3a398cc924ffcb08dd23be76b3113556cb[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Tue Nov 21 13:49:49 2023 +0100
+
+    [UPD] edit upgrading4
+
+[33mcommit 9b8e00ab72dd1408b75bc2d99974efb355e0da29[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Tue Nov 21 13:38:18 2023 +0100
+
+    [UPD] edit upgrading3
+
+[33mcommit fd60b136a2adf052083fabb148142b0bc97a4553[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Tue Nov 21 13:33:37 2023 +0100
+
+    [UPD] edit upgrading2
+
+[33mcommit fc240cb102b639a864261fbc21dd8f6abd784734[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Tue Nov 21 13:18:17 2023 +0100
+
+    [UPD] edit upgrading
+
+[33mcommit 28d151a171f12ba83f7c651033ccde80ab1189a4[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Tue Nov 21 13:01:47 2023 +0100
+
+    [UPD] delete image ok
+
+[33mcommit 0e85fef2cf4cf10f4e5a3c679d8598daea1b8885[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Tue Nov 21 12:42:30 2023 +0100
+
+    [UPD] upd2
+
+[33mcommit c2f1ad65f666e90fcec5fe214feb64bcf169a078[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Tue Nov 21 12:34:53 2023 +0100
+
+    [UPD] upd1
+
+[33mcommit fbaa46a06d362729b22d937216f8337d3058e56b[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Tue Nov 21 12:21:15 2023 +0100
+
+    [UPD] upd0
+
+[33mcommit cfd8122abcf9b562d9e7fb0a17f5b4fc8fc66e23[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Tue Nov 21 11:41:45 2023 +0100
+
+    [UPD] product img updv6
+
+[33mcommit 87841cd2d2ba3c44f4a91ede07b04350e0815c71[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Tue Nov 21 10:53:01 2023 +0100
+
+    [UPD] if edit failed handle it log
+
+[33mcommit 51afe5e7eae16bb2ad6b65a934fca19155b20dd5[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Tue Nov 21 10:49:58 2023 +0100
+
+    [UPD] if edit failed handle it
+
+[33mcommit 2d433d52826da9139927725f7966a3109620a698[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Tue Nov 21 10:41:37 2023 +0100
+
+    [UPD] clean code
+
+[33mcommit 45b18cb102362ddfa2a481b92c9b27420af87acc[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Tue Nov 21 10:36:59 2023 +0100
+
+    [UPD] ...edit img upd dev4
+
+[33mcommit 664e7632f2b718c9ecbc0dc65156c105742ecdb5[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Tue Nov 21 10:30:48 2023 +0100
+
+    [UPD] ...edit img upd dev3
+
+[33mcommit d7b1afd2bf0d17b5243bce91dd81dd711681cd48[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Tue Nov 21 10:14:15 2023 +0100
+
+    [UPD] first export product website published value
+
+[33mcommit 16796cd9f761271cda0e44bef82e21f1200dab39[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Tue Nov 21 10:02:56 2023 +0100
+
+    [UPD] ...edit img upd dev2
+
+[33mcommit 4303b36b7a47b372092471ced6b7a1301571f9f7[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Tue Nov 21 10:01:06 2023 +0100
+
+    [UPD] ...edit img upd dev
+
+[33mcommit 167a772dba8ccd28a62926b619f0bbe710e76765[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Mon Nov 20 18:09:37 2023 +0100
+
+    [UPD] method delete
+
+[33mcommit 77e1d99454d58d48ad5140def4c8e1c174c417a1[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Mon Nov 20 17:40:28 2023 +0100
+
+    [UPD] upd edit
+
+[33mcommit ce430cd47bd3588eb621859fdf9988d7e7eef225[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Mon Nov 20 17:21:02 2023 +0100
+
+    [FIX] dev fix
+
+[33mcommit f7936fb2e17a417f62946490c1b529bb7f38ec13[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Mon Nov 20 17:17:39 2023 +0100
+
+    [UPD] update default image
+
+[33mcommit 10b7221656702462014f52400034b597942fc831[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Mon Nov 20 15:58:36 2023 +0100
+
+    [FIX] hot fix model product-image
+
+[33mcommit d02837157c2845aad8153844fc6614d75d7c46cc[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Wed Nov 15 16:08:21 2023 +0100
+
+    [FIX]
+
+[33mcommit 82a695a752d1cb7706a73c5b19614731a8b294af[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Wed Nov 15 15:57:00 2023 +0100
+
+    [UPD] debug2
+
+[33mcommit 5b105ddfa763e4ff4b495207617ec94a22fa15a0[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Wed Nov 15 15:32:42 2023 +0100
+
+    [UPD] debug
+
+[33mcommit 499a48d705fbf4934cf63fa0b1f68423a8bf7314[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Tue Nov 14 09:13:36 2023 +0100
+
+    [UPD] dev 14/11 edit img1 upd
+
+[33mcommit b993337affdbd5872ee40eeea18abf778630f004[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Mon Nov 13 18:39:29 2023 +0100
+
+    [UPD] ...upda2
+
+[33mcommit 890e146008ef5edd7b028f8b22d73ebfc7f99b9c[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Mon Nov 13 18:23:51 2023 +0100
+
+    [UPD] ..upd1
+
+[33mcommit cc02d90c88c90f6fe181b8118d54f1c967c42348[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Mon Nov 13 18:13:43 2023 +0100
+
+    [UPD] edit product image
+
+[33mcommit faf388429322b853a570a3c3489039440b07b7eb[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Fri Nov 10 14:50:56 2023 +0100
+
+    [UPD] ..
+
+[33mcommit 0e6eb92bba38eab35d2763d8089d136fddf6ce4d[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Fri Nov 10 14:29:28 2023 +0100
+
+    [UPD] ...
+
+[33mcommit b204edf9055f0ea1a21beb694837aaf88f08a563[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Fri Nov 10 14:19:17 2023 +0100
+
+    [UPD] ...
+
+[33mcommit 805b767c1f1a71511b5a3f1e8307c85592bc065d[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Fri Nov 10 14:03:56 2023 +0100
+
+    [UPD] dev update + add log2
+
+[33mcommit 362647bd487e3c051fd68f682b01f4c6be376bfb[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Fri Nov 10 14:02:46 2023 +0100
+
+    [UPD] dev update + add log1
+
+[33mcommit 6bb48097b98fbdcfa954779c3bbd47977b0e6e5b[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Fri Nov 10 13:48:04 2023 +0100
+
+    [UPD]... dev update3
+
+[33mcommit 49d7449b035fac4be2a0a10420fd614b197b5a51[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Fri Nov 10 13:37:42 2023 +0100
+
+    [UPD] add log
+
+[33mcommit 69dd6a14cb9ded73d7e1f9ef40b6c3888bf41851[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Fri Nov 10 13:35:06 2023 +0100
+
+    [UPD]... dev update2
+
+[33mcommit 4c43912c7783b167a348d97a7246b12729fc05f8[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Fri Nov 10 12:51:28 2023 +0100
+
+    [UPD]... dev update
+
+[33mcommit cd84299bba0324b2a7b79d24f2af133d7d581bf4[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Fri Nov 10 12:43:41 2023 +0100
+
+    [DEBUG] ...2
+
+[33mcommit 7ce872e4763822baeb26e4262d21eb1243fc85e0[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Fri Nov 10 12:25:55 2023 +0100
+
+    [DEBUG] ...1
+
+[33mcommit c48e9ced562c6fdfe0fa4d52828949fb51b7ad02[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Fri Nov 10 12:16:08 2023 +0100
+
+    [UPD] dev upd prd 2
+
+[33mcommit 5105690ad45d322f817c38ebbc10d4fbe0cdf740[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Fri Nov 10 11:38:01 2023 +0100
+
+    [UPD] dev upd prd
+
+[33mcommit d5f332f58cf59e6d8010d334091919dbb6910308[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Fri Nov 10 10:45:49 2023 +0100
+
+    [UPD] load all images missing on odoo from presta shop
+
+[33mcommit 3ef53ae7992c72bfe89e9d89c126d81a4618f533[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Thu Nov 9 18:32:18 2023 +0100
+
+    [UPD].. 7
+
+[33mcommit dce988f33c18666ac1f0a209ad006f1f06510654[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Thu Nov 9 18:27:20 2023 +0100
+
+    [UPD].. 6
+
+[33mcommit 35b32cae9881d7cc863e04c5ade0af9440c75aa6[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Thu Nov 9 18:09:43 2023 +0100
+
+    [UPD].. 5
+
+[33mcommit c918e286474bf8bac176616845e8e7afca9df066[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Thu Nov 9 18:04:24 2023 +0100
+
+    [UPD].. 4
+
+[33mcommit 69516ca3e2a9cf740d0ccd5e69d2050511ed8715[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Thu Nov 9 17:56:27 2023 +0100
+
+    [UPD].. 3
+
+[33mcommit 8a2beacbe5c00bfe537b35d49b6e49f14e64f19a[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Thu Nov 9 17:44:40 2023 +0100
+
+    [UPD].. fix2
+
+[33mcommit d81a5c804efc947d1f630fcc019db720b9a39425[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Thu Nov 9 17:34:09 2023 +0100
+
+    [UPD].. fix
+
+[33mcommit 536be7bdaf00b2b414d103bac9648dc3b18bf306[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Thu Nov 9 14:16:55 2023 +0100
+
+    [UPD] upd 5
+
+[33mcommit 69600bf1ea998697cf45682a8e7e520f827b57ce[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Thu Nov 9 14:11:25 2023 +0100
+
+    [UPD] upd 4
+
+[33mcommit 797f5951ebb68860111c924fe78b97f940f4bd11[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Thu Nov 9 12:33:10 2023 +0100
+
+    [UPD] upd 3
+
+[33mcommit 8cfecd151c083871cdc2450e655515501dd8ad02[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Thu Nov 9 11:57:46 2023 +0100
+
+    [UPD] upd 2
+
+[33mcommit c2382d8776bb3089e93ed241a692ac8e1267f91e[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Thu Nov 9 11:56:57 2023 +0100
+
+    [UPD] upd 1
+
+[33mcommit b68729830ab9387f26cba494227cd4b3b55a29d1[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Wed Nov 8 16:04:01 2023 +0100
+
+    [UPD] init dev
+
+[33mcommit ca5527d5f16ba0f5135aa3a2663cd6384da91e7f[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Wed Nov 8 13:35:00 2023 +0100
+
+    [UPD] debug
+
+[33mcommit 44957686eae7d1b008f0a8b266c9f4951422ba97[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Tue Nov 7 17:39:56 2023 +0100
+
+    [DEBUG] img
+
+[33mcommit 9a65acd07171002d9a9aef5bd42bf3be1f2ffa33[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Tue Nov 7 17:14:27 2023 +0100
+
+    [FIX] dev fix traduction on update
+
+[33mcommit 3ad1c3e8b9c01039e05a6acb377d9be18ed602c1[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Tue Nov 7 16:48:49 2023 +0100
+
+    [DEBUG] ...debugging 4
+
+[33mcommit e1145927f9bb43a5f5a8bda65979e88b519ac42f[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Tue Nov 7 15:56:07 2023 +0100
+
+    [DEBUG] ...debugging
+
+[33mcommit 41ae2021fcd9e8fda67b4a8aff848726dea1423a[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Tue Nov 7 15:43:24 2023 +0100
+
+    [DEBUG] debugging 3
+
+[33mcommit d7afcfc527464053ba875752a3abf19bf5c544e0[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Tue Nov 7 15:42:31 2023 +0100
+
+    [DEBUG] debugging 2
+
+[33mcommit 60b3231500e3c0bae0ae643afbb7fa0589fda370[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Tue Nov 7 12:10:32 2023 +0100
+
+    [DEBUG] debugging
+
+[33mcommit 4944605d7ca47855dce7d2462b4f160ec3bff8ad[m
+Author: karizma-abd <a.salami@karizma.ma>
+Date:   Tue Nov 7 11:35:44 2023 +0100
+
+    [UPD] .. trad
+
+[33mcommit f00afad59bd26af3073ce3b2fbc88c03ba698577[m
+Author: kar

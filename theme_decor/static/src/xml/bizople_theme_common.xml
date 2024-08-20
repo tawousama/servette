@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+    <t t-name="theme_decor.bizcommon_blog_slider_block">
+        <div aria-hidden="true" aria-labelledby="myModalLabel" t-attf-class="modal#{technical ? ' o_technical_modal' : ''}#{fullscreen ? ' o_modal_full': ''}" contenteditable="False" role="dialog" style="z-index:1050" tabindex="1">
+            <div class="modal-dialog">
+                <div class="modal-content" id="s_blog_slider_filter">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Blog Slider</h4>
+                        <button class="close" data-bs-dismiss="modal" type="button">x</button>
+                    </div>
+                    <div class="modal-body" contenteditable="false">
+                        <form class="form-horizontal container-fluid" role="form">
+                            <div class="row">
+                                <label class="col-sm-3 control-label" for="blog_slider_filter">Type</label>
+                                <div class="form-group col-sm-9">
+                                    <select class="form-control" id="blog_slider_filter" name="blog_slider_filter"/>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn" data-bs-dismiss="modal" id="cancel">Cancel</button>
+                        <button class="btn btn-danger" data-bs-dismiss="modal" id="blog_sub_data">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>

@@ -1,0 +1,131 @@
+#decor-header9{
+
+	/* mega menu alignment */
+	.middle-header{
+		.row.align-items-center {
+			.col-md-8{
+				#bizople-header-nine{
+					#top_menu{
+						.o_mega_menu{
+							a.nav-link{
+							    line-hnine: 30px;
+							    border: 0;
+							}
+						    top: 50px;
+						}
+					}
+				    position: unset;
+				}
+				position: unset;
+			}
+		    position: relative;
+		}
+	}
+
+	/* mega menu alignment end */
+
+
+	.top-header{
+		.contact-time{
+			p{
+				.fa{
+					font-size: 19px;
+				}
+			    font-size: 16px;
+    			line-height: 1.7;
+			}
+		}
+		.header-media{
+			a.link{
+				font-size: 18px;
+				text-decoration: none;
+			}
+		}
+	    padding: 25px 0;
+	    background-color: transparent;
+	}
+
+	.middle-header{
+		.header_left{
+			.navbar-brand{
+				line-hnine: 75px;
+			}
+		}
+		.header-center{
+			#top_menu{
+				.nav-item > a.nav-link{
+				    text-transform: capitalize;
+				    letter-spacing: .2px;
+				    font-weight: 500;
+				    font-style: normal;
+				    font-size: 16px;
+				    line-height: 50px;
+				    padding: 0 15px;
+				    color: #1b1b1b;
+				    position: relative;
+				}
+				li.nav-item:first-child{
+					a.nav-link{
+						padding-left: 0;
+					}
+				}
+				.nav-item > dropdown-menu {
+					border-radius: 0;
+				}
+				li.o_extra_menu_items{
+					> .nav-link{
+						padding: 0;
+					}
+					.dropdown-menu-right{
+						li{
+							border: 0 !important;
+						}
+						left: 0 !important;
+						background-clip: unset;
+					    width: fit-content;
+					}
+					> .dropdown-menu{
+						background-clip: unset;
+					    width: fit-content;
+					}
+				}
+			}
+			
+		}
+		@media (max-width: 1199.98px) {
+			.s_btn .btn{
+			    border-radius: 100px !important;
+			    padding: 0.45rem 1.35rem;
+			    font-size: 0.875rem;
+			    line-hnine: 1.5;
+			}
+			padding: 20px 15px;
+		}
+		@media (max-width: 767.98px) {
+			.mbl-div{
+			    justify-content: space-between;
+    			align-items: center;
+			}
+		    z-index: 1;
+    		position: relative;
+    		padding: 10px 0;
+	    }
+        padding: 25px 15px;
+        background-color: #ffffff;
+        border-radius: 3px;
+	    -moz-border-radius: 3px;
+	    -webkit-border-radius: 3px;
+	}
+	.bottom-container{
+		@media(max-width:767.98px){
+			background-color: #fff;
+		}
+	}
+}
+
+.o_header_overlay #decor-header9 {
+	@media (max-width: 767.98px) {
+	    position: unset !important;
+	    z-index: unset !important;
+    }
+}

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record id="pwa_offline_page" model="ir.ui.view">
+            <field name="name">Offline Page PWA</field>
+            <field name="type">qweb</field>
+            <field name="key">decor_theme_common.pwa_offline_page</field>
+            <field name="arch" type="xml">
+                <t name="Offline Page PWA" t-name="decor_theme_common.pwa_offline_page">
+                    <t t-call="website.layout">
+                        <div id="wrap">
+                        	<div class="container">
+                        		 <div class="row mb64 mt64">
+                        		 	<div class="col-md-12 text-center">
+                        		 		<img class="img img-fluid" style="width: 20%;" src="/decor_theme_common/static/src/img/undraw_going_offline_ihag.svg"/>
+                       		 		</div>
+                       		 		<div class="col-md-12 text-center mt32 mb16">
+                        		 		<h1 class="text-primary">You're Offline</h1>
+                       		 		</div>
+                       		 		<div class="col-md-12 text-center">
+                       		 			<a href="/" class="btn btn-primary">Refresh</a>
+                       		 		</div>
+                        		 </div>
+                        	</div>
+                        </div>
+                    </t>
+                </t>
+            </field>
+        </record>
+
+        <record id="pwa_offline_url" model="website.page">
+            <field name="website_published">True</field>
+            <field name="url">/pwa/offline</field>
+            <field name="view_id" ref="decor_theme_common.pwa_offline_page"/>
+        </record>
+</odoo>

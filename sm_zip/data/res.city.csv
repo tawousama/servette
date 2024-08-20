@@ -1,0 +1,1992 @@
+id,name,state_id/id,country_id/id
+city_ch_Les_Bois,Les Bois,__import__.country_state_9,base.ch
+city_ch_Les_Emibois,Les Emibois,__import__.country_state_9,base.ch
+city_ch_Muriaux,Muriaux,__import__.country_state_9,base.ch
+city_ch_Le_Noirmont,Le Noirmont,__import__.country_state_9,base.ch
+city_ch_Les_Breuleux,Les Breuleux,__import__.country_state_9,base.ch
+city_ch_Le_Cerneux_Veusil,Le Cerneux-Veusil,__import__.country_state_9,base.ch
+city_ch_La_Chaux_des_Breuleux,La Chaux-des-Breuleux,__import__.country_state_9,base.ch
+city_ch_Saignelegier,Saignelégier,__import__.country_state_9,base.ch
+city_ch_Les_Pommerats,Les Pommerats,__import__.country_state_9,base.ch
+city_ch_Goumois,Goumois,__import__.country_state_9,base.ch
+city_ch_Le_Bemont_JU,Le Bémont JU,__import__.country_state_9,base.ch
+city_ch_Montfaucon,Montfaucon,__import__.country_state_9,base.ch
+city_ch_Montfavergier,Montfavergier,__import__.country_state_9,base.ch
+city_ch_Les_Enfers,Les Enfers,__import__.country_state_9,base.ch
+city_ch_St_Brais,St-Brais,__import__.country_state_9,base.ch
+city_ch_Grenchen,Grenchen,__import__.country_state_15,base.ch
+city_ch_Bettlach,Bettlach,__import__.country_state_15,base.ch
+city_ch_Selzach,Selzach,__import__.country_state_15,base.ch
+city_ch_Les_Genevez_JU,Les Genevez JU,__import__.country_state_9,base.ch
+city_ch_Le_Predame,Le Prédame,__import__.country_state_9,base.ch
+city_ch_Lajoux_JU,Lajoux JU,__import__.country_state_9,base.ch
+city_ch_Fornet_Dessus,Fornet-Dessus,__import__.country_state_9,base.ch
+city_ch_Delemont,Delémont,__import__.country_state_9,base.ch
+city_ch_Develier,Develier,__import__.country_state_9,base.ch
+city_ch_Bourrignon,Bourrignon,__import__.country_state_9,base.ch
+city_ch_Soyhieres,Soyhières,__import__.country_state_9,base.ch
+city_ch_Mettembert,Mettembert,__import__.country_state_9,base.ch
+city_ch_Pleigne,Pleigne,__import__.country_state_9,base.ch
+city_ch_Lucelle,Lucelle,__import__.country_state_9,base.ch
+city_ch_Movelier,Movelier,__import__.country_state_9,base.ch
+city_ch_Ederswiler,Ederswiler,__import__.country_state_9,base.ch
+city_ch_Roggenburg,Roggenburg,__import__.country_state_4,base.ch
+city_ch_Courroux,Courroux,__import__.country_state_9,base.ch
+city_ch_Courcelon,Courcelon,__import__.country_state_9,base.ch
+city_ch_Vicques,Vicques,__import__.country_state_9,base.ch
+city_ch_Courchapoix,Courchapoix,__import__.country_state_9,base.ch
+city_ch_Corban,Corban,__import__.country_state_9,base.ch
+city_ch_Mervelier,Mervelier,__import__.country_state_9,base.ch
+city_ch_Montsevelier,Montsevelier,__import__.country_state_9,base.ch
+city_ch_Vermes,Vermes,__import__.country_state_9,base.ch
+city_ch_Courrendlin,Courrendlin,__import__.country_state_9,base.ch
+city_ch_Vellerat,Vellerat,__import__.country_state_9,base.ch
+city_ch_Rebeuvelier,Rebeuvelier,__import__.country_state_9,base.ch
+city_ch_Rossemaison,Rossemaison,__import__.country_state_9,base.ch
+city_ch_Châtillon_JU,Châtillon JU,__import__.country_state_9,base.ch
+city_ch_Courtetelle,Courtételle,__import__.country_state_9,base.ch
+city_ch_Courfaivre,Courfaivre,__import__.country_state_9,base.ch
+city_ch_Bassecourt,Bassecourt,__import__.country_state_9,base.ch
+city_ch_Glovelier,Glovelier,__import__.country_state_9,base.ch
+city_ch_Boecourt,Boécourt,__import__.country_state_9,base.ch
+city_ch_Montavon,Montavon,__import__.country_state_9,base.ch
+city_ch_Undervelier,Undervelier,__import__.country_state_9,base.ch
+city_ch_Soulce,Soulce,__import__.country_state_9,base.ch
+city_ch_Saulcy,Saulcy,__import__.country_state_9,base.ch
+city_ch_St_Ursanne,St-Ursanne,__import__.country_state_9,base.ch
+city_ch_Montmelon,Montmelon,__import__.country_state_9,base.ch
+city_ch_Montenol,Montenol,__import__.country_state_9,base.ch
+city_ch_Epauvillers,Epauvillers,__import__.country_state_9,base.ch
+city_ch_Epiquerez,Epiquerez,__import__.country_state_9,base.ch
+city_ch_Soubey,Soubey,__import__.country_state_9,base.ch
+city_ch_Seleute,Seleute,__import__.country_state_9,base.ch
+city_ch_Ocourt,Ocourt,__import__.country_state_9,base.ch
+city_ch_Porrentruy,Porrentruy,__import__.country_state_9,base.ch
+city_ch_Fontenais,Fontenais,__import__.country_state_9,base.ch
+city_ch_Villars_sur_Fontenais,Villars-sur-Fontenais,__import__.country_state_9,base.ch
+city_ch_Bressaucourt,Bressaucourt,__import__.country_state_9,base.ch
+city_ch_Courtedoux,Courtedoux,__import__.country_state_9,base.ch
+city_ch_Chevenez,Chevenez,__import__.country_state_9,base.ch
+city_ch_Rocourt,Rocourt,__import__.country_state_9,base.ch
+city_ch_Grandfontaine,Grandfontaine,__import__.country_state_9,base.ch
+city_ch_Reclere,Réclère,__import__.country_state_9,base.ch
+city_ch_Roche_d'Or,Roche-d'Or,__import__.country_state_9,base.ch
+city_ch_Damvant,Damvant,__import__.country_state_9,base.ch
+city_ch_Bure,Bure,__import__.country_state_9,base.ch
+city_ch_Fahy,Fahy,__import__.country_state_9,base.ch
+city_ch_Courchavon,Courchavon,__import__.country_state_9,base.ch
+city_ch_Courtemaîche,Courtemaîche,__import__.country_state_9,base.ch
+city_ch_Montignez,Montignez,__import__.country_state_9,base.ch
+city_ch_Buix,Buix,__import__.country_state_9,base.ch
+city_ch_Boncourt,Boncourt,__import__.country_state_9,base.ch
+city_ch_Coeuve,Coeuve,__import__.country_state_9,base.ch
+city_ch_Damphreux,Damphreux,__import__.country_state_9,base.ch
+city_ch_Lugnez,Lugnez,__import__.country_state_9,base.ch
+city_ch_Beurnevesin,Beurnevésin,__import__.country_state_9,base.ch
+city_ch_Alle,Alle,__import__.country_state_9,base.ch
+city_ch_Vendlincourt,Vendlincourt,__import__.country_state_9,base.ch
+city_ch_Bonfol,Bonfol,__import__.country_state_9,base.ch
+city_ch_Miecourt,Miécourt,__import__.country_state_9,base.ch
+city_ch_Charmoille,Charmoille,__import__.country_state_9,base.ch
+city_ch_Courgenay,Courgenay,__import__.country_state_9,base.ch
+city_ch_Courtemautruy,Courtemautruy,__import__.country_state_9,base.ch
+city_ch_Cornol,Cornol,__import__.country_state_9,base.ch
+city_ch_Fregiecourt,Fregiécourt,__import__.country_state_9,base.ch
+city_ch_Pleujouse,Pleujouse,__import__.country_state_9,base.ch
+city_ch_Asuel,Asuel,__import__.country_state_9,base.ch
+city_ch_Schnottwil,Schnottwil,__import__.country_state_15,base.ch
+city_ch_Messen,Messen,__import__.country_state_15,base.ch
+city_ch_Balm_b._Messen,Balm b. Messen,__import__.country_state_15,base.ch
+city_ch_Brunnenthal,Brunnenthal,__import__.country_state_15,base.ch
+city_ch_Basel,Basel,__import__.country_state_5,base.ch
+city_ch_Bruderholz,Bruderholz,__import__.country_state_4,base.ch
+city_ch_Binningen,Binningen,__import__.country_state_4,base.ch
+city_ch_Bottmingen,Bottmingen,__import__.country_state_4,base.ch
+city_ch_Oberwil_BL,Oberwil BL,__import__.country_state_4,base.ch
+city_ch_Biel_Benken_BL,Biel-Benken BL,__import__.country_state_4,base.ch
+city_ch_Therwil,Therwil,__import__.country_state_4,base.ch
+city_ch_Ettingen,Ettingen,__import__.country_state_4,base.ch
+city_ch_Witterswil,Witterswil,__import__.country_state_15,base.ch
+city_ch_Bättwil,Bättwil,__import__.country_state_15,base.ch
+city_ch_Flüh,Flüh,__import__.country_state_15,base.ch
+city_ch_Hofstetten_SO,Hofstetten SO,__import__.country_state_15,base.ch
+city_ch_Mariastein,Mariastein,__import__.country_state_15,base.ch
+city_ch_Metzerlen,Metzerlen,__import__.country_state_15,base.ch
+city_ch_Burg_im_Leimental,Burg im Leimental,__import__.country_state_4,base.ch
+city_ch_Rodersdorf,Rodersdorf,__import__.country_state_15,base.ch
+city_ch_Allschwil,Allschwil,__import__.country_state_4,base.ch
+city_ch_Schönenbuch,Schönenbuch,__import__.country_state_4,base.ch
+city_ch_Riehen,Riehen,__import__.country_state_5,base.ch
+city_ch_Bettingen,Bettingen,__import__.country_state_5,base.ch
+city_ch_Birsfelden,Birsfelden,__import__.country_state_4,base.ch
+city_ch_Muttenz,Muttenz,__import__.country_state_4,base.ch
+city_ch_Pratteln,Pratteln,__import__.country_state_4,base.ch
+city_ch_Münchenstein,Münchenstein,__import__.country_state_4,base.ch
+city_ch_Dornach,Dornach,__import__.country_state_15,base.ch
+city_ch_Arlesheim,Arlesheim,__import__.country_state_4,base.ch
+city_ch_Gempen,Gempen,__import__.country_state_15,base.ch
+city_ch_Hochwald,Hochwald,__import__.country_state_15,base.ch
+city_ch_Aesch_BL,Aesch BL,__import__.country_state_4,base.ch
+city_ch_Pfeffingen,Pfeffingen,__import__.country_state_4,base.ch
+city_ch_Reinach_BL,Reinach BL,__import__.country_state_4,base.ch
+city_ch_Duggingen,Duggingen,__import__.country_state_4,base.ch
+city_ch_Grellingen,Grellingen,__import__.country_state_4,base.ch
+city_ch_Himmelried,Himmelried,__import__.country_state_15,base.ch
+city_ch_Seewen_SO,Seewen SO,__import__.country_state_15,base.ch
+city_ch_Bretzwil,Bretzwil,__import__.country_state_4,base.ch
+city_ch_Nunningen,Nunningen,__import__.country_state_15,base.ch
+city_ch_Zwingen,Zwingen,__import__.country_state_4,base.ch
+city_ch_Blauen,Blauen,__import__.country_state_4,base.ch
+city_ch_Nenzlingen,Nenzlingen,__import__.country_state_4,base.ch
+city_ch_Brislach,Brislach,__import__.country_state_4,base.ch
+city_ch_Breitenbach,Breitenbach,__import__.country_state_15,base.ch
+city_ch_Büsserach,Büsserach,__import__.country_state_15,base.ch
+city_ch_Erschwil,Erschwil,__import__.country_state_15,base.ch
+city_ch_Beinwil_SO,Beinwil SO,__import__.country_state_15,base.ch
+city_ch_Fehren,Fehren,__import__.country_state_15,base.ch
+city_ch_Meltingen,Meltingen,__import__.country_state_15,base.ch
+city_ch_Zullwil,Zullwil,__import__.country_state_15,base.ch
+city_ch_Laufen,Laufen,__import__.country_state_4,base.ch
+city_ch_Dittingen,Dittingen,__import__.country_state_4,base.ch
+city_ch_Röschenz,Röschenz,__import__.country_state_4,base.ch
+city_ch_Kleinlützel,Kleinlützel,__import__.country_state_15,base.ch
+city_ch_Wahlen_b._Laufen,Wahlen b. Laufen,__import__.country_state_4,base.ch
+city_ch_Grindel,Grindel,__import__.country_state_15,base.ch
+city_ch_Bärschwil,Bärschwil,__import__.country_state_15,base.ch
+city_ch_Liesberg,Liesberg,__import__.country_state_4,base.ch
+city_ch_Liesberg_Dorf,Liesberg Dorf,__import__.country_state_4,base.ch
+city_ch_Augst_BL,Augst BL,__import__.country_state_4,base.ch
+city_ch_Kaiseraugst,Kaiseraugst,__import__.country_state_1,base.ch
+city_ch_Giebenach,Giebenach,__import__.country_state_4,base.ch
+city_ch_Olsberg,Olsberg,__import__.country_state_1,base.ch
+city_ch_Rheinfelden,Rheinfelden,__import__.country_state_1,base.ch
+city_ch_Magden,Magden,__import__.country_state_1,base.ch
+city_ch_Möhlin,Möhlin,__import__.country_state_1,base.ch
+city_ch_Zeiningen,Zeiningen,__import__.country_state_1,base.ch
+city_ch_Zuzgen,Zuzgen,__import__.country_state_1,base.ch
+city_ch_Hellikon,Hellikon,__import__.country_state_1,base.ch
+city_ch_Wegenstetten,Wegenstetten,__import__.country_state_1,base.ch
+city_ch_Mumpf,Mumpf,__import__.country_state_1,base.ch
+city_ch_Wallbach,Wallbach,__import__.country_state_1,base.ch
+city_ch_Obermumpf,Obermumpf,__import__.country_state_1,base.ch
+city_ch_Schupfart,Schupfart,__import__.country_state_1,base.ch
+city_ch_Stein_AG,Stein AG,__import__.country_state_1,base.ch
+city_ch_Münchwilen_AG,Münchwilen AG,__import__.country_state_1,base.ch
+city_ch_Sisseln_AG,Sisseln AG,__import__.country_state_1,base.ch
+city_ch_Frenkendorf,Frenkendorf,__import__.country_state_4,base.ch
+city_ch_Liestal,Liestal,__import__.country_state_4,base.ch
+city_ch_Seltisberg,Seltisberg,__import__.country_state_4,base.ch
+city_ch_Nuglar,Nuglar,__import__.country_state_15,base.ch
+city_ch_Büren_SO,Büren SO,__import__.country_state_15,base.ch
+city_ch_Füllinsdorf,Füllinsdorf,__import__.country_state_4,base.ch
+city_ch_Lausen,Lausen,__import__.country_state_4,base.ch
+city_ch_Bubendorf,Bubendorf,__import__.country_state_4,base.ch
+city_ch_Ziefen,Ziefen,__import__.country_state_4,base.ch
+city_ch_Reigoldswil,Reigoldswil,__import__.country_state_4,base.ch
+city_ch_Lupsingen,Lupsingen,__import__.country_state_4,base.ch
+city_ch_St._Pantaleon,St. Pantaleon,__import__.country_state_15,base.ch
+city_ch_Arisdorf,Arisdorf,__import__.country_state_4,base.ch
+city_ch_Hersberg,Hersberg,__import__.country_state_4,base.ch
+city_ch_Arboldswil,Arboldswil,__import__.country_state_4,base.ch
+city_ch_Titterten,Titterten,__import__.country_state_4,base.ch
+city_ch_Lauwil,Lauwil,__import__.country_state_4,base.ch
+city_ch_Bennwil,Bennwil,__import__.country_state_4,base.ch
+city_ch_Lampenberg,Lampenberg,__import__.country_state_4,base.ch
+city_ch_Ramlinsburg,Ramlinsburg,__import__.country_state_4,base.ch
+city_ch_Hölstein,Hölstein,__import__.country_state_4,base.ch
+city_ch_Niederdorf,Niederdorf,__import__.country_state_4,base.ch
+city_ch_Oberdorf_BL,Oberdorf BL,__import__.country_state_4,base.ch
+city_ch_Liedertswil,Liedertswil,__import__.country_state_4,base.ch
+city_ch_Waldenburg,Waldenburg,__import__.country_state_4,base.ch
+city_ch_Langenbruck,Langenbruck,__import__.country_state_4,base.ch
+city_ch_Thürnen,Thürnen,__import__.country_state_4,base.ch
+city_ch_Diepflingen,Diepflingen,__import__.country_state_4,base.ch
+city_ch_Wittinsburg,Wittinsburg,__import__.country_state_4,base.ch
+city_ch_Rümlingen,Rümlingen,__import__.country_state_4,base.ch
+city_ch_Häfelfingen,Häfelfingen,__import__.country_state_4,base.ch
+city_ch_Buckten,Buckten,__import__.country_state_4,base.ch
+city_ch_Känerkinden,Känerkinden,__import__.country_state_4,base.ch
+city_ch_Läufelfingen,Läufelfingen,__import__.country_state_4,base.ch
+city_ch_Sissach,Sissach,__import__.country_state_4,base.ch
+city_ch_Wintersingen,Wintersingen,__import__.country_state_4,base.ch
+city_ch_Itingen,Itingen,__import__.country_state_4,base.ch
+city_ch_Nusshof,Nusshof,__import__.country_state_4,base.ch
+city_ch_Zunzgen,Zunzgen,__import__.country_state_4,base.ch
+city_ch_Tenniken,Tenniken,__import__.country_state_4,base.ch
+city_ch_Diegten,Diegten,__import__.country_state_4,base.ch
+city_ch_Eptingen,Eptingen,__import__.country_state_4,base.ch
+city_ch_Gelterkinden,Gelterkinden,__import__.country_state_4,base.ch
+city_ch_Böckten,Böckten,__import__.country_state_4,base.ch
+city_ch_Rickenbach_BL,Rickenbach BL,__import__.country_state_4,base.ch
+city_ch_Buus,Buus,__import__.country_state_4,base.ch
+city_ch_Maisprach,Maisprach,__import__.country_state_4,base.ch
+city_ch_Hemmiken,Hemmiken,__import__.country_state_4,base.ch
+city_ch_Ormalingen,Ormalingen,__import__.country_state_4,base.ch
+city_ch_Rothenfluh,Rothenfluh,__import__.country_state_4,base.ch
+city_ch_Kienberg,Kienberg,__import__.country_state_15,base.ch
+city_ch_Anwil,Anwil,__import__.country_state_4,base.ch
+city_ch_Tecknau,Tecknau,__import__.country_state_4,base.ch
+city_ch_Wenslingen,Wenslingen,__import__.country_state_4,base.ch
+city_ch_Oltingen,Oltingen,__import__.country_state_4,base.ch
+city_ch_Zeglingen,Zeglingen,__import__.country_state_4,base.ch
+city_ch_Kilchberg_BL,Kilchberg BL,__import__.country_state_4,base.ch
+city_ch_Rünenberg,Rünenberg,__import__.country_state_4,base.ch
+city_ch_Solothurn,Solothurn,__import__.country_state_15,base.ch
+city_ch_Bellach,Bellach,__import__.country_state_15,base.ch
+city_ch_Langendorf,Langendorf,__import__.country_state_15,base.ch
+city_ch_Lommiswil,Lommiswil,__import__.country_state_15,base.ch
+city_ch_Oberdorf_SO,Oberdorf SO,__import__.country_state_15,base.ch
+city_ch_Weissenstein_b._Solothurn,Weissenstein b. Solothurn,__import__.country_state_15,base.ch
+city_ch_Rüttenen,Rüttenen,__import__.country_state_15,base.ch
+city_ch_Niederwil_SO,Niederwil SO,__import__.country_state_15,base.ch
+city_ch_Günsberg,Günsberg,__import__.country_state_15,base.ch
+city_ch_Balmberg,Balmberg,__import__.country_state_15,base.ch
+city_ch_Oberbalmberg,Oberbalmberg,__import__.country_state_15,base.ch
+city_ch_Balm_b._Günsberg,Balm b. Günsberg,__import__.country_state_15,base.ch
+city_ch_Zuchwil,Zuchwil,__import__.country_state_15,base.ch
+city_ch_Feldbrunnen,Feldbrunnen,__import__.country_state_15,base.ch
+city_ch_Riedholz,Riedholz,__import__.country_state_15,base.ch
+city_ch_Flumenthal,Flumenthal,__import__.country_state_15,base.ch
+city_ch_Hubersdorf,Hubersdorf,__import__.country_state_15,base.ch
+city_ch_Kammersrohr,Kammersrohr,__import__.country_state_15,base.ch
+city_ch_Luterbach,Luterbach,__import__.country_state_15,base.ch
+city_ch_Deitingen,Deitingen,__import__.country_state_15,base.ch
+city_ch_Derendingen,Derendingen,__import__.country_state_15,base.ch
+city_ch_Subingen,Subingen,__import__.country_state_15,base.ch
+city_ch_Etziken,Etziken,__import__.country_state_15,base.ch
+city_ch_Hüniken,Hüniken,__import__.country_state_15,base.ch
+city_ch_Aeschi_SO,Aeschi SO,__import__.country_state_15,base.ch
+city_ch_Bolken,Bolken,__import__.country_state_15,base.ch
+city_ch_Burgäschi,Burgäschi,__import__.country_state_15,base.ch
+city_ch_Steinhof_SO,Steinhof SO,__import__.country_state_15,base.ch
+city_ch_Horriwil,Horriwil,__import__.country_state_15,base.ch
+city_ch_Hersiwil,Hersiwil,__import__.country_state_15,base.ch
+city_ch_Heinrichswil,Heinrichswil,__import__.country_state_15,base.ch
+city_ch_Winistorf,Winistorf,__import__.country_state_15,base.ch
+city_ch_Biberist,Biberist,__import__.country_state_15,base.ch
+city_ch_Gerlafingen,Gerlafingen,__import__.country_state_15,base.ch
+city_ch_Obergerlafingen,Obergerlafingen,__import__.country_state_15,base.ch
+city_ch_Recherswil,Recherswil,__import__.country_state_15,base.ch
+city_ch_Kriegstetten,Kriegstetten,__import__.country_state_15,base.ch
+city_ch_Halten,Halten,__import__.country_state_15,base.ch
+city_ch_Oekingen,Oekingen,__import__.country_state_15,base.ch
+city_ch_Lüterkofen,Lüterkofen,__import__.country_state_15,base.ch
+city_ch_Ichertswil,Ichertswil,__import__.country_state_15,base.ch
+city_ch_Lohn_Ammannsegg,Lohn-Ammannsegg,__import__.country_state_15,base.ch
+city_ch_Nennigkofen,Nennigkofen,__import__.country_state_15,base.ch
+city_ch_Lüsslingen,Lüsslingen,__import__.country_state_15,base.ch
+city_ch_Tscheppach,Tscheppach,__import__.country_state_15,base.ch
+city_ch_Hessigkofen,Hessigkofen,__import__.country_state_15,base.ch
+city_ch_Bibern_SO,Bibern SO,__import__.country_state_15,base.ch
+city_ch_Gossliwil,Gossliwil,__import__.country_state_15,base.ch
+city_ch_Küttigkofen,Küttigkofen,__import__.country_state_15,base.ch
+city_ch_Brügglen,Brügglen,__import__.country_state_15,base.ch
+city_ch_Mühledorf_SO,Mühledorf SO,__import__.country_state_15,base.ch
+city_ch_Aetigkofen,Aetigkofen,__import__.country_state_15,base.ch
+city_ch_Lüterswil,Lüterswil,__import__.country_state_15,base.ch
+city_ch_Gächliwil,Gächliwil,__import__.country_state_15,base.ch
+city_ch_Biezwil,Biezwil,__import__.country_state_15,base.ch
+city_ch_Kyburg_Buchegg,Kyburg-Buchegg,__import__.country_state_15,base.ch
+city_ch_Aetingen,Aetingen,__import__.country_state_15,base.ch
+city_ch_Unterramsern,Unterramsern,__import__.country_state_15,base.ch
+city_ch_Brittern,Brittern,__import__.country_state_15,base.ch
+city_ch_Oberramsern,Oberramsern,__import__.country_state_15,base.ch
+city_ch_Olten,Olten,__import__.country_state_15,base.ch
+city_ch_Wangen_b._Olten,Wangen b. Olten,__import__.country_state_15,base.ch
+city_ch_Rickenbach_SO,Rickenbach SO,__import__.country_state_15,base.ch
+city_ch_Hägendorf,Hägendorf,__import__.country_state_15,base.ch
+city_ch_Allerheiligenberg,Allerheiligenberg,__import__.country_state_15,base.ch
+city_ch_Kappel_SO,Kappel SO,__import__.country_state_15,base.ch
+city_ch_Gunzgen,Gunzgen,__import__.country_state_15,base.ch
+city_ch_Boningen,Boningen,__import__.country_state_15,base.ch
+city_ch_Egerkingen,Egerkingen,__import__.country_state_15,base.ch
+city_ch_Neuendorf,Neuendorf,__import__.country_state_15,base.ch
+city_ch_Härkingen,Härkingen,__import__.country_state_15,base.ch
+city_ch_Oberbuchsiten,Oberbuchsiten,__import__.country_state_15,base.ch
+city_ch_Niederbuchsiten,Niederbuchsiten,__import__.country_state_15,base.ch
+city_ch_Wolfwil,Wolfwil,__import__.country_state_15,base.ch
+city_ch_Fulenbach,Fulenbach,__import__.country_state_15,base.ch
+city_ch_Trimbach,Trimbach,__import__.country_state_15,base.ch
+city_ch_Hauenstein,Hauenstein,__import__.country_state_15,base.ch
+city_ch_Wisen_SO,Wisen SO,__import__.country_state_15,base.ch
+city_ch_Winznau,Winznau,__import__.country_state_15,base.ch
+city_ch_Obergösgen,Obergösgen,__import__.country_state_15,base.ch
+city_ch_Lostorf,Lostorf,__import__.country_state_15,base.ch
+city_ch_Stüsslingen,Stüsslingen,__import__.country_state_15,base.ch
+city_ch_Rohr_b._Olten,Rohr b. Olten,__import__.country_state_15,base.ch
+city_ch_Starrkirch_Wil,Starrkirch-Wil,__import__.country_state_15,base.ch
+city_ch_Dulliken,Dulliken,__import__.country_state_15,base.ch
+city_ch_Däniken_SO,Däniken SO,__import__.country_state_15,base.ch
+city_ch_Aarburg,Aarburg,__import__.country_state_1,base.ch
+city_ch_Oftringen,Oftringen,__import__.country_state_1,base.ch
+city_ch_Oensingen,Oensingen,__import__.country_state_15,base.ch
+city_ch_Kestenholz,Kestenholz,__import__.country_state_15,base.ch
+city_ch_Balsthal,Balsthal,__import__.country_state_15,base.ch
+city_ch_Laupersdorf,Laupersdorf,__import__.country_state_15,base.ch
+city_ch_Matzendorf,Matzendorf,__import__.country_state_15,base.ch
+city_ch_Aedermannsdorf,Aedermannsdorf,__import__.country_state_15,base.ch
+city_ch_Herbetswil,Herbetswil,__import__.country_state_15,base.ch
+city_ch_Welschenrohr,Welschenrohr,__import__.country_state_15,base.ch
+city_ch_Gänsbrunnen,Gänsbrunnen,__import__.country_state_15,base.ch
+city_ch_Mümliswil,Mümliswil,__import__.country_state_15,base.ch
+city_ch_Holderbank_SO,Holderbank SO,__import__.country_state_15,base.ch
+city_ch_Ramiswil,Ramiswil,__import__.country_state_15,base.ch
+city_ch_Zofingen,Zofingen,__import__.country_state_1,base.ch
+city_ch_Strengelbach,Strengelbach,__import__.country_state_1,base.ch
+city_ch_Vordemwald,Vordemwald,__import__.country_state_1,base.ch
+city_ch_Brittnau,Brittnau,__import__.country_state_1,base.ch
+city_ch_Wikon,Wikon,__import__.country_state_10,base.ch
+city_ch_Mühlethal,Mühlethal,__import__.country_state_1,base.ch
+city_ch_Uerkheim,Uerkheim,__import__.country_state_1,base.ch
+city_ch_Bottenwil,Bottenwil,__import__.country_state_1,base.ch
+city_ch_Rothrist,Rothrist,__import__.country_state_1,base.ch
+city_ch_Murgenthal,Murgenthal,__import__.country_state_1,base.ch
+city_ch_Riken_AG,Riken AG,__import__.country_state_1,base.ch
+city_ch_Glashütten,Glashütten,__import__.country_state_1,base.ch
+city_ch_St._Urban,St. Urban,__import__.country_state_10,base.ch
+city_ch_Aarau,Aarau,__import__.country_state_1,base.ch
+city_ch_Schönenwerd,Schönenwerd,__import__.country_state_15,base.ch
+city_ch_Wöschnau,Wöschnau,__import__.country_state_15,base.ch
+city_ch_Eppenberg,Eppenberg,__import__.country_state_15,base.ch
+city_ch_Niedergösgen,Niedergösgen,__import__.country_state_15,base.ch
+city_ch_Gretzenbach,Gretzenbach,__import__.country_state_15,base.ch
+city_ch_Erlinsbach_SO,Erlinsbach SO,__import__.country_state_15,base.ch
+city_ch_Barmelweid,Barmelweid,__import__.country_state_1,base.ch
+city_ch_Erlinsbach,Erlinsbach,__import__.country_state_1,base.ch
+city_ch_Rombach,Rombach,__import__.country_state_1,base.ch
+city_ch_Biberstein,Biberstein,__import__.country_state_1,base.ch
+city_ch_Küttigen,Küttigen,__import__.country_state_1,base.ch
+city_ch_Asp,Asp,__import__.country_state_1,base.ch
+city_ch_Densbüren,Densbüren,__import__.country_state_1,base.ch
+city_ch_Herznach,Herznach,__import__.country_state_1,base.ch
+city_ch_Ueken,Ueken,__import__.country_state_1,base.ch
+city_ch_Aarau_Rohr,Aarau Rohr,__import__.country_state_1,base.ch
+city_ch_Buchs_AG,Buchs AG,__import__.country_state_1,base.ch
+city_ch_Suhr,Suhr,__import__.country_state_1,base.ch
+city_ch_Unterentfelden,Unterentfelden,__import__.country_state_1,base.ch
+city_ch_Oberentfelden,Oberentfelden,__import__.country_state_1,base.ch
+city_ch_Muhen,Muhen,__import__.country_state_1,base.ch
+city_ch_Schöftland,Schöftland,__import__.country_state_1,base.ch
+city_ch_Hirschthal,Hirschthal,__import__.country_state_1,base.ch
+city_ch_Holziken,Holziken,__import__.country_state_1,base.ch
+city_ch_Schlossrued,Schlossrued,__import__.country_state_1,base.ch
+city_ch_Schmiedrued,Schmiedrued,__import__.country_state_1,base.ch
+city_ch_Walde_AG,Walde AG,__import__.country_state_1,base.ch
+city_ch_Staffelbach,Staffelbach,__import__.country_state_1,base.ch
+city_ch_Wittwil,Wittwil,__import__.country_state_1,base.ch
+city_ch_Kirchleerau,Kirchleerau,__import__.country_state_1,base.ch
+city_ch_Moosleerau,Moosleerau,__import__.country_state_1,base.ch
+city_ch_Attelwil,Attelwil,__import__.country_state_1,base.ch
+city_ch_Reitnau,Reitnau,__import__.country_state_1,base.ch
+city_ch_Wiliberg,Wiliberg,__import__.country_state_1,base.ch
+city_ch_Oberhof,Oberhof,__import__.country_state_1,base.ch
+city_ch_Wölflinswil,Wölflinswil,__import__.country_state_1,base.ch
+city_ch_Wittnau,Wittnau,__import__.country_state_1,base.ch
+city_ch_Frick,Frick,__import__.country_state_1,base.ch
+city_ch_Oeschgen,Oeschgen,__import__.country_state_1,base.ch
+city_ch_Gipf_Oberfrick,Gipf-Oberfrick,__import__.country_state_1,base.ch
+city_ch_Eiken,Eiken,__import__.country_state_1,base.ch
+city_ch_Hornussen,Hornussen,__import__.country_state_1,base.ch
+city_ch_Bözen,Bözen,__import__.country_state_1,base.ch
+city_ch_Elfingen,Elfingen,__import__.country_state_1,base.ch
+city_ch_Effingen,Effingen,__import__.country_state_1,base.ch
+city_ch_Zeihen,Zeihen,__import__.country_state_1,base.ch
+city_ch_Laufenburg,Laufenburg,__import__.country_state_1,base.ch
+city_ch_Kaisten,Kaisten,__import__.country_state_1,base.ch
+city_ch_Ittenthal,Ittenthal,__import__.country_state_1,base.ch
+city_ch_Rheinsulz,Rheinsulz,__import__.country_state_1,base.ch
+city_ch_Sulz_AG,Sulz AG,__import__.country_state_1,base.ch
+city_ch_Rupperswil,Rupperswil,__import__.country_state_1,base.ch
+city_ch_Wildegg,Wildegg,__import__.country_state_1,base.ch
+city_ch_Möriken_AG,Möriken AG,__import__.country_state_1,base.ch
+city_ch_Auenstein,Auenstein,__import__.country_state_1,base.ch
+city_ch_Veltheim_AG,Veltheim AG,__import__.country_state_1,base.ch
+city_ch_Schinznach_Dorf,Schinznach Dorf,__import__.country_state_1,base.ch
+city_ch_Oberflachs,Oberflachs,__import__.country_state_1,base.ch
+city_ch_Thalheim_AG,Thalheim AG,__import__.country_state_1,base.ch
+city_ch_Holderbank_AG,Holderbank AG,__import__.country_state_1,base.ch
+city_ch_Schinznach_Bad,Schinznach Bad,__import__.country_state_1,base.ch
+city_ch_Brugg_AG,Brugg AG,__import__.country_state_1,base.ch
+city_ch_Windisch,Windisch,__import__.country_state_1,base.ch
+city_ch_Hausen_AG,Hausen AG,__import__.country_state_1,base.ch
+city_ch_Villnachern,Villnachern,__import__.country_state_1,base.ch
+city_ch_Umiken,Umiken,__import__.country_state_1,base.ch
+city_ch_Riniken,Riniken,__import__.country_state_1,base.ch
+city_ch_Bözberg,Bözberg,__import__.country_state_1,base.ch
+city_ch_Stilli,Stilli,__import__.country_state_1,base.ch
+city_ch_Villigen,Villigen,__import__.country_state_1,base.ch
+city_ch_Rüfenach_AG,Rüfenach AG,__import__.country_state_1,base.ch
+city_ch_Remigen,Remigen,__import__.country_state_1,base.ch
+city_ch_Mönthal,Mönthal,__import__.country_state_1,base.ch
+city_ch_Birr,Birr,__import__.country_state_1,base.ch
+city_ch_Lupfig,Lupfig,__import__.country_state_1,base.ch
+city_ch_Mülligen,Mülligen,__import__.country_state_1,base.ch
+city_ch_Birrhard,Birrhard,__import__.country_state_1,base.ch
+city_ch_Habsburg,Habsburg,__import__.country_state_1,base.ch
+city_ch_Scherz,Scherz,__import__.country_state_1,base.ch
+city_ch_Gansingen,Gansingen,__import__.country_state_1,base.ch
+city_ch_Oberhofen_AG,Oberhofen AG,__import__.country_state_1,base.ch
+city_ch_Mettau,Mettau,__import__.country_state_1,base.ch
+city_ch_Etzgen,Etzgen,__import__.country_state_1,base.ch
+city_ch_Wil_AG,Wil AG,__import__.country_state_1,base.ch
+city_ch_Hottwil,Hottwil,__import__.country_state_1,base.ch
+city_ch_Turgi,Turgi,__import__.country_state_1,base.ch
+city_ch_Siggenthal_Station,Siggenthal Station,__import__.country_state_1,base.ch
+city_ch_Würenlingen,Würenlingen,__import__.country_state_1,base.ch
+city_ch_Endingen,Endingen,__import__.country_state_1,base.ch
+city_ch_Unterendingen,Unterendingen,__import__.country_state_1,base.ch
+city_ch_Tegerfelden,Tegerfelden,__import__.country_state_1,base.ch
+city_ch_Döttingen,Döttingen,__import__.country_state_1,base.ch
+city_ch_Klingnau,Klingnau,__import__.country_state_1,base.ch
+city_ch_Kleindöttingen,Kleindöttingen,__import__.country_state_1,base.ch
+city_ch_Böttstein,Böttstein,__import__.country_state_1,base.ch
+city_ch_Leuggern,Leuggern,__import__.country_state_1,base.ch
+city_ch_Hettenschwil,Hettenschwil,__import__.country_state_1,base.ch
+city_ch_Mandach,Mandach,__import__.country_state_1,base.ch
+city_ch_Koblenz,Koblenz,__import__.country_state_1,base.ch
+city_ch_Rietheim,Rietheim,__import__.country_state_1,base.ch
+city_ch_Full_Reuenthal,Full-Reuenthal,__import__.country_state_1,base.ch
+city_ch_Leibstadt,Leibstadt,__import__.country_state_1,base.ch
+city_ch_Schwaderloch,Schwaderloch,__import__.country_state_1,base.ch
+city_ch_Bad_Zurzach,Bad Zurzach,__import__.country_state_1,base.ch
+city_ch_Rekingen_AG,Rekingen AG,__import__.country_state_1,base.ch
+city_ch_Baldingen,Baldingen,__import__.country_state_1,base.ch
+city_ch_Böbikon,Böbikon,__import__.country_state_1,base.ch
+city_ch_Baden,Baden,__import__.country_state_1,base.ch
+city_ch_Dättwil_AG,Dättwil AG,__import__.country_state_1,base.ch
+city_ch_Rütihof,Rütihof,__import__.country_state_1,base.ch
+city_ch_Ennetbaden,Ennetbaden,__import__.country_state_1,base.ch
+city_ch_Gebenstorf,Gebenstorf,__import__.country_state_1,base.ch
+city_ch_Vogelsang_AG,Vogelsang AG,__import__.country_state_1,base.ch
+city_ch_Birmenstorf_AG,Birmenstorf AG,__import__.country_state_1,base.ch
+city_ch_Nussbaumen_AG,Nussbaumen AG,__import__.country_state_1,base.ch
+city_ch_Hertenstein_AG,Hertenstein AG,__import__.country_state_1,base.ch
+city_ch_Rieden_AG,Rieden AG,__import__.country_state_1,base.ch
+city_ch_Kirchdorf_AG,Kirchdorf AG,__import__.country_state_1,base.ch
+city_ch_Untersiggenthal,Untersiggenthal,__import__.country_state_1,base.ch
+city_ch_Ehrendingen,Ehrendingen,__import__.country_state_1,base.ch
+city_ch_Freienwil,Freienwil,__import__.country_state_1,base.ch
+city_ch_Schneisingen,Schneisingen,__import__.country_state_1,base.ch
+city_ch_Lengnau_AG,Lengnau AG,__import__.country_state_1,base.ch
+city_ch_Wettingen,Wettingen,__import__.country_state_1,base.ch
+city_ch_Neuenhof,Neuenhof,__import__.country_state_1,base.ch
+city_ch_Würenlos,Würenlos,__import__.country_state_1,base.ch
+city_ch_Fislisbach,Fislisbach,__import__.country_state_1,base.ch
+city_ch_Niederrohrdorf,Niederrohrdorf,__import__.country_state_1,base.ch
+city_ch_Künten,Künten,__import__.country_state_1,base.ch
+city_ch_Eggenwil,Eggenwil,__import__.country_state_1,base.ch
+city_ch_Oberrohrdorf,Oberrohrdorf,__import__.country_state_1,base.ch
+city_ch_Remetschwil,Remetschwil,__import__.country_state_1,base.ch
+city_ch_Bellikon,Bellikon,__import__.country_state_1,base.ch
+city_ch_Siglistorf,Siglistorf,__import__.country_state_1,base.ch
+city_ch_Wislikofen,Wislikofen,__import__.country_state_1,base.ch
+city_ch_Rümikon_AG,Rümikon AG,__import__.country_state_1,base.ch
+city_ch_Mellikon,Mellikon,__import__.country_state_1,base.ch
+city_ch_Kaiserstuhl_AG,Kaiserstuhl AG,__import__.country_state_1,base.ch
+city_ch_Fisibach,Fisibach,__import__.country_state_1,base.ch
+city_ch_Hunzenschwil,Hunzenschwil,__import__.country_state_1,base.ch
+city_ch_Schafisheim,Schafisheim,__import__.country_state_1,base.ch
+city_ch_Othmarsingen,Othmarsingen,__import__.country_state_1,base.ch
+city_ch_Brunegg,Brunegg,__import__.country_state_1,base.ch
+city_ch_Mägenwil,Mägenwil,__import__.country_state_1,base.ch
+city_ch_Mellingen,Mellingen,__import__.country_state_1,base.ch
+city_ch_Wohlenschwil,Wohlenschwil,__import__.country_state_1,base.ch
+city_ch_Tägerig,Tägerig,__import__.country_state_1,base.ch
+city_ch_Niederwil_AG,Niederwil AG,__import__.country_state_1,base.ch
+city_ch_Nesselnbach,Nesselnbach,__import__.country_state_1,base.ch
+city_ch_Fischbach_Göslikon,Fischbach-Göslikon,__import__.country_state_1,base.ch
+city_ch_Lenzburg,Lenzburg,__import__.country_state_1,base.ch
+city_ch_Ammerswil_AG,Ammerswil AG,__import__.country_state_1,base.ch
+city_ch_Staufen,Staufen,__import__.country_state_1,base.ch
+city_ch_Hendschiken,Hendschiken,__import__.country_state_1,base.ch
+city_ch_Dottikon,Dottikon,__import__.country_state_1,base.ch
+city_ch_Dintikon,Dintikon,__import__.country_state_1,base.ch
+city_ch_Hägglingen,Hägglingen,__import__.country_state_1,base.ch
+city_ch_Stetten_AG,Stetten AG,__import__.country_state_1,base.ch
+city_ch_Wohlen_AG,Wohlen AG,__import__.country_state_1,base.ch
+city_ch_Anglikon,Anglikon,__import__.country_state_1,base.ch
+city_ch_Villmergen,Villmergen,__import__.country_state_1,base.ch
+city_ch_Hilfikon,Hilfikon,__import__.country_state_1,base.ch
+city_ch_Sarmenstorf,Sarmenstorf,__import__.country_state_1,base.ch
+city_ch_Fahrwangen,Fahrwangen,__import__.country_state_1,base.ch
+city_ch_Meisterschwanden,Meisterschwanden,__import__.country_state_1,base.ch
+city_ch_Tennwil,Tennwil,__import__.country_state_1,base.ch
+city_ch_Bettwil,Bettwil,__import__.country_state_1,base.ch
+city_ch_Büttikon_AG,Büttikon AG,__import__.country_state_1,base.ch
+city_ch_Uezwil,Uezwil,__import__.country_state_1,base.ch
+city_ch_Bremgarten_AG,Bremgarten AG,__import__.country_state_1,base.ch
+city_ch_Zufikon,Zufikon,__import__.country_state_1,base.ch
+city_ch_Waltenschwil,Waltenschwil,__import__.country_state_1,base.ch
+city_ch_Boswil,Boswil,__import__.country_state_1,base.ch
+city_ch_Bünzen,Bünzen,__import__.country_state_1,base.ch
+city_ch_Waldhäusern_AG,Waldhäusern AG,__import__.country_state_1,base.ch
+city_ch_Kallern,Kallern,__import__.country_state_1,base.ch
+city_ch_Hermetschwil_Staffeln,Hermetschwil-Staffeln,__import__.country_state_1,base.ch
+city_ch_Besenbüren,Besenbüren,__import__.country_state_1,base.ch
+city_ch_Aristau,Aristau,__import__.country_state_1,base.ch
+city_ch_Muri_AG,Muri AG,__import__.country_state_1,base.ch
+city_ch_Buttwil,Buttwil,__import__.country_state_1,base.ch
+city_ch_Merenschwand,Merenschwand,__import__.country_state_1,base.ch
+city_ch_Benzenschwil,Benzenschwil,__import__.country_state_1,base.ch
+city_ch_Beinwil_(Freiamt),Beinwil (Freiamt),__import__.country_state_1,base.ch
+city_ch_Geltwil,Geltwil,__import__.country_state_1,base.ch
+city_ch_Mühlau,Mühlau,__import__.country_state_1,base.ch
+city_ch_Sins,Sins,__import__.country_state_1,base.ch
+city_ch_Alikon,Alikon,__import__.country_state_1,base.ch
+city_ch_Meienberg,Meienberg,__import__.country_state_1,base.ch
+city_ch_Auw,Auw,__import__.country_state_1,base.ch
+city_ch_Aettenschwil,Aettenschwil,__import__.country_state_1,base.ch
+city_ch_Fenkrieden,Fenkrieden,__import__.country_state_1,base.ch
+city_ch_Abtwil_AG,Abtwil AG,__import__.country_state_1,base.ch
+city_ch_Oberrüti,Oberrüti,__import__.country_state_1,base.ch
+city_ch_Niederlenz,Niederlenz,__import__.country_state_1,base.ch
+city_ch_Seon,Seon,__import__.country_state_1,base.ch
+city_ch_Egliswil,Egliswil,__import__.country_state_1,base.ch
+city_ch_Hallwil,Hallwil,__import__.country_state_1,base.ch
+city_ch_Boniswil,Boniswil,__import__.country_state_1,base.ch
+city_ch_Seengen,Seengen,__import__.country_state_1,base.ch
+city_ch_Birrwil,Birrwil,__import__.country_state_1,base.ch
+city_ch_Beinwil_am_See,Beinwil am See,__import__.country_state_1,base.ch
+city_ch_Gränichen,Gränichen,__import__.country_state_1,base.ch
+city_ch_Teufenthal_AG,Teufenthal AG,__import__.country_state_1,base.ch
+city_ch_Dürrenäsch,Dürrenäsch,__import__.country_state_1,base.ch
+city_ch_Leutwil,Leutwil,__import__.country_state_1,base.ch
+city_ch_Unterkulm,Unterkulm,__import__.country_state_1,base.ch
+city_ch_Oberkulm,Oberkulm,__import__.country_state_1,base.ch
+city_ch_Gontenschwil,Gontenschwil,__import__.country_state_1,base.ch
+city_ch_Zetzwil,Zetzwil,__import__.country_state_1,base.ch
+city_ch_Leimbach_AG,Leimbach AG,__import__.country_state_1,base.ch
+city_ch_Reinach_AG,Reinach AG,__import__.country_state_1,base.ch
+city_ch_Pfeffikon_LU,Pfeffikon LU,__import__.country_state_10,base.ch
+city_ch_Burg_AG,Burg AG,__import__.country_state_1,base.ch
+city_ch_Menziken,Menziken,__import__.country_state_1,base.ch
+city_ch_Kölliken,Kölliken,__import__.country_state_1,base.ch
+city_ch_Safenwil,Safenwil,__import__.country_state_1,base.ch
+city_ch_Walterswil_SO,Walterswil SO,__import__.country_state_15,base.ch
+city_ch_Luzern,Luzern,__import__.country_state_10,base.ch
+city_ch_St._Niklausen_LU,St. Niklausen LU,__import__.country_state_10,base.ch
+city_ch_Kriens,Kriens,__import__.country_state_10,base.ch
+city_ch_Pilatus_Kulm,Pilatus Kulm,__import__.country_state_12,base.ch
+city_ch_Obernau,Obernau,__import__.country_state_10,base.ch
+city_ch_Eigenthal,Eigenthal,__import__.country_state_10,base.ch
+city_ch_Hellbühl,Hellbühl,__import__.country_state_10,base.ch
+city_ch_Ruswil,Ruswil,__import__.country_state_10,base.ch
+city_ch_Buttisholz,Buttisholz,__import__.country_state_10,base.ch
+city_ch_Sigigen,Sigigen,__import__.country_state_10,base.ch
+city_ch_Emmenbrücke,Emmenbrücke,__import__.country_state_10,base.ch
+city_ch_Grosswangen,Grosswangen,__import__.country_state_10,base.ch
+city_ch_Rothenburg,Rothenburg,__import__.country_state_10,base.ch
+city_ch_Hildisrieden,Hildisrieden,__import__.country_state_10,base.ch
+city_ch_Neudorf,Neudorf,__import__.country_state_10,base.ch
+city_ch_Rain,Rain,__import__.country_state_10,base.ch
+city_ch_Römerswil_LU,Römerswil LU,__import__.country_state_10,base.ch
+city_ch_Herlisberg,Herlisberg,__import__.country_state_10,base.ch
+city_ch_Ebikon,Ebikon,__import__.country_state_10,base.ch
+city_ch_Emmen,Emmen,__import__.country_state_10,base.ch
+city_ch_Buchrain,Buchrain,__import__.country_state_10,base.ch
+city_ch_Inwil,Inwil,__import__.country_state_10,base.ch
+city_ch_Perlen,Perlen,__import__.country_state_10,base.ch
+city_ch_Dierikon,Dierikon,__import__.country_state_10,base.ch
+city_ch_Root,Root,__import__.country_state_10,base.ch
+city_ch_Gisikon,Gisikon,__import__.country_state_10,base.ch
+city_ch_Honau,Honau,__import__.country_state_10,base.ch
+city_ch_Root_D4,Root D4,__import__.country_state_10,base.ch
+city_ch_Dietwil,Dietwil,__import__.country_state_1,base.ch
+city_ch_Adligenswil,Adligenswil,__import__.country_state_10,base.ch
+city_ch_Udligenswil,Udligenswil,__import__.country_state_10,base.ch
+city_ch_Meggen,Meggen,__import__.country_state_10,base.ch
+city_ch_Kastanienbaum,Kastanienbaum,__import__.country_state_10,base.ch
+city_ch_Horw,Horw,__import__.country_state_10,base.ch
+city_ch_Hergiswil_NW,Hergiswil NW,__import__.country_state_11,base.ch
+city_ch_Alpnachstad,Alpnachstad,__import__.country_state_12,base.ch
+city_ch_Alpnach_Dorf,Alpnach Dorf,__import__.country_state_12,base.ch
+city_ch_Kägiswil,Kägiswil,__import__.country_state_12,base.ch
+city_ch_Sarnen,Sarnen,__import__.country_state_12,base.ch
+city_ch_Ramersberg,Ramersberg,__import__.country_state_12,base.ch
+city_ch_Wilen_(Sarnen),Wilen (Sarnen),__import__.country_state_12,base.ch
+city_ch_Stalden_(Sarnen),Stalden (Sarnen),__import__.country_state_12,base.ch
+city_ch_Kerns,Kerns,__import__.country_state_12,base.ch
+city_ch_St._Niklausen_OW,St. Niklausen OW,__import__.country_state_12,base.ch
+city_ch_Melchtal,Melchtal,__import__.country_state_12,base.ch
+city_ch_Melchsee_Frutt,Melchsee-Frutt,__import__.country_state_12,base.ch
+city_ch_Sachseln,Sachseln,__import__.country_state_12,base.ch
+city_ch_Flüeli_Ranft,Flüeli-Ranft,__import__.country_state_12,base.ch
+city_ch_Giswil,Giswil,__import__.country_state_12,base.ch
+city_ch_Lungern,Lungern,__import__.country_state_12,base.ch
+city_ch_Bürglen_OW,Bürglen OW,__import__.country_state_12,base.ch
+city_ch_Malters,Malters,__import__.country_state_10,base.ch
+city_ch_Schwarzenberg_LU,Schwarzenberg LU,__import__.country_state_10,base.ch
+city_ch_Schachen_LU,Schachen LU,__import__.country_state_10,base.ch
+city_ch_Werthenstein,Werthenstein,__import__.country_state_10,base.ch
+city_ch_Wolhusen,Wolhusen,__import__.country_state_10,base.ch
+city_ch_Fontannen_b._Wolhusen,Fontannen b. Wolhusen,__import__.country_state_10,base.ch
+city_ch_Doppleschwand,Doppleschwand,__import__.country_state_10,base.ch
+city_ch_Romoos,Romoos,__import__.country_state_10,base.ch
+city_ch_Steinhuserberg,Steinhuserberg,__import__.country_state_10,base.ch
+city_ch_Menznau,Menznau,__import__.country_state_10,base.ch
+city_ch_Geiss,Geiss,__import__.country_state_10,base.ch
+city_ch_Menzberg,Menzberg,__import__.country_state_10,base.ch
+city_ch_Daiwil,Daiwil,__import__.country_state_10,base.ch
+city_ch_Willisau,Willisau,__import__.country_state_10,base.ch
+city_ch_Rohrmatt,Rohrmatt,__import__.country_state_10,base.ch
+city_ch_Hergiswil_b._Willisau,Hergiswil b. Willisau,__import__.country_state_10,base.ch
+city_ch_Gettnau,Gettnau,__import__.country_state_10,base.ch
+city_ch_Ohmstal,Ohmstal,__import__.country_state_10,base.ch
+city_ch_Zell_LU,Zell LU,__import__.country_state_10,base.ch
+city_ch_Fischbach_LU,Fischbach LU,__import__.country_state_10,base.ch
+city_ch_Grossdietwil,Grossdietwil,__import__.country_state_10,base.ch
+city_ch_Altbüron,Altbüron,__import__.country_state_10,base.ch
+city_ch_Hüswil,Hüswil,__import__.country_state_10,base.ch
+city_ch_Ufhusen,Ufhusen,__import__.country_state_10,base.ch
+city_ch_Hofstatt,Hofstatt,__import__.country_state_10,base.ch
+city_ch_Luthern,Luthern,__import__.country_state_10,base.ch
+city_ch_Luthern_Bad,Luthern Bad,__import__.country_state_10,base.ch
+city_ch_Entlebuch,Entlebuch,__import__.country_state_10,base.ch
+city_ch_Rengg,Rengg,__import__.country_state_10,base.ch
+city_ch_Finsterwald_b._Entlebuch,Finsterwald b. Entlebuch,__import__.country_state_10,base.ch
+city_ch_Ebnet,Ebnet,__import__.country_state_10,base.ch
+city_ch_Hasle_LU,Hasle LU,__import__.country_state_10,base.ch
+city_ch_Bramboden,Bramboden,__import__.country_state_10,base.ch
+city_ch_Schüpfheim,Schüpfheim,__import__.country_state_10,base.ch
+city_ch_Flühli_LU,Flühli LU,__import__.country_state_10,base.ch
+city_ch_Sörenberg,Sörenberg,__import__.country_state_10,base.ch
+city_ch_Escholzmatt,Escholzmatt,__import__.country_state_10,base.ch
+city_ch_Wiggen,Wiggen,__import__.country_state_10,base.ch
+city_ch_Marbach_LU,Marbach LU,__import__.country_state_10,base.ch
+city_ch_Sempach_Station,Sempach Station,__import__.country_state_10,base.ch
+city_ch_Sempach,Sempach,__import__.country_state_10,base.ch
+city_ch_Eich,Eich,__import__.country_state_10,base.ch
+city_ch_Neuenkirch,Neuenkirch,__import__.country_state_10,base.ch
+city_ch_Nottwil,Nottwil,__import__.country_state_10,base.ch
+city_ch_Oberkirch_LU,Oberkirch LU,__import__.country_state_10,base.ch
+city_ch_Sursee,Sursee,__import__.country_state_10,base.ch
+city_ch_Buchs_LU,Buchs LU,__import__.country_state_10,base.ch
+city_ch_St._Erhard,St. Erhard,__import__.country_state_10,base.ch
+city_ch_Kaltbach,Kaltbach,__import__.country_state_10,base.ch
+city_ch_Knutwil,Knutwil,__import__.country_state_10,base.ch
+city_ch_Schenkon,Schenkon,__import__.country_state_10,base.ch
+city_ch_Beromünster,Beromünster,__import__.country_state_10,base.ch
+city_ch_Schwarzenbach_LU,Schwarzenbach LU,__import__.country_state_10,base.ch
+city_ch_Mauensee,Mauensee,__import__.country_state_10,base.ch
+city_ch_Kottwil,Kottwil,__import__.country_state_10,base.ch
+city_ch_Ettiswil,Ettiswil,__import__.country_state_10,base.ch
+city_ch_Rickenbach_LU,Rickenbach LU,__import__.country_state_10,base.ch
+city_ch_Gunzwil,Gunzwil,__import__.country_state_10,base.ch
+city_ch_Schlierbach,Schlierbach,__import__.country_state_10,base.ch
+city_ch_Geuensee,Geuensee,__import__.country_state_10,base.ch
+city_ch_Büron,Büron,__import__.country_state_10,base.ch
+city_ch_Triengen,Triengen,__import__.country_state_10,base.ch
+city_ch_Kulmerau,Kulmerau,__import__.country_state_10,base.ch
+city_ch_Winikon,Winikon,__import__.country_state_10,base.ch
+city_ch_Wilihof,Wilihof,__import__.country_state_10,base.ch
+city_ch_Wauwil,Wauwil,__import__.country_state_10,base.ch
+city_ch_Egolzwil,Egolzwil,__import__.country_state_10,base.ch
+city_ch_Nebikon,Nebikon,__import__.country_state_10,base.ch
+city_ch_Ebersecken,Ebersecken,__import__.country_state_10,base.ch
+city_ch_Altishofen,Altishofen,__import__.country_state_10,base.ch
+city_ch_Schötz,Schötz,__import__.country_state_10,base.ch
+city_ch_Alberswil,Alberswil,__import__.country_state_10,base.ch
+city_ch_Dagmersellen,Dagmersellen,__import__.country_state_10,base.ch
+city_ch_Uffikon,Uffikon,__import__.country_state_10,base.ch
+city_ch_Reiden,Reiden,__import__.country_state_10,base.ch
+city_ch_Reidermoos,Reidermoos,__import__.country_state_10,base.ch
+city_ch_Hintermoos,Hintermoos,__import__.country_state_10,base.ch
+city_ch_Mehlsecken,Mehlsecken,__import__.country_state_10,base.ch
+city_ch_Langnau_b._Reiden,Langnau b. Reiden,__import__.country_state_10,base.ch
+city_ch_Richenthal,Richenthal,__import__.country_state_10,base.ch
+city_ch_Pfaffnau,Pfaffnau,__import__.country_state_10,base.ch
+city_ch_Roggliswil,Roggliswil,__import__.country_state_10,base.ch
+city_ch_Eschenbach_LU,Eschenbach LU,__import__.country_state_10,base.ch
+city_ch_Ballwil,Ballwil,__import__.country_state_10,base.ch
+city_ch_Hohenrain,Hohenrain,__import__.country_state_10,base.ch
+city_ch_Kleinwangen,Kleinwangen,__import__.country_state_10,base.ch
+city_ch_Lieli_LU,Lieli LU,__import__.country_state_10,base.ch
+city_ch_Hochdorf,Hochdorf,__import__.country_state_10,base.ch
+city_ch_Urswil,Urswil,__import__.country_state_10,base.ch
+city_ch_Baldegg,Baldegg,__import__.country_state_10,base.ch
+city_ch_Gelfingen,Gelfingen,__import__.country_state_10,base.ch
+city_ch_Sulz_LU,Sulz LU,__import__.country_state_10,base.ch
+city_ch_Hitzkirch,Hitzkirch,__import__.country_state_10,base.ch
+city_ch_Retschwil,Retschwil,__import__.country_state_10,base.ch
+city_ch_Altwis,Altwis,__import__.country_state_10,base.ch
+city_ch_Aesch_LU,Aesch LU,__import__.country_state_10,base.ch
+city_ch_Schongau,Schongau,__import__.country_state_10,base.ch
+city_ch_Müswangen,Müswangen,__import__.country_state_10,base.ch
+city_ch_Hämikon,Hämikon,__import__.country_state_10,base.ch
+city_ch_Ermensee,Ermensee,__import__.country_state_10,base.ch
+city_ch_Mosen,Mosen,__import__.country_state_10,base.ch
+city_ch_Zug,Zug,__import__.country_state_20,base.ch
+city_ch_Zugerberg,Zugerberg,__import__.country_state_20,base.ch
+city_ch_Steinhausen,Steinhausen,__import__.country_state_20,base.ch
+city_ch_Menzingen,Menzingen,__import__.country_state_20,base.ch
+city_ch_Edlibach,Edlibach,__import__.country_state_20,base.ch
+city_ch_Finstersee,Finstersee,__import__.country_state_20,base.ch
+city_ch_Unterägeri,Unterägeri,__import__.country_state_20,base.ch
+city_ch_Neuägeri,Neuägeri,__import__.country_state_20,base.ch
+city_ch_Oberägeri,Oberägeri,__import__.country_state_20,base.ch
+city_ch_Alosen,Alosen,__import__.country_state_20,base.ch
+city_ch_Morgarten,Morgarten,__import__.country_state_20,base.ch
+city_ch_Oberwil_b._Zug,Oberwil b. Zug,__import__.country_state_20,base.ch
+city_ch_Walchwil,Walchwil,__import__.country_state_20,base.ch
+city_ch_Allenwinden,Allenwinden,__import__.country_state_20,base.ch
+city_ch_Cham,Cham,__import__.country_state_20,base.ch
+city_ch_Hünenberg,Hünenberg,__import__.country_state_20,base.ch
+city_ch_Hagendorn,Hagendorn,__import__.country_state_20,base.ch
+city_ch_Hünenberg_See,Hünenberg See,__import__.country_state_20,base.ch
+city_ch_Baar,Baar,__import__.country_state_20,base.ch
+city_ch_Sihlbrugg,Sihlbrugg,__import__.country_state_20,base.ch
+city_ch_Rotkreuz,Rotkreuz,__import__.country_state_20,base.ch
+city_ch_Buonas,Buonas,__import__.country_state_20,base.ch
+city_ch_Risch,Risch,__import__.country_state_20,base.ch
+city_ch_Holzhäusern_ZG,Holzhäusern ZG,__import__.country_state_20,base.ch
+city_ch_Meierskappel,Meierskappel,__import__.country_state_10,base.ch
+city_ch_Neuheim,Neuheim,__import__.country_state_20,base.ch
+city_ch_Weggis,Weggis,__import__.country_state_10,base.ch
+city_ch_Vitznau,Vitznau,__import__.country_state_10,base.ch
+city_ch_Rigi_Kaltbad,Rigi Kaltbad,__import__.country_state_10,base.ch
+city_ch_Stansstad,Stansstad,__import__.country_state_11,base.ch
+city_ch_Obbürgen,Obbürgen,__import__.country_state_11,base.ch
+city_ch_Fürigen,Fürigen,__import__.country_state_11,base.ch
+city_ch_Bürgenstock,Bürgenstock,__import__.country_state_11,base.ch
+city_ch_Kehrsiten,Kehrsiten,__import__.country_state_11,base.ch
+city_ch_Stans,Stans,__import__.country_state_11,base.ch
+city_ch_Oberdorf_NW,Oberdorf NW,__import__.country_state_11,base.ch
+city_ch_Ennetmoos,Ennetmoos,__import__.country_state_11,base.ch
+city_ch_Ennetbürgen,Ennetbürgen,__import__.country_state_11,base.ch
+city_ch_Buochs,Buochs,__import__.country_state_11,base.ch
+city_ch_Beckenried,Beckenried,__import__.country_state_11,base.ch
+city_ch_Emmetten,Emmetten,__import__.country_state_11,base.ch
+city_ch_Seelisberg,Seelisberg,__import__.country_state_19,base.ch
+city_ch_Büren_NW,Büren NW,__import__.country_state_11,base.ch
+city_ch_Dallenwil,Dallenwil,__import__.country_state_11,base.ch
+city_ch_Niederrickenbach,Niederrickenbach,__import__.country_state_11,base.ch
+city_ch_Wiesenberg,Wiesenberg,__import__.country_state_11,base.ch
+city_ch_Wirzweli,Wirzweli,__import__.country_state_11,base.ch
+city_ch_Wolfenschiessen,Wolfenschiessen,__import__.country_state_11,base.ch
+city_ch_Oberrickenbach,Oberrickenbach,__import__.country_state_11,base.ch
+city_ch_Grafenort,Grafenort,__import__.country_state_12,base.ch
+city_ch_Engelberg,Engelberg,__import__.country_state_12,base.ch
+city_ch_Merlischachen,Merlischachen,__import__.country_state_16,base.ch
+city_ch_Küssnacht_am_Rigi,Küssnacht am Rigi,__import__.country_state_16,base.ch
+city_ch_Greppen,Greppen,__import__.country_state_10,base.ch
+city_ch_Immensee,Immensee,__import__.country_state_16,base.ch
+city_ch_Goldau,Goldau,__import__.country_state_16,base.ch
+city_ch_Rigi_Klösterli,Rigi Klösterli,__import__.country_state_16,base.ch
+city_ch_Rigi_Staffel,Rigi Staffel,__import__.country_state_16,base.ch
+city_ch_Rigi_Kulm,Rigi Kulm,__import__.country_state_16,base.ch
+city_ch_Rigi_Scheidegg,Rigi Scheidegg,__import__.country_state_16,base.ch
+city_ch_Oberarth,Oberarth,__import__.country_state_16,base.ch
+city_ch_Arth,Arth,__import__.country_state_16,base.ch
+city_ch_Steinerberg,Steinerberg,__import__.country_state_16,base.ch
+city_ch_Sattel,Sattel,__import__.country_state_16,base.ch
+city_ch_Rothenthurm,Rothenthurm,__import__.country_state_16,base.ch
+city_ch_Steinen,Steinen,__import__.country_state_16,base.ch
+city_ch_Seewen_SZ,Seewen SZ,__import__.country_state_16,base.ch
+city_ch_Lauerz,Lauerz,__import__.country_state_16,base.ch
+city_ch_Schwyz,Schwyz,__import__.country_state_16,base.ch
+city_ch_Rickenbach_b._Schwyz,Rickenbach b. Schwyz,__import__.country_state_16,base.ch
+city_ch_Stoos_SZ,Stoos SZ,__import__.country_state_16,base.ch
+city_ch_Illgau,Illgau,__import__.country_state_16,base.ch
+city_ch_Muotathal,Muotathal,__import__.country_state_16,base.ch
+city_ch_Bisisthal,Bisisthal,__import__.country_state_16,base.ch
+city_ch_Ried_(Muotathal),Ried (Muotathal),__import__.country_state_16,base.ch
+city_ch_Ibach,Ibach,__import__.country_state_16,base.ch
+city_ch_Brunnen,Brunnen,__import__.country_state_16,base.ch
+city_ch_Rütli,Rütli,__import__.country_state_19,base.ch
+city_ch_Gersau,Gersau,__import__.country_state_16,base.ch
+city_ch_Morschach,Morschach,__import__.country_state_16,base.ch
+city_ch_Sisikon,Sisikon,__import__.country_state_19,base.ch
+city_ch_Riemenstalden,Riemenstalden,__import__.country_state_16,base.ch
+city_ch_Flüelen,Flüelen,__import__.country_state_19,base.ch
+city_ch_Altdorf_UR,Altdorf UR,__import__.country_state_19,base.ch
+city_ch_Isenthal,Isenthal,__import__.country_state_19,base.ch
+city_ch_Seedorf_UR,Seedorf UR,__import__.country_state_19,base.ch
+city_ch_Bürglen_UR,Bürglen UR,__import__.country_state_19,base.ch
+city_ch_Spiringen,Spiringen,__import__.country_state_19,base.ch
+city_ch_Unterschächen,Unterschächen,__import__.country_state_19,base.ch
+city_ch_Bauen,Bauen,__import__.country_state_19,base.ch
+city_ch_Schattdorf,Schattdorf,__import__.country_state_19,base.ch
+city_ch_Attinghausen,Attinghausen,__import__.country_state_19,base.ch
+city_ch_Haldi_b._Schattdorf,Haldi b. Schattdorf,__import__.country_state_19,base.ch
+city_ch_Erstfeld,Erstfeld,__import__.country_state_19,base.ch
+city_ch_Silenen,Silenen,__import__.country_state_19,base.ch
+city_ch_Amsteg,Amsteg,__import__.country_state_19,base.ch
+city_ch_Bristen,Bristen,__import__.country_state_19,base.ch
+city_ch_Intschi,Intschi,__import__.country_state_19,base.ch
+city_ch_Gurtnellen,Gurtnellen,__import__.country_state_19,base.ch
+city_ch_Wassen_UR,Wassen UR,__import__.country_state_19,base.ch
+city_ch_Meien,Meien,__import__.country_state_19,base.ch
+city_ch_Göschenen,Göschenen,__import__.country_state_19,base.ch
+city_ch_Andermatt,Andermatt,__import__.country_state_19,base.ch
+city_ch_Realp,Realp,__import__.country_state_19,base.ch
+city_ch_Hospental,Hospental,__import__.country_state_19,base.ch
+city_ch_Bellinzona,Bellinzona,__import__.country_state_18,base.ch
+city_ch_Giubiasco,Giubiasco,__import__.country_state_18,base.ch
+city_ch_Monte_Carasso,Monte Carasso,__import__.country_state_18,base.ch
+city_ch_Sementina,Sementina,__import__.country_state_18,base.ch
+city_ch_Gudo,Gudo,__import__.country_state_18,base.ch
+city_ch_Cugnasco,Cugnasco,__import__.country_state_18,base.ch
+city_ch_Arbedo,Arbedo,__import__.country_state_18,base.ch
+city_ch_Gorduno,Gorduno,__import__.country_state_18,base.ch
+city_ch_Preonzo,Preonzo,__import__.country_state_18,base.ch
+city_ch_Moleno,Moleno,__import__.country_state_18,base.ch
+city_ch_Gnosca,Gnosca,__import__.country_state_18,base.ch
+city_ch_Prosito,Prosito,__import__.country_state_18,base.ch
+city_ch_Lodrino,Lodrino,__import__.country_state_18,base.ch
+city_ch_Camorino,Camorino,__import__.country_state_18,base.ch
+city_ch_Castione,Castione,__import__.country_state_18,base.ch
+city_ch_Lumino,Lumino,__import__.country_state_18,base.ch
+city_ch_S._Vittore,S. Vittore,__import__.country_state_8,base.ch
+city_ch_Roveredo_GR,Roveredo GR,__import__.country_state_8,base.ch
+city_ch_Grono,Grono,__import__.country_state_8,base.ch
+city_ch_Verdabbio,Verdabbio,__import__.country_state_8,base.ch
+city_ch_Castaneda,Castaneda,__import__.country_state_8,base.ch
+city_ch_Sta._Maria_in_Calanca,Sta. Maria in Calanca,__import__.country_state_8,base.ch
+city_ch_Buseno,Buseno,__import__.country_state_8,base.ch
+city_ch_Arvigo,Arvigo,__import__.country_state_8,base.ch
+city_ch_Braggio,Braggio,__import__.country_state_8,base.ch
+city_ch_Selma,Selma,__import__.country_state_8,base.ch
+city_ch_Cauco,Cauco,__import__.country_state_8,base.ch
+city_ch_Rossa,Rossa,__import__.country_state_8,base.ch
+city_ch_Augio,Augio,__import__.country_state_8,base.ch
+city_ch_Sta._Domenica,Sta. Domenica,__import__.country_state_8,base.ch
+city_ch_Laura,Laura,__import__.country_state_8,base.ch
+city_ch_Leggia,Leggia,__import__.country_state_8,base.ch
+city_ch_Cama,Cama,__import__.country_state_8,base.ch
+city_ch_Lostallo,Lostallo,__import__.country_state_8,base.ch
+city_ch_Soazza,Soazza,__import__.country_state_8,base.ch
+city_ch_Mesocco,Mesocco,__import__.country_state_8,base.ch
+city_ch_S._Bernardino,S. Bernardino,__import__.country_state_8,base.ch
+city_ch_Indemini,Indemini,__import__.country_state_18,base.ch
+city_ch_Quartino,Quartino,__import__.country_state_18,base.ch
+city_ch_Magadino,Magadino,__import__.country_state_18,base.ch
+city_ch_Vira_(Gambarogno),Vira (Gambarogno),__import__.country_state_18,base.ch
+city_ch_S._Nazzaro,S. Nazzaro,__import__.country_state_18,base.ch
+city_ch_Vairano,Vairano,__import__.country_state_18,base.ch
+city_ch_Gerra_(Gambarogno),Gerra (Gambarogno),__import__.country_state_18,base.ch
+city_ch_Ranzo,Ranzo,__import__.country_state_18,base.ch
+city_ch_Caviano,Caviano,__import__.country_state_18,base.ch
+city_ch_Piazzogna,Piazzogna,__import__.country_state_18,base.ch
+city_ch_Pianezzo,Pianezzo,__import__.country_state_18,base.ch
+city_ch_S._Antonio_(Val_Morobbia),S. Antonio (Val Morobbia),__import__.country_state_18,base.ch
+city_ch_Carena,Carena,__import__.country_state_18,base.ch
+city_ch_S._Antonino,S. Antonino,__import__.country_state_18,base.ch
+city_ch_Cadenazzo,Cadenazzo,__import__.country_state_18,base.ch
+city_ch_Contone,Contone,__import__.country_state_18,base.ch
+city_ch_Riazzino,Riazzino,__import__.country_state_18,base.ch
+city_ch_Gordola,Gordola,__import__.country_state_18,base.ch
+city_ch_Agarone,Agarone,__import__.country_state_18,base.ch
+city_ch_Tenero,Tenero,__import__.country_state_18,base.ch
+city_ch_Robasacco,Robasacco,__import__.country_state_18,base.ch
+city_ch_Locarno,Locarno,__import__.country_state_18,base.ch
+city_ch_Muralto,Muralto,__import__.country_state_18,base.ch
+city_ch_Solduno,Solduno,__import__.country_state_18,base.ch
+city_ch_Mosogno,Mosogno,__import__.country_state_18,base.ch
+city_ch_Gresso,Gresso,__import__.country_state_18,base.ch
+city_ch_Crana,Crana,__import__.country_state_18,base.ch
+city_ch_Ascona,Ascona,__import__.country_state_18,base.ch
+city_ch_Porto_Ronco,Porto Ronco,__import__.country_state_18,base.ch
+city_ch_Brissago,Brissago,__import__.country_state_18,base.ch
+city_ch_Isole_di_Brissago,Isole di Brissago,__import__.country_state_18,base.ch
+city_ch_Losone,Losone,__import__.country_state_18,base.ch
+city_ch_Arcegno,Arcegno,__import__.country_state_18,base.ch
+city_ch_Ronco_sopra_Ascona,Ronco sopra Ascona,__import__.country_state_18,base.ch
+city_ch_Corippo,Corippo,__import__.country_state_18,base.ch
+city_ch_Vogorno,Vogorno,__import__.country_state_18,base.ch
+city_ch_Lavertezzo,Lavertezzo,__import__.country_state_18,base.ch
+city_ch_Brione_(Verzasca),Brione (Verzasca),__import__.country_state_18,base.ch
+city_ch_Gerra_(Verzasca),Gerra (Verzasca),__import__.country_state_18,base.ch
+city_ch_Frasco,Frasco,__import__.country_state_18,base.ch
+city_ch_Sonogno,Sonogno,__import__.country_state_18,base.ch
+city_ch_Orselina,Orselina,__import__.country_state_18,base.ch
+city_ch_Brione_sopra_Minusio,Brione sopra Minusio,__import__.country_state_18,base.ch
+city_ch_Contra,Contra,__import__.country_state_18,base.ch
+city_ch_Mergoscia,Mergoscia,__import__.country_state_18,base.ch
+city_ch_Minusio,Minusio,__import__.country_state_18,base.ch
+city_ch_Tegna,Tegna,__import__.country_state_18,base.ch
+city_ch_Verscio,Verscio,__import__.country_state_18,base.ch
+city_ch_Cavigliano,Cavigliano,__import__.country_state_18,base.ch
+city_ch_Intragna,Intragna,__import__.country_state_18,base.ch
+city_ch_Verdasio,Verdasio,__import__.country_state_18,base.ch
+city_ch_Rasa,Rasa,__import__.country_state_18,base.ch
+city_ch_Golino,Golino,__import__.country_state_18,base.ch
+city_ch_Palagnedra,Palagnedra,__import__.country_state_18,base.ch
+city_ch_Borgnone,Borgnone,__import__.country_state_18,base.ch
+city_ch_Camedo,Camedo,__import__.country_state_18,base.ch
+city_ch_Moneto,Moneto,__import__.country_state_18,base.ch
+city_ch_Loco,Loco,__import__.country_state_18,base.ch
+city_ch_Auressio,Auressio,__import__.country_state_18,base.ch
+city_ch_Berzona,Berzona,__import__.country_state_18,base.ch
+city_ch_Russo,Russo,__import__.country_state_18,base.ch
+city_ch_Comologno,Comologno,__import__.country_state_18,base.ch
+city_ch_Spruga,Spruga,__import__.country_state_18,base.ch
+city_ch_Vergeletto,Vergeletto,__import__.country_state_18,base.ch
+city_ch_Avegno,Avegno,__import__.country_state_18,base.ch
+city_ch_Gordevio,Gordevio,__import__.country_state_18,base.ch
+city_ch_Maggia,Maggia,__import__.country_state_18,base.ch
+city_ch_Someo,Someo,__import__.country_state_18,base.ch
+city_ch_Riveo,Riveo,__import__.country_state_18,base.ch
+city_ch_Cevio,Cevio,__import__.country_state_18,base.ch
+city_ch_Bignasco,Bignasco,__import__.country_state_18,base.ch
+city_ch_Aurigeno,Aurigeno,__import__.country_state_18,base.ch
+city_ch_Moghegno,Moghegno,__import__.country_state_18,base.ch
+city_ch_Giumaglio,Giumaglio,__import__.country_state_18,base.ch
+city_ch_Lodano,Lodano,__import__.country_state_18,base.ch
+city_ch_Coglio,Coglio,__import__.country_state_18,base.ch
+city_ch_Linescio,Linescio,__import__.country_state_18,base.ch
+city_ch_Cerentino,Cerentino,__import__.country_state_18,base.ch
+city_ch_Niva_(Vallemaggia),Niva (Vallemaggia),__import__.country_state_18,base.ch
+city_ch_Campo_(Vallemaggia),Campo (Vallemaggia),__import__.country_state_18,base.ch
+city_ch_Cimalmotto,Cimalmotto,__import__.country_state_18,base.ch
+city_ch_Bosco/Gurin,Bosco/Gurin,__import__.country_state_18,base.ch
+city_ch_Cavergno,Cavergno,__import__.country_state_18,base.ch
+city_ch_S._Carlo_(Val_Bavona),S. Carlo (Val Bavona),__import__.country_state_18,base.ch
+city_ch_Menzonio,Menzonio,__import__.country_state_18,base.ch
+city_ch_Brontallo,Brontallo,__import__.country_state_18,base.ch
+city_ch_Broglio,Broglio,__import__.country_state_18,base.ch
+city_ch_Prato_Sornico,Prato-Sornico,__import__.country_state_18,base.ch
+city_ch_Peccia,Peccia,__import__.country_state_18,base.ch
+city_ch_Piano_di_Peccia,Piano di Peccia,__import__.country_state_18,base.ch
+city_ch_Fusio,Fusio,__import__.country_state_18,base.ch
+city_ch_Claro,Claro,__import__.country_state_18,base.ch
+city_ch_Osogna,Osogna,__import__.country_state_18,base.ch
+city_ch_Cresciano,Cresciano,__import__.country_state_18,base.ch
+city_ch_Iragna,Iragna,__import__.country_state_18,base.ch
+city_ch_Biasca,Biasca,__import__.country_state_18,base.ch
+city_ch_Malvaglia,Malvaglia,__import__.country_state_18,base.ch
+city_ch_Semione,Semione,__import__.country_state_18,base.ch
+city_ch_Dongio,Dongio,__import__.country_state_18,base.ch
+city_ch_Acquarossa,Acquarossa,__import__.country_state_18,base.ch
+city_ch_Leontica,Leontica,__import__.country_state_18,base.ch
+city_ch_Lottigna,Lottigna,__import__.country_state_18,base.ch
+city_ch_Dangio,Dangio,__import__.country_state_18,base.ch
+city_ch_Torre,Torre,__import__.country_state_18,base.ch
+city_ch_Olivone,Olivone,__import__.country_state_18,base.ch
+city_ch_Camperio,Camperio,__import__.country_state_18,base.ch
+city_ch_Aquila,Aquila,__import__.country_state_18,base.ch
+city_ch_Campo_(Blenio),Campo (Blenio),__import__.country_state_18,base.ch
+city_ch_Ghirone,Ghirone,__import__.country_state_18,base.ch
+city_ch_Ludiano,Ludiano,__import__.country_state_18,base.ch
+city_ch_Motto_(Blenio),Motto (Blenio),__import__.country_state_18,base.ch
+city_ch_Corzoneso,Corzoneso,__import__.country_state_18,base.ch
+city_ch_Prugiasco,Prugiasco,__import__.country_state_18,base.ch
+city_ch_Castro,Castro,__import__.country_state_18,base.ch
+city_ch_Marolta,Marolta,__import__.country_state_18,base.ch
+city_ch_Ponto_Valentino,Ponto Valentino,__import__.country_state_18,base.ch
+city_ch_Largario,Largario,__import__.country_state_18,base.ch
+city_ch_Pollegio,Pollegio,__import__.country_state_18,base.ch
+city_ch_Bodio_TI,Bodio TI,__import__.country_state_18,base.ch
+city_ch_Personico,Personico,__import__.country_state_18,base.ch
+city_ch_Giornico,Giornico,__import__.country_state_18,base.ch
+city_ch_Lavorgo,Lavorgo,__import__.country_state_18,base.ch
+city_ch_Calonico,Calonico,__import__.country_state_18,base.ch
+city_ch_Nivo,Nivo,__import__.country_state_18,base.ch
+city_ch_Chironico,Chironico,__import__.country_state_18,base.ch
+city_ch_Anzonico,Anzonico,__import__.country_state_18,base.ch
+city_ch_Sobrio,Sobrio,__import__.country_state_18,base.ch
+city_ch_Cavagnago,Cavagnago,__import__.country_state_18,base.ch
+city_ch_Faido,Faido,__import__.country_state_18,base.ch
+city_ch_Molare,Molare,__import__.country_state_18,base.ch
+city_ch_Calpiogna,Calpiogna,__import__.country_state_18,base.ch
+city_ch_Campello,Campello,__import__.country_state_18,base.ch
+city_ch_Carì,Carì,__import__.country_state_18,base.ch
+city_ch_Rossura,Rossura,__import__.country_state_18,base.ch
+city_ch_Osco,Osco,__import__.country_state_18,base.ch
+city_ch_Mairengo,Mairengo,__import__.country_state_18,base.ch
+city_ch_Chiggiogna,Chiggiogna,__import__.country_state_18,base.ch
+city_ch_Rodi_Fiesso,Rodi-Fiesso,__import__.country_state_18,base.ch
+city_ch_Prato_(Leventina),Prato (Leventina),__import__.country_state_18,base.ch
+city_ch_Dalpe,Dalpe,__import__.country_state_18,base.ch
+city_ch_Ambrì,Ambrì,__import__.country_state_18,base.ch
+city_ch_Piotta,Piotta,__import__.country_state_18,base.ch
+city_ch_Quinto,Quinto,__import__.country_state_18,base.ch
+city_ch_Varenzo,Varenzo,__import__.country_state_18,base.ch
+city_ch_Airolo,Airolo,__import__.country_state_18,base.ch
+city_ch_Madrano,Madrano,__import__.country_state_18,base.ch
+city_ch_Villa_Bedretto,Villa Bedretto,__import__.country_state_18,base.ch
+city_ch_Bedretto,Bedretto,__import__.country_state_18,base.ch
+city_ch_Rivera,Rivera,__import__.country_state_18,base.ch
+city_ch_Camignolo,Camignolo,__import__.country_state_18,base.ch
+city_ch_Bironico,Bironico,__import__.country_state_18,base.ch
+city_ch_Mezzovico,Mezzovico,__import__.country_state_18,base.ch
+city_ch_Sigirino,Sigirino,__import__.country_state_18,base.ch
+city_ch_Taverne,Taverne,__import__.country_state_18,base.ch
+city_ch_Torricella,Torricella,__import__.country_state_18,base.ch
+city_ch_Medeglia,Medeglia,__import__.country_state_18,base.ch
+city_ch_Isone,Isone,__import__.country_state_18,base.ch
+city_ch_Lamone,Lamone,__import__.country_state_18,base.ch
+city_ch_Cadempino,Cadempino,__import__.country_state_18,base.ch
+city_ch_Melide,Melide,__import__.country_state_18,base.ch
+city_ch_Bissone,Bissone,__import__.country_state_18,base.ch
+city_ch_Maroggia,Maroggia,__import__.country_state_18,base.ch
+city_ch_Melano,Melano,__import__.country_state_18,base.ch
+city_ch_Rovio,Rovio,__import__.country_state_18,base.ch
+city_ch_Arogno,Arogno,__import__.country_state_18,base.ch
+city_ch_Pugerna,Pugerna,__import__.country_state_18,base.ch
+city_ch_Capolago,Capolago,__import__.country_state_18,base.ch
+city_ch_Riva_San_Vitale,Riva San Vitale,__import__.country_state_18,base.ch
+city_ch_Brusino_Arsizio,Brusino Arsizio,__import__.country_state_18,base.ch
+city_ch_Balerna,Balerna,__import__.country_state_18,base.ch
+city_ch_Chiasso,Chiasso,__import__.country_state_18,base.ch
+city_ch_Pedrinate,Pedrinate,__import__.country_state_18,base.ch
+city_ch_Seseglio,Seseglio,__import__.country_state_18,base.ch
+city_ch_Vacallo,Vacallo,__import__.country_state_18,base.ch
+city_ch_Morbio_Inferiore,Morbio Inferiore,__import__.country_state_18,base.ch
+city_ch_Morbio_Superiore,Morbio Superiore,__import__.country_state_18,base.ch
+city_ch_Caneggio,Caneggio,__import__.country_state_18,base.ch
+city_ch_Bruzella,Bruzella,__import__.country_state_18,base.ch
+city_ch_Muggio,Muggio,__import__.country_state_18,base.ch
+city_ch_Cabbio,Cabbio,__import__.country_state_18,base.ch
+city_ch_Sagno,Sagno,__import__.country_state_18,base.ch
+city_ch_Mendrisio,Mendrisio,__import__.country_state_18,base.ch
+city_ch_Genestrerio,Genestrerio,__import__.country_state_18,base.ch
+city_ch_Ligornetto,Ligornetto,__import__.country_state_18,base.ch
+city_ch_S._Pietro,S. Pietro,__import__.country_state_18,base.ch
+city_ch_Stabio,Stabio,__import__.country_state_18,base.ch
+city_ch_Rancate,Rancate,__import__.country_state_18,base.ch
+city_ch_Besazio,Besazio,__import__.country_state_18,base.ch
+city_ch_Arzo,Arzo,__import__.country_state_18,base.ch
+city_ch_Tremona,Tremona,__import__.country_state_18,base.ch
+city_ch_Meride,Meride,__import__.country_state_18,base.ch
+city_ch_Serpiano,Serpiano,__import__.country_state_18,base.ch
+city_ch_Salorino,Salorino,__import__.country_state_18,base.ch
+city_ch_Somazzo,Somazzo,__import__.country_state_18,base.ch
+city_ch_Corteglia,Corteglia,__import__.country_state_18,base.ch
+city_ch_Castel_San_Pietro,Castel San Pietro,__import__.country_state_18,base.ch
+city_ch_Monte,Monte,__import__.country_state_18,base.ch
+city_ch_Casima,Casima,__import__.country_state_18,base.ch
+city_ch_Campora,Campora,__import__.country_state_18,base.ch
+city_ch_Coldrerio,Coldrerio,__import__.country_state_18,base.ch
+city_ch_Novazzano,Novazzano,__import__.country_state_18,base.ch
+city_ch_Lugano,Lugano,__import__.country_state_18,base.ch
+city_ch_Massagno,Massagno,__import__.country_state_18,base.ch
+city_ch_Paradiso,Paradiso,__import__.country_state_18,base.ch
+city_ch_Pazzallo,Pazzallo,__import__.country_state_18,base.ch
+city_ch_Carabbia,Carabbia,__import__.country_state_18,base.ch
+city_ch_Carona,Carona,__import__.country_state_18,base.ch
+city_ch_Pambio_Noranco,Pambio-Noranco,__import__.country_state_18,base.ch
+city_ch_Grancia,Grancia,__import__.country_state_18,base.ch
+city_ch_Barbengo,Barbengo,__import__.country_state_18,base.ch
+city_ch_Figino,Figino,__import__.country_state_18,base.ch
+city_ch_Carabietta,Carabietta,__import__.country_state_18,base.ch
+city_ch_Vico_Morcote,Vico Morcote,__import__.country_state_18,base.ch
+city_ch_Morcote,Morcote,__import__.country_state_18,base.ch
+city_ch_Sorengo,Sorengo,__import__.country_state_18,base.ch
+city_ch_Gentilino,Gentilino,__import__.country_state_18,base.ch
+city_ch_Montagnola,Montagnola,__import__.country_state_18,base.ch
+city_ch_Agra,Agra,__import__.country_state_18,base.ch
+city_ch_Manno,Manno,__import__.country_state_18,base.ch
+city_ch_Gravesano,Gravesano,__import__.country_state_18,base.ch
+city_ch_Bedano,Bedano,__import__.country_state_18,base.ch
+city_ch_Breganzona,Breganzona,__import__.country_state_18,base.ch
+city_ch_Muzzano,Muzzano,__import__.country_state_18,base.ch
+city_ch_Bioggio,Bioggio,__import__.country_state_18,base.ch
+city_ch_Bosco_Luganese,Bosco Luganese,__import__.country_state_18,base.ch
+city_ch_Cademario,Cademario,__import__.country_state_18,base.ch
+city_ch_Breno,Breno,__import__.country_state_18,base.ch
+city_ch_Vezio,Vezio,__import__.country_state_18,base.ch
+city_ch_Fescoggia,Fescoggia,__import__.country_state_18,base.ch
+city_ch_Mugena,Mugena,__import__.country_state_18,base.ch
+city_ch_Arosio,Arosio,__import__.country_state_18,base.ch
+city_ch_Savosa,Savosa,__import__.country_state_18,base.ch
+city_ch_Vezia,Vezia,__import__.country_state_18,base.ch
+city_ch_Cureglia,Cureglia,__import__.country_state_18,base.ch
+city_ch_Origlio,Origlio,__import__.country_state_18,base.ch
+city_ch_Ponte_Capriasca,Ponte Capriasca,__import__.country_state_18,base.ch
+city_ch_Vaglio,Vaglio,__import__.country_state_18,base.ch
+city_ch_Porza,Porza,__import__.country_state_18,base.ch
+city_ch_Comano,Comano,__import__.country_state_18,base.ch
+city_ch_Tesserete,Tesserete,__import__.country_state_18,base.ch
+city_ch_Insone,Insone,__import__.country_state_18,base.ch
+city_ch_Scareglia,Scareglia,__import__.country_state_18,base.ch
+city_ch_Colla,Colla,__import__.country_state_18,base.ch
+city_ch_Bogno,Bogno,__import__.country_state_18,base.ch
+city_ch_Cozzo,Cozzo,__import__.country_state_18,base.ch
+city_ch_Signôra,Signôra,__import__.country_state_18,base.ch
+city_ch_Canobbio,Canobbio,__import__.country_state_18,base.ch
+city_ch_Lugaggia,Lugaggia,__import__.country_state_18,base.ch
+city_ch_Sala_Capriasca,Sala Capriasca,__import__.country_state_18,base.ch
+city_ch_Bigorio,Bigorio,__import__.country_state_18,base.ch
+city_ch_Cagiallo,Cagiallo,__import__.country_state_18,base.ch
+city_ch_Oggio,Oggio,__import__.country_state_18,base.ch
+city_ch_Lopagno,Lopagno,__import__.country_state_18,base.ch
+city_ch_Roveredo_TI,Roveredo TI,__import__.country_state_18,base.ch
+city_ch_Bidogno,Bidogno,__import__.country_state_18,base.ch
+city_ch_Corticiasca,Corticiasca,__import__.country_state_18,base.ch
+city_ch_Maglio_di_Colla,Maglio di Colla,__import__.country_state_18,base.ch
+city_ch_Certara,Certara,__import__.country_state_18,base.ch
+city_ch_Curtina,Curtina,__import__.country_state_18,base.ch
+city_ch_Cimadera,Cimadera,__import__.country_state_18,base.ch
+city_ch_Piandera_Paese,Piandera Paese,__import__.country_state_18,base.ch
+city_ch_Odogno,Odogno,__import__.country_state_18,base.ch
+city_ch_Viganello,Viganello,__import__.country_state_18,base.ch
+city_ch_Pregassona,Pregassona,__import__.country_state_18,base.ch
+city_ch_Cureggia,Cureggia,__import__.country_state_18,base.ch
+city_ch_Davesco_Soragno,Davesco-Soragno,__import__.country_state_18,base.ch
+city_ch_Cadro,Cadro,__import__.country_state_18,base.ch
+city_ch_Villa_Luganese,Villa Luganese,__import__.country_state_18,base.ch
+city_ch_Dino,Dino,__import__.country_state_18,base.ch
+city_ch_Sonvico,Sonvico,__import__.country_state_18,base.ch
+city_ch_Aldesago,Aldesago,__import__.country_state_18,base.ch
+city_ch_Castagnola,Castagnola,__import__.country_state_18,base.ch
+city_ch_Ruvigliana,Ruvigliana,__import__.country_state_18,base.ch
+city_ch_Gandria,Gandria,__import__.country_state_18,base.ch
+city_ch_Bre_sopra_Lugano,Brè sopra Lugano,__import__.country_state_18,base.ch
+city_ch_Castelrotto,Castelrotto,__import__.country_state_18,base.ch
+city_ch_Bedigliora,Bedigliora,__import__.country_state_18,base.ch
+city_ch_Bombinasco,Bombinasco,__import__.country_state_18,base.ch
+city_ch_Banco,Banco,__import__.country_state_18,base.ch
+city_ch_Beride_di_Bedigliora,Beride di Bedigliora,__import__.country_state_18,base.ch
+city_ch_Agno,Agno,__import__.country_state_18,base.ch
+city_ch_Magliaso,Magliaso,__import__.country_state_18,base.ch
+city_ch_Pura,Pura,__import__.country_state_18,base.ch
+city_ch_Novaggio,Novaggio,__import__.country_state_18,base.ch
+city_ch_Miglieglia,Miglieglia,__import__.country_state_18,base.ch
+city_ch_Curio,Curio,__import__.country_state_18,base.ch
+city_ch_Caslano,Caslano,__import__.country_state_18,base.ch
+city_ch_Ponte_Tresa,Ponte Tresa,__import__.country_state_18,base.ch
+city_ch_Purasca,Purasca,__import__.country_state_18,base.ch
+city_ch_Cassina_d'Agno,Cassina d'Agno,__import__.country_state_18,base.ch
+city_ch_Neggio,Neggio,__import__.country_state_18,base.ch
+city_ch_Vernate,Vernate,__import__.country_state_18,base.ch
+city_ch_Cimo,Cimo,__import__.country_state_18,base.ch
+city_ch_Iseo,Iseo,__import__.country_state_18,base.ch
+city_ch_Aranno,Aranno,__import__.country_state_18,base.ch
+city_ch_Madonna_del_Piano,Madonna del Piano,__import__.country_state_18,base.ch
+city_ch_Sessa,Sessa,__import__.country_state_18,base.ch
+city_ch_Monteggio,Monteggio,__import__.country_state_18,base.ch
+city_ch_Astano,Astano,__import__.country_state_18,base.ch
+city_ch_Chur,Chur,__import__.country_state_8,base.ch
+city_ch_Felsberg,Felsberg,__import__.country_state_8,base.ch
+city_ch_Domat/Ems,Domat/Ems,__import__.country_state_8,base.ch
+city_ch_Trin,Trin,__import__.country_state_8,base.ch
+city_ch_Tamins,Tamins,__import__.country_state_8,base.ch
+city_ch_Trin_Mulin,Trin Mulin,__import__.country_state_8,base.ch
+city_ch_Flims_Dorf,Flims Dorf,__import__.country_state_8,base.ch
+city_ch_Flims_Waldhaus,Flims Waldhaus,__import__.country_state_8,base.ch
+city_ch_Fidaz,Fidaz,__import__.country_state_8,base.ch
+city_ch_Haldenstein,Haldenstein,__import__.country_state_8,base.ch
+city_ch_Maladers,Maladers,__import__.country_state_8,base.ch
+city_ch_Castiel,Castiel,__import__.country_state_8,base.ch
+city_ch_Lüen,Lüen,__import__.country_state_8,base.ch
+city_ch_Calfreisen,Calfreisen,__import__.country_state_8,base.ch
+city_ch_St._Peter,St. Peter,__import__.country_state_8,base.ch
+city_ch_Pagig,Pagig,__import__.country_state_8,base.ch
+city_ch_Peist,Peist,__import__.country_state_8,base.ch
+city_ch_Laax_GR,Laax GR,__import__.country_state_8,base.ch
+city_ch_Laax_GR_2,Laax GR 2,__import__.country_state_8,base.ch
+city_ch_Arosa,Arosa,__import__.country_state_8,base.ch
+city_ch_Molinis,Molinis,__import__.country_state_8,base.ch
+city_ch_Langwies,Langwies,__import__.country_state_8,base.ch
+city_ch_Litzirüti,Litzirüti,__import__.country_state_8,base.ch
+city_ch_Passugg,Passugg,__import__.country_state_8,base.ch
+city_ch_Praden,Praden,__import__.country_state_8,base.ch
+city_ch_Tschiertschen,Tschiertschen,__import__.country_state_8,base.ch
+city_ch_Malix,Malix,__import__.country_state_8,base.ch
+city_ch_Churwalden,Churwalden,__import__.country_state_8,base.ch
+city_ch_Parpan,Parpan,__import__.country_state_8,base.ch
+city_ch_Valbella,Valbella,__import__.country_state_8,base.ch
+city_ch_Lenzerheide/Lai,Lenzerheide/Lai,__import__.country_state_8,base.ch
+city_ch_Vaz/Obervaz,Vaz/Obervaz,__import__.country_state_8,base.ch
+city_ch_Lantsch/Lenz,Lantsch/Lenz,__import__.country_state_8,base.ch
+city_ch_Brienz/Brinzauls_GR,Brienz/Brinzauls GR,__import__.country_state_8,base.ch
+city_ch_Versam,Versam,__import__.country_state_8,base.ch
+city_ch_Tenna,Tenna,__import__.country_state_8,base.ch
+city_ch_Safien_Platz,Safien Platz,__import__.country_state_8,base.ch
+city_ch_Thalkirch,Thalkirch,__import__.country_state_8,base.ch
+city_ch_Peiden,Peiden,__import__.country_state_8,base.ch
+city_ch_Pitasch,Pitasch,__import__.country_state_8,base.ch
+city_ch_Duvin,Duvin,__import__.country_state_8,base.ch
+city_ch_Camuns,Camuns,__import__.country_state_8,base.ch
+city_ch_Uors_(Lumnezia),Uors (Lumnezia),__import__.country_state_8,base.ch
+city_ch_Surcasti,Surcasti,__import__.country_state_8,base.ch
+city_ch_Tersnaus,Tersnaus,__import__.country_state_8,base.ch
+city_ch_St._Martin_(Lugnez),St. Martin (Lugnez),__import__.country_state_8,base.ch
+city_ch_Valendas,Valendas,__import__.country_state_8,base.ch
+city_ch_Castrisch,Castrisch,__import__.country_state_8,base.ch
+city_ch_Sevgein,Sevgein,__import__.country_state_8,base.ch
+city_ch_Riein,Riein,__import__.country_state_8,base.ch
+city_ch_Ilanz,Ilanz,__import__.country_state_8,base.ch
+city_ch_Schnaus,Schnaus,__import__.country_state_8,base.ch
+city_ch_Vals,Vals,__import__.country_state_8,base.ch
+city_ch_Obersaxen,Obersaxen,__import__.country_state_8,base.ch
+city_ch_Flond,Flond,__import__.country_state_8,base.ch
+city_ch_Surcuolm,Surcuolm,__import__.country_state_8,base.ch
+city_ch_Luven,Luven,__import__.country_state_8,base.ch
+city_ch_Cumbel,Cumbel,__import__.country_state_8,base.ch
+city_ch_Morissen,Morissen,__import__.country_state_8,base.ch
+city_ch_Vella,Vella,__import__.country_state_8,base.ch
+city_ch_Degen,Degen,__import__.country_state_8,base.ch
+city_ch_Vattiz,Vattiz,__import__.country_state_8,base.ch
+city_ch_Vignogn,Vignogn,__import__.country_state_8,base.ch
+city_ch_Lumbrein,Lumbrein,__import__.country_state_8,base.ch
+city_ch_Vrin,Vrin,__import__.country_state_8,base.ch
+city_ch_Schluein,Schluein,__import__.country_state_8,base.ch
+city_ch_Sagogn,Sagogn,__import__.country_state_8,base.ch
+city_ch_Falera,Falera,__import__.country_state_8,base.ch
+city_ch_Ruschein,Ruschein,__import__.country_state_8,base.ch
+city_ch_Ladir,Ladir,__import__.country_state_8,base.ch
+city_ch_Rueun,Rueun,__import__.country_state_8,base.ch
+city_ch_Pigniu,Pigniu,__import__.country_state_8,base.ch
+city_ch_Siat,Siat,__import__.country_state_8,base.ch
+city_ch_Waltensburg/Vuorz,Waltensburg/Vuorz,__import__.country_state_8,base.ch
+city_ch_Andiast,Andiast,__import__.country_state_8,base.ch
+city_ch_Tavanasa,Tavanasa,__import__.country_state_8,base.ch
+city_ch_Danis,Danis,__import__.country_state_8,base.ch
+city_ch_Dardin,Dardin,__import__.country_state_8,base.ch
+city_ch_Breil/Brigels,Breil/Brigels,__import__.country_state_8,base.ch
+city_ch_Trun,Trun,__import__.country_state_8,base.ch
+city_ch_Zignau,Zignau,__import__.country_state_8,base.ch
+city_ch_Schlans,Schlans,__import__.country_state_8,base.ch
+city_ch_Rabius,Rabius,__import__.country_state_8,base.ch
+city_ch_Surrein,Surrein,__import__.country_state_8,base.ch
+city_ch_S._Benedetg,S. Benedetg,__import__.country_state_8,base.ch
+city_ch_Sumvitg,Sumvitg,__import__.country_state_8,base.ch
+city_ch_Cumpadials,Cumpadials,__import__.country_state_8,base.ch
+city_ch_Disentis/Muster,Disentis/Mustér,__import__.country_state_8,base.ch
+city_ch_Cavardiras,Cavardiras,__import__.country_state_8,base.ch
+city_ch_Mumpe_Medel,Mumpé Medel,__import__.country_state_8,base.ch
+city_ch_Curaglia,Curaglia,__import__.country_state_8,base.ch
+city_ch_Platta,Platta,__import__.country_state_8,base.ch
+city_ch_Segnas,Segnas,__import__.country_state_8,base.ch
+city_ch_Camischolas,Camischolas,__import__.country_state_8,base.ch
+city_ch_Sedrun,Sedrun,__import__.country_state_8,base.ch
+city_ch_Rueras,Rueras,__import__.country_state_8,base.ch
+city_ch_Says,Says,__import__.country_state_8,base.ch
+city_ch_Trimmis,Trimmis,__import__.country_state_8,base.ch
+city_ch_Untervaz,Untervaz,__import__.country_state_8,base.ch
+city_ch_Zizers,Zizers,__import__.country_state_8,base.ch
+city_ch_Igis,Igis,__import__.country_state_8,base.ch
+city_ch_Malans_GR,Malans GR,__import__.country_state_8,base.ch
+city_ch_Seewis_Dorf,Seewis Dorf,__import__.country_state_8,base.ch
+city_ch_Seewis_Pardisla,Seewis-Pardisla,__import__.country_state_8,base.ch
+city_ch_Seewis_Schmitten,Seewis-Schmitten,__import__.country_state_8,base.ch
+city_ch_Valzeina,Valzeina,__import__.country_state_8,base.ch
+city_ch_Grüsch,Grüsch,__import__.country_state_8,base.ch
+city_ch_Fanas,Fanas,__import__.country_state_8,base.ch
+city_ch_Schiers,Schiers,__import__.country_state_8,base.ch
+city_ch_Lunden,Lunden,__import__.country_state_8,base.ch
+city_ch_Buchen_im_Prättigau,Buchen im Prättigau,__import__.country_state_8,base.ch
+city_ch_Putz,Putz,__import__.country_state_8,base.ch
+city_ch_Stels,Stels,__import__.country_state_8,base.ch
+city_ch_Fajauna,Fajauna,__import__.country_state_8,base.ch
+city_ch_Schuders,Schuders,__import__.country_state_8,base.ch
+city_ch_Pusserein,Pusserein,__import__.country_state_8,base.ch
+city_ch_Pragg_Jenaz,Pragg-Jenaz,__import__.country_state_8,base.ch
+city_ch_Furna,Furna,__import__.country_state_8,base.ch
+city_ch_Jenaz,Jenaz,__import__.country_state_8,base.ch
+city_ch_Fideris,Fideris,__import__.country_state_8,base.ch
+city_ch_Küblis,Küblis,__import__.country_state_8,base.ch
+city_ch_Conters_im_Prättigau,Conters im Prättigau,__import__.country_state_8,base.ch
+city_ch_Luzein,Luzein,__import__.country_state_8,base.ch
+city_ch_Pany,Pany,__import__.country_state_8,base.ch
+city_ch_Gadenstätt,Gadenstätt,__import__.country_state_8,base.ch
+city_ch_Ascharina,Ascharina,__import__.country_state_8,base.ch
+city_ch_St._Antönien,St. Antönien,__import__.country_state_8,base.ch
+city_ch_Saas_im_Prättigau,Saas im Prättigau,__import__.country_state_8,base.ch
+city_ch_Serneus,Serneus,__import__.country_state_8,base.ch
+city_ch_Klosters,Klosters,__import__.country_state_8,base.ch
+city_ch_Klosters_Dorf,Klosters Dorf,__import__.country_state_8,base.ch
+city_ch_Davos_Dorf,Davos Dorf,__import__.country_state_8,base.ch
+city_ch_Davos_Wolfgang,Davos Wolfgang,__import__.country_state_8,base.ch
+city_ch_Davos_Platz,Davos Platz,__import__.country_state_8,base.ch
+city_ch_Davos_Clavadel,Davos Clavadel,__import__.country_state_8,base.ch
+city_ch_Davos_Frauenkirch,Davos Frauenkirch,__import__.country_state_8,base.ch
+city_ch_Davos_Glaris,Davos Glaris,__import__.country_state_8,base.ch
+city_ch_Davos_Monstein,Davos Monstein,__import__.country_state_8,base.ch
+city_ch_Landquart,Landquart,__import__.country_state_8,base.ch
+city_ch_Mastrils,Mastrils,__import__.country_state_8,base.ch
+city_ch_Maienfeld,Maienfeld,__import__.country_state_8,base.ch
+city_ch_Fläsch,Fläsch,__import__.country_state_8,base.ch
+city_ch_Jenins,Jenins,__import__.country_state_8,base.ch
+city_ch_Bad_Ragaz,Bad Ragaz,__import__.country_state_13,base.ch
+city_ch_Pfäfers,Pfäfers,__import__.country_state_13,base.ch
+city_ch_St._Margrethenberg,St. Margrethenberg,__import__.country_state_13,base.ch
+city_ch_Vadura,Vadura,__import__.country_state_13,base.ch
+city_ch_Vättis,Vättis,__import__.country_state_13,base.ch
+city_ch_Valens,Valens,__import__.country_state_13,base.ch
+city_ch_Vasön,Vasön,__import__.country_state_13,base.ch
+city_ch_Sargans,Sargans,__import__.country_state_13,base.ch
+city_ch_Wangs,Wangs,__import__.country_state_13,base.ch
+city_ch_Vilters,Vilters,__import__.country_state_13,base.ch
+city_ch_Schwendi_im_Weisstannental,Schwendi im Weisstannental,__import__.country_state_13,base.ch
+city_ch_Weisstannen,Weisstannen,__import__.country_state_13,base.ch
+city_ch_Bonaduz,Bonaduz,__import__.country_state_8,base.ch
+city_ch_Rhäzüns,Rhäzüns,__import__.country_state_8,base.ch
+city_ch_Feldis/Veulden,Feldis/Veulden,__import__.country_state_8,base.ch
+city_ch_Rothenbrunnen,Rothenbrunnen,__import__.country_state_8,base.ch
+city_ch_Trans,Trans,__import__.country_state_8,base.ch
+city_ch_Cazis,Cazis,__import__.country_state_8,base.ch
+city_ch_Sils_im_Domleschg,Sils im Domleschg,__import__.country_state_8,base.ch
+city_ch_Scharans,Scharans,__import__.country_state_8,base.ch
+city_ch_Fürstenaubruck,Fürstenaubruck,__import__.country_state_8,base.ch
+city_ch_Fürstenau,Fürstenau,__import__.country_state_8,base.ch
+city_ch_Rodels,Rodels,__import__.country_state_8,base.ch
+city_ch_Pratval,Pratval,__import__.country_state_8,base.ch
+city_ch_Almens,Almens,__import__.country_state_8,base.ch
+city_ch_Paspels,Paspels,__import__.country_state_8,base.ch
+city_ch_Tumegl/Tomils,Tumegl/Tomils,__import__.country_state_8,base.ch
+city_ch_Scheid,Scheid,__import__.country_state_8,base.ch
+city_ch_Summaprada,Summaprada,__import__.country_state_8,base.ch
+city_ch_Tartar,Tartar,__import__.country_state_8,base.ch
+city_ch_Sarn,Sarn,__import__.country_state_8,base.ch
+city_ch_Portein,Portein,__import__.country_state_8,base.ch
+city_ch_Präz,Präz,__import__.country_state_8,base.ch
+city_ch_Dalin,Dalin,__import__.country_state_8,base.ch
+city_ch_Masein,Masein,__import__.country_state_8,base.ch
+city_ch_Flerden,Flerden,__import__.country_state_8,base.ch
+city_ch_Urmein,Urmein,__import__.country_state_8,base.ch
+city_ch_Tschappina,Tschappina,__import__.country_state_8,base.ch
+city_ch_Thusis,Thusis,__import__.country_state_8,base.ch
+city_ch_Rongellen,Rongellen,__import__.country_state_8,base.ch
+city_ch_Mutten,Mutten,__import__.country_state_8,base.ch
+city_ch_Obermutten,Obermutten,__import__.country_state_8,base.ch
+city_ch_Zillis,Zillis,__import__.country_state_8,base.ch
+city_ch_Donat,Donat,__import__.country_state_8,base.ch
+city_ch_Lohn_GR,Lohn GR,__import__.country_state_8,base.ch
+city_ch_Mathon,Mathon,__import__.country_state_8,base.ch
+city_ch_Wergenstein,Wergenstein,__import__.country_state_8,base.ch
+city_ch_Sufers,Sufers,__import__.country_state_8,base.ch
+city_ch_Splügen,Splügen,__import__.country_state_8,base.ch
+city_ch_Medels_im_Rheinwald,Medels im Rheinwald,__import__.country_state_8,base.ch
+city_ch_Nufenen,Nufenen,__import__.country_state_8,base.ch
+city_ch_Hinterrhein,Hinterrhein,__import__.country_state_8,base.ch
+city_ch_Andeer,Andeer,__import__.country_state_8,base.ch
+city_ch_Clugin,Clugin,__import__.country_state_8,base.ch
+city_ch_Pignia,Pignia,__import__.country_state_8,base.ch
+city_ch_Ausserferrera,Ausserferrera,__import__.country_state_8,base.ch
+city_ch_Innerferrera,Innerferrera,__import__.country_state_8,base.ch
+city_ch_Avers,Avers,__import__.country_state_8,base.ch
+city_ch_Juf,Juf,__import__.country_state_8,base.ch
+city_ch_Tiefencastel,Tiefencastel,__import__.country_state_8,base.ch
+city_ch_Alvaschein,Alvaschein,__import__.country_state_8,base.ch
+city_ch_Cunter,Cunter,__import__.country_state_8,base.ch
+city_ch_Tinizong,Tinizong,__import__.country_state_8,base.ch
+city_ch_Rona,Rona,__import__.country_state_8,base.ch
+city_ch_Mulegns,Mulegns,__import__.country_state_8,base.ch
+city_ch_Sur,Sur,__import__.country_state_8,base.ch
+city_ch_Marmorera,Marmorera,__import__.country_state_8,base.ch
+city_ch_Bivio,Bivio,__import__.country_state_8,base.ch
+city_ch_Mon,Mon,__import__.country_state_8,base.ch
+city_ch_Stierva,Stierva,__import__.country_state_8,base.ch
+city_ch_Savognin,Savognin,__import__.country_state_8,base.ch
+city_ch_Salouf,Salouf,__import__.country_state_8,base.ch
+city_ch_Riom,Riom,__import__.country_state_8,base.ch
+city_ch_Parsonz,Parsonz,__import__.country_state_8,base.ch
+city_ch_Surava,Surava,__import__.country_state_8,base.ch
+city_ch_Alvaneu_Bad,Alvaneu Bad,__import__.country_state_8,base.ch
+city_ch_Filisur,Filisur,__import__.country_state_8,base.ch
+city_ch_Bergün/Bravuogn,Bergün/Bravuogn,__import__.country_state_8,base.ch
+city_ch_Preda,Preda,__import__.country_state_8,base.ch
+city_ch_Stugl/Stuls,Stugl/Stuls,__import__.country_state_8,base.ch
+city_ch_Latsch,Latsch,__import__.country_state_8,base.ch
+city_ch_Alvaneu_Dorf,Alvaneu Dorf,__import__.country_state_8,base.ch
+city_ch_Schmitten_(Albula),Schmitten (Albula),__import__.country_state_8,base.ch
+city_ch_Davos_Wiesen,Davos Wiesen,__import__.country_state_8,base.ch
+city_ch_St._Moritz,St. Moritz,__import__.country_state_8,base.ch
+city_ch_Bever,Bever,__import__.country_state_8,base.ch
+city_ch_Samedan,Samedan,__import__.country_state_8,base.ch
+city_ch_Pontresina,Pontresina,__import__.country_state_8,base.ch
+city_ch_Celerina/Schlarigna,Celerina/Schlarigna,__import__.country_state_8,base.ch
+city_ch_Champfer,Champfèr,__import__.country_state_8,base.ch
+city_ch_Silvaplana,Silvaplana,__import__.country_state_8,base.ch
+city_ch_Silvaplana_Surlej,Silvaplana-Surlej,__import__.country_state_8,base.ch
+city_ch_Sils/Segl_Maria,Sils/Segl Maria,__import__.country_state_8,base.ch
+city_ch_Fex,Fex,__import__.country_state_8,base.ch
+city_ch_Sils/Segl_Baselgia,Sils/Segl Baselgia,__import__.country_state_8,base.ch
+city_ch_Maloja,Maloja,__import__.country_state_8,base.ch
+city_ch_Plaun_da_Lej,Plaun da Lej,__import__.country_state_8,base.ch
+city_ch_La_Punt_Chamues_ch,La Punt Chamues-ch,__import__.country_state_8,base.ch
+city_ch_Madulain,Madulain,__import__.country_state_8,base.ch
+city_ch_Zuoz,Zuoz,__import__.country_state_8,base.ch
+city_ch_S_chanf,S-chanf,__import__.country_state_8,base.ch
+city_ch_Cinuos_chel,Cinuos-chel,__import__.country_state_8,base.ch
+city_ch_Chapella,Chapella,__import__.country_state_8,base.ch
+city_ch_Brail,Brail,__import__.country_state_8,base.ch
+city_ch_Zernez,Zernez,__import__.country_state_8,base.ch
+city_ch_Tschierv,Tschierv,__import__.country_state_8,base.ch
+city_ch_Fuldera,Fuldera,__import__.country_state_8,base.ch
+city_ch_Lü,Lü,__import__.country_state_8,base.ch
+city_ch_Valchava,Valchava,__import__.country_state_8,base.ch
+city_ch_Sta._Maria_Val_Müstair,Sta. Maria Val Müstair,__import__.country_state_8,base.ch
+city_ch_Müstair,Müstair,__import__.country_state_8,base.ch
+city_ch_Susch,Susch,__import__.country_state_8,base.ch
+city_ch_Lavin,Lavin,__import__.country_state_8,base.ch
+city_ch_Guarda,Guarda,__import__.country_state_8,base.ch
+city_ch_Ardez,Ardez,__import__.country_state_8,base.ch
+city_ch_Scuol,Scuol,__import__.country_state_8,base.ch
+city_ch_Ftan,Ftan,__import__.country_state_8,base.ch
+city_ch_Vulpera,Vulpera,__import__.country_state_8,base.ch
+city_ch_Tarasp,Tarasp,__import__.country_state_8,base.ch
+city_ch_Sent,Sent,__import__.country_state_8,base.ch
+city_ch_Ramosch,Ramosch,__import__.country_state_8,base.ch
+city_ch_Vnà,Vnà,__import__.country_state_8,base.ch
+city_ch_Strada,Strada,__import__.country_state_8,base.ch
+city_ch_Tschlin,Tschlin,__import__.country_state_8,base.ch
+city_ch_Martina,Martina,__import__.country_state_8,base.ch
+city_ch_Samnaun_Compatsch,Samnaun-Compatsch,__import__.country_state_8,base.ch
+city_ch_Samnaun_Dorf,Samnaun Dorf,__import__.country_state_8,base.ch
+city_ch_Casaccia,Casaccia,__import__.country_state_8,base.ch
+city_ch_Vicosoprano,Vicosoprano,__import__.country_state_8,base.ch
+city_ch_Borgonovo,Borgonovo,__import__.country_state_8,base.ch
+city_ch_Stampa,Stampa,__import__.country_state_8,base.ch
+city_ch_Promontogno,Promontogno,__import__.country_state_8,base.ch
+city_ch_Bondo,Bondo,__import__.country_state_8,base.ch
+city_ch_Castasegna,Castasegna,__import__.country_state_8,base.ch
+city_ch_Soglio,Soglio,__import__.country_state_8,base.ch
+city_ch_Ospizio_Bernina,Ospizio Bernina,__import__.country_state_8,base.ch
+city_ch_Alp_Grüm,Alp Grüm,__import__.country_state_8,base.ch
+city_ch_S._Carlo_(Poschiavo),S. Carlo (Poschiavo),__import__.country_state_8,base.ch
+city_ch_Poschiavo,Poschiavo,__import__.country_state_8,base.ch
+city_ch_Sfazù,Sfazù,__import__.country_state_8,base.ch
+city_ch_La_Rösa,La Rösa,__import__.country_state_8,base.ch
+city_ch_Brusio,Brusio,__import__.country_state_8,base.ch
+city_ch_Miralago,Miralago,__import__.country_state_8,base.ch
+city_ch_Campocologno,Campocologno,__import__.country_state_8,base.ch
+city_ch_Li_Curt,Li Curt,__import__.country_state_8,base.ch
+city_ch_Le_Prese,Le Prese,__import__.country_state_8,base.ch
+city_ch_Viano,Viano,__import__.country_state_8,base.ch
+city_ch_Campascio,Campascio,__import__.country_state_8,base.ch
+city_ch_Kloster_Fahr,Kloster Fahr,__import__.country_state_1,base.ch
+city_ch_Schaffhausen,Schaffhausen,__import__.country_state_14,base.ch
+city_ch_Neuhausen_am_Rheinfall,Neuhausen am Rheinfall,__import__.country_state_14,base.ch
+city_ch_Neunkirch,Neunkirch,__import__.country_state_14,base.ch
+city_ch_Gächlingen,Gächlingen,__import__.country_state_14,base.ch
+city_ch_Hallau,Hallau,__import__.country_state_14,base.ch
+city_ch_Oberhallau,Oberhallau,__import__.country_state_14,base.ch
+city_ch_Wilchingen,Wilchingen,__import__.country_state_14,base.ch
+city_ch_Osterfingen,Osterfingen,__import__.country_state_14,base.ch
+city_ch_Trasadingen,Trasadingen,__import__.country_state_14,base.ch
+city_ch_Beringen,Beringen,__import__.country_state_14,base.ch
+city_ch_Guntmadingen,Guntmadingen,__import__.country_state_14,base.ch
+city_ch_Löhningen,Löhningen,__import__.country_state_14,base.ch
+city_ch_Siblingen,Siblingen,__import__.country_state_14,base.ch
+city_ch_Schleitheim,Schleitheim,__import__.country_state_14,base.ch
+city_ch_Beggingen,Beggingen,__import__.country_state_14,base.ch
+city_ch_Hemmental,Hemmental,__import__.country_state_14,base.ch
+city_ch_Merishausen,Merishausen,__import__.country_state_14,base.ch
+city_ch_Bargen_SH,Bargen SH,__import__.country_state_14,base.ch
+city_ch_Stetten_SH,Stetten SH,__import__.country_state_14,base.ch
+city_ch_Lohn_SH,Lohn SH,__import__.country_state_14,base.ch
+city_ch_Büttenhardt,Büttenhardt,__import__.country_state_14,base.ch
+city_ch_Opfertshofen_SH,Opfertshofen SH,__import__.country_state_14,base.ch
+city_ch_Dörflingen,Dörflingen,__import__.country_state_14,base.ch
+city_ch_Thayngen,Thayngen,__import__.country_state_14,base.ch
+city_ch_Barzheim,Barzheim,__import__.country_state_14,base.ch
+city_ch_Bibern_SH,Bibern SH,__import__.country_state_14,base.ch
+city_ch_Hofen_SH,Hofen SH,__import__.country_state_14,base.ch
+city_ch_Altdorf_SH,Altdorf SH,__import__.country_state_14,base.ch
+city_ch_Schlatt_TG,Schlatt TG,__import__.country_state_17,base.ch
+city_ch_Diessenhofen,Diessenhofen,__import__.country_state_17,base.ch
+city_ch_Willisdorf,Willisdorf,__import__.country_state_17,base.ch
+city_ch_Basadingen,Basadingen,__import__.country_state_17,base.ch
+city_ch_Schlattingen,Schlattingen,__import__.country_state_17,base.ch
+city_ch_Kaltenbach,Kaltenbach,__import__.country_state_17,base.ch
+city_ch_Etzwilen,Etzwilen,__import__.country_state_17,base.ch
+city_ch_Rheinklingen,Rheinklingen,__import__.country_state_17,base.ch
+city_ch_Wagenhausen,Wagenhausen,__import__.country_state_17,base.ch
+city_ch_Stein_am_Rhein,Stein am Rhein,__import__.country_state_14,base.ch
+city_ch_Hemishofen,Hemishofen,__import__.country_state_14,base.ch
+city_ch_Ramsen,Ramsen,__import__.country_state_14,base.ch
+city_ch_Buch_SH,Buch SH,__import__.country_state_14,base.ch
+city_ch_Eschenz,Eschenz,__import__.country_state_17,base.ch
+city_ch_Mammern,Mammern,__import__.country_state_17,base.ch
+city_ch_Steckborn,Steckborn,__import__.country_state_17,base.ch
+city_ch_Berlingen,Berlingen,__import__.country_state_17,base.ch
+city_ch_Mannenbach_Salenstein,Mannenbach-Salenstein,__import__.country_state_17,base.ch
+city_ch_Salenstein,Salenstein,__import__.country_state_17,base.ch
+city_ch_Fruthwilen,Fruthwilen,__import__.country_state_17,base.ch
+city_ch_Ermatingen,Ermatingen,__import__.country_state_17,base.ch
+city_ch_Triboltingen,Triboltingen,__import__.country_state_17,base.ch
+city_ch_Tägerwilen,Tägerwilen,__import__.country_state_17,base.ch
+city_ch_Gottlieben,Gottlieben,__import__.country_state_17,base.ch
+city_ch_Kreuzlingen,Kreuzlingen,__import__.country_state_17,base.ch
+city_ch_Aadorf,Aadorf,__import__.country_state_17,base.ch
+city_ch_Ettenhausen_TG,Ettenhausen TG,__import__.country_state_17,base.ch
+city_ch_Guntershausen_b._Aadorf,Guntershausen b. Aadorf,__import__.country_state_17,base.ch
+city_ch_Eschlikon_TG,Eschlikon TG,__import__.country_state_17,base.ch
+city_ch_Wallenwil,Wallenwil,__import__.country_state_17,base.ch
+city_ch_Balterswil,Balterswil,__import__.country_state_17,base.ch
+city_ch_Bichelsee,Bichelsee,__import__.country_state_17,base.ch
+city_ch_Sirnach,Sirnach,__import__.country_state_17,base.ch
+city_ch_Busswil_TG,Busswil TG,__import__.country_state_17,base.ch
+city_ch_Wiezikon_b._Sirnach,Wiezikon b. Sirnach,__import__.country_state_17,base.ch
+city_ch_Dussnang,Dussnang,__import__.country_state_17,base.ch
+city_ch_Oberwangen_TG,Oberwangen TG,__import__.country_state_17,base.ch
+city_ch_Fischingen,Fischingen,__import__.country_state_17,base.ch
+city_ch_Au_TG,Au TG,__import__.country_state_17,base.ch
+city_ch_Buchberg,Buchberg,__import__.country_state_14,base.ch
+city_ch_Rüdlingen,Rüdlingen,__import__.country_state_14,base.ch
+city_ch_Frauenfeld,Frauenfeld,__import__.country_state_17,base.ch
+city_ch_Gerlikon,Gerlikon,__import__.country_state_17,base.ch
+city_ch_Pfyn,Pfyn,__import__.country_state_17,base.ch
+city_ch_Dettighofen,Dettighofen,__import__.country_state_17,base.ch
+city_ch_Lanzenneunforn,Lanzenneunforn,__import__.country_state_17,base.ch
+city_ch_Hörhausen,Hörhausen,__import__.country_state_17,base.ch
+city_ch_Homburg,Homburg,__import__.country_state_17,base.ch
+city_ch_Thundorf,Thundorf,__import__.country_state_17,base.ch
+city_ch_Lustdorf,Lustdorf,__import__.country_state_17,base.ch
+city_ch_Wetzikon_TG,Wetzikon TG,__import__.country_state_17,base.ch
+city_ch_Amlikon_Bissegg,Amlikon-Bissegg,__import__.country_state_17,base.ch
+city_ch_Häuslenen,Häuslenen,__import__.country_state_17,base.ch
+city_ch_Aawangen,Aawangen,__import__.country_state_17,base.ch
+city_ch_Uesslingen,Uesslingen,__import__.country_state_17,base.ch
+city_ch_Buch_b._Frauenfeld,Buch b. Frauenfeld,__import__.country_state_17,base.ch
+city_ch_Niederneunforn,Niederneunforn,__import__.country_state_17,base.ch
+city_ch_Oberneunforn,Oberneunforn,__import__.country_state_17,base.ch
+city_ch_Warth,Warth,__import__.country_state_17,base.ch
+city_ch_Weiningen_TG,Weiningen TG,__import__.country_state_17,base.ch
+city_ch_Herdern,Herdern,__import__.country_state_17,base.ch
+city_ch_Hüttwilen,Hüttwilen,__import__.country_state_17,base.ch
+city_ch_Nussbaumen_TG,Nussbaumen TG,__import__.country_state_17,base.ch
+city_ch_Uerschhausen,Uerschhausen,__import__.country_state_17,base.ch
+city_ch_Islikon,Islikon,__import__.country_state_17,base.ch
+city_ch_Kefikon_TG,Kefikon TG,__import__.country_state_17,base.ch
+city_ch_Gachnang,Gachnang,__import__.country_state_17,base.ch
+city_ch_Felben_Wellhausen,Felben-Wellhausen,__import__.country_state_17,base.ch
+city_ch_Harenwilen,Harenwilen,__import__.country_state_17,base.ch
+city_ch_Mettendorf_TG,Mettendorf TG,__import__.country_state_17,base.ch
+city_ch_Hüttlingen,Hüttlingen,__import__.country_state_17,base.ch
+city_ch_Eschikofen,Eschikofen,__import__.country_state_17,base.ch
+city_ch_Müllheim_Wigoltingen,Müllheim-Wigoltingen,__import__.country_state_17,base.ch
+city_ch_Bonau,Bonau,__import__.country_state_17,base.ch
+city_ch_Müllheim_Dorf,Müllheim Dorf,__import__.country_state_17,base.ch
+city_ch_Wigoltingen,Wigoltingen,__import__.country_state_17,base.ch
+city_ch_Engwang,Engwang,__import__.country_state_17,base.ch
+city_ch_Illhart,Illhart,__import__.country_state_17,base.ch
+city_ch_Lamperswil_TG,Lamperswil TG,__import__.country_state_17,base.ch
+city_ch_Raperswilen,Raperswilen,__import__.country_state_17,base.ch
+city_ch_Märstetten,Märstetten,__import__.country_state_17,base.ch
+city_ch_Ottoberg,Ottoberg,__import__.country_state_17,base.ch
+city_ch_Hefenhausen,Hefenhausen,__import__.country_state_17,base.ch
+city_ch_Engwilen,Engwilen,__import__.country_state_17,base.ch
+city_ch_Sonterswil,Sonterswil,__import__.country_state_17,base.ch
+city_ch_Wäldi,Wäldi,__import__.country_state_17,base.ch
+city_ch_Lipperswil,Lipperswil,__import__.country_state_17,base.ch
+city_ch_Wagerswil,Wagerswil,__import__.country_state_17,base.ch
+city_ch_Hattenhausen,Hattenhausen,__import__.country_state_17,base.ch
+city_ch_Gunterswilen,Gunterswilen,__import__.country_state_17,base.ch
+city_ch_Hugelshofen,Hugelshofen,__import__.country_state_17,base.ch
+city_ch_Neuwilen,Neuwilen,__import__.country_state_17,base.ch
+city_ch_Dotnacht,Dotnacht,__import__.country_state_17,base.ch
+city_ch_Ellighausen,Ellighausen,__import__.country_state_17,base.ch
+city_ch_Lippoldswilen,Lippoldswilen,__import__.country_state_17,base.ch
+city_ch_Weinfelden,Weinfelden,__import__.country_state_17,base.ch
+city_ch_Berg_TG,Berg TG,__import__.country_state_17,base.ch
+city_ch_Andhausen,Andhausen,__import__.country_state_17,base.ch
+city_ch_Graltshausen,Graltshausen,__import__.country_state_17,base.ch
+city_ch_Guntershausen_b._Berg,Guntershausen b. Berg,__import__.country_state_17,base.ch
+city_ch_Siegershausen,Siegershausen,__import__.country_state_17,base.ch
+city_ch_Alterswilen,Alterswilen,__import__.country_state_17,base.ch
+city_ch_Altishausen,Altishausen,__import__.country_state_17,base.ch
+city_ch_Illighausen,Illighausen,__import__.country_state_17,base.ch
+city_ch_Oberhofen_TG,Oberhofen TG,__import__.country_state_17,base.ch
+city_ch_Lengwil,Lengwil,__import__.country_state_17,base.ch
+city_ch_Dettighofen_(Lengwil),Dettighofen (Lengwil),__import__.country_state_17,base.ch
+city_ch_Bürglen_TG,Bürglen TG,__import__.country_state_17,base.ch
+city_ch_Istighofen,Istighofen,__import__.country_state_17,base.ch
+city_ch_Mauren_TG,Mauren TG,__import__.country_state_17,base.ch
+city_ch_Schönholzerswilen,Schönholzerswilen,__import__.country_state_17,base.ch
+city_ch_Amriswil,Amriswil,__import__.country_state_17,base.ch
+city_ch_Sommeri,Sommeri,__import__.country_state_17,base.ch
+city_ch_Hagenwil_b._Amriswil,Hagenwil b. Amriswil,__import__.country_state_17,base.ch
+city_ch_Hefenhofen,Hefenhofen,__import__.country_state_17,base.ch
+city_ch_Biessenhofen,Biessenhofen,__import__.country_state_17,base.ch
+city_ch_Schocherswil,Schocherswil,__import__.country_state_17,base.ch
+city_ch_Dozwil,Dozwil,__import__.country_state_17,base.ch
+city_ch_Sulgen,Sulgen,__import__.country_state_17,base.ch
+city_ch_Götighofen,Götighofen,__import__.country_state_17,base.ch
+city_ch_Donzhausen,Donzhausen,__import__.country_state_17,base.ch
+city_ch_Leimbach_TG,Leimbach TG,__import__.country_state_17,base.ch
+city_ch_Opfershofen_TG,Opfershofen TG,__import__.country_state_17,base.ch
+city_ch_Mattwil,Mattwil,__import__.country_state_17,base.ch
+city_ch_Happerswil,Happerswil,__import__.country_state_17,base.ch
+city_ch_Langrickenbach,Langrickenbach,__import__.country_state_17,base.ch
+city_ch_Zuben,Zuben,__import__.country_state_17,base.ch
+city_ch_Schönenbaumgarten,Schönenbaumgarten,__import__.country_state_17,base.ch
+city_ch_Herrenhof,Herrenhof,__import__.country_state_17,base.ch
+city_ch_Birwinken,Birwinken,__import__.country_state_17,base.ch
+city_ch_Klarsreuti,Klarsreuti,__import__.country_state_17,base.ch
+city_ch_Erlen,Erlen,__import__.country_state_17,base.ch
+city_ch_Andwil_TG,Andwil TG,__import__.country_state_17,base.ch
+city_ch_Kümmertshausen,Kümmertshausen,__import__.country_state_17,base.ch
+city_ch_Riedt_b._Erlen,Riedt b. Erlen,__import__.country_state_17,base.ch
+city_ch_Buchackern,Buchackern,__import__.country_state_17,base.ch
+city_ch_Engishofen,Engishofen,__import__.country_state_17,base.ch
+city_ch_Ennetaach,Ennetaach,__import__.country_state_17,base.ch
+city_ch_Buch_b._Kümmertshausen,Buch b. Kümmertshausen,__import__.country_state_17,base.ch
+city_ch_Oberaach,Oberaach,__import__.country_state_17,base.ch
+city_ch_Zihlschlacht,Zihlschlacht,__import__.country_state_17,base.ch
+city_ch_Sitterdorf,Sitterdorf,__import__.country_state_17,base.ch
+city_ch_Romanshorn,Romanshorn,__import__.country_state_17,base.ch
+city_ch_Uttwil,Uttwil,__import__.country_state_17,base.ch
+city_ch_Kesswil,Kesswil,__import__.country_state_17,base.ch
+city_ch_Güttingen,Güttingen,__import__.country_state_17,base.ch
+city_ch_Altnau,Altnau,__import__.country_state_17,base.ch
+city_ch_Scherzingen,Scherzingen,__import__.country_state_17,base.ch
+city_ch_Münsterlingen,Münsterlingen,__import__.country_state_17,base.ch
+city_ch_Landschlacht,Landschlacht,__import__.country_state_17,base.ch
+city_ch_Bottighofen,Bottighofen,__import__.country_state_17,base.ch
+city_ch_Salmsach,Salmsach,__import__.country_state_17,base.ch
+city_ch_Goldingen,Goldingen,__import__.country_state_13,base.ch
+city_ch_Rapperswil_SG,Rapperswil SG,__import__.country_state_13,base.ch
+city_ch_Hurden,Hurden,__import__.country_state_16,base.ch
+city_ch_Jona,Jona,__import__.country_state_13,base.ch
+city_ch_Wagen,Wagen,__import__.country_state_13,base.ch
+city_ch_Bollingen,Bollingen,__import__.country_state_13,base.ch
+city_ch_Schmerikon,Schmerikon,__import__.country_state_13,base.ch
+city_ch_Benken_SG,Benken SG,__import__.country_state_13,base.ch
+city_ch_Schänis,Schänis,__import__.country_state_13,base.ch
+city_ch_Kaltbrunn,Kaltbrunn,__import__.country_state_13,base.ch
+city_ch_Rufi,Rufi,__import__.country_state_13,base.ch
+city_ch_Maseltrangen,Maseltrangen,__import__.country_state_13,base.ch
+city_ch_Ernetschwil,Ernetschwil,__import__.country_state_13,base.ch
+city_ch_Gebertingen,Gebertingen,__import__.country_state_13,base.ch
+city_ch_Ricken_SG,Ricken SG,__import__.country_state_13,base.ch
+city_ch_Walde_SG,Walde SG,__import__.country_state_13,base.ch
+city_ch_Uznach,Uznach,__import__.country_state_13,base.ch
+city_ch_Neuhaus_SG,Neuhaus SG,__import__.country_state_13,base.ch
+city_ch_Eschenbach_SG,Eschenbach SG,__import__.country_state_13,base.ch
+city_ch_Ermenswil,Ermenswil,__import__.country_state_13,base.ch
+city_ch_St._Gallenkappel,St. Gallenkappel,__import__.country_state_13,base.ch
+city_ch_Rüeterswil,Rüeterswil,__import__.country_state_13,base.ch
+city_ch_Gommiswald,Gommiswald,__import__.country_state_13,base.ch
+city_ch_Uetliburg_SG,Uetliburg SG,__import__.country_state_13,base.ch
+city_ch_Rieden_SG,Rieden SG,__import__.country_state_13,base.ch
+city_ch_Glarus,Glarus,__import__.country_state_7,base.ch
+city_ch_Riedern,Riedern,__import__.country_state_7,base.ch
+city_ch_Klöntal,Klöntal,__import__.country_state_7,base.ch
+city_ch_Urnerboden,Urnerboden,__import__.country_state_19,base.ch
+city_ch_Näfels,Näfels,__import__.country_state_7,base.ch
+city_ch_Mollis,Mollis,__import__.country_state_7,base.ch
+city_ch_Netstal,Netstal,__import__.country_state_7,base.ch
+city_ch_Ennenda,Ennenda,__import__.country_state_7,base.ch
+city_ch_Mitlödi,Mitlödi,__import__.country_state_7,base.ch
+city_ch_Filzbach,Filzbach,__import__.country_state_7,base.ch
+city_ch_Obstalden,Obstalden,__import__.country_state_7,base.ch
+city_ch_Schwanden_GL,Schwanden GL,__import__.country_state_7,base.ch
+city_ch_Schwändi_b._Schwanden,Schwändi b. Schwanden,__import__.country_state_7,base.ch
+city_ch_Sool,Sool,__import__.country_state_7,base.ch
+city_ch_Engi,Engi,__import__.country_state_7,base.ch
+city_ch_Matt,Matt,__import__.country_state_7,base.ch
+city_ch_Elm,Elm,__import__.country_state_7,base.ch
+city_ch_Nidfurn,Nidfurn,__import__.country_state_7,base.ch
+city_ch_Haslen_GL,Haslen GL,__import__.country_state_7,base.ch
+city_ch_Leuggelbach,Leuggelbach,__import__.country_state_7,base.ch
+city_ch_Luchsingen,Luchsingen,__import__.country_state_7,base.ch
+city_ch_Hätzingen,Hätzingen,__import__.country_state_7,base.ch
+city_ch_Diesbach_GL,Diesbach GL,__import__.country_state_7,base.ch
+city_ch_Betschwanden,Betschwanden,__import__.country_state_7,base.ch
+city_ch_Rüti_GL,Rüti GL,__import__.country_state_7,base.ch
+city_ch_Linthal,Linthal,__import__.country_state_7,base.ch
+city_ch_Braunwald,Braunwald,__import__.country_state_7,base.ch
+city_ch_Bäch_SZ,Bäch SZ,__import__.country_state_16,base.ch
+city_ch_Freienbach,Freienbach,__import__.country_state_16,base.ch
+city_ch_Pfäffikon_SZ,Pfäffikon SZ,__import__.country_state_16,base.ch
+city_ch_Wollerau,Wollerau,__import__.country_state_16,base.ch
+city_ch_Wilen_b._Wollerau,Wilen b. Wollerau,__import__.country_state_16,base.ch
+city_ch_Schindellegi,Schindellegi,__import__.country_state_16,base.ch
+city_ch_Feusisberg,Feusisberg,__import__.country_state_16,base.ch
+city_ch_Bennau,Bennau,__import__.country_state_16,base.ch
+city_ch_Einsiedeln,Einsiedeln,__import__.country_state_16,base.ch
+city_ch_Trachslau,Trachslau,__import__.country_state_16,base.ch
+city_ch_Gross,Gross,__import__.country_state_16,base.ch
+city_ch_Unteriberg,Unteriberg,__import__.country_state_16,base.ch
+city_ch_Oberiberg,Oberiberg,__import__.country_state_16,base.ch
+city_ch_Euthal,Euthal,__import__.country_state_16,base.ch
+city_ch_Studen_SZ,Studen SZ,__import__.country_state_16,base.ch
+city_ch_Willerzell,Willerzell,__import__.country_state_16,base.ch
+city_ch_Egg_SZ,Egg SZ,__import__.country_state_16,base.ch
+city_ch_Alpthal,Alpthal,__import__.country_state_16,base.ch
+city_ch_Altendorf,Altendorf,__import__.country_state_16,base.ch
+city_ch_Lachen_SZ,Lachen SZ,__import__.country_state_16,base.ch
+city_ch_Siebnen,Siebnen,__import__.country_state_16,base.ch
+city_ch_Galgenen,Galgenen,__import__.country_state_16,base.ch
+city_ch_Wangen_SZ,Wangen SZ,__import__.country_state_16,base.ch
+city_ch_Tuggen,Tuggen,__import__.country_state_16,base.ch
+city_ch_Vorderthal,Vorderthal,__import__.country_state_16,base.ch
+city_ch_Innerthal,Innerthal,__import__.country_state_16,base.ch
+city_ch_Schübelbach,Schübelbach,__import__.country_state_16,base.ch
+city_ch_Buttikon_SZ,Buttikon SZ,__import__.country_state_16,base.ch
+city_ch_Reichenburg,Reichenburg,__import__.country_state_16,base.ch
+city_ch_Bilten,Bilten,__import__.country_state_7,base.ch
+city_ch_Ziegelbrücke,Ziegelbrücke,__import__.country_state_13,base.ch
+city_ch_Niederurnen,Niederurnen,__import__.country_state_7,base.ch
+city_ch_Oberurnen,Oberurnen,__import__.country_state_7,base.ch
+city_ch_Weesen,Weesen,__import__.country_state_13,base.ch
+city_ch_Amden,Amden,__import__.country_state_13,base.ch
+city_ch_Mühlehorn,Mühlehorn,__import__.country_state_7,base.ch
+city_ch_Murg,Murg,__import__.country_state_13,base.ch
+city_ch_Quinten,Quinten,__import__.country_state_13,base.ch
+city_ch_Walenstadt,Walenstadt,__import__.country_state_13,base.ch
+city_ch_Walenstadtberg,Walenstadtberg,__import__.country_state_13,base.ch
+city_ch_Tscherlach,Tscherlach,__import__.country_state_13,base.ch
+city_ch_Unterterzen,Unterterzen,__import__.country_state_13,base.ch
+city_ch_Quarten,Quarten,__import__.country_state_13,base.ch
+city_ch_Oberterzen,Oberterzen,__import__.country_state_13,base.ch
+city_ch_Mols,Mols,__import__.country_state_13,base.ch
+city_ch_Mädris_Vermol,Mädris-Vermol,__import__.country_state_13,base.ch
+city_ch_Mels,Mels,__import__.country_state_13,base.ch
+city_ch_Heiligkreuz_(Mels),Heiligkreuz (Mels),__import__.country_state_13,base.ch
+city_ch_Plons,Plons,__import__.country_state_13,base.ch
+city_ch_Flums,Flums,__import__.country_state_13,base.ch
+city_ch_Berschis,Berschis,__import__.country_state_13,base.ch
+city_ch_Flums_Hochwiese,Flums Hochwiese,__import__.country_state_13,base.ch
+city_ch_Flumserberg_Saxli,Flumserberg Saxli,__import__.country_state_13,base.ch
+city_ch_Flumserberg_Portels,Flumserberg Portels,__import__.country_state_13,base.ch
+city_ch_Flumserberg_Bergheim,Flumserberg Bergheim,__import__.country_state_13,base.ch
+city_ch_Flumserberg_Tannenheim,Flumserberg Tannenheim,__import__.country_state_13,base.ch
+city_ch_Flumserberg_Tannenbodenalp,Flumserberg Tannenbodenalp,__import__.country_state_13,base.ch
+city_ch_Islisberg,Islisberg,__import__.country_state_1,base.ch
+city_ch_Arni_AG,Arni AG,__import__.country_state_1,base.ch
+city_ch_Jonen,Jonen,__import__.country_state_1,base.ch
+city_ch_Oberlunkhofen,Oberlunkhofen,__import__.country_state_1,base.ch
+city_ch_Unterlunkhofen,Unterlunkhofen,__import__.country_state_1,base.ch
+city_ch_Rottenschwil,Rottenschwil,__import__.country_state_1,base.ch
+city_ch_Killwangen,Killwangen,__import__.country_state_1,base.ch
+city_ch_Spreitenbach,Spreitenbach,__import__.country_state_1,base.ch
+city_ch_Bergdietikon,Bergdietikon,__import__.country_state_1,base.ch
+city_ch_Rudolfstetten,Rudolfstetten,__import__.country_state_1,base.ch
+city_ch_Berikon,Berikon,__import__.country_state_1,base.ch
+city_ch_Oberwil_Lieli,Oberwil-Lieli,__import__.country_state_1,base.ch
+city_ch_Widen,Widen,__import__.country_state_1,base.ch
+city_ch_St._Gallen,St. Gallen,__import__.country_state_13,base.ch
+city_ch_Abtwil_SG,Abtwil SG,__import__.country_state_13,base.ch
+city_ch_St._Josefen,St. Josefen,__import__.country_state_13,base.ch
+city_ch_Engelburg,Engelburg,__import__.country_state_13,base.ch
+city_ch_Untereggen,Untereggen,__import__.country_state_13,base.ch
+city_ch_Eggersriet,Eggersriet,__import__.country_state_13,base.ch
+city_ch_Grub_AR,Grub AR,__import__.country_state_3,base.ch
+city_ch_Grub_SG,Grub SG,__import__.country_state_13,base.ch
+city_ch_Speicherschwendi,Speicherschwendi,__import__.country_state_3,base.ch
+city_ch_Rehetobel,Rehetobel,__import__.country_state_3,base.ch
+city_ch_Speicher,Speicher,__import__.country_state_3,base.ch
+city_ch_Trogen,Trogen,__import__.country_state_3,base.ch
+city_ch_Wald_AR,Wald AR,__import__.country_state_3,base.ch
+city_ch_Appenzell,Appenzell,__import__.country_state_2,base.ch
+city_ch_Appenzell_Eggerstanden,Appenzell Eggerstanden,__import__.country_state_2,base.ch
+city_ch_Appenzell_Enggenhütten,Appenzell Enggenhütten,__import__.country_state_2,base.ch
+city_ch_Appenzell_Meistersrüte,Appenzell Meistersrüte,__import__.country_state_2,base.ch
+city_ch_Appenzell_Steinegg,Appenzell Steinegg,__import__.country_state_2,base.ch
+city_ch_Appenzell_Schlatt,Appenzell Schlatt,__import__.country_state_2,base.ch
+city_ch_Niederteufen,Niederteufen,__import__.country_state_3,base.ch
+city_ch_Teufen_AR,Teufen AR,__import__.country_state_3,base.ch
+city_ch_Haslen_AI,Haslen AI,__import__.country_state_2,base.ch
+city_ch_Bühler,Bühler,__import__.country_state_3,base.ch
+city_ch_Gais,Gais,__import__.country_state_3,base.ch
+city_ch_Weissbad,Weissbad,__import__.country_state_2,base.ch
+city_ch_Schwende,Schwende,__import__.country_state_2,base.ch
+city_ch_Wasserauen,Wasserauen,__import__.country_state_2,base.ch
+city_ch_Brülisau,Brülisau,__import__.country_state_2,base.ch
+city_ch_Lustmühle,Lustmühle,__import__.country_state_3,base.ch
+city_ch_Stein_AR,Stein AR,__import__.country_state_3,base.ch
+city_ch_Hundwil,Hundwil,__import__.country_state_3,base.ch
+city_ch_Herisau,Herisau,__import__.country_state_3,base.ch
+city_ch_Schwellbrunn,Schwellbrunn,__import__.country_state_3,base.ch
+city_ch_Waldstatt,Waldstatt,__import__.country_state_3,base.ch
+city_ch_Schönengrund,Schönengrund,__import__.country_state_3,base.ch
+city_ch_Urnäsch,Urnäsch,__import__.country_state_3,base.ch
+city_ch_Gonten,Gonten,__import__.country_state_2,base.ch
+city_ch_Gontenbad,Gontenbad,__import__.country_state_2,base.ch
+city_ch_Jakobsbad,Jakobsbad,__import__.country_state_2,base.ch
+city_ch_Schachen_b._Herisau,Schachen b. Herisau,__import__.country_state_3,base.ch
+city_ch_Degersheim,Degersheim,__import__.country_state_13,base.ch
+city_ch_Hoffeld,Hoffeld,__import__.country_state_13,base.ch
+city_ch_Dicken,Dicken,__import__.country_state_13,base.ch
+city_ch_Wolfertswil,Wolfertswil,__import__.country_state_13,base.ch
+city_ch_Mogelsberg,Mogelsberg,__import__.country_state_13,base.ch
+city_ch_Ebersol,Ebersol,__import__.country_state_13,base.ch
+city_ch_Nassen,Nassen,__import__.country_state_13,base.ch
+city_ch_Brunnadern,Brunnadern,__import__.country_state_13,base.ch
+city_ch_Necker,Necker,__import__.country_state_13,base.ch
+city_ch_St._Peterzell,St. Peterzell,__import__.country_state_13,base.ch
+city_ch_Gossau_SG,Gossau SG,__import__.country_state_13,base.ch
+city_ch_Niederwil_SG,Niederwil SG,__import__.country_state_13,base.ch
+city_ch_Andwil_SG,Andwil SG,__import__.country_state_13,base.ch
+city_ch_Waldkirch,Waldkirch,__import__.country_state_13,base.ch
+city_ch_Arnegg,Arnegg,__import__.country_state_13,base.ch
+city_ch_Hauptwil,Hauptwil,__import__.country_state_17,base.ch
+city_ch_Kradolf,Kradolf,__import__.country_state_17,base.ch
+city_ch_Schönenberg_an_der_Thur,Schönenberg an der Thur,__import__.country_state_17,base.ch
+city_ch_Buhwil,Buhwil,__import__.country_state_17,base.ch
+city_ch_Heldswil,Heldswil,__import__.country_state_17,base.ch
+city_ch_Hohentannen,Hohentannen,__import__.country_state_17,base.ch
+city_ch_Neukirch_an_der_Thur,Neukirch an der Thur,__import__.country_state_17,base.ch
+city_ch_Bischofszell,Bischofszell,__import__.country_state_17,base.ch
+city_ch_Schweizersholz,Schweizersholz,__import__.country_state_17,base.ch
+city_ch_Halden,Halden,__import__.country_state_17,base.ch
+city_ch_Wilen_(Gottshaus),Wilen (Gottshaus),__import__.country_state_17,base.ch
+city_ch_St._Pelagiberg,St. Pelagiberg,__import__.country_state_17,base.ch
+city_ch_Flawil,Flawil,__import__.country_state_13,base.ch
+city_ch_Egg_(Flawil),Egg (Flawil),__import__.country_state_13,base.ch
+city_ch_Uzwil,Uzwil,__import__.country_state_13,base.ch
+city_ch_Niederglatt_SG,Niederglatt SG,__import__.country_state_13,base.ch
+city_ch_Oberuzwil,Oberuzwil,__import__.country_state_13,base.ch
+city_ch_Jonschwil,Jonschwil,__import__.country_state_13,base.ch
+city_ch_Niederuzwil,Niederuzwil,__import__.country_state_13,base.ch
+city_ch_Oberbüren,Oberbüren,__import__.country_state_13,base.ch
+city_ch_Sonnental,Sonnental,__import__.country_state_13,base.ch
+city_ch_Niederbüren,Niederbüren,__import__.country_state_13,base.ch
+city_ch_Henau,Henau,__import__.country_state_13,base.ch
+city_ch_Bichwil,Bichwil,__import__.country_state_13,base.ch
+city_ch_Algetshausen,Algetshausen,__import__.country_state_13,base.ch
+city_ch_Niederstetten,Niederstetten,__import__.country_state_13,base.ch
+city_ch_Oberstetten,Oberstetten,__import__.country_state_13,base.ch
+city_ch_Wittenbach,Wittenbach,__import__.country_state_13,base.ch
+city_ch_Bernhardzell,Bernhardzell,__import__.country_state_13,base.ch
+city_ch_Berg_SG,Berg SG,__import__.country_state_13,base.ch
+city_ch_Freidorf_TG,Freidorf TG,__import__.country_state_17,base.ch
+city_ch_Lömmenschwil,Lömmenschwil,__import__.country_state_13,base.ch
+city_ch_Häggenschwil,Häggenschwil,__import__.country_state_13,base.ch
+city_ch_Muolen,Muolen,__import__.country_state_13,base.ch
+city_ch_Steinebrunn,Steinebrunn,__import__.country_state_17,base.ch
+city_ch_Neukirch_(Egnach),Neukirch (Egnach),__import__.country_state_17,base.ch
+city_ch_Winden,Winden,__import__.country_state_17,base.ch
+city_ch_Arbon,Arbon,__import__.country_state_17,base.ch
+city_ch_Frasnacht,Frasnacht,__import__.country_state_17,base.ch
+city_ch_Stachen,Stachen,__import__.country_state_17,base.ch
+city_ch_Egnach,Egnach,__import__.country_state_17,base.ch
+city_ch_Steinach,Steinach,__import__.country_state_13,base.ch
+city_ch_Roggwil_TG,Roggwil TG,__import__.country_state_17,base.ch
+city_ch_Horn,Horn,__import__.country_state_17,base.ch
+city_ch_Tübach,Tübach,__import__.country_state_13,base.ch
+city_ch_Rorschach,Rorschach,__import__.country_state_13,base.ch
+city_ch_Mörschwil,Mörschwil,__import__.country_state_13,base.ch
+city_ch_Goldach,Goldach,__import__.country_state_13,base.ch
+city_ch_Rorschacherberg,Rorschacherberg,__import__.country_state_13,base.ch
+city_ch_Wienacht_Tobel,Wienacht-Tobel,__import__.country_state_3,base.ch
+city_ch_Heiden,Heiden,__import__.country_state_3,base.ch
+city_ch_Reute_AR,Reute AR,__import__.country_state_3,base.ch
+city_ch_Reute_AR,Reute AR,__import__.country_state_13,base.ch
+city_ch_Schachen_b._Reute,Schachen b. Reute,__import__.country_state_3,base.ch
+city_ch_Oberegg,Oberegg,__import__.country_state_2,base.ch
+city_ch_Staad_SG,Staad SG,__import__.country_state_13,base.ch
+city_ch_Altenrhein,Altenrhein,__import__.country_state_13,base.ch
+city_ch_Rheineck,Rheineck,__import__.country_state_13,base.ch
+city_ch_Thal,Thal,__import__.country_state_13,base.ch
+city_ch_Lutzenberg,Lutzenberg,__import__.country_state_3,base.ch
+city_ch_Wolfhalden,Wolfhalden,__import__.country_state_3,base.ch
+city_ch_Walzenhausen,Walzenhausen,__import__.country_state_3,base.ch
+city_ch_St._Margrethen_SG,St. Margrethen SG,__import__.country_state_13,base.ch
+city_ch_Au_SG,Au SG,__import__.country_state_13,base.ch
+city_ch_Heerbrugg,Heerbrugg,__import__.country_state_13,base.ch
+city_ch_Balgach,Balgach,__import__.country_state_13,base.ch
+city_ch_Marbach_SG,Marbach SG,__import__.country_state_13,base.ch
+city_ch_Berneck,Berneck,__import__.country_state_13,base.ch
+city_ch_Büriswilen,Büriswilen,__import__.country_state_2,base.ch
+city_ch_Widnau,Widnau,__import__.country_state_13,base.ch
+city_ch_Diepoldsau,Diepoldsau,__import__.country_state_13,base.ch
+city_ch_Rebstein,Rebstein,__import__.country_state_13,base.ch
+city_ch_Altstätten_SG,Altstätten SG,__import__.country_state_13,base.ch
+city_ch_Lüchingen,Lüchingen,__import__.country_state_13,base.ch
+city_ch_Kriessern,Kriessern,__import__.country_state_13,base.ch
+city_ch_Hinterforst,Hinterforst,__import__.country_state_13,base.ch
+city_ch_Eichberg,Eichberg,__import__.country_state_13,base.ch
+city_ch_Montlingen,Montlingen,__import__.country_state_13,base.ch
+city_ch_Oberriet_SG,Oberriet SG,__import__.country_state_13,base.ch
+city_ch_Rüthi_(Rheintal),Rüthi (Rheintal),__import__.country_state_13,base.ch
+city_ch_Lienz,Lienz,__import__.country_state_13,base.ch
+city_ch_Salez,Salez,__import__.country_state_13,base.ch
+city_ch_Sennwald,Sennwald,__import__.country_state_13,base.ch
+city_ch_Frümsen,Frümsen,__import__.country_state_13,base.ch
+city_ch_Sax,Sax,__import__.country_state_13,base.ch
+city_ch_Haag_(Rheintal),Haag (Rheintal),__import__.country_state_13,base.ch
+city_ch_Buchs_SG,Buchs SG,__import__.country_state_13,base.ch
+city_ch_Werdenberg,Werdenberg,__import__.country_state_13,base.ch
+city_ch_Grabs,Grabs,__import__.country_state_13,base.ch
+city_ch_Grabserberg,Grabserberg,__import__.country_state_13,base.ch
+city_ch_Gams,Gams,__import__.country_state_13,base.ch
+city_ch_Sevelen,Sevelen,__import__.country_state_13,base.ch
+city_ch_Weite,Weite,__import__.country_state_13,base.ch
+city_ch_Fontnas,Fontnas,__import__.country_state_13,base.ch
+city_ch_Trübbach,Trübbach,__import__.country_state_13,base.ch
+city_ch_Azmoos,Azmoos,__import__.country_state_13,base.ch
+city_ch_Oberschan,Oberschan,__import__.country_state_13,base.ch
+city_ch_Malans_SG,Malans SG,__import__.country_state_13,base.ch
+city_ch_Gretschins,Gretschins,__import__.country_state_13,base.ch
+city_ch_Nendeln,Nendeln,__import__.country_state_6,base.ch
+city_ch_Schaanwald,Schaanwald,__import__.country_state_6,base.ch
+city_ch_Gamprin_Bendern,Gamprin-Bendern,__import__.country_state_6,base.ch
+city_ch_Schellenberg,Schellenberg,__import__.country_state_6,base.ch
+city_ch_Vaduz,Vaduz,__import__.country_state_6,base.ch
+city_ch_Ruggell,Ruggell,__import__.country_state_6,base.ch
+city_ch_Eschen,Eschen,__import__.country_state_6,base.ch
+city_ch_Mauren_FL,Mauren FL,__import__.country_state_6,base.ch
+city_ch_Schaan,Schaan,__import__.country_state_6,base.ch
+city_ch_Triesen,Triesen,__import__.country_state_6,base.ch
+city_ch_Balzers,Balzers,__import__.country_state_6,base.ch
+city_ch_Triesenberg,Triesenberg,__import__.country_state_6,base.ch
+city_ch_Planken,Planken,__import__.country_state_6,base.ch
+city_ch_Wil_SG,Wil SG,__import__.country_state_13,base.ch
+city_ch_Braunau,Braunau,__import__.country_state_17,base.ch
+city_ch_Stehrenberg,Stehrenberg,__import__.country_state_17,base.ch
+city_ch_Lanterswil,Lanterswil,__import__.country_state_17,base.ch
+city_ch_Friltschen,Friltschen,__import__.country_state_17,base.ch
+city_ch_Lommis,Lommis,__import__.country_state_17,base.ch
+city_ch_Stettfurt,Stettfurt,__import__.country_state_17,base.ch
+city_ch_Weingarten_Kalthäusern,Weingarten-Kalthäusern,__import__.country_state_17,base.ch
+city_ch_Rossrüti,Rossrüti,__import__.country_state_13,base.ch
+city_ch_Wuppenau,Wuppenau,__import__.country_state_17,base.ch
+city_ch_Hosenruck,Hosenruck,__import__.country_state_17,base.ch
+city_ch_Mettlen,Mettlen,__import__.country_state_17,base.ch
+city_ch_Züberwangen,Züberwangen,__import__.country_state_13,base.ch
+city_ch_Zuzwil_SG,Zuzwil SG,__import__.country_state_13,base.ch
+city_ch_Lenggenwil,Lenggenwil,__import__.country_state_13,base.ch
+city_ch_Zuckenriet,Zuckenriet,__import__.country_state_13,base.ch
+city_ch_Niederhelfenschwil,Niederhelfenschwil,__import__.country_state_13,base.ch
+city_ch_Rickenbach_b._Wil,Rickenbach b. Wil,__import__.country_state_13,base.ch
+city_ch_Rickenbach_b._Wil,Rickenbach b. Wil,__import__.country_state_17,base.ch
+city_ch_Kirchberg_SG,Kirchberg SG,__import__.country_state_13,base.ch
+city_ch_Dietschwil,Dietschwil,__import__.country_state_13,base.ch
+city_ch_Gähwil,Gähwil,__import__.country_state_13,base.ch
+city_ch_Wilen_b._Wil,Wilen b. Wil,__import__.country_state_17,base.ch
+city_ch_Schwarzenbach_SG,Schwarzenbach SG,__import__.country_state_13,base.ch
+city_ch_Münchwilen_TG,Münchwilen TG,__import__.country_state_17,base.ch
+city_ch_St._Margarethen_TG,St. Margarethen TG,__import__.country_state_17,base.ch
+city_ch_Wängi,Wängi,__import__.country_state_17,base.ch
+city_ch_Tuttwil,Tuttwil,__import__.country_state_17,base.ch
+city_ch_Wittenwil,Wittenwil,__import__.country_state_17,base.ch
+city_ch_Matzingen,Matzingen,__import__.country_state_17,base.ch
+city_ch_Bronschhofen,Bronschhofen,__import__.country_state_13,base.ch
+city_ch_Bettwiesen,Bettwiesen,__import__.country_state_17,base.ch
+city_ch_Tägerschen,Tägerschen,__import__.country_state_17,base.ch
+city_ch_Tobel,Tobel,__import__.country_state_17,base.ch
+city_ch_Affeltrangen,Affeltrangen,__import__.country_state_17,base.ch
+city_ch_Zezikon,Zezikon,__import__.country_state_17,base.ch
+city_ch_Märwil,Märwil,__import__.country_state_17,base.ch
+city_ch_Buch_b._Märwil,Buch b. Märwil,__import__.country_state_17,base.ch
+city_ch_Bussnang,Bussnang,__import__.country_state_17,base.ch
+city_ch_Oberbussnang,Oberbussnang,__import__.country_state_17,base.ch
+city_ch_Oppikon,Oppikon,__import__.country_state_17,base.ch
+city_ch_Schmidshof,Schmidshof,__import__.country_state_17,base.ch
+city_ch_Rothenhausen,Rothenhausen,__import__.country_state_17,base.ch
+city_ch_Littenheid,Littenheid,__import__.country_state_17,base.ch
+city_ch_Lütisburg_Station,Lütisburg Station,__import__.country_state_13,base.ch
+city_ch_Bazenheid,Bazenheid,__import__.country_state_13,base.ch
+city_ch_Müselbach,Müselbach,__import__.country_state_13,base.ch
+city_ch_Lütisburg,Lütisburg,__import__.country_state_13,base.ch
+city_ch_Oberrindal,Oberrindal,__import__.country_state_13,base.ch
+city_ch_Unterrindal,Unterrindal,__import__.country_state_13,base.ch
+city_ch_Bütschwil,Bütschwil,__import__.country_state_13,base.ch
+city_ch_Mosnang,Mosnang,__import__.country_state_13,base.ch
+city_ch_Ganterschwil,Ganterschwil,__import__.country_state_13,base.ch
+city_ch_Dreien,Dreien,__import__.country_state_13,base.ch
+city_ch_Mühlrüti,Mühlrüti,__import__.country_state_13,base.ch
+city_ch_Libingen,Libingen,__import__.country_state_13,base.ch
+city_ch_Dietfurt,Dietfurt,__import__.country_state_13,base.ch
+city_ch_Lichtensteig,Lichtensteig,__import__.country_state_13,base.ch
+city_ch_Oberhelfenschwil,Oberhelfenschwil,__import__.country_state_13,base.ch
+city_ch_Krinau,Krinau,__import__.country_state_13,base.ch
+city_ch_Wattwil,Wattwil,__import__.country_state_13,base.ch
+city_ch_Ulisbach,Ulisbach,__import__.country_state_13,base.ch
+city_ch_Hemberg,Hemberg,__import__.country_state_13,base.ch
+city_ch_Bächli_(Hemberg),Bächli (Hemberg),__import__.country_state_13,base.ch
+city_ch_Ebnat_Kappel,Ebnat-Kappel,__import__.country_state_13,base.ch
+city_ch_Krummenau,Krummenau,__import__.country_state_13,base.ch
+city_ch_Nesslau,Nesslau,__import__.country_state_13,base.ch
+city_ch_Ennetbühl,Ennetbühl,__import__.country_state_13,base.ch
+city_ch_Neu_St._Johann,Neu St. Johann,__import__.country_state_13,base.ch
+city_ch_Stein_SG,Stein SG,__import__.country_state_13,base.ch
+city_ch_Alt_St._Johann,Alt St. Johann,__import__.country_state_13,base.ch
+city_ch_Unterwasser,Unterwasser,__import__.country_state_13,base.ch
+city_ch_Wildhaus,Wildhaus,__import__.country_state_13,base.ch

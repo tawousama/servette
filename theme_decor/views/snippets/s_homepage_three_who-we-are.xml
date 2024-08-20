@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_homepage_three_who-we-are" name="Paragraph with button and three blocks">
+		<section class="s_furniture_who-we-are" id="who-we-are">
+			<div class="container custom">
+				<div class="row clearfix">
+					<div class="title-column col-lg-4 col-md-12 col-sm-12">
+						<div class="inner-column">
+							<div class="sec-title">
+								<h2>WHO WE ARE</h2>
+								<div class="text">The Love Boat promises something for everyone
+									so join us here reachs sure to get a smile from own come and
+									knock on our door.
+								</div>
+							</div>
+							<div class="btn-box">
+								<a href="#" class="theme-btn btn-style-one">Hire Us</a>
+							</div>
+						</div>
+					</div>
+					<div class="blocks-column col-lg-8 col-md-12 col-sm-12">
+						<div class="inner-column">
+							<div class="row clearfix">
+								<div
+									class="feature-block col-lg-4 col-md-6 col-sm-12 wow fadeInDown">
+									<div class="inner-box">
+										<span class="icon fa fa-id-card"></span>
+										<h3>
+											<a href="#">Our mission</a>
+										</h3>
+									</div>
+								</div>
+
+								<div
+									class="feature-block col-lg-4 col-md-6 col-sm-12 wow fadeInDown"
+									data-wow-delay="600ms">
+									<div class="inner-box">
+										<span class="icon fa fa-picture-o"></span>
+										<h3>
+											<a href="#">Our VIsion</a>
+										</h3>
+									</div>
+								</div>
+								<div
+									class="feature-block col-lg-4 col-md-6 col-sm-12 wow fadeInDown"
+									data-wow-delay="1200ms">
+									<div class="inner-box">
+										<span class="icon fa fa-bar-chart"></span>
+										<h3>
+											<a href="#">Our goals</a>
+										</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</template>
+
+</odoo>

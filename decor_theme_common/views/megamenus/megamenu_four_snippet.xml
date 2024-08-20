@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="mega_menu_four_snippet" name="Mega Menu Two" groups="base.group_user">
+		<section class="mega_menu_one_snippet py-3" style="background-image: url(/theme_decor/static/src/img/menu-blog.jpg); background-position: center;">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-lg-3 mb16">
+						<div class="heading-contents">
+							<a class="headeing" href="#">Clothing</a>
+							<ul>
+								<li><a class="menu_item" href="#">Shirt</a></li>
+								<li><a class="menu_item" href="#">Jeans</a></li>
+								<li><a class="menu_item" href="#">T-Shirt</a></li>
+							</ul>
+						</div>
+						<div class="heading-contents">
+							<a class="headeing" href="#">Electronics</a>
+							<ul>
+								<li><a href="#" class="menu_item">Headphones</a></li>
+								<li><a href="#" class="menu_item">Mobiles</a></li>
+								<li><a href="#" class="menu_item">Tablets</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-3 mb16">
+						<div class="heading-contents">
+							<a class="headeing" href="#">Wine</a>
+							<ul>
+								<li><a href="#" class="menu_item">Red Wine</a></li>
+								<li><a href="#" class="menu_item">White Wine</a></li>
+								<li><a href="#" class="menu_item">Rose Wine</a></li>
+							</ul>
+						</div>
+						<div class="heading-contents">
+							<a class="headeing" href="#">Furniture</a>
+							<ul>
+								<li><a href="#" class="menu_item">Wall Shelves</a></li>
+								<li><a href="#" class="menu_item">Plant Stand</a></li>
+								<li><a href="#" class="menu_item">Book Stand</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg-4 mb16">
+						<div class="heading-contents">
+							<a class="headeing" href="#">Latest Posts</a>
+							<section class="s_latest_posts pt16 pb16 o_colored_level" data-vcss="001" data-snippet="s_latest_posts" data-name="Blog Posts">
+						        <div class="container">
+						          <div class="row s_col_no_bgcolor s_nb_column_fixed js_get_posts s_latest_posts_effect_marley s_latest_posts_list" data-loading="true" data-template="website_blog.s_latest_posts_list_template" data-filter-by-blog-id="0" data-order="published_date desc"/>
+						        </div>
+					      	</section>
+				      	</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+</odoo>

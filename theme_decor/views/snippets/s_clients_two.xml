@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_clients_two" name="Clients Two">
+		<section class="electronic-brand-slider pt48 pb48">
+			<div class="container extended-container brand">
+				<div id="electronic-brand-carousel" class="carousel bs-slider slide  control-round indicators-line" data-bs-ride="carousel" data-bs-pause="hover" data-bs-interval="7000">
+					<ol class="carousel-indicators d-none">
+			            <li data-bs-target="#electronic-brand-carousel" data-bs-slide-to="0" class="active"/>
+			            <li data-bs-target="#electronic-brand-carousel" data-bs-slide-to="1"/>
+			        </ol>
+		          	<div class="carousel-inner" role="listbox">
+		            	<div class="carousel-item active" >
+		            		<div class="row">
+			            		<div class="col-md-2 text-center">
+			            			<img class="img img-fluid" src="/theme_decor/static/src/img/electronic-brand1.jpg"/>
+			            		</div>
+			            		<div class="col-md-2 text-center">
+			            			<img class="img img-fluid" src="/theme_decor/static/src/img/electronic-brand2.jpg"/>
+			            		</div>
+			            		<div class="col-md-2 text-center">
+			            			<img class="img img-fluid" src="/theme_decor/static/src/img/electronic-brand3.jpg"/>
+			            		</div>
+			            		<div class="col-md-2 text-center">
+			            			<img class="img img-fluid" src="/theme_decor/static/src/img/electronic-brand4.jpg"/>
+			            		</div>
+			            		<div class="col-md-2 text-center">
+			            			<img class="img img-fluid" src="/theme_decor/static/src/img/electronic-brand5.jpg"/>
+			            		</div>
+			            	</div>
+		            	</div>
+		            	<div class="carousel-item" >
+		            		<div class="row">
+			            		<div class="col-md-2 text-center">
+			            			<img class="img img-fluid" src="/theme_decor/static/src/img/electronic-brand6.jpg"/>
+			            		</div>
+			            		<div class="col-md-2 text-center">
+			            			<img class="img img-fluid" src="/theme_decor/static/src/img/electronic-brand2.jpg"/>
+			            		</div>
+			            		<div class="col-md-2 text-center">
+			            			<img class="img img-fluid" src="/theme_decor/static/src/img/electronic-brand3.jpg"/>
+			            		</div>
+			            		<div class="col-md-2 text-center">
+			            			<img class="img img-fluid" src="/theme_decor/static/src/img/electronic-brand4.jpg"/>
+			            		</div>
+			            		<div class="col-md-2 text-center">
+			            			<img class="img img-fluid" src="/theme_decor/static/src/img/electronic-brand5.jpg"/>
+			            		</div>
+			            	</div>
+			            </div>
+		          	</div>
+		          	<div class="slider-control">
+	              		<a class="left carousel-control-prev text-white font-14" data-bs-target="#electronic-brand-carousel" role="button" data-bs-slide="prev">
+		                	<span class="fa fa-angle-left "/>
+		               	 	<b class="sr-only font-normal o_default_snippet_text">Previous</b>
+		              	</a>
+		              	<a class="right carousel-control-next text-white font-14" data-bs-target="#electronic-brand-carousel" role="button" data-bs-slide="next">
+		                	<span class="fa fa-angle-right"/>
+		                	<b class="sr-only font-normal o_default_snippet_text">Next</b>
+		              	</a>
+		            </div>
+		        </div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

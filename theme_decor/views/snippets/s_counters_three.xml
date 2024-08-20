@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_counters_three" name="Counters Three">
+		<section class="s_counters_three s_numbers" data-snippet="s_numbers" data-name="Numbers">
+			<div class="pt64 pb64 feature24">
+				<div class="container">
+					<div class="row client-box">
+						<div class="col-lg-3 col-md-6">
+							<div class="d-flex no-block ">
+								<div class="display-5">
+									<span class="fa fa-smile-o fa-3x text-danger"></span>
+								</div>
+								<div class="ms-3 counter-box">
+									<h1 class="fw-light counter mb-0">2868</h1>
+									<h6 class="text-muted text-uppercase">Happy Clients</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="d-flex no-block">
+								<div class="display-5">
+									<span class="fa fa-cutlery fa-3x text-danger"></span>
+								</div>
+								<div class="ms-3">
+									<h1 class="fw-light counter mb-0">1319</h1>
+									<h6 class="text-muted text-uppercase">Furniture Categories</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="d-flex no-block">
+								<div class="display-5">
+									<span class="fa fa-users t fa-3x text-danger"></span>
+								</div>
+								<div class="ms-3">
+									<h1 class="fw-light counter mb-0">110</h1>
+									<h6 class="text-muted text-uppercase">Dedicated staff</h6>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="d-flex no-block">
+								<div class="display-5">
+									<span class="fa fa-gift te fa-3x text-danger"></span>
+								</div>
+								<div class="ms-3">
+									<h1 class="fw-light counter mb-0">11</h1>
+									<h6 class="text-muted text-uppercase">Awards won</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</template>
+
+</odoo>

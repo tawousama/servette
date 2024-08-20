@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+    <t t-name="theme_decor.static_image_hotspot_info">
+    	<section class="static_image_hotspot_info position-absolute shadow bg-white">
+			<div class="d-flex align-items-center">
+				<div class="image-box me-2">
+					<img src="/theme_decor/static/src/img/long-chair-red-min.png" class="img img-fluid" style="max-width: 80px;"></img>
+				</div>
+				<div class="info-box me-2" style="width: max-content; flex-wrap: wrap;">
+					<p class="mb-0 hotspot-title fw-bold">FULLBACK DESK CHAIR</p>
+					<p class="hotspot-link mb-0"><a href="/shop">Shop Now</a></p>
+				</div>
+			</div>
+		</section>
+    </t>
+
+    <t t-name="theme_decor.dynamic_image_hotspot_product_select">
+        <div aria-hidden="true" aria-labelledby="myModalLabel" t-attf-class="modal#{technical ? ' o_technical_modal' : ''}#{fullscreen ? ' o_modal_full': ''}" contenteditable="False" role="dialog" style="z-index:1050">
+            <div class="modal-dialog">
+                <div class="modal-content" id="s_dynamic_hotspot_product_filter">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Dynamic Hotspot</h4>
+                        <button class="close" data-bs-dismiss="modal" type="button">x</button>
+                    </div>
+                    <div class="modal-body" contenteditable="false">
+                        <form class="form-horizontal" role="form">
+                            <div class="row">
+                                <label class="col-sm-3 control-label" for="dynamic_hotspot_product">Select Product</label>
+                                <div class="form-group col-sm-9">
+                                    <select class="form-control" id="dynamic_hotspot_product" name="dynamic_hotspot_product"/>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-bs-dismiss="modal" id="prod_sub_data">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>

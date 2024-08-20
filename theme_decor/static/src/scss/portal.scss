@@ -1,0 +1,343 @@
+.gx-0{
+	--gutter-x: 0px;
+}
+
+.alreadyuser {
+	 cursor:pointer;
+}
+
+.resetpass{
+	cursor:pointer;
+}
+.user_img {
+    margin-top: 3px;
+    padding: 0px 8px;
+    margin-right: -6px;
+    display: block;
+    height: 30px;
+	width: 30px;
+}
+
+.biz_table{
+	tr{
+		th{
+			border-top: 0;
+		    border-color: #d6d6d6 !important;
+	        padding: 5px 15px;
+            font-weight: 500;
+		}
+		td{
+		    font-size: 13px;
+    		padding: 15px;
+    		border-color: #d6d6d6 !important;
+		}
+	}
+	thead{
+		tr{
+			line-height: 30px;
+		}
+	}
+	tbody{
+		tr{
+			line-height: 35px;
+		}
+		tr:nth-of-type(odd){
+		    background-color: #f5f5f5;
+		}
+		tr:hover {
+			a{
+				color: white;
+				text-decoration: none;
+			}
+		    background-color: $primary !important;
+	    	color: white;
+		}
+	}
+}
+
+#wrapwrap.o_portal {
+    background-color: #ffffff !important;
+}
+
+.biz_portal{
+	width: 100%;
+	display: inline-block;
+	
+	.badge-pill {
+		font-size: 25px;
+	}
+	
+	.list-group-item {
+	        width: 30%;
+		    float: left;
+		    margin: 10px;
+		    padding: 14px 18px;
+		    min-height: 139px;
+		    font-size: 16px;
+		    border-radius: 0px;
+		    @media (max-width: 767.98px) {
+		    	width: 95%;
+		    }
+		    @media (min-width: 768px) and (max-width: 1199.98px) {
+		    	width: 47%;
+		    }
+	}
+	
+	.list-group-item:nth-child(odd){
+		background-color: $secondary;
+		color: #ffffff !important;
+		.badge{
+			background-color: $primary !important;
+		}
+	}
+	.list-group-item:nth-child(even){
+		background-color: $primary;
+		color: #ffffff !important;
+		.badge{
+			background-color: $secondary !important;
+		}
+	}
+	a[href="/my/quotes"]:after{
+		content: "\e81e";
+		font-size: 50px !important;
+	    text-align: center;
+	    font-family: 'Linearicons-Free';
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+	    display: inline-block;
+	}
+	
+	a[href="/my/orders"]::after{
+		content: "\e82e";
+		display: inline-block;
+		font-size: 50px !important;
+	    text-align: center;
+	    font-family: 'Linearicons-Free';
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+	    display: inline-block;
+	}
+	
+	[title="Odoo Referral Program"]:after,[title="أودو إحالة البرنامج"]::after{
+		content: "\e6c3";
+		display: inline-block;
+		font-size: 50px !important;
+	    text-align: center;
+	    vertical-align: middle;
+	    font-family: 'Stroke-Gap-Icons';
+	}
+	
+	a[href="/my/invoices"]::after{
+		content: "\e972";
+		font-size: 50px !important;
+	    text-align: center;
+	    font-family: 'IcoFont' !important;
+	    vertical-align: middle;
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		white-space: nowrap;
+		word-wrap: normal;
+		direction: ltr;
+		display: inline-block;
+	}
+	
+	a[href="/my/opportunities"]::after{
+		content: "\ef2e";
+		display: inline-block;
+		font-size: 50px !important;
+	    text-align: center;
+	    font-family: 'IcoFont' !important;
+	    vertical-align: middle;
+		  speak: none;
+		  font-style: normal;
+		  font-weight: normal;
+		  font-variant: normal;
+		  text-transform: none;
+		  white-space: nowrap;
+		  word-wrap: normal;
+		  direction: ltr;
+		  display: inline-block;
+	}
+	
+	a[href="/my/projects"]::after{
+		content: "\efb6";
+		display: inline-block;
+		font-size: 50px !important;
+	    text-align: center;
+	    vertical-align: middle;
+	    font-family: 'IcoFont' !important;
+	    speak: none;
+		  font-style: normal;
+		  font-weight: normal;
+		  font-variant: normal;
+		  text-transform: none;
+		  white-space: nowrap;
+		  word-wrap: normal;
+		  direction: ltr;
+		  display: inline-block;
+	}
+	
+	a[href="/my/tasks"]::after{
+		content: "\f007";
+		display: inline-block;
+		font-size: 50px !important;
+	    text-align: center;
+	    font-family: 'IcoFont' !important;
+	    vertical-align: middle;
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		white-space: nowrap;
+		word-wrap: normal;
+		direction: ltr;
+		display: inline-block;
+	}
+
+	a[href="/my/timesheets"]::after{
+		content: "\f022";
+		display: inline-block;
+		font-size: 50px !important;
+		font-family: 'IcoFont' !important;
+	    text-align: center;
+     	speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		white-space: nowrap;
+		word-wrap: normal;
+		direction: ltr;
+		display: inline-block;
+	}
+
+	[title="Tickets"]:after,[title="التذاكر "]::after{
+		content: "\ea53";
+		display: inline-block;
+		font-size: 50px !important;
+	    text-align: center;
+	    font-family: 'IcoFont' !important;
+	    vertical-align: middle;
+		  speak: none;
+		  font-style: normal;
+		  font-weight: normal;
+		  font-variant: normal;
+		  text-transform: none;
+		  white-space: nowrap;
+		  word-wrap: normal;
+		  direction: ltr;
+		  display: inline-block;
+	}
+
+	a[href="/my/purchase"]::after{
+		content: "\eef8";
+		display: inline-block;
+		font-size: 50px !important;
+	    text-align: center;
+	    font-family: 'IcoFont' !important;
+	    vertical-align: middle;
+		  speak: none;
+		  font-style: normal;
+		  font-weight: normal;
+		  font-variant: normal;
+		  text-transform: none;
+		  white-space: nowrap;
+		  word-wrap: normal;
+		  direction: ltr;
+		  display: inline-block;
+	}
+	
+}
+#o_my_sidebar{
+	h4{
+		margin-bottom:15px;
+		margin-top:15px;
+	}
+	.btn-sm.btn-link{
+		color: #000000 !important;
+		text-transform: capitalize;
+		margin: 0px auto;
+		font-size: 0.9375rem;
+		float: right;
+	}
+	hr {
+	    display:none;
+	}
+	address {
+	    padding: 20px;
+	    border: 1px solid rgba(0, 0, 0, 0.125);
+		div:first-child{
+			border-bottom: 1px solid #ededed !important;
+	    	padding: 15px 0;
+	    	margin-bottom: 10px;
+		}
+		span[itemprop="name"] {
+		    font-size: 18px;
+	    	font-weight: 600;
+		}
+		div[itemprop="address"] > div {
+			font-size:15px;
+    		padding-top: 0 !important;
+		}
+		span[itemprop="telephone"] {
+		    border-bottom: 1px solid #ededed !important;
+		    margin-bottom: 10px;
+		    padding-bottom: 15px !important;
+		}
+	}
+}
+
+.o_main_navbar .dropdown-menu.show {
+    max-height: 90vh;
+    min-width: 100%;
+    overflow: auto;
+}
+
+.lnr, .icon, .icofont, .lni, .ri, .ti{
+	&.rounded-circle,
+    &.rounded,
+    &.rounded-0,
+    &.rounded-leaf,
+    &.img-thumbnail,
+    &.shadow {
+    	&.fa-2x{
+		    width: 5rem;
+		    height: 5rem;
+		    line-height: 5rem;
+    	}
+    	&.fa-3x{
+		    width: 6rem;
+		    height: 6rem;
+		    line-height: 6rem;
+    	}
+    	&.fa-4x{
+		    width: 7rem;
+		    height: 7rem;
+		    line-height: 7rem;
+    	}
+    	&.fa-5x{
+		    width: 8rem;
+		    height: 8rem;
+		    line-height: 8rem;
+    	}
+    	display: inline-block;
+	    vertical-align: middle;
+	    text-align: center;
+	    width: 3rem;
+	    height: 3rem;
+	    line-height: 3rem;
+	    background-color: #F8F9FA;
+    }
+}

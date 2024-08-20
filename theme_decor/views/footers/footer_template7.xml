@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="theme_common_footer7" inherit_id="website.layout" name="Footer Seven" active="False">
+       	<xpath expr="//div[@id='footer']" position="replace">
+       		<div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+				<section id="footer_theme_common7" class="footer_theme_common7 o_footer">
+					<section class="footer-section pt48">
+						<div class="container-fluid">
+							<div class="row justify-content-center">
+								<div class="col-md-4 mb-4 mb-lg-0 col-lg-2 col-6">
+									<div class="footer-links">
+										<h6 class="">Quick Links</h6>
+										<p><a href="/">Home</a></p>
+										<p><a href="/contactus">Contact Us</a></p>
+										<p><a href="#">About Us</a></p>
+										<p><a href="#">Policy</a></p>
+										<p><a href="#">Help Center</a></p>
+									</div>
+								</div>
+								<div class="col-md-4 mb-4 mb-lg-0 col-lg-2 col-6">
+									<div class="footer-links">
+										<h6 class="">Chairs</h6>
+										<p><a href="#">Modern Chairs</a></p>
+										<p><a href="#">Office Chairs</a></p>
+										<p><a href="#">Wing Chairs</a></p>
+										<p><a href="#">Desk Chairs</a></p>
+										<p><a href="#">Lounge Chairs</a></p>
+									</div>
+								</div>
+								<div class="col-md-4 mb-4 mb-lg-0 col-lg-2 col-6">
+									<div class="footer-links">
+										<h6 class="">Sofa</h6>
+										<p><a href="#">Rounded Sofa</a></p>
+										<p><a href="#">Three Seat Sofa</a></p>
+										<p><a href="#">L-Shaped Sofa</a></p>
+										<p><a href="#">Sectional Sofa</a></p>
+										<p><a href="#">Sofa Beds</a></p>
+									</div>
+								</div>
+								<div class="col-md-4 mb-4 mb-lg-0 col-lg-2 col-6">
+									<div class="footer-links">
+										<h6 class="">Lamps</h6>
+										<p><a href="#">Desk Lamp</a></p>
+										<p><a href="#">Flexible Lamp</a></p>
+										<p><a href="#">NightStand Lamp</a></p>
+										<p><a href="#">Banker's Lamp</a></p>
+										<p><a href="#">Candelabra Lamp</a></p>
+									</div>
+								</div>
+								<div class="col-md-4 mb-4 mb-lg-0 col-lg-2 col-6">
+									<div class="footer-links">
+										<h6 class="">Tables</h6>
+										<p><a href="#">Cocktail Table</a></p>
+										<p><a href="#">Dining Room Table</a></p>
+										<p><a href="#">Dining Table</a></p>
+										<p><a href="#">Console Table</a></p>
+										<p><a href="#">Metal Table</a></p>
+									</div>
+								</div>
+								<div class="col-md-4 mb-4 mb-lg-0 col-lg-2 col-6">
+									<div class="footer-links">
+										<h6 class="">Chandelier</h6>
+										<p><a href="#">Braded Chandelier</a></p>
+										<p><a href="#">Candle Chandelier</a></p>
+										<p><a href="#">Crystal Chandelier</a></p>
+										<p><a href="#">Caged Chandelier</a></p>
+										<p><a href="#">Modern Chandelier</a></p>
+									</div>
+								</div>
+								<div class="col-md-12 mt48 pb32">
+									<div class="horizontal-link text-center">
+										<a href="/shop">Shop</a>
+										<a href="/category">Category</a>
+										<a href="/brand">Brands</a>
+										<a href="#">FAQ</a>
+										<a href="/blog">Blog</a>
+										<div class="footer-pricelist d-inline-block">
+											<t t-set="website_sale_pricelists" t-value="website.get_pricelist_available(show_visible=True)" />
+											<div t-attf-class="dropdown me-auto#{'' if website_sale_pricelists and len(website_sale_pricelists)&gt;1 else ' '} #{_classes}">
+					           					<t t-set="curr_pl" t-value="website.get_current_pricelist()" />
+												<a role="button" href="#" class="dropdown-toggle btn btn-link p-0" data-bs-toggle="dropdown">
+									            	<t t-out="curr_pl and curr_pl.name or ' - '" />
+									            </a>
+												<div class="dropdown-menu" role="menu">
+									                <t t-foreach="website_sale_pricelists" t-as="pl">
+									                    <a role="menuitem" t-att-href="'/shop/change_pricelist/%s' % pl.id" class="dropdown-item">
+									                        <span class="switcher_pricelist" t-att-data-pl_id="pl.id" t-out="pl.name" />
+									                    </a>
+									                </t>
+									            </div>
+									        </div>
+										</div>
+										<div class="footer-language d-inline-block">
+											<div class="menu-language js_language_selector mb0 text-lg-center" t-if="(request and request.is_frontend_multilang and len(languages) &gt; 1) or (website and (editable or translatable))">
+									            <div class="dropdown">
+									                <a href="#" class="p-0 nav-link dropdown-toggle"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+									                    <t t-foreach="website.language_ids" t-as="lg">
+										                    <t t-if="request.context.get('lang') == lg.code">
+										                       	<img t-att-src="website.image_url(lg, 'flag_image')" width="25" height="25" t-att-title="lg.name" />
+										                    </t>
+										                </t>
+									                </a>
+									                <div class="dropdown-menu" role="menu">
+									                    <t t-foreach="languages" t-as="lg">
+									                        <a t-att-href="url_for(request.httprequest.path + '?' + keep_query(), lang_code=lg[0])"
+									                           class="dropdown-item js_change_lang"
+									                           t-att-data-url_code="lg[1]">
+								                            	<t t-out="lg[2].split('/').pop()"/>
+									                        </a>
+									                    </t>
+									                </div>
+									            </div>
+										    </div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</section>
+				</section>
+			</div>
+		</xpath>
+		<xpath expr="//div[hasclass('o_footer_copyright')]" position="replace">
+			<div t-if="not no_copyright" class="o_footer_copyright">
+				<section class="copyright-section py-4">
+					<div class="container-fluid">
+						<div class="row align-items-center">
+							<div class="col-md-7 mb-4 mb-md-0">
+								<p class="m-0">© 2021 | All Rights Are Reserved By <span t-field="res_company.name" /></p>
+							</div>
+							<div class="col-md-5">
+								<div class="payment-image text-md-end">
+									<img src="/theme_decor/static/src/img/payment-footer.png" class="img-fluid"/>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</xpath>
+	</template>
+</odoo>

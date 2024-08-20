@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_call_to_action_five" name="Call To Action Five">
+		<section class="s_call_to_action_five pt80 pb80"
+			style="background-image:url('/theme_decor/static/src/img/slide-bg-1.jpg');">
+			<div class="container">
+				<div class="d-flex">
+					<div class="display-7 align-self-center">
+						<h3 class="fw-bold text-800">Do you need any help? Schedule Consultation</h3>
+					</div>
+					<div class="ms-auto m-t-10 m-b-10">
+						<button class="btn btn-secondary btn-lg">Schedule Now</button>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</template>
+
+</odoo>

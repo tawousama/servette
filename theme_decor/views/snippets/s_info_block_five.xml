@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="s_info_block_five" name="Info Block Five">
+		<section class="home3-sale pt224 pb224" style="background-image: url('/theme_decor/static/src/img/info_blockbg.jpg');">
+			<div class="container">
+				<div class="row">
+					<div class="col-7 col-md-6">
+						<div class="content">
+							<h3 class="label text-black mb-1 mb-lg-0">Summer Sale!</h3>
+							<h4 class="title text-primary">Upto 50% Off</h4>
+							<p class="text-muted subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut et elementum urna, quis sollicitudin mi Vestibulum pulvinar.</p>
+							<div class="s_btn" data-name="Button">
+								<a href="#" class="btn btn-secondary flat btn-lg">Shop now</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+</odoo>

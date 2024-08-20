@@ -1,0 +1,144 @@
+.blog_slider_owl.extended-container{
+	.container{
+		max-width: 1440px;
+	}
+}
+
+button:focus {
+    outline: 0px dotted !important;
+    outline: 0px auto -webkit-focus-ring-color !important;
+}
+
+.carousel-item {
+	
+	.product-info {
+		margin-top:16px;
+	}
+}
+
+.category-slider {
+	text-align:center;
+	
+		.sli-cat-title {
+			font-size:18px;
+		}
+}
+
+.owl-nav {
+	
+    position: absolute;
+    top: 20%;
+    left: 0;
+    right: 0;
+    
+    .owl-prev, .owl-next {
+                position: absolute;
+                height: 100px;
+                color: inherit;
+                background: none;
+                border: none;
+                z-index: 100;
+                background: #f0f0f0;
+
+                i {
+                    font-size: 2.5rem;
+				    color: #cecece;
+				    display: block !important;
+                }
+            }
+
+            .owl-prev {
+                left: 0;
+            }
+
+            .owl-next {
+                right: 0;
+            }
+}
+
+.product-item {
+    .p-item-image{
+		position: relative;
+		padding: 10px;
+		border: 1px solid #eeeeee;
+		a {
+			display: -webkit-box;
+		    display: -ms-flexbox;
+		    display: flex;
+			 -webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		    justify-content: center;
+		    -webkit-box-align: center;
+		    -ms-flex-align: center;
+		    align-items: center;
+			height: 100%;
+			img {
+				max-height: 100%;
+				-o-object-fit: scale-down;
+				object-fit: scale-down;
+			}
+		}
+    	.image-lable {
+    		position: absolute;
+    		right: 0;
+    		top: 0;
+    		padding: 20px 20px 5px;
+    		font-size: 18px;
+    		color: black;
+    		font-weight: 600;
+    	}
+    }
+}
+
+.multi_hide {
+    display: none;
+}
+.active.multi_hide {
+    display: block;
+}
+
+.blog_slider_owl {
+	padding: 60px 0;
+	text-align: center;
+	@media (max-width: 1199px){
+		padding: 50px 0;
+	}
+	.block-title {
+		margin-bottom: 30px;
+		.filter {
+			margin-bottom: 0;
+		}
+	}
+	.comm_blog_box {
+		position: relative;
+		.section-post-media {
+			height: 270px;
+			background-size: cover;
+    		background-repeat: no-repeat;
+    		@media (max-width: 1199px){
+    			height: 220px;
+    		}
+		}
+		a {
+		}
+		.comm_base_class {
+			    position: absolute;
+			    z-index: 2;
+			    left: 0;
+			    right: 0;
+			    max-width: 80%;
+			    margin: auto;
+			    vertical-align: middle;
+			    top: 40%;
+			@media (max-width: 1199px){
+				bottom: 20px;
+			}
+			h3 {
+				font-weight: bold;
+				@media (max-width: 1023px){
+				}
+			}
+		}
+	}
+}
+

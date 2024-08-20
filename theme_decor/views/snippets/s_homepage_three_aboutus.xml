@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_homepage_three_aboutus" name="Left image with paragraph and button">
+		<section class="s_homepage_three_aboutus pt64 pb32"
+			id="about-us">
+			<div class="container">
+				<div class="row clearfix">
+					<div
+						class="content-column order-last col-lg-6 col-md-12 col-sm-12">
+						<div class="inner-column">
+							<span class="title">ABOUT US</span>
+							<h2>CAPTURING THE ESSENCE OF INTERIOR SPRIT</h2>
+							<div class="text">
+								<p>The Love Boat promises something for everyone so join us
+									here each week my friends you're sure to get a smile from
+									seven fees story of a man named Brady who was busy with
+									three boys offe his own come and knock on our door.
+								</p>
+							</div>
+							<div class="btn-box">
+								<a href="#" class="theme-btn btn-style-one">READ MORE</a>
+							</div>
+						</div>
+					</div>
+
+					<div
+						class="image-column wow fadeInLeft col-lg-6 col-md-12 col-sm-12">
+						<div class="image-box">
+							<div class="image">
+								<a href="#" class="lightbox-image" data-fancybox="gallery">
+									<img src="/theme_decor/static/src/img/image-1.jpg"
+										alt="" />
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</template>
+
+</odoo>

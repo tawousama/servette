@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_homepage_two_products" name="Products">
+		<section class="furniture-images pt32 pb64">
+			<div id="furniture-image-carousel" class="carousel bs-slider slide  control-round indicators-line" data-bs-ride="carousel" data-bs-pause="hover" data-bs-interval="7000">
+	          	<div class="carousel-inner" role="listbox">
+	            	<div class="carousel-item active ">
+						<div class="container-fluid p-0">
+							<div class="row">
+								<div class="col-lg-4 col-md-4">
+									<div class="single-banner">
+	            						<div class="banner-image">
+	            							<a href="#">
+	            								<img src="/theme_decor/static/src/img/furniture-img1.jpg" class="img img-fluid"/>
+	            							</a>
+	            						</div>
+	            						<div class="banner-content">
+	            							<h3>Luxurious Bedroom</h3>
+	            						</div>
+	            					</div>
+								</div>
+								<div class="col-lg-4 col-md-4">
+									<div class="single-banner">
+	            						<div class="banner-image">
+	            							<a href="#">
+	            								<img src="/theme_decor/static/src/img/furniture-img2.jpg" class="img img-fluid"/>
+	            							</a>
+	            						</div>
+	            						<div class="banner-content">
+	            							<h3>Premium chairs</h3>
+	            						</div>
+	            					</div>
+								</div>
+								<div class="col-lg-4 col-md-4">
+									<div class="single-banner">
+	            						<div class="banner-image">
+	            							<a href="#">
+	            								<img src="/theme_decor/static/src/img/furniture-img3.jpg" class="img img-fluid"/>
+	            							</a>
+	            						</div>
+	            						<div class="banner-content">
+	            							<h3>Blue Themed Sofa</h3>
+	            						</div>
+	            					</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<div class="container-fluid p-0">
+							<div class="row">
+								<div class="col-lg-4 col-md-4">
+									<div class="single-banner">
+	            						<div class="banner-image">
+	            							<a href="#">
+	            								<img src="/theme_decor/static/src/img/furniture-img1.jpg" class="img img-fluid"/>
+	            							</a>
+	            						</div>
+	            						<div class="banner-content">
+	            							<h3>Luxurious Bedroom</h3>
+	            						</div>
+	            					</div>
+								</div>
+								<div class="col-lg-4 col-md-4">
+									<div class="single-banner">
+	            						<div class="banner-image">
+	            							<a href="#">
+	            								<img src="/theme_decor/static/src/img/furniture-img2.jpg" class="img img-fluid"/>
+	            							</a>
+	            						</div>
+	            						<div class="banner-content">
+	            							<h3>Premium chairs</h3>
+	            						</div>
+	            					</div>
+								</div>
+								<div class="col-lg-4 col-md-4">
+									<div class="single-banner">
+	            						<div class="banner-image">
+	            							<a href="#">
+	            								<img src="/theme_decor/static/src/img/furniture-img3.jpg" class="img img-fluid"/>
+	            							</a>
+	            						</div>
+	            						<div class="banner-content">
+	            							<h3>Blue Themed Sofa</h3>
+	            						</div>
+	            					</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<ol class="carousel-indicators">
+		            <li data-bs-target="#furniture-image-carousel" data-bs-slide-to="0" class="active"/>
+		            <li data-bs-target="#furniture-image-carousel" data-bs-slide-to="1"/>
+		        </ol>
+			</div>
+		</section>
+	</template>
+
+</odoo>

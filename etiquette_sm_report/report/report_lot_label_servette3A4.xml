@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<odoo>
+    <template id="report_lot_label_servette3A4">
+        <t t-call="web.basic_layout">
+            <div class="page">
+                <t t-foreach="docs" t-as="o">
+                    <div class="container" style="width: 283mm; height: 163mm;">
+                        <div class="row text-center"
+                             style="width: 100%; height: 130mm; overflow: hidden;">
+                            <strong style="font-size: 108px; line-height: 0.92" t-field="o.product_id.name"/>
+                        </div>
+                        <div class="row"
+                             style="width: 100%; height: 23mm; overflow: hidden;font-size: 25px;">
+                            <div t-if="o.product_id.description_purchase"
+                                 class="col-12 text-center">
+                                <span t-field="o.product_id.description_purchase"/>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 text-center align-left" style="font-size: 24px;">
+                                <strong t-field="o.product_id.__last_update"
+                                        t-options="{'widget': 'date'}"/>
+                            </div>
+                            <div class="col-5 text-center align-middle">
+                                <t t-if="o.product_id.barcode">
+                                    <img t-if="o.product_id.barcode"
+                                         t-att-src="'/report/barcode/?barcode_type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', quote_plus(o.product_id.barcode or ''), 600, 120)"
+                                         style="width:14em;height:2.6rem;"/>
+                                    <span style="font-size: 20px;"
+                                          t-field="o.product_id.barcode"/>
+                                </t>
+                                <t t-else="">
+                                    <span class="text-muted">No barcode available</span>
+                                </t>
+                            </div>
+                            <div class="col-3 text-center align-right align-content-end" style="font-size: 24px;">
+                                <strong t-field="o.product_id.lst_price"
+                                        t-options="{'widget': 'monetary', 'display_currency': o.product_id.company_id.currency_id}"/>
+                            </div>
+                        </div>
+                        <!--                        <div class="row" style="height: 15mm">-->
+                        <!--                            <div class="col-12 text-center align-middle">-->
+                        <!--                                <t t-if="o.product_id.barcode">-->
+                        <!--                                    <img t-if="o.product_id.barcode"-->
+                        <!--                                         t-att-src="'/report/barcode/?barcode_type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', quote_plus(o.product_id.barcode or ''), 600, 120)"-->
+                        <!--                                         style="width:25%;height:0.2rem;"/>-->
+                        <!--                                    <span style="font-size: 26px;"-->
+                        <!--                                          t-field="o.product_id.barcode"/>-->
+                        <!--                                </t>-->
+                        <!--                                <t t-else="">-->
+                        <!--                                    <span class="text-muted">No barcode available</span>-->
+                        <!--                                </t>-->
+                        <!--                            </div>-->
+                        <!--                        </div>-->
+
+                        <div class="row mt-1">
+                            <div class="col-4"/>
+                            <div class="col-5 text-center align-middle">
+                                <t t-if="o.name">
+                                    <img t-if="o.name"
+                                         t-att-src="'/report/barcode/?barcode_type=%s&amp;value=%s&amp;width=%s&amp;height=%s' % ('Code128', o.name, 600, 120)"
+                                         style="width:14em;height:2.6rem;"/>
+                                    <span style="font-size: 20px;" t-field="o.name"/>
+                                </t>
+                                <t t-else="">
+                                    <span class="text-muted">No barcode available</span>
+                                </t>
+                            </div>
+                            <div class="col-3"/>
+                        </div>
+                    </div>
+                    <p style="page-break-before:always;"></p>
+                </t>
+            </div>
+        </t>
+    </template>
+</odoo>

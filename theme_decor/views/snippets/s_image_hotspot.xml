@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="s_image_hotspot" name="Image Hotspot">
+		<section class="s_image_hotspot position-relative">
+			<img class="img img-fluid" src="/theme_decor/static/src/img/hotspot_img.jpg"></img>
+		</section>
+	</template>
+</odoo>

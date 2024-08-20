@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<odoo>
+    <template id="report_servette_label3">
+        <t t-set="barcode_size" t-value="'width:100%;height::5rem;'"/>
+        <div class="container" style="width: 190mm; height: 165mm;">
+            <div class="row text-center" style="height: 66mm; overflow: hidden;">
+                    <strong style="font-size: 90px; line-height: 0.92" t-field="product.name"/>
+            </div>
+            <div class="row" style="height: 9mm; font-size: 25px">
+                <div class="col-6 o_label_left_column">
+                    <strong t-field="product.__last_update" t-options="{'widget': 'date'}"/>
+                </div>
+                <div class="col-6 text-end">
+                    <strong t-field="product.lst_price"
+                            t-options="{'widget': 'monetary', 'display_currency': product.company_id.currency_id}"/>
+                </div>
+            </div>
+
+            <div class="row" style="height: 45mm;">
+                <div class="col-12 text-center align-middle">
+                    <t t-if="product.barcode">
+                        <div t-field="product.barcode" style="padding:0"
+                             t-options="{'widget': 'barcode', 'symbology': 'auto', 'img_style': barcode_size}"/>
+                        <span class="text-center" t-field="product.barcode"/>
+                    </t>
+                    <t t-else="">
+                        <span class="text-muted">No barcode available</span>
+                    </t>
+                </div>
+            </div>
+            <div class="row" style="height: 45mm;">
+                <div class="col-12 text-center align-middle mx-auto">
+                    <t t-if="product.barcode">
+                        <div t-field="product.barcode" style="padding:0"
+                             t-options="{'widget': 'barcode', 'symbology': 'auto', 'img_style': barcode_size}"/>
+                        <span class="text-center" t-field="product.barcode"/>
+                    </t>
+                    <t t-else="">
+                        <span class="text-muted">No barcode available</span>
+                    </t>
+                </div>
+            </div>
+        </div>
+
+    </template>
+
+    <template id="report_servette_label4">
+        <t t-set="barcode_size" t-value="'width:100%;height::5rem;'"/>
+        <div class="container" style="width: 190mm; height: 165mm;">
+            <div class="row text-center" style="height: 66mm; overflow: hidden;">
+                    <strong style="font-size: 69px; line-height: 0.9" t-field="product.name"/>
+            </div>
+            <div class="row" style="height: 9mm; font-size: 25px">
+                <div class="col-6 o_label_left_column">
+                    <strong t-field="product.__last_update" t-options="{'widget': 'date'}"/>
+                </div>
+                <div class="col-6 text-end">
+                    <strong t-field="product.lst_price"
+                            t-options="{'widget': 'monetary', 'display_currency': product.company_id.currency_id}"/>
+                </div>
+            </div>
+
+            <div class="row" style="height: 45mm;">
+                <div class="col-12 text-center align-middle">
+                    <t t-if="product.barcode">
+                        <div t-field="product.barcode" style="padding:0"
+                             t-options="{'widget': 'barcode', 'symbology': 'auto', 'img_style': barcode_size}"/>
+                        <span class="text-center" t-field="product.barcode"/>
+                    </t>
+                    <t t-else="">
+                        <span class="text-muted">No barcode available</span>
+                    </t>
+                </div>
+            </div>
+            <div class="row" style="height: 45mm;">
+                <div class="col-12 text-center align-middle mx-auto">
+                    <t t-if="product.barcode">
+                        <div t-field="product.barcode" style="padding:0"
+                             t-options="{'widget': 'barcode', 'symbology': 'auto', 'img_style': barcode_size}"/>
+                        <span class="text-center" t-field="product.barcode"/>
+                    </t>
+                    <t t-else="">
+                        <span class="text-muted">No barcode available</span>
+                    </t>
+                </div>
+            </div>
+        </div>
+
+    </template>
+
+    <template id="report_producttemplatelabel_Servette3">
+        <t t-call="web.basic_layout">
+            <div class="page">
+                <t t-foreach="docs" t-as="template">
+                    <t t-foreach="template.product_variant_ids" t-as="product">
+                        <t t-call="etiquette_sm_report.report_servette_label3">
+                            <t t-set="product" t-value="product"/>
+                        </t>
+                    </t>
+                </t>
+            </div>
+        </t>
+    </template>
+    <template id="report_producttemplatelabel_Servette4">
+        <t t-call="web.basic_layout">
+            <div class="page">
+                <t t-foreach="docs" t-as="template">
+                    <t t-foreach="template.product_variant_ids" t-as="product">
+                        <t t-call="etiquette_sm_report.report_servette_label4">
+                            <t t-set="product" t-value="product"/>
+                        </t>
+                    </t>
+                </t>
+            </div>
+        </t>
+    </template>
+</odoo>

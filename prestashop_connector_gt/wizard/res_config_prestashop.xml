@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_res_config_instance" model="ir.ui.view">
+            <field name="name">Configure Instance</field>
+            <field name="model">res.config.instance</field>
+            <field name="arch" type="xml">
+                <form string="Prestashop Instance">
+                    <sheet>
+                        <group colspan="3">
+                            <h1>
+                                <field name="instance_name" select="1" required="True"/>
+                            </h1>
+                        </group>
+
+                        <footer>
+                            <button name="create_instance" string="Create" type="object" class="oe_highlight"/>
+                            <strong> OR</strong>
+                            <button string="Cancel" class="oe_highlight" special="cancel"/>
+                        </footer>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="action_bigcommerce_connector_onboard" model="ir.actions.act_window">
+            <field name="name">Prestashop Instance</field>
+            <field name="res_model">res.config.instance</field>
+            <field name="view_mode">form</field>
+            <field name="target">new</field>
+            <field name="view_id" ref="view_res_config_instance"/>
+        </record>
+    </data>
+</odoo>

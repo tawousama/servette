@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  -*- coding: utf-8 -*-  -->
+<!--  See LICENSE file for full copyright and licensing details.  -->
+<!--  Developed by Bizople Solutions Pvt. Ltd.  -->
+
+<odoo>
+	<record id="product_per_page_view" model="ir.ui.view">
+		<field name="name">product.per.page.count.bizople.tree</field>
+		<field name="type">tree</field>
+		<field name="model">product.per.page.count.bizople</field>
+		<field name="priority">2</field>
+		<field name="arch" type="xml">
+			<tree string="Product Per Page" editable="bottom">
+				<field name="name"/>
+			</tree>
+		</field>
+	</record>
+
+    <record id="product_per_page_action" model="ir.actions.act_window">
+		<field name="name">Product Per Page</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">product.per.page.count.bizople</field>
+		<field name="view_mode">tree</field>
+		<field name="view_id" eval="False" />
+	</record>
+</odoo>

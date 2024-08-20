@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="website_sale_brand_list_bizople" name="Products Brand">
+		<t t-call="website.layout">
+			<div id="wrap" class="oe_structure">
+				<div class="oe_empty oe_structure">
+					<!-- <section class="brand-page-banner">
+						<img src="/decor_theme_common/static/src/img/brand-banner.jpg" class="img img-fluid"/>
+					</section> -->
+					<section class="brand-page-banner s_banner_with_breadcrumbs shop-page-banner s_parallax parallax s_parallax_is_fixed bg-black-50 pt80 pb80 o_colored_level" data-scroll-background-ratio="1" data-snippet="s_parallax" data-name="Parallax">
+                        <span class="s_parallax_bg oe_img_bg" style="background-image: url('/theme_decor/static/src/img/login-banner.jpg'); background-position: center;"/>
+                        <div class="o_we_bg_filter bg-black-50"/>
+                        <div class="oe_structure oe_empty"/>
+                        <div class="container">
+                            <div class="banner-header text-center justify-content-center">
+                                <h1 class="mb-2 fw-bold">Brands</h1>
+                                <ol class="breadcrumb justify-content-center mt-3">
+                                    <li class="breadcrumb-item">
+                                        <a class="text-white" href="/">Home</a>
+                                    </li>
+                                    <li class="breadcrumb-item">
+                                        <a class="text-white" href="/">Shop</a>
+                                    </li>
+                                    <li class="breadcrumb-item active">
+                                        <span class="text-primary">Brands</span>
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </section>
+				</div>
+				<div class="oe_structure">
+					<section class="pt48 pb48 oe_structure shopby-brand">
+						<div class="container">
+							<div class="row m-0">
+								<div class="text-center form-inline o_website_sale_search mx-auto">
+									<form action="/brand-search" method="post">
+										<div class="input-group">
+											<input type="hidden" name="csrf_token" t-att-value="request.csrf_token()" />
+											<div class="oe_search">
+												<input type="text" name="search"
+													class="search-query-bizople form-control oe_search_box"
+													placeholder="Search..." t-att-value="search" />
+											</div>
+											<span class="input-group-btn input-group-append">
+												<button type="submit"
+													class="btn btn-default oe_search_button bg-secondary">
+													<i class="fa fa-search" />
+												</button>
+											</span>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="row mt32 mb32 oe_structure">
+								<div t-foreach="brands" t-as="brand"
+									class="mt16 mb16 col-lg-4 col-md-6 col-hd-4 text-center one-grid">
+									<div class="one-box card">
+										<div class="brand-image p-3">
+											<a itemprop="url" t-attf-href="/brand/#{ slug(brand) }"
+												data-bs-toggle="tooltip" t-att-title="brand.name">
+												<span itemprop="image" t-field="brand.image"
+													t-options='{"widget": "image", "resize": None if image else "300x300"}'
+													t-att-alt="brand.name" />
+											</a>
+										</div>
+										<div class="one-name brand-one">
+											<h2>
+												<a t-attf-href="/brand/#{ slug(brand) }">
+													<t t-out="brand.name" />
+												</a>
+											</h2>
+										</div>
+									</div>
+								</div>
+								<div class="text-center mt32 mb32 col-md-12 mx-auto form-inline justify-content-center">
+									<t t-call="website.pager">
+									</t>
+								</div>
+							</div>
+						</div>
+					</section>
+				</div>
+				<div class="oe_structure" />
+			</div>
+		</t>
+	</template>
+
+	<template id="enable_product_count_brands" inherit_id="decor_theme_common.website_sale_brand_list_bizople" active="False" customize_show="True" name="Enable Product Count">
+		<xpath expr="//div[hasclass('brand-one')]/h2[1]" position="after">
+			<div class="">
+				(<span t-out="brand.brand_count"/><span> Items</span>)
+			</div>
+		</xpath>
+	</template>
+</odoo>

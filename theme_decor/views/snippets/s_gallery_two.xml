@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_gallery_two" name="Gallery Two">
+		<section class="electronic-image-gallery" style="background-image: url('/theme_decor/static/src/img/jewellery-parallax-bg.jpg');">
+			<div class="o_we_bg_filter bg-black-50"></div>
+			<div class="container extended-container">
+				<div class="row">
+					<div class="title">
+						<h5>INSTAGRAM GALLERY</h5>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xl-3 col-lg-3 col-md-3">
+						<div class="image">
+							<a href="#">
+								<img src="/theme_decor/static/src/img/image-gallary1.jpg" class="img img-fluid"/>
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-3">
+						<div class="image">
+							<a href="#">
+								<img src="/theme_decor/static/src/img/image-gallary2.jpg" class="img img-fluid"/>
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-3">
+						<div class="image">
+							<a href="#">
+								<img src="/theme_decor/static/src/img/image-gallary3.jpg" class="img img-fluid"/>
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-3">
+						<div class="image">
+							<a href="#">
+								<img src="/theme_decor/static/src/img/image-gallary4.jpg" class="img img-fluid"/>
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-3">
+						<div class="image">
+							<a href="#">
+								<img src="/theme_decor/static/src/img/image-gallary5.jpg" class="img img-fluid"/>
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-3">
+						<div class="image">
+							<a href="#">
+								<img src="/theme_decor/static/src/img/image-gallary6.jpg" class="img img-fluid"/>
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-3">
+						<div class="image">
+							<a href="#">
+								<img src="/theme_decor/static/src/img/image-gallary7.jpg" class="img img-fluid"/>
+							</a>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-3">
+						<div class="image">
+							<a href="#">
+								<img src="/theme_decor/static/src/img/image-gallary8.jpg" class="img img-fluid"/>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

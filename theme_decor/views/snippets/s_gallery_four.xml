@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="s_gallery_four" name="Gallery Four">
+		<section class="mocha-gallary">
+      		<section class="s_cover pt96 o_colored_level s_parallax_no_overflow_hidden pb48" data-scroll-background-ratio="0" data-snippet="s_cover" data-name="Cover" style="background-color: rgba(255, 255, 255, 0) !important;">
+		        <div class="s_allow_columns container text-center">
+		          	<h5>OUR FURNITURE GALLERY</h5>
+		          	<img src="/theme_decor/static/src/img/bean-line-primary.png" class="img img-fluid my-3"/>
+		          	<h6>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</h6>
+		        </div>
+	      	</section>
+	      	<section class="gallary-images">
+	      		<div class="container-fluid">
+	      			<div class="row">
+	      				<div class="col-md-6 col-lg-3 pt16 pb16">
+	      					<img src="/theme_decor/static/src/img/image-gallary1.jpg" class="img img-fluid mx-auto"/>
+	      				</div>
+	      				<div class="col-md-6 col-lg-3 pt16 pb16">
+	      					<img src="/theme_decor/static/src/img/image-gallary2.jpg" class="img img-fluid mx-auto"/>
+	      				</div>
+	      				<div class="col-md-6 col-lg-3 pt16 pb16">
+	      					<img src="/theme_decor/static/src/img/image-gallary3.jpg" class="img img-fluid mx-auto"/>
+	      				</div>
+	      				<div class="col-md-6 col-lg-3 pt16 pb16">
+	      					<img src="/theme_decor/static/src/img/image-gallary4.jpg" class="img img-fluid mx-auto"/>
+	      				</div>
+	      				<div class="col-md-6 col-lg-3 pt16 pb16">
+	      					<img src="/theme_decor/static/src/img/image-gallary5.jpg" class="img img-fluid mx-auto"/>
+	      				</div>
+	      				<div class="col-md-6 col-lg-3 pt16 pb16">
+	      					<img src="/theme_decor/static/src/img/image-gallary6.jpg" class="img img-fluid mx-auto"/>
+	      				</div>
+	      				<div class="col-md-6 col-lg-3 pt16 pb16">
+	      					<img src="/theme_decor/static/src/img/image-gallary7.jpg" class="img img-fluid mx-auto"/>
+	      				</div>
+	      				<div class="col-md-6 col-lg-3 pt16 pb16">
+	      					<img src="/theme_decor/static/src/img/image-gallary8.jpg" class="img img-fluid mx-auto"/>
+	      				</div>
+	      			</div>
+	      		</div>
+	      	</section>
+      	</section>
+	</template>
+</odoo>

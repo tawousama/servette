@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_ico_block_one" name="Icons Block One">
+		<section class="spa-service-row pt48 pb48">
+			<div class="container extended-container">
+				<div class="row service-section">
+					<div class="col-md-4 col-xl-4">
+						<div class="feature-box">
+							<div class="service-image text-center">
+								<span class="ti ti-truck fa-3x"/>
+							</div>
+							<div class="service-info">
+								<h5>SHIPPING POLICY</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id lacinia nulla.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-xl-4">
+						<div class="feature-box">
+							<div class="service-image text-center">
+								<span class="fa fa-shield fa-3x"/>
+							</div>
+							<div class="service-info">
+								<h5>SECURE PAYMENT</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id lacinia nulla.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 col-xl-4">
+						<div class="feature-box">
+							<div class="service-image text-center">
+								<span class="ti ti-shopping-cart fa-3x"/>
+							</div>
+							<div class="service-info">
+								<h5>EASY SHOPPING</h5>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id lacinia nulla.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

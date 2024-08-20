@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="s_call_to_action_three" name="Call To Action Three">
+			<div class="oe_structure"/>
+			<section class="solarhome-testimonial pt104 pb104 parallax s_parallax_is_fixed bg-black-75">
+				<span class="s_parallax_bg oe_img_bg" style="background-image: url('/theme_decor/static/src/img/solar_banner3.jpg'); background-position: 50% 0;"></span>
+				<div class="o_we_bg_filter bg-black-75"></div>
+				<div class="container">
+					<div class="mb48 text-center w-md-75 mx-md-auto">
+						<p><span class="fa ri ri-phone-fill fa-3x rounded rounded-circle text-white bg-primary"/></p>
+					<h6 class="mb-2 mt-4">Need More Information? Call To Our Experts For Free Consultation.</h6>
+						<h3 class="o_default_snippet_text mb-5"><b>+1 (650) 691-3277</b></h3>
+						<p><a class="btn btn-primary btn-lg" href="#">Read More</a></p>
+					</div>
+				</div>
+			</section>
+			<div class="oe_structure"/>
+	</template>
+</odoo>

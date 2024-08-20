@@ -1,0 +1,86 @@
+.footer_theme_common7{
+	.footer-pricelist, .footer-language{
+		img{
+			border-radius: 50%;
+		}
+		a.dropdown-toggle{
+			&:after{
+			    font-family: 'remixicon' !important;
+			    border: 0;
+			    font-size: 12px;
+			    vertical-align: middle;
+			    content: '\ea4c';
+			}
+		}
+	}
+	.footer-section{
+		.footer-links{
+			h6{
+			    margin-bottom: 25px;
+			    font-weight: normal;
+			    font-size: 20px;
+			    color: $primary;
+			}
+			p{
+				a{
+					text-decoration: none;
+					color: #0b033f;
+					transition: 0.2s;
+					-webkit-transition: 0.2s;
+					&:hover{
+						color: $primary;
+					}
+				}
+			    font-weight: normal;
+			    font-size: 16px;
+			    line-height: 1.7;
+			    margin-bottom: 7px;
+			}
+		    margin: 0 30px;
+		}
+		.horizontal-link{
+			a{
+				font-weight: normal;
+			    font-size: 16px;
+			    line-height: 1.7;
+			    margin: 0 15px;
+				text-decoration: none;
+				color: #0b033f;
+				transition: 0.2s;
+				-webkit-transition: 0.2s;
+				&:hover{
+					color: $primary;
+				}
+			}
+		}
+		background-color: rgba($primary,0.2);
+	}
+	.copyright-section{
+		p{
+			font-weight: normal;
+		    font-size: 16px;
+		    line-height: 1.7;
+	        color: #0b033f;
+	        margin: 0;
+		}
+		background-color: rgba($primary,0.2);
+		border-top: 1px solid rgba(255,255,255,0.3);
+	}
+	@media (max-width: 767.98px) {
+		.copyright-section{
+			padding-bottom: 83px !important;
+		}
+		.footer-section{
+			.footer-links{
+				margin: 0;
+			}
+		}
+	}
+	@media (min-width: 768px) and (max-width: 1199.98px) {
+		.footer-section{
+			.footer-links{
+				margin: 0;
+			}
+		}
+	}
+}

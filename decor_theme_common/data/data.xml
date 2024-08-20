@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <record id="record_product_per_page_count_bizople_20" model="product.per.page.count.bizople">
+            <field name="name">20</field>
+            <field name="default_active_count">True</field>
+        </record>
+        <record id="record_product_per_page_count_bizople_30" model="product.per.page.count.bizople">
+            <field name="name">30</field>
+        </record>
+        <record id="record_product_per_page_count_bizople_40" model="product.per.page.count.bizople">
+            <field name="name">40</field>
+        </record>
+        <record id="record_product_per_page_count_bizople_50" model="product.per.page.count.bizople">
+            <field name="name">50</field>
+        </record>
+        <record id="record_product_per_page_bizople" model="product.per.page.bizople">
+            <field name="name">Show</field>
+            <field eval="[(6, 0, [ref('record_product_per_page_count_bizople_20'), 
+            ref('record_product_per_page_count_bizople_30'),
+            ref('record_product_per_page_count_bizople_40'),
+            ref('record_product_per_page_count_bizople_50')])]" name="prod_count_ids"/>
+        </record>
+    </data>
+
+    <data noupdate="1">
+        <record id="website_default_image" model="res.config.settings">
+            <field name="infinite_load_image" type="base64" file="decor_theme_common/static/src/img/infinity-image.gif" />
+            <field name="shop_page_banner_image" type="base64" file="decor_theme_common/static/src/img/login-banner.jpg" />
+            <field name="login_page_banner_image" type="base64" file="decor_theme_common/static/src/img/login-banner.jpg" />
+            <field name="login_popup_image" type="base64" file="decor_theme_common/static/src/img/loginpopup.jpg" />
+            <field name="lazy_load_image" type="base64" file="decor_theme_common/static/src/img/infinity-image.gif" />
+        </record>
+    </data>
+</odoo>
+

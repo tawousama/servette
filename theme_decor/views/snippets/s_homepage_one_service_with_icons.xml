@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="s_homepage_one_service_with_icons" name="Services with Icons">
+      	<div class="oe_structure"/>
+      	
+      	<section class="s_decor_second pt56 pb56">
+	    	<div class="container">
+	    		<div class="row align-items-center">
+	    			<div class="col-md-6">
+	    				<div class="text">
+	    					<h4 class="title pb16"><b>Our Best Service</b></h4>
+	    					<p class="paragraph">These are list of some services provide by us.Lorem ipsum dolor sit amet,consectetur adipiscing elit.</p>
+	    				</div>
+	    				
+	    			</div>
+	    			<div class="col-md-6">
+	    				<div class="row icons gx-0">
+	    					<div class="col-md-3 d-flex align-items-center text-center">
+	    						<div class="w-100">
+	    							<div class="icon_outer">
+				    					<span class="icon ri ri-plane-line fa-3x rounded-circle bg-transparent"></span>
+				    				</div>
+	    						</div>
+	    						<div class="divider"></div>
+	    					</div>
+	    					<div class="col-md-3 d-flex align-items-center text-center">
+			    				<div class="w-100">
+			    					<div class="icon_outer">
+				    					<span class="icon ri ri-gift-line fa-3x rounded-circle bg-transparent"></span>
+				    				</div>
+			    				</div>
+	    						<div class="divider"></div>
+	    					</div>
+	    					<div class="col-md-3 d-flex align-items-center text-center">
+			    				<div class="w-100">
+			    					<div class="icon_outer">
+				    					<span class="icon ri ri-phone-line fa-3x rounded-circle bg-transparent"></span>
+				    				</div>
+			    				</div>
+	    						<div class="divider"></div>
+	    					</div>
+	    					<div class="col-md-3 d-flex align-items-center text-center">
+			    				<div class="w-100">
+			    					<div class="icon_outer">
+				    					<span class="icon ri ri-funds-line fa-3x rounded-circle bg-transparent"></span>
+				    				</div>
+			    				</div>
+	    					</div>
+	    				</div>
+	    			</div>
+
+	    		</div>
+	    	</div>
+	    </section>
+					    
+      	<div class="oe_structure"/>
+	</template>
+</odoo>

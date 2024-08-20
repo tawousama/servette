@@ -1,0 +1,73 @@
+.btn.btn-bizople_button_1 {
+    letter-spacing: 0;
+    transition: all 280ms ease-in-out;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    padding: 0 !important;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.btn-bizople_button_1:hover,
+.btn-bizople_button_1:active {
+  letter-spacing: 5px;
+  background-color: transparent !important;
+  border-color: transparent !important;
+}
+
+.btn-bizople_button_1:after,
+.btn-bizople_button_1:before {
+  backface-visibility: hidden;
+  border: 1px solid transparent !important;
+  bottom: 0px;
+  content: " ";
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  transition: all 280ms ease-in-out;
+  width: 0;
+}
+
+.btn-bizople_button_1:hover:after,
+.btn-bizople_button_1:hover:before {
+  backface-visibility: hidden;
+  border-color: #fff;
+  transition: width 350ms ease-in-out;
+  width: 100%;
+}
+
+.btn-bizople_button_1:hover:before {
+  bottom: auto;
+  top: 0;
+  width: 100%;
+}
+
+
+/*::::::::::::::::::::::::::::::::: Colors ::::::::::::::::::::::::::::::::::::::*/
+
+/*:::::::::::::::::::::: btn-secondary and btn-outline-secondary ::::::::::::::::::::*/
+
+.btn-bizople_button_1.btn-secondary, .btn-bizople_button_1.btn-outline-secondary{
+  color: $secondary !important;
+}
+
+.btn-bizople_button_1.btn-secondary:hover:after,
+.btn-bizople_button_1.btn-secondary:hover:before,
+.btn-bizople_button_1.btn-outline-secondary:hover:after,
+.btn-bizople_button_1.btn-outline-secondary:hover:before {
+  border-color: $secondary !important;
+}
+
+/*:::::::::::::::::::::: btn-primary and btn-outline-primary ::::::::::::::::::::*/
+
+.btn-bizople_button_1.btn-primary, .btn-bizople_button_1.btn-outline-primary {
+  color: $primary !important;
+}
+
+.btn-bizople_button_1.btn-primary:hover:after,
+.btn-bizople_button_1.btn-primary:hover:before,
+.btn-bizople_button_1.btn-outline-primary:hover:after,
+.btn-bizople_button_1.btn-outline-primary:hover:before{
+  border-color: $primary !important;
+}

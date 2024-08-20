@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="theme_decor_header6" inherit_id="website.layout" name="Header Six" active="False">
+		<xpath expr="//header" position="attributes">
+			<attribute name="t-attf-class" add="decor-header" separator=" "></attribute>
+		</xpath>
+		<xpath expr="//header//nav" position="replace">
+			<nav data-name="Navbar" id="decor-header6" t-attf-class="decor-header6">
+				<div class="top-header d-none d-lg-block">
+					<div class="container-fluid">
+						<div class="row justify-content-center">
+							<div class="col-md-12 col-xl-9">
+								<div class="row align-items-center">
+									<div class="col-md-7 col-lg-8">
+										<div class="left_content">
+											<ul class="nav navbar-nav flex-row justify-content-md-start">
+												<li class="nav-item">
+													<span>Email:</span>
+													<a href="#"><span t-out="res_company.email"/></a>
+												</li>
+												<li class="nav-item d-none d-lg-inline-block">
+													<span>Today's Deal:</span><span class="m-0">Sale Upto 50% OFF</span>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="col-md-5 col-lg-4">
+										<div class="right_content">
+											<ul class="nav navbar-nav flex-row justify-content-md-end align-items-center">
+												<li class="nav-item">
+													<a class="nav-link" href="/my/orders">Orders</a>
+												</li>
+												<li class="nav-item">
+													<t t-call="theme_decor.placeholder_decor_header_pricelist"/>
+												</li>
+
+												<li class="mb0 list-inline text-center">
+													<t t-call="website.placeholder_header_language_selector">
+														<t t-set="_div_classes" t-valuef="my-auto ms-0 menu_language"/>dropdown-toggle
+													</t>
+										        </li>
+												
+											</ul>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="middle-header py-2 py-lg-3">
+					<div class="container-fluid">
+						<div class="row justify-content-center">
+							<div class="col-md-12 col-xl-9">
+								<div class="row align-items-center">
+									<div class="col-lg-3 d-flex d-lg-block mbl-div">
+										<div class="mobile-sidebar-toggle d-block d-lg-none">
+											<button type="button" id="show-sidebar" class="btn btn-md">
+												<span class="ti ti-view-grid text-secondary"></span>
+											</button>
+										</div>
+										<div class="decor-logo text-center text-md-start mx-auto mx-lg-0">
+											<a href="/" class="navbar-brand logo m-0">
+									            <span t-field="website.logo" t-options="{'widget': 'image'}" role="img" t-att-aria-label="'Logo of %s' % website.name" t-att-title="website.name" />
+									        </a>
+										</div>
+										<t t-call="theme_decor.decor_header_mobile_cart"/>
+									</div>
+									<div class="col-md-6 d-none d-lg-block">
+										<div class="bizople-search">
+											<div class="search">
+												<t t-call="theme_decor.desktop_search_bar" />
+											</div>
+										</div>
+									</div>
+									<div class="col-md-3 text-end right_icons d-none d-lg-flex align-items-center">
+										<t t-call="theme_decor.theme_decor_signin_main_template">
+											<t t-set="_myaccount_class" t-value="'d-inline-block align-items-center ms-auto align-middle'"/>
+											<t t-set="_icon" t-value="True"/>
+											<t t-set="_text" t-value="False"/>
+										</t>
+										<div class="bizople-add-to-cart cart d-inline-block align-middle me-3">
+											<!-- <t t-if="is_view_active('website_sale.products_add_to_cart')"> -->
+											<t t-set="website_sale_order" t-value="website.sale_get_order()" />
+											<t t-call="website_sale.header_cart_link">
+												<t t-set="_icon" t-value="True"/>
+												<t t-set="_icon_color" t-value="'text-secondary'"/>
+												<t t-set="_item_class" t-value="'nav-item'"/>
+												<t t-set="_link_class" t-value="'nav-link'"/>
+											</t>
+									        <!-- </t> -->
+										</div>
+										<div class="wishlist d-inline-block align-middle">
+											<!-- <t t-if="is_view_active('website_sale_wishlist.add_to_wishlist')"> -->
+												<t t-call="website_sale_wishlist.header_wishlist_link">
+									                <t t-set="_icon" t-value="True"/>
+									                <t t-set="_icon_color" t-value="'text-secondary'"/>
+									                <t t-set="_item_class" t-value="'nav-item'"/>
+									                <t t-set="_link_class" t-value="'nav-link'"/>
+									            </t>
+											<!-- </t> -->
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bottom-header d-none d-lg-block">
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-md-12 col-xl-12">
+								<div class="row align-items-center bg-primary m-0">
+									<div class="col-md-3 p-md-0">
+										<div class="product-category">
+											
+										</div>
+									</div>
+									<div class="col-md-7 col d-none d-md-block">
+										<nav class="navbar navbar-expand-md p-0" id="bizople-header-six">
+											<div class="collapse navbar-collapse" id="header6-menuitem">
+												<ul class="nav navbar-nav" id="top_menu">
+													<t t-foreach="website.menu_id.child_id" t-as="submenu">
+														<t t-call="website.submenu">
+															<t t-set="item_class" t-value="'nav-item'" />
+															<t t-set="link_class" t-value="'nav-link'" />
+														</t>
+													</t>
+												</ul>
+											</div>
+										</nav>
+									</div>
+									<div class="col-md-2 d-none d-md-block pe-0">
+										<t t-set="aut_assign_categs"
+											t-value="website.get_auto_assign_category()" />
+										<t t-set="categ_count" t-value="1"></t>
+							
+										<t t-foreach="aut_assign_categs" t-as="aut_assign_categ" t-if="categ_count == 1">
+											<t t-set="categ_count" t-value="categ_count + 1"></t>
+											<div class="auto_assign_categ text-end bg-primary pe-3">
+												<a class="categ_link text-white" t-att-href="'/shop/category/%s' % slug(aut_assign_categ)">
+													<span class="icofont icofont-sale-discount me-1"></span>
+													<span t-field="aut_assign_categ.name" />
+												</a>
+											</div>
+										</t>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- <t t-call="theme_decor.bizople_mbl_side_bar"/> -->
+				<!-- <t t-call="theme_decor.bizople_mbl_category_bar"/> -->
+			</nav>
+		</xpath>
+		<xpath expr="//header" position="before">
+			<div class="d-block d-md-none">
+				<t t-call="theme_decor.bizople_mobile_bottom_icon_bar"/>
+			</div>
+			<t t-call="theme_decor.bizople_mbl_category_bar"/>
+			<t t-call="theme_decor.search_popup"/>
+		</xpath>
+	</template>
+
+	<template id="header6_product_category" inherit_id="theme_decor.theme_decor_header6" name="Show Header Product Category">
+		<xpath expr="//div[hasclass('product-category')]" postion="inside">
+	        <div class="dropdown dropup">
+	            <a href="#" class="dropdown-btn text-white dropdown-toggle nav-link" data-bs-toggle="dropdown">
+	                <span class="fa fa-bars me-2"/>
+	                <span class="d-none d-md-inline-block"><span class="d-none d-xl-inline-block">Shop By </span> <span>CATEGORIES</span></span>
+	            </a>
+	            <ul class="dropdown-menu decor-header-category" id="mbl-target">
+	                <t t-set="categories" t-value="website.get_categories() if website else None"/>
+	                <t t-if="categories">
+	                    <t t-foreach="categories['categories']" t-as="categ">
+	                          	<t t-call="theme_decor.menu_categories_recursive"/>
+	                    </t>
+	                </t>
+	            </ul>
+	        </div>
+	    </xpath>
+    </template>
+
+</odoo>

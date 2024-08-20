@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="s_clients_four" name="Clients Four">
+      	<div class="oe_structure"/>
+      	<section class="s_references solarhome-references pt104 pb104 o_colored_level" data-snippet="s_references" data-name="References">
+      		<div class="container s_allow_columns">
+	          	<div class="mb48 text-center w-md-75 mx-md-auto">
+	            	<p class="mb-2 text-primary"><b>OUR CLIENTS</b></p>
+	              	<h3 class="o_default_snippet_text"><b>Happy <span class="text-primary">Clients</span> We have worked with</b></h3>
+	              	<p class="my-2 o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+              	</div>
+	        </div>
+	        <div class="container">
+	          	<div class="row">
+	            	<div class="pb24 text-center o_colored_level col-md-3">
+	            		<div class="image-box border p-4 border-o-color-3 rounded-lg">
+		              		<img src="/web/image/website.s_reference_demo_image_1" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="411" data-original-src="/website/static/src/img/snippets_demo/s_references_1.png" data-mimetype="image/png"/>
+		            	</div>
+		            </div>
+	            	<div class="pb24 text-center o_colored_level col-md-3">
+	            		<div class="image-box border p-4 border-o-color-3 rounded-lg">
+		              		<img src="/web/image/website.s_reference_demo_image_2" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="412" data-original-src="/website/static/src/img/snippets_demo/s_references_2.png" data-mimetype="image/png"/>
+		              	</div>
+	            	</div>
+	            	<div class="pb24 text-center o_colored_level col-md-3">
+	            		<div class="image-box border p-4 border-o-color-3 rounded-lg">
+		              		<img src="/web/image/website.s_reference_demo_image_3" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="413" data-original-src="/website/static/src/img/snippets_demo/s_references_3.png" data-mimetype="image/png" data-original-title="" title="" aria-describedby="tooltip801423"/>
+		              	</div>
+	            	</div>
+	            	<div class="pb24 text-center o_colored_level col-md-3">
+	            		<div class="image-box border p-4 border-o-color-3 rounded-lg">
+		              		<img src="/web/image/website.s_reference_demo_image_4" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="413" data-original-src="/website/static/src/img/snippets_demo/s_references_4.png" data-mimetype="image/png" data-original-title="" title="" aria-describedby="tooltip801423"/>
+		              	</div>
+	            	</div>
+	            	<div class="pb24 text-center o_colored_level col-md-3">
+	            		<div class="image-box border p-4 border-o-color-3 rounded-lg">
+		              		<img src="/web/image/website.s_reference_demo_image_5" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="413" data-original-src="/website/static/src/img/snippets_demo/s_references_5.png" data-mimetype="image/png" data-original-title="" title="" aria-describedby="tooltip801423"/>
+		              	</div>
+	            	</div>
+	            	<div class="pb24 text-center o_colored_level col-md-3">
+	            		<div class="image-box border p-4 border-o-color-3 rounded-lg">
+		              		<img src="/web/image/website.s_reference_default_image_6" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="413" data-original-src="/website/static/src/img/snippets_demo/s_references_6.png" data-mimetype="image/png" data-original-title="" title="" aria-describedby="tooltip801423"/>
+		              	</div>
+	            	</div>
+	            	<div class="pb24 text-center o_colored_level col-md-3">
+	            		<div class="image-box border p-4 border-o-color-3 rounded-lg">
+		              		<img src="/web/image/website.s_reference_demo_image_1" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="413" data-original-src="/website/static/src/img/snippets_demo/s_references_1.png" data-mimetype="image/png" data-original-title="" title="" aria-describedby="tooltip801423"/>
+		              	</div>
+	            	</div>
+	            	<div class="pb24 text-center o_colored_level col-md-3">
+	            		<div class="image-box border p-4 border-o-color-3 rounded-lg">
+		              		<img src="/web/image/website.s_reference_demo_image_2" class="img img-fluid mx-auto" alt="" loading="lazy" data-original-id="414" data-original-src="/website/static/src/img/snippets_demo/s_references_2.png" data-mimetype="image/png"/>
+		              	</div>
+	            	</div>
+	          	</div>
+	        </div>
+      	</section>
+      	<div class="oe_structure"/>
+	</template>
+</odoo>

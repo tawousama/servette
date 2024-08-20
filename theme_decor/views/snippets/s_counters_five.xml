@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="s_counters_five" name="Counters Five">
+      	<div class="oe_structure"/>
+
+      	<section class="s_parallax o_colored_level s_parallax_no_overflow_hidden oe_img_bg " data-scroll-background-ratio="0" data-snippet="s_parallax" data-name="Parallax" style="background-image: url(&quot;/theme_decor/static/src/img/home-counterbg.jpg&quot;); background-position: center;">
+			<div class="oe_structure oe_empty" data-editor-message="DRAG BUILDING BLOCKS HERE">
+				<section class="s_numbers pt80 pb80 o_colored_level undefined" data-snippet="s_numbers" data-name="Numbers" style="">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-6 col-lg-3 mt-3 mt-md-0 text-center o_colored_level">
+								<span class="ri ri-attachment-line fa-4x text-primary s_number o_default_snippet_text"/>
+								<h5 class="o_default_snippet_text">450 + Projects Completed</h5>
+							</div>
+							<div class="col-md-6 col-lg-3 mt-3 mt-md-0 text-center o_colored_level">
+								<span class="ri ri-team-line fa-4x text-primary s_number o_default_snippet_text"/>
+								<h5 class="o_default_snippet_text">560 + Trusted Clients</h5>
+							</div>
+							<div class="col-md-6 col-lg-3 mt-3 mt-lg-0 text-center o_colored_level">
+								<span class="ri ri-hand-coin-line fa-4x text-primary s_number o_default_snippet_text"/>
+								<h5 class="o_default_snippet_text">100 % Work Satisfaction</h5>
+							</div>
+							<div class="col-md-6 col-lg-3 mt-3 mt-lg-0 text-center o_colored_level">
+								<span class="ri ri-bar-chart-line fa-4x text-primary s_number o_default_snippet_text"/>
+								<h5 class="o_default_snippet_text">3 Million Revenue</h5>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</section>
+      	
+      	<div class="oe_structure"/>
+	</template>
+</odoo>

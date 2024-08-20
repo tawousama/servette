@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="s_counters_one" name="Counters One">
+		
+		<!-- Achievement Page Start -->
+			<section class="achievement-page pb-120 pt-120 s_numbers" data-snippet="s_numbers" data-name="Numbers" id="achievement_page">
+				<div class="container py-5 mt-lg-4">
+					<h3 class="heading text-secondary text-center text-uppercase">Our achievements in numbers</h3>
+					<div class="row s_nb_column_fixed align-items-center">
+						<div class="col-lg-3 col-md-6 col-sm-6 count-box counter-box">
+							<section class="item bg-primary">
+								<h3><center class="count-text counter">134</center></h3>
+								<h5>Projects done</h5>
+							</section>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 count-box counter-box">
+							<section class="item bg-info">
+								<h3><center class="count-text counter">27</center></h3>
+								<h5>Experts</h5>
+							</section>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 count-box counter-box">
+							<section class="item bg-warning">
+								<h3><center class="count-text counter">27</center></h3>
+								<h5>Experts</h5>
+							</section>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 count-box counter-box">
+							<section class="item bg-success">
+								<h3><center class="count-text counter">534</center></h3>
+								<h5>Loyal Members</h5>
+							</section>
+						</div>
+					</div>
+				</div>
+			</section>
+		<!-- Achievement Page End -->
+					
+	</template>
+</odoo>

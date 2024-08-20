@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_homepage_two_history" name="Our History">
+		<section class="furniture-history mx-0 mx-xl-5">
+			<div class="container-fluid">
+				<div class="row align-items-center">
+					<div class="col-xl-4 col-lg-6 my-4 my-lg-0 offset-xl-1">
+						<div class="history-content">
+							<h1 class="title">Our History</h1>
+							<p class="text1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ornare purus sit amet sapien condimentum maximus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+							<p class="text2">Nulla bibendum nunc purus, eu pretium justo fringilla vitae. Curabitur suscipit mauris gravida nunc ultrices posuere et id enim. Aliquam dui ligula, pellentesque in rhoncus finibus, efficitur a nunc. Sed lobortis gravida magna quis hendrerit. Etiam lectus enim, aliquet non tempus vel, dapibus ut magna.</p>
+						</div>
+					</div>
+					<div class="col-lg-6 offset-xl-1 mb-4 mb-lg-0 pe-lg-0">
+						<div class="history-image">
+							<a href="#">
+								<img src="/theme_decor/static/src/img/furniture-history.jpg" class="img img-fluid"/>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

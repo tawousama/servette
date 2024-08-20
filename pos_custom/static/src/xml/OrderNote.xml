@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+
+    <t t-name="OrderWidget" t-inherit="point_of_sale.OrderWidget" t-inherit-mode="extension" owl="1">
+        <xpath expr="//div[hasclass('order')]" position="after">
+            <div class="order-note">
+                <div class="order-note-label">
+                    <label>Note</label>
+                </div>
+                <textarea t-on-change="captureChange()" t-value="order.note"/>
+            </div>
+        </xpath>
+    </t>
+ </templates>

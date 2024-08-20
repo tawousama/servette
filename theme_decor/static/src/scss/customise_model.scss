@@ -1,0 +1,118 @@
+.modal.o_theme_customize_modal  {
+	.modal-dialog.modal-lg{
+	    padding: 0;
+	    right: -100%;
+	    transition: 0.3s;
+	    -webkit-transition: 0.3s;
+	}
+	.modal-content{
+	    height: 100%;
+        background-color: #FFFFFF !important;
+	    box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.15) !important;
+	    border: 0 !important;
+	}
+	.o_theme_customize_option > img + label {
+   	 position: relative !important;
+	}
+
+	.o_theme_customize_option_list{
+		box-shadow: unset !important;
+	}
+	.o_theme_customize_option:not(.dropdown-item){
+		background-color: transparent !important;
+	    padding: 0;
+	    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1) !important;
+	    margin-bottom: 15px !important;
+	    border-radius: 4px;
+	}
+
+	.o_theme_customize_option{
+		label{
+			.o_theme_customize_color{
+			    width: 30px;
+			    height: 30px;
+			    margin-left: auto;
+			    border-radius: 50%;
+			    &:after, &:before{
+			    	border-radius: 50%;
+			    }
+			}
+			background-color: #ffffff !important;
+    		padding: 15px 8px !important;
+		}
+	}
+	.dropdown-item.active, .dropdown-item:active {
+		color: #1b1b1b !important;
+	}
+
+	.o_theme_customize_option:not(.dropdown-item) label.checked {
+		span{
+		    padding: 0 5px 5px;
+		}
+        border-color: transparent;
+    	color: #1b1b1b;
+    	&:after{
+    		display: none;
+    	}
+	}
+	.modal-content {
+		.modal-body{
+			li.nav-item.mb-1{
+				.nav-link{
+					transition: 0.3s;
+					-webkit-transition: 0.3s;
+				    background-color: white !important;
+				    border: 0 !important;
+				    display: inline-block;
+				    margin-left: 15px;
+				    padding: 0 5px;
+				    border-bottom: 1px solid transparent !important;
+				    &:hover{
+				    	color: #1b1b1b !important;
+						border-color: #1b1b1b !important;
+				    }
+				}
+				.nav-link.active{
+					color: #1b1b1b !important;
+					border-color: #1b1b1b !important;
+				}
+			    background-color: transparent !important;
+			    padding: 8px 0;
+			    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1) !important;
+			    margin-bottom: 15px !important;
+			    border-radius: 4px;
+			}
+		}
+    	min-height: 559px !important;
+	}
+	
+	.modal-header {
+		h4{
+			span{
+				margin: 0;
+			}
+		    color: #1b1b1b;
+		    border-bottom: 2px solid #1b1b1b;
+		    text-align: center;
+		    padding: 0 10px;
+		}
+		button.close{
+		    color: #1b1b1b;
+		    font-size: 30px;
+		    opacity: 1;
+		}
+	    background-color: white !important;
+	    border: 0;
+	    border-bottom: 1px solid #e2e2e2;
+	}
+}
+
+.modal.o_theme_customize_modal.show  {
+	.modal-dialog.modal-lg{
+	    right: 0;
+	}
+}
+
+.o_gradient_beta {
+	background: linear-gradient(130deg, #5B899E 30%, #00A09D 100%) !important;
+ }

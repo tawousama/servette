@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="s_banner_with_breadcrumbs" name="Banner with Breadcrumbs">
+		<section class="s_banner_with_breadcrumbs shop-page-banner s_parallax parallax s_parallax_is_fixed bg-black-50 pt80 pb80 o_colored_level" data-scroll-background-ratio="1" data-snippet="s_parallax" data-name="Parallax">
+			<span class="s_parallax_bg oe_img_bg" style="background-image: url('/theme_decor/static/src/img/login-banner.jpg'); background-position: center;"/>
+			<div class="o_we_bg_filter bg-black-50"/>
+			<div class="oe_structure oe_empty"/>
+			<div class="container">
+				<div class="banner-header text-center justify-content-center">
+					<h1 class="mb-2 fw-bold">Our Outlets</h1>
+					<ol class="breadcrumb justify-content-center">
+						<li class="breadcrumb-item">
+							<a class="text-white" href="/">Home</a>
+						</li>
+						<li class="breadcrumb-item active">
+							<span class="text-primary">Outlet</span>
+						</li>
+					</ol>
+				</div>
+			</div>
+		</section>
+	</template>
+</odoo>

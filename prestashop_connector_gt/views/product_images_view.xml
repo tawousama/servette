@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_product_image_form" model="ir.ui.view">
+            <field name="name">product.images.form</field>
+            <field name="model">gt.prestashop.product.images</field>
+            <field name="type">form</field>
+            <field name="arch" type="xml">
+                <form string="Product Images">
+                    <sheet>
+                        <notebook>
+                            <page string="Image">
+                                <group col="3">
+                                    <field name="name"  />
+                                    <field name="extention"  />
+                                    <field name="link"/>
+                                </group>
+                                <group>
+                                    <field name="file_db_store" widget="image" filename="name" attrs="{'readonly':[('link','==',0)]}"/>
+                                </group>
+                                <group attrs="{'invisible':[('link','=',False)]}" colspan="4">
+                                    <separator string="File Location and Preview (Only when saved)" colspan="4"/>
+                                    <field name="url" widget="url"  attrs="{'required' :[('link','=',True)],}"/>
+                                </group>
+                                <field name="file" widget="image" filename="name" attrs="{'readonly':[('link','!=',0)],'invisible':[('link','=',False)]}"/>
+                            </page>
+                            <page string="Comments">
+                                <field name="comments" />
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record id="view_product_image_tree" model="ir.ui.view">
+            <field name="name">product.images.tree</field>
+            <field name="model">gt.prestashop.product.images</field>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <tree string="Product Images" >
+                    <field name="name" select="1" />
+                    <field name="comments" select="2" />
+                    <field name="image" widget="image" invisible="1"/>
+                    <field name="file_db_store" widget="image"/>
+                </tree>
+            </field>
+        </record>
+
+    </data>
+</odoo>

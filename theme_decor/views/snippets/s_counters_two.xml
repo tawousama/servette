@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="s_counters_two" name="Counters Two">
+      	<div class="oe_structure"/>
+      	<section class="s_numbers pt24 pb24 o_colored_level bg-o-color-2" data-snippet="s_numbers" data-name="Numbers">
+	        <div class="container">
+	          <div class="row">
+	            <div class="col-md-6 col-lg-3 pt24 pb24 o_colored_level">
+	            	<div class="d-flex align-items-center">
+	            		<div class="icon-box">
+	            			<span class="bg-transparent fa fa-4x ri ri-checkbox-multiple-fill rounded text-primary"></span>
+	            		</div>
+	            		<div class="content-box">
+	            			<h3 class="s_number o_default_snippet_text"><b>900+</b></h3>
+	              			<p class="text-primary o_default_snippet_text">PROJECT DONE</p>
+	            		</div>
+	            	</div>
+	            </div>
+	            <div class="col-md-6 col-lg-3 pt24 pb24 o_colored_level pt-3 pt-md-0">
+	            	<div class="d-flex align-items-center">
+	            		<div class="icon-box">
+	            			<span class="bg-transparent fa fa-4x ri ri-team-fill rounded text-primary"></span>
+	            		</div>
+	            		<div class="content-box">
+	            			<h3 class="s_number o_default_snippet_text"><b>1200+</b></h3>
+	              			<p class="text-primary o_default_snippet_text">HAPPY CLIENTS</p>
+	            		</div>
+	            	</div>
+	            </div>
+	            <div class="col-md-6 col-lg-3 pt24 pb24 o_colored_level pt-3 pt-lg-0">
+	            	<div class="d-flex align-items-center">
+	            		<div class="icon-box">
+	            			<span class="bg-transparent fa fa-4x ri ri-award-fill rounded text-primary"></span>
+	            		</div>
+	            		<div class="content-box">
+	            			<h3 class="s_number o_default_snippet_text"><b>500+</b></h3>
+	              			<p class="text-primary o_default_snippet_text">AWARD WINNING</p>
+	            		</div>
+	            	</div>
+	            </div>
+	            <div class="col-md-6 col-lg-3 pt24 pb24 o_colored_level pt-3 pt-lg-0">
+	            	<div class="d-flex align-items-center">
+	            		<div class="icon-box">
+	            			<span class="bg-transparent fa fa-4x ri ri-star-smile-fill rounded text-primary"></span>
+	            		</div>
+	            		<div class="content-box">
+	            			<h3 class="s_number o_default_snippet_text"><b>675+</b></h3>
+	              			<p class="text-primary o_default_snippet_text">RATING CUSTOMER</p>
+	            		</div>
+	            	</div>
+	            </div>
+	          </div>
+	        </div>
+      	</section>
+      	<div class="oe_structure"/>
+	</template>
+</odoo>

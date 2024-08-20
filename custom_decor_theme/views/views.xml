@@ -1,0 +1,62 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+      <record id="ecomm_product_template_form_view" model="ir.ui.view">
+            <field name="name">ecomm.product.template.common.form</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_only_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='default_code']" position="after">
+                        <field name="video"/>
+                </xpath>
+            </field>
+        </record>
+
+
+        <record id="ecomm_product_product_form_view" model="ir.ui.view">
+            <field name="name">ecomm.product.product.common.form</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_variant_easy_edit_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='id']" position="before">
+                    <xpath expr="//field[@name='default_code']" position="after">
+                        <field name="video"/>
+                </xpath>
+                </xpath>
+            </field>
+        </record>
+
+      <record id="ecomm_product_template_form_view_inherit" model="ir.ui.view">
+            <field name="name">ecomm.product.template.form</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="website_sale.product_template_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='alternative_product_ids']" position="after">
+                        <field name="spec_technique"/>
+                        <field name="description_courte"/>
+                </xpath>
+            </field>
+      </record>
+
+
+      <record id="crm_lead_view_form" model="ir.ui.view">
+        <field name="name">crm.lead.form.lead</field>
+        <field name="model">crm.lead</field>
+        <field name="inherit_id" ref="crm.crm_lead_view_form" />
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='opportunity_partner']/label[@for='email_from']" position="before">
+
+                <label for="produits" class="oe_inline"/>
+                <div class="o_row o_row_readonly">
+                    
+                    <field name="produits" id="produits" widget="many2many_tags"/>
+
+                </div>
+                
+            </xpath>
+           
+        </field>
+    </record>
+
+  </data>
+</odoo>

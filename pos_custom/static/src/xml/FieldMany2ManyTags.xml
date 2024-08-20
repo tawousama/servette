@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-name="pos_custom.FieldMany2ManyTags" owl="1">
+        <div class="pos_field_many2manytags">
+            <t t-foreach="value" t-as="tag_id" t-key="tag_id">
+                <t t-set="tag" t-value="tags[tag_id]"/>
+                <t t-set="color" t-value="tag[colorField] || 0"/>
+                <t t-set="colornames" t-value="['No color', 'Red', 'Orange', 'Yellow', 'Light blue', 'Dark purple', 'Salmon pink', 'Medium blue', 'Dark blue', 'Fushia', 'Green', 'Purple']"/>
+                <div t-attf-class="badge badge-pill {{hasDropdown ? 'dropdown' : ''}} {{ 'o_tag_color_' + color}}"
+                     t-att-data-color="color" t-att-data-index="el_index" t-att-data-id="tag.id" t-attf-title="Tag color: {{colornames[color]}}">
+                    <t t-set="_badge_text">
+                        <span class="o_badge_text" t-att-title="tag.display_name"><span role="img" t-attf-aria-label="Tag color: {{colornames[color]}}"/><t t-esc="tag.display_name"/></span>
+                    </t>
+                    <t t-if="hasDropdown">
+                        <a role="button" href="#" class="dropdown-toggle o-no-caret" data-toggle="dropdown" aria-expanded="false">
+                            <t t-raw="_badge_text"/>
+                        </a>
+                    </t>
+                    <t t-else="">
+                        <t t-raw="_badge_text"/>
+                    </t>
+                    <a href="#" class="fa fa-times o_delete" title="Delete" aria-label="Delete" t-on-click="_onClickDeleteTag(tag_id)"/>
+                </div>
+            </t>
+<!--            <div class="" aria-atomic="true" name="category_id">-->
+<!--                <div class="o_input_dropdown">-->
+<!--                    <input type="text" class="tag_input" autocomplete="off" t-on-focusin="_showDropdown" t-on-input="_onChange" t-value="search"/>-->
+<!--                </div>-->
+<!--            </div>-->
+<!--            <ul t-if="state.showDropdown" class="tag_dropdown">-->
+<!--                <li t-foreach="state.tags_list" t-as="tag" t-key="tag.id" class="tag_dropdown-item" t-on-click="_onClickTag(tag.id)">-->
+<!--                    <a t-esc="tag.display_name"/>-->
+<!--                </li>-->
+<!--                <li t-if="create_new" class="tag_dropdown-item" t-on-click="_onClickCreateNewTag">-->
+<!--                    <span>Create "<b t-esc="search"/>"</span>-->
+<!--                </li>-->
+<!--                <li t-if="props.tags.length > 5" class="tag_dropdown-item">-->
+<!--                    <i>Start typing...</i>-->
+<!--                </li>-->
+<!--            </ul>-->
+        </div>
+
+    </t>
+</templates>

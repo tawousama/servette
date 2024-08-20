@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_homepage_two_service" name="Service">
+		<section class="furniture-features mx-0 mx-xl-5">
+			<div class="container-fluid">
+				<div class="row feature-row">
+					<div class="col-xl-3 col-lg-6 col-md-6">
+						<div class="feature-box d-flex">
+							<div class="service-image">
+								<span class="fa fa-flash"></span>
+							</div>
+							<div class="service-info">
+								<h2>Premium &amp; Luxurious</h2>
+								<p>Great from Italy</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-6 col-md-6">
+						<div class="feature-box d-flex">
+							<div class="service-image">
+								<span class="fa fa-rocket"></span>
+							</div>
+							<div class="service-info">
+								<h2>Free Shipping</h2>
+								<p>On order above $30</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-6 col-md-6">
+						<div class="feature-box d-flex">
+							<div class="service-image">
+								<span class="fa fa-headphones"></span>
+							</div>
+							<div class="service-info">
+								<h2>Customer Support</h2>
+								<p>24/7 available</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-6 col-md-6">
+						<div class="feature-box d-flex">
+							<div class="service-image">
+								<span class="fa fa-link"></span>
+							</div>
+							<div class="service-info">
+								<h2>Safe Payment</h2>
+								<p>100% money back</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

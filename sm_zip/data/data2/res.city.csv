@@ -1,0 +1,1989 @@
+id,name,state_id/.id,country_id/id
+city_ch_Lausanne_25,Lausanne 25,1386,base.ch
+city_ch_Lausanne_26,Lausanne 26,1386,base.ch
+city_ch_Lausanne_27,Lausanne 27,1386,base.ch
+city_ch_Lausanne,Lausanne,1386,base.ch
+city_ch_Prilly,Prilly,1386,base.ch
+city_ch_Jouxtens_Mezery,Jouxtens-Mézery,1386,base.ch
+city_ch_Pully,Pully,1386,base.ch
+city_ch_Renens_VD,Renens VD,1386,base.ch
+city_ch_Chavannes_pres_Renens,Chavannes-près-Renens,1386,base.ch
+city_ch_Crissier,Crissier,1386,base.ch
+city_ch_Ecublens_VD,Ecublens VD,1386,base.ch
+city_ch_St_Sulpice_VD,St-Sulpice VD,1386,base.ch
+city_ch_Denges,Denges,1386,base.ch
+city_ch_Echandens,Echandens,1386,base.ch
+city_ch_Lonay,Lonay,1386,base.ch
+city_ch_Preverenges,Préverenges,1386,base.ch
+city_ch_Villars_Ste_Croix,Villars-Ste-Croix,1386,base.ch
+city_ch_Bussigny,Bussigny,1386,base.ch
+city_ch_Mex_VD,Mex VD,1386,base.ch
+city_ch_Romanel_sur_Lausanne,Romanel-sur-Lausanne,1386,base.ch
+city_ch_Cheseaux_sur_Lausanne,Cheseaux-sur-Lausanne,1386,base.ch
+city_ch_Boussens,Boussens,1386,base.ch
+city_ch_Bournens,Bournens,1386,base.ch
+city_ch_Sullens,Sullens,1386,base.ch
+city_ch_Etagnieres,Etagnières,1386,base.ch
+city_ch_Bercher,Bercher,1386,base.ch
+city_ch_Echallens,Echallens,1386,base.ch
+city_ch_Villars_le_Terroir,Villars-le-Terroir,1386,base.ch
+city_ch_St_Barthelemy_VD,St-Barthélemy VD,1386,base.ch
+city_ch_Dommartin,Dommartin,1386,base.ch
+city_ch_Montaubion_Chardonney,Montaubion-Chardonney,1386,base.ch
+city_ch_Naz,Naz,1386,base.ch
+city_ch_Poliez_le_Grand,Poliez-le-Grand,1386,base.ch
+city_ch_Poliez_Pittet,Poliez-Pittet,1386,base.ch
+city_ch_Bottens,Bottens,1386,base.ch
+city_ch_Assens,Assens,1386,base.ch
+city_ch_Bioley_Orjulaz,Bioley-Orjulaz,1386,base.ch
+city_ch_Bettens,Bettens,1386,base.ch
+city_ch_Sugnens,Sugnens,1386,base.ch
+city_ch_Fey,Fey,1386,base.ch
+city_ch_Ogens,Ogens,1386,base.ch
+city_ch_Rueyres,Rueyres,1386,base.ch
+city_ch_Oppens,Oppens,1386,base.ch
+city_ch_Le_Mont_sur_Lausanne,Le Mont-sur-Lausanne,1386,base.ch
+city_ch_Cugy_VD,Cugy VD,1386,base.ch
+city_ch_Bretigny_sur_Morrens,Bretigny-sur-Morrens,1386,base.ch
+city_ch_Morrens_VD,Morrens VD,1386,base.ch
+city_ch_Froideville,Froideville,1386,base.ch
+city_ch_Villars_Tiercelin,Villars-Tiercelin,1386,base.ch
+city_ch_Peney_le_Jorat,Peney-le-Jorat,1386,base.ch
+city_ch_Villars_Mendraz,Villars-Mendraz,1386,base.ch
+city_ch_Sottens,Sottens,1386,base.ch
+city_ch_Chapelle_sur_Moudon,Chapelle-sur-Moudon,1386,base.ch
+city_ch_Martherenges,Martherenges,1386,base.ch
+city_ch_Boulens,Boulens,1386,base.ch
+city_ch_Peyres_Possens,Peyres-Possens,1386,base.ch
+city_ch_Epalinges,Epalinges,1386,base.ch
+city_ch_Les_Monts_de_Pully,Les Monts-de-Pully,1386,base.ch
+city_ch_Puidoux,Puidoux,1386,base.ch
+city_ch_Chexbres,Chexbres,1386,base.ch
+city_ch_Rivaz,Rivaz,1386,base.ch
+city_ch_St_Saphorin_(Lavaux),St-Saphorin (Lavaux),1386,base.ch
+city_ch_Forel_(Lavaux),Forel (Lavaux),1386,base.ch
+city_ch_Savigny,Savigny,1386,base.ch
+city_ch_Mollie_Margot,Mollie-Margot,1386,base.ch
+city_ch_Ferlens_VD,Ferlens VD,1386,base.ch
+city_ch_Servion,Servion,1386,base.ch
+city_ch_Essertes,Essertes,1386,base.ch
+city_ch_Les_Cullayes,Les Cullayes,1386,base.ch
+city_ch_Montpreveyres,Montpreveyres,1386,base.ch
+city_ch_Corcelles_le_Jorat,Corcelles-le-Jorat,1386,base.ch
+city_ch_Mezieres_VD,Mézières VD,1386,base.ch
+city_ch_Carrouge_VD,Carrouge VD,1386,base.ch
+city_ch_Vulliens,Vulliens,1386,base.ch
+city_ch_Ropraz,Ropraz,1386,base.ch
+city_ch_La_Croix_(Lutry),La Croix (Lutry),1386,base.ch
+city_ch_Grandvaux,Grandvaux,1386,base.ch
+city_ch_Aran,Aran,1386,base.ch
+city_ch_Chenaux,Chenaux,1386,base.ch
+city_ch_Belmont_sur_Lausanne,Belmont-sur-Lausanne,1386,base.ch
+city_ch_La_Conversion,La Conversion,1386,base.ch
+city_ch_Paudex,Paudex,1386,base.ch
+city_ch_Lutry,Lutry,1386,base.ch
+city_ch_Cully,Cully,1386,base.ch
+city_ch_Villette_(Lavaux),Villette (Lavaux),1386,base.ch
+city_ch_Riex,Riex,1386,base.ch
+city_ch_Epesses,Epesses,1386,base.ch
+city_ch_Morges,Morges,1386,base.ch
+city_ch_Echichens,Echichens,1386,base.ch
+city_ch_St_Saphorin_sur_Morges,St-Saphorin-sur-Morges,1386,base.ch
+city_ch_Colombier_VD,Colombier VD,1386,base.ch
+city_ch_Vullierens,Vullierens,1386,base.ch
+city_ch_Cottens_VD,Cottens VD,1386,base.ch
+city_ch_Grancy,Grancy,1386,base.ch
+city_ch_Bremblens,Bremblens,1386,base.ch
+city_ch_Romanel_sur_Morges,Romanel-sur-Morges,1386,base.ch
+city_ch_Aclens,Aclens,1386,base.ch
+city_ch_Gollion,Gollion,1386,base.ch
+city_ch_Monnaz,Monnaz,1386,base.ch
+city_ch_Vaux_sur_Morges,Vaux-sur-Morges,1386,base.ch
+city_ch_Clarmont,Clarmont,1386,base.ch
+city_ch_Reverolle,Reverolle,1386,base.ch
+city_ch_Tolochenaz,Tolochenaz,1386,base.ch
+city_ch_Lully_VD,Lully VD,1386,base.ch
+city_ch_Vufflens_le_Château,Vufflens-le-Château,1386,base.ch
+city_ch_Chigny,Chigny,1386,base.ch
+city_ch_Denens,Denens,1386,base.ch
+city_ch_Bussy_Chardonney,Bussy-Chardonney,1386,base.ch
+city_ch_Severy,Sévery,1386,base.ch
+city_ch_Pampigny,Pampigny,1386,base.ch
+city_ch_Apples,Apples,1386,base.ch
+city_ch_Ballens,Ballens,1386,base.ch
+city_ch_Biere,Bière,1386,base.ch
+city_ch_Mollens_VD,Mollens VD,1386,base.ch
+city_ch_Montricher,Montricher,1386,base.ch
+city_ch_L'Isle,L'Isle,1386,base.ch
+city_ch_Mauraz,Mauraz,1386,base.ch
+city_ch_Villars_Bozon,Villars-Bozon,1386,base.ch
+city_ch_Cuarnens,Cuarnens,1386,base.ch
+city_ch_Mont_la_Ville,Mont-la-Ville,1386,base.ch
+city_ch_La_Praz,La Praz,1386,base.ch
+city_ch_Chavannes_le_Veyron,Chavannes-le-Veyron,1386,base.ch
+city_ch_Moiry_VD,Moiry VD,1386,base.ch
+city_ch_La_Coudre,La Coudre,1386,base.ch
+city_ch_Berolle,Berolle,1386,base.ch
+city_ch_St_Prex,St-Prex,1386,base.ch
+city_ch_Etoy,Etoy,1386,base.ch
+city_ch_Buchillon,Buchillon,1386,base.ch
+city_ch_Allaman,Allaman,1386,base.ch
+city_ch_Perroy,Perroy,1386,base.ch
+city_ch_Lussy_sur_Morges,Lussy-sur-Morges,1386,base.ch
+city_ch_Villars_sous_Yens,Villars-sous-Yens,1386,base.ch
+city_ch_Yens,Yens,1386,base.ch
+city_ch_Aubonne,Aubonne,1386,base.ch
+city_ch_Bougy_Villars,Bougy-Villars,1386,base.ch
+city_ch_Fechy,Féchy,1386,base.ch
+city_ch_Montherod,Montherod,1386,base.ch
+city_ch_Pizy,Pizy,1386,base.ch
+city_ch_Lavigny,Lavigny,1386,base.ch
+city_ch_St_Livres,St-Livres,1386,base.ch
+city_ch_Rolle,Rolle,1386,base.ch
+city_ch_Tartegnin,Tartegnin,1386,base.ch
+city_ch_Gilly,Gilly,1386,base.ch
+city_ch_Bursins,Bursins,1386,base.ch
+city_ch_Luins,Luins,1386,base.ch
+city_ch_Vinzel,Vinzel,1386,base.ch
+city_ch_Mont_sur_Rolle,Mont-sur-Rolle,1386,base.ch
+city_ch_Essertines_sur_Rolle,Essertines-sur-Rolle,1386,base.ch
+city_ch_St_Oyens,St-Oyens,1386,base.ch
+city_ch_Gimel,Gimel,1386,base.ch
+city_ch_St_George,St-George,1386,base.ch
+city_ch_Saubraz,Saubraz,1386,base.ch
+city_ch_Dully,Dully,1386,base.ch
+city_ch_Bursinel,Bursinel,1386,base.ch
+city_ch_Gland,Gland,1386,base.ch
+city_ch_Prangins,Prangins,1386,base.ch
+city_ch_Geneve,Genève,1384,base.ch
+city_ch_Grand_Lancy,Grand-Lancy,1384,base.ch
+city_ch_Petit_Lancy,Petit-Lancy,1384,base.ch
+city_ch_Onex,Onex,1384,base.ch
+city_ch_Vernier,Vernier,1384,base.ch
+city_ch_Cointrin,Cointrin,1384,base.ch
+city_ch_Meyrin,Meyrin,1384,base.ch
+city_ch_Le_Grand_Saconnex,Le Grand-Saconnex,1384,base.ch
+city_ch_Le_Lignon,Le Lignon,1384,base.ch
+city_ch_Aïre,Aïre,1384,base.ch
+city_ch_Châtelaine,Châtelaine,1384,base.ch
+city_ch_Les_Avanchets,Les Avanchets,1384,base.ch
+city_ch_Vesenaz,Vésenaz,1384,base.ch
+city_ch_Cologny,Cologny,1384,base.ch
+city_ch_Chêne_Bougeries,Chêne-Bougeries,1384,base.ch
+city_ch_Chêne_Bourg,Chêne-Bourg,1384,base.ch
+city_ch_Thônex,Thônex,1384,base.ch
+city_ch_Carouge_GE,Carouge GE,1384,base.ch
+city_ch_Les_Acacias,Les Acacias,1384,base.ch
+city_ch_Plan_les_Ouates,Plan-les-Ouates,1384,base.ch
+city_ch_Conches,Conches,1384,base.ch
+city_ch_Confignon,Confignon,1384,base.ch
+city_ch_Bernex,Bernex,1384,base.ch
+city_ch_Vessy,Vessy,1384,base.ch
+city_ch_Cartigny,Cartigny,1384,base.ch
+city_ch_Avully,Avully,1384,base.ch
+city_ch_Collex,Collex,1384,base.ch
+city_ch_Puplinge,Puplinge,1384,base.ch
+city_ch_Satigny,Satigny,1384,base.ch
+city_ch_Presinge,Presinge,1384,base.ch
+city_ch_Choulex,Choulex,1384,base.ch
+city_ch_Collonge_Bellerive,Collonge-Bellerive,1384,base.ch
+city_ch_Corsier_GE,Corsier GE,1384,base.ch
+city_ch_Anieres,Anières,1384,base.ch
+city_ch_Hermance,Hermance,1384,base.ch
+city_ch_Gy,Gy,1384,base.ch
+city_ch_Meinier,Meinier,1384,base.ch
+city_ch_Vandoeuvres,Vandoeuvres,1384,base.ch
+city_ch_Jussy,Jussy,1384,base.ch
+city_ch_Veyrier,Veyrier,1384,base.ch
+city_ch_Troinex,Troinex,1384,base.ch
+city_ch_La_Croix_de_Rozon,La Croix-de-Rozon,1384,base.ch
+city_ch_Perly,Perly,1384,base.ch
+city_ch_Nyon,Nyon,1386,base.ch
+city_ch_Marchissy,Marchissy,1386,base.ch
+city_ch_Le_Vaud,Le Vaud,1386,base.ch
+city_ch_Longirod,Longirod,1386,base.ch
+city_ch_Eysins,Eysins,1386,base.ch
+city_ch_Crassier,Crassier,1386,base.ch
+city_ch_St_Cergue,St-Cergue,1386,base.ch
+city_ch_La_Cure,La Cure,1386,base.ch
+city_ch_Duillier,Duillier,1386,base.ch
+city_ch_Vich,Vich,1386,base.ch
+city_ch_Coinsins,Coinsins,1386,base.ch
+city_ch_Begnins,Begnins,1386,base.ch
+city_ch_Burtigny,Burtigny,1386,base.ch
+city_ch_Bassins,Bassins,1386,base.ch
+city_ch_Trelex,Trélex,1386,base.ch
+city_ch_Givrins,Givrins,1386,base.ch
+city_ch_Genolier,Genolier,1386,base.ch
+city_ch_Arzier_Le_Muids,Arzier-Le Muids,1386,base.ch
+city_ch_Signy,Signy,1386,base.ch
+city_ch_Grens,Grens,1386,base.ch
+city_ch_Cheserex,Chéserex,1386,base.ch
+city_ch_Gingins,Gingins,1386,base.ch
+city_ch_Borex,Borex,1386,base.ch
+city_ch_Arnex_sur_Nyon,Arnex-sur-Nyon,1386,base.ch
+city_ch_La_Rippe,La Rippe,1386,base.ch
+city_ch_Chavannes_de_Bogis,Chavannes-de-Bogis,1386,base.ch
+city_ch_Bogis_Bossey,Bogis-Bossey,1386,base.ch
+city_ch_Russin,Russin,1384,base.ch
+city_ch_La_Plaine,La Plaine,1384,base.ch
+city_ch_Dardagny,Dardagny,1384,base.ch
+city_ch_Chancy,Chancy,1384,base.ch
+city_ch_Athenaz_(Avusy),Athenaz (Avusy),1384,base.ch
+city_ch_Soral,Soral,1384,base.ch
+city_ch_Laconnex,Laconnex,1384,base.ch
+city_ch_Aire_la_Ville,Aire-la-Ville,1384,base.ch
+city_ch_Versoix,Versoix,1384,base.ch
+city_ch_Chavannes_des_Bois,Chavannes-des-Bois,1386,base.ch
+city_ch_Commugny,Commugny,1386,base.ch
+city_ch_Chambesy,Chambésy,1384,base.ch
+city_ch_Bellevue,Bellevue,1384,base.ch
+city_ch_Genthod,Genthod,1384,base.ch
+city_ch_Mies,Mies,1386,base.ch
+city_ch_Tannay,Tannay,1386,base.ch
+city_ch_Coppet,Coppet,1386,base.ch
+city_ch_Founex,Founex,1386,base.ch
+city_ch_Celigny,Céligny,1384,base.ch
+city_ch_Crans_VD,Crans VD,1386,base.ch
+city_ch_Vufflens_la_Ville,Vufflens-la-Ville,1386,base.ch
+city_ch_Penthaz,Penthaz,1386,base.ch
+city_ch_Cossonay_Ville,Cossonay-Ville,1386,base.ch
+city_ch_Dizy,Dizy,1386,base.ch
+city_ch_Allens,Allens,1386,base.ch
+city_ch_Senarclens,Senarclens,1386,base.ch
+city_ch_Penthalaz,Penthalaz,1386,base.ch
+city_ch_Daillens,Daillens,1386,base.ch
+city_ch_Lussery_Villars,Lussery-Villars,1386,base.ch
+city_ch_La_Chaux_(Cossonay),La Chaux (Cossonay),1386,base.ch
+city_ch_Eclepens,Eclépens,1386,base.ch
+city_ch_Ferreyres,Ferreyres,1386,base.ch
+city_ch_La_Sarraz,La Sarraz,1386,base.ch
+city_ch_Chevilly,Chevilly,1386,base.ch
+city_ch_Orny,Orny,1386,base.ch
+city_ch_Pompaples,Pompaples,1386,base.ch
+city_ch_Arnex_sur_Orbe,Arnex-sur-Orbe,1386,base.ch
+city_ch_Croy,Croy,1386,base.ch
+city_ch_Romainmôtier,Romainmôtier,1386,base.ch
+city_ch_Premier,Premier,1386,base.ch
+city_ch_Vaulion,Vaulion,1386,base.ch
+city_ch_Juriens,Juriens,1386,base.ch
+city_ch_Bretonnieres,Bretonnières,1386,base.ch
+city_ch_Vallorbe,Vallorbe,1386,base.ch
+city_ch_Ballaigues,Ballaigues,1386,base.ch
+city_ch_L'Orient,L'Orient,1386,base.ch
+city_ch_Le_Pont,Le Pont,1386,base.ch
+city_ch_Les_Charbonnieres,Les Charbonnières,1386,base.ch
+city_ch_L'Abbaye,L'Abbaye,1386,base.ch
+city_ch_Le_Lieu,Le Lieu,1386,base.ch
+city_ch_Le_Sechey,Le Séchey,1386,base.ch
+city_ch_Les_Bioux,Les Bioux,1386,base.ch
+city_ch_Le_Sentier,Le Sentier,1386,base.ch
+city_ch_Le_Solliat,Le Solliat,1386,base.ch
+city_ch_Le_Brassus,Le Brassus,1386,base.ch
+city_ch_Orbe,Orbe,1386,base.ch
+city_ch_Agiez,Agiez,1386,base.ch
+city_ch_Bofflens,Bofflens,1386,base.ch
+city_ch_Montcherand,Montcherand,1386,base.ch
+city_ch_L'Abergement,L'Abergement,1386,base.ch
+city_ch_Sergey,Sergey,1386,base.ch
+city_ch_Les_Clees,Les Clées,1386,base.ch
+city_ch_La_Russille,La Russille,1386,base.ch
+city_ch_Lignerolle,Lignerolle,1386,base.ch
+city_ch_Valeyres_sous_Rances,Valeyres-sous-Rances,1386,base.ch
+city_ch_Bavois,Bavois,1386,base.ch
+city_ch_Chavornay,Chavornay,1386,base.ch
+city_ch_Corcelles_sur_Chavornay,Corcelles-sur-Chavornay,1386,base.ch
+city_ch_Penthereaz,Penthéréaz,1386,base.ch
+city_ch_Goumoens_la_Ville,Goumoens-la-Ville,1386,base.ch
+city_ch_Eclagnens,Eclagnens,1386,base.ch
+city_ch_Goumoens_le_Jux,Goumoens-le-Jux,1386,base.ch
+city_ch_Oulens_sous_Echallens,Oulens-sous-Echallens,1386,base.ch
+city_ch_Yverdon_les_Bains,Yverdon-les-Bains,1386,base.ch
+city_ch_Cheseaux_Noreaz,Cheseaux-Noréaz,1386,base.ch
+city_ch_Cuarny,Cuarny,1386,base.ch
+city_ch_Villars_Epeney,Villars-Epeney,1386,base.ch
+city_ch_Pomy,Pomy,1386,base.ch
+city_ch_Cronay,Cronay,1386,base.ch
+city_ch_Donneloye,Donneloye,1386,base.ch
+city_ch_Gossens,Gossens,1386,base.ch
+city_ch_Mezery_pres_Donneloye,Mézery-près-Donneloye,1386,base.ch
+city_ch_Bioley_Magnoux,Bioley-Magnoux,1386,base.ch
+city_ch_Prahins,Prahins,1386,base.ch
+city_ch_Chaneaz,Chanéaz,1386,base.ch
+city_ch_Thierrens,Thierrens,1386,base.ch
+city_ch_Correvon,Correvon,1386,base.ch
+city_ch_Denezy,Denezy,1386,base.ch
+city_ch_Prevondavaux,Prévondavaux,1389,base.ch
+city_ch_St_Cierges,St-Cierges,1386,base.ch
+city_ch_Valeyres_sous_Ursins,Valeyres-sous-Ursins,1386,base.ch
+city_ch_Ursins,Ursins,1386,base.ch
+city_ch_Orzens,Orzens,1386,base.ch
+city_ch_Molondin,Molondin,1386,base.ch
+city_ch_Demoret,Démoret,1386,base.ch
+city_ch_Pailly,Pailly,1386,base.ch
+city_ch_Essertines_sur_Yverdon,Essertines-sur-Yverdon,1386,base.ch
+city_ch_Epautheyres,Epautheyres,1386,base.ch
+city_ch_Vuarrens,Vuarrens,1386,base.ch
+city_ch_Fiez,Fiez,1386,base.ch
+city_ch_Fontaines_sur_Grandson,Fontaines-sur-Grandson,1386,base.ch
+city_ch_Grandevent,Grandevent,1386,base.ch
+city_ch_Grandson,Grandson,1386,base.ch
+city_ch_Villars_Burquin,Villars-Burquin,1386,base.ch
+city_ch_Fontanezier,Fontanezier,1386,base.ch
+city_ch_Romairon,Romairon,1386,base.ch
+city_ch_Vaugondry,Vaugondry,1386,base.ch
+city_ch_Champagne,Champagne,1386,base.ch
+city_ch_Onnens_VD,Onnens VD,1386,base.ch
+city_ch_Concise,Concise,1386,base.ch
+city_ch_Corcelles_pres_Concise,Corcelles-près-Concise,1386,base.ch
+city_ch_Bonvillars,Bonvillars,1386,base.ch
+city_ch_Provence,Provence,1386,base.ch
+city_ch_Mutrux,Mutrux,1386,base.ch
+city_ch_Giez,Giez,1386,base.ch
+city_ch_Orges,Orges,1386,base.ch
+city_ch_Vugelles_La_Mothe,Vugelles-La Mothe,1386,base.ch
+city_ch_Novalles,Novalles,1386,base.ch
+city_ch_Belmont_sur_Yverdon,Belmont-sur-Yverdon,1386,base.ch
+city_ch_Gressy,Gressy,1386,base.ch
+city_ch_Suchy,Suchy,1386,base.ch
+city_ch_Ependes_VD,Ependes VD,1386,base.ch
+city_ch_Essert_Pittet,Essert-Pittet,1386,base.ch
+city_ch_Treycovagnes,Treycovagnes,1386,base.ch
+city_ch_Chamblon,Chamblon,1386,base.ch
+city_ch_Suscevaz,Suscévaz,1386,base.ch
+city_ch_Mathod,Mathod,1386,base.ch
+city_ch_Rances,Rances,1386,base.ch
+city_ch_Valeyres_sous_Montagny,Valeyres-sous-Montagny,1386,base.ch
+city_ch_Montagny_pres_Yverdon,Montagny-près-Yverdon,1386,base.ch
+city_ch_Champvent,Champvent,1386,base.ch
+city_ch_Essert_sous_Champvent,Essert-sous-Champvent,1386,base.ch
+city_ch_Villars_sous_Champvent,Villars-sous-Champvent,1386,base.ch
+city_ch_Vuiteboeuf,Vuiteboeuf,1386,base.ch
+city_ch_Baulmes,Baulmes,1386,base.ch
+city_ch_Ste_Croix,Ste-Croix,1386,base.ch
+city_ch_La_Sagne_(Ste_Croix),La Sagne (Ste-Croix),1386,base.ch
+city_ch_Le_Château_de_Ste_Croix,Le Château-de-Ste-Croix,1386,base.ch
+city_ch_Les_Rasses,Les Rasses,1386,base.ch
+city_ch_Bullet,Bullet,1386,base.ch
+city_ch_Mauborget,Mauborget,1386,base.ch
+city_ch_L'Auberson,L'Auberson,1386,base.ch
+city_ch_La_Vraconnaz,La Vraconnaz,1386,base.ch
+city_ch_Yvonand,Yvonand,1386,base.ch
+city_ch_Rovray,Rovray,1386,base.ch
+city_ch_Chavannes_le_Chêne,Chavannes-le-Chêne,1386,base.ch
+city_ch_Chêne_Pâquier,Chêne-Pâquier,1386,base.ch
+city_ch_Cheyres,Cheyres,1389,base.ch
+city_ch_Estavayer_le_Lac,Estavayer-le-Lac,1389,base.ch
+city_ch_Lully_FR,Lully FR,1389,base.ch
+city_ch_Seiry,Seiry,1389,base.ch
+city_ch_Bollion,Bollion,1389,base.ch
+city_ch_Font,Font,1389,base.ch
+city_ch_Châtillon_FR,Châtillon FR,1389,base.ch
+city_ch_Châbles_FR,Châbles FR,1389,base.ch
+city_ch_Autavaux,Autavaux,1389,base.ch
+city_ch_Forel_FR,Forel FR,1389,base.ch
+city_ch_Montbrelloz,Montbrelloz,1389,base.ch
+city_ch_Cugy_FR,Cugy FR,1389,base.ch
+city_ch_Montet_(Broye),Montet (Broye),1389,base.ch
+city_ch_Frasses,Frasses,1389,base.ch
+city_ch_Vesin,Vesin,1389,base.ch
+city_ch_Aumont,Aumont,1389,base.ch
+city_ch_Granges_de_Vesin,Granges-de-Vesin,1389,base.ch
+city_ch_Nuvilly,Nuvilly,1389,base.ch
+city_ch_Vuissens,Vuissens,1389,base.ch
+city_ch_Murist,Murist,1389,base.ch
+city_ch_Vucherens,Vucherens,1386,base.ch
+city_ch_Moudon,Moudon,1386,base.ch
+city_ch_Syens,Syens,1386,base.ch
+city_ch_Chavannes_sur_Moudon,Chavannes-sur-Moudon,1386,base.ch
+city_ch_Hermenches,Hermenches,1386,base.ch
+city_ch_Rossenges,Rossenges,1386,base.ch
+city_ch_Bussy_sur_Moudon,Bussy-sur-Moudon,1386,base.ch
+city_ch_Villars_le_Comte,Villars-le-Comte,1386,base.ch
+city_ch_Neyruz_sur_Moudon,Neyruz-sur-Moudon,1386,base.ch
+city_ch_Curtilles,Curtilles,1386,base.ch
+city_ch_Lucens,Lucens,1386,base.ch
+city_ch_Oulens_sur_Lucens,Oulens-sur-Lucens,1386,base.ch
+city_ch_Granges_pres_Marnand,Granges-près-Marnand,1386,base.ch
+city_ch_Marnand,Marnand,1386,base.ch
+city_ch_Henniez,Henniez,1386,base.ch
+city_ch_Seigneux,Seigneux,1386,base.ch
+city_ch_Forel_sur_Lucens,Forel-sur-Lucens,1386,base.ch
+city_ch_Cremin,Cremin,1386,base.ch
+city_ch_Villeneuve_FR,Villeneuve FR,1389,base.ch
+city_ch_Surpierre,Surpierre,1389,base.ch
+city_ch_Praratoud,Praratoud,1389,base.ch
+city_ch_Cheiry,Cheiry,1389,base.ch
+city_ch_Payerne,Payerne,1386,base.ch
+city_ch_Fetigny,Fétigny,1389,base.ch
+city_ch_Menieres,Ménières,1389,base.ch
+city_ch_Sassel,Sassel,1386,base.ch
+city_ch_Chapelle_(Broye),Chapelle (Broye),1389,base.ch
+city_ch_Combremont_le_Grand,Combremont-le-Grand,1386,base.ch
+city_ch_Combremont_le_Petit,Combremont-le-Petit,1386,base.ch
+city_ch_Champtauroz,Champtauroz,1386,base.ch
+city_ch_Treytorrens_(Payerne),Treytorrens (Payerne),1386,base.ch
+city_ch_Bussy_FR,Bussy FR,1389,base.ch
+city_ch_Morens_FR,Morens FR,1389,base.ch
+city_ch_Sevaz,Sévaz,1389,base.ch
+city_ch_Rueyres_les_Pres,Rueyres-les-Prés,1389,base.ch
+city_ch_Grandcour,Grandcour,1386,base.ch
+city_ch_Gletterens,Gletterens,1389,base.ch
+city_ch_Chevroux,Chevroux,1386,base.ch
+city_ch_Vers_chez_Perrin,Vers-chez-Perrin,1386,base.ch
+city_ch_Trey,Trey,1386,base.ch
+city_ch_Châtonnaye,Châtonnaye,1389,base.ch
+city_ch_Sedeilles,Sédeilles,1386,base.ch
+city_ch_Rossens_VD,Rossens VD,1386,base.ch
+city_ch_Villarzel,Villarzel,1386,base.ch
+city_ch_Corcelles_pres_Payerne,Corcelles-près-Payerne,1386,base.ch
+city_ch_Dompierre_FR,Dompierre FR,1389,base.ch
+city_ch_Domdidier,Domdidier,1389,base.ch
+city_ch_Missy,Missy,1386,base.ch
+city_ch_Vallon,Vallon,1389,base.ch
+city_ch_St_Aubin_FR,St-Aubin FR,1389,base.ch
+city_ch_Les_Friques,Les Friques,1389,base.ch
+city_ch_Delley,Delley,1389,base.ch
+city_ch_Portalban,Portalban,1389,base.ch
+city_ch_Avenches,Avenches,1386,base.ch
+city_ch_Oleyres,Oleyres,1386,base.ch
+city_ch_Donatyre,Donatyre,1386,base.ch
+city_ch_Villarepos,Villarepos,1389,base.ch
+city_ch_Villars_le_Grand,Villars-le-Grand,1386,base.ch
+city_ch_Salavaux,Salavaux,1386,base.ch
+city_ch_Bellerive_VD,Bellerive VD,1386,base.ch
+city_ch_Cotterd,Cotterd,1386,base.ch
+city_ch_Vallamand,Vallamand,1386,base.ch
+city_ch_Montmagny,Montmagny,1386,base.ch
+city_ch_Constantine,Constantine,1386,base.ch
+city_ch_Cudrefin,Cudrefin,1386,base.ch
+city_ch_Chabrey,Chabrey,1386,base.ch
+city_ch_Faoug,Faoug,1386,base.ch
+city_ch_Clavaleyres,Clavaleyres,1389,base.ch
+city_ch_Palezieux,Palézieux,1386,base.ch
+city_ch_Palezieux_Village,Palézieux-Village,1386,base.ch
+city_ch_Les_Tavernes,Les Tavernes,1386,base.ch
+city_ch_Les_Thioleyres,Les Thioleyres,1386,base.ch
+city_ch_Oron_le_Châtel,Oron-le-Châtel,1386,base.ch
+city_ch_Bussigny_sur_Oron,Bussigny-sur-Oron,1386,base.ch
+city_ch_Chesalles_sur_Oron,Chesalles-sur-Oron,1386,base.ch
+city_ch_Chapelle_(Glâne),Chapelle (Glâne),1389,base.ch
+city_ch_St_Martin_FR,St-Martin FR,1389,base.ch
+city_ch_Besencens,Besencens,1389,base.ch
+city_ch_Fiaugeres,Fiaugères,1389,base.ch
+city_ch_Oron_la_Ville,Oron-la-Ville,1386,base.ch
+city_ch_Châtillens,Châtillens,1386,base.ch
+city_ch_Vuibroye,Vuibroye,1386,base.ch
+city_ch_Le_Crêt_pres_Semsales,Le Crêt-près-Semsales,1389,base.ch
+city_ch_Ecoteaux,Ecoteaux,1386,base.ch
+city_ch_Maracon,Maracon,1386,base.ch
+city_ch_Granges_(Veveyse),Granges (Veveyse),1389,base.ch
+city_ch_Bossonnens,Bossonnens,1389,base.ch
+city_ch_Attalens,Attalens,1389,base.ch
+city_ch_Remaufens,Remaufens,1389,base.ch
+city_ch_Tatroz,Tatroz,1389,base.ch
+city_ch_Châtel_St_Denis,Châtel-St-Denis,1389,base.ch
+city_ch_Les_Paccots,Les Paccots,1389,base.ch
+city_ch_Semsales,Semsales,1389,base.ch
+city_ch_La_Verrerie,La Verrerie,1389,base.ch
+city_ch_Grattavache,Grattavache,1389,base.ch
+city_ch_Progens,Progens,1389,base.ch
+city_ch_Sâles_(Gruyere),Sâles (Gruyère),1389,base.ch
+city_ch_Maules,Maules,1389,base.ch
+city_ch_Romanens,Romanens,1389,base.ch
+city_ch_Treyfayes,Treyfayes,1389,base.ch
+city_ch_Rueyres_Treyfayes,Rueyres-Treyfayes,1389,base.ch
+city_ch_Vaulruz,Vaulruz,1389,base.ch
+city_ch_Vuadens,Vuadens,1389,base.ch
+city_ch_Bulle,Bulle,1389,base.ch
+city_ch_Riaz,Riaz,1389,base.ch
+city_ch_Marsens,Marsens,1389,base.ch
+city_ch_Vuippens,Vuippens,1389,base.ch
+city_ch_La_Roche_FR,La Roche FR,1389,base.ch
+city_ch_La_Tour_de_Trême,La Tour-de-Trême,1389,base.ch
+city_ch_Broc,Broc,1389,base.ch
+city_ch_Charmey_(Gruyere),Charmey (Gruyère),1389,base.ch
+city_ch_Morlon,Morlon,1389,base.ch
+city_ch_Sorens,Sorens,1389,base.ch
+city_ch_Gumefens,Gumefens,1389,base.ch
+city_ch_Avry_devant_Pont,Avry-devant-Pont,1389,base.ch
+city_ch_Le_Bry,Le Bry,1389,base.ch
+city_ch_Echarlens,Echarlens,1389,base.ch
+city_ch_Corbieres,Corbières,1389,base.ch
+city_ch_Hauteville,Hauteville,1389,base.ch
+city_ch_Pont_la_Ville,Pont-la-Ville,1389,base.ch
+city_ch_Villarvolard,Villarvolard,1389,base.ch
+city_ch_Botterens,Botterens,1389,base.ch
+city_ch_Villarbeney,Villarbeney,1389,base.ch
+city_ch_Cresuz,Crésuz,1389,base.ch
+city_ch_Châtel_sur_Montsalvens,Châtel-sur-Montsalvens,1389,base.ch
+city_ch_Cerniat_FR,Cerniat FR,1389,base.ch
+city_ch_Jaun,Jaun,1389,base.ch
+city_ch_Im_Fang,Im Fang,1389,base.ch
+city_ch_Abländschen,Abländschen,1388,base.ch
+city_ch_Rossiniere,Rossinière,1386,base.ch
+city_ch_La_Tine,La Tine,1386,base.ch
+city_ch_Rougemont,Rougemont,1386,base.ch
+city_ch_Flendruz,Flendruz,1386,base.ch
+city_ch_Château_d'Oex,Château-d'Oex,1386,base.ch
+city_ch_Les_Moulins,Les Moulins,1386,base.ch
+city_ch_L'Etivaz,L'Etivaz,1386,base.ch
+city_ch_La_Lecherette,La Lécherette,1386,base.ch
+city_ch_Le_Pâquier_Montbarry,Le Pâquier-Montbarry,1389,base.ch
+city_ch_Gruyeres,Gruyères,1389,base.ch
+city_ch_Pringy,Pringy,1389,base.ch
+city_ch_Epagny,Epagny,1389,base.ch
+city_ch_Moleson_sur_Gruyeres,Moléson-sur-Gruyères,1389,base.ch
+city_ch_Estavannens,Estavannens,1389,base.ch
+city_ch_Grandvillard,Grandvillard,1389,base.ch
+city_ch_Villars_sous_Mont,Villars-sous-Mont,1389,base.ch
+city_ch_Enney,Enney,1389,base.ch
+city_ch_Albeuve,Albeuve,1389,base.ch
+city_ch_Lessoc,Lessoc,1389,base.ch
+city_ch_Les_Sciernes_d'Albeuve,Les Sciernes-d'Albeuve,1389,base.ch
+city_ch_Neirivue,Neirivue,1389,base.ch
+city_ch_Montbovon,Montbovon,1389,base.ch
+city_ch_Ursy,Ursy,1389,base.ch
+city_ch_Bionnens,Bionnens,1389,base.ch
+city_ch_Esmonts,Esmonts,1389,base.ch
+city_ch_Promasens,Promasens,1389,base.ch
+city_ch_Gillarens,Gillarens,1389,base.ch
+city_ch_Auboranges,Auboranges,1389,base.ch
+city_ch_Ecublens_FR,Ecublens FR,1389,base.ch
+city_ch_Rue,Rue,1389,base.ch
+city_ch_Vuarmarens,Vuarmarens,1389,base.ch
+city_ch_Montet_(Glâne),Montet (Glâne),1389,base.ch
+city_ch_Morlens,Morlens,1389,base.ch
+city_ch_Vauderens,Vauderens,1389,base.ch
+city_ch_Blessens,Blessens,1389,base.ch
+city_ch_Mossel,Mossel,1389,base.ch
+city_ch_Chavannes_les_Forts,Chavannes-les-Forts,1389,base.ch
+city_ch_Prez_vers_Siviriez,Prez-vers-Siviriez,1389,base.ch
+city_ch_Siviriez,Siviriez,1389,base.ch
+city_ch_Villaraboud,Villaraboud,1389,base.ch
+city_ch_Romont_FR,Romont FR,1389,base.ch
+city_ch_Berlens,Berlens,1389,base.ch
+city_ch_Billens,Billens,1389,base.ch
+city_ch_Hennens,Hennens,1389,base.ch
+city_ch_Prevonloup,Prévonloup,1386,base.ch
+city_ch_Lovatens,Lovatens,1386,base.ch
+city_ch_Dompierre_VD,Dompierre VD,1386,base.ch
+city_ch_Villars_Bramard,Villars-Bramard,1386,base.ch
+city_ch_Cerniaz_VD,Cerniaz VD,1386,base.ch
+city_ch_Brenles,Brenles,1386,base.ch
+city_ch_Chesalles_sur_Moudon,Chesalles-sur-Moudon,1386,base.ch
+city_ch_Sarzens,Sarzens,1386,base.ch
+city_ch_Mezieres_FR,Mézières FR,1389,base.ch
+city_ch_Villariaz,Villariaz,1389,base.ch
+city_ch_Grangettes_pres_Romont,Grangettes-près-Romont,1389,base.ch
+city_ch_La_Neirigue,La Neirigue,1389,base.ch
+city_ch_Vuisternens_devant_Romont,Vuisternens-devant-Romont,1389,base.ch
+city_ch_La_Magne,La Magne,1389,base.ch
+city_ch_Estevenens,Estévenens,1389,base.ch
+city_ch_Sommentier,Sommentier,1389,base.ch
+city_ch_Lieffrens,Lieffrens,1389,base.ch
+city_ch_Le_Châtelard_pres_Romont,Le Châtelard-près-Romont,1389,base.ch
+city_ch_Villaz_St_Pierre,Villaz-St-Pierre,1389,base.ch
+city_ch_Lussy_FR,Lussy FR,1389,base.ch
+city_ch_Villarimboud,Villarimboud,1389,base.ch
+city_ch_Massonnens,Massonnens,1389,base.ch
+city_ch_Villarsiviriaux,Villarsiviriaux,1389,base.ch
+city_ch_Villargiroud,Villargiroud,1389,base.ch
+city_ch_Orsonnens,Orsonnens,1389,base.ch
+city_ch_Chavannes_sous_Orsonnens,Chavannes-sous-Orsonnens,1389,base.ch
+city_ch_Villarlod,Villarlod,1389,base.ch
+city_ch_Rueyres_St_Laurent,Rueyres-St-Laurent,1389,base.ch
+city_ch_Estavayer_le_Gibloux,Estavayer-le-Gibloux,1389,base.ch
+city_ch_Villarsel_le_Gibloux,Villarsel-le-Gibloux,1389,base.ch
+city_ch_Vuisternens_en_Ogoz,Vuisternens-en-Ogoz,1389,base.ch
+city_ch_La_Joux_FR,La Joux FR,1389,base.ch
+city_ch_Les_Ecasseys,Les Ecasseys,1389,base.ch
+city_ch_Porsel,Porsel,1389,base.ch
+city_ch_Pont_(Veveyse),Pont (Veveyse),1389,base.ch
+city_ch_Bouloz,Bouloz,1389,base.ch
+city_ch_Fribourg,Fribourg,1389,base.ch
+city_ch_Tafers,Tafers,1389,base.ch
+city_ch_St._Antoni,St. Antoni,1389,base.ch
+city_ch_Heitenried,Heitenried,1389,base.ch
+city_ch_Alterswil_FR,Alterswil FR,1389,base.ch
+city_ch_Plaffeien,Plaffeien,1389,base.ch
+city_ch_Oberschrot,Oberschrot,1389,base.ch
+city_ch_Schwarzsee,Schwarzsee,1389,base.ch
+city_ch_St._Ursen,St. Ursen,1389,base.ch
+city_ch_Rechthalten,Rechthalten,1389,base.ch
+city_ch_Brünisried,Brünisried,1389,base.ch
+city_ch_Zumholz,Zumholz,1389,base.ch
+city_ch_Corminboeuf,Corminboeuf,1389,base.ch
+city_ch_Chesopelloz,Chésopelloz,1389,base.ch
+city_ch_Misery,Misery,1389,base.ch
+city_ch_Cormerod,Cormérod,1389,base.ch
+city_ch_Courtion,Courtion,1389,base.ch
+city_ch_Cournillens,Cournillens,1389,base.ch
+city_ch_Bourguillon,Bourguillon,1389,base.ch
+city_ch_Marly,Marly,1389,base.ch
+city_ch_Villarsel_sur_Marly,Villarsel-sur-Marly,1389,base.ch
+city_ch_Pierrafortscha,Pierrafortscha,1389,base.ch
+city_ch_Le_Mouret,Le Mouret,1389,base.ch
+city_ch_Essert_FR,Essert FR,1389,base.ch
+city_ch_Ferpicloz,Ferpicloz,1389,base.ch
+city_ch_Montevraz,Montévraz,1389,base.ch
+city_ch_Oberried_FR,Oberried FR,1389,base.ch
+city_ch_Senedes,Senèdes,1389,base.ch
+city_ch_Zenauva,Zénauva,1389,base.ch
+city_ch_Bonnefontaine,Bonnefontaine,1389,base.ch
+city_ch_Posieux,Posieux,1389,base.ch
+city_ch_Farvagny_le_Grand,Farvagny-le-Grand,1389,base.ch
+city_ch_Farvagny_le_Petit,Farvagny-le-Petit,1389,base.ch
+city_ch_Grenilles,Grenilles,1389,base.ch
+city_ch_Posat,Posat,1389,base.ch
+city_ch_Corpataux,Corpataux,1389,base.ch
+city_ch_Magnedens,Magnedens,1389,base.ch
+city_ch_Rossens_FR,Rossens FR,1389,base.ch
+city_ch_Ecuvillens,Ecuvillens,1389,base.ch
+city_ch_Ependes_FR,Ependes FR,1389,base.ch
+city_ch_Arconciel,Arconciel,1389,base.ch
+city_ch_Treyvaux,Treyvaux,1389,base.ch
+city_ch_Tentlingen,Tentlingen,1389,base.ch
+city_ch_Giffers,Giffers,1389,base.ch
+city_ch_St._Silvester,St. Silvester,1389,base.ch
+city_ch_Plasselb,Plasselb,1389,base.ch
+city_ch_Sangernboden,Sangernboden,1388,base.ch
+city_ch_Neyruz_FR,Neyruz FR,1389,base.ch
+city_ch_Cottens_FR,Cottens FR,1389,base.ch
+city_ch_Autigny,Autigny,1389,base.ch
+city_ch_Chenens,Chénens,1389,base.ch
+city_ch_Lentigny,Lentigny,1389,base.ch
+city_ch_Prez_vers_Noreaz,Prez-vers-Noréaz,1389,base.ch
+city_ch_Corserey,Corserey,1389,base.ch
+city_ch_Torny_le_Grand,Torny-le-Grand,1389,base.ch
+city_ch_Middes,Middes,1389,base.ch
+city_ch_Villars_sur_Glâne,Villars-sur-Glâne,1389,base.ch
+city_ch_Matran,Matran,1389,base.ch
+city_ch_Corjolens,Corjolens,1389,base.ch
+city_ch_Avry_sur_Matran,Avry-sur-Matran,1389,base.ch
+city_ch_Onnens_FR,Onnens FR,1389,base.ch
+city_ch_Lovens,Lovens,1389,base.ch
+city_ch_Noreaz,Noréaz,1389,base.ch
+city_ch_Givisiez,Givisiez,1389,base.ch
+city_ch_Granges_Paccot,Granges-Paccot,1389,base.ch
+city_ch_Grolley,Grolley,1389,base.ch
+city_ch_Nierlet_les_Bois,Nierlet-les-Bois,1389,base.ch
+city_ch_Ponthaux,Ponthaux,1389,base.ch
+city_ch_Lechelles,Léchelles,1389,base.ch
+city_ch_Chandon,Chandon,1389,base.ch
+city_ch_Russy,Russy,1389,base.ch
+city_ch_Cousset,Cousset,1389,base.ch
+city_ch_Montagny_les_Monts,Montagny-les-Monts,1389,base.ch
+city_ch_Mannens,Mannens,1389,base.ch
+city_ch_Grandsivaz,Grandsivaz,1389,base.ch
+city_ch_Montagny_la_Ville,Montagny-la-Ville,1389,base.ch
+city_ch_Belfaux,Belfaux,1389,base.ch
+city_ch_Autafond,Autafond,1389,base.ch
+city_ch_Lossy,Lossy,1389,base.ch
+city_ch_La_Corbaz,La Corbaz,1389,base.ch
+city_ch_Cormagens,Cormagens,1389,base.ch
+city_ch_Formangueires,Formangueires,1389,base.ch
+city_ch_Pensier,Pensier,1389,base.ch
+city_ch_Barberêche,Barberêche,1389,base.ch
+city_ch_Courtepin,Courtepin,1389,base.ch
+city_ch_Wallenried,Wallenried,1389,base.ch
+city_ch_Cressier_FR,Cressier FR,1389,base.ch
+city_ch_Sugiez,Sugiez,1389,base.ch
+city_ch_Môtier_(Vully),Môtier (Vully),1389,base.ch
+city_ch_Mur_(Vully)_FR,Mur (Vully) FR,1389,base.ch
+city_ch_Mur_(Vully)_VD,Mur (Vully) VD,1386,base.ch
+city_ch_Praz_(Vully),Praz (Vully),1389,base.ch
+city_ch_Lugnorre,Lugnorre,1389,base.ch
+city_ch_Courtaman,Courtaman,1389,base.ch
+city_ch_Cordast,Cordast,1389,base.ch
+city_ch_Guschelmuth,Guschelmuth,1389,base.ch
+city_ch_Jeuss,Jeuss,1389,base.ch
+city_ch_Salvenach,Salvenach,1389,base.ch
+city_ch_Courlevon,Courlevon,1389,base.ch
+city_ch_Courgevaux,Courgevaux,1389,base.ch
+city_ch_Münchenwiler,Münchenwiler,1388,base.ch
+city_ch_Vevey,Vevey,1386,base.ch
+city_ch_Le_Mont_Pelerin,Le Mont-Pèlerin,1386,base.ch
+city_ch_Corseaux,Corseaux,1386,base.ch
+city_ch_Chardonne,Chardonne,1386,base.ch
+city_ch_Corsier_sur_Vevey,Corsier-sur-Vevey,1386,base.ch
+city_ch_Jongny,Jongny,1386,base.ch
+city_ch_St_Legier_La_Chiesaz,St-Légier-La Chiésaz,1386,base.ch
+city_ch_Blonay,Blonay,1386,base.ch
+city_ch_Les_Monts_de_Corsier,Les Monts-de-Corsier,1386,base.ch
+city_ch_Fenil_sur_Corsier,Fenil-sur-Corsier,1386,base.ch
+city_ch_La_Tour_de_Peilz,La Tour-de-Peilz,1386,base.ch
+city_ch_Clarens,Clarens,1386,base.ch
+city_ch_Chailly_Montreux,Chailly-Montreux,1386,base.ch
+city_ch_Brent,Brent,1386,base.ch
+city_ch_Montreux,Montreux,1386,base.ch
+city_ch_Territet,Territet,1386,base.ch
+city_ch_Veytaux,Veytaux,1386,base.ch
+city_ch_Chernex,Chernex,1386,base.ch
+city_ch_Glion,Glion,1386,base.ch
+city_ch_Caux,Caux,1386,base.ch
+city_ch_Chamby,Chamby,1386,base.ch
+city_ch_Villard_sur_Chamby,Villard-sur-Chamby,1386,base.ch
+city_ch_Les_Avants,Les Avants,1386,base.ch
+city_ch_Villeneuve_VD,Villeneuve VD,1386,base.ch
+city_ch_Noville,Noville,1386,base.ch
+city_ch_Chessel,Chessel,1386,base.ch
+city_ch_Rennaz,Rennaz,1386,base.ch
+city_ch_Roche_VD,Roche VD,1386,base.ch
+city_ch_Yvorne,Yvorne,1386,base.ch
+city_ch_Leysin,Leysin,1386,base.ch
+city_ch_Corbeyrier,Corbeyrier,1386,base.ch
+city_ch_Aigle,Aigle,1386,base.ch
+city_ch_Les_Mosses,Les Mosses,1386,base.ch
+city_ch_La_Comballaz,La Comballaz,1386,base.ch
+city_ch_Le_Sepey,Le Sépey,1386,base.ch
+city_ch_Vers_l'Eglise,Vers-l'Eglise,1386,base.ch
+city_ch_Les_Diablerets,Les Diablerets,1386,base.ch
+city_ch_La_Forclaz_VD,La Forclaz VD,1386,base.ch
+city_ch_Ollon_VD,Ollon VD,1386,base.ch
+city_ch_St_Triphon,St-Triphon,1386,base.ch
+city_ch_Panex,Panex,1386,base.ch
+city_ch_Collombey,Collombey,1393,base.ch
+city_ch_Massongex,Massongex,1393,base.ch
+city_ch_Monthey,Monthey,1393,base.ch
+city_ch_Choëx,Choëx,1393,base.ch
+city_ch_Les_Giettes,Les Giettes,1393,base.ch
+city_ch_Troistorrents,Troistorrents,1393,base.ch
+city_ch_Val_d'Illiez,Val-d'Illiez,1393,base.ch
+city_ch_Champoussin,Champoussin,1393,base.ch
+city_ch_Les_Crosets,Les Crosets,1393,base.ch
+city_ch_Champery,Champéry,1393,base.ch
+city_ch_Morgins,Morgins,1393,base.ch
+city_ch_Bex,Bex,1386,base.ch
+city_ch_Frenieres_sur_Bex,Frenières-sur-Bex,1386,base.ch
+city_ch_Fenalet_sur_Bex,Fenalet-sur-Bex,1386,base.ch
+city_ch_Les_Plans_sur_Bex,Les Plans-sur-Bex,1386,base.ch
+city_ch_Les_Posses_sur_Bex,Les Posses-sur-Bex,1386,base.ch
+city_ch_Gryon,Gryon,1386,base.ch
+city_ch_Villars_sur_Ollon,Villars-sur-Ollon,1386,base.ch
+city_ch_Arveyes,Arveyes,1386,base.ch
+city_ch_Huemoz,Huémoz,1386,base.ch
+city_ch_Chesieres,Chesières,1386,base.ch
+city_ch_St_Maurice,St-Maurice,1393,base.ch
+city_ch_Mex_VS,Mex VS,1393,base.ch
+city_ch_Verossaz,Vérossaz,1393,base.ch
+city_ch_Lavey_Village,Lavey-Village,1386,base.ch
+city_ch_Lavey_les_Bains,Lavey-les-Bains,1386,base.ch
+city_ch_Morcles,Morcles,1386,base.ch
+city_ch_Muraz_(Collombey),Muraz (Collombey),1393,base.ch
+city_ch_Vionnaz,Vionnaz,1393,base.ch
+city_ch_Vouvry,Vouvry,1393,base.ch
+city_ch_Miex,Miex,1393,base.ch
+city_ch_Bouveret,Bouveret,1393,base.ch
+city_ch_Les_Evouettes,Les Evouettes,1393,base.ch
+city_ch_St_Gingolph,St-Gingolph,1393,base.ch
+city_ch_Torgon,Torgon,1393,base.ch
+city_ch_Evionnaz,Evionnaz,1393,base.ch
+city_ch_Collonges,Collonges,1393,base.ch
+city_ch_Vernayaz,Vernayaz,1393,base.ch
+city_ch_Dorenaz,Dorénaz,1393,base.ch
+city_ch_Charrat,Charrat,1393,base.ch
+city_ch_Saxon,Saxon,1393,base.ch
+city_ch_Riddes,Riddes,1393,base.ch
+city_ch_Ovronnaz,Ovronnaz,1393,base.ch
+city_ch_Leytron,Leytron,1393,base.ch
+city_ch_Produit_(Leytron),Produit (Leytron),1393,base.ch
+city_ch_Montagnon_(Leytron),Montagnon (Leytron),1393,base.ch
+city_ch_Dugny_(Leytron),Dugny (Leytron),1393,base.ch
+city_ch_Saillon,Saillon,1393,base.ch
+city_ch_Iserables,Isérables,1393,base.ch
+city_ch_Auddes_sur_Riddes,Auddes-sur-Riddes,1393,base.ch
+city_ch_La_Tzoumaz,La Tzoumaz,1393,base.ch
+city_ch_Martigny,Martigny,1393,base.ch
+city_ch_Martigny_Croix,Martigny-Croix,1393,base.ch
+city_ch_Salvan,Salvan,1393,base.ch
+city_ch_Les_Granges_(Salvan),Les Granges (Salvan),1393,base.ch
+city_ch_Les_Marecottes,Les Marécottes,1393,base.ch
+city_ch_Le_Tretien,Le Trétien,1393,base.ch
+city_ch_Finhaut,Finhaut,1393,base.ch
+city_ch_Le_Châtelard_VS,Le Châtelard VS,1393,base.ch
+city_ch_Fully,Fully,1393,base.ch
+city_ch_Chemin,Chemin,1393,base.ch
+city_ch_Ravoire,Ravoire,1393,base.ch
+city_ch_Trient,Trient,1393,base.ch
+city_ch_Bovernier,Bovernier,1393,base.ch
+city_ch_Les_Valettes_(Bovernier),Les Valettes (Bovernier),1393,base.ch
+city_ch_Sembrancher,Sembrancher,1393,base.ch
+city_ch_Vens_(Sembrancher),Vens (Sembrancher),1393,base.ch
+city_ch_Chamoille_(Sembrancher),Chamoille (Sembrancher),1393,base.ch
+city_ch_La_Garde_(Sembrancher),La Garde (Sembrancher),1393,base.ch
+city_ch_Le_Châble_VS,Le Châble VS,1393,base.ch
+city_ch_Bruson,Bruson,1393,base.ch
+city_ch_Verbier,Verbier,1393,base.ch
+city_ch_Orsieres,Orsières,1393,base.ch
+city_ch_Champex_Lac,Champex-Lac,1393,base.ch
+city_ch_Volleges,Vollèges,1393,base.ch
+city_ch_Cries_(Volleges),Cries (Vollèges),1393,base.ch
+city_ch_Levron,Levron,1393,base.ch
+city_ch_Praz_de_Fort,Praz-de-Fort,1393,base.ch
+city_ch_La_Fouly_VS,La Fouly VS,1393,base.ch
+city_ch_Liddes,Liddes,1393,base.ch
+city_ch_Fontaine_Dessus_(Liddes),Fontaine Dessus (Liddes),1393,base.ch
+city_ch_Fontaine_Dessous_(Liddes),Fontaine Dessous (Liddes),1393,base.ch
+city_ch_Dranse_(Liddes),Dranse (Liddes),1393,base.ch
+city_ch_Chandonne_(Liddes),Chandonne (Liddes),1393,base.ch
+city_ch_Rive_Haute_(Liddes),Rive Haute (Liddes),1393,base.ch
+city_ch_Fornex_(Liddes),Fornex (Liddes),1393,base.ch
+city_ch_Les_Moulins_VS_(Liddes),Les Moulins VS (Liddes),1393,base.ch
+city_ch_Vicheres_(Liddes),Vichères (Liddes),1393,base.ch
+city_ch_Palasuit_(Liddes),Palasuit (Liddes),1393,base.ch
+city_ch_Chez_Petit_(Liddes),Chez Petit (Liddes),1393,base.ch
+city_ch_Petit_Vicheres_(Liddes),Petit Vichères (Liddes),1393,base.ch
+city_ch_Bourg_St_Pierre,Bourg-St-Pierre,1393,base.ch
+city_ch_Versegeres,Versegères,1393,base.ch
+city_ch_Champsec,Champsec,1393,base.ch
+city_ch_Lourtier,Lourtier,1393,base.ch
+city_ch_Fionnay,Fionnay,1393,base.ch
+city_ch_Sarreyer,Sarreyer,1393,base.ch
+city_ch_Sion,Sion,1393,base.ch
+city_ch_Chamoson,Chamoson,1393,base.ch
+city_ch_Mayens_de_Chamoson,Mayens-de-Chamoson,1393,base.ch
+city_ch_Les_Verines_(Chamoson),Les Vérines (Chamoson),1393,base.ch
+city_ch_Nemiaz_(Chamoson),Némiaz (Chamoson),1393,base.ch
+city_ch_Grugnay_(Chamoson),Grugnay (Chamoson),1393,base.ch
+city_ch_St_Pierre_de_Clages,St-Pierre-de-Clages,1393,base.ch
+city_ch_Ardon,Ardon,1393,base.ch
+city_ch_St_Leonard,St-Léonard,1393,base.ch
+city_ch_Uvrier,Uvrier,1393,base.ch
+city_ch_Vernamiege,Vernamiège,1393,base.ch
+city_ch_Pont_de_la_Morge_(Sion),Pont-de-la-Morge (Sion),1393,base.ch
+city_ch_Vetroz,Vétroz,1393,base.ch
+city_ch_Conthey,Conthey,1393,base.ch
+city_ch_Saviese,Savièse,1393,base.ch
+city_ch_Fortunau_(Ayent),Fortunau (Ayent),1393,base.ch
+city_ch_Luc_(Ayent),Luc (Ayent),1393,base.ch
+city_ch_St_Romain_(Ayent),St-Romain (Ayent),1393,base.ch
+city_ch_Saxonne_(Ayent),Saxonne (Ayent),1393,base.ch
+city_ch_Villa_(Ayent),Villa (Ayent),1393,base.ch
+city_ch_La_Place_(Ayent),La Place (Ayent),1393,base.ch
+city_ch_Botyre_(Ayent),Botyre (Ayent),1393,base.ch
+city_ch_Blignou_(Ayent),Blignou (Ayent),1393,base.ch
+city_ch_Argnou_(Ayent),Argnou (Ayent),1393,base.ch
+city_ch_Signese_(Ayent),Signèse (Ayent),1393,base.ch
+city_ch_Bramois,Bramois,1393,base.ch
+city_ch_Mase,Mase,1393,base.ch
+city_ch_St_Martin_VS,St-Martin VS,1393,base.ch
+city_ch_Liez_(St_Martin),Liez (St-Martin),1393,base.ch
+city_ch_Trogne_(St_Martin),Trogne (St-Martin),1393,base.ch
+city_ch_Suen_(St_Martin),Suen (St-Martin),1393,base.ch
+city_ch_Eison_(St_Martin),Eison (St-Martin),1393,base.ch
+city_ch_Grimisuat,Grimisuat,1393,base.ch
+city_ch_Champlan_(Grimisuat),Champlan (Grimisuat),1393,base.ch
+city_ch_Anzere,Anzère,1393,base.ch
+city_ch_Nax,Nax,1393,base.ch
+city_ch_Arbaz,Arbaz,1393,base.ch
+city_ch_St_Severin,St-Séverin,1393,base.ch
+city_ch_Erde,Erde,1393,base.ch
+city_ch_Aven,Aven,1393,base.ch
+city_ch_Daillon,Daillon,1393,base.ch
+city_ch_Icogne,Icogne,1393,base.ch
+city_ch_Lens,Lens,1393,base.ch
+city_ch_Vex,Vex,1393,base.ch
+city_ch_Euseigne,Euseigne,1393,base.ch
+city_ch_Evolene,Evolène,1393,base.ch
+city_ch_Lanna,Lanna,1393,base.ch
+city_ch_Les_Hauderes,Les Haudères,1393,base.ch
+city_ch_La_Tour_VS,La Tour VS,1393,base.ch
+city_ch_La_Sage,La Sage,1393,base.ch
+city_ch_La_Forclaz_VS,La Forclaz VS,1393,base.ch
+city_ch_Villa_(Evolene),Villa (Evolène),1393,base.ch
+city_ch_Arolla,Arolla,1393,base.ch
+city_ch_Heremence,Hérémence,1393,base.ch
+city_ch_Thyon,Thyon,1393,base.ch
+city_ch_Les_Collons,Les Collons,1393,base.ch
+city_ch_Salins,Salins,1393,base.ch
+city_ch_Arvillard_(Salins),Arvillard (Salins),1393,base.ch
+city_ch_Pravidondaz_(Salins),Pravidondaz (Salins),1393,base.ch
+city_ch_Turin_(Salins),Turin (Salins),1393,base.ch
+city_ch_Miseriez_(Salins),Misériez (Salins),1393,base.ch
+city_ch_Les_Agettes,Les Agettes,1393,base.ch
+city_ch_Les_Mayens_de_Sion,Les Mayens-de-Sion,1393,base.ch
+city_ch_La_Vernaz_(Les_Agettes),La Vernaz (Les Agettes),1393,base.ch
+city_ch_Crête_à_l'Oeil_(Les_Agettes),Crête-à-l'Oeil (Les Agettes),1393,base.ch
+city_ch_Veysonnaz,Veysonnaz,1393,base.ch
+city_ch_Clebes_(Nendaz),Clèbes (Nendaz),1393,base.ch
+city_ch_Aproz_(Nendaz),Aproz (Nendaz),1393,base.ch
+city_ch_Basse_Nendaz,Basse-Nendaz,1393,base.ch
+city_ch_Fey_(Nendaz),Fey (Nendaz),1393,base.ch
+city_ch_Bieudron_(Nendaz),Bieudron (Nendaz),1393,base.ch
+city_ch_Condemines_(Nendaz),Condémines (Nendaz),1393,base.ch
+city_ch_Saclentse,Saclentse,1393,base.ch
+city_ch_Baar_(Nendaz),Baar (Nendaz),1393,base.ch
+city_ch_Beuson_(Nendaz),Beuson (Nendaz),1393,base.ch
+city_ch_Brignon_(Nendaz),Brignon (Nendaz),1393,base.ch
+city_ch_Haute_Nendaz,Haute-Nendaz,1393,base.ch
+city_ch_Siviez_(Nendaz),Siviez (Nendaz),1393,base.ch
+city_ch_Sornard_(Nendaz),Sornard (Nendaz),1393,base.ch
+city_ch_Neuchâtel,Neuchâtel,1392,base.ch
+city_ch_Auvernier,Auvernier,1392,base.ch
+city_ch_Colombier_NE,Colombier NE,1392,base.ch
+city_ch_Bôle,Bôle,1392,base.ch
+city_ch_Areuse,Areuse,1392,base.ch
+city_ch_Cortaillod,Cortaillod,1392,base.ch
+city_ch_Boudry,Boudry,1392,base.ch
+city_ch_Rochefort,Rochefort,1392,base.ch
+city_ch_Chambrelien,Chambrelien,1392,base.ch
+city_ch_Bevaix,Bevaix,1392,base.ch
+city_ch_Gorgier,Gorgier,1392,base.ch
+city_ch_St_Aubin_Sauges,St-Aubin-Sauges,1392,base.ch
+city_ch_Chez_le_Bart,Chez-le-Bart,1392,base.ch
+city_ch_Montalchez,Montalchez,1392,base.ch
+city_ch_Fresens,Fresens,1392,base.ch
+city_ch_Vaumarcus,Vaumarcus,1392,base.ch
+city_ch_Peseux,Peseux,1392,base.ch
+city_ch_Corcelles_NE,Corcelles NE,1392,base.ch
+city_ch_Cormondreche,Cormondrèche,1392,base.ch
+city_ch_Montmollin,Montmollin,1392,base.ch
+city_ch_Montezillon,Montezillon,1392,base.ch
+city_ch_Valangin,Valangin,1392,base.ch
+city_ch_Boudevilliers,Boudevilliers,1392,base.ch
+city_ch_Fontaines_NE,Fontaines NE,1392,base.ch
+city_ch_Fontainemelon,Fontainemelon,1392,base.ch
+city_ch_La_Vue_des_Alpes,La Vue-des-Alpes,1392,base.ch
+city_ch_Cernier,Cernier,1392,base.ch
+city_ch_Chezard_St_Martin,Chézard-St-Martin,1392,base.ch
+city_ch_Les_Vieux_Pres,Les Vieux-Prés,1392,base.ch
+city_ch_Dombresson,Dombresson,1392,base.ch
+city_ch_Villiers,Villiers,1392,base.ch
+city_ch_Le_Pâquier_NE,Le Pâquier NE,1392,base.ch
+city_ch_Vilars_NE,Vilars NE,1392,base.ch
+city_ch_Engollon,Engollon,1392,base.ch
+city_ch_Fenin,Fenin,1392,base.ch
+city_ch_Saules,Saules,1392,base.ch
+city_ch_Savagnier,Savagnier,1392,base.ch
+city_ch_Chaumont,Chaumont,1392,base.ch
+city_ch_Hauterive_NE,Hauterive NE,1392,base.ch
+city_ch_St_Blaise,St-Blaise,1392,base.ch
+city_ch_Enges,Enges,1392,base.ch
+city_ch_Marin_Epagnier,Marin-Epagnier,1392,base.ch
+city_ch_Thielle,Thielle,1392,base.ch
+city_ch_Wavre,Wavre,1392,base.ch
+city_ch_Cornaux_NE,Cornaux NE,1392,base.ch
+city_ch_Cressier_NE,Cressier NE,1392,base.ch
+city_ch_Noiraigue,Noiraigue,1392,base.ch
+city_ch_Travers,Travers,1392,base.ch
+city_ch_Couvet,Couvet,1392,base.ch
+city_ch_Môtiers_NE,Môtiers NE,1392,base.ch
+city_ch_Boveresse,Boveresse,1392,base.ch
+city_ch_Fleurier,Fleurier,1392,base.ch
+city_ch_Buttes,Buttes,1392,base.ch
+city_ch_Mont_de_Buttes,Mont-de-Buttes,1392,base.ch
+city_ch_La_Côte_aux_Fees,La Côte-aux-Fées,1392,base.ch
+city_ch_St_Sulpice_NE,St-Sulpice NE,1392,base.ch
+city_ch_Les_Sagnettes,Les Sagnettes,1392,base.ch
+city_ch_Les_Verrieres,Les Verrières,1392,base.ch
+city_ch_Les_Bayards,Les Bayards,1392,base.ch
+city_ch_Champ_du_Moulin,Champ-du-Moulin,1392,base.ch
+city_ch_Fretereules,Fretereules,1392,base.ch
+city_ch_Brot_Dessous,Brot-Dessous,1392,base.ch
+city_ch_Les_Geneveys_sur_Coffrane,Les Geneveys-sur-Coffrane,1392,base.ch
+city_ch_Coffrane,Coffrane,1392,base.ch
+city_ch_Les_Hauts_Geneveys,Les Hauts-Geneveys,1392,base.ch
+city_ch_La_Chaux_de_Fonds,La Chaux-de-Fonds,1392,base.ch
+city_ch_La_Cibourg,La Cibourg,1392,base.ch
+city_ch_La_Sagne_NE,La Sagne NE,1392,base.ch
+city_ch_Les_Ponts_de_Martel,Les Ponts-de-Martel,1392,base.ch
+city_ch_Petit_Martel,Petit-Martel,1392,base.ch
+city_ch_Brot_Plamboz,Brot-Plamboz,1392,base.ch
+city_ch_Le_Crêt_du_Locle,Le Crêt-du-Locle,1392,base.ch
+city_ch_Les_Planchettes,Les Planchettes,1392,base.ch
+city_ch_La_Ferriere,La Ferrière,1388,base.ch
+city_ch_Le_Locle,Le Locle,1392,base.ch
+city_ch_Le_Prevoux,Le Prévoux,1392,base.ch
+city_ch_La_Chaux_du_Milieu,La Chaux-du-Milieu,1392,base.ch
+city_ch_La_Brevine,La Brévine,1392,base.ch
+city_ch_Les_Tailleres,Les Taillères,1392,base.ch
+city_ch_La_Châtagne,La Châtagne,1392,base.ch
+city_ch_Le_Brouillet,Le Brouillet,1392,base.ch
+city_ch_Le_Cerneux_Pequignot,Le Cerneux-Péquignot,1392,base.ch
+city_ch_Les_Brenets,Les Brenets,1392,base.ch
+city_ch_Biel/Bienne,Biel/Bienne,1388,base.ch
+city_ch_Tüscherz_Alfermee,Tüscherz-Alfermée,1388,base.ch
+city_ch_Twann,Twann,1388,base.ch
+city_ch_Ligerz,Ligerz,1388,base.ch
+city_ch_Prêles,Prêles,1388,base.ch
+city_ch_Lamboing,Lamboing,1388,base.ch
+city_ch_Diesse,Diesse,1388,base.ch
+city_ch_Nods,Nods,1388,base.ch
+city_ch_La_Neuveville,La Neuveville,1388,base.ch
+city_ch_Lignieres,Lignières,1392,base.ch
+city_ch_Le_Landeron,Le Landeron,1392,base.ch
+city_ch_Magglingen/Macolin,Magglingen/Macolin,1388,base.ch
+city_ch_Evilard,Evilard,1388,base.ch
+city_ch_Orvin,Orvin,1388,base.ch
+city_ch_Les_Pres_d'Orvin,Les Prés-d'Orvin,1388,base.ch
+city_ch_Frinvillier,Frinvillier,1388,base.ch
+city_ch_Plagne,Plagne,1388,base.ch
+city_ch_Vauffelin,Vauffelin,1388,base.ch
+city_ch_Romont_BE,Romont BE,1388,base.ch
+city_ch_Pieterlen,Pieterlen,1388,base.ch
+city_ch_Lengnau_BE,Lengnau BE,1388,base.ch
+city_ch_Orpund,Orpund,1388,base.ch
+city_ch_Safnern,Safnern,1388,base.ch
+city_ch_Meinisberg,Meinisberg,1388,base.ch
+city_ch_Brügg_BE,Brügg BE,1388,base.ch
+city_ch_Scheuren,Scheuren,1388,base.ch
+city_ch_Schwadernau,Schwadernau,1388,base.ch
+city_ch_Studen_BE,Studen BE,1388,base.ch
+city_ch_Aegerten,Aegerten,1388,base.ch
+city_ch_Nidau,Nidau,1388,base.ch
+city_ch_Port,Port,1388,base.ch
+city_ch_Ipsach,Ipsach,1388,base.ch
+city_ch_Bellmund,Bellmund,1388,base.ch
+city_ch_Jens,Jens,1388,base.ch
+city_ch_Sutz,Sutz,1388,base.ch
+city_ch_Mörigen,Mörigen,1388,base.ch
+city_ch_Täuffelen,Täuffelen,1388,base.ch
+city_ch_Gerolfingen,Gerolfingen,1388,base.ch
+city_ch_Hagneck,Hagneck,1388,base.ch
+city_ch_Lüscherz,Lüscherz,1388,base.ch
+city_ch_Siselen_BE,Siselen BE,1388,base.ch
+city_ch_Finsterhennen,Finsterhennen,1388,base.ch
+city_ch_Pery,Péry,1388,base.ch
+city_ch_La_Heutte,La Heutte,1388,base.ch
+city_ch_Sonceboz_Sombeval,Sonceboz-Sombeval,1388,base.ch
+city_ch_Corgemont,Corgémont,1388,base.ch
+city_ch_Cortebert,Cortébert,1388,base.ch
+city_ch_Courtelary,Courtelary,1388,base.ch
+city_ch_Montagne_de_Courtelary,Montagne-de-Courtelary,1388,base.ch
+city_ch_St_Imier,St-Imier,1388,base.ch
+city_ch_Mont_Soleil,Mont-Soleil,1388,base.ch
+city_ch_Les_Pontins,Les Pontins,1388,base.ch
+city_ch_Mont_Crosin,Mont-Crosin,1388,base.ch
+city_ch_Cormoret,Cormoret,1388,base.ch
+city_ch_Villeret,Villeret,1388,base.ch
+city_ch_Sonvilier,Sonvilier,1388,base.ch
+city_ch_Montagne_de_Sonvilier,Montagne-de-Sonvilier,1388,base.ch
+city_ch_Renan_BE,Renan BE,1388,base.ch
+city_ch_Tavannes,Tavannes,1388,base.ch
+city_ch_Le_Fuet,Le Fuet,1388,base.ch
+city_ch_Bellelay,Bellelay,1388,base.ch
+city_ch_Châtelat,Châtelat,1388,base.ch
+city_ch_Monible,Monible,1388,base.ch
+city_ch_Sornetan,Sornetan,1388,base.ch
+city_ch_Fornet_Dessous,Fornet-Dessous,1388,base.ch
+city_ch_Rebevelier,Rebévelier,1388,base.ch
+city_ch_Tramelan,Tramelan,1388,base.ch
+city_ch_La_Tanne,La Tanne,1388,base.ch
+city_ch_Les_Reussilles,Les Reussilles,1388,base.ch
+city_ch_Mont_Tramelan,Mont-Tramelan,1388,base.ch
+city_ch_Reconvilier,Reconvilier,1388,base.ch
+city_ch_Saicourt,Saicourt,1388,base.ch
+city_ch_Saules_BE,Saules BE,1388,base.ch
+city_ch_Loveresse,Loveresse,1388,base.ch
+city_ch_Pontenet,Pontenet,1388,base.ch
+city_ch_Bevilard,Bévilard,1388,base.ch
+city_ch_Champoz,Champoz,1388,base.ch
+city_ch_Malleray,Malleray,1388,base.ch
+city_ch_Sorvilier,Sorvilier,1388,base.ch
+city_ch_Court,Court,1388,base.ch
+city_ch_Moutier,Moutier,1388,base.ch
+city_ch_Perrefitte,Perrefitte,1388,base.ch
+city_ch_Eschert,Eschert,1388,base.ch
+city_ch_Belprahon,Belprahon,1388,base.ch
+city_ch_Grandval,Grandval,1388,base.ch
+city_ch_Cremines,Crémines,1388,base.ch
+city_ch_Corcelles_BE,Corcelles BE,1388,base.ch
+city_ch_Seehof,Seehof,1388,base.ch
+city_ch_Souboz,Souboz,1388,base.ch
+city_ch_Les_Ecorcheresses,Les Ecorcheresses,1388,base.ch
+city_ch_Roches_BE,Roches BE,1388,base.ch
+city_ch_Schelten,Schelten,1388,base.ch
+city_ch_Bern,Bern,1388,base.ch
+city_ch_Hinterkappelen,Hinterkappelen,1388,base.ch
+city_ch_Wohlen_b._Bern,Wohlen b. Bern,1388,base.ch
+city_ch_Murzelen,Murzelen,1388,base.ch
+city_ch_Frieswil,Frieswil,1388,base.ch
+city_ch_Detligen,Detligen,1388,base.ch
+city_ch_Herrenschwanden,Herrenschwanden,1388,base.ch
+city_ch_Kirchlindach,Kirchlindach,1388,base.ch
+city_ch_Ortschwaben,Ortschwaben,1388,base.ch
+city_ch_Uettligen,Uettligen,1388,base.ch
+city_ch_Innerberg,Innerberg,1388,base.ch
+city_ch_Meikirch,Meikirch,1388,base.ch
+city_ch_Wahlendorf,Wahlendorf,1388,base.ch
+city_ch_Bremgarten_b._Bern,Bremgarten b. Bern,1388,base.ch
+city_ch_Worblaufen,Worblaufen,1388,base.ch
+city_ch_Säriswil,Säriswil,1388,base.ch
+city_ch_Zollikofen,Zollikofen,1388,base.ch
+city_ch_Münchenbuchsee,Münchenbuchsee,1388,base.ch
+city_ch_Deisswil_b._Münchenbuchsee,Deisswil b. Münchenbuchsee,1388,base.ch
+city_ch_Diemerswil,Diemerswil,1388,base.ch
+city_ch_Wiggiswil,Wiggiswil,1388,base.ch
+city_ch_Lätti,Lätti,1388,base.ch
+city_ch_Schüpfen,Schüpfen,1388,base.ch
+city_ch_Ittigen,Ittigen,1388,base.ch
+city_ch_Bolligen,Bolligen,1388,base.ch
+city_ch_Stettlen,Stettlen,1388,base.ch
+city_ch_Boll,Boll,1388,base.ch
+city_ch_Utzigen,Utzigen,1388,base.ch
+city_ch_Ostermundigen,Ostermundigen,1388,base.ch
+city_ch_Gümligen,Gümligen,1388,base.ch
+city_ch_Muri_b._Bern,Muri b. Bern,1388,base.ch
+city_ch_Rüfenacht_BE,Rüfenacht BE,1388,base.ch
+city_ch_Vielbringen_b._Worb,Vielbringen b. Worb,1388,base.ch
+city_ch_Worb,Worb,1388,base.ch
+city_ch_Enggistein,Enggistein,1388,base.ch
+city_ch_Richigen,Richigen,1388,base.ch
+city_ch_Schlosswil,Schlosswil,1388,base.ch
+city_ch_Trimstein,Trimstein,1388,base.ch
+city_ch_Wabern,Wabern,1388,base.ch
+city_ch_Zimmerwald,Zimmerwald,1388,base.ch
+city_ch_Englisberg,Englisberg,1388,base.ch
+city_ch_Niedermuhlern,Niedermuhlern,1388,base.ch
+city_ch_Rüeggisberg,Rüeggisberg,1388,base.ch
+city_ch_Oberbütschel,Oberbütschel,1388,base.ch
+city_ch_Hinterfultigen,Hinterfultigen,1388,base.ch
+city_ch_Spiegel_b._Bern,Spiegel b. Bern,1388,base.ch
+city_ch_Oberbalm,Oberbalm,1388,base.ch
+city_ch_Liebefeld,Liebefeld,1388,base.ch
+city_ch_Köniz,Köniz,1388,base.ch
+city_ch_Schliern_b._Köniz,Schliern b. Köniz,1388,base.ch
+city_ch_Rüti_b._Riggisberg,Rüti b. Riggisberg,1388,base.ch
+city_ch_Münsingen,Münsingen,1388,base.ch
+city_ch_Tägertschi,Tägertschi,1388,base.ch
+city_ch_Allmendingen_b._Bern,Allmendingen b. Bern,1388,base.ch
+city_ch_Rubigen,Rubigen,1388,base.ch
+city_ch_Wichtrach,Wichtrach,1388,base.ch
+city_ch_Gerzensee,Gerzensee,1388,base.ch
+city_ch_Kirchdorf_BE,Kirchdorf BE,1388,base.ch
+city_ch_Mühledorf_BE,Mühledorf BE,1388,base.ch
+city_ch_Noflen_BE,Noflen BE,1388,base.ch
+city_ch_Kehrsatz,Kehrsatz,1388,base.ch
+city_ch_Belp,Belp,1388,base.ch
+city_ch_Belpberg,Belpberg,1388,base.ch
+city_ch_Toffen,Toffen,1388,base.ch
+city_ch_Kaufdorf,Kaufdorf,1388,base.ch
+city_ch_Gelterfingen,Gelterfingen,1388,base.ch
+city_ch_Mühlethurnen,Mühlethurnen,1388,base.ch
+city_ch_Lohnstorf,Lohnstorf,1388,base.ch
+city_ch_Kirchenthurnen,Kirchenthurnen,1388,base.ch
+city_ch_Rümligen,Rümligen,1388,base.ch
+city_ch_Riggisberg,Riggisberg,1388,base.ch
+city_ch_Gasel,Gasel,1388,base.ch
+city_ch_Niederscherli,Niederscherli,1388,base.ch
+city_ch_Mittelhäusern,Mittelhäusern,1388,base.ch
+city_ch_Lanzenhäusern,Lanzenhäusern,1388,base.ch
+city_ch_Schwarzenburg,Schwarzenburg,1388,base.ch
+city_ch_Mamishaus,Mamishaus,1388,base.ch
+city_ch_Rüschegg_Gambach,Rüschegg Gambach,1388,base.ch
+city_ch_Rüschegg_Heubach,Rüschegg Heubach,1388,base.ch
+city_ch_Helgisried_Rohrbach,Helgisried-Rohrbach,1388,base.ch
+city_ch_Riffenmatt,Riffenmatt,1388,base.ch
+city_ch_Milken,Milken,1388,base.ch
+city_ch_Guggisberg,Guggisberg,1388,base.ch
+city_ch_Riedstätt,Riedstätt,1388,base.ch
+city_ch_Niederwangen_b._Bern,Niederwangen b. Bern,1388,base.ch
+city_ch_Oberwangen_b._Bern,Oberwangen b. Bern,1388,base.ch
+city_ch_Thörishaus,Thörishaus,1388,base.ch
+city_ch_Flamatt,Flamatt,1389,base.ch
+city_ch_Neuenegg,Neuenegg,1388,base.ch
+city_ch_Laupen_BE,Laupen BE,1388,base.ch
+city_ch_Bösingen,Bösingen,1389,base.ch
+city_ch_Kriechenwil,Kriechenwil,1388,base.ch
+city_ch_Ueberstorf,Ueberstorf,1389,base.ch
+city_ch_Albligen,Albligen,1388,base.ch
+city_ch_Wünnewil,Wünnewil,1389,base.ch
+city_ch_Schmitten_FR,Schmitten FR,1389,base.ch
+city_ch_Düdingen,Düdingen,1389,base.ch
+city_ch_Frauenkappelen,Frauenkappelen,1388,base.ch
+city_ch_Mühleberg,Mühleberg,1388,base.ch
+city_ch_Rosshäusern,Rosshäusern,1388,base.ch
+city_ch_Gümmenen,Gümmenen,1388,base.ch
+city_ch_Rizenbach,Rizenbach,1388,base.ch
+city_ch_Ferenbalm,Ferenbalm,1388,base.ch
+city_ch_Wallenbuch,Wallenbuch,1389,base.ch
+city_ch_Biberen,Biberen,1388,base.ch
+city_ch_Gammen,Gammen,1388,base.ch
+city_ch_Wileroltigen,Wileroltigen,1388,base.ch
+city_ch_Golaten,Golaten,1388,base.ch
+city_ch_Gurbrü,Gurbrü,1388,base.ch
+city_ch_Kerzers,Kerzers,1389,base.ch
+city_ch_Gurmels,Gurmels,1389,base.ch
+city_ch_Kleingurmels,Kleingurmels,1389,base.ch
+city_ch_Liebistorf,Liebistorf,1389,base.ch
+city_ch_Kleinbösingen,Kleinbösingen,1389,base.ch
+city_ch_Ulmiz,Ulmiz,1389,base.ch
+city_ch_Gempenach,Gempenach,1389,base.ch
+city_ch_Büchslen,Büchslen,1389,base.ch
+city_ch_Lurtigen,Lurtigen,1389,base.ch
+city_ch_Ried_b._Kerzers,Ried b. Kerzers,1389,base.ch
+city_ch_Agriswil,Agriswil,1389,base.ch
+city_ch_Müntschemier,Müntschemier,1388,base.ch
+city_ch_Treiten,Treiten,1388,base.ch
+city_ch_Ins,Ins,1388,base.ch
+city_ch_Tschugg,Tschugg,1388,base.ch
+city_ch_Vinelz,Vinelz,1388,base.ch
+city_ch_Erlach,Erlach,1388,base.ch
+city_ch_Gampelen,Gampelen,1388,base.ch
+city_ch_Brüttelen,Brüttelen,1388,base.ch
+city_ch_Gals,Gals,1388,base.ch
+city_ch_Lyss,Lyss,1388,base.ch
+city_ch_Wengi_b._Büren,Wengi b. Büren,1388,base.ch
+city_ch_Ruppoldsried,Ruppoldsried,1388,base.ch
+city_ch_Worben,Worben,1388,base.ch
+city_ch_Rapperswil_BE,Rapperswil BE,1388,base.ch
+city_ch_Dieterswil,Dieterswil,1388,base.ch
+city_ch_Bangerten_b._Dieterswil,Bangerten b. Dieterswil,1388,base.ch
+city_ch_Seewil,Seewil,1388,base.ch
+city_ch_Grossaffoltern,Grossaffoltern,1388,base.ch
+city_ch_Ammerzwil_BE,Ammerzwil BE,1388,base.ch
+city_ch_Suberg,Suberg,1388,base.ch
+city_ch_Büetigen,Büetigen,1388,base.ch
+city_ch_Diessbach_b._Büren,Diessbach b. Büren,1388,base.ch
+city_ch_Wiler_b._Seedorf,Wiler b. Seedorf,1388,base.ch
+city_ch_Seedorf_BE,Seedorf BE,1388,base.ch
+city_ch_Lobsigen,Lobsigen,1388,base.ch
+city_ch_Aarberg,Aarberg,1388,base.ch
+city_ch_Radelfingen_b._Aarberg,Radelfingen b. Aarberg,1388,base.ch
+city_ch_Walperswil,Walperswil,1388,base.ch
+city_ch_Epsach,Epsach,1388,base.ch
+city_ch_Kappelen,Kappelen,1388,base.ch
+city_ch_Hermrigen,Hermrigen,1388,base.ch
+city_ch_Bühl_b._Aarberg,Bühl b. Aarberg,1388,base.ch
+city_ch_Merzligen,Merzligen,1388,base.ch
+city_ch_Murten,Murten,1389,base.ch
+city_ch_Meyriez,Meyriez,1389,base.ch
+city_ch_Greng,Greng,1389,base.ch
+city_ch_Bargen_BE,Bargen BE,1388,base.ch
+city_ch_Kallnach,Kallnach,1388,base.ch
+city_ch_Niederried_b._Kallnach,Niederried b. Kallnach,1388,base.ch
+city_ch_Fräschels,Fräschels,1389,base.ch
+city_ch_Galmiz,Galmiz,1389,base.ch
+city_ch_Muntelier,Muntelier,1389,base.ch
+city_ch_Busswil_BE,Busswil BE,1388,base.ch
+city_ch_Dotzigen,Dotzigen,1388,base.ch
+city_ch_Büren_an_der_Aare,Büren an der Aare,1388,base.ch
+city_ch_Meienried,Meienried,1388,base.ch
+city_ch_Rüti_b._Büren,Rüti b. Büren,1388,base.ch
+city_ch_Arch,Arch,1388,base.ch
+city_ch_Leuzigen,Leuzigen,1388,base.ch
+city_ch_Oberwil_b._Büren,Oberwil b. Büren,1388,base.ch
+city_ch_Moosseedorf,Moosseedorf,1388,base.ch
+city_ch_Jegenstorf,Jegenstorf,1388,base.ch
+city_ch_Münchringen,Münchringen,1388,base.ch
+city_ch_Zuzwil_BE,Zuzwil BE,1388,base.ch
+city_ch_Ballmoos,Ballmoos,1388,base.ch
+city_ch_Iffwil,Iffwil,1388,base.ch
+city_ch_Scheunen,Scheunen,1388,base.ch
+city_ch_Etzelkofen,Etzelkofen,1388,base.ch
+city_ch_Grafenried,Grafenried,1388,base.ch
+city_ch_Kernenried,Kernenried,1388,base.ch
+city_ch_Zauggenried,Zauggenried,1388,base.ch
+city_ch_Fraubrunnen,Fraubrunnen,1388,base.ch
+city_ch_Büren_zum_Hof,Büren zum Hof,1388,base.ch
+city_ch_Schalunen,Schalunen,1388,base.ch
+city_ch_Bätterkinden,Bätterkinden,1388,base.ch
+city_ch_Kräiligen,Kräiligen,1388,base.ch
+city_ch_Limpach,Limpach,1388,base.ch
+city_ch_Mülchi,Mülchi,1388,base.ch
+city_ch_Urtenen_Schönbühl,Urtenen-Schönbühl,1388,base.ch
+city_ch_Mattstetten,Mattstetten,1388,base.ch
+city_ch_Bäriswil_BE,Bäriswil BE,1388,base.ch
+city_ch_Hindelbank,Hindelbank,1388,base.ch
+city_ch_Mötschwil,Mötschwil,1388,base.ch
+city_ch_Hettiswil_b._Hindelbank,Hettiswil b. Hindelbank,1388,base.ch
+city_ch_Krauchthal,Krauchthal,1388,base.ch
+city_ch_Herzogenbuchsee,Herzogenbuchsee,1388,base.ch
+city_ch_Niederönz,Niederönz,1388,base.ch
+city_ch_Oberönz,Oberönz,1388,base.ch
+city_ch_Grasswil,Grasswil,1388,base.ch
+city_ch_Seeberg,Seeberg,1388,base.ch
+city_ch_Bettenhausen,Bettenhausen,1388,base.ch
+city_ch_Bollodingen,Bollodingen,1388,base.ch
+city_ch_Thörigen,Thörigen,1388,base.ch
+city_ch_Ochlenberg,Ochlenberg,1388,base.ch
+city_ch_Bleienbach,Bleienbach,1388,base.ch
+city_ch_Wanzwil,Wanzwil,1388,base.ch
+city_ch_Röthenbach_Herzogenbuchsee,Röthenbach Herzogenbuchsee,1388,base.ch
+city_ch_Heimenhausen,Heimenhausen,1388,base.ch
+city_ch_Wangenried,Wangenried,1388,base.ch
+city_ch_Inkwil,Inkwil,1388,base.ch
+city_ch_Graben,Graben,1388,base.ch
+city_ch_Berken,Berken,1388,base.ch
+city_ch_Walliswil_b._Wangen,Walliswil b. Wangen,1388,base.ch
+city_ch_Wangen_an_der_Aare,Wangen an der Aare,1388,base.ch
+city_ch_Walliswil_b._Niederbipp,Walliswil b. Niederbipp,1388,base.ch
+city_ch_Burgdorf,Burgdorf,1388,base.ch
+city_ch_Heimiswil,Heimiswil,1388,base.ch
+city_ch_Kaltacker,Kaltacker,1388,base.ch
+city_ch_Oberburg,Oberburg,1388,base.ch
+city_ch_Hasle_b._Burgdorf,Hasle b. Burgdorf,1388,base.ch
+city_ch_Schafhausen_im_Emmental,Schafhausen im Emmental,1388,base.ch
+city_ch_Rüegsauschachen,Rüegsauschachen,1388,base.ch
+city_ch_Affoltern_im_Emmental,Affoltern im Emmental,1388,base.ch
+city_ch_Rüegsau,Rüegsau,1388,base.ch
+city_ch_Rüegsbach,Rüegsbach,1388,base.ch
+city_ch_Biembach_im_Emmental,Biembach im Emmental,1388,base.ch
+city_ch_Lyssach,Lyssach,1388,base.ch
+city_ch_Rüti_b._Lyssach,Rüti b. Lyssach,1388,base.ch
+city_ch_Kirchberg_BE,Kirchberg BE,1388,base.ch
+city_ch_Rüdtligen,Rüdtligen,1388,base.ch
+city_ch_Alchenflüh,Alchenflüh,1388,base.ch
+city_ch_Ersigen,Ersigen,1388,base.ch
+city_ch_Niederösch,Niederösch,1388,base.ch
+city_ch_Oberösch,Oberösch,1388,base.ch
+city_ch_Koppigen,Koppigen,1388,base.ch
+city_ch_Willadingen,Willadingen,1388,base.ch
+city_ch_Aefligen,Aefligen,1388,base.ch
+city_ch_Utzenstorf,Utzenstorf,1388,base.ch
+city_ch_Wiler_b._Utzenstorf,Wiler b. Utzenstorf,1388,base.ch
+city_ch_Höchstetten,Höchstetten,1388,base.ch
+city_ch_Hellsau,Hellsau,1388,base.ch
+city_ch_Lützelflüh_Goldbach,Lützelflüh-Goldbach,1388,base.ch
+city_ch_Schwanden_im_Emmental,Schwanden im Emmental,1388,base.ch
+city_ch_Obergoldbach,Obergoldbach,1388,base.ch
+city_ch_Landiswil,Landiswil,1388,base.ch
+city_ch_Ramsei,Ramsei,1388,base.ch
+city_ch_Zollbrück,Zollbrück,1388,base.ch
+city_ch_Rüderswil,Rüderswil,1388,base.ch
+city_ch_Lauperswil,Lauperswil,1388,base.ch
+city_ch_Ranflüh,Ranflüh,1388,base.ch
+city_ch_Grünenmatt,Grünenmatt,1388,base.ch
+city_ch_Heimisbach,Heimisbach,1388,base.ch
+city_ch_Sumiswald,Sumiswald,1388,base.ch
+city_ch_Grünen,Grünen,1388,base.ch
+city_ch_Trachselwald,Trachselwald,1388,base.ch
+city_ch_Wasen_im_Emmental,Wasen im Emmental,1388,base.ch
+city_ch_Weier_im_Emmental,Weier im Emmental,1388,base.ch
+city_ch_Häusernmoos_im_Emmental,Häusernmoos im Emmental,1388,base.ch
+city_ch_Schmidigen_Mühleweg,Schmidigen-Mühleweg,1388,base.ch
+city_ch_Dürrenroth,Dürrenroth,1388,base.ch
+city_ch_Wynigen,Wynigen,1388,base.ch
+city_ch_Rumendingen,Rumendingen,1388,base.ch
+city_ch_Alchenstorf,Alchenstorf,1388,base.ch
+city_ch_Rüedisbach,Rüedisbach,1388,base.ch
+city_ch_Riedtwil,Riedtwil,1388,base.ch
+city_ch_Hermiswil,Hermiswil,1388,base.ch
+city_ch_Oschwand,Oschwand,1388,base.ch
+city_ch_Gysenstein,Gysenstein,1388,base.ch
+city_ch_Niederhünigen,Niederhünigen,1388,base.ch
+city_ch_Oberhünigen,Oberhünigen,1388,base.ch
+city_ch_Grosshöchstetten,Grosshöchstetten,1388,base.ch
+city_ch_Biglen,Biglen,1388,base.ch
+city_ch_Arni_BE,Arni BE,1388,base.ch
+city_ch_Konolfingen,Konolfingen,1388,base.ch
+city_ch_Freimettigen,Freimettigen,1388,base.ch
+city_ch_Häutligen,Häutligen,1388,base.ch
+city_ch_Walkringen,Walkringen,1388,base.ch
+city_ch_Bigenthal,Bigenthal,1388,base.ch
+city_ch_Oberthal,Oberthal,1388,base.ch
+city_ch_Zäziwil,Zäziwil,1388,base.ch
+city_ch_Mirchel,Mirchel,1388,base.ch
+city_ch_Bowil,Bowil,1388,base.ch
+city_ch_Signau,Signau,1388,base.ch
+city_ch_Schüpbach,Schüpbach,1388,base.ch
+city_ch_Aeschau,Aeschau,1388,base.ch
+city_ch_Eggiwil,Eggiwil,1388,base.ch
+city_ch_Röthenbach_im_Emmental,Röthenbach im Emmental,1388,base.ch
+city_ch_Emmenmatt,Emmenmatt,1388,base.ch
+city_ch_Langnau_im_Emmental,Langnau im Emmental,1388,base.ch
+city_ch_Oberfrittenbach,Oberfrittenbach,1388,base.ch
+city_ch_Bärau,Bärau,1388,base.ch
+city_ch_Gohl,Gohl,1388,base.ch
+city_ch_Trubschachen,Trubschachen,1388,base.ch
+city_ch_Trub,Trub,1388,base.ch
+city_ch_Fankhaus_(Trub),Fankhaus (Trub),1388,base.ch
+city_ch_Thun,Thun,1388,base.ch
+city_ch_Steffisburg,Steffisburg,1388,base.ch
+city_ch_Unterlangenegg,Unterlangenegg,1388,base.ch
+city_ch_Heimenschwand,Heimenschwand,1388,base.ch
+city_ch_Schwarzenegg,Schwarzenegg,1388,base.ch
+city_ch_Fahrni_b._Thun,Fahrni b. Thun,1388,base.ch
+city_ch_Süderen,Süderen,1388,base.ch
+city_ch_Eriz,Eriz,1388,base.ch
+city_ch_Homberg_b._Thun,Homberg b. Thun,1388,base.ch
+city_ch_Teuffenthal_b._Thun,Teuffenthal b. Thun,1388,base.ch
+city_ch_Horrenbach,Horrenbach,1388,base.ch
+city_ch_Buchen_BE,Buchen BE,1388,base.ch
+city_ch_Goldiwil_(Thun),Goldiwil (Thun),1388,base.ch
+city_ch_Schwendibach,Schwendibach,1388,base.ch
+city_ch_Heiligenschwendi,Heiligenschwendi,1388,base.ch
+city_ch_Hünibach,Hünibach,1388,base.ch
+city_ch_Heimberg,Heimberg,1388,base.ch
+city_ch_Uttigen,Uttigen,1388,base.ch
+city_ch_Kiesen,Kiesen,1388,base.ch
+city_ch_Oppligen,Oppligen,1388,base.ch
+city_ch_Jaberg,Jaberg,1388,base.ch
+city_ch_Höfen_b._Thun,Höfen b. Thun,1388,base.ch
+city_ch_Niederstocken,Niederstocken,1388,base.ch
+city_ch_Oberstocken,Oberstocken,1388,base.ch
+city_ch_Amsoldingen,Amsoldingen,1388,base.ch
+city_ch_Thierachern,Thierachern,1388,base.ch
+city_ch_Uebeschi,Uebeschi,1388,base.ch
+city_ch_Längenbühl,Längenbühl,1388,base.ch
+city_ch_Forst_b._Längenbühl,Forst b. Längenbühl,1388,base.ch
+city_ch_Blumenstein,Blumenstein,1388,base.ch
+city_ch_Pohlern,Pohlern,1388,base.ch
+city_ch_Gwatt_(Thun),Gwatt (Thun),1388,base.ch
+city_ch_Zwieselberg,Zwieselberg,1388,base.ch
+city_ch_Einigen,Einigen,1388,base.ch
+city_ch_Reutigen,Reutigen,1388,base.ch
+city_ch_Hilterfingen,Hilterfingen,1388,base.ch
+city_ch_Oberhofen_am_Thunersee,Oberhofen am Thunersee,1388,base.ch
+city_ch_Gunten,Gunten,1388,base.ch
+city_ch_Sigriswil,Sigriswil,1388,base.ch
+city_ch_Tschingel_ob_Gunten,Tschingel ob Gunten,1388,base.ch
+city_ch_Aeschlen_ob_Gunten,Aeschlen ob Gunten,1388,base.ch
+city_ch_Ringoldswil,Ringoldswil,1388,base.ch
+city_ch_Schwanden_(Sigriswil),Schwanden (Sigriswil),1388,base.ch
+city_ch_Merligen,Merligen,1388,base.ch
+city_ch_Uetendorf,Uetendorf,1388,base.ch
+city_ch_Seftigen,Seftigen,1388,base.ch
+city_ch_Gurzelen,Gurzelen,1388,base.ch
+city_ch_Burgistein,Burgistein,1388,base.ch
+city_ch_Wattenwil,Wattenwil,1388,base.ch
+city_ch_Brenzikofen,Brenzikofen,1388,base.ch
+city_ch_Herbligen,Herbligen,1388,base.ch
+city_ch_Oberdiessbach,Oberdiessbach,1388,base.ch
+city_ch_Aeschlen_b._Oberdiessbach,Aeschlen b. Oberdiessbach,1388,base.ch
+city_ch_Linden,Linden,1388,base.ch
+city_ch_Bleiken_b._Oberdiessbach,Bleiken b. Oberdiessbach,1388,base.ch
+city_ch_Spiez,Spiez,1388,base.ch
+city_ch_Hondrich,Hondrich,1388,base.ch
+city_ch_Aeschi_b._Spiez,Aeschi b. Spiez,1388,base.ch
+city_ch_Aeschiried,Aeschiried,1388,base.ch
+city_ch_Krattigen,Krattigen,1388,base.ch
+city_ch_Faulensee,Faulensee,1388,base.ch
+city_ch_Leissigen,Leissigen,1388,base.ch
+city_ch_Därligen,Därligen,1388,base.ch
+city_ch_Emdthal,Emdthal,1388,base.ch
+city_ch_Mülenen,Mülenen,1388,base.ch
+city_ch_Reichenbach_im_Kandertal,Reichenbach im Kandertal,1388,base.ch
+city_ch_Frutigen,Frutigen,1388,base.ch
+city_ch_Wengi_b._Frutigen,Wengi b. Frutigen,1388,base.ch
+city_ch_Adelboden,Adelboden,1388,base.ch
+city_ch_Kandergrund,Kandergrund,1388,base.ch
+city_ch_Blausee_Mitholz,Blausee-Mitholz,1388,base.ch
+city_ch_Kandersteg,Kandersteg,1388,base.ch
+city_ch_Scharnachtal,Scharnachtal,1388,base.ch
+city_ch_Kiental,Kiental,1388,base.ch
+city_ch_Ried_(Frutigen),Ried (Frutigen),1388,base.ch
+city_ch_Achseten,Achseten,1388,base.ch
+city_ch_Wimmis,Wimmis,1388,base.ch
+city_ch_Oey,Oey,1388,base.ch
+city_ch_Diemtigen,Diemtigen,1388,base.ch
+city_ch_Horboden,Horboden,1388,base.ch
+city_ch_Zwischenflüh,Zwischenflüh,1388,base.ch
+city_ch_Schwenden_im_Diemtigtal,Schwenden im Diemtigtal,1388,base.ch
+city_ch_Latterbach,Latterbach,1388,base.ch
+city_ch_Erlenbach_im_Simmental,Erlenbach im Simmental,1388,base.ch
+city_ch_Därstetten,Därstetten,1388,base.ch
+city_ch_Weissenburg,Weissenburg,1388,base.ch
+city_ch_Oberwil_im_Simmental,Oberwil im Simmental,1388,base.ch
+city_ch_Boltigen,Boltigen,1388,base.ch
+city_ch_Zweisimmen,Zweisimmen,1388,base.ch
+city_ch_Blankenburg,Blankenburg,1388,base.ch
+city_ch_St._Stephan,St. Stephan,1388,base.ch
+city_ch_Matten_(St._Stephan),Matten (St. Stephan),1388,base.ch
+city_ch_Lenk_im_Simmental,Lenk im Simmental,1388,base.ch
+city_ch_Oeschseite,Oeschseite,1388,base.ch
+city_ch_Saanenmöser,Saanenmöser,1388,base.ch
+city_ch_Schönried,Schönried,1388,base.ch
+city_ch_Gstaad,Gstaad,1388,base.ch
+city_ch_Turbach,Turbach,1388,base.ch
+city_ch_Lauenen_b._Gstaad,Lauenen b. Gstaad,1388,base.ch
+city_ch_Grund_b._Gstaad,Grund b. Gstaad,1388,base.ch
+city_ch_Feutersoey,Feutersoey,1388,base.ch
+city_ch_Gsteig_b._Gstaad,Gsteig b. Gstaad,1388,base.ch
+city_ch_Saanen,Saanen,1388,base.ch
+city_ch_Interlaken,Interlaken,1388,base.ch
+city_ch_Unterseen,Unterseen,1388,base.ch
+city_ch_Matten_b._Interlaken,Matten b. Interlaken,1388,base.ch
+city_ch_Sundlauenen,Sundlauenen,1388,base.ch
+city_ch_Jungfraujoch,Jungfraujoch,1393,base.ch
+city_ch_Beatenberg,Beatenberg,1388,base.ch
+city_ch_Habkern,Habkern,1388,base.ch
+city_ch_Goldswil_b._Interlaken,Goldswil b. Interlaken,1388,base.ch
+city_ch_Bönigen_b._Interlaken,Bönigen b. Interlaken,1388,base.ch
+city_ch_Iseltwald,Iseltwald,1388,base.ch
+city_ch_Wilderswil,Wilderswil,1388,base.ch
+city_ch_Saxeten,Saxeten,1388,base.ch
+city_ch_Gsteigwiler,Gsteigwiler,1388,base.ch
+city_ch_Zweilütschinen,Zweilütschinen,1388,base.ch
+city_ch_Gündlischwand,Gündlischwand,1388,base.ch
+city_ch_Lütschental,Lütschental,1388,base.ch
+city_ch_Burglauenen,Burglauenen,1388,base.ch
+city_ch_Grindelwald,Grindelwald,1388,base.ch
+city_ch_Lauterbrunnen,Lauterbrunnen,1388,base.ch
+city_ch_Isenfluh,Isenfluh,1388,base.ch
+city_ch_Wengen,Wengen,1388,base.ch
+city_ch_Kleine_Scheidegg,Kleine Scheidegg,1388,base.ch
+city_ch_Eigergletscher,Eigergletscher,1388,base.ch
+city_ch_Stechelberg,Stechelberg,1388,base.ch
+city_ch_Mürren,Mürren,1388,base.ch
+city_ch_Gimmelwald,Gimmelwald,1388,base.ch
+city_ch_Ringgenberg_BE,Ringgenberg BE,1388,base.ch
+city_ch_Niederried_b._Interlaken,Niederried b. Interlaken,1388,base.ch
+city_ch_Oberried_am_Brienzersee,Oberried am Brienzersee,1388,base.ch
+city_ch_Brienz_BE,Brienz BE,1388,base.ch
+city_ch_Axalp,Axalp,1388,base.ch
+city_ch_Schwanden_b._Brienz,Schwanden b. Brienz,1388,base.ch
+city_ch_Brienzwiler,Brienzwiler,1388,base.ch
+city_ch_Unterbach_BE,Unterbach BE,1388,base.ch
+city_ch_Hofstetten_b._Brienz,Hofstetten b. Brienz,1388,base.ch
+city_ch_Meiringen,Meiringen,1388,base.ch
+city_ch_Rosenlaui,Rosenlaui,1388,base.ch
+city_ch_Schattenhalb,Schattenhalb,1388,base.ch
+city_ch_Brünig,Brünig,1388,base.ch
+city_ch_Innertkirchen,Innertkirchen,1388,base.ch
+city_ch_Gadmen,Gadmen,1388,base.ch
+city_ch_Guttannen,Guttannen,1388,base.ch
+city_ch_Brig,Brig,1393,base.ch
+city_ch_Gamsen,Gamsen,1393,base.ch
+city_ch_Brigerbad,Brigerbad,1393,base.ch
+city_ch_Rothwald,Rothwald,1393,base.ch
+city_ch_Glis,Glis,1393,base.ch
+city_ch_Mund,Mund,1393,base.ch
+city_ch_Birgisch,Birgisch,1393,base.ch
+city_ch_Naters,Naters,1393,base.ch
+city_ch_Saas_Almagell,Saas-Almagell,1393,base.ch
+city_ch_Saas_Fee,Saas-Fee,1393,base.ch
+city_ch_Simplon_Dorf,Simplon Dorf,1393,base.ch
+city_ch_Simplon_Hospiz,Simplon Hospiz,1393,base.ch
+city_ch_Gabi_(Simplon),Gabi (Simplon),1393,base.ch
+city_ch_Gondo,Gondo,1393,base.ch
+city_ch_Saas_Balen,Saas-Balen,1393,base.ch
+city_ch_Saas_Grund,Saas-Grund,1393,base.ch
+city_ch_Ried_Brig,Ried-Brig,1393,base.ch
+city_ch_Termen,Termen,1393,base.ch
+city_ch_Rosswald,Rosswald,1393,base.ch
+city_ch_Blatten_b._Naters,Blatten b. Naters,1393,base.ch
+city_ch_Belalp,Belalp,1393,base.ch
+city_ch_Ferden,Ferden,1393,base.ch
+city_ch_Kippel,Kippel,1393,base.ch
+city_ch_Goppenstein,Goppenstein,1393,base.ch
+city_ch_Wiler_(Lötschen),Wiler (Lötschen),1393,base.ch
+city_ch_Blatten_(Lötschen),Blatten (Lötschen),1393,base.ch
+city_ch_Zermatt,Zermatt,1393,base.ch
+city_ch_Stalden_VS,Stalden VS,1393,base.ch
+city_ch_Kalpetran,Kalpetran,1393,base.ch
+city_ch_Eisten,Eisten,1393,base.ch
+city_ch_Törbel,Törbel,1393,base.ch
+city_ch_St._Niklaus_VS,St. Niklaus VS,1393,base.ch
+city_ch_Grächen,Grächen,1393,base.ch
+city_ch_Embd,Embd,1393,base.ch
+city_ch_Herbriggen,Herbriggen,1393,base.ch
+city_ch_Randa,Randa,1393,base.ch
+city_ch_Täsch,Täsch,1393,base.ch
+city_ch_Visp,Visp,1393,base.ch
+city_ch_Eyholz,Eyholz,1393,base.ch
+city_ch_Lalden,Lalden,1393,base.ch
+city_ch_Visperterminen,Visperterminen,1393,base.ch
+city_ch_Staldenried,Staldenried,1393,base.ch
+city_ch_Zeneggen,Zeneggen,1393,base.ch
+city_ch_Bürchen,Bürchen,1393,base.ch
+city_ch_Baltschieder,Baltschieder,1393,base.ch
+city_ch_Ausserberg,Ausserberg,1393,base.ch
+city_ch_Eggerberg,Eggerberg,1393,base.ch
+city_ch_Steg_VS,Steg VS,1393,base.ch
+city_ch_Raron,Raron,1393,base.ch
+city_ch_Niedergesteln,Niedergesteln,1393,base.ch
+city_ch_St._German,St. German,1393,base.ch
+city_ch_Eischoll,Eischoll,1393,base.ch
+city_ch_Unterbäch_VS,Unterbäch VS,1393,base.ch
+city_ch_Gampel,Gampel,1393,base.ch
+city_ch_Niedergampel,Niedergampel,1393,base.ch
+city_ch_Turtmann,Turtmann,1393,base.ch
+city_ch_Gruben,Gruben,1393,base.ch
+city_ch_Ergisch,Ergisch,1393,base.ch
+city_ch_Unterems,Unterems,1393,base.ch
+city_ch_Oberems,Oberems,1393,base.ch
+city_ch_Hohtenn,Hohtenn,1393,base.ch
+city_ch_Agarn,Agarn,1393,base.ch
+city_ch_Susten,Susten,1393,base.ch
+city_ch_Leuk_Stadt,Leuk Stadt,1393,base.ch
+city_ch_Inden,Inden,1393,base.ch
+city_ch_Varen,Varen,1393,base.ch
+city_ch_Leukerbad,Leukerbad,1393,base.ch
+city_ch_Albinen,Albinen,1393,base.ch
+city_ch_Guttet_Feschel,Guttet-Feschel,1393,base.ch
+city_ch_Erschmatt,Erschmatt,1393,base.ch
+city_ch_Bratsch,Bratsch,1393,base.ch
+city_ch_Sierre,Sierre,1393,base.ch
+city_ch_Corin_de_la_Crête,Corin-de-la-Crête,1393,base.ch
+city_ch_Loc,Loc,1393,base.ch
+city_ch_Niouc,Niouc,1393,base.ch
+city_ch_Muraz_(Sierre),Muraz (Sierre),1393,base.ch
+city_ch_Vissoie,Vissoie,1393,base.ch
+city_ch_St_Luc,St-Luc,1393,base.ch
+city_ch_Chandolin,Chandolin,1393,base.ch
+city_ch_Ayer,Ayer,1393,base.ch
+city_ch_Zinal,Zinal,1393,base.ch
+city_ch_Grimentz,Grimentz,1393,base.ch
+city_ch_Mission,Mission,1393,base.ch
+city_ch_St_Jean_VS,St-Jean VS,1393,base.ch
+city_ch_Crans_Montana,Crans-Montana,1393,base.ch
+city_ch_Montana,Montana,1393,base.ch
+city_ch_Aminona,Aminona,1393,base.ch
+city_ch_Chippis,Chippis,1393,base.ch
+city_ch_Chalais,Chalais,1393,base.ch
+city_ch_Rechy,Réchy,1393,base.ch
+city_ch_Vercorin,Vercorin,1393,base.ch
+city_ch_Veyras,Veyras,1393,base.ch
+city_ch_Salgesch,Salgesch,1393,base.ch
+city_ch_Chermignon,Chermignon,1393,base.ch
+city_ch_Chermignon_d'en_Bas,Chermignon-d'en-Bas,1393,base.ch
+city_ch_Ollon_VS,Ollon VS,1393,base.ch
+city_ch_Miege,Miège,1393,base.ch
+city_ch_Venthône,Venthône,1393,base.ch
+city_ch_Mollens_VS,Mollens VS,1393,base.ch
+city_ch_Randogne,Randogne,1393,base.ch
+city_ch_Noës,Noës,1393,base.ch
+city_ch_Champzabe,Champzabé,1393,base.ch
+city_ch_Granges_VS,Granges VS,1393,base.ch
+city_ch_Flanthey,Flanthey,1393,base.ch
+city_ch_Grône,Grône,1393,base.ch
+city_ch_Bitsch,Bitsch,1393,base.ch
+city_ch_Mörel,Mörel,1393,base.ch
+city_ch_Bister,Bister,1393,base.ch
+city_ch_Filet,Filet,1393,base.ch
+city_ch_Goppisberg,Goppisberg,1393,base.ch
+city_ch_Greich,Greich,1393,base.ch
+city_ch_Fiesch,Fiesch,1393,base.ch
+city_ch_Fieschertal,Fieschertal,1393,base.ch
+city_ch_Münster_VS,Münster VS,1393,base.ch
+city_ch_Geschinen,Geschinen,1393,base.ch
+city_ch_Ried_Mörel,Ried-Mörel,1393,base.ch
+city_ch_Riederalp,Riederalp,1393,base.ch
+city_ch_Ulrichen,Ulrichen,1393,base.ch
+city_ch_Obergesteln,Obergesteln,1393,base.ch
+city_ch_Biel_VS,Biel VS,1393,base.ch
+city_ch_Ritzingen,Ritzingen,1393,base.ch
+city_ch_Selkingen,Selkingen,1393,base.ch
+city_ch_Niederwald,Niederwald,1393,base.ch
+city_ch_Blitzingen,Blitzingen,1393,base.ch
+city_ch_Betten,Betten,1393,base.ch
+city_ch_Bettmeralp,Bettmeralp,1393,base.ch
+city_ch_Grengiols,Grengiols,1393,base.ch
+city_ch_Lax,Lax,1393,base.ch
+city_ch_Martisberg,Martisberg,1393,base.ch
+city_ch_Ernen,Ernen,1393,base.ch
+city_ch_Ausserbinn,Ausserbinn,1393,base.ch
+city_ch_Mühlebach_(Goms),Mühlebach (Goms),1393,base.ch
+city_ch_Steinhaus,Steinhaus,1393,base.ch
+city_ch_Binn,Binn,1393,base.ch
+city_ch_Bellwald,Bellwald,1393,base.ch
+city_ch_Reckingen_VS,Reckingen VS,1393,base.ch
+city_ch_Gluringen,Gluringen,1393,base.ch
+city_ch_Oberwald,Oberwald,1393,base.ch
+city_ch_Attiswil,Attiswil,1388,base.ch
+city_ch_Wiedlisbach,Wiedlisbach,1388,base.ch
+city_ch_Oberbipp,Oberbipp,1388,base.ch
+city_ch_Rumisberg,Rumisberg,1388,base.ch
+city_ch_Farnern,Farnern,1388,base.ch
+city_ch_Zielebach,Zielebach,1388,base.ch
+city_ch_Niederbipp,Niederbipp,1388,base.ch
+city_ch_Wolfisberg,Wolfisberg,1388,base.ch
+city_ch_Langenthal,Langenthal,1388,base.ch
+city_ch_Schwarzhäusern,Schwarzhäusern,1388,base.ch
+city_ch_Aarwangen,Aarwangen,1388,base.ch
+city_ch_Bannwil,Bannwil,1388,base.ch
+city_ch_Roggwil_BE,Roggwil BE,1388,base.ch
+city_ch_Untersteckholz,Untersteckholz,1388,base.ch
+city_ch_Melchnau,Melchnau,1388,base.ch
+city_ch_Busswil_b._Melchnau,Busswil b. Melchnau,1388,base.ch
+city_ch_Reisiswil,Reisiswil,1388,base.ch
+city_ch_Bützberg,Bützberg,1388,base.ch
+city_ch_Thunstetten,Thunstetten,1388,base.ch
+city_ch_Wynau,Wynau,1388,base.ch
+city_ch_Obersteckholz,Obersteckholz,1388,base.ch
+city_ch_Lotzwil,Lotzwil,1388,base.ch
+city_ch_Gutenburg,Gutenburg,1388,base.ch
+city_ch_Rütschelen,Rütschelen,1388,base.ch
+city_ch_Madiswil,Madiswil,1388,base.ch
+city_ch_Leimiswil,Leimiswil,1388,base.ch
+city_ch_Kleindietwil,Kleindietwil,1388,base.ch
+city_ch_Ursenbach,Ursenbach,1388,base.ch
+city_ch_Rohrbach,Rohrbach,1388,base.ch
+city_ch_Rohrbachgraben,Rohrbachgraben,1388,base.ch
+city_ch_Walterswil_BE,Walterswil BE,1388,base.ch
+city_ch_Oeschenbach,Oeschenbach,1388,base.ch
+city_ch_Auswil,Auswil,1388,base.ch
+city_ch_Huttwil,Huttwil,1388,base.ch
+city_ch_Eriswil,Eriswil,1388,base.ch
+city_ch_Schwarzenbach_(Huttwil),Schwarzenbach (Huttwil),1388,base.ch
+city_ch_Wyssachen,Wyssachen,1388,base.ch
+city_ch_Gondiswil,Gondiswil,1388,base.ch
+city_ch_Hasliberg_Hohfluh,Hasliberg Hohfluh,1388,base.ch
+city_ch_Hasliberg_Wasserwendi,Hasliberg Wasserwendi,1388,base.ch
+city_ch_Hasliberg_Goldern,Hasliberg Goldern,1388,base.ch
+city_ch_Hasliberg_Reuti,Hasliberg Reuti,1388,base.ch
+city_ch_Schangnau,Schangnau,1388,base.ch
+city_ch_Zürich,Zürich,1391,base.ch
+city_ch_Gockhausen,Gockhausen,1391,base.ch
+city_ch_Oberengstringen,Oberengstringen,1391,base.ch
+city_ch_Unterengstringen,Unterengstringen,1391,base.ch
+city_ch_Weiningen_ZH,Weiningen ZH,1391,base.ch
+city_ch_Regensdorf,Regensdorf,1391,base.ch
+city_ch_Watt,Watt,1391,base.ch
+city_ch_Adlikon_b._Regensdorf,Adlikon b. Regensdorf,1391,base.ch
+city_ch_Buchs_ZH,Buchs ZH,1391,base.ch
+city_ch_Dällikon,Dällikon,1391,base.ch
+city_ch_Otelfingen,Otelfingen,1391,base.ch
+city_ch_Boppelsen,Boppelsen,1391,base.ch
+city_ch_Dänikon_ZH,Dänikon ZH,1391,base.ch
+city_ch_Hüttikon,Hüttikon,1391,base.ch
+city_ch_Fällanden,Fällanden,1391,base.ch
+city_ch_Pfaffhausen,Pfaffhausen,1391,base.ch
+city_ch_Benglen,Benglen,1391,base.ch
+city_ch_Binz,Binz,1391,base.ch
+city_ch_Ebmatingen,Ebmatingen,1391,base.ch
+city_ch_Maur,Maur,1391,base.ch
+city_ch_Zollikerberg,Zollikerberg,1391,base.ch
+city_ch_Zumikon,Zumikon,1391,base.ch
+city_ch_Forch,Forch,1391,base.ch
+city_ch_Egg_b._Zürich,Egg b. Zürich,1391,base.ch
+city_ch_Hinteregg,Hinteregg,1391,base.ch
+city_ch_Esslingen,Esslingen,1391,base.ch
+city_ch_Adliswil,Adliswil,1391,base.ch
+city_ch_Langnau_am_Albis,Langnau am Albis,1391,base.ch
+city_ch_Sihlbrugg_Station,Sihlbrugg Station,1391,base.ch
+city_ch_Sihlwald,Sihlwald,1391,base.ch
+city_ch_Gattikon,Gattikon,1391,base.ch
+city_ch_Uitikon_Waldegg,Uitikon Waldegg,1391,base.ch
+city_ch_Stallikon,Stallikon,1391,base.ch
+city_ch_Uetliberg,Uetliberg,1391,base.ch
+city_ch_Glattbrugg,Glattbrugg,1391,base.ch
+city_ch_Opfikon,Opfikon,1391,base.ch
+city_ch_Glattpark_(Opfikon),Glattpark (Opfikon),1391,base.ch
+city_ch_Rümlang,Rümlang,1391,base.ch
+city_ch_Oberglatt_ZH,Oberglatt ZH,1391,base.ch
+city_ch_Niederhasli,Niederhasli,1391,base.ch
+city_ch_Nassenwil,Nassenwil,1391,base.ch
+city_ch_Oberhasli,Oberhasli,1391,base.ch
+city_ch_Dielsdorf,Dielsdorf,1391,base.ch
+city_ch_Regensberg,Regensberg,1391,base.ch
+city_ch_Steinmaur,Steinmaur,1391,base.ch
+city_ch_Sünikon,Sünikon,1391,base.ch
+city_ch_Bachs,Bachs,1391,base.ch
+city_ch_Schöfflisdorf,Schöfflisdorf,1391,base.ch
+city_ch_Oberweningen,Oberweningen,1391,base.ch
+city_ch_Schleinikon,Schleinikon,1391,base.ch
+city_ch_Niederweningen,Niederweningen,1391,base.ch
+city_ch_Niederglatt_ZH,Niederglatt ZH,1391,base.ch
+city_ch_Neerach,Neerach,1391,base.ch
+city_ch_Stadel_b._Niederglatt,Stadel b. Niederglatt,1391,base.ch
+city_ch_Windlach,Windlach,1391,base.ch
+city_ch_Bülach,Bülach,1391,base.ch
+city_ch_Höri,Höri,1391,base.ch
+city_ch_Hochfelden,Hochfelden,1391,base.ch
+city_ch_Bachenbülach,Bachenbülach,1391,base.ch
+city_ch_Winkel,Winkel,1391,base.ch
+city_ch_Weiach,Weiach,1391,base.ch
+city_ch_Glattfelden,Glattfelden,1391,base.ch
+city_ch_Zweidlen,Zweidlen,1391,base.ch
+city_ch_Eglisau,Eglisau,1391,base.ch
+city_ch_Hüntwangen,Hüntwangen,1391,base.ch
+city_ch_Wasterkingen,Wasterkingen,1391,base.ch
+city_ch_Wil_ZH,Wil ZH,1391,base.ch
+city_ch_Rafz,Rafz,1391,base.ch
+city_ch_Nohl,Nohl,1391,base.ch
+city_ch_Feuerthalen,Feuerthalen,1391,base.ch
+city_ch_Langwiesen,Langwiesen,1391,base.ch
+city_ch_Flurlingen,Flurlingen,1391,base.ch
+city_ch_Uhwiesen,Uhwiesen,1391,base.ch
+city_ch_Kloten,Kloten,1391,base.ch
+city_ch_Bassersdorf,Bassersdorf,1391,base.ch
+city_ch_Wallisellen,Wallisellen,1391,base.ch
+city_ch_Dietlikon,Dietlikon,1391,base.ch
+city_ch_Brüttisellen,Brüttisellen,1391,base.ch
+city_ch_Effretikon,Effretikon,1391,base.ch
+city_ch_Ottikon_b._Kemptthal,Ottikon b. Kemptthal,1391,base.ch
+city_ch_Illnau,Illnau,1391,base.ch
+city_ch_Agasul,Agasul,1391,base.ch
+city_ch_Nürensdorf,Nürensdorf,1391,base.ch
+city_ch_Kemptthal,Kemptthal,1391,base.ch
+city_ch_Grafstal,Grafstal,1391,base.ch
+city_ch_Brütten,Brütten,1391,base.ch
+city_ch_Winterberg_ZH,Winterberg ZH,1391,base.ch
+city_ch_Kyburg,Kyburg,1391,base.ch
+city_ch_Lindau,Lindau,1391,base.ch
+city_ch_Tagelswangen,Tagelswangen,1391,base.ch
+city_ch_Fehraltorf,Fehraltorf,1391,base.ch
+city_ch_Madetswil,Madetswil,1391,base.ch
+city_ch_Gündisau,Gündisau,1391,base.ch
+city_ch_Pfäffikon_ZH,Pfäffikon ZH,1391,base.ch
+city_ch_Auslikon,Auslikon,1391,base.ch
+city_ch_Russikon,Russikon,1391,base.ch
+city_ch_Rumlikon,Rumlikon,1391,base.ch
+city_ch_Hittnau,Hittnau,1391,base.ch
+city_ch_Hinwil,Hinwil,1391,base.ch
+city_ch_Wernetshausen,Wernetshausen,1391,base.ch
+city_ch_Bäretswil,Bäretswil,1391,base.ch
+city_ch_Adetswil,Adetswil,1391,base.ch
+city_ch_Elsau,Elsau,1391,base.ch
+city_ch_Ricketwil_(Winterthur),Ricketwil (Winterthur),1391,base.ch
+city_ch_Elgg,Elgg,1391,base.ch
+city_ch_Hofstetten_ZH,Hofstetten ZH,1391,base.ch
+city_ch_Dickbuch,Dickbuch,1391,base.ch
+city_ch_Winterthur,Winterthur,1391,base.ch
+city_ch_Reutlingen_(Winterthur),Reutlingen (Winterthur),1391,base.ch
+city_ch_Stadel_(Winterthur),Stadel (Winterthur),1391,base.ch
+city_ch_Aesch_(Neftenbach),Aesch (Neftenbach),1391,base.ch
+city_ch_Riet_(Neftenbach),Riet (Neftenbach),1391,base.ch
+city_ch_Hünikon_(Neftenbach),Hünikon (Neftenbach),1391,base.ch
+city_ch_Neftenbach,Neftenbach,1391,base.ch
+city_ch_Buch_am_Irchel,Buch am Irchel,1391,base.ch
+city_ch_Berg_am_Irchel,Berg am Irchel,1391,base.ch
+city_ch_Gräslikon,Gräslikon,1391,base.ch
+city_ch_Flaach,Flaach,1391,base.ch
+city_ch_Schlatt_ZH,Schlatt ZH,1391,base.ch
+city_ch_Dättlikon,Dättlikon,1391,base.ch
+city_ch_Pfungen,Pfungen,1391,base.ch
+city_ch_Embrach,Embrach,1391,base.ch
+city_ch_Oberembrach,Oberembrach,1391,base.ch
+city_ch_Lufingen,Lufingen,1391,base.ch
+city_ch_Freienstein,Freienstein,1391,base.ch
+city_ch_Rorbas,Rorbas,1391,base.ch
+city_ch_Teufen_ZH,Teufen ZH,1391,base.ch
+city_ch_Hettlingen,Hettlingen,1391,base.ch
+city_ch_Henggart,Henggart,1391,base.ch
+city_ch_Dachsen,Dachsen,1391,base.ch
+city_ch_Andelfingen,Andelfingen,1391,base.ch
+city_ch_Kleinandelfingen,Kleinandelfingen,1391,base.ch
+city_ch_Adlikon_b._Andelfingen,Adlikon b. Andelfingen,1391,base.ch
+city_ch_Alten,Alten,1391,base.ch
+city_ch_Humlikon,Humlikon,1391,base.ch
+city_ch_Dorf,Dorf,1391,base.ch
+city_ch_Volken,Volken,1391,base.ch
+city_ch_Marthalen,Marthalen,1391,base.ch
+city_ch_Oerlingen,Oerlingen,1391,base.ch
+city_ch_Rheinau,Rheinau,1391,base.ch
+city_ch_Benken_ZH,Benken ZH,1391,base.ch
+city_ch_Ellikon_am_Rhein,Ellikon am Rhein,1391,base.ch
+city_ch_Rudolfingen,Rudolfingen,1391,base.ch
+city_ch_Wildensbuch,Wildensbuch,1391,base.ch
+city_ch_Trüllikon,Trüllikon,1391,base.ch
+city_ch_Truttikon,Truttikon,1391,base.ch
+city_ch_Waltalingen,Waltalingen,1391,base.ch
+city_ch_Guntalingen,Guntalingen,1391,base.ch
+city_ch_Rutschwil_(Dägerlen),Rutschwil (Dägerlen),1391,base.ch
+city_ch_Dägerlen,Dägerlen,1391,base.ch
+city_ch_Oberwil_(Dägerlen),Oberwil (Dägerlen),1391,base.ch
+city_ch_Berg_(Dägerlen),Berg (Dägerlen),1391,base.ch
+city_ch_Bänk_(Dägerlen),Bänk (Dägerlen),1391,base.ch
+city_ch_Seuzach,Seuzach,1391,base.ch
+city_ch_Dinhard,Dinhard,1391,base.ch
+city_ch_Ossingen,Ossingen,1391,base.ch
+city_ch_Unterstammheim,Unterstammheim,1391,base.ch
+city_ch_Oberstammheim,Oberstammheim,1391,base.ch
+city_ch_Thalheim_an_der_Thur,Thalheim an der Thur,1391,base.ch
+city_ch_Altikon,Altikon,1391,base.ch
+city_ch_Sennhof_(Winterthur),Sennhof (Winterthur),1391,base.ch
+city_ch_Kollbrunn,Kollbrunn,1391,base.ch
+city_ch_Weisslingen,Weisslingen,1391,base.ch
+city_ch_Neschwil,Neschwil,1391,base.ch
+city_ch_Theilingen,Theilingen,1391,base.ch
+city_ch_Rikon_im_Tösstal,Rikon im Tösstal,1391,base.ch
+city_ch_Zell_ZH,Zell ZH,1391,base.ch
+city_ch_Rämismühle,Rämismühle,1391,base.ch
+city_ch_Turbenthal,Turbenthal,1391,base.ch
+city_ch_Wildberg,Wildberg,1391,base.ch
+city_ch_Schalchen,Schalchen,1391,base.ch
+city_ch_Ehrikon,Ehrikon,1391,base.ch
+city_ch_Wila,Wila,1391,base.ch
+city_ch_Saland,Saland,1391,base.ch
+city_ch_Bauma,Bauma,1391,base.ch
+city_ch_Schmidrüti,Schmidrüti,1391,base.ch
+city_ch_Steg_im_Tösstal,Steg im Tösstal,1391,base.ch
+city_ch_Fischenthal,Fischenthal,1391,base.ch
+city_ch_Gibswil,Gibswil,1391,base.ch
+city_ch_Sternenberg,Sternenberg,1391,base.ch
+city_ch_Hagenbuch_ZH,Hagenbuch ZH,1391,base.ch
+city_ch_Wilen_b._Neunforn,Wilen b. Neunforn,1391,base.ch
+city_ch_Wiesendangen,Wiesendangen,1391,base.ch
+city_ch_Bertschikon,Bertschikon,1391,base.ch
+city_ch_Gundetswil,Gundetswil,1391,base.ch
+city_ch_Kefikon_ZH,Kefikon ZH,1391,base.ch
+city_ch_Attikon,Attikon,1391,base.ch
+city_ch_Rickenbach_ZH,Rickenbach ZH,1391,base.ch
+city_ch_Rickenbach_Sulz,Rickenbach Sulz,1391,base.ch
+city_ch_Menzengrüt,Menzengrüt,1391,base.ch
+city_ch_Ellikon_an_der_Thur,Ellikon an der Thur,1391,base.ch
+city_ch_Dübendorf,Dübendorf,1391,base.ch
+city_ch_Wangen_b._Dübendorf,Wangen b. Dübendorf,1391,base.ch
+city_ch_Schwerzenbach,Schwerzenbach,1391,base.ch
+city_ch_Volketswil,Volketswil,1391,base.ch
+city_ch_Gutenswil,Gutenswil,1391,base.ch
+city_ch_Nänikon,Nänikon,1391,base.ch
+city_ch_Greifensee,Greifensee,1391,base.ch
+city_ch_Aathal_Seegräben,Aathal-Seegräben,1391,base.ch
+city_ch_Bubikon,Bubikon,1391,base.ch
+city_ch_Uster,Uster,1391,base.ch
+city_ch_Bertschikon_(Gossau_ZH),Bertschikon (Gossau ZH),1391,base.ch
+city_ch_Sulzbach,Sulzbach,1391,base.ch
+city_ch_Wermatswil,Wermatswil,1391,base.ch
+city_ch_Freudwil,Freudwil,1391,base.ch
+city_ch_Riedikon,Riedikon,1391,base.ch
+city_ch_Mönchaltorf,Mönchaltorf,1391,base.ch
+city_ch_Oetwil_am_See,Oetwil am See,1391,base.ch
+city_ch_Wetzikon_ZH,Wetzikon ZH,1391,base.ch
+city_ch_Grüt_(Gossau_ZH),Grüt (Gossau ZH),1391,base.ch
+city_ch_Gossau_ZH,Gossau ZH,1391,base.ch
+city_ch_Ottikon_(Gossau_ZH),Ottikon (Gossau ZH),1391,base.ch
+city_ch_Grüningen,Grüningen,1391,base.ch
+city_ch_Rüti_ZH,Rüti ZH,1391,base.ch
+city_ch_Tann,Tann,1391,base.ch
+city_ch_Wolfhausen,Wolfhausen,1391,base.ch
+city_ch_Hombrechtikon,Hombrechtikon,1391,base.ch
+city_ch_Dürnten,Dürnten,1391,base.ch
+city_ch_Wald_ZH,Wald ZH,1391,base.ch
+city_ch_Laupen_ZH,Laupen ZH,1391,base.ch
+city_ch_Küsnacht_ZH,Küsnacht ZH,1391,base.ch
+city_ch_Zollikon,Zollikon,1391,base.ch
+city_ch_Erlenbach_ZH,Erlenbach ZH,1391,base.ch
+city_ch_Herrliberg,Herrliberg,1391,base.ch
+city_ch_Meilen,Meilen,1391,base.ch
+city_ch_Uetikon_am_See,Uetikon am See,1391,base.ch
+city_ch_Männedorf,Männedorf,1391,base.ch
+city_ch_Stäfa,Stäfa,1391,base.ch
+city_ch_Uerikon,Uerikon,1391,base.ch
+city_ch_Feldbach,Feldbach,1391,base.ch
+city_ch_Thalwil,Thalwil,1391,base.ch
+city_ch_Kilchberg_ZH,Kilchberg ZH,1391,base.ch
+city_ch_Rüschlikon,Rüschlikon,1391,base.ch
+city_ch_Au_ZH,Au ZH,1391,base.ch
+city_ch_Richterswil,Richterswil,1391,base.ch
+city_ch_Horgen,Horgen,1391,base.ch
+city_ch_Horgenberg,Horgenberg,1391,base.ch
+city_ch_Hirzel,Hirzel,1391,base.ch
+city_ch_Wädenswil,Wädenswil,1391,base.ch
+city_ch_Schönenberg_ZH,Schönenberg ZH,1391,base.ch
+city_ch_Hütten,Hütten,1391,base.ch
+city_ch_Samstagern,Samstagern,1391,base.ch
+city_ch_Urdorf,Urdorf,1391,base.ch
+city_ch_Birmensdorf_ZH,Birmensdorf ZH,1391,base.ch
+city_ch_Aesch_ZH,Aesch ZH,1391,base.ch
+city_ch_Bonstetten,Bonstetten,1391,base.ch
+city_ch_Wettswil,Wettswil,1391,base.ch
+city_ch_Hedingen,Hedingen,1391,base.ch
+city_ch_Zwillikon,Zwillikon,1391,base.ch
+city_ch_Affoltern_am_Albis,Affoltern am Albis,1391,base.ch
+city_ch_Rifferswil,Rifferswil,1391,base.ch
+city_ch_Obfelden,Obfelden,1391,base.ch
+city_ch_Ottenbach,Ottenbach,1391,base.ch
+city_ch_Aeugst_am_Albis,Aeugst am Albis,1391,base.ch
+city_ch_Aeugstertal,Aeugstertal,1391,base.ch
+city_ch_Hausen_am_Albis,Hausen am Albis,1391,base.ch
+city_ch_Ebertswil,Ebertswil,1391,base.ch
+city_ch_Kappel_am_Albis,Kappel am Albis,1391,base.ch
+city_ch_Hauptikon,Hauptikon,1391,base.ch
+city_ch_Uerzlikon,Uerzlikon,1391,base.ch
+city_ch_Mettmenstetten,Mettmenstetten,1391,base.ch
+city_ch_Maschwanden,Maschwanden,1391,base.ch
+city_ch_Knonau,Knonau,1391,base.ch
+city_ch_Oberrieden,Oberrieden,1391,base.ch
+city_ch_Fahrweid,Fahrweid,1391,base.ch
+city_ch_Schlieren,Schlieren,1391,base.ch
+city_ch_Dietikon,Dietikon,1391,base.ch
+city_ch_Geroldswil,Geroldswil,1391,base.ch
+city_ch_Oetwil_an_der_Limmat,Oetwil an der Limmat,1391,base.ch
+city_ch_Bielersee,Bielersee,1388,base.ch
+city_ch_Thunersee,Thunersee,1388,base.ch
+city_ch_Brienzersee,Brienzersee,1388,base.ch

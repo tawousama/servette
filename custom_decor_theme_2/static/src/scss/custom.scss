@@ -1,0 +1,38 @@
+
+$o-cc-custom: var(--o-cc-custom);
+body {
+  .decor_shop {
+    #products_grid {
+      &.o_wsale_layout_list {
+        .o_wsale_product_information {
+          .o_wsale_product_information_text {
+            .o_wsale_products_item_title {
+              &.list_view_product_title {
+                a {
+                  color:$o-cc-custom !important;
+                 
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  a:hover {
+    color:#e32125 !important;
+  }
+}
+
+body #product_detail #product_details {
+  h1[itemprop="name"],
+  [itemprop="name"].h1 {
+    color:$o-cc-custom !important;
+  }
+  a:hover {
+    color:#e32125 !important;
+  }
+}
+
+
+

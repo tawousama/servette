@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+    <t t-extend="website.color_combination_edition">
+        <t t-jquery="we-row:last" t-operation="after">
+            <we-colorpicker string="titres des produits" data-customize-website-color="o-cc-custom" t-attf-data-color="o-cc-custom"/>
+        </t>
+    </t>
+  
+
+    
+</templates>

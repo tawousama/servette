@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="theme_common_footer_one" inherit_id="website.layout" name="Footer One" active="False">
+		<xpath expr="//footer" position="attributes">
+			<attribute name="t-attf-class" add="decor_footer footer1" separator=" "/>
+		</xpath>
+       	<xpath expr="//div[@id='footer']" position="replace">
+       		<div id="footer" class="oe_structure oe_structure_solo" t-ignore="true" t-if="not no_footer">
+				<section id="footer_one" class="footer_one o_footer">
+					<section class="top-footer pt64 pb64">
+						<div class="container">
+							<div class="newsletter-content text-center">
+								<h3 class="mb-3">Our Newsletter</h3>
+								<p class="mb-3">Join our list and get 15% off your first purchase! Don’t worry we don’t spam</p>
+								<div class="block-subscribe-footer w-lg-75 mx-auto">
+									<form class="input-group js_subscribe mt16" data-list-id="1">
+										<input type="email" name="email" class="js_subscribe_value form-control bg-white" placeholder="Email Address"/>
+										<span class="input-group-append">
+								            <a role="button" href="#" class="btn btn-primary js_subscribe_btn h-100">Subscribe</a>
+								            <a role="button" href="#" class="btn btn-success js_subscribed_btn h-100 d-none" disabled="disabled">Thanks</a>
+								        </span>
+									</form>
+								</div>
+							</div>
+						</div>
+					</section>
+					<div t-if="not no_copyright" class="o_footer_copyright pb24">
+                        <div class="container-fluid">
+                            <div class="row justify-content-center">
+                            	<div class="col-lg-4 col-xl-3 mb-4 mb-lg-0">
+									<div class="footer-right text-center text-lg-start">
+										<p class="m-0">
+											<span>© 2021 All rights reserved.</span>
+											<br/>
+											<span t-field="res_company.name" />
+										</p>
+									</div>
+								</div>
+                                <div class="col-lg-4 mb-4 mb-lg-0">
+									<div class="footer-links">
+										<ul class="nav justify-content-center">
+											<li class="nav-item">
+												<a href="#" class="nav-link text-900">FAQ</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link text-900">Terms</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link text-900">Privacy</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link text-900">Return</a>
+											</li>
+											<li class="nav-item">
+												<a href="#" class="nav-link text-900">Online Shop</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-4 col-xl-3">
+									<div class="footer-middle text-center text-lg-end">
+										<a class="link ms-4 text-900" t-att-href="website.social_facebook"
+											t-if="website.social_facebook" target="_blank">
+											<i class="fa fa-facebook" />
+										</a>
+										<a class="link ms-4 text-900" t-att-href="website.social_twitter"
+											t-if="website.social_twitter" target="_blank">
+											<i class="fa fa-twitter" />
+										</a>
+										<a class="link ms-4 text-900" t-att-href="website.social_linkedin"
+											t-if="website.social_linkedin" target="_blank">
+											<i class="fa fa-linkedin" />
+										</a>
+										<a class="link ms-4 text-900" t-att-href="website.social_youtube"
+											t-if="website.social_youtube" target="_blank">
+											<i class="fa fa-youtube-play" />
+										</a>
+										<a class="link ms-4 text-900" t-att-href="website.social_instagram"
+											t-if="website.social_instagram" target="_blank">
+											<i class="fa fa-instagram"></i>
+										</a>
+										<a class="link ms-4 text-900" t-att-href="website.social_github"
+											t-if="website.social_github" target="_blank">
+											<i class="fa fa-github"></i>
+										</a>
+									</div>
+								</div>
+								
+                            </div>
+                        </div>
+                    </div>
+				</section>
+			</div>
+		</xpath>
+	</template>
+</odoo>

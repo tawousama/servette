@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_offers_four" name="Offers Four">
+		<section class="accessories-sale pt32 ">
+			<div class="container extended-container">
+				<div class="row align-items-center">
+					<div class="col-md-12 col-lg-4 col-xl-4">
+						<div class="sale-content">
+							<div class="sale-image">
+								<a href="#">
+									<img src="/theme_decor/static/src/img/accesories-grid1.jpg" class="img img-fluid"/>
+								</a>
+							</div>
+							<div class="sale-info">
+								<span class="subtitle1">Couches</span>
+								<h3>New<br></br>arrivals.</h3>
+								<a href="#" class="btn btn-link">Shop Now</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 col-lg-8 col-xl-8">
+						<div class="row">
+							<div class="col-md-6 col-lg-6 col-xl-6 mb30">
+								<div class="sale-content">
+									<div class="sale-image">
+										<a href="#">
+											<img src="/theme_decor/static/src/img/accesories-grid2.jpg" class="img img-fluid"/>
+										</a>
+									</div>
+									<div class="sale-info">
+										<span class="subtitle2">Office Chairs</span>
+										<h4>Premium Quality</h4>
+										<a href="#" class="btn btn-link">Shop Now</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 col-lg-6 col-xl-6 mb30">
+								<div class="sale-content">
+									<div class="sale-image">
+										<a href="#">
+											<img src="/theme_decor/static/src/img/accesories-grid3.jpg" class="img img-fluid"/>
+										</a>
+									</div>
+									<div class="sale-info">
+										<span class="subtitle2">NEW ARRIVAL</span>
+										<h4>Bean Bags</h4>
+										<a href="#" class="btn btn-link">Shop Now</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-12 col-lg-12 col-xl-12">
+								<div class="sale-content">
+									<div class="sale-image">
+										<a href="#">
+											<img src="/theme_decor/static/src/img/accesories-grid4.jpg" class="img img-fluid"/>
+										</a>
+									</div>
+									<div class="sale-info2 text-center">
+										<span>40% OFF ON ALL ORDER</span>
+										<h3>EMPTY YOUR WALLETS</h3>
+										<div class="s_btn" data-name="Button">
+	            							<a href="#" class="btn btn-secondary bizople_button">Shop Now</a>
+	            						</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

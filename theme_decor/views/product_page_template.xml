@@ -1,0 +1,489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="product_page_product_bg_color" inherit_id="website_sale.product" name="Product Background Color" customize_show="True" active="True"/>
+	
+	<template id="decor_image_zoom" inherit_id="website_sale.shop_product_carousel">
+		 <xpath expr="//div[contains(@t-attf-class, 'carousel-item')]" position="replace">
+            <t t-set="image_zoom" t-value="is_view_active('website_sale.product_picture_magnify')" />
+            <div t-attf-class="carousel-item h-100#{' active' if product_image_first else ''}">
+                <t t-if="product_image._name == 'product.image' and product_image.embed_code">
+                    <div
+                        class="d-flex align-items-center justify-content-center h-100 embed-responsive embed-responsive-16by9">
+                        <t t-out="product_image.embed_code" />
+                    </div>
+                </t>
+                <t t-else="">
+                    <t t-if="website.is_lazy_load">
+                        <div class="d-flex align-items-center justify-content-center h-100">
+                            <img class="img img-fluid lazyload product_detail_img"
+                                t-attf-data-src="/web/image/#{product_image._name}/#{product_image.id}/image_1920"
+                                t-attf-src="/web/image/website/#{website.id}/lazy_load_image" data-zoom="1"
+                                t-attf-data-zoom="{{'1' if image_zoom else ' '}}"
+                                t-attf-data-zoom-image="/web/image/#{product_image._name}/#{product_image.id}/image_1024"></img>
+                        </div>
+                    </t>
+                    <t t-else="">
+                        <div t-field="product_image.image_1920"
+                            class="d-flex align-items-center justify-content-center h-100"
+                            t-options='{"widget": "image", "preview_image": "image_1024", "class": "product_detail_img mh-100", "alt-field": "name", "zoom": product_image.can_image_1024_be_zoomed and "image_1920", "itemprop": "image"}' />
+                    </t>
+                </t>
+            </div>
+        </xpath>
+       
+	</template>
+
+    <template id="remove_recommended_product" inherit_id="website_sale.alternative_products" name="alternative products">
+        <div itemprop="description" position="after">
+            <t t-if="is_view_active('website_sale.alternative_products')">
+                <h4 t-if="product.alternative_product_ids" class="text-center alternative_products_title">Suggested Alternatives:</h4>
+            </t>
+        </div>
+    </template>
+
+    <template id="product_page_label" name="product page label" inherit_id="website_sale.shop_product_carousel">
+        <xpath expr="//div[hasclass('carousel-outer')]" position="inside">
+            <t t-if="product.product_label_id">
+                <t t-call="theme_decor.decor_product_label_common"/>
+            </t>
+        </xpath>
+    </template>
+
+    <template id="product_page_image_bgcolor" inherit_id="website_sale.shop_product_carousel" name="Product Background">
+        <xpath expr="//div[hasclass('carousel-outer')]" position="attributes">
+            <attribute name="t-att-add-bgcolor" add="is_view_active('theme_decor.product_page_product_bg_color')" separator=" "></attribute>
+        </xpath>
+    </template>
+
+    <template id="decor_product_page_banner" inherit_id="website_sale.product" name="Product Page Banner" customize_show="True" active="True">
+    </template>
+	
+    <template id="decor_product_detail_inherited" inherit_id="website_sale.product" name="Product Details">
+        <xpath expr="//section[@id='product_detail']" position="before">
+            <section class="position-relative">
+                <section t-if="is_view_active('theme_decor.decor_product_page_banner')" class="category_banner pt88 pb88 o_editable" style="background-image: url('/theme_decor/static/src/img/login-banner.jpg');">
+                
+                </section>
+                <section t-if="is_view_active('theme_decor.decor_product_page_banner')" class="category_banner product_page_banner position-absolute">
+                    <div class="container">
+                        <div class="category_description_banner text-center o_not_editable">
+                            <ol class="breadcrumb justify-content-center mb-0">
+                                <li class="breadcrumb-item">
+                                    <a href="/">Accueil</a>
+                                    <t t-foreach="product.public_categ_ids.parents_and_self" t-as="cat">
+                
+                                        <li  class="breadcrumb-item">
+                                            <a t-att-href="keep('/shop/category/%s' % slug(cat), category=0)" t-field="cat.name"/>
+                                        </li>
+                                    </t>
+                                </li>
+                                <!-- <li class="breadcrumb-item">
+                                   
+                                    <a href="/">  <span t-out="product.public_categ_ids[0].display_name"></span></a>
+                                </li> -->
+                                <li class="breadcrumb-item active oe_structure">
+                                    <span t-out="product.name"></span>
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+            </section>
+        </xpath>
+        <xpath expr="//div[hasclass('row')][1]" position="attributes">
+            <attribute name="class" separator=" " add="top-breadcrumbs d-none mt-4" />
+        </xpath>
+        <xpath expr="//div[contains(@t-attf-class,'o_wsale_product_images')]" position="attributes">
+            <attribute name="t-attf-class" separator=" " remove="mt-lg-4 col-lg-#{image_cols[0]}" add="col-lg-5" />
+        </xpath>
+        <xpath expr="//div[@id='product_details']" position="attributes">
+            <attribute name="t-attf-class" separator=" " remove="mt-md-4 col-lg-#{image_cols[1]}" add="col-lg-7" />
+        </xpath>
+        <xpath expr="//div[@id='product_details']//a[hasclass('o_product_page_reviews_link')]" position="replace">
+        </xpath>
+        <xpath expr="//div[@id='product_details']//div[hasclass('js_product')]//div[1]" position="after">
+            <t t-if="is_view_active('website_sale.product_comment')">
+                <t t-call="theme_decor.product_item_stars"/> 
+            </t>
+            
+            <t t-if="combination_info['has_discounted_price'] and combination_info['list_price'] &gt; 0">
+                <t t-set="diff_amount" t-value="round(combination_info['list_price'] - combination_info['price'],2)" />
+                <t t-set="dis_per" t-value="round(diff_amount*100/combination_info['list_price'])" />
+
+                <div class="discount-label my-3 d-flex product-detail-label-value">
+                    <div class="prod-attribute-label">
+                        <span class="text-label">You Save</span>
+                    </div>
+                    <div class="prod-attribute-value" >
+                        <div class="decor-product-discount-label">
+                            <span class="decor-pro-label-disc"><t t-out="'-'+'%s'%(dis_per)+'&#x25;'" /></span>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </xpath>
+        <xpath expr="//div[@id='product_details']//a[@id='add_to_cart']" position="replace">
+            <a role="button" id="add_to_cart" t-attf-class="btn btn-secondary btn-lg mt-3 mt-md-0 d-block d-md-inline-block js_check_product a-submit flex-grow-1 #{'btn-lg' if ctaSizeBig else ''}" href="#">
+                <span class="ri ri-shopping-cart-line me-2 text-white align-middle"/>ADD TO CART
+            </a>
+        </xpath>
+        <xpath expr="//div[@id='product_details']//div[@id='product_option_block']" position="inside">
+            <div class="compare_button">
+                <t t-if="is_view_active('website_sale_comparison.add_to_compare')">
+                    <t t-set="product_variant" t-value="product_variant or product._create_first_product_variant()"/>
+                    <button t-if="product_variant" type="button" role="button" class="btn btn-default o_add_compare_dyn" aria-label="Compare" t-att-data-product-product-id="product_variant.id" data-action="o_comparelist"><span class="icon icon-ExitFullScreen me-2 align-middle"></span>ADD TO COMPARE LIST</button>
+                </t>
+            </div>
+        </xpath>
+        <xpath expr="//div[@id='product_details']//div[@id='product_option_block']" position="after">
+            <div class="product_info_list w-100">            
+                <t t-if="product.brand_id">
+                    <div class="product-brand">
+                        <div class="row align-items-center">
+                            <div class="col-md-10">
+                                <h3 class="brand-title">
+                                    <span t-out="product.brand_id.name"/>
+                                </h3>
+                                <p class="brand-description">
+                                    <span t-out="product.brand_id.brand_decription"/>
+                                </p>
+                            </div>
+                            <div class="col-md-4">
+                                
+                                <a t-field="product.brand_id.image" t-options="{'widget': 'image'}" t-att-href="'/shop?brand=' + slug(product.brand_id)"/>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+                <t t-if="product.public_categ_ids">
+                    <div class="decor_categ">
+                        <p>
+                            <span class="categ-title">Category </span>
+                            <t t-foreach="product.public_categ_ids" t-as="categs">
+                                <a t-att-href="keep('/shop/category/%s' % slug(categs), category=0)">
+                                    <span class="categ-name">
+                                        <t t-out="categs.name"/>
+                                    </span>
+                                </a>
+                                <span>, </span>
+                            </t>
+                        </p>
+                    </div>
+                </t>
+                 <t t-if="product.product_tag_ids">
+                     <div class="decor_tags mb-2">
+                        <p>
+                            <span class="tag-title">Tags </span>
+                            <t t-foreach="product.product_tag_ids" t-as="tags">
+                                <span>
+                                    <span class="tag-name d-block">
+                                        <t t-out="tags.name"/>
+                                    </span>
+                                    <!-- <span class="tag-name">, </span> -->
+                                </span>
+                            </t>
+                        </p>
+                    </div>
+                 </t>
+                <!-- <span  t-out="product.product_tag_ids.name"></span> -->
+            </div>
+        </xpath>
+    </template>
+    <template id="product_share_buttons_inherit" inherit_id="website_sale.product_share_buttons">
+        <xpath expr="//div[hasclass('flex-shrink-0')]" position="replace">
+            <div class="s_share d-flex" data-name="Share" style="width:100%; border-top:1px solid; border-color: #454545; border-bottom:1px solid; padding: 10px 0px">
+
+                <span style="color: #454545; margin-right: 20px" >Partager </span>
+                <div class="social-share d-flex align-items-center">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u={url}" target="_blank" class="s_share_facebook d-flex align-items-center mr-5">
+                        <i style="color: #454545;" class="fa fa-1x fa-facebook"></i>
+                    </a>
+                
+                    <a href="https://twitter.com/intent/tweet?text={title}&amp;url={url}" target="_blank" class="s_share_twitter d-flex align-items-center mr-5">
+                        <i style="color: #454545;"  class="fa fa-1x fa-twitter"></i>
+                    </a> 
+                    
+                    <a href="https://www.pinterest.com/pin/create/button/?media={url}&amp;;" target="_blank" class="s_share_pinterest d-flex align-items-center">
+                        <i style="color: #454545;" class="fa fa-1x fa-pinterest"></i>
+                    </a>
+                </div>
+                
+                
+               
+               
+               
+            </div>
+        </xpath>
+    </template>
+
+    <template id="product_page_variant_inherit" inherit_id="sale.variants">
+        <xpath expr="//ul[contains(@t-attf-class,'o_wsale_product_attribute')]//li[hasclass('js_attribute_value')]" position="attributes">
+            <attribute name="class" separator=" " remove="mb-3" />
+        </xpath>
+    </template>
+
+    <template id="decor_product_quantity_template_inherited" inherit_id="website_sale.product_quantity" name="decor Product Quantity Template Inherited">
+        <xpath expr="//div[contains(@t-attf-class,'css_quantity')]" position="replace">
+            <div t-attf-class="css_quantity input-group  align-items-center decor_quantity product-detail-label-value {{'d-none' if combination_info['prevent_zero_price_sale'] else 'd-inline-flex'}} me-2 mb-2 align-middle #{'input-group-lg' if ctaSizeBig else ''}" contenteditable="false">
+                <div class="prod-attribute-label">
+                    <span class="text-label">Quantity</span>
+                </div>
+                <div class="prod-attribute-value control-qty-cart d-flex">
+                    <input type="text" class="form-control quantity text-center" data-min="1" name="add_qty" t-att-value="add_qty or 1"/>
+                
+                    <div class="control-qty">
+                        <div class="input-group-append">
+                            <a t-attf-href="#" class="btn btn-link float_left js_add_cart_json" aria-label="Add one" title="Add one">
+                                <i class="fa fa-plus"></i>
+                            </a>
+                        </div>
+                        <div class="input-group-prepend">
+                            <a t-attf-href="#" class="btn btn-link js_add_cart_json" aria-label="Remove one" title="Remove one">
+                                <i class="fa fa-minus"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </xpath>
+    </template>
+    <template id="product_sku" name="Product SKU" inherit_id="theme_decor.decor_product_detail_inherited" customize_show="True" active="True">
+        <xpath expr="//div[hasclass('product_info_list')]" position="inside">
+            <div class="product_internal_reference mt-1">
+                <div class="product_ref_code mt16 mb16">
+			</div>	
+            </div>
+        </xpath>
+    </template>
+
+    <template id="shiping-section" inherit_id="website_sale.product" priority="7">
+        <xpath expr="//section[@id='product_detail']" position="inside">
+            <section class="product-badges mt64">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6">
+                            <div class="promo-section d-flex align-items-center">
+                                <div class="icon">
+                                    <span class="icon icon-Truck text-primary"/>
+                                </div>
+                                <div class="content">
+                                    <h4 class="title">We Shipping<br></br>WorldWide</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="promo-section d-flex align-items-center">
+                                <div class="icon">
+                                    <span class="icon icon-Dollar text-primary"/>
+                                </div>
+                                <div class="content">
+                                    <h4 class="title">100% Money Back<br></br>Guarantee</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="promo-section d-flex align-items-center">
+                                <div class="icon">
+                                    <span class="icon icon-ClosedLock text-primary"/>
+                                </div>
+                                <div class="content">
+                                    <h4 class="title">100% Secured<br></br>Payment</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6">
+                            <div class="promo-section d-flex align-items-center">
+                                <div class="icon">
+                                    <span class="icon icon-Goto text-primary"/>
+                                </div>
+                                <div class="content">
+                                    <h4 class="title">14-Day Return<br></br>Policy</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </xpath>
+    </template>
+
+  
+
+
+     <!-- alternative and accessory products slider start -->
+     <!-- <template id="theme_common_alternative_product_inherited" inherit_id="website_sale.product" priority="12">
+        <xpath expr="//div[@id='product_full_description']" position="after">
+            <div class="container mt32 alternative_and_accessory_slider">
+
+                <div class="row mt16" style="">
+                    
+                    <t t-if="is_view_active('theme_decor.bizople_accessory_product_slider')">
+                        <div class="col-12 accessory_products">
+                            <h4 class='text-center' t-if="product.accessory_product_ids">Suggested Accessories:</h4>
+
+                            <div class="accessory-product-slider mt32">
+                                <div class="owl-carousel owl-theme" id="vogue_accessory_product_slider">
+                                    <t t-foreach="product.accessory_product_ids" t-as="access_product">
+                                        <div class="product_item">
+                                            <div class="pro-image">
+                                                <input type="hidden" name="product-id"
+                                                    t-att-data-product-id="access_product.id" />
+                                                <a t-att-href="access_product.website_url" class="text-decoration-none">
+                                                    <t t-set="template_active"
+                                                        t-value="is_view_active('theme_decor.shop_page_image_bgcolor')" />
+                                                    <div
+                                                        t-attf-class="image #{'add_bg_color' if template_active else ''}">
+                                                        <div class="biz_image d-flex align-items-center justify-content-center"
+                                                            t-field="access_product.image_512"
+                                                            t-options="{'widget': 'image' , 'class':'img img-fluid'}">
+                                                        </div>
+                                                    </div>
+                                                </a>
+                                            </div>
+                                            <div class="pro-name-price mt16">
+                                                <a t-att-href="access_product.website_url" class="text-decoration-none">
+                                                    <h6 class="access-name mb-2 text-truncate"
+                                                        t-raw="access_product.name" />
+                                                </a>
+                                                <t t-set="access_price" t-value="access_product._get_contextual_price_tax_selection()"/>
+                                                <b class="oe_price" style="white-space: nowrap;" t-out="access_price" t-options="{'widget': 'monetary', 'display_currency': website.currency_id}"/>
+                                            </div>
+                                        </div>
+                                    </t>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </div>
+            </div>
+        </xpath>
+    </template> -->
+    <!-- alternative and accessory products slider endss -->
+
+    <!-- accessories products slider customize show option starts -->
+    <template id="bizople_accessory_product_slider" inherit_id="website_sale.product" customize_show="True"
+        name="Accessories Products">
+    </template>
+    <!-- accessories products slider customize show option ends -->
+
+
+    <template id="discussion_rating_bizople" inherit_id="website_sale.product_comment">
+        <xpath expr="//div[hasclass('o_shop_discussion_rating')]" position="replace">
+        </xpath>
+    </template>
+    
+    <template id="product_attributes_body_bizople" inherit_id="website_sale_comparison.product_attributes_body" priority="20" >
+    </template>
+
+    <!-- <template id="product_description_bizople" inherit_id="website_sale.product">
+         <xpath expr="//div[@id='product_full_description']" position="attributes">
+                <attribute name="class" separator=" " add="d-none" />
+        </xpath>
+    </template> -->
+    
+    <template id="product_buynow_bizople" inherit_id="website_sale.product_buy_now">
+        <xpath expr="//a[contains(@t-attf-class,'o_we_buy_now')]" position="replace">
+            <a role="button"  id="buy_now" t-attf-class="btn btn-primary btn-lg sticky_cart_button d-block d-md-inline-block mt-3 mt-md-0  o_we_buy_now #{'btn-lg' if ctaSizeBig else ''}" href="#">
+                <span class="ri ri-share-forward-line align-middle me-2 text-white"/>BUY NOW
+            </a>
+        </xpath>
+    </template>
+
+    <template id="cart_button_inherid" inherit_id="website_sale.cart">
+        <xpath expr="//a[hasclass('btn-secondary')]" position="attributes">
+            <attribute name="class" separator=" " add="bizople_button" />
+        </xpath>
+        <xpath expr="//a[hasclass('btn-primary')]" position="attributes">
+            <attribute name="class" separator=" " add="bizople_button" />
+        </xpath>
+    </template>
+
+    <template id="cart_summary_button_inherid" inherit_id="website_sale.short_cart_summary">
+        <xpath expr="//a[hasclass('btn-secondary')]" position="attributes">
+            <attribute name="class" separator=" " add="bizople_button" />
+        </xpath>
+    </template>
+
+    <template id="payment_button_inherid" inherit_id="website_sale.payment">
+
+    </template>
+
+    <template id="checkout_button_inherid" inherit_id="website_sale.checkout">
+        <xpath expr="//a[hasclass('btn-secondary','mb32')]" position="attributes">
+             <attribute name="class" separator=" " add="bizople_button" />
+        </xpath>
+        <xpath expr="//a[hasclass('btn-primary')]" position="attributes">
+             <attribute name="class" separator=" " add="bizople_button" />
+        </xpath>
+    </template>
+
+    <template id="address_button_inherid" inherit_id="website_sale.address">
+        <xpath expr="//a[hasclass('btn-secondary','mb32')]" position="attributes">
+             <attribute name="class" separator=" " add="bizople_button" />
+        </xpath>
+        <xpath expr="//a[hasclass('btn-primary','mb32')]" position="attributes">
+             <attribute name="class" separator=" " add="bizople_button" />
+        </xpath>
+    </template>
+    
+    <template id="product_default_code">		
+		<p itemprop="sku" t-if="default_code">
+            <strong> SKU </strong>
+            <span><t t-out="default_code"/></span>
+        </p>
+	</template>
+
+    <template id="product_price_inherit" inherit_id="website_sale.product_price">
+
+    </template>
+
+    <template id="product_cart_sticky" inherit_id="website_sale.product" name="Enable Sticky Cart" active="True" customize_show="True">
+        <xpath expr="//div[@id='product_details']" position="inside">
+                <div class="cart_product_sticky_section">
+                    <t t-if="product">
+                        <div class="cart_product_sticky">
+                            <div class="cart_product_sticky_div">
+                                <div class="cart_prod_sticky d-flex align-items-center">
+                                    <div class="cart_prod_img">
+                                        <img t-att-src="'/web/image/product.template/%s/image_128' % product.id"
+                                             class="img img-fluid rounded" alt="Product Image"/>
+                                    </div>
+                                    <div class="cart_prod_name">
+                                        <h6 itemprop="name" t-field="product.name" class=" mt0 product_name">Product Name</h6>
+                                        <div class="cart_prod_name_price">
+                                            <t t-call="website_sale.product_price"/>
+                                        </div>
+                                    </div>
+            
+                                    <div class="cart_product_sticky_details">
+                                        <div class="oe_website_sale">
+                                              <t t-set="buynow_enabled"
+                                                       t-value="is_view_active('website_sale.product_buy_now')"/>
+                                            <form t-if="product._is_add_to_cart_possible()" action="/shop/cart/update"
+                                                  method="POST">
+                                                <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                                <div class="js_product js_main_product">
+                                                    <t t-placeholder="select">
+                                                        <input type="hidden" class="product_id" name="product_id"
+                                                               t-att-value="product_variant.id"/>
+                                                        <input type="hidden" class="product_template_id" name="product_template_id"
+                                                               t-att-value="product.id"/>
+                                                    </t>
+                                                    <div class="ajax_cart_modal_tools position-relative">
+                                                        <a role="button" id="" class="btn btn-primary btn-lg a-submit mr8 sticky_cart_button" href="#">
+                                                            <span class="ri ri-shopping-cart-line"></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </t>
+                </div>
+        </xpath>
+   </template>
+
+</odoo>

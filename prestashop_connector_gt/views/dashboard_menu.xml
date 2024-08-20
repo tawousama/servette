@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="ir_actions_dashboard_actionss" model="ir.actions.client">
+        <field name="name">Dashboards</field>
+        <field name="tag">action_spreadsheet_dashboard</field>
+    </record>
+
+<!--    <menuitem id="dashboard_menu_1"-->
+<!--              name="Custom Dashboard"-->
+<!--              action="ir_actions_dashboard_actionss"-->
+<!--              sequence="43"/>-->
+<!--    <menuitem-->
+<!--            id="spreadsheet_dashboard_menu_dashboar_1"-->
+<!--            name="Dashboards"-->
+<!--            action="ir_actions_dashboard_actionss"-->
+<!--            parent="dashboard_menu_1"-->
+<!--            sequence="1"/>-->
+</odoo>

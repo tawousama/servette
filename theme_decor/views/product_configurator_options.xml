@@ -1,0 +1,728 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_product_configurator" name="Product Configurator">
+		<section class="bizople_product_configurator oe_website_sale show_cart show_wishlist show_compare show_quickview show_price grid_style layout_style_1 vertical_card show_label show_ratings show_description img_bg_color" product_config_id="1" product_id="" product_limit="10" column_limit="4">
+			<div class="container o_not_editable"></div>
+        </section>
+	</template>
+
+	<template id="product_configurator_snippet_options_inherit" inherit_id="website.snippet_options">
+		<xpath expr="//div[@data-js='HeaderBox']" position="after">
+			<div data-selector=".bizople_product_configurator" data-js="theme_decor_product_configurator">
+				<we-row string="Select Product">
+	                <we-button class="biz_change_product"><i class="fa fa-fw fa-plus"/> Change Products</we-button>
+		        </we-row>
+			</div>
+		</xpath>
+	</template>
+
+	<template id="product_configurator_modal_checkbox" name="Configurator Product Checkbox">
+		<t t-foreach="product" t-as="p">
+			<div class="form-check d-none">
+	            <label class="form-check-label container" t-att-prod_id="p.id">
+	                <input type="checkbox" class="form-check-input" t-att-id="p.id" t-att-name="p.name" t-att-value="p.id"/><t t-out="p.name"/>
+	                <span class="checkmark"></span>
+	            </label>
+	        </div>
+	    </t>
+	</template>
+
+	<template id="product_configurator_grid_style" name="Product Configurator Grid Style">
+		<div class="product_configurator_content">
+			<div class="slider-titles" t-if="config_title">
+				<h3 class="text-center"><t t-out="config_title"/></h3>
+				<div class="slider-separator"/>
+			</div>
+			<div class="row">
+				<t t-set="biz_col_size" t-value="12 / column_limit"/>
+				<t t-set="biz_col_size_int" t-value="int(biz_col_size)"/>
+				<t t-foreach="product_detail" t-as="product">
+					<div t-att-class="'col-lg-%s'%(biz_col_size_int)+' mb-3 col-md-6'">
+						<div class="product_preview">
+	                        <t t-set="combination_info"
+								t-value="product._get_combination_info(only_template=True, add_qty=add_qty or 1, pricelist=pricelist)" />
+							<div class="product-item"
+								t-att-data-publish="product.website_published and 'on' or 'off'">
+								<div class="pro-conf-image">
+									<div class="p-item-image">
+										<a t-att-href="'/shop/%s' % slug(product)">
+											<img class="front img img-fluid" t-att-alt="product.name"
+												t-att-title="product.name"
+												t-att-src="website.image_url(product, 'image_1920','314x385')" />
+										</a>
+									</div>
+								</div>
+								<div class="product-info">
+									<div class="slider-label d-none">
+										<t t-call='theme_decor.decor_product_label_common'/>
+										<t t-if="combination_info['has_discounted_price']">
+			                               <t t-set="diff_amount"
+			                                  t-value="round(combination_info['list_price'] - combination_info['price'],2)"/>
+			                               <t t-set="dis_per"
+			                                  t-value="round(diff_amount*100/combination_info['list_price'])"/>
+			                                   <div class="decor-product-discount-label">
+			                                       <span class="decor-pro-label-disc"> 
+			                                       	<t t-out="'-'+'%s'%(dis_per)+'&#x25;'"/></span>
+			                                   </div>
+		                             	</t>
+	                             	</div>
+									<div class="title-price">
+										
+										<h5 class="product-title">
+											<a t-attf-href="/shop/product/#{ slug(product) }">
+												<span t-out='product.name' />
+											</a>
+										</h5>
+										<p class="prod-description prod-conf-description d-none mb4" t-out="product.website_meta_description"/>
+										<t t-if="is_view_active('website_sale.product_comment')">
+						                 	<div class="pro-conf-ratings d-none">
+							                	<t t-call="theme_decor.product_item_stars"/> 
+							                </div>
+							            </t>
+										<p class="decor-price price d-none">
+											<b>
+												
+												<span t-if="combination_info['price']"
+													t-out="combination_info['price']"
+													t-options="{'widget': 'monetary', 'display_currency': website.currency_id}" />
+												<t t-if="True">
+													<del
+														t-attf-class="text-primary ml8 {{'' if combination_info['has_discounted_price'] else 'd-none'}}"
+														style="white-space: nowrap;"
+														t-out="combination_info['list_price']"
+														t-options="{'widget': 'monetary', 'display_currency': website.currency_id}" />
+												</t>
+												<span itemprop="price" style="display:none;"
+													t-out="combination_info['price']" />
+												<span itemprop="priceCurrency" style="display:none;"
+													t-out="website.currency_id.name" />
+											</b>
+										</p>
+									</div>
+									<div class="o_wsale_product_btn config_cart_btn d-none">
+            							<t t-call='theme_decor.model_add_cart_ajax_template'/>
+										<form action="/shop/cart/update" method="post">
+											<input type="hidden" name="csrf_token"
+												t-att-value="request.csrf_token()" />
+											<input name="product_id"
+												t-att-value="product.product_variant_id.id" type="hidden" />
+											<div class="cart_div_biz d-inline-block">
+												<input type="hidden" name="csrf_token"
+													t-att-value="request.csrf_token()" />
+												<input name="product_id"
+													t-att-value="product.product_variant_id.id" type="hidden" />
+												<t t-if="request.env['ir.module.module'].sudo().search([('name', '=', 'sale_product_configurator'),('state','=','installed')])">
+								                    <t t-if="product.optional_product_ids">
+														<t t-if="is_view_active('website_sale.products_add_to_cart')">
+									                        <div class='optional-btn ajax_cart_modal_tools'>
+									                        	<button class="btn btn-primary a-submit one"><span class="ri ri-shopping-cart-line align-middle"></span><span class="ms-2 layout_style_2_cart d-none align-middle">Add To Cart</span></button>
+									                        </div>
+									                    </t>
+								                    </t>
+								                    <t t-else=''>
+								                    	<t t-if="len(product.product_variant_ids) == 1">
+															<t t-if="is_view_active('website_sale.products_add_to_cart')">
+										                        <div class="ajax_cart_modal_tools">
+										                            <a class="button btn btn-cart btn-primary a-submit ajax-cart-btn two" data-toggle="modal"> 
+									                            		<span class="ri ri-shopping-cart-line align-middle"></span><span class="ms-2 layout_style_2_cart d-none align-middle">Add To Cart</span>
+																	</a>
+										                        </div>
+										                    </t>
+									                    </t>
+									                    <t t-if="len(product.product_variant_ids) &gt; 1">
+															<t t-if="is_view_active('website_sale.products_add_to_cart')">
+										                    	<div class="ajax_cart_modal_tools">
+										                            <a class="button btn btn-cart btn-primary select_btn three" t-att-data-product-product-id="product.product_variant_ids[0].id" t-att-data-product_template_id="product.id"> 
+									                            		<span class="ri ri-shopping-cart-line align-middle"></span><span class="ms-2 layout_style_2_cart d-none align-middle">Add To Cart</span>
+																	</a>
+										                        </div>
+										                    </t>
+														</t>
+								                    </t>
+								                </t>
+								                <t t-else=''>
+								                    <t t-if="len(product.product_variant_ids) == 1">
+														<t t-if="is_view_active('website_sale.products_add_to_cart')">
+										                    <div class="ajax_cart_modal_tools">
+										                        <a class="button btn btn-cart btn-primary a-submit ajax-cart-btn four" data-toggle="modal"> 
+									                            	<span class="ri ri-shopping-cart-line align-middle"></span><span class="ms-2 layout_style_2_cart d-none align-middle">Add To Cart</span>
+																</a>
+										                    </div>
+										                </t>
+									                </t>
+									                <t t-if="len(product.product_variant_ids) &gt; 1">
+														<t t-if="is_view_active('website_sale.products_add_to_cart')">
+										                	<div class="ajax_cart_modal_tools">
+										                        <a class="button btn btn-cart btn-primary select_btn five" t-att-data-product-product-id="product.product_variant_ids[0].id" t-att-data-product_template_id="product.id">
+									                            	<span class="ri ri-shopping-cart-line align-middle"></span><span class="ms-2 layout_style_2_cart d-none align-middle">Add To Cart</span>
+																</a>
+										                    </div>
+										                </t>
+													</t>
+								                </t>
+											</div>
+										</form>
+									</div>
+									<div class="slider-icons">
+										<div class="wislist_biz d-none">
+											<t
+												t-if="is_view_active('website_sale_wishlist.add_to_wishlist') and product.product_variant_ids">
+												<t t-set="in_wish"
+												t-value="product.product_variant_ids &amp; request.env['product.wishlist'].current().mapped('product_id')" />
+												<button class="btn btn-secondary o_add_wishlist"
+												t-att-disabled='in_wish or None' title="Add to Wishlist"
+												t-att-data-product-product-id="product.product_variant_ids[0].id"
+												t-att-data-product-template-id="product.id" data-action="o_wishlist">
+												<span class="ri ri-heart-line align-middle"></span>
+											</button>
+											</t>
+										</div>
+										<div class="product-qick-view d-none">
+											<a  title="Quick View"  class="btn btn-light quick_btn" t-att-data-product-product-id="product.product_variant_ids[0].id" t-att-data-product_template_id="product.id">
+									                <span class="ri ri-eye-line text-secondary align-middle"></span>
+								            </a>
+										</div>
+										<div class="product-compare d-none">
+											<t t-if="is_view_active('website_sale_comparison.add_to_compare') and product.product_variant_ids">
+											<a class="btn btn-secondary o_add_compare text-white" title="Compare"
+												t-att-data-product-product-id="product.product_variant_ids[0].id"
+												data-action="o_comparelist">
+												<span class="icon icon-ExitFullScreen align-middle"></span>
+											</a>
+											</t>
+										</div>
+									</div>
+								</div>
+							</div>
+	                    </div>
+					</div>
+				</t>
+			</div>
+		</div>
+	</template>
+
+	<template id="product_configurator_list_style" name="Product Configurator List Style">
+		<div class="product_configurator_content">
+			<div class="slider-titles" t-if="config_title">
+				<h3 class=""><t t-out="config_title"/></h3>
+				<div class="slider-separator"/>
+			</div>
+			<t t-foreach="product_detail" t-as="product">
+				<div class="product_preview">
+                <t t-set="combination_info"
+					t-value="product._get_combination_info(only_template=True, add_qty=add_qty or 1, pricelist=pricelist)" />
+				<div class="product-item d-flex align-items-center"
+					t-att-data-publish="product.website_published and 'on' or 'off'">
+					<div class="pro-conf-image">
+						<div class="p-item-image">
+							<a t-att-href="'/shop/%s' % slug(product)">
+								<img class="front img img-fluid" t-att-alt="product.name"
+									t-att-title="product.name"
+									t-att-src="website.image_url(product, 'image_1920','314x385')" />
+							</a>
+						</div>
+					</div>
+					<div class="product-info">
+						<div class="slider-label d-none">
+							<t t-call='theme_decor.decor_product_label_common'/>
+							<t t-if="combination_info['has_discounted_price']">
+	                           <t t-set="diff_amount"
+	                              t-value="round(combination_info['list_price'] - combination_info['price'],2)"/>
+	                           <t t-set="dis_per"
+	                              t-value="round(diff_amount*100/combination_info['list_price'])"/>
+	                               <div class="decor-product-discount-label">
+	                                   <span class="decor-pro-label-disc"> 
+	                                   	<t t-out="'-'+'%s'%(dis_per)+'&#x25;'"/></span>
+	                               </div>
+	                     	</t>
+	                 	</div>
+						<div class="title-price">
+				            <h5 class="product-title mb4">
+								<a t-attf-href="/shop/product/#{ slug(product) }">
+									<span t-out='product.name' />
+								</a>
+							</h5>
+							<t t-if="is_view_active('website_sale.product_comment')">
+				                <div class="pro-conf-ratings d-none">
+				                	<t t-call="theme_decor.product_item_stars"/> 
+				                </div>
+				            </t>
+							<p class="decor-price price mb4 d-none">
+								<b>
+									
+									<span t-if="combination_info['price']"
+										t-out="combination_info['price']"
+										t-options="{'widget': 'monetary', 'display_currency': website.currency_id}" />
+									<t t-if="True">
+										<del
+											t-attf-class="text-primary ml8 {{'' if combination_info['has_discounted_price'] else 'd-none'}}"
+											style="white-space: nowrap;"
+											t-out="combination_info['list_price']"
+											t-options="{'widget': 'monetary', 'display_currency': website.currency_id}" />
+									</t>
+									<span itemprop="price" style="display:none;"
+										t-out="combination_info['price']" />
+									<span itemprop="priceCurrency" style="display:none;"
+										t-out="website.currency_id.name" />
+								</b>
+							</p>
+						</div>
+						<div class="o_wsale_product_btn config_cart_btn d-none">
+							<t t-call='theme_decor.model_add_cart_ajax_template'/>
+							<form action="/shop/cart/update" method="post">
+								<input type="hidden" name="csrf_token"
+									t-att-value="request.csrf_token()" />
+								<input name="product_id"
+									t-att-value="product.product_variant_id.id" type="hidden" />
+								<div class="cart_div_biz d-inline-block">
+									<input type="hidden" name="csrf_token"
+										t-att-value="request.csrf_token()" />
+									<input name="product_id"
+										t-att-value="product.product_variant_id.id" type="hidden" />
+									<t t-if="request.env['ir.module.module'].sudo().search([('name', '=', 'sale_product_configurator'),('state','=','installed')])">
+					                    <t t-if="product.optional_product_ids">
+											<t t-if="is_view_active('website_sale.products_add_to_cart')">
+						                        <div class='optional-btn ajax_cart_modal_tools'>
+						                        	<button class="btn btn-primary a-submit one"><span class="ri ri-shopping-cart-line align-middle"></span><span class="ms-2 layout_style_2_cart d-none align-middle">Add To Cart</span></button>
+						                        </div>
+						                    </t>
+					                    </t>
+					                    <t t-else=''>
+					                    	<t t-if="len(product.product_variant_ids) == 1">
+												<t t-if="is_view_active('website_sale.products_add_to_cart')">
+							                        <div class="ajax_cart_modal_tools">
+							                            <a class="button btn btn-cart btn-primary a-submit ajax-cart-btn two" data-toggle="modal"> 
+						                            		<span class="ri ri-shopping-cart-line align-middle"></span><span class="ms-2 layout_style_2_cart d-none align-middle">Add To Cart</span>
+														</a>
+							                        </div>
+							                    </t>
+						                    </t>
+						                    <t t-if="len(product.product_variant_ids) &gt; 1">
+												<t t-if="is_view_active('website_sale.products_add_to_cart')">
+							                    	<div class="ajax_cart_modal_tools">
+							                            <a class="button btn btn-cart btn-primary select_btn three" t-att-data-product-product-id="product.product_variant_ids[0].id" t-att-data-product_template_id="product.id"> 
+						                            		<span class="ri ri-shopping-cart-line align-middle"></span><span class="ms-2 layout_style_2_cart d-none align-middle">Add To Cart</span>
+														</a>
+							                        </div>
+							                    </t>
+											</t>
+					                    </t>
+					                </t>
+					                <t t-else=''>
+					                    <t t-if="len(product.product_variant_ids) == 1">
+											<t t-if="is_view_active('website_sale.products_add_to_cart')">
+							                    <div class="ajax_cart_modal_tools">
+							                        <a class="button btn btn-cart btn-primary a-submit ajax-cart-btn four" data-toggle="modal"> 
+						                            	<span class="ri ri-shopping-cart-line align-middle"></span><span class="ms-2 layout_style_2_cart d-none align-middle">Add To Cart</span>
+													</a>
+							                    </div>
+							                </t>
+						                </t>
+						                <t t-if="len(product.product_variant_ids) &gt; 1">
+											<t t-if="is_view_active('website_sale.products_add_to_cart')">
+							                	<div class="ajax_cart_modal_tools">
+							                        <a class="button btn btn-cart btn-primary select_btn five" t-att-data-product-product-id="product.product_variant_ids[0].id" t-att-data-product_template_id="product.id">
+						                            	<span class="ri ri-shopping-cart-line align-middle"></span><span class="ms-2 layout_style_2_cart d-none align-middle">Add To Cart</span>
+													</a>
+							                    </div>
+							                </t>
+										</t>
+					                </t>
+								</div>
+							</form>
+						</div>
+						<div class="slider-icons">
+							<div class="wislist_biz d-none">
+								<t
+									t-if="is_view_active('website_sale_wishlist.add_to_wishlist') and product.product_variant_ids">
+									<t t-set="in_wish"
+									t-value="product.product_variant_ids &amp; request.env['product.wishlist'].current().mapped('product_id')" />
+									<button class="btn btn-secondary o_add_wishlist"
+									t-att-disabled='in_wish or None' title="Add to Wishlist"
+									t-att-data-product-product-id="product.product_variant_ids[0].id"
+									t-att-data-product-template-id="product.id" data-action="o_wishlist">
+									<span class="ri ri-heart-line"></span>
+								</button>
+								</t>
+							</div>
+							<div class="product-qick-view d-none">
+								<a  title="Quick View"  class="btn btn-light quick_btn" t-att-data-product-product-id="product.product_variant_ids[0].id" t-att-data-product_template_id="product.id">
+						                <span class="ri ri-eye-line text-secondary"></span>
+					            </a>
+							</div>
+							<div class="product-compare d-none">
+								<t t-if="is_view_active('website_sale_comparison.add_to_compare') and product.product_variant_ids">
+								<a class="btn btn-secondary o_add_compare text-white" title="Compare"
+									t-att-data-product-product-id="product.product_variant_ids[0].id"
+									data-action="o_comparelist">
+									<span class="icon icon-ExitFullScreen"></span>
+								</a>
+								</t>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+			</t>
+		</div>
+	</template>
+
+	<template id="product_configurator_slider_style" name="Product Configurator Slider Style">
+		<div class="product_configurator_content">
+			<div class="slider-titles" t-if="config_title or config_slider_description">
+				<t t-if="config_title">
+					<h3 class="text-center text-secondary"><t t-out="config_title"/></h3>
+				</t>
+				<t t-if="config_slider_description">
+					<p class="text-center text-muted mb-0"><t t-out="config_slider_description"/></p>
+				</t>
+				<div class="slider-separator"/>
+			</div>
+			<div class="row align-items-center">
+				<div id="configurator-slider" class="col-md-12 owl-carousel">
+					<t t-foreach="product_detail" t-as="product">
+						<div class="product_preview">
+	                        <t t-set="combination_info"
+								t-value="product._get_combination_info(only_template=True, add_qty=add_qty or 1, pricelist=pricelist)" />
+							<div class="product-item"
+								t-att-data-publish="product.website_published and 'on' or 'off'">
+								<div class="pro-conf-image">
+									<div class="p-item-image">
+										<a t-att-href="'/shop/%s' % slug(product)">
+											<img class="front img img-fluid" t-att-alt="product.name"
+												t-att-title="product.name"
+												t-att-src="website.image_url(product, 'image_1920','314x385')" />
+										</a>
+									</div>
+								</div>
+								<div class="product-info">
+									<div class="slider-label d-none">
+										<t t-call='theme_decor.decor_product_label_common'/>
+										<t t-if="combination_info['has_discounted_price']">
+			                               <t t-set="diff_amount"
+			                                  t-value="round(combination_info['list_price'] - combination_info['price'],2)"/>
+			                               <t t-set="dis_per"
+			                                  t-value="round(diff_amount*100/combination_info['list_price'])"/>
+			                                   <div class="decor-product-discount-label">
+			                                       <span class="decor-pro-label-disc"> 
+			                                       	<t t-out="'-'+'%s'%(dis_per)+'&#x25;'"/></span>
+			                                   </div>
+		                             	</t>
+	                             	</div>
+									<div class="title-price">
+										
+										<h5 class="product-title">
+											<a t-attf-href="/shop/product/#{ slug(product) }">
+												<span t-out='product.name' />
+											</a>
+										</h5>
+										<p class="prod-description prod-conf-description d-none mb4" t-out="product.website_meta_description"/>
+										<t t-if="is_view_active('website_sale.product_comment')">
+							                <t t-call="theme_decor.product_item_stars"/> 
+							            </t>
+										<p class="decor-price price">
+											<b>
+												
+												<span t-if="combination_info['price']"
+													t-out="combination_info['price']"
+													t-options="{'widget': 'monetary', 'display_currency': website.currency_id}" />
+												<t t-if="True">
+													<del
+														t-attf-class="text-primary ml8 {{'' if combination_info['has_discounted_price'] else 'd-none'}}"
+														style="white-space: nowrap;"
+														t-out="combination_info['list_price']"
+														t-options="{'widget': 'monetary', 'display_currency': website.currency_id}" />
+												</t>
+												<span itemprop="price" style="display:none;"
+													t-out="combination_info['price']" />
+												<span itemprop="priceCurrency" style="display:none;"
+													t-out="website.currency_id.name" />
+											</b>
+										</p>
+									</div>
+									<div class="o_wsale_product_btn config_cart_btn d-none">
+										<t t-call='theme_decor.model_add_cart_ajax_template'/>
+										<form action="/shop/cart/update" method="post">
+											<input type="hidden" name="csrf_token"
+												t-att-value="request.csrf_token()" />
+											<input name="product_id"
+												t-att-value="product.product_variant_id.id" type="hidden" />
+											<div class="cart_div_biz d-inline-block">
+												<input type="hidden" name="csrf_token"
+													t-att-value="request.csrf_token()" />
+												<input name="product_id"
+													t-att-value="product.product_variant_id.id" type="hidden" />
+												<t t-if="request.env['ir.module.module'].sudo().search([('name', '=', 'sale_product_configurator'),('state','=','installed')])">
+								                    <t t-if="product.optional_product_ids">
+														<t t-if="is_view_active('website_sale.products_add_to_cart')">
+									                        <div class='optional-btn ajax_cart_modal_tools'>
+									                        	<button class="btn btn-primary a-submit one"><span class="ri ri-shopping-cart-line align-middle"></span><span class="ms-2 layout_style_2_cart d-none align-middle">Add To Cart</span></button>
+									                        </div>
+									                    </t>
+								                    </t>
+								                    <t t-else=''>
+								                    	<t t-if="len(product.product_variant_ids) == 1">
+															<t t-if="is_view_active('website_sale.products_add_to_cart')">
+										                        <div class="ajax_cart_modal_tools">
+										                            <a class="button btn btn-cart btn-primary a-submit ajax-cart-btn two" data-toggle="modal"> 
+									                            		<span class="ri ri-shopping-cart-line align-middle"></span><span class="ms-2 layout_style_2_cart d-none align-middle">Add To Cart</span>
+																	</a>
+										                        </div>
+										                    </t>
+									                    </t>
+									                    <t t-if="len(product.product_variant_ids) &gt; 1">
+															<t t-if="is_view_active('website_sale.products_add_to_cart')">
+										                    	<div class="ajax_cart_modal_tools">
+										                            <a class="button btn btn-cart btn-primary select_btn three" t-att-data-product-product-id="product.product_variant_ids[0].id" t-att-data-product_template_id="product.id"> 
+									                            		<span class="ri ri-shopping-cart-line align-middle"></span><span class="ms-2 layout_style_2_cart d-none align-middle">Add To Cart</span>
+																	</a>
+										                        </div>
+										                    </t>
+														</t>
+								                    </t>
+								                </t>
+								                <t t-else=''>
+								                    <t t-if="len(product.product_variant_ids) == 1">
+														<t t-if="is_view_active('website_sale.products_add_to_cart')">
+										                    <div class="ajax_cart_modal_tools">
+										                        <a class="button btn btn-cart btn-primary a-submit ajax-cart-btn four" data-toggle="modal"> 
+									                            	<span class="ri ri-shopping-cart-line align-middle"></span><span class="ms-2 layout_style_2_cart d-none align-middle">Add To Cart</span>
+																</a>
+										                    </div>
+										                </t>
+									                </t>
+									                <t t-if="len(product.product_variant_ids) &gt; 1">
+														<t t-if="is_view_active('website_sale.products_add_to_cart')">
+										                	<div class="ajax_cart_modal_tools">
+										                        <a class="button btn btn-cart btn-primary select_btn five" t-att-data-product-product-id="product.product_variant_ids[0].id" t-att-data-product_template_id="product.id">
+									                            	<span class="ri ri-shopping-cart-line align-middle"></span><span class="ms-2 layout_style_2_cart d-none align-middle">Add To Cart</span>
+																</a>
+										                    </div>
+										                </t>
+													</t>
+								                </t>
+											</div>
+										</form>
+									</div>
+									<div class="slider-icons">
+										<div class="wislist_biz d-inline-block">
+											<t
+												t-if="is_view_active('website_sale_wishlist.add_to_wishlist') and product.product_variant_ids">
+												<t t-set="in_wish"
+												t-value="product.product_variant_ids &amp; request.env['product.wishlist'].current().mapped('product_id')" />
+												<button class="btn btn-secondary o_add_wishlist"
+												t-att-disabled='in_wish or None' title="Add to Wishlist"
+												t-att-data-product-product-id="product.product_variant_ids[0].id"
+												t-att-data-product-template-id="product.id" data-action="o_wishlist">
+												<span class="ri ri-heart-line"></span>
+											</button>
+											</t>
+										</div>
+										<div class="product-quick-view d-inline-block">
+											<a  title="Quick View"  class="btn btn-light quick_btn" t-att-data-product-product-id="product.product_variant_ids[0].id" t-att-data-product_template_id="product.id">
+									                <span class="ri ri-eye-line text-secondary"></span>
+								            </a>
+										</div>
+										<div class="product-compare d-inline-block">
+											<t t-if="is_view_active('website_sale_comparison.add_to_compare') and product.product_variant_ids">
+											<a class="btn btn-secondary o_add_compare text-white" title="Compare"
+												t-att-data-product-product-id="product.product_variant_ids[0].id"
+												data-action="o_comparelist">
+												<span class="icon icon-ExitFullScreen"></span>
+											</a>
+											</t>
+										</div>
+									</div>
+								</div>
+							</div>
+	                    </div>
+					</t>
+				</div>
+			</div>
+		</div>
+	</template>
+
+	<template id="product_configurator_list_slider_style" name="Product Configurator List Slider Style">
+		<div class="product_configurator_content">
+			<div class="slider-titles" t-if="config_title or config_slider_description">
+				<t t-if="config_title">
+					<h3 class="text-center text-secondary"><t t-out="config_title"/></h3>
+				</t>
+				<t t-if="config_slider_description">
+					<p class="text-center text-muted mb-0"><t t-out="config_slider_description"/></p>
+				</t>
+				<div class="slider-separator"/>
+			</div>
+			<div class="">
+				<div id="configurator-list-slider" class="owl-carousel">
+					<t t-foreach="product_detail" t-as="product">
+						
+						<div class="product_preview">
+	                        <t t-set="combination_info"
+								t-value="product._get_combination_info(only_template=True, add_qty=add_qty or 1, pricelist=pricelist)" />
+							<div class="product-item"
+								t-att-data-publish="product.website_published and 'on' or 'off'">
+								<div class="row align-items-center">
+									<div class="col-lg-5">
+										<section class="pro-conf-image">
+											<div class="p-item-image">
+												<a t-att-href="'/shop/%s' % slug(product)">
+													<img class="front img img-fluid" t-att-alt="product.name"
+														t-att-title="product.name"
+														t-att-src="website.image_url(product, 'image_1920','314x385')" />
+												</a>
+											</div>
+										</section>
+									</div>
+									<div class="col-lg-7">
+										<section class="product-info">
+											<div class="slider-label d-none">
+												<t t-call='theme_decor.decor_product_label_common'/>
+												<t t-if="combination_info['has_discounted_price']">
+						                           <t t-set="diff_amount"
+						                              t-value="round(combination_info['list_price'] - combination_info['price'],2)"/>
+						                           <t t-set="dis_per"
+						                              t-value="round(diff_amount*100/combination_info['list_price'])"/>
+						                               <div class="decor-product-discount-label">
+						                                   <span class="decor-pro-label-disc"> 
+						                                   	<t t-out="'-'+'%s'%(dis_per)+'&#x25;'"/></span>
+						                               </div>
+						                     	</t>
+						                 	</div>
+											<div class="title-price">
+									            <h5 class="product-title mb8">
+													<a t-attf-href="/shop/product/#{ slug(product) }">
+														<span t-out='product.name' />
+													</a>
+												</h5>
+												<!-- <p class="prod-description prod-conf-description d-none mb8" t-out="product.website_meta_description"/> -->
+												<t t-if="is_view_active('website_sale.product_comment')">
+									                <div class="pro-conf-ratings d-none mb8">
+									                	<t t-call="theme_decor.product_item_stars"/> 
+									                </div>
+									            </t>
+												<p class="decor-price price mb8 d-none">
+													<b>
+														
+														<span t-if="combination_info['price']"
+															t-out="combination_info['price']"
+															t-options="{'widget': 'monetary', 'display_currency': website.currency_id}" />
+														<t t-if="True">
+															<del
+																t-attf-class="text-primary ml8 {{'' if combination_info['has_discounted_price'] else 'd-none'}}"
+																style="white-space: nowrap;"
+																t-out="combination_info['list_price']"
+																t-options="{'widget': 'monetary', 'display_currency': website.currency_id}" />
+														</t>
+														<span itemprop="price" style="display:none;"
+															t-out="combination_info['price']" />
+														<span itemprop="priceCurrency" style="display:none;"
+															t-out="website.currency_id.name" />
+													</b>
+												</p>
+											</div>
+											<div class="o_wsale_product_btn config_cart_btn d-none">
+												<t t-call='theme_decor.model_add_cart_ajax_template'/>
+												<form action="/shop/cart/update" method="post">
+													<input type="hidden" name="csrf_token"
+														t-att-value="request.csrf_token()" />
+													<input name="product_id"
+														t-att-value="product.product_variant_id.id" type="hidden" />
+													<div class="cart_div_biz d-inline-block">
+														<input type="hidden" name="csrf_token"
+															t-att-value="request.csrf_token()" />
+														<input name="product_id"
+															t-att-value="product.product_variant_id.id" type="hidden" />
+														<t t-if="request.env['ir.module.module'].sudo().search([('name', '=', 'sale_product_configurator'),('state','=','installed')])">
+										                    <t t-if="product.optional_product_ids">
+																<t t-if="is_view_active('website_sale.products_add_to_cart')">
+											                        <div class='optional-btn ajax_cart_modal_tools'>
+											                        	<button class="btn btn-primary a-submit one"><span class="ri ri-shopping-cart-line align-middle"></span><span class="ms-2 layout_style_2_cart d-none align-middle">Add To Cart</span></button>
+											                        </div>
+											                    </t>
+										                    </t>
+										                    <t t-else=''>
+										                    	<t t-if="len(product.product_variant_ids) == 1">
+																	<t t-if="is_view_active('website_sale.products_add_to_cart')">
+												                        <div class="ajax_cart_modal_tools">
+												                            <a class="button btn btn-cart btn-primary a-submit ajax-cart-btn two" data-toggle="modal"> 
+											                            		<span class="ri ri-shopping-cart-line align-middle"></span><span class="ms-2 layout_style_2_cart d-none align-middle">Add To Cart</span>
+																			</a>
+												                        </div>
+												                    </t>
+											                    </t>
+											                    <t t-if="len(product.product_variant_ids) &gt; 1">
+																	<t t-if="is_view_active('website_sale.products_add_to_cart')">
+												                    	<div class="ajax_cart_modal_tools">
+												                            <a class="button btn btn-cart btn-primary select_btn three" t-att-data-product-product-id="product.product_variant_ids[0].id" t-att-data-product_template_id="product.id"> 
+											                            		<span class="ri ri-shopping-cart-line align-middle"></span><span class="ms-2 layout_style_2_cart d-none align-middle">Add To Cart</span>
+																			</a>
+												                        </div>
+												                    </t>
+																</t>
+										                    </t>
+										                </t>
+										                <t t-else=''>
+										                    <t t-if="len(product.product_variant_ids) == 1">
+																<t t-if="is_view_active('website_sale.products_add_to_cart')">
+												                    <div class="ajax_cart_modal_tools">
+												                        <a class="button btn btn-cart btn-primary a-submit ajax-cart-btn four" data-toggle="modal"> 
+											                            	<span class="ri ri-shopping-cart-line align-middle"></span><span class="ms-2 layout_style_2_cart d-none align-middle">Add To Cart</span>
+																		</a>
+												                    </div>
+												                </t>
+											                </t>
+											                <t t-if="len(product.product_variant_ids) &gt; 1">
+																<t t-if="is_view_active('website_sale.products_add_to_cart')">
+												                	<div class="ajax_cart_modal_tools">
+												                        <a class="button btn btn-cart btn-primary select_btn five" t-att-data-product-product-id="product.product_variant_ids[0].id" t-att-data-product_template_id="product.id">
+											                            	<span class="ri ri-shopping-cart-line align-middle"></span><span class="ms-2 layout_style_2_cart d-none align-middle">Add To Cart</span>
+																		</a>
+												                    </div>
+												                </t>
+															</t>
+										                </t>
+													</div>
+												</form>
+											</div>
+											<div class="slider-icons">
+												<div class="wislist_biz d-none">
+													<t
+														t-if="is_view_active('website_sale_wishlist.add_to_wishlist') and product.product_variant_ids">
+														<t t-set="in_wish"
+														t-value="product.product_variant_ids &amp; request.env['product.wishlist'].current().mapped('product_id')" />
+														<button class="btn btn-secondary o_add_wishlist"
+														t-att-disabled='in_wish or None' title="Add to Wishlist"
+														t-att-data-product-product-id="product.product_variant_ids[0].id"
+														t-att-data-product-template-id="product.id" data-action="o_wishlist">
+														<span class="ri ri-heart-line"></span>
+													</button>
+													</t>
+												</div>
+												<div class="product-qick-view d-none">
+													<a  title="Quick View"  class="btn btn-light quick_btn" t-att-data-product-product-id="product.product_variant_ids[0].id" t-att-data-product_template_id="product.id">
+											                <span class="ri ri-eye-line text-secondary"></span>
+										            </a>
+												</div>
+												<div class="product-compare d-none">
+													<t t-if="is_view_active('website_sale_comparison.add_to_compare') and product.product_variant_ids">
+													<a class="btn btn-secondary o_add_compare text-white" title="Compare"
+														t-att-data-product-product-id="product.product_variant_ids[0].id"
+														data-action="o_comparelist">
+														<span class="icon icon-ExitFullScreen"></span>
+													</a>
+													</t>
+												</div>
+											</div>
+										</section>
+									</div>
+								</div>
+							</div>
+	                    </div>
+					</t>
+				</div>
+			</div>
+		</div>
+	</template>
+</odoo>

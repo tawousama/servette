@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_pricing_three" name="Pricing Three">
+		<section class="It-pricing-plan" style="background-image: url('/theme_decor/static/src/img/solution-pricing.jpg');">
+			<div class="container extended-container">
+				<div class="row justify-content-center">
+					<div class="heading text-center">
+						<h3>Our Pricing plans</h3>
+						<p>Aaboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+					</div>
+				</div>
+				<div class="row mt40">
+					<div class="col-lg-4 col-md-4">
+						<div class="Pricing-column">
+							<section class="Pricing-wrap">
+								<div class="pricing-inner">
+									<div class="pricing-item">
+										<h5>Basic</h5>
+										<div class="cost"> $149</div>
+									</div>
+									<div class="pricing-content">
+										<ul>
+											<li>Monitoring Work</li>
+											<li>Installation</li>
+											<li>Furniture Maintence</li>
+											<li>Product Warranty</li>
+											<li>24/7 Skilled Support</li>
+										</ul>
+										<div class="s_btn" data-name="Button">
+	            							<a href="#" class="btn btn-itsolution-2 bizople_button">PURCHASE NOW</a>
+	            						</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4">
+						<div class="Pricing-column">
+							<section class="Pricing-wrap">
+								<div class="pricing-inner">
+									<div class="pricing-item">
+										<h5>Economic</h5>
+										<div class="cost"> $249</div>
+									</div>
+									<div class="pricing-content">
+										<ul>
+											<li>Monitoring Work</li>
+											<li>Installation</li>
+											<li>Furniture Maintence</li>
+											<li>Product Warranty</li>
+											<li>24/7 Skilled Support</li>
+										</ul>
+										<div class="s_btn" data-name="Button">
+	            							<a href="#" class="btn btn-itsolution-2 bizople_button">PURCHASE NOW</a>
+	            						</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-4">
+						<div class="Pricing-column">
+							<section class="Pricing-wrap">
+								<div class="pricing-inner">
+									<div class="pricing-item">
+										<h5>Premium</h5>
+										<div class="cost"> $449</div>
+									</div>
+									<div class="pricing-content">
+										<ul>
+											<li>Monitoring Work</li>
+											<li>Installation</li>
+											<li>Furniture Maintence</li>
+											<li>Product Warranty</li>
+											<li>24/7 Skilled Support</li>
+										</ul>
+										<div class="s_btn" data-name="Button">
+	            							<a href="#" class="btn btn-itsolution-2 bizople_button">PURCHASE NOW</a>
+	            						</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

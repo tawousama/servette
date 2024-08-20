@@ -1,0 +1,104 @@
+.btn-bizople_button_12 {
+    letter-spacing: 0;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    color: black;
+    border: 0 !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-bizople_button_12:before, .btn-bizople_button_12:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn-bizople_button_12:before{
+    opacity: 0;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-top-color: rgba(black,0.5);
+    border-bottom-color: rgba(black,0.5);
+    -webkit-transform: scale(0.1, 1);
+    transform: scale(0.1, 1);
+}
+
+.btn-bizople_button_12:hover:before{
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+.btn-bizople_button_12:after {
+    background-color: rgba(black,0.25);
+}
+.btn-bizople_button_12.rounded-circle:after{
+    border-radius: 100px !important;
+}
+.btn-bizople_button_12:hover:after {
+    opacity: 0;
+    -webkit-transform: scale(0.1, 1);
+    transform: scale(0.1, 1);
+}
+
+
+
+/*::::::::::::: btn-secondary and btn-outline-secondary ::::::::::::::::::::::::::*/
+
+.btn-bizople_button_12.btn-secondary, .btn-bizople_button_12.btn-outline-secondary{
+    color: $secondary !important;
+}
+
+.btn-bizople_button_12.btn-secondary:active, .btn-bizople_button_12.btn-outline-secondary:active{
+    color: $secondary !important;
+}
+
+.btn-bizople_button_12.btn-secondary, .btn.btn-bizople_button_12.btn-outline-secondary{
+    &:before{
+        border-top-color: rgba($secondary,0.5) !important;
+        border-bottom-color: rgba($secondary,0.5) !important;
+
+    }
+    &:after{
+        background-color: rgba($secondary,0.25) !important;
+    }
+}
+
+/*::::::::::::: btn-primary and btn-outline-primary ::::::::::::::::::::::::::*/
+
+.btn-bizople_button_12.btn-primary, .btn-bizople_button_12.btn-outline-primary{
+    color: $primary !important;
+}
+
+.btn-bizople_button_12.btn-primary:active, .btn-bizople_button_12.btn-outline-primary:active{
+    color: $primary !important;
+}
+
+.btn-bizople_button_12.btn-primary, .btn.btn-bizople_button_12.btn-outline-primary{
+    &:before{
+        border-top-color: rgba($primary,0.5) !important;
+        border-bottom-color: rgba($primary,0.5) !important;
+
+    }
+    &:after{
+        background-color: rgba($primary,0.25) !important;
+    }
+}

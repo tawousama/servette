@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_homepage_three_services-section"
+		name="Services with icons and paragraph">
+		<section class="s_furniture_services-section">
+			<div class="container custom">
+				<div class="sec-title text-center">
+					<h2>OUR SERVICES</h2>
+					<div class="text">The ship set ground on the shore of this
+						uncharted desert isle
+					</div>
+				</div>
+
+				<div class="row clearfix gx-0">
+					<div
+						class="blocks-column order-last col-lg-6 col-md-12 col-sm-12">
+						<div class="inner-column">
+							<div class="service-block">
+								<div class="inner-box">
+									<span class="icon fa fa-pencil"></span>
+									<h3>
+										<a href="#">INTERIOR DESIGN</a>
+									</h3>
+									<div class="text">The story of a man named Brady hoo busy with
+										desert islecome to knock on our door.
+									</div>
+								</div>
+							</div>
+							<div class="service-block">
+								<div class="inner-box">
+									<span class="icon fa fa-database"></span>
+									<h3>
+										<a href="#">DECORATION</a>
+									</h3>
+									<div class="text">The story of a man named Brady hoo busy with
+										desert islecome to knock on our door.
+									</div>
+								</div>
+							</div>
+							<div class="service-block">
+								<div class="inner-box">
+									<span class="icon fa fa-file"></span>
+									<h3>
+										<a href="#">EXTERIOR DESIGN</a>
+									</h3>
+									<div class="text">The story of a man named Brady hoo busy with
+										desert islecome to knock on our door.
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div
+						class="image-column col-lg-6 col-md-12 col-sm-12 wow fadeInLeft">
+						<div class="single-banner">
+							<a href="#">
+								<img src="/theme_decor/static/src/img/image-2.jpg" alt="" class="img img-fluid"/>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</template>
+
+</odoo>

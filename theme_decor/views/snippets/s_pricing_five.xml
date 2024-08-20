@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_pricing_five" name="Pricing Five">
+		<section class="s_business_pricing_plan pricing5 pt80 pb80">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-md-8 text-center">
+						<h3 class="title">Simple Pricing to make your Work Effective</h3>
+						<h6 class="subtitle">We offer 100% satisfaction and Money back
+							Guarantee
+						</h6>
+					</div>
+				</div>
+				<div class="row text-center pricing-box">
+					<div class="col-md-4">
+						<section class="card shadow"
+							style="background-image:url('/theme_decor/static/src/img/p5-img1.jpg'); background-repeat:no-repeat;">
+							<div class="">
+								<h6 class="text-white mt-4 mb-0">BASE PACK</h6>
+								<h3 class="text-white mt-0 monthly">$100</h3>
+								<h3 class="text-white mt-0 yearly">$1000</h3>
+								<ul class="general-listing only-li list-unstyled">
+									<li>Monitoring Work</li>
+									<li>Installation</li>
+									<li>Furniture Maintence</li>
+									<li>Product Warranty</li>
+									<li>24/7 Skilled Support</li>
+								</ul>
+								<div class="s_btn text-center pt8 pb24">
+									<a href="/contactus"
+										class="btn btn-outline-primary btn-md arrow-btn btn-rounded rounded-circle m-b-20">
+										BUY BASIC
+										<!-- <span class="fa fa-1x fa-fw fa-long-arrow-right ms-1"></span> -->
+									</a>
+								</div>
+							</div>
+						</section>
+					</div>
+					<div class="col-md-4 middle-box">
+						<section class="card shadow"
+							style="background-image:url('/theme_decor/static/src/img/p5-img2.jpg'); background-repeat:no-repeat;">
+							<div class="">
+								<h6 class="text-white mt-4 mb-0">PRO PACK</h6>
+								<h3 class="text-white mt-0 monthly">$200</h3>
+								<h3 class="text-white mt-0 yearly">$2000</h3>
+								<div class="star-plan m-t-20">
+									<img src="/theme_decor/static/src/img/star.png" alt=" " />
+								</div>
+								<ul class="general-listing only-li list-unstyled">
+									<li>Monitoring Work</li>
+									<li>Installation</li>
+									<li>Furniture Maintence</li>
+									<li>Product Warranty</li>
+									<li>24/7 Skilled Support</li>
+								</ul>
+								<div class="s_btn text-center pt8 pb24">
+									<a href="/contactus"
+										class="btn btn-primary btn-md rounded-circle arrow-btn m-b-20">
+										BUY BASIC
+										<!-- <span class="fa fa-1x fa-fw fa-long-arrow-right ms-1"></span> -->
+									</a>
+								</div>
+							</div>
+						</section>
+					</div>
+					<div class="col-md-4">
+						<section class="card shadow"
+							style="background-image:url('/theme_decor/static/src/img/p5-img3.jpg'); background-repeat:no-repeat;">
+							<div class="">
+								<h6 class="text-white mt-4 mb-0">BASE PACK</h6>
+								<h3 class="text-white mt-0 monthly">$300</h3>
+								<h3 class="text-white mt-0 yearly">$3000</h3>
+								<ul class="general-listing only-li list-unstyled">
+									<li>Monitoring Work</li>
+									<li>Installation</li>
+									<li>Furniture Maintence</li>
+									<li>Product Warranty</li>
+									<li>24/7 Skilled Support</li>
+								</ul>
+								<div class="s_btn text-center pt8 pb24">
+									<a href="/contactus"
+										class="btn btn-outline-primary btn-md arrow-btn btn-rounded rounded-circle m-b-20">
+										BUY BASIC
+										<!-- <span class="fa fa-1x fa-fw fa-long-arrow-right ms-1"></span> -->
+									</a>
+								</div>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

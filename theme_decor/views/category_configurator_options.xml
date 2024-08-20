@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_category_configurator" name="Category Configurator">
+		<section class="bizople_category_configurator oe_website_sale grid_style layout_style_1" category_config_id="1" category_id="" category_limit="10" column_limit="4">
+			<div class="container o_not_editable"></div>
+        </section>
+	</template>
+
+	<template id="category_configurator_snippet_options_inherit" inherit_id="website.snippet_options">
+		<xpath expr="//div[@data-js='HeaderBox']" position="after">
+			<div data-selector=".bizople_category_configurator" data-js="theme_decor_category_configurator">
+				<we-row string="Select category">
+	                <we-button class="biz_change_category"><i class="fa fa-fw fa-plus"/> Change Categories</we-button>
+		        </we-row>
+			</div>
+		</xpath>
+	</template>
+
+	<template id="category_configurator_modal_checkbox" name="Configurator category Checkbox">
+		<t t-foreach="category" t-as="c">
+			<div class="form-check d-none">
+	            <label class="form-check-label container" t-att-prod_id="c.id">
+	                <input type="checkbox" class="form-check-input" t-att-id="c.id" t-att-name="c.name" t-att-value="c.id"/><t t-out="c.name"/>
+	                <span class="checkmark"></span>
+	            </label>
+	        </div>
+	    </t>
+	</template>
+
+	<template id="category_configurator_grid_style" name="Category Configurator Grid Style">
+		<div class="category_configurator_content">
+			<div class="slider-titles" t-if="config_title">
+				<h3 class="text-center"><t t-out="config_title"/></h3>
+				<div class="slider-separator"/>
+			</div>
+			<div class="row">
+				<t t-set="biz_col_size" t-value="12 / column_limit"/>
+				<t t-set="biz_col_size_int" t-value="int(biz_col_size)"/>
+				<t t-foreach="category_detail" t-as="c">
+					<div t-att-class="'col-lg-%s'%(biz_col_size_int)+' mb32 col-md-6'">
+						<div class="category_preview">
+	                        <div class="item sli-cat">
+	                            <a t-att-href=" '/shop/category/%s' % slug(c)">
+	                                <div class="sli-cat-img" t-attf-style="background-image: url('#{website.image_url(c, 'category_bg_image')}');">
+	                                    <img class="img img-fluid" t-att-alt="c.name" t-att-src="website.image_url(c, 'image_1920')" t-att-title="c.name"/>
+	                                </div>
+	                                <div class="categ_layout_style_3 d-none text-center">
+	                                	<div class="row m-0 justify-content-center position-relative w-100">
+	                                		<t t-if="c.product_tmpl_ids">
+		                                		<t t-set="count" t-value="0"/>
+		                                		<t t-foreach="c.product_tmpl_ids" t-as="p">
+		                                			<t t-set="count" t-value="count + 1"/>
+		                                			<t t-if="count == 1">
+		                                				<div class="col-md-12 px-2 upper-image">
+		                                					<img class="front img img-fluid" t-att-src="website.image_url(p, 'image_1920','314x385')" />
+		                                				</div>
+		                                			</t>
+		                                			<t t-if="count == 2">
+		                                				<div class="col-md-6 px-1 lower-image-1">
+		                                					<img class="front img img-fluid" t-att-src="website.image_url(p, 'image_1920','314x385')" />
+		                                				</div>
+		                                			</t>
+		                                			<t t-if="count == 3">
+		                                				<div class="col-md-6 px-1 lower-image-2">
+		                                					<img class="front img img-fluid" t-att-src="website.image_url(p, 'image_1920','314x385')" />
+		                                				</div>
+		                                			</t>
+		                                		</t>
+		                                	</t>
+		                                	<t t-else="">
+		                                		<img class="categ-image img img-fluid" t-att-alt="c.name" t-att-src="website.image_url(c, 'image_1920')" t-att-title="c.name"/>
+		                                	</t>
+	                                	</div>
+	                                </div>
+	                            </a>
+	                            <div class='comm_cat_title'>
+		                        	<a t-att-href=" '/shop/category/%s' % slug(c)">
+			                            <p class="sli-cat-title mb-0">
+			                                <t t-out="c.name"/>
+			                            </p>
+			                        </a>
+		                            <p class="product_count m-0 text-white">
+		                            	<span class="product_count">
+							                <span><t t-out="c.with_context(product_categ_search=search).product_tmpl_count"/></span>
+							                <span class="ms-1">Items</span>
+							            </span>
+		                            </p>
+		                            <!-- <a t-att-href=" '/shop/category/%s' % slug(c)">Shop Now</a> -->
+		                        </div>
+	                        </div>
+	                    </div>
+					</div>
+				</t>
+			</div>
+		</div>
+	</template>
+
+	<template id="category_configurator_list_style" name="Category Configurator List Style">
+		<div class="category_configurator_content">
+			<div class="slider-titles" t-if="config_title">
+				<h3 class=""><t t-out="config_title"/></h3>
+				<div class="slider-separator"/>
+			</div>
+			<t t-foreach="category_detail" t-as="c">
+				<div class="category_preview">
+                    <div class="item sli-cat d-flex align-items-center">
+                        <a t-att-href=" '/shop/category/%s' % slug(c)">
+                            <div class="sli-cat-img">
+                                <img class="img img-fluid" t-att-alt="c.name" t-att-src="website.image_url(c, 'image_1920')" t-att-title="c.name"/>
+                            </div>
+                            <div class="categ_layout_style_3 d-none text-center">
+                        		<t t-set="count" t-value="0"/>
+                        		<t t-if="c.product_tmpl_ids">
+	                        		<t t-foreach="c.product_tmpl_ids" t-as="p">
+	                        			<t t-set="count" t-value="count + 1"/>
+	                        			<t t-if="count == 1">
+	                    					<img class="front img img-fluid" t-att-src="website.image_url(p, 'image_1920','314x385')" />
+	                        			</t>
+	                        		</t>
+	                        	</t>
+	                        	<t t-else="">
+                            		<img class="categ-image img img-fluid" t-att-alt="c.name" t-att-src="website.image_url(c, 'image_1920')" t-att-title="c.name"/>
+                            	</t>
+                            </div>
+                        </a>
+                        <div class='comm_cat_title'>
+                        	<a t-att-href=" '/shop/category/%s' % slug(c)">
+	                            <p class="sli-cat-title mb-0">
+	                                <t t-out="c.name"/>
+	                            </p>
+	                        </a>
+                            <p class="product_count m-0">
+                            	<span class="product_count">
+					                <span><t t-out="c.with_context(product_categ_search=search).product_tmpl_count"/></span>
+					                <span class="ms-1">Items</span>
+					            </span>
+                            </p>
+                            <!-- <a t-att-href=" '/shop/category/%s' % slug(c)">Shop Now</a> -->
+                        </div>
+                    </div>
+                </div>
+			</t>
+		</div>
+	</template>
+
+	<template id="category_configurator_slider_style" name="Category Configurator Slider Style">
+		<div class="category_configurator_content">
+			<div class="slider-titles" t-if="config_title or config_slider_description">
+				<t t-if="config_title">
+					<h3 class="text-center text-secondary"><t t-out="config_title"/></h3>
+				</t>
+				<t t-if="config_slider_description">
+					<p class="text-center text-muted mb-0"><t t-out="config_slider_description"/></p>
+				</t>
+				<div class="slider-separator"/>
+			</div>
+			<div class="row align-items-center">
+				<div id="configurator-slider" class="col-md-12 owl-carousel">
+					<t t-foreach="category_detail" t-as="c">
+						<div class="category_preview">
+		                    <div class="item sli-cat">
+		                        <a t-att-href=" '/shop/category/%s' % slug(c)">
+		                            <div class="sli-cat-img" t-attf-style="background-image: url('#{website.image_url(c, 'category_bg_image')}');">
+		                                <img class="img img-fluid" t-att-alt="c.name" t-att-src="website.image_url(c, 'image_1920')" t-att-title="c.name"/>
+		                            </div>
+		                            <div class="categ_layout_style_3 d-none text-center">
+	                                	<div class="row m-0 justify-content-center position-relative w-100">
+	                                		<t t-if="c.product_tmpl_ids">
+		                                		<t t-set="count" t-value="0"/>
+		                                		<t t-foreach="c.product_tmpl_ids" t-as="p">
+		                                			<t t-set="count" t-value="count + 1"/>
+		                                			<t t-if="count == 1">
+		                                				<div class="col-md-12 px-2 upper-image">
+		                                					<img class="front img img-fluid" t-att-src="website.image_url(p, 'image_1920','314x385')" />
+		                                				</div>
+		                                			</t>
+		                                			<t t-if="count == 2">
+		                                				<div class="col-md-6 px-1 lower-image-1">
+		                                					<img class="front img img-fluid" t-att-src="website.image_url(p, 'image_1920','314x385')" />
+		                                				</div>
+		                                			</t>
+		                                			<t t-if="count == 3">
+		                                				<div class="col-md-6 px-1 lower-image-2">
+		                                					<img class="front img img-fluid" t-att-src="website.image_url(p, 'image_1920','314x385')" />
+		                                				</div>
+		                                			</t>
+		                                		</t>
+		                                	</t>
+		                                	<t t-else="">
+		                                		<img class="categ-image img img-fluid" t-att-alt="c.name" t-att-src="website.image_url(c, 'image_1920')" t-att-title="c.name"/>
+		                                	</t>
+	                                	</div>
+	                                </div>
+		                        </a>
+		                        <div class='comm_cat_title'>
+		                        	<a t-att-href=" '/shop/category/%s' % slug(c)">
+			                            <p class="sli-cat-title mb-0">
+			                                <t t-out="c.name"/>
+			                            </p>
+			                        </a>
+		                            <p class="product_count m-0 text-white">
+		                            	<span class="product_count">
+							                <span><t t-out="c.with_context(product_categ_search=search).product_tmpl_count"/></span>
+							                <span class="ms-1">Items</span>
+							            </span>
+		                            </p>
+		                            <!-- <a t-att-href=" '/shop/category/%s' % slug(c)">Shop Now</a> -->
+		                        </div>
+		                    </div>
+		                </div>
+					</t>
+				</div>
+			</div>
+		</div>
+	</template>
+</odoo>

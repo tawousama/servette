@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+		<data>
+				<record id="product_pricelist_sm_view" model="ir.ui.view">
+						<field name="name">product.pricelist.servette.music.form</field>
+						<field name="model">product.pricelist</field>
+						<field name="inherit_id" ref="product.product_pricelist_view"/>
+						<field name="arch" type="xml">
+								<xpath expr="//div[hasclass('oe_title')]" position="after">
+										<group>
+												<field name="title_report_sm"/>
+										</group>
+								</xpath>
+						</field>
+				</record>
+		</data>
+</odoo>

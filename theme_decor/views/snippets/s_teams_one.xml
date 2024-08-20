@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="s_teams_one" name="Teams One">
+		<section class="centric_template">
+			<section class="ourteam-section pt128 pb128">
+				<div class="container">
+					<div class="ourteam-title text-center">
+						<span>TEAM</span>
+						<h3>
+							Meet Our Team
+						</h3>
+					</div>
+					<div class="row">
+						<div class="col-lg-4 col-sm-6">
+							<section class="team-content">
+								<div class="team-image text-center">
+									<img  class="img img-fluid" src="/theme_decor/static/src/img/t-1.jpg"/>
+								</div>
+								<div class="team-content-text text-center">
+									<h4>William Smith</h4>
+									<span>CEO &amp; Founder</span>
+									<div class="s_share" data-name="Share">
+								        <a href="#" class="shareftle">
+								            <span class="fa fa-linkedin"></span>
+								        </a>
+								        <a href="#" class="shareftle ">
+								            <span class="fa fa-facebook"></span>
+								        </a>
+								        <a href="#" class="shareftle">
+								            <span class="fa fa-twitter"></span>
+								        </a>
+								        <a href="#" class="shareftle">
+								            <span class="fa fa-instagram"></span>
+								        </a>
+								    </div>
+								</div>
+							</section>
+						</div>
+						<div class="col-lg-4 col-sm-6">
+							<section class="team-content">
+								<div class="team-image text-center">
+									<img  class="img img-fluid" src="/theme_decor/static/src/img/t-2.jpg"/>
+								</div>
+								<div class="team-content-text text-center">
+									<h4>Adina Jones</h4>
+									<span>Project Manager</span>
+									<div class="s_share" data-name="Share">
+								        <a href="#" class="shareftle">
+								            <span class="fa fa-linkedin"></span>
+								        </a>
+								        <a href="#" class="shareftle ">
+								            <span class="fa fa-facebook"></span>
+								        </a>
+								        <a href="#" class="shareftle">
+								            <span class="fa fa-twitter"></span>
+								        </a>
+								        <a href="#" class="shareftle">
+								            <span class="fa fa-instagram"></span>
+								        </a>
+								    </div>
+								</div>
+							</section>
+						</div>
+						<div class="col-lg-4 col-sm-6">
+							<section class="team-content">
+								<div class="team-image text-center">
+									<img class="img img-fluid" src="/theme_decor/static/src/img/t-3.jpg"/>
+								</div>
+								<div class="team-content-text text-center">
+									<h4>Karly Miller</h4>
+									<span>Store Manager</span>
+									<div class="s_share" data-name="Share">
+								        <a href="#" class="shareftle">
+								            <span class="fa fa-linkedin"></span>
+								        </a>
+								        <a href="#" class="shareftle ">
+								            <span class="fa fa-facebook"></span>
+								        </a>
+								        <a href="#" class="shareftle">
+								            <span class="fa fa-twitter"></span>
+								        </a>
+								        <a href="#" class="shareftle">
+								            <span class="fa fa-instagram"></span>
+								        </a>
+								    </div>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</section>
+		</section>
+	</template>
+</odoo>

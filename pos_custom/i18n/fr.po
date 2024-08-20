@@ -1,0 +1,208 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pos_custom
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 14.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-08-31 17:12+0000\n"
+"PO-Revision-Date: 2022-08-31 17:12+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: pos_custom
+#. openerp-web
+#: code:addons/pos_custom/static/src/js/ClientDetailsEdit.js:0
+#, python-format
+msgid "A Customer Firstname or Lastname Is Required"
+msgstr "Le nom/Le prénom d'un client est requis"
+
+#. module: pos_custom
+#: model:ir.model,name:pos_custom.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: pos_custom
+#. openerp-web
+#: code:addons/pos_custom/static/src/xml/FieldMany2ManyTags.xml:0
+#, python-format
+msgid "Create \""
+msgstr ""
+
+#. module: pos_custom
+#: model:ir.model.fields,field_description:pos_custom.field_template_mailing__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: pos_custom
+#: model:ir.model.fields,field_description:pos_custom.field_template_mailing__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: pos_custom
+#. openerp-web
+#: code:addons/pos_custom/static/src/xml/FieldMany2ManyTags.xml:0
+#: code:addons/pos_custom/static/src/xml/FieldMany2ManyTags.xml:0
+#, python-format
+msgid "Delete"
+msgstr ""
+
+#. module: pos_custom
+#: model:ir.model.fields,field_description:pos_custom.field_mailing_mailing__display_name
+#: model:ir.model.fields,field_description:pos_custom.field_pos_order__display_name
+#: model:ir.model.fields,field_description:pos_custom.field_res_partner__display_name
+#: model:ir.model.fields,field_description:pos_custom.field_res_partner_category__display_name
+#: model:ir.model.fields,field_description:pos_custom.field_template_mailing__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: pos_custom
+#. openerp-web
+#: code:addons/pos_custom/static/src/xml/ClientDetailsEdit.xml:0
+#: code:addons/pos_custom/static/src/xml/ClientDetailsEdit.xml:0
+#, python-format
+msgid "Firstname"
+msgstr "Prénom"
+
+#. module: pos_custom
+#: model:ir.model.fields,field_description:pos_custom.field_mailing_mailing__id
+#: model:ir.model.fields,field_description:pos_custom.field_pos_order__id
+#: model:ir.model.fields,field_description:pos_custom.field_res_partner__id
+#: model:ir.model.fields,field_description:pos_custom.field_res_partner_category__id
+#: model:ir.model.fields,field_description:pos_custom.field_template_mailing__id
+msgid "ID"
+msgstr ""
+
+#. module: pos_custom
+#: model:ir.model.fields,field_description:pos_custom.field_mailing_mailing____last_update
+#: model:ir.model.fields,field_description:pos_custom.field_pos_order____last_update
+#: model:ir.model.fields,field_description:pos_custom.field_res_partner____last_update
+#: model:ir.model.fields,field_description:pos_custom.field_res_partner_category____last_update
+#: model:ir.model.fields,field_description:pos_custom.field_template_mailing____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: pos_custom
+#: model:ir.model.fields,field_description:pos_custom.field_template_mailing__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: pos_custom
+#: model:ir.model.fields,field_description:pos_custom.field_template_mailing__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: pos_custom
+#. openerp-web
+#: code:addons/pos_custom/static/src/xml/ClientDetailsEdit.xml:0
+#: code:addons/pos_custom/static/src/xml/ClientDetailsEdit.xml:0
+#, python-format
+msgid "Lastname"
+msgstr "Nom"
+
+#. module: pos_custom
+#: model:ir.model.fields,field_description:pos_custom.field_mailing_mailing__template_mailing_id
+msgid "Mail Template"
+msgstr ""
+
+#. module: pos_custom
+#: model:ir.model,name:pos_custom.model_mailing_mailing
+msgid "Mass Mailing"
+msgstr "Publipostage"
+
+#. module: pos_custom
+#. openerp-web
+#: code:addons/pos_custom/static/src/xml/ClientDetailsEdit.xml:0
+#, python-format
+msgid "Mobile"
+msgstr ""
+
+#. module: pos_custom
+#: model:ir.model.fields,field_description:pos_custom.field_template_mailing__name
+msgid "Name"
+msgstr ""
+
+#. module: pos_custom
+#. openerp-web
+#: code:addons/pos_custom/static/src/xml/OrderNote.xml:0
+#: code:addons/pos_custom/static/src/xml/OrderReceipt.xml:0
+#, python-format
+msgid "Note"
+msgstr ""
+
+#. module: pos_custom
+#. openerp-web
+#: code:addons/pos_custom/static/src/js/FieldMany2ManyTags.js:0
+#, python-format
+msgid "Offline"
+msgstr ""
+
+#. module: pos_custom
+#: model:ir.model,name:pos_custom.model_res_partner_category
+msgid "Partner Tags"
+msgstr "Étiquettes du partenaire"
+
+#. module: pos_custom
+#: model:ir.model,name:pos_custom.model_pos_order
+msgid "Point of Sale Orders"
+msgstr "Commandes du point de vente"
+
+#. module: pos_custom
+#: model_terms:ir.ui.view,arch_db:pos_custom.view_mail_mass_mailing_form
+msgid "Save As Template"
+msgstr ""
+
+#. module: pos_custom
+#. openerp-web
+#: code:addons/pos_custom/static/src/xml/FieldMany2ManyTags.xml:0
+#, python-format
+msgid "Start typing..."
+msgstr ""
+
+#. module: pos_custom
+#. openerp-web
+#: code:addons/pos_custom/static/src/xml/ClientDetailsEdit.xml:0
+#, python-format
+msgid "Tags"
+msgstr ""
+
+#. module: pos_custom
+#: model:ir.model,name:pos_custom.model_template_mailing
+msgid "Template Mailing"
+msgstr ""
+
+#. module: pos_custom
+#: model:ir.model.fields,field_description:pos_custom.field_template_mailing__template_text
+msgid "Template Text"
+msgstr ""
+
+#. module: pos_custom
+#. openerp-web
+#: code:addons/pos_custom/static/src/js/FieldMany2ManyTags.js:0
+#, python-format
+msgid "Unable to save changes."
+msgstr ""
+
+#. module: pos_custom
+#. openerp-web
+#: code:addons/pos_custom/static/src/xml/ClientDetailsEdit.xml:0
+#, python-format
+msgid "background-color: #ccc;"
+msgstr ""
+
+#. module: pos_custom
+#. openerp-web
+#: code:addons/pos_custom/static/src/xml/ClientDetailsEdit.xml:0
+#, python-format
+msgid "readonly"
+msgstr ""
+
+#. module: pos_custom
+#: model_terms:ir.ui.view,arch_db:pos_custom.template_mailing_view_form
+msgid "template_mailing_form"
+msgstr ""

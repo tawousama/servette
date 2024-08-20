@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="s_teams_three" name="Teams Three">
+      	<div class="oe_structure"/>
+      	
+      	<section class="corpo_medical_doctors bg-o-color-3 pt80 pb80">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-6">
+						<h3 class="o_default_snippet_text text-start fw-normal">
+							Our Team
+						</h3>
+					</div>
+					<div class="col-md-6 mt-3 mt-md-0">
+						<p class="o_default_snippet_text text-start text-md-end">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmo incididunt ut labore et dolore magna aliqua.
+						</p>
+					</div>
+				</div>
+				<div class="row mt40">
+					<div class="col-md-12">
+						<section class="s_carousel_wrapper" data-vxml="001" data-snippet="s_carousel" data-name="Carousel">
+							<div id="corpo-doctors-carousel" class="s_carousel s_carousel_default carousel slide" data-bs-interval="7000">
+								<ol class="carousel-indicators o_we_no_overlay d-none">
+									<li data-bs-target="#corpo-doctors-carousel" data-bs-slide-to="0" class="active"/>
+									<li data-bs-target="#corpo-doctors-carousel" data-bs-slide-to="1"/>
+								</ol>
+								<div class="carousel-inner">
+									<div class="carousel-item o_colored_level oe_img_bg active" data-name="Slide">
+										<div class="container">
+											<div class="row content">
+												<div class="carousel-content col-md-3 o_colored_level">
+													<div class="doctor-box">
+														<div class="image">
+															<img class="img img-fluid w-100" src="/theme_decor/static/src/img/charity-team1.jpg">
+															</img>
+															<div class="overlay"/>
+															<div class="social-icons d-flex">
+																<a class="text-decoration-none fb" href="#" >
+																	<span class="ri ri-facebook-fill fa-2x text-white"/>
+																</a>
+																<a class="ms-2 text-decoration-none twitter" href="#" >
+																	<span class="ri ri-twitter-fill fa-2x text-white"/>
+																</a>
+																<a class="ms-2 text-decoration-none insta" href="#" >
+																	<span class="ri ri-instagram-line fa-2x text-white"/>
+																</a>
+															</div>
+														</div>
+														<section class="data text-center bg-white p-4">
+															<h4>Reba Welch</h4>
+															<p class="mt-2 mb-0 text-muted">Manager</p>
+														</section>
+													</div>
+												</div>
+												<div class="mt-3 mt-md-0 carousel-content col-md-3 o_colored_level">
+													<div class="doctor-box">
+														<div class="image">
+															<img class="img img-fluid w-100" src="/theme_decor/static/src/img/charity-team2.jpg">
+															</img>
+															<div class="overlay"/>
+															<div class="social-icons d-flex">
+																<a class="text-decoration-none fb" href="#" >
+																	<span class="ri ri-facebook-fill fa-2x text-white"/>
+																</a>
+																<a class="ms-2 text-decoration-none twitter" href="#" >
+																	<span class="ri ri-twitter-fill fa-2x text-white"/>
+																</a>
+																<a class="ms-2 text-decoration-none insta" href="#" >
+																	<span class="ri ri-instagram-line fa-2x text-white"/>
+																</a>
+															</div>
+														</div>
+														<section class="data text-center bg-white p-4">
+															<h4>Salena Ramsey</h4>
+															<p class="mt-2 mb-0 text-muted">Store Person</p>
+														</section>
+													</div>
+												</div>
+												<div class="mt-3 mt-md-0 carousel-content col-md-3 o_colored_level">
+													<div class="doctor-box">
+														<div class="image">
+															<img class="img img-fluid w-100" src="/theme_decor/static/src/img/charity-team3.jpg">
+															</img>
+															<div class="overlay"/>
+															<div class="social-icons d-flex">
+																<a class="text-decoration-none fb" href="#" >
+																	<span class="ri ri-facebook-fill fa-2x text-white"/>
+																</a>
+																<a class="ms-2 text-decoration-none twitter" href="#" >
+																	<span class="ri ri-twitter-fill fa-2x text-white"/>
+																</a>
+																<a class="ms-2 text-decoration-none insta" href="#" >
+																	<span class="ri ri-instagram-line fa-2x text-white"/>
+																</a>
+															</div>
+														</div>
+														<section class="data text-center bg-white p-4">
+															<h4>Melissa Tingey</h4>
+															<p class="mt-2 mb-0 text-muted">Sales Head</p>
+														</section>
+													</div>
+												</div>
+												<div class="mt-3 mt-md-0 carousel-content col-md-3 o_colored_level">
+													<div class="doctor-box">
+														<div class="image">
+															<img class="img img-fluid w-100" src="/theme_decor/static/src/img/charity-team4.jpg">
+															</img>
+															<div class="overlay"/>
+															<div class="social-icons d-flex">
+																<a class="text-decoration-none fb" href="#" >
+																	<span class="ri ri-facebook-fill fa-2x text-white"/>
+																</a>
+																<a class="ms-2 text-decoration-none twitter" href="#" >
+																	<span class="ri ri-twitter-fill fa-2x text-white"/>
+																</a>
+																<a class="ms-2 text-decoration-none insta" href="#" >
+																	<span class="ri ri-instagram-line fa-2x text-white"/>
+																</a>
+															</div>
+														</div>
+														<section class="data text-center bg-white p-4">
+															<h4>Jeff Barnett</h4>
+															<p class="mt-2 mb-0 text-muted">Site Consultant</p>
+														</section>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="carousel-item o_colored_level oe_img_bg" data-name="Slide">
+										<div class="container">
+											<div class="row content">
+												<div class="carousel-content col-md-3 o_colored_level">
+													<div class="doctor-box">
+														<div class="image">
+															<img class="img img-fluid w-100" src="/theme_decor/static/src/img/charity-team1.jpg">
+															</img>
+															<div class="overlay"/>
+															<div class="social-icons d-flex">
+																<a class="text-decoration-none fb" href="#" >
+																	<span class="ri ri-facebook-fill fa-2x text-white"/>
+																</a>
+																<a class="ms-2 text-decoration-none twitter" href="#" >
+																	<span class="ri ri-twitter-fill fa-2x text-white"/>
+																</a>
+																<a class="ms-2 text-decoration-none insta" href="#" >
+																	<span class="ri ri-instagram-line fa-2x text-white"/>
+																</a>
+															</div>
+														</div>
+														<section class="data text-center bg-white p-4">
+															<h4>Violet Barnett</h4>
+															<p class="mt-2 mb-0 text-muted">Store Owner</p>
+														</section>
+													</div>
+												</div>
+												<div class="mt-3 mt-md-0 carousel-content col-md-3 o_colored_level">
+													<div class="doctor-box">
+														<div class="image">
+															<img class="img img-fluid w-100" src="/theme_decor/static/src/img/charity-team2.jpg">
+															</img>
+															<div class="overlay"/>
+															<div class="social-icons d-flex">
+																<a class="text-decoration-none fb" href="#" >
+																	<span class="ri ri-facebook-fill fa-2x text-white"/>
+																</a>
+																<a class="ms-2 text-decoration-none twitter" href="#" >
+																	<span class="ri ri-twitter-fill fa-2x text-white"/>
+																</a>
+																<a class="ms-2 text-decoration-none insta" href="#" >
+																	<span class="ri ri-instagram-line fa-2x text-white"/>
+																</a>
+															</div>
+														</div>
+														<section class="data text-center bg-white p-4">
+															<h4>Ash Daves</h4>
+															<p class="mt-2 mb-0 text-muted">Deliver Man</p>
+														</section>
+													</div>
+												</div>
+												<div class="mt-3 mt-md-0 carousel-content col-md-3 o_colored_level">
+													<div class="doctor-box">
+														<div class="image">
+															<img class="img img-fluid w-100" src="/theme_decor/static/src/img/charity-team3.png">
+															</img>
+															<div class="overlay"/>
+															<div class="social-icons d-flex">
+																<a class="text-decoration-none fb" href="#" >
+																	<span class="ri ri-facebook-fill fa-2x text-white"/>
+																</a>
+																<a class="ms-2 text-decoration-none twitter" href="#" >
+																	<span class="ri ri-twitter-fill fa-2x text-white"/>
+																</a>
+																<a class="ms-2 text-decoration-none insta" href="#" >
+																	<span class="ri ri-instagram-line fa-2x text-white"/>
+																</a>
+															</div>
+														</div>
+														<section class="data text-center bg-white p-4">
+															<h4>Taylor Cooper</h4>
+															<p class="mt-2 mb-0 text-muted">Instalation Head</p>
+														</section>
+													</div>
+												</div>
+												<div class="mt-3 mt-md-0 carousel-content col-md-3 o_colored_level">
+													<div class="doctor-box">
+														<div class="image">
+															<img class="img img-fluid w-100" src="/theme_decor/static/src/img/charity-team4.jpg">
+															</img>
+															<div class="overlay"/>
+															<div class="social-icons d-flex">
+																<a class="text-decoration-none fb" href="#" >
+																	<span class="ri ri-facebook-fill fa-2x text-white"/>
+																</a>
+																<a class="ms-2 text-decoration-none twitter" href="#" >
+																	<span class="ri ri-twitter-fill fa-2x text-white"/>
+																</a>
+																<a class="ms-2 text-decoration-none insta" href="#" >
+																	<span class="ri ri-instagram-line fa-2x text-white"/>
+																</a>
+															</div>
+														</div>
+														<section class="data text-center bg-white p-4">
+															<h4>Victoria Bowen</h4>
+															<p class="mt-2 mb-0 text-muted">Installation Manager</p>
+														</section>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<a class="carousel-control-prev o_we_no_overlay w-0 d-none" href="#corpo-doctors-carousel" data-bs-slide="prev" role="img" aria-label="Previous" title="Previous">
+									<span class="lnr lnr-chevron-left fa-2x text-800"/>
+									<span class="sr-only o_default_snippet_text">Previous</span>
+								</a>
+								<a class="carousel-control-next o_we_no_overlay w-0 d-none" href="#corpo-doctors-carousel" data-bs-slide="next" role="img" aria-label="Next" title="Next">
+									<span class="lnr lnr-chevron-right fa-2x text-800"/>
+									<span class="sr-only o_default_snippet_text">Next</span>
+								</a>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</section>
+      	<div class="oe_structure"/>
+	</template>
+</odoo>

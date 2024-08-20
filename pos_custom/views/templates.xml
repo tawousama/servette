@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+		<template id="assets" inherit_id="point_of_sale.assets">
+				<xpath expr="." position="inside">
+
+
+						<link rel="stylesheet" href="/pos_custom/static/src/css/pos.css"/>
+						<script type="text/javascript" src="/pos_custom/static/src/js/models.js"/>
+						<script type="text/javascript" src="/pos_custom/static/src/js/FieldMany2ManyTags.js"/>
+						<!--
+												<script type="text/javascript" src="/pos_custom/static/src/js/FieldMany2OneZip.js"/>
+						-->
+						<script type="text/javascript" src="/pos_custom/static/src/js/OrderWidget.js"/>
+
+						<script type="text/javascript" src="/pos_custom/static/src/js/ClientDetailsEdit.js"></script>
+						<link rel="stylesheet" type="text/css" href="/web/static/lib/select2/select2.css"/>
+						<script type="text/javascript" src="/web/static/lib/select2/select2.js"></script>
+
+
+				</xpath>
+		</template>
+
+</odoo>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_newsletter_four" name="Newsletter Four">
+		<section class="newsletter-section" style="background-image: url('/theme_decor/static/src/img/transport-callaction.jpg');">
+			<div class="container extended-container">
+				<div class="row">
+					<div class="col-md-7">
+						<h4>Subscribe To Our Newsletter Now</h4>
+						<p>Get Regular updates about daily offer and deals on shop and special Discount.</p>
+					</div>
+					<div class="col-md-5">
+						<div class="input-group js_subscribe" data-list-id="1">
+		                  <input type="email" name="email" class="js_subscribe_value form-control" placeholder="Enter your mail"/>
+		                  <span class="input-group-append">
+		                    <a role="button" href="#" class="btn btn-secondary js_subscribe_btn">Subscribe</a>
+		                    <a role="button" href="#" class="btn btn-success js_subscribed_btn d-none" disabled="disabled">Thanks</a>
+		                  </span>
+		                </div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

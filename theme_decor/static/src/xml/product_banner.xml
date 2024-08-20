@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+    <t t-name="theme_decor.select_product_banner">
+        <div aria-hidden="true" aria-labelledby="myModalLabel" t-attf-class="modal#{technical ? ' o_technical_modal' : ''}#{fullscreen ? ' o_modal_full': ''}" contenteditable="False" style="z-index:1050" tabindex="-1">
+            <div class="modal-dialog">
+                <div class="modal-content" id="s_select_product_banner">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Product Banner</h4>
+                        <button class="btn btn-close" data-bs-dismiss="modal" type="button"></button>
+                    </div>
+                    <div class="modal-body" contenteditable="false">
+                        <form class="form-horizontal" role="form">
+                            <div class="row">
+                                <label class="col-sm-3 control-label" for="select_product_banner">Select Product</label>
+                                <div class="form-group col-sm-9">
+                                    <select class="form-control" id="select_product_banner" name="select_product_banner"/>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <div class="modal-footer">
+                        <button class="btn btn-primary" data-bs-dismiss="modal" id="prod_sub_data">Add</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </t>
+
+    <t t-name="theme_decor.edit_mode_product_banner">
+        <div class="edit_mode_product_banner">
+            <div class="alert alert-danger">
+                <strong>Note!</strong> Only <strong>Name, Description and Image</strong> is of selected product, rest is for visual purpose in edit mode, dynamic data like rating, price, variants, label info will come once you save page.
+            </div>
+            <div class="row align-items-center">
+                <div class="col-md-5" id="product_details">
+                    <div class="product-info shadow bg-white">
+                        <div class="decor-labels d-flex align-items-center">
+                            <div class="decor-product-label">
+                                <span class="decor-pro-label-na" style="background-color:#CD1F08; color:#ffffff;">Sale</span>
+                            </div>
+                            <div class="discount-label">
+                               <div class="decor-product-discount-label">
+                                   <span class="decor-pro-label-disc"> 
+                                    -20%</span>
+                               </div>
+                            </div>
+                        </div>
+                        <h5 class="product-name">Product Name</h5>
+                        <p class="description">Wing chair, also called grandfather chair, or saddle cheek chair, a tall-backed, heavily upholstered easy chair with armrests and wings, or lugs, projecting between the back and arms to protect against drafts.</p>
+                        <div class="product_price"><h4 class="oe_price">$400</h4></div>
+                        <div class="d-inline-block product-rating" title="4.5">
+                            <i class="fa fa-star text-primary" role="img"></i>
+                            <i class="fa fa-star text-primary" role="img"></i>
+                            <i class="fa fa-star text-primary" role="img"></i>
+                            <i class="fa fa-star text-primary" role="img"></i>
+                            <i class="fa fa-star-half-o text-primary" role="img"></i>
+                        </div>
+                        <div class="d-block d-md-flex align-items-center product-btns">
+                            <div class="ajax_cart_modal_tools position-relative">
+                                <a id="add-cart" class="btn btn-cart btn-secondary btn-lg d-block" href="#"><span class="ri ri-shopping-cart-2-line me-2 text-white align-middle"></span>ADD TO CART</a>
+                            </div>
+                            <div class="buy_now_btn">
+                                <a id="buy-cart" class="btn btn-primary btn-lg d-block mt-3 mt-md-0" href="#"><span class="icon icon-Goto me-2  align-middle"></span>BUY NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-7 text-center">
+                    <img class="img img-fluid product_image" src="/theme_decor/static/src/img/long-chair-red-min.png"/>
+                </div>
+            </div>
+        </div>
+    </t>
+</templates>

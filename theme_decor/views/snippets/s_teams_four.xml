@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_teams_four" name="Teams Four">
+		<section class="charity-volunteers">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12 col-md-12">
+						<div class="team-heading">
+							<p class="mb-3 text-uppercase fw-bold">Our Team</p>
+							<h3 class="text-800">Meet Our Volunteers</h3>
+						</div>
+					</div>
+					<div class="col-lg-12 col-md-12">
+						<div class="row">
+							<div class="col-xl-3 col-lg-6 col-md-6">
+								<div class="team-member">
+									<div class="image">
+										<a href="#">
+											<img src="/theme_decor/static/src/img/charity-team1.jpg" class="img img-fluid"/>
+										</a>
+									</div>
+									<div class="content">
+										<h4>Paul Williams</h4>
+										<p>Manager</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 col-md-6">
+								<div class="team-member">
+									<div class="image">
+										<a href="#">
+											<img src="/theme_decor/static/src/img/charity-team2.jpg" class="img img-fluid"/>
+										</a>
+									</div>
+									<div class="content">
+										<h4>Anita Oliver</h4>
+										<p>Chairman</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 col-md-6">
+								<div class="team-member">
+									<div class="image">
+										<a href="#">
+											<img src="/theme_decor/static/src/img/charity-team3.jpg" class="img img-fluid"/>
+										</a>
+									</div>
+									<div class="content">
+										<h4>Jessy Horseman</h4>
+										<p>Head Volunteer</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-3 col-lg-6 col-md-6">
+								<div class="team-member">
+									<div class="image">
+										<a href="#">
+											<img src="/theme_decor/static/src/img/charity-team4.jpg" class="img img-fluid"/>
+										</a>
+									</div>
+									<div class="content">
+										<h4>Andrew Petersons</h4>
+										<p>CEO</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-12 col-md-12">
+						<div class="s_btn" data-name="Button">
+							<a href="#" class="btn btn-primary btn-lg rounded-circle"> MORE ABOUT TEAM</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

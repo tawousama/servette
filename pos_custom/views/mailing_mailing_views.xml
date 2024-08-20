@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="template_mailing_view_form" model="ir.ui.view">
+        <field name="name">template_mailing_view_form</field>
+        <field name="model">template.mailing</field>
+        <field name="arch" type="xml">
+            <form string="template_mailing_form">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="template_text" widget="html"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record model="ir.ui.view" id="view_mail_mass_mailing_form">
+        <field name="name">mailing.mailing.form</field>
+        <field name="model">mailing.mailing</field>
+        <field name="inherit_id"
+               ref="mass_mailing.view_mail_mass_mailing_form"/>
+        <field name="arch" type="xml">
+
+            <xpath expr="//group" position="after">
+                <button name="button_save_template" type="object"
+                        string="Save As Template" class="btn-primary"/>
+            </xpath>
+
+            <xpath expr="//group"
+                   position="after">
+                <group class="col-xs-12 col-md-4">
+                    <field name="template_mailing_id"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+
+</odoo>
+

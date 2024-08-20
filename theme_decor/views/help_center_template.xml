@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<record id="help_center" model="ir.ui.view">
+		<field name="name">Help Center</field>
+		<field name="type">qweb</field>
+		<field name="key">website.help_center</field>
+		<field name="arch" type="xml">
+			<t name="FAQ Three" t-name="help_center">
+				<t t-call="website.layout">
+					<div class="oe_structure oe_empty" id="wrap">
+						<section class="help-center-banner">
+							<div class="container text-center">
+								<div class="main-title">
+									<h1 class="title">Help Center</h1>
+								</div>
+								<div class="sub-title d-flex">
+									<a href="/">Home</a>
+									<span class="me-2 ms-2">/</span>
+									<span>Help Center</span>
+								</div>
+							</div>
+						</section>
+						<section class="help-center-content pt32 pb32">
+							<div class="container">
+								<div class="row">
+									<div class="col-lg-12 mt16">
+										<h4 class="title">Answers to Your Questions</h4>
+										<div class="collapse-accordion mt16 accordion" id="accordionExample">
+											<div class="card">
+												<div class="card-header">
+													<div class="card-title">
+														<a class="card-link" data-bs-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1"> 
+												     	What is your international returns policy?
+													     <span class="collapse-icons ms-auto float-end">
+						                                	<i class="fa fa-plus"></i>
+						                                	<i class="fa fa-minus"></i>
+						                                </span>
+														</a>
+													</div>
+												</div>
+												<div class="collapse show mt8" id="collapse1" data-bs-parent="#accordionExample">
+													<p class=" content-body p-3">
+													    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in accumsan dui. In hac habitasse platea dictumst. Donec sit amet auctor leo. Sed venenatis posuere risus quis dictum. Vivamus ullamcorper orci vitae eros tincidunt, a aliquet lacus dapibus. Sed consectetur, est vel tincidunt imperdiet, justo est dignissim lorem, nec tincidunt lacus lacus ac risus. Cras pretium enim nec vestibulum aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+													</p>
+												</div>
+											</div>
+											<div class="card">
+												<div class="card-header">
+													<div class="card-title">
+														<a class="card-link collapsed" data-bs-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2"> 
+												     	How can I find your international delivery policy? 
+													     <span class="collapse-icons ms-auto float-end">
+						                                	<i class="fa fa-plus"></i>
+						                                	<i class="fa fa-minus"></i>
+						                                </span>
+														</a>
+													</div>
+												</div>
+												<div class="collapse mt8" id="collapse2" data-bs-parent="#accordionExample">
+													<p class=" content-body p-3">
+													    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in accumsan dui. In hac habitasse platea dictumst. Donec sit amet auctor leo. Sed venenatis posuere risus quis dictum. Vivamus ullamcorper orci vitae eros tincidunt, a aliquet lacus dapibus. Sed consectetur, est vel tincidunt imperdiet, justo est dignissim lorem, nec tincidunt lacus lacus ac risus. Cras pretium enim nec vestibulum aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+													</p>
+												</div>
+											</div>
+											<div class="card">
+												<div class="card-header">
+													<div class="card-title">
+														<a class="card-link collapsed" data-bs-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3"> 
+												     	What should I do if my order hasn't been delivered yet?
+													     <span class="collapse-icons ms-auto float-end">
+						                                	<i class="fa fa-plus"></i>
+						                                	<i class="fa fa-minus"></i>
+						                                </span>
+														</a>
+													</div>
+												</div>
+												<div class="collapse mt8" id="collapse3" data-bs-parent="#accordionExample">
+													<p class=" content-body p-3">
+													    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in accumsan dui. In hac habitasse platea dictumst. Donec sit amet auctor leo. Sed venenatis posuere risus quis dictum. Vivamus ullamcorper orci vitae eros tincidunt, a aliquet lacus dapibus. Sed consectetur, est vel tincidunt imperdiet, justo est dignissim lorem, nec tincidunt lacus lacus ac risus. Cras pretium enim nec vestibulum aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+													</p>
+												</div>
+											</div>
+											<div class="card">
+												<div class="card-header">
+													<div class="card-title">
+														<a class="card-link collapsed" data-bs-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse4"> 
+												     	I'm an international customer, have you received my returned items?
+													     <span class="collapse-icons ms-auto float-end">
+						                                	<i class="fa fa-plus"></i>
+						                                	<i class="fa fa-minus"></i>
+						                                </span>
+														</a>
+													</div>
+												</div>
+												<div class="collapse mt8" id="collapse4" data-bs-parent="#accordionExample">
+													<p class=" content-body p-3">
+													    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in accumsan dui. In hac habitasse platea dictumst. Donec sit amet auctor leo. Sed venenatis posuere risus quis dictum. Vivamus ullamcorper orci vitae eros tincidunt, a aliquet lacus dapibus. Sed consectetur, est vel tincidunt imperdiet, justo est dignissim lorem, nec tincidunt lacus lacus ac risus. Cras pretium enim nec vestibulum aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+													</p>
+												</div>
+											</div>
+											<div class="card">
+												<div class="card-header">
+													<div class="card-title">
+														<a class="card-link collapsed" data-bs-toggle="collapse" href="#collapse5" role="button" aria-expanded="false" aria-controls="collapse5"> 
+												     	How can I get a new returns note?
+													     <span class="collapse-icons ms-auto float-end">
+						                                	<i class="fa fa-plus"></i>
+						                                	<i class="fa fa-minus"></i>
+						                                </span>
+														</a>
+													</div>
+												</div>
+												<div class="collapse mt8" id="collapse5" data-bs-parent="#accordionExample">
+													<p class=" content-body p-3">
+													    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in accumsan dui. In hac habitasse platea dictumst. Donec sit amet auctor leo. Sed venenatis posuere risus quis dictum. Vivamus ullamcorper orci vitae eros tincidunt, a aliquet lacus dapibus. Sed consectetur, est vel tincidunt imperdiet, justo est dignissim lorem, nec tincidunt lacus lacus ac risus. Cras pretium enim nec vestibulum aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+													</p>
+												</div>
+											</div>
+											<div class="card">
+												<div class="card-header">
+													<div class="card-title">
+														<a class="card-link collapsed" data-bs-toggle="collapse" href="#collapse6" role="button" aria-expanded="false" aria-controls="collapse6"> 
+												     	What should I do if my order hasn't been delivered yet?
+													     <span class="collapse-icons ms-auto float-end">
+						                                	<i class="fa fa-plus"></i>
+						                                	<i class="fa fa-minus"></i>
+						                                </span>
+														</a>
+													</div>
+												</div>
+												<div class="collapse mt8" id="collapse6" data-bs-parent="#accordionExample">
+													<p class=" content-body p-3">
+													    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent in accumsan dui. In hac habitasse platea dictumst. Donec sit amet auctor leo. Sed venenatis posuere risus quis dictum. Vivamus ullamcorper orci vitae eros tincidunt, a aliquet lacus dapibus. Sed consectetur, est vel tincidunt imperdiet, justo est dignissim lorem, nec tincidunt lacus lacus ac risus. Cras pretium enim nec vestibulum aliquam. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;
+													</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</section>
+					</div>
+				</t>
+			</t>
+		</field>
+	</record>
+	<record id="help_center_menu" model="website.page">
+		<field name="website_published">True</field>
+		<field name="url">/help-center</field>
+		<field name="view_id" ref="help_center" />
+	</record>
+</odoo>

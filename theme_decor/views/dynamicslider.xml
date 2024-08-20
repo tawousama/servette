@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	
+	<record id="view_product_public_category_auto_assign_form" model="ir.ui.view">
+            <field name="name">product.public.category.form</field>
+            <field name="model">product.public.category</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="website_sale.product_public_category_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='sequence']" position="after">
+                    <field name="auto_assign"/>
+                    <field name="quick_categ"/>
+                    <field name="category_bg_image" widget="image"/>
+                </xpath>
+            </field>
+        </record>
+	
+	 <record id="view_product_pricelist_form" model="ir.ui.view">
+            <field name="name">product.pricelist.form</field>
+            <field name="model">product.pricelist</field>
+            <field name="type">form</field>
+            <field name="inherit_id" ref="product.product_pricelist_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='website_id']" position="after">
+                    <field name="auto_assign"/>
+                </xpath>
+            </field>
+        </record>
+	
+	<record id="view_product_tempalte_brand_form" model="ir.ui.view">
+			<field name="name">product.template.form</field>
+			<field name="model">product.template</field>
+			<field name="type">form</field>
+			<field name="inherit_id" ref="product.product_template_only_form_view" />
+			<field name="arch" type="xml">
+				<xpath expr="//field[@name='categ_id']" position="after">
+					<field name="brand_id" />
+				</xpath>
+			</field>
+	</record>
+
+	<record id="bizcommon_dynamic_blog_slider_form_view" model="ir.ui.view">
+		<field name="name">dynamic.blog.slider.form.view</field>
+		<field name="model">biz.blog.slider</field>
+		<field name="arch" type="xml">
+			<form string="Blog Post Slider">
+				<sheet>
+					<group>
+						<field name="name" />
+						<field name="blog_subtitle" />
+						<field name="active" invisible='1' />
+						<field name="no_of_objects" invisible='1' />
+						<field name="auto_slide" />
+						<field attrs="{'invisible': [('auto_slide', '=', False)]}"
+							name="sliding_speed" />
+						<field name="blog_post_ids" widget="many2many_tags" />
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+	<record id="bizcommon_dynamic_blog_slider_list_view"
+		model="ir.ui.view">
+		<field name="name">dynamic.blog.slider.list.view</field>
+		<field name="model">biz.blog.slider</field>
+		<field name="arch" type="xml">
+			<tree string="Blog Post Slider">
+				<field name="name" />
+			</tree>
+		</field>
+	</record>
+	<record id="bizcommon_dynamic_blog_slider_action"
+		model="ir.actions.act_window">
+		<field name="name">Blog Slider</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">biz.blog.slider</field>
+		<field name="view_mode">tree,form</field>
+		<field eval="False" name="view_id" />
+		<field name="help" type="html">
+			<p class="o_view_nocontent_smiling_face">
+				Create a new Blog Slider
+			</p>
+		</field>
+	</record>
+</odoo>

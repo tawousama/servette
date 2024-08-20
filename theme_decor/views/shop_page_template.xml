@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="decor_shop_product_size_option_remove" inherit_id="website_sale.snippet_options" priority="20">
+	</template>
+
+	<template id="decor_shop_banner" inherit_id="website_sale.products" name="Shop Banner" customize_show="True" active="True">
+		<xpath expr="//div[hasclass('oe_website_sale')]" position="before">
+			<div class="oe_empty oe_structure">
+				<t t-if="category">
+					<section class="category_banner pt88 pb64" t-attf-style="background-image: url('#{website.image_url(category, 'category_bg_image')}');">
+						<div class="container px-0">
+							<t t-if="category">
+								<!-- <div class="category_description_banner text-center">
+									<h4 class="text-black mb-2 fw-bold">
+										<span><t t-out="category.name"/></span>
+									</h4>
+									<ol class="breadcrumb justify-content-center">
+				                    	<li class="breadcrumb-item">
+						                    <a href="/"><span class="icon icon-House text-black"/></a>
+						                </li>
+				                        <li class="breadcrumb-item">
+				                            <a href="/shop" class="text-black">Shop</a>
+				                        </li>
+				                        <t t-foreach="category.parents_and_self" t-as="cat">
+											<li t-if="cat == category" class="breadcrumb-item active">
+												<span class="d-inline-block" t-field="cat.name"/>
+											</li>
+											<li t-else="" class="breadcrumb-item">
+												<a t-att-href="keep('/shop/category/%s' % slug(cat), category=0)" t-field="cat.name"/>
+											</li>
+										</t>
+				                    </ol>
+								</div>
+								<t t-if="is_view_active('theme_decor.decor_shop_category_slider_banner')">
+									<div class="sub-categories mt16">
+										<t t-if="category.child_id">
+											<div class="owl-carousel owl-theme" id="decor_sub_categ_slider">
+												<t t-foreach="category.child_id" t-as="c">
+								                    <div class="categ_item">
+											            <a t-att-href="keep('/shop/category/' + slug(c), category=0)" t-attf-class="nav-link categ_image #{'active' if c.id == category.id else ''}">
+											            	<span itemprop="image" t-field="c.image_1920" t-options='{"widget": "image", "resize": None if image else "300x300"}' t-att-alt="c.name" />
+											            </a>
+											            <p class="text-center"><span t-field="c.name"/></p>
+													</div>
+							                    </t>
+							                </div>
+							            </t>
+					                </div>
+					            </t> -->
+
+
+								
+								<div class="category_description_banner text-center o_not_editable">
+									<ol class="breadcrumb justify-content-center mb-0">
+										<li class="breadcrumb-item">
+											<a href="/">Accueil</a>
+											<t t-foreach="category.parents_and_self" t-as="cat">
+						
+												<li  class="breadcrumb-item">
+													<a t-att-href="keep('/shop/category/%s' % slug(cat), category=0)" t-field="cat.name"/>
+												</li>
+											</t>
+										</li>
+										<!-- <li class="breadcrumb-item">
+										   
+											<a href="/">  <span t-out="product.public_categ_ids[0].display_name"></span></a>
+										</li> -->
+										<!-- <li class="breadcrumb-item active oe_structure">
+											<span t-out="product.name"></span>
+										</li> -->
+									</ol>
+								</div>
+							</t>
+						</div>
+					</section>
+				</t>
+				<t t-else="">
+					<section class="shop-page-banner pt88 pb64" t-attf-style="background-image: url('#{website.image_url(website, 'shop_page_banner_image')}');">
+						<div class="container px-0">
+							<div class="banner-header text-center justify-content-center">
+								<h4 class="text-black mb-2 fw-bold">SHOP</h4>
+								<ol class="breadcrumb justify-content-center">
+			                    	<li class="breadcrumb-item">
+					                    <a href="/"><span class="icon icon-House text-black"/></a>
+					                </li>
+			                        <li class="breadcrumb-item active">
+			                            <span class="text-primary">Shop</span>
+			                        </li>
+			                    </ol>
+							</div>
+							<t t-if="is_view_active('theme_decor.decor_shop_category_slider_banner')">
+								<div class="owl-carousel owl-theme" id="decor_categ_slider">
+									<t t-foreach="categories" t-as="c">
+										<div class="categ_item">
+								            <a t-att-href="keep('/shop/category/' + slug(c), category=0)" t-attf-class="nav-link categ_image #{'active' if c.id == category.id else ''}">
+								            	<span itemprop="image" t-field="c.image_1920" t-options='{"widget": "image", "resize": None if image else "300x300"}' t-att-alt="c.name" />
+								            </a>
+								            <p class="text-center"><span t-field="c.name"/></p>
+										</div>
+									</t>
+								</div>
+							</t>
+						</div>
+					</section>
+				</t>
+			</div>
+		</xpath>
+	</template>
+
+	<template id="decor_shop_category_slider_banner" inherit_id="website_sale.products" name="Category Slider in Banner" customize_show="True" active="False">
+	</template>
+
+	<template id="decor_shop_inherited" name="Decor Products Template" inherit_id="website_sale.products">
+		
+		<xpath expr="//div[hasclass('oe_website_sale')]" position="before">
+			<input type="hidden" class="product_extra_hover_image_input" t-att-pager="pager" t-att-next-page-url="pager['page_next']['url']" t-att-current-page-number="pager['page']['num']" t-att-current-page-url="pager['page']['url']" t-att-prev-page-num="pager['page_previous']['num']" t-att-next-page-num="pager['page_next']['num']" t-att-total-page="pager['page_count']" t-att-page-number="pager['page']['num']" t-att-first-page-url="pager['page_first']['url']" t-att-last-page-url="pager['page_last']['url']" t-att-prev-page-url="pager['page_previous']['url']" />
+			<t t-if="website.is_infinite_load">
+				<input type="hidden" class="infinite_load_next_page" t-att-pager="pager" t-att-next-page-url="pager['page_next']['url']" t-att-current-page-number="pager['page']['num']" t-att-current-page-url="pager['page']['url']" t-att-prev-page-num="pager['page_previous']['num']" t-att-next-page-num="pager['page_next']['num']" t-att-total-page="pager['page_count']" t-att-page-number="pager['page']['num']" t-att-first-page-url="pager['page_first']['url']" t-att-last-page-url="pager['page_last']['url']" t-att-prev-page-url="pager['page_previous']['url']" />
+			</t>
+		</xpath>
+
+		<xpath expr="//div[@id='products_grid']//div[hasclass('o_wsale_products_grid_table_wrapper')]/table" position="before">
+			<t t-if="website.is_infinite_load and bins">
+				<div class="infinite_loader_div d-none">
+					<div class="infinite_loader_image_div">
+						<img t-attf-src="/web/image/website/#{website.id}/infinite_load_image" class="img img-fluid mx-auto" style="width:15%"/>
+					</div>
+				</div>
+			</t>
+		</xpath>
+		<xpath expr="//div[@id='products_grid']//div[hasclass('o_wsale_products_grid_table_wrapper')]/table" position="after">
+			<t t-if="website.is_infinite_load and bins">
+				<div class="d-none infinite_loader_div_next">
+					<div class="infinite_loader_image_div">
+						<img t-attf-src="/web/image/website/#{website.id}/infinite_load_image" class="img img-fluid mx-auto" style="width:15%"/>
+					</div>
+				</div>
+			</t>
+		</xpath>
+
+		<xpath expr="//div[@id='wrap']" position="before">
+			<t t-set="isBrandFilter" t-value="is_view_active('theme_decor.products_brands')"/>
+			<t t-set="isdynamicShopBanner" t-value="is_view_active('theme_decor.decor_shop_banner')"/>
+		</xpath>
+	
+		<xpath expr="//div[hasclass('oe_website_sale')]" position="attributes">
+			<attribute name="class">container oe_website_sale decor_shop</attribute>
+		</xpath>
+
+		<xpath expr="//div[hasclass('o_wsale_products_main_row')]" position="attributes">
+			<attribute name="class" add="justify-content-center" separator=" "/>
+		</xpath>
+
+		<xpath expr="///aside[@id='products_grid_before']" position="attributes">
+			<attribute name="class" add="col-lg-3 col-hd-3" separator=" "></attribute>
+		</xpath>
+
+		<xpath expr="//div[@id='category_header']" position="attributes">
+			<attribute name="class"> </attribute>
+		</xpath>
+
+		<xpath expr="//div[hasclass('o_wsale_products_grid_table_wrapper')]" position="attributes">
+			<attribute name="class" separator=" " add="d-flex flex-column"></attribute>
+		</xpath>
+	</template>
+
+	<template id="products_grid_before_category" inherit_id="website_sale.products_categories_list" name="products grid before category">
+		<xpath expr="//h6[contains(@t-attf-class,'o_categories_collapse_title')]" position="replace">
+			<h6 t-attf-class="o_categories_collapse_title mb-3 {{_titleClasses}}" data-bs-target="#decor_collapse_category" data-bs-toggle="collapse"><b>Browse Categories</b></h6>
+		</xpath>
+
+		<xpath expr="//div[hasclass('wsale_products_categories_list')]" position="attributes">
+			<attribute name="id" add="decor_collapse_category" separator=" "/>
+			<attribute name="class" add="collapse show" separator=" "/>
+		</xpath>
+	</template>
+
+	<template id="products_brands" inherit_id="website_sale.products_attributes" active="False" customize_show="True" name="Brands">
+		<!-- <xpath expr="//div[@id='wsale_products_attributes_collapse']" position="attributes">
+			<attribute name="class" add="collapse show" separator=" "/>
+		</xpath> -->
+        <xpath expr="//form" position="inside">
+            <div class="oe_structure"/>
+
+			<t t-call="theme_decor.product_brand_filter_template">
+				<t t-set="button_classes" t-value="'h6 px-0 pb-0 mb-0'"/>
+				<t t-set="show_classes" t-value="'show'"/>
+			</t>
+            <div class="oe_structure"/>
+        </xpath>
+    </template>
+
+
+	<template id="shop_o_wsale_offcanvas_template_inherited" name="Decor Offcanvas" inherit_id="website_sale.o_wsale_offcanvas">
+		<xpath expr="//div[@t-if='opt_wsale_categories']" position="after">
+			<div t-if="isBrandFilter" class="accordion-item">
+				<t t-call="theme_decor.product_brand_filter_template">
+					<t t-set="button_classes" t-value="'border-top'"/>
+					<t t-set="body_classes" t-value="'accordion-body'"/>
+				</t>
+			</div>
+		</xpath>
+
+		<xpath expr="//div[hasclass('offcanvas-body')]/a" position="replace">
+			<a t-attf-class="btn btn-primary rounded-0 d-flex py-1 {{(not attrib_values and not isFilteringByPrice and not active_brand_list) and 'disabled' }}"
+				t-att-aria-disabled="(not attrib_values and not isFilteringByPrice and not active_brand_list) and 'true' or 'false'"
+				href="/shop"
+				title="Clear Filters">
+				Clear Filters
+			</a>
+			<a class="btn btn-secondary rounded-0 d-flex py-1" href="#" title="Close" data-bs-dismiss="offcanvas">
+				Close
+			</a>
+		</xpath>
+	</template>
+
+	<!-- Category Count  -->
+	<template id="categories_list_count" inherit_id="website_sale.categorie_link" name="Category list Count" customize_show="True" active="True">
+		<xpath expr="//label" position="replace">
+            <label t-attf-class="form-check-label fw-normal text-nowrap #{'active' if c.id == category.id else ''}" t-att-for="c.id">
+				<span t-field="c.name"></span>
+				<span class="product_count">
+					(<span>
+						<t t-out="c.with_context(product_categ_search=search).product_tmpl_count"/>
+					</span>)
+				</span>
+			</label>
+        </xpath>
+    </template>
+    
+    <template id="option_collapse_categories_recursive_count" inherit_id="website_sale.option_collapse_categories_recursive" name="Collapse Category Recursive Count" active="False">
+    </template>
+
+	<template id="decor_category_inherited" inherit_id="website_sale.products_categories" active="False">
+	</template>
+
+	<template id="decor_attributes_inherited" inherit_id="website_sale.products_attributes" name="Decor Attributes" priority="9" >
+
+		<xpath expr="//form" position="replace">
+			<button type="button" data-bs-target="#decor_collapse_filters" data-bs-toggle="collapse" class="btn btn-link attribute-collapse-button text-decoration-none shadow-none">Filters</button>
+			<form t-if="opt_wsale_attributes or opt_wsale_attributes_top"
+					t-attf-class="js_attributes flex-column collapse show"
+					id="decor_collapse_filters"
+					method="get">
+				<input t-if="category" type="hidden" name="category" t-att-value="category.id"/>
+				<input type="hidden" name="search" t-att-value="search"/>
+				<input type="hidden" name="order" t-att-value="order"/>
+				
+				<t t-foreach="attributes" t-as="a">
+					<t t-set="_status" t-value="'inactive'"/>
+					<t t-foreach="a.value_ids" t-as="v" t-if="v.id in attrib_set" t-set="_status" t-value="'active'"/>
+
+					<div t-if="a.value_ids and len(a.value_ids) &gt; 1"
+							t-attf-class="accordion-item {{(_status == 'active') and 'order-1' or 'order-2'}}">
+						<h2 class="accordion-header mb-0" t-attf-id="o_wsale_offcanvas_attribute_{{a.id}}_header">
+							<button t-attf-class="o_wsale_offcanvas_title accordion-button shadow-none h6 px-0 pb-0 rounded-0 {{ not attrib_values and 'collapsed'}}"
+									type="button"
+									t-att-data-status="_status"
+									data-bs-toggle="collapse"
+									t-attf-data-bs-target="#o_wsale_offcanvas_attribute_{{a.id}}"
+									t-att-aria-expanded="_status == 'active' and 'True' or 'False'"
+									t-attf-aria-controls="o_wsale_offcanvas_attribute_{{a.id}}">
+									<b t-out="a.name"/>
+							</button>
+						</h2>
+						<div t-attf-id="o_wsale_offcanvas_attribute_{{a.id}}"
+								t-attf-class="accordion-collapse collapse {{ (_status == 'active') and 'show'}}"
+								t-att-aria-expanded="(_status == 'active') and 'True' or 'False'"
+								t-attf-aria-labelledby="o_wsale_offcanvas_attribute_{{a.id}}_header">
+
+							<div class="accordion-body p-0">
+								<div class="list-group list-group-flush"
+										t-if="a.display_type == 'radio' or a.display_type == 'pills' or a.display_type == 'select'">
+									<div t-foreach="a.value_ids" t-as="v" class="list-group-item border-0 ps-0 pb-0 bg-transparent">
+										<div class="form-check mb-1">
+											<input type="checkbox" name="attrib" class="form-check-input" t-att-id="'%s-%s' % (a.id,v.id)" t-att-value="'%s-%s' % (a.id,v.id)" t-att-checked="'checked' if v.id in attrib_set else None"/>
+											<label class="form-check-label fw-normal" t-att-for="'%s-%s' % (a.id,v.id)" t-field="v.name"/>
+										</div>
+									</div>
+								</div>
+								<div t-if="a.display_type == 'color'" class="pt-1 pb-3">
+									<t t-foreach="a.value_ids" t-as="v">
+										<div class="d-flex align-items-center">
+											<label t-attf-style="background-color:#{v.html_color or v.name}" t-attf-class="css_attribute_color mb-1 #{'active' if v.id in attrib_set else ''}">
+												<input type="checkbox" name="attrib" t-att-value="'%s-%s' % (a.id,v.id)" t-att-checked="'checked' if v.id in attrib_set else None" t-att-title="v.name" />
+											</label>
+											<span t-out="v.name" class="color-name"></span>
+										</div>
+									</t>
+								</div>
+							</div>
+						</div>
+					</div>
+				</t>
+			</form>
+		</xpath>
+	</template>
+	
+	<template id="remove_default_pager" inherit_id="website_sale.products">
+		<xpath expr="//div[hasclass('products_pager')]" position="replace">
+		</xpath>
+
+		<xpath expr="//div[@id='products_grid']" position="inside">
+			<div class="decor_bottom_pager form-inline justify-content-center mt-3">
+				<t t-call="website.pager"/>
+			</div>
+		</xpath>
+	</template>
+
+	<template id="decor_product_pager" inherit_id="website_sale.products" name="decor Product Pager">
+		<xpath expr="//div[hasclass('products_header')]" position="replace">
+			<div class="decor_product_pager d-flex align-items-center">
+				<!-- Back to category icon for mobile -->
+				<div t-if="category" class="d-flex align-items-center d-lg-none me-auto">
+					<t t-if="not category.parent_id" t-set="backUrl" t-valuef="/shop"/>
+					<t t-else="" t-set="backUrl" t-value="keep('/shop/category/' + slug(category.parent_id), category=0)"/>
+
+					<a t-attf-class="btn btn-outline-secondary me-2 rounded-0" t-att-href="category.parent_id and keep('/shop/category/' + slug(category.parent_id), category=0) or '/shop'">
+						<i class="fa fa-angle-left"/>
+					</a>
+					<h4 t-out="category.name" class="mb-0 me-auto"/>
+				</div>
+
+				<a t-if="attrib_values or active_brand_list" 
+					t-att-href="keep('/shop'+ ('/category/'+slug(category)) if category else None, attrib=0)" 
+					t-attf-class="me-3 text-decoration-none btn btn-link p-0 text-black d-none d-md-block rounded-0 clear_filter_btn">
+					<i class="oi oi-close align-middle"/>
+					<span class="mx-auto">CLEAR FILTER</span>
+				</a>
+
+				<t t-if="is_view_active('website_sale.sort')">
+					<div t-attf-class="o_sortby_dropdown dropdown dropdown_sorty_by decor_sortby">
+						<a role="button" href="#" t-attf-class="dropdown-toggle btn btn-{{navClass}}" data-bs-toggle="dropdown">
+							<span class="d-none d-lg-inline">
+								<t t-if='isSortingBy'>
+		                            Sorting by : <t t-out='isSortingBy[0][1]'/>
+		                        </t>
+								<span t-else="1" t-field="website.shop_default_sort"/>
+							</span>
+							<i class="fa fa-sort-amount-asc d-lg-none"/>
+						</a>
+						<div class="dropdown-menu dropdown-menu-start" role="menu">
+							<t t-foreach="website_sale_sortable" t-as="sortby">
+								<a role="menuitem" rel="noindex,nofollow" t-att-href="keep('/shop', order=sortby[0])" class="dropdown-item">
+									<span t-out="sortby[1]"/>
+								</a>
+							</t>
+						</div>
+					</div>
+				</t>
+
+				<t t-call="website_sale.pricelist_list" t-cache="pricelist">
+					<t t-set="_classes" t-valuef="d-none d-lg-inline ms-3"/>
+				</t>
+
+	            <div class="product_count_pager ms-3">
+                    <t t-if="products and website.get_product_count_decor()">
+                        <t t-set="pro_per_page_count" t-value="website.get_product_count_decor()"/>
+                        <span t-attf-class="#{pro_per_page_count and len(pro_per_page_count['page_no'])&gt;1 and 'show_string' or 'o_hidden'}">
+                            <div t-attf-class="#{pro_per_page_count and len(pro_per_page_count['page_no'])&gt;1 and 'dropdown' or 'o_hidden'} btn-group">
+                                <t t-set="act_pro_per_page_count" t-value="website.get_current_pager_selection()"/>
+                                <a class="dropdown-toggle btn btn-default" data-bs-toggle="dropdown" href="#">
+                                    <t t-out="act_pro_per_page_count or ' - '"/>
+                                </a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li t-as="pl" t-foreach="pro_per_page_count['page_no']">
+                                        <a t-att-href="'/shop/pager_selection/%s' % pl.id">
+                                            <span class="switcher_pricelist" t-att-data-pl_id="pl.id" t-out="pl.name"/>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </span>
+                    </t>
+               	</div>
+
+				<div class="pager-right ms-auto">
+					<t t-call="theme_decor.decor_grid_list_btn"/>
+					
+					<button t-if="opt_wsale_categories or opt_wsale_attributes or opt_wsale_attributes_top"
+							t-attf-class="rounded-0 btn btn-link position-relative filter_btn text-black pe-0 {{not opt_wsale_attributes_top and 'd-lg-none'}}"
+							data-bs-toggle="offcanvas"
+							data-bs-target="#o_wsale_offcanvas">
+						<i class="icon icon-MusicMixer fa-lg"/>
+						<span t-if="isFilteringByPrice or attrib_set or active_brand_list" t-attf-class="position-absolute top-0 start-100 translate-middle badge border border-{{navClass}} rounded-circle bg-danger p-1"><span class="visually-hidden">filters active</span></span>
+					</button>
+				</div>
+	        </div>
+		</xpath>
+		
+	</template>
+
+	<!-- infinite load -->
+	<template id="decor_infinite_load" inherit_id="theme_decor.decor_product_pager" name="Decor Infinite Load">
+        
+    </template>
+
+	<template id="category_sidebar" inherit_id="website_sale.products" name="Category Filter Sidebar">
+		<xpath expr="//div[hasclass('o_wsale_products_grid_before_rail')]" position="attributes">
+			<attribute name="class" remove="overflow-y-auto vh-100" separator=" "/>
+		</xpath>
+	</template>
+
+	<template id="category_sidebar_btn" name="Category Sidebar Button">
+	</template>
+
+	<template id="decor_grid_list_btn" name="Grid or List Button">
+		<t t-if="is_view_active('website_sale.add_grid_or_list_option')">
+			<div class="btn-group btn-group-toggle ms-auto me-0 d-none d-md-inline-flex o_wsale_apply_layout decor_grid_button ms-auto" data-bs-toggle="buttons">
+				<a role="button" class="btn btn-link text-decoration-none ti ti-layout-grid4 grid4 d-none d-xl-inline-block" title="Grid4">
+                </a>
+                <a role="button" class="btn btn-link text-decoration-none ti ti-layout-grid3 grid3" title="Grid3">
+                </a>
+                <a role="button" class="btn btn-link text-decoration-none ti ti-layout-grid2 grid2" title="Grid2">
+                </a>
+                <a role="button" class="btn btn-link text-decoration-none ti ti-view-list sale_list pe-0" title="List">
+                </a>
+            </div>
+        </t>
+	</template>
+
+	<template id="shop_page_image_bgcolor" inherit_id="website_sale.products_item" customize_show="True" active="True" name="Product Background Color">
+		<xpath expr="//div[hasclass('oe_product_image')]" position="attributes">
+			<attribute name="class" add="add_image_bgcolor" separator=" "/>
+		</xpath>
+	</template>
+
+	<!-- product hover image start -->
+	<template id="decor_hover_product_image" inherit_id="website_sale.products_item" customize_show="True" active="True" name="Show Product Hover Image">
+		<xpath expr="//form[hasclass('oe_product_cart')]" position="attributes">
+			<attribute name="class" add="product_extra_hover_image" separator=" "/>
+		</xpath>
+	</template>
+
+	<template id="decor_products_inherited" name="Decor Products item Template" inherit_id="website_sale.products_item">
+		<xpath expr="//form" position="before">
+            <t t-call='theme_decor.model_add_cart_ajax_template'/>
+			 <t t-set="isAddToCartActive" t-value="is_view_active('website_sale.products_add_to_cart')"/>
+            <t t-set="isDescriptionActive" t-value="is_view_active('website_sale.products_description')"/>
+        </xpath>
+
+		<xpath expr="//form" position="attributes">
+			<attribute name="t-attf-addcart">#{'active' if isAddToCartActive else 'inactive'}</attribute>
+			<attribute name="t-attf-proddescription">#{'active' if isDescriptionActive else 'inactive'}</attribute>
+        </xpath>
+
+		<xpath expr="//div[hasclass('oe_product_image')]//a[hasclass('d-block')]" position="replace">
+			<a t-att-href="product_href" t-attf-class="oe_product_image_link d-block h-100 position-relative {{'has_extra_hover_image' if product.hover_image else 'none'}}" itemprop="url" contenteditable="false">
+                <t t-set="image_holder" t-value="product._get_image_holder()"/>
+                <t t-if="website.is_lazy_load">
+                	<span class="d-flex h-100 justify-content-center align-items-center product_image_holder oe_product_image_img_wrapper position-absolute">
+                		<img class="img img-fluid lazyload" t-attf-data-src="/web/image/product.template/#{product.id}/image_1920" t-attf-src="/web/image/website/#{website.id}/lazy_load_image"></img>
+                	</span>
+
+                	<span class="d-flex h-100 justify-content-center align-items-center extra_hover_image" t-att-productid="product.id">
+						<img class="img img-fluid lazyload" data-src="" t-attf-src="/web/image/website/#{website.id}/lazy_load_image"></img>
+					</span>
+                </t>
+                <t t-else="">
+	                <span t-field="image_holder.image_1920"
+                        t-options="{'widget': 'image', 'preview_image': 'image_1024', 'class': 'position-absolute'}"
+                        class="d-flex h-100 justify-content-center align-items-center product_image_holder oe_product_image_img_wrapper position-absolute"/>
+
+                    <span class="d-flex h-100 justify-content-center align-items-center extra_hover_image " t-att-productid="product.id">
+						<img class="img img-fluid lazyload" data-src="" t-attf-src="/web/image/website/#{website.id}/lazy_load_image"></img>
+					</span>
+                </t>
+				<t t-set="bg_color" t-value="td_product['ribbon']['bg_color'] or ''"/>
+				<t t-set="text_color" t-value="td_product['ribbon']['text_color']"/>
+				<t t-set="bg_class" t-value="td_product['ribbon']['html_class']"/>
+				<span t-attf-class="o_ribbon #{bg_class}" t-attf-style="#{text_color and ('color: %s; ' % text_color)}#{bg_color and 'background-color:' + bg_color}" t-out="td_product['ribbon']['html'] or ''"/>
+            </a>
+		</xpath>
+		<!-- product hover image end -->
+
+		<xpath expr="//div[hasclass('oe_product_image')]" position="inside">
+			<!-- PRODUCT LABEL -->
+			<t t-if="product.product_label_id">
+				<t t-call="theme_decor.decor_product_label_common"/>
+			</t>
+			<!-- PRODUCT DISCOUNT -->
+			<t t-set="template_price_vals" t-value="get_product_prices(product)"/>
+			<t t-if="'base_price' in template_price_vals">
+		       	<t t-set="diff_amount" t-value="round(template_price_vals['base_price'] - template_price_vals['price_reduce'])"/>
+				<t t-set="dis_per" t-value="round(diff_amount * 100 / template_price_vals['base_price'])"/>
+				<div class="decor-product-discount-label">
+					<span class="decor-pro-label-disc">
+					<t t-out="'-'+'%s'%(dis_per)+'&#x25;'"/></span>
+				</div>
+			</t>
+		</xpath>
+
+		<xpath expr="//div[hasclass('o_wsale_product_information_text')]" position="replace">
+			<div class="p-2 o_wsale_product_information_text">
+				<h6 class="o_wsale_products_item_title list_view_product_title d-none">
+                    <a itemprop="name" t-att-href="product_href" t-att-content="product.name" t-field="product.name" />
+                    <a role="button" t-if="not product.website_published" t-att-href="product_href" class="btn btn-sm btn-danger" title="This product is unpublished.">Unpublished</a>
+                </h6>
+				<t t-if="is_view_active('website_sale.product_comment')">
+	                <t t-call="theme_decor.product_item_stars"/>
+	            </t>
+				<!-- <t t-if="is_view_active('website_sale.products_description')">
+					<p class="prod-description list-view-description d-none" t-field="product.description_sale"/>
+                </t> -->
+				<h6 class="o_wsale_products_item_title">
+                    <a itemprop="name" t-att-href="product_href" t-att-content="product.name" t-field="product.name" />
+                    <a role="button" t-if="not product.website_published" t-att-href="product_href" class="btn btn-sm btn-danger" title="This product is unpublished.">Unpublished</a>
+                </h6>
+            </div>
+		</xpath>
+	</template>
+
+	<template id="product_big_images" inherit_id="website_sale.products" name="Products Large Images">
+	</template>
+
+	<template id="two_product_in_mobile" inherit_id="website_sale.products" name="Mobile Single Product" customize_show="True" active="False">
+		<xpath expr="//div[hasclass('o_wsale_products_grid_table_wrapper')]" position="attributes">
+			<attribute name="class" separator=" " add="mobile_single_product"></attribute>
+		</xpath>
+	</template>
+
+	<template id="product_icons_and_description" inherit_id="website_sale.products_item" name="decor Products Icon and Description">
+		<xpath expr="//div[hasclass('oe_product_image')]" position="inside">
+			<div class="icons_and_description">
+				<div class="decor-product-icons"></div>
+			</div>
+		</xpath>
+	</template>
+
+	<template id="decor_shop_wishlist" inherit_id="theme_decor.product_icons_and_description">
+		<xpath expr="//div[hasclass('decor-product-icons')]" position="inside">
+			<t t-if="is_view_active('website_sale_wishlist.add_to_wishlist')">
+				<t t-set="in_wish" t-value="product._is_in_wishlist()"/>
+	            <t t-set="product_variant_id" t-value="product._get_first_possible_variant_id()"/>
+	            <button t-if="product_variant_id" type="button" role="button" class="btn btn-secondary o_add_wishlist" t-att-disabled='in_wish or None' title="Add to Wishlist" t-att-data-product-template-id="product.id" t-att-data-product-product-id="product_variant_id" data-action="o_wishlist">
+	            	<span class="ri ri-heart-line" role="img" aria-label="Add to wishlist"></span>
+	            </button>
+	        </t>
+		</xpath>
+	</template>
+
+	<template id="decor_shop_compare" inherit_id="theme_decor.product_icons_and_description">
+		<xpath expr="//div[hasclass('decor-product-icons')]" position="inside">
+			<t t-if="is_view_active('website_sale_comparison.add_to_compare')">
+				<t t-set="product_variant_id" t-value="product._get_first_possible_variant_id()"/>
+	            <button t-if="product_variant_id" type="button" role="button" class="btn btn-secondary o_add_compare" title="Compare" aria-label="Compare" t-att-data-product-product-id="product_variant_id" data-action="o_comparelist">
+	            	<span class="icon icon-ExitFullScreen"></span>
+	            </button>
+	        </t>
+			<t t-if="is_view_active('theme_decor.add_to_quick_btn')">
+				<a title="Quick View" class="btn btn-link quick_btn" t-att-data-product-product-id="product.product_variant_ids[0].id" t-att-data-product_template_id="product.id">
+					<span class="ri ri-eye-line"></span>
+				</a>
+			</t>
+		</xpath>
+	</template>
+
+	<template id="list_view_wishlist_and_compare" name="Shop Responsive View Buttons" inherit_id="website_sale.products_item">
+		<xpath expr="//div[hasclass('o_wsale_product_btn')]" position="after">
+			<div class="list_view_wishlist_and_compare d-none">
+				<t t-if="is_view_active('website_sale_wishlist.add_to_wishlist')">
+					<t t-set="in_wish" t-value="product._is_in_wishlist()"/>
+		            <t t-set="product_variant_id" t-value="product._get_first_possible_variant_id()"/>
+		            <button t-if="product_variant_id" type="button" role="button" class="btn btn-secondary o_add_wishlist" t-att-disabled='in_wish or None' title="Add to Wishlist" t-att-data-product-template-id="product.id" t-att-data-product-product-id="product_variant_id" data-action="o_wishlist">
+		            	<span class="ri ri-heart-line align-middle me-0 me-xl-1" role="img" aria-label="Add to wishlist"></span>
+		            	<span class="texxt">Wishlist</span>
+		            </button>
+		        </t>
+		        <t t-if="is_view_active('website_sale_comparison.add_to_compare')">
+					<t t-set="product_variant_id" t-value="product._get_first_possible_variant_id()"/>
+		            <button t-if="product_variant_id" type="button" role="button" class="btn btn-secondary o_add_compare" title="Compare" aria-label="Compare" t-att-data-product-product-id="product_variant_id" data-action="o_comparelist">
+		            	<span class="icon icon-ExitFullScreen align-middle me-0 me-xl-1"></span>
+		            	<span class="texxt">Compare</span>
+		            </button>
+		        </t>
+				<t t-if="is_view_active('theme_decor.add_to_quick_btn')">
+					<a title="Quick View" class="btn btn-link quick_btn" t-att-data-product-product-id="product.product_variant_ids[0].id" t-att-data-product_template_id="product.id">
+						<span class="ri ri-eye-line align-middle me-0 me-xl-1"></span>
+						<span class="texxt">Quick-View</span>
+					</a>
+				</t>
+			</div>
+		</xpath>
+	</template> 
+
+	<template id="produtc_compare_inherited" inherit_id="website_sale_comparison.product_compare">
+		<xpath expr="//div[hasclass('container','oe_website_sale')]" position="attributes">
+            <attribute name="class" separator=" " add="">container-fluid oe_website_sale decor-compare-products</attribute>
+        </xpath>
+        <xpath expr="//section[hasclass('container')]" position="attributes">
+            <attribute name="class" separator=" " add="">col-md-12 col-xl-10 col-hd-12 m-auto m-scroll</attribute>
+        </xpath>
+        <xpath expr="//table[@id='o_comparelist_table']" position="attributes">
+            <attribute name="class" separator=" " add="table-striped" />
+        </xpath>
+        <xpath expr="//td[hasclass('o_ws_compare_image','position-relative')]" position="inside">
+        	<t t-if="product.product_label_id">
+				<t t-call="theme_decor.decor_product_label_common"/>
+			</t>
+        </xpath>
+        <xpath expr="//div[hasclass('product_summary')]/span" position="inside">
+        	<!-- PRODUCT DISCOUNT -->
+			<t t-set="template_price_vals" t-value="get_product_prices(product)"/>
+			<t t-if="'base_price' in template_price_vals">
+		       	<t t-set="diff_amount" t-value="round(template_price_vals['base_price'] - template_price_vals['price_reduce'])"/>
+				<t t-set="dis_per" t-value="round(diff_amount * 100 / template_price_vals['base_price'])"/>
+				<div class="decor-product-discount-label">
+					<span class="decor-pro-label-disc">
+					<t t-out="'-'+'%s'%(dis_per)+'&#x25;'"/></span>
+				</div>
+			</t>
+        </xpath>
+        <xpath expr="//a[hasclass('o_comparelist_remove')]" position="replace">
+            <button href="#" t-att-data-product_product_id="product.id" class="o_comparelist_remove" t-if="len(products) &gt; 2">
+            	<span class="lnr lnr-cross d-block"></span>
+            </button>
+        </xpath>
+
+	</template>
+
+	<!-- ajax cart btn start -->
+	<template id="ajax_cart_button" inherit_id="theme_decor.list_view_wishlist_and_compare">
+		<xpath expr="//div[hasclass('list_view_wishlist_and_compare')]" position="before">
+			<t t-call="theme_decor.decor_product_add_cart_main_template">
+				<t t-set="_icon" t-value="True"/>
+				<t t-set="_text" t-value="False"/>
+			</t>
+		</xpath>
+	</template>
+	<!-- ajax cart btn end -->
+
+	<!-- Ajax Cart -->
+	<template id='model_add_cart_ajax_template' name="Add to Cart Ajax Popup Template">
+        <t t-set="combination_info" t-value="product._get_combination_info(only_template=True, add_qty=add_qty or 1, pricelist=pricelist)"/>
+        <div class="modal fade ajax-cart-modal" role="dialog" t-att-id="'AjaxcartModal-%s' %(product.id)" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content rounded-0 bg-white">
+                    <div class="modal-body rounded-0 py-5">
+                        <div class="">
+                            <a class="btn btn-link close" data-bs-dismiss="modal" aria-label="Close">
+								<span class="lnr lnr-cross"/>
+                            </a>
+                            <div class="d-md-flex align-items-center">
+	                            <div class="flex-fill text-center">
+	                                <a t-att-href="'/shop/%s' % slug(product)">
+	                                    <img class="front" t-att-alt="product.name" t-att-title="product.name" t-att-src="website.image_url(product, 'image_1920','314x385')"/>
+	                                </a>
+	                            </div>
+	                            <div class="flex-fill">
+	                            	<h3 class='text-center'>
+	                                    <t t-out="product.name"/>
+	                                </h3>
+	                                <div class="mb-4 text-center">
+	                                	<span class="fa fa-check-circle text-success me-1"/>
+	                                    <span>Successfully added to your</span>
+	                                    <a href="/shop/cart">cart</a>
+	                                </div>
+	                                <div class="d-md-flex">
+	                                    <a role="button" id="cnt_shopping" class="btn btn-outline-secondary flex-fill d-block d-md-inline-block" href="#" data-bs-dismiss="modal"><span>Continue Shopping</span></a>
+	                                    <a role="button" id="checkout_shopping" class="btn btn-primary flex-fill ms-md-3 mt-3 mt-md-0 d-block d-md-inline-block" href="/shop/checkout?express=1"><span>Process Checkout</span></a>
+	                                </div>
+	                            </div>
+	                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+	<!-- Brand Filter Main Template -->
+	<template id="product_brand_filter_template" name="Product Brand Filter Template">
+		<t t-set="brands" t-value="website.get_product_brands(category)"/>
+		<t t-set="hasActiveBrand" t-value="any((b.id in active_brand_list) for b in brands)"/>
+		<t t-set="_status" t-value="'inactive'"/>
+		<t t-if="hasActiveBrand" t-set="_status" t-value="'active'"/>
+
+		<t t-if="brands">
+			<div class="brand_filter_content">
+				<button id="decor_brands_title" t-attf-class="accordion-button shadow-none rounded-0 {{button_classes}} {{ not active_brand_list and 'collapsed'}}"
+					type="button"
+					t-att-data-status="_status"
+					data-bs-toggle="collapse"
+					data-bs-target="#decor_brands"
+					t-att-aria-expanded="_status == 'active' and 'True' or 'False'"
+					aria-controls="decor_brands">
+					<b>Brands</b>
+				</button>
+				<div t-attf-class="accordion-collapse collapse nav nav-pills brand-c {{ (_status == 'active') and 'show'}} {{show_classes}}" 
+						t-att-aria-expanded="(_status == 'active') and 'True' or 'False'" id="decor_brands">
+					<div t-attf-class="brand-height-overflow {{body_classes}}">
+						<t t-set="count_value" t-value="0"/>
+						<t t-foreach="brands" t-as="b">
+							<t t-set="count_value" t-value="count_value + 1"/>
+							<div class="form-check">
+								<input name="brand" t-att-id="'%s-%s' % (b.id,slug(b))" type="checkbox" class="form-check-input me-2" t-att-value="slug(b)" t-att-checked="'checked' if b.id in active_brand_list else None"/>
+								<label class="form-check-label fw-normal" t-att-for="'%s-%s' % (b.id,slug(b))" t-field="b.name"/>
+								<t t-if="is_view_active('theme_decor.option_products_brands_count')">
+									<span class="product_count">
+										<span class="badge bg-primary rounded-pill">
+											<span>
+												<t t-out="b.with_context(product_brand_search=search).brand_count" />
+											</span>
+										</span>
+									</span>
+								</t>
+							</div>
+						</t>
+					</div>
+				</div>
+			</div>
+		</t>
+	</template>
+
+	 <template id="option_products_brands_count" inherit_id="theme_decor.products_brands" name="Enable Brand Product Count" active="False" customize_show="True">
+    </template>
+    
+	<template id="decor_product_add_cart_main_template" name="Decor Product Add to Cart Main Template">
+		<t t-set="isAddtoCartActive" t-value="is_view_active('website_sale.products_add_to_cart')"/>
+		<t t-set="template_price_vals" t-value="get_product_prices(product)"/>
+		<t t-set="product_variant_id" t-value="product._get_first_possible_variant_id()"/>
+
+		<t t-if="isAddtoCartActive">
+			<t t-if="product.product_variant_ids">
+            	<t t-if="product_variant_id and template_price_vals['price_reduce'] or not website.prevent_zero_price_sale">
+					<t t-if="product._website_show_quick_add()">
+						<t t-if='product.optional_product_ids'>
+							<div class="o_wsale_product_btn optional-btn">
+								<a href="#" role="button" class="btn btn-link a-submit shop-cart" 
+									aria-label="Add to Cart" title="Add to Cart">
+									<span t-if="_icon" class="ri ri-shopping-cart-line fa"></span>
+									<span t-if="_text" class="">ADD TO CART</span>
+								</a>
+							</div>
+						</t>
+						<t t-else="">
+							<t t-if="len(product.product_variant_ids) == 1">
+								<div class="ajax_cart_modal_tools position-relative">
+									<a class="button btn btn-cart btn-link ajax-cart-btn a-submit shop-cart" title="Add to Cart" 
+										data-bs-toggle="modal" t-att-data-bs-target="'#AjaxcartModal-%s' %(product.id)"> 
+										<span t-if="_icon" class="ri ri-shopping-cart-line"></span>
+										<span t-if="_text" class="">ADD TO CART</span>
+									</a>
+								</div>
+							</t>
+							<t t-if="len(product.product_variant_ids) &gt; 1">
+								<div class="ajax_cart_modal_tools position-relative">
+									<a class="button btn btn-cart btn-link select_btn" title="Select Variant"
+										t-att-data-product-product-id="product.product_variant_ids[0].id" 
+										t-att-data-product_template_id="product.id">
+										<span t-if="_icon" class="ri ri-shopping-cart-line"></span>
+										<span t-if="_text" class="">SELECT OPTION</span> 
+									</a>
+								</div>
+							</t>
+						</t>
+					</t>
+				</t>
+				<t t-if="website.prevent_zero_price_sale and template_price_vals['price_reduce'] == 0">
+					<div id="contact_us_wrapper">
+						<a t-att-href="website.contact_us_button_url" class="btn btn-link btn_cta" title="Contact Us">
+							<span t-if="_icon" class="ri ri-chat-3-line"></span>
+							<span t-if="_text" class="">Contact Us</span> 
+						</a>
+					</div>
+				</t>
+			</t>
+		</t>
+	</template>
+
+	<template id="add_to_quick_btn" name="Quick View Button" active="True">
+	</template>
+	<template id="shop_btn_option" name="Shop Buttons" inherit_id="website.snippet_options">
+		<xpath expr="//we-button[hasclass('o_we_add_to_cart_btn')]" position="after">
+			<we-button title="Quick View" class="ri ri-eye-line" data-customize-website-views="theme_decor.add_to_quick_btn" data-no-preview="true" data-reload="/"/>
+		</xpath>
+	</template>
+
+</odoo>

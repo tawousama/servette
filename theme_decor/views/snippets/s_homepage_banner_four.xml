@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_homepage_banner_four" name="Home Banner Four">
+		<section id="slider-sec" class="s_furniture_banner slider7">
+			<div id="slider7"
+				class="carousel bs-slider slide  control-round indicators-line"
+				data-bs-ride="carousel" data-bs-pause="hover" data-bs-interval="7000">
+				<ol class="carousel-indicators">
+					<li data-bs-target="#slider7" data-bs-slide-to="0" class="active"></li>
+					<li data-bs-target="#slider7" data-bs-slide-to="1" class=""></li>
+				</ol>
+				<div class="carousel-inner" role="listbox">
+					<div class="carousel-item active" style="background-image: url('/theme_decor/static/src/img/slide-bg-1.jpg');">
+						<div class="single-slide">
+							<div class="hero-content-one container">
+								<div class="row align-items-center">
+									<div class="col-lg-6 col-md-6">
+										<div class="slider-text-info slider-animated-1">
+											<h3 class="sub_heading">Top Selling!</h3>
+											<h1>New Collection</h1>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+												elit, sed do eiusmod tempor incididunt ut labore et
+												dolore magna aliqua.
+											</p>
+											<div class="s_btn" data-name="Button">
+												<a href="#" class="btn btn-dark slider-btn uppercase bizople_button">
+													<span>Shop Now</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 pt-4 pt-md-0">
+										<div class="slider-inner-image slider-animated-1">
+											<img
+												src="/theme_decor/static/src/img/furniture_banner1.png"
+												alt="slider images" class="img-fluid"/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="carousel-item" style="background-image: url('/theme_decor/static/src/img/slide-bg-1.jpg');">
+						<div class="single-slide">
+							<div class="hero-content-one container">
+								<div class="row flex-row-reverse align-items-center">
+									<div class="col-lg-6 col-md-6">
+										<div class="slider-text-info slider-animated-2">
+											<h3 class="sub_heading">Top Selling!</h3>
+											<h1>New Collection</h1>
+											<p>Lorem ipsum dolor sit amet, consectetur adipisicing
+												elit, sed do eiusmod tempor incididunt ut labore et
+												dolore magna aliqua.
+											</p>
+											<div class="s_btn" data-name="Button">
+												<a href="#" class="btn btn-dark slider-btn uppercase bizople_button">
+													<span>Shop Now</span>
+												</a>
+											</div>
+										</div>
+									</div>
+									<div class="col-lg-6 col-md-6 pt-4 pt-md-0">
+										<div class="slider-inner-image slider-animated-2">
+											<img
+												src="/theme_decor/static/src/img/furniture_banner2.png"
+												alt="slider images" class="img-fluid"/>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="slider-control hide">
+						<a class="left carousel-control-prev text-danger font-14"
+							href="#slider7" role="button" data-bs-slide="prev">
+							<span class="bg-white text-center fa fa-arrow-left"
+								aria-hidden="true"></span>
+							<b class="sr-only font-normal">Previous</b>
+						</a>
+						<a class="right carousel-control-next text-danger font-14"
+							href="#slider7" role="button" data-bs-slide="next">
+							<span class="bg-white text-center fa fa-arrow-right"
+								aria-hidden="true"></span>
+							<b class="sr-only font-normal">Next</b>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

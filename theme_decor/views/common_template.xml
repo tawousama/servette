@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="decor_product_label_common" name="Products Brand">
+		<t t-if="product.product_label_id">
+			<div class="decor-product-label">
+				<span class="decor-pro-label-na"  t-if="product.product_label_id.label_style == 'flat'"
+				t-out="product.product_label_id.name" t-attf-style="background-color:#{product.product_label_id.label_bg_color}; color:#{product.product_label_id.label_font_color};"/>
+				<span class="decor-pro-label-na label-rounded" t-if="product.product_label_id.label_style == 'rounded'" 
+				t-out="product.product_label_id.name" t-attf-style="background-color:#{product.product_label_id.label_bg_color}; color:#{product.product_label_id.label_font_color};"/>
+				<span class="decor-pro-label-na label-outlinesquare" t-if="product.product_label_id.label_style == 'outlinesquare'" 
+				t-out="product.product_label_id.name" t-attf-style="border:1px solid #{product.product_label_id.label_bg_color}; color:#{product.product_label_id.label_font_color};"/>
+				<span class="decor-pro-label-na label-outlineround" t-if="product.product_label_id.label_style == 'outlineround'" 
+				t-out="product.product_label_id.name" t-attf-style="border:1px solid #{product.product_label_id.label_bg_color}; color:#{product.product_label_id.label_font_color};"/>
+			</div>
+		</t>
+	</template>
+
+	<template id="decor_website_label_common">
+		<div class="decor-website-label" t-attf-style="color:#{s.product_label_id.label_bg_color};">
+			<span class="decor-pro-label-na"  t-if="s.product_label_id.label_style == 'flat'"
+			t-out="s.product_label_id.name" t-attf-style="background-color:#{s.product_label_id.label_bg_color}; color:#{s.product_label_id.label_font_color}; border-top-color:#{s.product_label_id.label_bg_color}; border-end-color:#{s.product_label_id.label_bg_color};"/>
+			<span class="decor-pro-label-na label-rounded" t-if="s.product_label_id.label_style == 'rounded'" 
+			t-out="s.product_label_id.name" t-attf-style="background-color:#{s.product_label_id.label_bg_color}; color:#{s.product_label_id.label_font_color};
+			border-top-color:#{s.product_label_id.label_bg_color}; border-end-color:#{s.product_label_id.label_bg_color};"/>
+			<span class="decor-pro-label-na label-outlinesquare" t-if="s.product_label_id.label_style == 'outlinesquare'" 
+			t-out="s.product_label_id.name" t-attf-style="border:1px solid #{s.product_label_id.label_bg_color}; color:#{s.product_label_id.label_font_color};"/>
+			<span class="decor-pro-label-na label-outlineround" t-if="s.product_label_id.label_style == 'outlineround'" 
+			t-out="s.product_label_id.name" t-attf-style="border:1px solid #{s.product_label_id.label_bg_color}; color:#{s.product_label_id.label_font_color};"/>
+		</div>
+	</template>
+
+	<template id="menu_label_inherited"
+		inherit_id="website.submenu">
+		<xpath expr="//li[@t-if='submenu.is_visible and not (submenu.child_id or submenu.is_mega_menu)']" position="attributes">
+			<attribute name="t-attf-class" add="#{'position-relative' if submenu.product_label_id else ' '}" separator=" " />
+		</xpath>
+		<xpath expr="//li[@t-if='submenu.is_visible and not (submenu.child_id or submenu.is_mega_menu)']/a" position="inside">
+			<t t-if="request.website.viewref('theme_decor.menu_label_inherited').active">
+				<t t-if="submenu.product_label_id">
+					<t t-foreach="submenu" t-as="s">
+						<t t-call="theme_decor.decor_website_label_common"/>
+					</t>
+				</t>
+			</t>
+		</xpath>
+	</template>
+	
+</odoo>

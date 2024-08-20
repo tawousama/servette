@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<data>
+		<record id="view_product_brand_tree" model="ir.ui.view">
+			<field name="name">product.brand.tree</field>
+			<field name="model">product.brand</field>
+			<field name="type">tree</field>
+			<field name="priority" eval="8" />
+			<field name="arch" type="xml">
+				<tree string="Product Brand">
+					<field name="display_name" />
+				</tree>
+			</field>
+		</record>
+
+		<record id="view_product_brand_form" model="ir.ui.view">
+			<field name="name">product.brand.form</field>
+			<field name="model">product.brand</field>
+			<field name="type">form</field>
+			<field name="priority" eval="8" />
+			<field name="arch" type="xml">
+				<form string="Product Brand">
+					<sheet>
+						<group colspan="4">
+							<field name="name" required="1" />
+							<field name="brand_decription"/>
+							<field name="image" required="1" widget="image" />
+							<field name="sequence" required="1" />
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+
+		<record id="view_product_brand_search" model="ir.ui.view">
+			<field name="name">product.brand.search</field>
+			<field name="model">product.brand</field>
+			<field name="type">search</field>
+			<field name="priority" eval="8" />
+			<field name="arch" type="xml">
+				<search string="Product Brand">
+					<field name="name" select="True" />
+				</search>
+			</field>
+		</record>
+
+		<record model="ir.actions.act_window"
+			id="act_open_product_brand_view">
+			<field name="name">Product Brand</field>
+			<field name="type">ir.actions.act_window</field>
+			<field name="res_model">product.brand</field>
+			 <field name="view_mode">form</field>
+			<field name="search_view_id" ref="view_product_brand_search" />
+		</record>
+
+		<record model="ir.actions.act_window.view"
+			id="act_open_product_brand_view_form">
+			<field name="act_window_id" ref="act_open_product_brand_view" />
+			<field name="sequence" eval="20" />
+			<field name="view_mode">form</field>
+			<field name="view_id" ref="view_product_brand_form" />
+		</record>
+
+		<record model="ir.actions.act_window.view" id="act_open_product_brand_view_tree">
+			<field name="act_window_id" ref="act_open_product_brand_view" />
+			<field name="sequence" eval="10" />
+			 <field name="view_mode">tree</field>
+			<field name="view_id" ref="view_product_brand_tree" />
+		</record>
+
+	
+	</data>
+</odoo>

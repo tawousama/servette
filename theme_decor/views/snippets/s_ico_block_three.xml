@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_ico_block_three" name="Icons Block Three">
+		<section class="homepage-five-feature-row pt64 pb64 bg-light">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="feature-box text-center">
+							<div class="icon mb-4 bg-white mx-auto text-center">
+								<span class="fa fa-truck text-primary"></span>
+							</div>
+							<h4 class="text-secondary mb-2">Lorem ipsum dolor</h4>
+							<p class="text-muted">consectetur adipiscing elit</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="feature-box text-center">
+							<div class="icon mb-4 bg-white mx-auto text-center">
+								<span class="fa fa-headphones text-primary"></span>
+							</div>
+							<h4 class="text-secondary mb-2">Lorem ipsum dolor</h4>
+							<p class="text-muted">consectetur adipiscing elit</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="feature-box text-center">
+							<div class="icon mb-4 bg-white mx-auto text-center">
+								<span class="fa fa-shield text-primary"></span>
+							</div>
+							<h4 class="text-secondary mb-2">Lorem ipsum dolor</h4>
+							<p class="text-muted">consectetur adipiscing elit</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

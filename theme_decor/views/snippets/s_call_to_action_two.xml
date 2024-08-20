@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="s_call_to_action_two" name="Call to Action Two">
+		<div class="oe_structure"/>
+		<section class="s_call_to_action pt64 pb64 o_colored_level bg-o-color-1" data-snippet="s_call_to_action" data-name="Call to Action">
+			<div class="container">
+				<div class="row align-items-center">
+				<div class="col-md-9 o_colored_level">
+					<h3 class="o_default_snippet_text">Got An Incredible Project Right Now?</h3>
+					<p class="o_default_snippet_text">Join us and make your Experience for solar Better.</p>
+				</div>
+				<div class="col-md-3 o_colored_level pt-3 pt-md-0">
+					<p class="text-start text-md-end">
+					<a href="/contactus" class="btn btn-secondary btn-lg flat" data-original-title="" title="" aria-describedby="tooltip225795">Contact us</a>
+					</p>
+				</div>
+				</div>
+			</div>
+		</section>
+		<div class="oe_structure"/>
+	</template>
+</odoo>

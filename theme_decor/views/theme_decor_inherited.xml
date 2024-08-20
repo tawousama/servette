@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<template id="snippet_options_inherited" inherit_id="website.snippet_options">
+		
+		<!-- Headers -->
+		<xpath expr="//we-select[@data-variable='header-template']" position="inside">
+			<we-button title="Decor Header One"
+                       data-name="decor_header_two_opt"
+                       data-customize-website-views="theme_decor.theme_decor_header2"
+                       data-customize-website-variable="'decor-header-2'"
+                       data-img="/theme_decor/static/src/img/header2.png"/>
+            <we-button title="Decor Header Two"
+                       data-name="decor_header_four_opt"
+                       data-customize-website-views="theme_decor.theme_decor_header4"
+                       data-customize-website-variable="'decor-header-4'"
+                       data-img="/theme_decor/static/src/img/header4.png"/>
+            <we-button title="Decor Header Three"
+                       data-name="decor_header_seven_opt"
+                       data-customize-website-views="theme_decor.theme_decor_header7"
+                       data-customize-website-variable="'decor-header-7'"
+                       data-img="/theme_decor/static/src/img/header7.png"/>
+            <we-button title="Decor Header Four"
+                       data-name="decor_header_five_opt"
+                       data-customize-website-views="theme_decor.theme_decor_header5"
+                       data-customize-website-variable="'decor-header-5'"
+                       data-img="/theme_decor/static/src/img/header5.png"/>
+            <we-button title="Decor Header Five"
+                       data-name="decor_header_three_opt"
+                       data-customize-website-views="theme_decor.theme_decor_header3"
+                       data-customize-website-variable="'decor-header-3'"
+                       data-img="/theme_decor/static/src/img/header3.png"/>
+            <we-button title="Decor Header Six"
+                       data-name="decor_header_six_opt"
+                       data-customize-website-views="theme_decor.theme_decor_header6"
+                       data-customize-website-variable="'decor-header-6'"
+                       data-img="/theme_decor/static/src/img/header6.png"/>
+
+        	<we-button title="Decor Header Seven"
+                       data-name="decor_header_one_opt"
+                       data-customize-website-views="theme_decor.theme_decor_header1"
+                       data-customize-website-variable="'decor-header-1'"
+                       data-img="/theme_decor/static/src/img/header1.png"/>
+            <we-button title="Decor Header Eight"
+                       data-name="decor_header_ten_opt"
+                       data-customize-website-views="theme_decor.theme_decor_header10"
+                       data-customize-website-variable="'decor-header-10'"
+                       data-img="/theme_decor/static/src/img/header10.png"/>
+            <we-button title="Decor Header Nine"
+                       data-name="decor_header_eight_opt"
+                       data-customize-website-views="theme_decor.theme_decor_header8"
+                       data-customize-website-variable="'decor-header-8'"
+                       data-img="/theme_decor/static/src/img/header8.png"/>
+            <we-button title="Decor Header Ten"
+                       data-name="decor_header_nine_opt"
+                       data-customize-website-views="theme_decor.theme_decor_header9"
+                       data-customize-website-variable="'decor-header-9'"
+                       data-img="/theme_decor/static/src/img/header9.png"/>
+            
+        </xpath>
+
+		<xpath expr="//div[@data-js='HeaderNavbar']" position="attributes">
+			<attribute name="data-selector">#wrapwrap > header</attribute>
+		</xpath>
+
+		<xpath expr="//div[@data-js='HeaderNavbar']" position="inside">
+			<we-checkbox string="Show Pricelist" data-customize-website-views="theme_decor.decor_header_pricelist" data-reload="/"/>
+		</xpath>
+
+		<!-- Footers -->
+		<xpath expr="//we-select[@data-variable='footer-template']" position="inside">
+		
+			<we-button title="Decor Footer One"
+                       data-name="footer_one"
+                       data-customize-website-views="theme_decor.theme_common_footer_one"
+                       data-customize-website-variable="'footer-one'"
+                       data-img="/theme_decor/static/src/img/footer_one.png"/>
+            <we-button title="Decor Footer Two"
+                       data-name="decor_footer_one_opt"
+                       data-customize-website-views="theme_decor.theme_common_footer1"
+                       data-customize-website-variable="'decor-footer-1'"
+                       data-img="/theme_decor/static/src/img/footer1.png"/>
+            <we-button title="Decor Footer Three"
+                       data-name="decor_footer_two_opt"
+                       data-customize-website-views="theme_decor.theme_common_footer2"
+                       data-customize-website-variable="'decor-footer-2'"
+                       data-img="/theme_decor/static/src/img/footer2.png"/>
+            <we-button title="Decor Footer Four"
+                       data-name="decor_footer_three_opt"
+                       data-customize-website-views="theme_decor.theme_common_footer3"
+                       data-customize-website-variable="'decor-footer-3'"
+                       data-img="/theme_decor/static/src/img/footer3.png"/>
+            <we-button title="Decor Footer Five"
+                       data-name="decor_footer_four_opt"
+                       data-customize-website-views="theme_decor.theme_common_footer4"
+                       data-customize-website-variable="'decor-footer-4'"
+                       data-img="/theme_decor/static/src/img/footer4.png"/>
+            <we-button title="Decor Footer Six"
+                       data-name="decor_footer_five_opt"
+                       data-customize-website-views="theme_decor.theme_common_footer5"
+                       data-customize-website-variable="'decor-footer-5'"
+                       data-img="/theme_decor/static/src/img/footer5.png"/>
+            <we-button title="Decor Footer Seven"
+                       data-name="decor_footer_six_opt"
+                       data-customize-website-views="theme_decor.theme_common_footer6"
+                       data-customize-website-variable="'decor-footer-6'"
+                       data-img="/theme_decor/static/src/img/footer6.png"/>
+            <we-button title="Decor Footer Eight"
+                       data-name="decor_footer_seven_opt"
+                       data-customize-website-views="theme_decor.theme_common_footer7"
+                       data-customize-website-variable="'decor-footer-7'"
+                       data-img="/theme_decor/static/src/img/footer7.png"/>
+            <we-button title="Decor Footer Nine"
+                       data-name="decor_footer_eight_opt"
+                       data-customize-website-views="theme_decor.theme_common_footer8"
+                       data-customize-website-variable="'decor-footer-8'"
+                       data-img="/theme_decor/static/src/img/footer8.png"/>
+		</xpath>
+
+	</template>
+
+	<!-- Mega menus -->
+	<template id="megamenu_snippets_inherited" inherit_id="website.snippet_options">
+		
+		<!-- New Mega menu snippest options :  to do template check -->
+		<xpath expr="div[@data-js='MegaMenuLayout']//we-select" position="inside">
+			<t t-set="_label">Decor Menu One</t>
+            <we-button t-att-data-select-label="_label" data-select-template="decor_theme_common.mega_menu_one_snippet" data-img="/decor_theme_common/static/description/mega-menu-1.png" t-out="_label"/>
+            <t t-set="_label">Decor Menu One</t>
+            <we-button t-att-data-select-label="_label" data-select-template="decor_theme_common.mega_menu_four_snippet" data-img="/decor_theme_common/static/description/mega-menu-2.png" t-out="_label"/>
+
+		</xpath>
+	</template>
+
+	<!-- Heading tags style options -->
+	<template id="heading_style_options" inherit_id="website.snippet_options">
+		<xpath expr="//we-input[@data-variable='font-size-base']" position="after">
+			 <we-row string="H1">
+	            <we-fontfamilypicker data-variable="h1-font"/>
+	            <we-input data-customize-website-variable="null" data-variable="h1-font-size"/>
+	        </we-row>
+	        <we-row string="H2">
+	            <we-fontfamilypicker data-variable="h2-font"/>
+	            <we-input data-customize-website-variable="null" data-variable="h2-font-size"/>
+	        </we-row>
+	        <we-row string="H3">
+	            <we-fontfamilypicker data-variable="h3-font"/>
+	            <we-input data-customize-website-variable="null" data-variable="h3-font-size"/>
+	        </we-row>
+	        <we-row string="H4">
+	            <we-fontfamilypicker data-variable="h4-font"/>
+	            <we-input data-customize-website-variable="null" data-variable="h4-font-size"/>
+	        </we-row>
+	        <we-row string="H5">
+	            <we-fontfamilypicker data-variable="h5-font"/>
+	            <we-input data-customize-website-variable="null" data-variable="h5-font-size"/>
+	        </we-row>
+	        <we-row string="H6">
+	            <we-fontfamilypicker data-variable="h6-font"/>
+	            <we-input data-customize-website-variable="null" data-variable="h6-font-size"/>
+	        </we-row>
+		</xpath>
+	</template>
+
+	<template id="product_slider_snippet_load" inherit_id="website.snippets">
+       <xpath expr="//div[@id='snippet_structure']" position="before">
+       		<div id="slider_snippet_menu" class="o_panel">
+				<div class="o_panel_header">
+					<i class="fa fa-puzzle-piece" />
+					Dynamic Snippets
+				</div>
+				<div class="o_panel_body">
+		           <t t-snippet="theme_decor.s_bizople_theme_blog_slider_snippet" t-thumbnail="/theme_decor/static/description/icon.png" />
+		           <t t-snippet="theme_decor.s_product_banner"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					  <t t-snippet="theme_decor.s_image_hotspot"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					  <t t-snippet="theme_decor.s_product_configurator"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_category_configurator"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_brand_configurator"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					
+		       </div>
+		      <div class="o_panel_header">
+					<i class="fa fa-puzzle-piece" />
+					Configurator Snippet Styles
+				</div>
+				<div class="o_panel_body">
+					<!-- Snippet Styles -->
+	            <t t-snippet="theme_decor.s_configurator_snippet_style2"
+	            	t-thumbnail="/theme_decor/static/src/img/config-snippet-1.png"/>
+	            <t t-snippet="theme_decor.s_configurator_snippet_style3"
+	            	t-thumbnail="/theme_decor/static/src/img/config-snippet-2.png"/>
+	            <t t-snippet="theme_decor.s_configurator_snippet_style4"
+	            	t-thumbnail="/theme_decor/static/src/img/config-snippet-3.png"/>
+
+	            <t t-snippet="theme_decor.blocks1_snippet"
+                  t-thumbnail="/theme_decor/static/src/img/config-snippet-4.png"/>
+               <t t-snippet="theme_decor.blocks2_snippet"
+                  t-thumbnail="/theme_decor/static/src/img/config-snippet-5.png"/>
+               <t t-snippet="theme_decor.blocks3_snippet"
+                  t-thumbnail="/theme_decor/static/src/img/config-snippet-6.png"/>
+               <t t-snippet="theme_decor.blocks4_snippet"
+                  t-thumbnail="/theme_decor/static/src/img/config-snippet-7.png"/>
+               <t t-snippet="theme_decor.blocks5_snippet"
+                  t-thumbnail="/theme_decor/static/src/img/config-snippet-8.png"/>
+               <t t-snippet="theme_decor.blocks6_snippet"
+                  t-thumbnail="/theme_decor/static/src/img/config-snippet-9.png"/>
+               <t t-snippet="theme_decor.blocks7_snippet"
+                  t-thumbnail="/theme_decor/static/src/img/config-snippet-10.png"/>
+		       </div>
+	       </div>
+        </xpath>
+    </template>
+
+	<!-- Snippets -->
+	<template id="theme_decor_snippets"
+		inherit_id="website.snippets">
+		<xpath expr="//div[@id='snippet_structure']" position="before">
+			<div id="snippet_menu" class="o_panel">
+				<div class="o_panel_header">
+					<i class="fa fa-puzzle-piece" />
+					Full Homepages
+				</div>
+				<div class="o_panel_body">
+					<t t-snippet="theme_decor.s_homepage_one_snippet"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_homepage_two_snippet"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_homepage_three_snippet"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_outlet_snippet"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_coming_soon_snippet"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_helpcenter_snippet"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_thankyou_snippet"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+				</div>
+				<div class="o_panel_header">
+					<i class="fa fa-puzzle-piece" />
+					Homepage One
+				</div>
+				<div class="o_panel_body">
+					<t t-snippet="theme_decor.s_homepage_one_service_with_icons"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_homepage_one_discount_parallax"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_homepage_one_testimonial"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_homepage_one_clients"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+				</div>
+				<div class="o_panel_header">
+					<i class="fa fa-puzzle-piece" />
+					Homepage Two
+				</div>
+				<div class="o_panel_body">
+					<t t-snippet="theme_decor.s_homepage_two_products"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_homepage_two_sale"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_homepage_two_service"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_homepage_two_clients"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_homepage_two_history"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+				</div>
+				<div class="o_panel_header">
+					<i class="fa fa-puzzle-piece" />
+					Homepage Three
+				</div>
+				<div class="o_panel_body">
+					<t t-snippet="theme_decor.s_homepage_three_aboutus"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_homepage_three_fun-fact-section"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_homepage_three_gallery"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_homepage_three_sale"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_homepage_three_services-section-two"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_homepage_three_services-section"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_homepage_three_team_section"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_homepage_three_testimonial"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_homepage_three_two_blocks_bg_img"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_homepage_three_two_imgs"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_homepage_three_who-we-are"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_homepage_three_with_bg_imag_para"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+				</div>
+				<div class="o_panel_header">
+					<i class="fa fa-puzzle-piece" />
+					Banners
+				</div>
+				<div class="o_panel_body">
+					<t t-snippet="theme_decor.s_homepage_one_banner"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_homepage_two_banner"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_homepage_three_banner"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_homepage_banner_four"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_banner_with_breadcrumbs"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+				</div>
+				<div class="o_panel_header">
+					<i class="fa fa-puzzle-piece" />
+					Offers &amp; Deals
+				</div>
+				<div class="o_panel_body">
+					<t t-snippet="theme_decor.s_offers_one"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_offers_two"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_offers_three"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_offers_four"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_offers_five"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_offers_six"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_offers_seven"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_offers_eight"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+				</div>
+				<div class="o_panel_header">
+					<i class="fa fa-puzzle-piece" />
+					Call To Action
+				</div>
+				<div class="o_panel_body">
+					<t t-snippet="theme_decor.s_call_to_action_one"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_call_to_action_two"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_call_to_action_three"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_call_to_action_four"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_call_to_action_five"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+				</div>
+				<div class="o_panel_header">
+					<i class="fa fa-puzzle-piece" />
+					Counters
+				</div>
+				<div class="o_panel_body">
+					<t t-snippet="theme_decor.s_counters_one"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_counters_two"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_counters_three"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_counters_four"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_counters_five"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+				</div>
+				<div class="o_panel_header">
+					<i class="fa fa-puzzle-piece" />
+					Pricing
+				</div>
+				<div class="o_panel_body">
+					<t t-snippet="theme_decor.s_pricing_one"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_pricing_two"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_pricing_three"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_pricing_four"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_pricing_five"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+				</div>
+				<div class="o_panel_header">
+					<i class="fa fa-puzzle-piece" />
+					News Letter
+				</div>
+				<div class="o_panel_body">
+					<t t-snippet="theme_decor.s_newsletter_one"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_newsletter_two"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_newsletter_three"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_newsletter_four"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_newsletter_five"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+				</div>
+				<div class="o_panel_header">
+					<i class="fa fa-puzzle-piece" />
+					Icon Blocks
+				</div>
+				<div class="o_panel_body">
+					<t t-snippet="theme_decor.s_ico_block_one"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_ico_block_two"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_ico_block_three"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_ico_block_four"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_ico_block_five"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+				</div>
+				<div class="o_panel_header">
+					<i class="fa fa-puzzle-piece" />
+					Information Blocks
+				</div>
+				<div class="o_panel_body">
+					<t t-snippet="theme_decor.s_info_block_one"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_info_block_two"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_info_block_three"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_info_block_four"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_info_block_five"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+				</div>
+				<div class="o_panel_header">
+					<i class="fa fa-puzzle-piece" />
+					Our Teams
+				</div>
+				<div class="o_panel_body">
+					<t t-snippet="theme_decor.s_teams_one"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_teams_two"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_teams_three"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_teams_four"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_teams_five"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+				</div>
+				<div class="o_panel_header">
+					<i class="fa fa-puzzle-piece" />
+					Clients
+				</div>
+				<div class="o_panel_body">
+					<t t-snippet="theme_decor.s_clients_one"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_clients_two"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_clients_three"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_clients_four"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_clients_five"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+				</div>
+				<div class="o_panel_header">
+					<i class="fa fa-puzzle-piece" />
+					Gallery
+				</div>
+				<div class="o_panel_body">
+					<t t-snippet="theme_decor.s_gallery_one"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_gallery_two"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_gallery_three"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_gallery_four"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_gallery_five"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+				</div>
+				<div class="o_panel_header">
+					<i class="fa fa-puzzle-piece" />
+					Testimonial
+				</div>
+				<div class="o_panel_body">
+					<t t-snippet="theme_decor.s_testimonial_one"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_testimonial_two"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_testimonial_three"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_testimonial_four"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+					<t t-snippet="theme_decor.s_testimonial_five"
+						t-thumbnail="/theme_decor/static/description/icon-2.png" />
+				</div>
+			</div>
+		</xpath>
+	</template>
+
+	<template id="button_style_options" inherit_id="website.snippet_options">
+		<xpath expr="//we-select[@data-variable='btn-secondary-outline']" position="after">
+			<div data-selector=".biz_dynamic_product_slider, .oe_multi_category_slider, .bizcommon_category_slider_3, .blog_slider_owl, .brand_slider">
+	            <we-select string="Sliders Width" data-variable="slider-width">
+            		<we-button data-select-class="default_style">Default Size</we-button>
+                 	<we-button data-select-class="extended-container">Extended size</we-button>
+	            </we-select>
+		    </div>
+		    <div data-js="config_slider_clone_fix" data-selector="#wrapwrap" data-no-check="true"/>
+		</xpath>
+
+		<!-- <xpath expr="//div[@data-selector='#wrapwrap > header nav.navbar .navbar-brand img']" position="attributes">
+			<attribute name="data-selector">#wrapwrap > header .navbar-brand img</attribute>
+		</xpath> -->
+	</template>
+
+	<template id="icon_selector_inherit" inherit_id="web_editor.snippet_options">
+		<xpath expr="//div[@data-js='ReplaceMedia']" position="attributes">
+			<attribute name="data-selector">img, .media_iframe_video, span.fa, i.fa, .lnr, .icon, .icofont, .lni, .ri, .ti</attribute>
+		</xpath>
+
+		<xpath expr="//div[@data-js='FontawesomeTools']" position="attributes">
+			<attribute name="data-selector">span.fa, i.fa, .lnr, .icon, .icofont, .lni, .ri, .ti</attribute>
+		</xpath>
+		
+		<xpath expr="//div[@data-selector='span.fa, i.fa, img']" position="attributes">
+			<attribute name="data-selector">span.fa, i.fa, img, .lnr, .icon, .icofont, .lni, .ri, .ti</attribute>
+		</xpath>
+	</template>
+
+</odoo>

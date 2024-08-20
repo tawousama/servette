@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_homepage_three_team_section"
+		name="Team block with parallex">
+		<section class="s_furniture_team_section">
+			<section class="title-box"
+				style="background-image: url(/theme_decor/static/src/img/6.jpg);">
+				<div class="container custom">
+					<div class="sec-title light text-center">
+						<h2>OUR CREWS</h2>
+						<div class="text">The Love Boat promises something for everyone so
+							join us
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="content-box">
+				<div class="container custom">
+					<div class="row clearfix">
+						<div
+							class="team-block col-lg-3 col-md-6 col-sm-6 wow fadeInDown">
+							<div class="inner-box">
+								<div class="image-box">
+									<figure class="image">
+										<img src="/theme_decor/static/src/img/team-1.jpg"
+											alt="" class="img img-fluid"/>
+									</figure>
+								</div>
+								<div class="overlay-box">
+									<ul class="social-links">
+										<li>
+											<a href="#">
+												<span class="fa fa-facebook-f"></span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="fa fa-twitter"></span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="fa fa-linkedin"></span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="info-box">
+									<h4 class="name">
+										<a href="#">James Watson</a>
+									</h4>
+									<span class="designation">Interior Designer</span>
+								</div>
+							</div>
+						</div>
+						<div
+							class="team-block col-lg-3 col-md-6 col-sm-6 wow fadeInUp"
+							data-wow-delay="600ms">
+							<div class="inner-box">
+								<div class="image-box">
+									<figure class="image">
+										<img src="/theme_decor/static/src/img/team-2.jpg"
+											alt="" class="img img-fluid"/>
+									</figure>
+								</div>
+								<div class="overlay-box">
+									<ul class="social-links">
+										<li>
+											<a href="#">
+												<span class="fa fa-facebook-f"></span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="fa fa-twitter"></span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="fa fa-linkedin"></span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="info-box">
+									<h4 class="name">
+										<a href="#">Sasha wilson</a>
+									</h4>
+									<span class="designation">Decorator</span>
+								</div>
+							</div>
+						</div>
+						<div
+							class="team-block col-lg-3 col-md-6 col-sm-6 wow fadeInDown">
+							<div class="inner-box">
+								<div class="image-box">
+									<figure class="image">
+										<img src="/theme_decor/static/src/img/team-3.jpg"
+											alt="" class="img img-fluid"/>
+									</figure>
+								</div>
+								<div class="overlay-box">
+									<ul class="social-links">
+										<li>
+											<a href="#">
+												<span class="fa fa-facebook"></span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="fa fa-twitter"></span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="fa fa-linkedin"></span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="info-box">
+									<h4 class="name">
+										<a href="#">BECKY Lench</a>
+									</h4>
+									<span class="designation">Exterior Designer</span>
+								</div>
+							</div>
+						</div>
+						<div
+							class="team-block col-lg-3 col-md-6 col-sm-6 wow fadeInUp"
+							data-wow-delay="600ms">
+							<div class="inner-box">
+								<div class="image-box">
+									<figure class="image">
+										<img src="/theme_decor/static/src/img/team-4.jpg"
+											alt="" class="img img-fluid"/>
+									</figure>
+								</div>
+								<div class="overlay-box">
+									<ul class="social-links">
+										<li>
+											<a href="#">
+												<span class="fa fa-facebook"></span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="fa fa-twitter"></span>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<span class="fa fa-linkedin"></span>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="info-box">
+									<h4 class="name">
+										<a href="#">Robert Bellramin</a>
+									</h4>
+									<span class="designation">Marketing Lead</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</template>
+
+</odoo>

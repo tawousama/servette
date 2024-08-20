@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_homepage_three_services-section-two"
+		name="Paragraph with three blocks">
+		<section class="s_furniture_services-section-two">
+			<div class="container custom">
+				<div class="upper-box">
+					<div class="row clearfix">
+						<div class="title-column col-lg-5 col-md-12 col-sm-12">
+							<div class="inner-column">
+								<span class="title">OUR SERVICES</span>
+								<h2>art of EXPLORING interior space</h2>
+							</div>
+						</div>
+
+						<div class="text-column col-lg-7 col-md-12 col-sm-12">
+							<div class="inner-column">
+								<div class="text">The Love Boat promises something for everyone
+									so join us here each week my friends you're sure to of a man
+									named Brady who was busy with three boys offe his own come
+									and knock on our door get a smile from seven fees story of a
+									man named Brady who was busy with three boys offe his own
+									come and knock on our door.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row clearfix">
+					<div
+						class="service-block-two col-lg-4 col-md-12 col-sm-12 wow fadeInUp">
+						<section class="inner-box">
+							<span class="icon fa fa-pencil"></span>
+							<h3>
+								<a href="#">INTERIOR DESIGN</a>
+							</h3>
+							<div class="text">The story of a man named Brady hoo busy with
+								desert islecome right its to knock on our door.
+							</div>
+						</section>
+					</div>
+					<div
+						class="service-block-two col-lg-4 col-md-12 col-sm-12 wow fadeInUp"
+						data-wow-delay="600ms">
+						<section class="inner-box">
+							<span class="icon fa fa-book"></span>
+							<h3>
+								<a href="#">INTERIOR DESIGN</a>
+							</h3>
+							<div class="text">The story of a man named Brady hoo busy with
+								desert islecome right its to knock on our door.
+							</div>
+						</section>
+					</div>
+					<div
+						class="service-block-two col-lg-4 col-md-12 col-sm-12 wow fadeInUp"
+						data-wow-delay="1200ms">
+						<section class="inner-box">
+							<span class="icon fa fa-bar-chart"></span>
+							<h3>
+								<a href="#">INTERIOR DESIGN</a>
+							</h3>
+							<div class="text">The story of a man named Brady hoo busy with
+								desert islecome right its to knock on our door.
+							</div>
+						</section>
+					</div>
+				</div>
+
+				<div class="btn-box">
+					<div class="text">Let’s start talk about your project or idea and
+						find out how we can help you.
+					</div>
+					<a href="#" class="theme-btn btn-style-one">CONTACT US</a>
+				</div>
+			</div>
+		</section>
+
+	</template>
+
+</odoo>

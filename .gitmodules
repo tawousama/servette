@@ -1,0 +1,19 @@
+[submodule "OCA/partner-contact"]
+	path = OCA/partner-contact
+	url = git@github.com:OCA/partner-contact.git
+	branch = 16.0
+
+[submodule "OCA/partner-contact"]
+	path = OCA/partner-contact
+	url = git@github.com:OCA/partner-contact.git
+	branch = 16.0
+
+[submodule "OCA/hr-attendance"]
+	path = OCA/hr-attendance
+	url = git@github.com:OCA/hr-attendance.git
+	branch = 16.0
+
+[submodule "Openfuture-ch/openfuture"]
+	path = Openfuture-ch/openfuture
+	url = git@github.com:Openfuture-ch/openfuture.git
+	branch = master

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_ico_block_two" name="Icons Block Two">
+		<section class="accesories-features pt32">
+			<div class="container extended-container">
+				<div class="row service-section ">
+					<div class="col-md-6 col-xl-3 mb-4 ">
+						<div class="feature-box text-center">
+							<div class="service-image">
+								<span class="fa fa-truck fa-4x"></span>
+							</div>
+							<div class="service-info">
+								<h5>Free Shipping</h5>
+								<p>On order above 49$</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-xl-3 mb-4">
+						<div class="feature-box text-center">
+							<div class="service-image">
+								<span class="fa fa-credit-card fa-4x"></span>
+							</div>
+							<div class="service-info">
+								<h5>Secure Payments</h5>
+								<p>With easy installments</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-xl-3 mb-4">
+						<div class="feature-box text-center">
+							<div class="service-image">
+								<span class="fa fa-retweet fa-4x"></span>
+							</div>
+							<div class="service-info">
+								<h5>10-Day Returns</h5>
+								<p>Shop with no worry</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-xl-3 mb-4">
+						<div class="feature-box text-center">
+							<div class="service-image">
+								<span class="fa fa-user fa-4x"></span>
+							</div>
+							<div class="service-info">
+								<h5>24/7 Support</h5>
+								<p>Call anytime anyday</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="s_ico_block_five" name="Icons Block Five">
+      	<div class="oe_structure"/>
+      	<section class="solarmodern-feature-grid pb104 pt104">
+      		<div class="container">
+      			<div class="row align-items-center justify-content-center">
+      				<div class="col-lg-5">
+      					<div class="image mx-xl-4">
+      						<img src="/theme_decor/static/src/img/accesories-grid1.jpg" class="img img-fluid"/>
+      					</div>
+      				</div>
+      				<div class="col-lg-7 mt-3 mt-lg-0">
+      					<div class="row">
+      						<div class="col-md-6 pb64">
+      							<section class="d-flex">
+				            		<div class="icon-box me-3">
+				            			<span class="bg-primary fa fa-3x ri ri-flashlight-line rounded rounded-circle text-white"></span>
+				            		</div>
+				            		<div class="content-box">
+				            			<h5 class="s_number  o_default_snippet_text"><b>Customer Satisfactions</b></h5>
+				              			<p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				            		</div>
+				            	</section>
+      						</div>
+      						<div class="col-md-6 pb64">
+      							<section class="d-flex">
+				            		<div class="icon-box me-3">
+				            			<span class="bg-primary fa fa-3x ri ri-plug-line rounded rounded-circle text-white"></span>
+				            		</div>
+				            		<div class="content-box">
+				            			<h5 class="s_number  o_default_snippet_text"><b>Premium Chairs</b></h5>
+				              			<p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				            		</div>
+				            	</section>
+      						</div>
+      						<div class="col-md-6 pb64">
+      							<section class="d-flex">
+				            		<div class="icon-box me-3">
+				            			<span class="bg-primary fa fa-3x ri ri-lightbulb-line rounded rounded-circle text-white"></span>
+				            		</div>
+				            		<div class="content-box">
+				            			<h5 class="s_number  o_default_snippet_text"><b>Modern Furnitures</b></h5>
+				              			<p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				            		</div>
+				            	</section>
+      						</div>
+      						<div class="col-md-6 pb64">
+      							<section class="d-flex">
+				            		<div class="icon-box me-3">
+				            			<span class="bg-primary fa fa-3x ri ri-hand-heart-line rounded rounded-circle text-white"></span>
+				            		</div>
+				            		<div class="content-box">
+				            			<h5 class="s_number  o_default_snippet_text"><b>Comfortable Designs</b></h5>
+				              			<p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				            		</div>
+				            	</section>
+      						</div>
+      						<div class="col-md-6 pb64">
+      							<section class="d-flex">
+				            		<div class="icon-box me-3">
+				            			<span class="bg-primary fa fa-3x ri ri-settings-4-line rounded rounded-circle text-white"></span>
+				            		</div>
+				            		<div class="content-box">
+				            			<h5 class="s_number  o_default_snippet_text"><b>Full Maintenance</b></h5>
+				              			<p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				            		</div>
+				            	</section>
+      						</div>
+      						<div class="col-md-6 pb64">
+      							<section class="d-flex">
+				            		<div class="icon-box me-3">
+				            			<span class="bg-primary fa fa-3x ri ri-home-8-line rounded rounded-circle text-white"></span>
+				            		</div>
+				            		<div class="content-box">
+				            			<h5 class="s_number  o_default_snippet_text"><b>Instant Installation</b></h5>
+				              			<p class="o_default_snippet_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				            		</div>
+				            	</section>
+      						</div>
+      					</div>
+      				</div>
+      			</div>
+      		</div>
+      	</section>
+      	<div class="oe_structure"/>
+	</template>
+</odoo>

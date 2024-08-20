@@ -1,0 +1,306 @@
+<odoo>
+    <record id="prestashop_instance_dashboard_kanban" model="ir.ui.view">
+        <field name="name">prestashop.dashboard.kanban</field>
+        <field name="model">prestashop.shop</field>
+        <field name="arch" type="xml">
+            <kanban class="oe_background_grey o_kanban_dashboard o_salesteam_kanban" create="false">
+<!--                    js_class="PrestashopOnBoardingToggle" banner_route="/presta/prestashop_onboarding_panel_custom">-->
+                <field name="name"/>
+                <field name="color"/>
+                <field name="prestashop_instance_id"/>
+
+                <templates>
+                    <t t-name="kanban-box">
+                        <div t-attf-class="#{kanban_color(record.color.raw_value)} record_dashboard_gt">
+                            <div class="o_kanban_card_header">
+                                <div class="o_kanban_card_header_title">
+                                    <div class="o_primary mb4">
+                                        <span>
+                                            <t t-esc="record.name.value"/>
+                                        </span>
+                                    </div>
+
+                                    <div>
+                                        <button name='show_prestashop_instance' data-toggle="tooltip"
+                                                data-placement="left" t-att-title="record.prestashop_instance_id.value"
+                                                class="btn border prestashop_instance_name_text_overflow_btn"
+                                                type="object"
+                                                style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;width: 30%;border-radius: 5px;">
+                                            <span>
+                                                <t t-esc="record.prestashop_instance_id.value"/>
+                                            </span>
+                                            <span class="ml-1">
+                                                <i class="fa fa-caret-right" aria-label=" Prestashop Instance"
+                                                   title="Instance"></i>
+                                            </span>
+                                        </button>
+
+                                        <button name="show_prestashop_store"
+                                                class="btn border prestashop_instance_name_text_overflow_btn"
+                                                type="object"
+                                                style="white-space: nowrap;overflow: hidden;text-overflow: ellipsis;border-radius: 5px;">
+                                            <span>Prestashop Store Views</span>
+                                            <span class="ml-1">
+                                                <span class="ml-1">
+                                                    <i class="fa fa-caret-right" aria-label="Storeview"
+                                                       title="Storeview"></i>
+                                                </span>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="o_kanban_manage_button_section">
+                                        <a class="o_kanban_manage_toggle_button" href="#">
+                                            <i class="fa fa-ellipsis-v" aria-label="Selection"
+                                               role="img" title="Selection"/>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <field name="prestashop_order_data"
+                                           graph_type="line" widget="gt_dashboard_graph"/>
+                                </div>
+                                <div class="container o_kanban_card_manage_pane dropdown-menu" role="menu">
+                                    <div class="row">
+                                        <div class="col-xs-3 o_kanban_card_manage_section o_kanban_manage_view">
+                                            <div role="menuitem" class="o_kanban_card_manage_title">
+                                                <span>Products</span>
+                                            </div>
+                                            <div role="menuitem">
+                                                <a name="gt_prestashop_product_exported" type="object" title="Exported">
+                                                    Exported
+                                                </a>
+                                            </div>
+                                            <div role="menuitem">
+                                                <a name="gt_prestashop_product_not_exported"
+                                                   type="object" title="Not Exported Products">Not Exported
+                                                </a>
+                                            </div>
+                                            <div role="menuitem">
+                                                <a name="gt_prestashop_product_all_exported"
+                                                   type="object" title="All Products">All Products
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3 o_kanban_card_manage_section o_kanban_manage_view">
+                                            <div role="menuitem" class="o_kanban_card_manage_title">
+                                                <span>Sales</span>
+                                            </div>
+                                            <div role="menuitem">
+                                                <a name="gt_magento_action_sales_quotations"
+                                                   type="object" title="Quotations">Quotations
+                                                </a>
+                                            </div>
+                                            <div role="menuitem">
+                                                <a name="gt_magento_action_sales_order"
+                                                   type="object" title="Sale Orders">Sale Orders
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3 o_kanban_card_manage_section o_kanban_manage_new">
+                                            <div role="menuitem" class="o_kanban_card_manage_title">
+                                                <span>Delivery</span>
+                                            </div>
+                                            <div role="menuitem">
+                                                <a name="gt_prestashop_waiting_stock_picking"
+                                                   type="object" title="Waiting Availability">Waiting Availability
+                                                </a>
+                                            </div>
+                                            <div role="menuitem">
+                                                <a name="gt_prestashop_waiting_available_stock_picking"
+                                                   type="object" title="Waiting Availability">Partially Available
+                                                </a>
+                                            </div>
+                                            <div role="menuitem">
+                                                <a name="gt_ready_stock_picking"
+                                                   type="object" title="Ready to Transfer">Ready to Transfer
+                                                </a>
+                                            </div>
+                                            <div role="menuitem">
+                                                <a name="gt_transferred_stock_picking"
+                                                   type="object" title="Transferred">Transferred
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="col-xs-3 o_kanban_card_manage_section o_kanban_manage_view">
+                                            <div role="menuitem" class="o_kanban_card_manage_title">
+                                                <span>Invoices</span>
+                                            </div>
+                                            <div role="menuitem">
+                                                <a name="gt_invoice_invoices_open" type="object" title="Open">Open</a>
+                                            </div>
+                                            <div role="menuitem">
+                                                <a name="gt_invoice_invoices_paid" type="object" title="Paid">
+                                                    Paid
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </t>
+                </templates>
+
+<!--                <templates>-->
+<!--                    <t t-name="kanban-box">-->
+<!--                        <div t-attf-class="#{kanban_color(0)}">-->
+<!--                            <t t-value="JSON.parse(record.presta_kanban_dashboard.raw_value)" t-set="dashboard"/>-->
+<!--                            <div class="o_kanban_card_header">-->
+<!--                                <div class="o_kanban_card_header_title">-->
+<!--                                    <div class="o_primary">-->
+<!--                                        <field name="name"/>-->
+<!--                                    </div>-->
+<!--                                    <div class="o_secondary">-->
+<!--                                        <field name="company_id"/>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="container o_kanban_card_content o_visible">-->
+<!--                                <div class="row">-->
+<!--                                    <div class="col-xs-6 o_kanban_primary_left">-->
+<!--                                        <button class="btn btn-primary" name="%(action_amazon_operation)d"-->
+<!--                                                type="action" context='{"from_import":True}'>Import-->
+<!--                                        </button>-->
+<!--                                        <button class="btn btn-primary" name="%(action_amazon_operation)d"-->
+<!--                                                type="action" context='{"from_update":True}'>Update-->
+<!--                                        </button>-->
+<!--                                        <button class="btn btn-primary" name="%(action_amazon_operation)d"-->
+<!--                                                type="action" context='{"from_export":True}'>Export-->
+<!--                                        </button>-->
+
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div class="container o_kanban_card_manage_pane o_visible">-->
+<!--                                <div class="row">-->
+
+<!--                                    <div-->
+<!--                                            class="col-xs-4 o_kanban_card_manage_section o_kanban_manage_new">-->
+<!--                                        <div class="o_kanban_card_manage_title" t-if="dashboard.all_invoice">-->
+<!--                                            <span>Invoices</span>-->
+<!--                                        </div>-->
+
+<!--                                        <div>-->
+<!--                                            <div t-if="dashboard.all_invoice" class="row">-->
+<!--                                                <div class="col-xs-9">-->
+<!--                                                    <a type="object" name="action_view_all_invoice">All Invoice</a>-->
+<!--                                                </div>-->
+<!--                                                <div class="col-xs-3 text-right">-->
+<!--                                                    <t t-esc="dashboard.all_invoice"/>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+
+<!--                                            <div t-if="dashboard.pending_invoice" class="row">-->
+
+<!--                                                <div class="col-xs-9">-->
+<!--                                                    <a type="object" name="action_view_pending_invoice">Pending-->
+<!--                                                        Invoice-->
+<!--                                                    </a>-->
+<!--                                                </div>-->
+<!--                                                <div class="col-xs-3 text-right">-->
+<!--                                                    <t t-esc="dashboard.pending_invoice"/>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+
+<!--                                            <div t-if="dashboard.complete_invoice" class="row">-->
+
+<!--                                                <div class="col-xs-9">-->
+<!--                                                    <a type="object" name="action_view_complete_invoice">Completed-->
+<!--                                                        Invoice-->
+<!--                                                    </a>-->
+<!--                                                </div>-->
+<!--                                                <div class="col-xs-3 text-right">-->
+<!--                                                    <t t-esc="dashboard.complete_invoice"/>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+
+<!--                                            <div t-if="dashboard.draft_invoice" class="row">-->
+
+<!--                                                <div class="col-xs-9">-->
+<!--                                                    <a type="object" name="action_view_draft_invoice">Draft Invoice</a>-->
+<!--                                                </div>-->
+<!--                                                <div class="col-xs-3 text-right">-->
+<!--                                                    <t t-esc="dashboard.draft_invoice"/>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+
+<!--                                            <div t-if="dashboard.cancel_invoice" class="row">-->
+
+<!--                                                <div class="col-xs-9">-->
+<!--                                                    <a type="object" name="action_view_cancel_invoice">Cancel Invoice-->
+<!--                                                    </a>-->
+<!--                                                </div>-->
+<!--                                                <div class="col-xs-3 text-right">-->
+<!--                                                    <t t-esc="dashboard.cancel_invoice"/>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+
+
+<!--                                    <div class="col-xs-4 o_kanban_card_manage_section o_kanban_manage_reports">-->
+<!--                                        <div class="o_kanban_card_manage_title" t-if="dashboard.all_stock">-->
+<!--                                            <span>Delivery Orders</span>-->
+<!--                                        </div>-->
+
+<!--                                        <div>-->
+<!--                                            <div t-if="dashboard.all_stock" class="row">-->
+<!--                                                <div class="col-xs-9">-->
+<!--                                                    <a type="object" name="action_view_all_stock">All Delivery</a>-->
+<!--                                                </div>-->
+<!--                                                <div class="col-xs-3 text-right">-->
+<!--                                                    <t t-esc="dashboard.all_stock"/>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+
+<!--                                            <div t-if="dashboard.pending_stock" class="row">-->
+
+<!--                                                <div class="col-xs-9">-->
+<!--                                                    <a type="object" name="action_view_pending_stock">Pending Delivery-->
+<!--                                                    </a>-->
+<!--                                                </div>-->
+<!--                                                <div class="col-xs-3 text-right">-->
+<!--                                                    <t t-esc="dashboard.pending_stock"/>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+
+<!--                                            <div t-if="dashboard.complete_stock" class="row">-->
+
+<!--                                                <div class="col-xs-9">-->
+<!--                                                    <a type="object" name="action_view_complete_stock">Completed-->
+<!--                                                        Delivery-->
+<!--                                                    </a>-->
+<!--                                                </div>-->
+<!--                                                <div class="col-xs-3 text-right">-->
+<!--                                                    <t t-esc="dashboard.complete_stock"/>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </t>-->
+<!--                </templates>-->
+            </kanban>
+
+        </field>
+    </record>
+
+    <record id="open_prestashop_instance_kanban" model="ir.actions.act_window">
+        <field name="name">Instance Dashboard</field>
+        <field name="res_model">prestashop.shop</field>
+        <!--         <field name="view_type">form</field>
+         -->
+        <field name="view_mode">kanban,form</field>
+        <field name="usage">menu</field>
+    </record>
+
+
+</odoo>

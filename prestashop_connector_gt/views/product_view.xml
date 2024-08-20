@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <!--     <record id="view_amazon_product_product_tree_inherits" model="ir.ui.view">-->
+        <!--            <field name="name">prestashop.product.template.tree.inherit</field>-->
+        <!--            <field name="model">product.template</field>-->
+        <!--            <field name="inherit_id" ref="product.product_template_only_form_view"/>-->
+        <!--            <field name="arch" type="xml">-->
+        <!--                <field name = "default_code" position="replace">-->
+        <!--                    <field name="default_code" invisible="1"></field>-->
+        <!--                    <field name="sku" attrs="{'invisible':[('default_code','!=',False)]}"></field>-->
+        <!--                </field>-->
+
+        <!--            </field>-->
+        <!--        </record>-->
+        <!-- Product Tree View -->
+        <record id="view_amazon_product_product_form_inherits" model="ir.ui.view">
+            <field name="name">product.template</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//page[4]" position="after">
+                    <page string="Attributes">
+                        <group>
+                            <group string="Généralités">
+                                <field name="product_to_be_exported" readonly="1"/>
+                                <field name='product_to_be_updated'/>
+                                <field name="categ_id" domain="[('presta_id','!=',False)]" required="1"/>
+                                <field name="list_price"/>
+                                <field name="wholesale_price"/>
+                                <field name="show_price"/>
+                                <field name="presta_id"/>
+                                <field name="condition"/>
+                                <field name="prest_active" invisible="1"/>
+                                <field name="manufacturer_id" domain="[('manufacturer','=',True)]"/>
+                                <!--<group>-->
+                                <!--<field name="product_description" readonly="1"/>-->
+                                <!--</group>-->
+                                <field name="supplier_id" domain="[('supplier_rank','=',1)]" invisible="1"/>
+                                <field name="tax_group_id"/>
+
+                                <field name="product_onsale" invisible="0"/>
+                                <field name="product_instock" invisible="1"/>
+                                <field name="prd_type_name" invisible="1"/>
+                                <!--<field name="product_description" readonly="1"/>-->
+
+                                <field name="prest_img_id" invisible="1"/>
+                            </group>
+                            <group>
+                                <separator colspan="4" string="Product Dimension"/>
+                                <field name="product_lngth" string="Prestashop Length"/>
+                                <field name="product_width" string="Prestashop Width"/>
+                                <field name="product_wght" string="Prestashop Weight"/>
+                                <field name="product_hght" string="Prestashop Height"/>
+                                <field name="prd_label" invisible='1'/>
+
+                                <separator colspan="4" string="Meta"/>
+                                <field name="website_meta_title"/>
+                                <field name="website_meta_description"/>
+                                <field name="website_meta_keywords"/>
+                                <field name="seo_name"/>
+                                <field name="website_published"/>
+                                <!--                                <group string="Product Dimension">-->
+                                <!--                                    <field name="product_lngth" string="Prestashop Length"/>-->
+                                <!--                                    <field name="product_width" string="Prestashop Width"/>-->
+                                <!--                                    <field name="product_wght" string="Prestashop Weight"/>-->
+                                <!--                                    <field name="product_hght" string="Prestashop Height"/>-->
+                                <!--                                    <field name="prd_label" invisible='1'/>-->
+                                <!--                                </group>-->
+                                <!--                                <group string="Meta">-->
+                                <!--                                    <field name="website_meta_title"/>-->
+                                <!--                                    <field name="website_meta_description"/>-->
+                                <!--                                    <field name="website_meta_keywords"/>-->
+                                <!--                                    <field name="seo_name"/>-->
+                                <!--                                    <field name="website_published"/>-->
+                                <!--                                </group>-->
+                            </group>
+
+                        </group>
+                        <!--<group>-->
+                        <!--<field name="shop_ids" readonly="1"/>-->
+                        <!--</group>-->
+                        <group>
+                            <separator colspan="4" string="Product Images"/>
+                            <field name="product_img_ids"/>
+                            <field name="product_list_id" invisible="1">
+
+                            </field>
+                            <field name="prestashop_product" invisible="1"/>
+                        </group>
+                        <group>
+                            <separator colspan="4" string="Description"/>
+                            <field name="website_description"/>
+                            <field name="video_url" widget="url"/>
+                        </group>
+                        <group>
+                            <separator colspan="4" string="Prestashop Shops"/>
+                            <field name="tmpl_shop_ids"/>
+                        </group>
+                        <notebook>
+                            <page string="Summary">
+                                <field name="summary"/>
+                            </page>
+                            <page string="Extra Fields">
+                                <group>
+                                    <field name="sp_eacute_specifications_techniques"/>
+                                    <field name="demande_catalogue"/>
+                                </group>
+
+                            </page>
+                            <page string="Catègories Prestashop">
+                                <field name="product_category_ids" widget="many2many_checkboxes" nolabel="1"/>
+                            </page>
+                        </notebook>
+                    </page>
+                </xpath>
+
+                <xpath expr="//field[@name='categ_id']" position="replace">
+                    <field name="odoo_categ_id"/>
+                    <field name="categ_id" domain="[('presta_id','!=',True)]" invisible="1"/>
+                </xpath>
+                <xpath expr="//page[@name='general_information']" position="after">
+                    <page name="product_spec" string="Specifications">
+                        <field name="product_spec_ids">
+                            <tree editable="bottom">
+                                <field name="feature" required="1"/>
+                                <!--                                <field name="feature_value"/>-->
+                                <field name="feature_value" domain="[('feature_id','=',feature)]" required="1"
+                                       context="{'default_feature':feature}"/>
+                            </tree>
+                        </field>
+                    </page>
+                </xpath>
+
+
+            </field>
+        </record>
+
+        <!--<record id="view_product_template_filter_inherit" model="ir.ui.view">-->
+        <!--<field name="name">product.template.inherit</field>-->
+        <!--<field name="model">product.template</field>-->
+        <!--<field name="inherit_id" ref="base.view_res_partner_filter"/>-->
+        <!--<field name="type">search</field>-->
+        <!--<field name="arch" type="xml">-->
+        <!--<xpath expr="//group/filter[3]" position="after">-->
+        <!--<filter string="Products To be Exported" domain="[('manufacturer','=',True)]" name="my_manufacturer_filter"/>-->
+        <!--</xpath>-->
+        <!---->
+        <!--</field>-->
+        <!--</record>-->
+
+
+        <record id="presta_product_template_form" model="ir.ui.view">
+            <field name="name">presta.product.template.form</field>
+            <field name="model">product.template</field>
+            <field name="inherit_id" ref="product.product_template_only_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//div[@name='button_box']" position="inside">
+                    <button name="action_get_shop_product"
+                            type="object"
+                            class="oe_stat_button"
+                            icon="fa-pencil-square-o"
+                            attrs="{'invisible': [('product_shop_count', '&lt;', 1)]}"
+                    >
+                        <field name="product_shop_count" widget="statinfo"/>
+                        <field name="prestashop_product_template_id"/>
+
+                    </button>
+                </xpath>
+                <xpath expr="//field[@name='barcode']" position="after">
+                    <field name="prestashop_product_template_id"/>
+                </xpath>
+
+
+            </field>
+        </record>
+
+
+        <record id="attribute_tree_view_inherit" model="ir.ui.view">
+            <field name="name">product.attribute.tree</field>
+            <field name="model">product.attribute</field>
+            <field name="arch" type="xml">
+                <tree string="Variant Values">
+                    <field name="sequence" widget="handle"/>
+                    <field name="name"/>
+                    <field name="presta_id" readonly="1"/>
+                    <!--<field name="shop_ids" readonly="1"/>-->
+                </tree>
+            </field>
+        </record>
+
+
+        <record id="attribute_form_view_inherit" model="ir.ui.view">
+            <field name="name">product.attribute.form.new</field>
+            <field name="model">product.attribute</field>
+            <field name="arch" type="xml">
+                <form string="Variant Values">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="presta_id" readonly="1"/>
+
+                                <field name="sequence"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <!--<page string="shops">-->
+                            <!--<group>-->
+                            <!--<field name="shop_ids" readonly="1"/>-->
+                            <!--</group>-->
+                            <!--</page>-->
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="attribute_action_inherit" model="ir.actions.act_window">
+            <field name="name">Attributes</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.attribute</field>
+            <field name="view_mode">form,tree</field>
+            <!--             <field name="view_type">form</field>
+             -->
+            <field name="domain">[('presta_id', '!=', False)]</field>
+            <field name="view_id" ref="attribute_tree_view_inherit"/>
+        </record>
+
+
+        <!-- <record id="variants_tree_view_inherit" model="ir.ui.view">
+            <field name="name">product.attribute.value.tree</field>
+            <field name="model">product.attribute.value</field>
+            <field name="inherit_id" ref="product.variants_tree_view"/>
+            <field name="arch" type="xml">
+                <tree string="Variant Values">
+                    <field name="presta_id" readonly="1"/> -->
+        <!--<field name="shop_ids" readonly="1"/>-->
+        <!-- </tree>
+    </field>
+</record> -->
+
+        <!--form view created-->
+        <record id="variants_form_view_inherit" model="ir.ui.view">
+            <field name="name">product.attribute.value.form</field>
+            <field name="model">product.attribute.value</field>
+            <!--<field name="inherit_id" ref="product.variants_tree_view"/>-->
+            <field name="arch" type="xml">
+                <form string="Variant Values">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="attribute_id"/>
+                                <!-- <field name="price_extra"/> by me-->
+                            </group>
+                            <group>
+                                <field name="name"/>
+                                <field name="presta_id" readonly="1"/>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="sequence"/>
+                            <!-- <field name="price_ids"/>by me -->
+                            <!-- <field name="product_ids"/> by me-->
+                        </group>
+                        <notebook>
+                            <!--<page string="shops">-->
+                            <!--<group>-->
+                            <!--<field name="shop_ids" readonly="1"/>-->
+                            <!--</group>-->
+                            <!--</page>-->
+
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="variants_action_inherit" model="ir.actions.act_window">
+            <field name="name">Attribute Values</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.attribute.value</field>
+            <!--<field name="domain">[('presta_id','=','presta_id.id')]</field>-->
+            <field name="domain">[('presta_id', '!=', False)]</field>
+            <field name="view_mode">tree,form</field>
+            <!--             <field name="view_type">form</field>
+             -->           <!--  <field name="view_id" ref="variants_tree_view_inherit"/> -->
+        </record>
+
+
+        <record id="product_feature_form" model="ir.ui.view">
+            <field name="name">product_feature_form</field>
+            <field name="model">product.feature</field>
+            <!--<field name="inherit_id" ref="product.variants_tree_view"/>-->
+            <field name="arch" type="xml">
+                <form string="Product Features">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="position"/>
+                            </group>
+                            <group>
+                                <!--                                <field name="attribute_id"/>-->
+                                <field name="presta_id" readonly="1"/>
+                                <!-- <field name="price_extra"/> by me-->
+                            </group>
+
+                        </group>
+                        <group>
+                            <!--                            <field name="sequence"/>-->
+                            <!-- <field name="price_ids"/>by me -->
+                            <!-- <field name="product_ids"/> by me-->
+                        </group>
+                        <notebook>
+                            <page name="feature_values" string="Values">
+                                <field name="features_value_ids">
+                                    <tree editable="1">
+                                        <field name="name"/>
+                                        <field name="feature_id"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <!--<page string="shops">-->
+                            <!--<group>-->
+                            <!--<field name="shop_ids" readonly="1"/>-->
+                            <!--</group>-->
+                            <!--</page>-->
+
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+
+        <record id="product_feature_action_inherit" model="ir.actions.act_window">
+            <field name="name">Product Feature</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.feature</field>
+            <!--<field name="domain">[('presta_id','=','presta_id.id')]</field>-->
+            <field name="domain">[('presta_id', '!=', False)]</field>
+            <field name="view_mode">tree,form</field>
+            <!--             <field name="view_type">form</field>
+             -->           <!--  <field name="view_id" ref="variants_tree_view_inherit"/> -->
+        </record>
+
+
+        <record id="product_feature_value_form" model="ir.ui.view">
+            <field name="name">product_feature_value_form</field>
+            <field name="model">product.feature.value</field>
+            <!--<field name="inherit_id" ref="product.variants_tree_view"/>-->
+            <field name="arch" type="xml">
+                <form string="Product Features Value">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="feature_id"/>
+                            </group>
+                            <group>
+                                <!--                                <field name="attribute_id"/>-->
+                                <field name="presta_id" readonly="1"/>
+                                <!-- <field name="price_extra"/> by me-->
+                            </group>
+
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="product_feature_value_action_inherit" model="ir.actions.act_window">
+            <field name="name">Product Feature Value</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.feature.value</field>
+            <!--<field name="domain">[('presta_id','=','presta_id.id')]</field>-->
+            <field name="domain">[('presta_id', '!=', False)]</field>
+            <field name="view_mode">tree,form</field>
+            <!--             <field name="view_type">form</field>
+             -->           <!--  <field name="view_id" ref="variants_tree_view_inherit"/> -->
+        </record>
+
+
+        <!--variants-->
+        <!-- <record id="product_product_tree_view" model="ir.ui.view">
+            <field name="name">product.product.tree</field>
+            <field name="model">product.product</field>
+            <field eval="7" name="priority"/>
+            <field name="arch" type="xml">
+                <tree string="Product Variants">
+                    <field name="default_code"/>
+                    <field name="name"/>
+                    <field name="attribute_value_ids" widget="many2many_tags" groups="product.group_product_variant"/>
+                    <field name="lst_price"/>
+                    <field name="combination_id"/>
+                    <field name="combination_price"/>
+                    <field name="price" invisible="not context.get('pricelist',False)"/>
+                    <field name="uom_id" options="{'no_open': True, 'no_create': True}"/>
+                    <field name="barcode"/>
+                    <field name="state" invisible="1"/>
+                    <field name="product_tmpl_id" invisible="1"/>
+                </tree>
+            </field>
+        </record> -->
+
+        <record id="product_product_tree_view" model="ir.ui.view">
+            <field name="name">product.product.tree</field>
+            <field name="model">product.product</field>
+            <field eval="7" name="priority"/>
+            <field name="arch" type="xml">
+
+                <tree string="Product Variants">
+                    <field name="default_code"/>
+                    <field name="name"/>
+                    <field name="product_template_attribute_value_ids" widget="many2many_tags"
+                           groups="product.group_product_variant"/>
+                    <field name="combination_id"/>
+                    <field name="combination_price"/>
+                    <field name="lst_price"/>
+                    <!--                    <field name="price" invisible="not context.get('pricelist',False)"/>-->
+                    <field name="uom_id" options="{'no_open': True, 'no_create': True}" groups="uom.group_uom"/>
+                    <field name="barcode"/>
+                    <field name="product_tmpl_id" invisible="1"/>
+                    <field name="active" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+
+        <!--<record id="product_product_tree_view" model="ir.ui.view">-->
+        <!--<field name="name">product.product.tree</field>-->
+        <!--<field name="model">product.product</field>-->
+        <!--<field eval="7" name="priority"/>-->
+        <!--<field name="arch" type="xml">-->
+
+        <!--<tree string="Product Variants">-->
+        <!--<field name="default_code"/>-->
+        <!--<field name="name"/>-->
+        <!--&lt;!&ndash;<field name="presta_id" readonly="1"/>&ndash;&gt;-->
+        <!--<field name="attribute_value_ids" widget="many2many_tags" groups="product.group_product_variant"/>-->
+        <!--<field name="lst_price"/>-->
+        <!--<field name="combination_id"/>-->
+        <!--<field name="combination_price"/>-->
+        <!--<field name="price" invisible="not context.get('pricelist',False)"/>-->
+        <!--<field name="uom_id" options="{'no_open': True, 'no_create': True}"/>-->
+        <!--<field name="state" invisible="1"/>-->
+        <!--<field name="product_tmpl_id" invisible="1"/>-->
+        <!--</tree>-->
+        <!--</field>-->
+        <!--</record>-->
+
+        <record id="product_normal_inherit_form_view" model="ir.ui.view">
+            <field name="name">product.product.form</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_normal_form_view"/>
+            <field name="arch" type="xml">
+
+                <xpath expr="//field[@name='barcode']" position="after">
+                    <field name="prestashop_product_id"/>
+                </xpath>
+            </field>
+
+        </record>
+
+
+        <record id="product_normal_form_view" model="ir.ui.view">
+            <field name="name">product.product.form</field>
+            <field name="model">product.product</field>
+            <field name="mode">primary</field>
+            <field eval="7" name="priority"/>
+            <field name="inherit_id" ref="product.product_template_form_view"/>
+            <field name="arch" type="xml">
+                <form position="attributes">
+                    <attribute name="string">Product Variant</attribute>
+                </form>
+                <field name="type" position="after">
+                    <field name="default_code"/>
+                    <field name="barcode"/>
+                </field>
+                <field name="list_price" position="attributes">
+                    <!--                   <attribute name="name">lst_price</attribute>-->
+                    <attribute name="attrs">{'readonly': [('product_variant_count', '&gt;', 1)]}</attribute>
+                </field>
+                <group name="packaging" position="attributes">
+                    <attribute name="attrs">{'invisible': 0}</attribute>
+                </group>
+                <field name="name" position="after">
+                    <field name="product_tmpl_id" class="oe_inline" readonly="1" invisible="1"
+                           attrs="{'required': [('id', '!=', False)]}"/>
+                </field>
+                <!-- <field name="item_ids" position="inside">
+                    <field name="pricelist_item_ids" widget="many2many">
+                        <tree string="Pricelist Items">
+                            <field name="pricelist_id"/>
+                            <field name="name" string="Applicable On"/>
+                            <field name="min_quantity"/>
+                            <field name="date_start"/>
+                            <field name="date_end"/>
+                            <field name="price" string="Price"/>
+                            <field name="base" invisible="1"/>
+                            <field name="sequence" invisible="1"/>
+                            <field name="price_discount" invisible="1"/>
+                            <field name="applied_on" invisible="1"/>
+                            <field name="compute_price" invisible="1"/>
+                        </tree>
+                    </field>
+                </field> -->
+                <xpath expr="//div[hasclass('oe_title')]" position="inside">
+                    <field name="product_template_attribute_value_ids" widget="many2many_tags"
+                           groups="product.group_product_variant"/>
+                </xpath>
+                <xpath expr="//field[@name='list_price']" position="before">
+                    <field name="combination_price"/>
+                </xpath>
+
+            </field>
+        </record>
+
+        <!-- <record id="product_kanban_view" model="ir.ui.view">
+            <field name="name">Product Kanban</field>
+            <field name="model">product.product</field>
+            <field name="arch" type="xml">
+                <kanban>
+                    <field name="image_1920"/>
+                    <field name="lst_price"/>
+                    <templates>
+                        <t t-name="kanban-box">
+                            <div class="oe_kanban_global_click">
+                                <div class="o_kanban_tags_section">
+                                    <field name="product_template_attribute_value_ids" groups="product.group_product_variant"/>
+                                </div>
+                                <div class="o_kanban_image">
+                                    <img t-att-src="kanban_image('product.product', 'image_small', record.id.value)"/>
+                                </div>
+                                <div class="oe_kanban_details">
+                                    <strong><field name="name"/></strong>
+                                    <ul>
+                                        <li>Price: <field name="lst_price"></field></li>
+                                    </ul>
+                                    <div name="tags"/>
+                                </div>
+                            </div>
+                        </t>
+                    </templates>
+                </kanban>
+            </field>
+        </record> -->
+
+        <record id="action_product_variants" model="ir.actions.act_window">
+            <field name="name">Product Variants</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.product</field>
+            <!--             <field name="view_type">form</field>
+             -->
+            <field name="view_mode">tree,form,kanban</field>
+            <!--<field name="search_view_id" ref="product_search_form_view"/>-->
+            <field name="search_view_id" ref="product_product_tree_view"/>
+            <field name="view_id" ref="product_product_tree_view"/>
+            <!--<field name="domain">[('presta_id', '!=', False)]</field>-->
+        </record>
+
+
+        <record id="view_prestashopproduct_category_form" model="ir.ui.view">
+            <field name="name">productproduct.category</field>
+            <field name="model">product.category</field>
+            <field name="inherit_id" ref="product.product_category_form_view"/>
+            <field name="type">tree</field>
+            <field name="arch" type="xml">
+                <xpath expr="//group[@name ='first']" position="after">
+                    <group col="4" name="prestashop" string="Prestashop">
+                        <field name="presta_id"/>
+                        <field name="shop_ids" widget="many2many_tags"/>
+                        <field name="to_be_exported"/>
+                        <field name="friendly_url"/>
+                        <field name="meta_title"/>
+                        <field name="meta_description"/>
+                        <field name="is_presta" invisible="1"/>
+                    </group>
+                </xpath>
+            </field>
+        </record>
+        <record id="preatashop_category_action_inherit" model="ir.actions.act_window">
+            <field name="name">Categories</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">product.category</field>
+            <field name="view_mode">form,tree</field>
+            <field name="context">{"default_is_presta": True,}</field>
+            <field name="domain">[('is_presta', '=', True)]</field>
+            <field name="view_id" ref="attribute_tree_view_inherit"/>
+        </record>
+
+        <record id="action_update_prestashop_product" model="ir.actions.server">
+            <field name="name">Update product on Prestashop</field>
+            <field name="model_id" ref="model_product_template"/>
+            <field name="binding_model_id" ref="product.model_product_template"/>
+            <field name="binding_view_types">form</field>
+            <field name="state">code</field>
+            <field name="code">
+                action = record.action_update_prestashop_product()
+            </field>
+        </record>
+        <record id="action_fix_product_image" model="ir.actions.server">
+            <field name="name">Fix Product default img presta ID</field>
+            <field name="model_id" ref="model_product_template"/>
+            <field name="binding_model_id" ref="product.model_product_template"/>
+            <field name="binding_view_types">form</field>
+            <field name="state">code</field>
+            <field name="code">
+                action = record.action_fix_product_image()
+            </field>
+        </record>
+        <record id="action_export_product_to_prestashop" model="ir.actions.server">
+            <field name="name">Export product to Prestashop</field>
+            <field name="model_id" ref="model_product_template"/>
+            <field name="binding_model_id" ref="product.model_product_template"/>
+            <field name="binding_view_types">form</field>
+            <field name="state">code</field>
+            <field name="code">
+                action = record.action_export_to_prestashop()
+            </field>
+        </record>
+
+        <record id="product.product_template_search_view" model="ir.ui.view">
+            <field name="name">product.template.search.inherit</field>
+            <field name="model">product.template</field>
+            <!--            <field name="inherit_id" ref="product.product_template_search_view"/>-->
+            <field name="arch" type="xml">
+                <search string="Product">
+                    <field name="name" string="Product"
+                           filter_domain="['|', '|', '|', ('default_code', 'ilike', self), ('product_variant_ids.default_code', 'ilike', self),('name', 'ilike', self), ('barcode', 'ilike', self)]"/>
+                    <field name="categ_id" filter_domain="[('categ_id', 'child_of', raw_value)]"/>
+                    <field name="odoo_categ_id"/>
+                    <separator/>
+                    <filter string="Services" name="services" domain="[('type','=','service')]"/>
+                    <filter string="Products" name="consumable" domain="[('type', 'in', ['consu', 'product'])]"/>
+                    <separator/>
+                    <filter string="Can be Sold" name="filter_to_sell" domain="[('sale_ok','=',True)]"/>
+                    <filter string="Can be Purchased" name="filter_to_purchase" domain="[('purchase_ok', '=', True)]"/>
+                    <separator/>
+                    <field string="Attributes" name="attribute_line_ids" groups="product.group_product_variant"/>
+                    <filter invisible="1" string="Late Activities" name="activities_overdue"
+                            domain="[('my_activity_date_deadline', '&lt;', context_today().strftime('%Y-%m-%d'))]"
+                            help="Show all records which has next action date is before today"/>
+                    <filter invisible="1" string="Today Activities" name="activities_today"
+                            domain="[('my_activity_date_deadline', '=', context_today().strftime('%Y-%m-%d'))]"/>
+                    <filter invisible="1" string="Future Activities" name="activities_upcoming_all"
+                            domain="[('my_activity_date_deadline', '&gt;', context_today().strftime('%Y-%m-%d'))
+                    ]"/>
+                    <separator/>
+                    <filter string="Favorites" name="favorites" domain="[('priority','=','1')]"/>
+                    <separator/>
+                    <filter string="Warnings" name="activities_exception"
+                            domain="[('activity_exception_decoration', '!=', False)]"/>
+                    <separator/>
+                    <filter string="Archived" name="inactive" domain="[('active','=',False)]"/>
+                    <group expand="1" string="Group By">
+                        <filter string="Product Type" name="type" context="{'group_by':'type'}"/>
+                        <filter string="Catégorie Odoo" name="odoo_categ_id"
+                                context="{'group_by':'odoo_categ_id'}"/>
+                        <filter string="Catégorie Prestashop" name="categ_id" context="{'group_by':'categ_id'}"/>
+
+                    </group>
+                </search>
+
+            </field>
+        </record>
+
+        <record id="product.product_product_tree_view" model="ir.ui.view">
+            <field name="name">product.product.tree</field>
+            <field name="model">product.product</field>
+            <field eval="7" name="priority"/>
+            <field name="arch" type="xml">
+                <tree string="Product Variants" multi_edit="1" duplicate="false" sample="1">
+                    <header>
+                        <button string="Print Labels" type="object" name="action_open_label_layout"/>
+                    </header>
+                    <field name="priority" widget="priority" nolabel="1" readonly="1"/>
+                    <field name="default_code" optional="show" readonly="1"/>
+                    <field name="barcode" optional="hide" readonly="1"/>
+                    <field name="name" readonly="1"/>
+                    <field name="product_template_variant_value_ids" widget="many2many_tags"
+                           groups="product.group_product_variant" readonly="1"/>
+                    <field name="company_id" groups="base.group_multi_company" optional="hide" readonly="1"/>
+                    <field name="lst_price" optional="show" string="Sales Price"/>
+                    <field name="standard_price" optional="show"/>
+                    <field name="odoo_categ_id" string="Catégorie Odoo" optional="hide"/>
+                    <field name="categ_id" string="Catégorie Prestashop" optional="hide"/>
+                    <field name="product_tag_ids" widget="many2many_tags"
+                           options="{'color_field': 'color', 'no_edit_color': 1}" optional="hide"/>
+                    <field name="type" optional="hide" readonly="1"/>
+                    <field name="uom_id" options="{'no_open': True, 'no_create': True}" groups="uom.group_uom"
+                           optional="show" readonly="1"/>
+                    <field name="product_tmpl_id" invisible="1" readonly="1"/>
+                    <field name="active" invisible="1"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="product.product_template_tree_view" model="ir.ui.view">
+            <field name="name">product.template.product.tree</field>
+            <field name="model">product.template</field>
+            <field name="arch" type="xml">
+                <tree string="Product" multi_edit="1" sample="1">
+                    <header>
+                        <button string="Print Labels" type="object" name="action_open_label_layout"/>
+                    </header>
+                    <field name="product_variant_count" invisible="1"/>
+                    <field name="sale_ok" invisible="1"/>
+                    <field name="currency_id" invisible="1"/>
+                    <field name="cost_currency_id" invisible="1"/>
+                    <field name="priority" widget="priority" optional="show" nolabel="1"/>
+                    <field name="name" string="Product Name"/>
+                    <field name="default_code" optional="show"/>
+                    <field name="product_tag_ids" widget="many2many_tags" options="{'color_field': 'color'}"
+                           optional="show"/>
+                    <field name="barcode" optional="hide" attrs="{'readonly': [('product_variant_count', '>', 1)]}"/>
+                    <field name="company_id" options="{'no_create': True}"
+                           groups="base.group_multi_company" optional="hide"/>
+                    <field name="list_price" string="Sales Price" widget='monetary'
+                           options="{'currency_field': 'currency_id'}" optional="show" decoration-muted="not sale_ok"/>
+                    <field name="standard_price" widget='monetary' options="{'currency_field': 'cost_currency_id'}"
+                           optional="show" readonly="1"/>
+                    <field name="odoo_categ_id" string="Catégorie Odoo" optional="hide"/>
+                    <field name="categ_id" string="Catégorie Prestashop" optional="hide"/>
+                    <field name="detailed_type" optional="hide" readonly="1"/>
+                    <field name="type" invisible="1"/>
+                    <field name="uom_id" readonly="1" optional="show" groups="uom.group_uom"/>
+                    <field name="active" invisible="1"/>
+                    <field name="activity_exception_decoration" widget="activity_exception"/>
+                </tree>
+            </field>
+        </record>
+
+    </data>
+</odoo>

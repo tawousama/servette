@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="theme_decor_header9" inherit_id="website.layout" name="Header Nine" active="False">
+		<xpath expr="//header" position="attributes">
+			<attribute name="t-attf-class" add="decor-header" separator=" "></attribute>
+		</xpath>
+		<xpath expr="//header//nav" position="replace">
+			<t t-call="theme_decor.search_popup"/>
+			<nav data-name="Navbar" id="decor-header9" t-attf-class="decor-header9">
+				<div class="top-header d-none d-md-block">
+					<div class="container extended-container">
+						<div class="row align-items-center">
+							<div class="col-md-7">
+								<div class="contact-time d-flex">
+									<p class="text-primary mb-0"><span class="fa fa-phone text-primary me-2"/><span t-out="res_company.phone"/></p>
+									<p class="text-primary mb-0 ms-4"><span class="fa fa-clock text-primary me-2"/><span>Mon-Fri : 9:00 - 18:00</span></p>
+								</div>
+							</div>
+							<div class="col-md-5">
+								<div class="header-media text-end">
+									<a class="link text-primary me-3" t-att-href="website.social_facebook"
+										t-if="website.social_facebook" target="_blank">
+										<i class="fa fa-facebook" />
+									</a>
+									<a class="link text-primary me-3" t-att-href="website.social_twitter"
+										t-if="website.social_twitter" target="_blank">
+										<i class="fa fa-twitter" />
+									</a>
+									<a class="link text-primary me-3" t-att-href="website.social_linkedin"
+										t-if="website.social_linkedin" target="_blank">
+										<i class="fa fa-linkedin" />
+									</a>
+									<a class="link text-primary me-3" t-att-href="website.social_youtube"
+										t-if="website.social_youtube" target="_blank">
+										<i class="fa fa-youtube-play" />
+									</a>
+									<a class="link text-primary me-3" t-att-href="website.social_instagram"
+										t-if="website.social_instagram" target="_blank">
+										<i class="fa fa-instagram"></i>
+									</a>
+									<a class="link text-primary" t-att-href="website.social_github"
+										t-if="website.social_github" target="_blank">
+										<i class="fa fa-github"></i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="bottom-container container">
+					<div class="middle-header">
+						<div class="row align-items-center">
+							<div class="col-md-2 d-flex d-md-block mbl-div header_left">
+								<div class="decor-logo text-start">
+									<a href="/" class="navbar-brand logo m-0">
+							            <span t-field="website.logo" t-options="{'widget': 'image'}" role="img" t-att-aria-label="'Logo of %s' % website.name" t-att-title="website.name" />
+							        </a>
+								</div>
+								<div class="mobile-sidebar-toggle d-block d-md-none">
+									<button type="button" id="show-sidebar" class="btn btn-sm btn-dark d-block d-md-none">
+										<span class="ti ti-view-grid text-secondary"></span>
+									</button>
+								</div>
+							</div>
+							<div class="col-md-8 d-none d-md-block header-center">
+								<nav class="navbar navbar-expand-md p-0" id="bizople-header-nine">
+									<div class="collapse navbar-collapse justify-content-center" id="header9-menuitem">
+										<ul class="nav navbar-nav justify-content-center" id="top_menu">
+											<t t-foreach="website.menu_id.child_id" t-as="submenu">
+												<t t-call="website.submenu">
+													<t t-set="item_class" t-value="'nav-item'" />
+													<t t-set="link_class" t-value="'nav-link'" />
+												</t>
+											</t>
+										</ul>
+									</div>
+								</nav>
+							</div>
+							<div class="col-md-2 d-none d-md-block header-center">
+								<div class="s_btn text-end" data-name="Button">
+    								<a href="#" class="btn btn-primary rounded-circle btn-lg">Enquiry</a>
+        						</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</xpath>
+	</template>
+</odoo>

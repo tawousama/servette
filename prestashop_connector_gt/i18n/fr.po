@@ -1,0 +1,3806 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* prestashop_connector_gt
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-09-15 15:27+0000\n"
+"PO-Revision-Date: 2023-09-15 15:27+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: prestashop_connector_gt
+#: model:ir.ui.menu,name:prestashop_connector_gt.prestashop_shops_wise
+msgid " Prestashop Dashboard"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_import_prestashop_connector_wizard_form_view
+msgid "(Includes Updation of Products,Images and Variants)"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_import_prestashop_connector_wizard_form_view
+msgid ""
+"(Please Import Country/State/Customer/Supplier/Manufacturers before "
+"importing Adddress)"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestashop_instance_dashboard_kanban
+msgid ""
+"<i class=\"fa fa-ellipsis-v\" aria-label=\"Selection\" role=\"img\" "
+"title=\"Selection\"/>"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestashop_instance_dashboard_kanban
+msgid ""
+"<span class=\"ml-1\">\n"
+"                                                <i class=\"fa fa-caret-right\" aria-label=\" Prestashop Instance\" title=\"Instance\"/>\n"
+"                                            </span>"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestashop_instance_dashboard_kanban
+msgid "<span>Delivery</span>"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestashop_instance_dashboard_kanban
+msgid "<span>Invoices</span>"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestashop_instance_dashboard_kanban
+msgid ""
+"<span>Prestashop Store Views</span>\n"
+"                                            <span class=\"ml-1\">\n"
+"                                                <span class=\"ml-1\">\n"
+"                                                    <i class=\"fa fa-caret-right\" aria-label=\"Storeview\" title=\"Storeview\"/>\n"
+"                                                </span>\n"
+"                                            </span>"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestashop_instance_dashboard_kanban
+msgid "<span>Products</span>"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestashop_instance_dashboard_kanban
+msgid "<span>Sales</span>"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-python
+#: code:addons/prestashop_connector_gt/models/product_images.py:0
+#: model:ir.model.constraint,message:prestashop_connector_gt.constraint_gt_prestashop_product_images_uniq_name_product_id
+#, python-format
+msgid "A product can have only one image with the same name"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestashop_instance_form_view
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_create_prestashop_shop
+msgid "Account Credentials"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_cart_rules__prest_active
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_category__active
+msgid "Active"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.action_partner_address_form
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_create_prestashop_shop__cust_address
+#: model:ir.ui.menu,name:prestashop_connector_gt.menu_partner_address_form
+msgid "Address"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_partner__address_id
+msgid "Address ID"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_partner__alias
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_users__alias
+msgid "Alias"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.ui.menu,name:prestashop_connector_gt.view_cart_action_menu
+msgid "All Cart Rules"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.ui.menu,name:prestashop_connector_gt.view_catlaog_action_menu
+msgid "All Catalog Price Rules"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.ui.menu,name:prestashop_connector_gt.all_delivery_presta_menu
+msgid "All Delivery Orders"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestashop_instance_dashboard_kanban
+msgid "All Products"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Amount"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,help:prestashop_connector_gt.field_product_category__sequence
+msgid "Assigns the priority to the list of product Category."
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__last_attr_id
+msgid "Attribute Id"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_product_attribute_value
+msgid "Attribute Value"
+msgstr "Valeur de l'attribut"
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.variants_action_inherit
+#: model:ir.ui.menu,name:prestashop_connector_gt.menu_variants_action_inherit
+msgid "Attribute Values"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.attribute_action_inherit
+#: model:ir.ui.menu,name:prestashop_connector_gt.menu_attribute_action_inherit
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_amazon_product_product_form_inherits
+msgid "Attributes"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestashop_instance_form_view
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_create_prestashop_shop
+msgid "Authentication"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__auto_import_order
+msgid "Auto Import Order"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__auto_import_products
+msgid "Auto Import Products"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__auto_update_inventory
+msgid "Auto Update Inventory"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__auto_update_order_status
+msgid "Auto Update Order Status"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__auto_update_price
+msgid "Auto Update Price"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__auto_update_product_data
+msgid "Auto Update Product data"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__website_published
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__website_published
+msgid "Available on the Website"
+msgstr "Disponible sur le site web"
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Average Order"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/static/src/xml/dashboard_widget.xml:0
+#, python-format
+msgid "Average Order Value :"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Average order amount"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__sale_order__pretsa_payment_mode__banktran
+msgid "Bank transfer"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__sale_order__pretsa_payment_mode__bankwire
+msgid "Bankwire"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__create_prestashop_shop__mapped_product_by__barcode
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_instance__mapped_product_by__barcode
+msgid "Barcode"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_company__bases_onboarding_company_state_custom
+msgid "Bases Onboarding Company State Custom"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__create_prestashop_shop__order_policy__prepaid
+msgid "Before Delivery"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/product_dashboard.json:0
+#, python-format
+msgid "Best Category"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/product_dashboard.json:0
+#, python-format
+msgid "Best Seller"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/product_dashboard.json:0
+#, python-format
+msgid "Best Sellers by Revenue"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/product_dashboard.json:0
+#, python-format
+msgid "Best Sellers by Units Sold"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/product_dashboard.json:0
+#, python-format
+msgid "Best Selling Categories"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/product_dashboard.json:0
+#, python-format
+msgid "Best Selling Products"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/product_dashboard.json:0
+#, python-format
+msgid "Best selling category"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/product_dashboard.json:0
+#, python-format
+msgid "Best selling product"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_import_prestashop_connector_wizard_form_view
+msgid "CANCEL"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_create_prestashop_shop
+msgid "Cancel"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_sale_order__carrier_prestashop
+msgid "Carrier In Prestashop"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.view_cart_action
+msgid "Cart"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_cart_rules
+#: model:ir.ui.menu,name:prestashop_connector_gt.cart_presta_menu
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_cart_rules_form
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_cart_rules_tree
+msgid "Cart Rules"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__sale_order__pretsa_payment_mode__cod
+msgid "Cash on delivery  (COD)"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.ui.menu,name:prestashop_connector_gt.catalog_menu_presta
+msgid "Catalog"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.view_catalog_price_rules_action
+#: model:ir.model,name:prestashop_connector_gt.model_catalog_price_rules
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_catalog_price_rules_form
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_catalog_price_rules_tree
+msgid "Catalog Price Rules"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.preatashop_category_action_inherit
+#: model:ir.ui.menu,name:prestashop_connector_gt.menu_product_category_presta
+msgid "Categories"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/product_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/product_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__product_category_ids
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__product_category_ids
+#, python-format
+msgid "Category"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__website_description
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__website_description
+msgid "Category Description"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_amazon_product_product_form_inherits
+msgid "Catègories Prestashop"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__prestashop_update_stock
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__prestashop_update_stock
+msgid "Check Stock Update on Prestashop"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.actions.act_window,help:prestashop_connector_gt.inherit_action_picking_tree_all
+#: model_terms:ir.actions.act_window,help:prestashop_connector_gt.inherit_action_picking_tree_label
+#: model_terms:ir.actions.act_window,help:prestashop_connector_gt.inherit_action_picking_tree_pending
+msgid "Click here to create a new transfer."
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.actions.act_window,help:prestashop_connector_gt.inherit_action_partner_form
+msgid "Click to add a contact in your address book."
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.actions.act_window,help:prestashop_connector_gt.inherit_action_invoice_tree1
+#: model_terms:ir.actions.act_window,help:prestashop_connector_gt.inherit_action_invoice_tree1_done
+#: model_terms:ir.actions.act_window,help:prestashop_connector_gt.inherit_action_invoice_tree1_pending
+msgid "Click to create a customer invoice."
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.actions.act_window,help:prestashop_connector_gt.inherit_product_template_action
+msgid "Click to define a new product."
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__res_company__bases_onboarding_company_state_custom__closed
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__res_company__magento_onboarding_toggle_state__closed
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__res_company__sale_quotation_onboarding_state_custom__closed
+msgid "Closed"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_cart_rules__code
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_language__code
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__code
+msgid "Code"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__color
+msgid "Color Index"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__combination_id
+msgid "Combination ID"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_gt_prestashop_product_images__comments
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_product_image_form
+msgid "Comments"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_res_company
+msgid "Companies"
+msgstr "Sociétés"
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_create_prestashop_shop__company_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_instance__company_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__company_id
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_order_product_prestashop_search
+msgid "Company"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_import_order_workflow__complete_shipment
+msgid "Complete Shipment"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__condition
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__condition
+msgid "Condition"
+msgstr "Etat"
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_res_config_settings
+msgid "Config Settings"
+msgstr "Paramètres de configuration"
+
+#. module: prestashop_connector_gt
+#: model:ir.ui.menu,name:prestashop_connector_gt.menu_prestashop
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestaerp_view_shop_form
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestashop_instance_form_view
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_create_prestashop_shop
+msgid "Configuration"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestashop_on_board_instance_configuration_wizard
+msgid "Confirmation?"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-python
+#: code:addons/prestashop_connector_gt/models/prestashop.py:0
+#, python-format
+msgid ""
+"Connection Test Failed! Here is what we got instead:\n"
+" \n"
+"%s"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_res_partner
+msgid "Contact"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: model:ir.model,name:prestashop_connector_gt.model_res_country
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_tax_rule__country_id
+#, python-format
+msgid "Country"
+msgstr "Pays"
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_res_country_state
+msgid "Country state"
+msgstr "État"
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.onboarding_prestashop_instance_configuration
+msgid "Create Instance"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_create_prestashop_shop__order_policy
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_import_order_workflow__create_invoice
+msgid "Create Invoice"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.res_config_settings_view_form
+msgid "Create More Instance"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__product_import_condition
+msgid "Create New Product if Product not in System while import order"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestashop_instance_form_view
+msgid "Create PrestaShop"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.action_prestashop_connector
+msgid "Create Prestashop"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.res_config_settings_view_form
+msgid "Create Prestashop Instances"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.action_create_prestashop_shop
+#: model:ir.model,name:prestashop_connector_gt.model_create_prestashop_shop
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_create_prestashop_shop
+msgid "Create Prestashop Shop"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.actions.act_window,help:prestashop_connector_gt.inherit_action_quotations
+msgid "Create a Quotation, the first step of a new sale."
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.actions.act_window,help:prestashop_connector_gt.action_prestashop_sale_report
+msgid "Create a new sales order."
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.onboarding_prestashop_instance_configuration
+msgid "Create the new Prestashop instance here."
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_cart_rules__create_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_catalog_price_rules__create_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_create_prestashop_shop__create_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_customer_threads__create_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_gt_prestashop_import_export__create_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_gt_prestashop_product_images__create_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_import_order_workflow__create_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_log_error__create_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_order_message__create_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_presta_order_status__create_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__create_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_instance__create_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_language__create_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_log__create_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__create_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_tax_rule__create_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_feature__create_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_feature_value__create_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_listing__create_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_spec__create_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_config_instance__create_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_config_prestashop_instance__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_cart_rules__create_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_catalog_price_rules__create_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_create_prestashop_shop__create_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_customer_threads__create_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_gt_prestashop_import_export__create_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_gt_prestashop_product_images__create_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_import_order_workflow__create_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_log_error__create_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_order_message__create_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_presta_order_status__create_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__create_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_instance__create_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_language__create_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_log__create_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__create_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_tax_rule__create_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_feature__create_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_feature_value__create_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_listing__create_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_spec__create_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_config_instance__create_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_config_prestashop_instance__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Current"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/static/src/xml/dashboard_widget.xml:0
+#, python-format
+msgid "Current Month"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/static/src/xml/dashboard_widget.xml:0
+#, python-format
+msgid "Current Week"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/static/src/xml/dashboard_widget.xml:0
+#, python-format
+msgid "Current Year"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_cart_rules__id_customer
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_customer_threads__customer_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_order_message__customer_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__partner_id
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_order_product_prestashop_search
+#, python-format
+msgid "Customer"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_order_product_prestashop_search
+msgid "Customer Country"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_order_product_prestashop_search
+msgid "Customer Industry"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.inherit_action_invoice_tree1
+#: model:ir.actions.act_window,name:prestashop_connector_gt.inherit_action_invoice_tree1_done
+#: model:ir.actions.act_window,name:prestashop_connector_gt.inherit_action_invoice_tree1_pending
+msgid "Customer Invoices"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_customer_threads
+msgid "Customer Threads"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.action_partner_form
+#: model:ir.actions.act_window,name:prestashop_connector_gt.inherit_action_partner_form
+#: model:ir.ui.menu,name:prestashop_connector_gt.menu_partner_form
+msgid "Customers"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:product.template,website_description:prestashop_connector_gt.product_discount_free_product_template
+msgid ""
+"Dans ce petit cube se loge une puissance énorme (300 watts sous 8 Ohm). Le "
+"format est petit et léger, et la simplicité est le maître mot pour décrire "
+"ce combo à transistors. Le son est très naturel, avec une dynamique et un "
+"timbre ronds, et des réglages efficaces. Si vous aimez avoir peu "
+"d'accessoires à transporter, et que vous cherchez un ampli fiable en studio "
+"ou sur scène, le MarkBass Mini CMD 121P est une merveille."
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_order_product_prestashop_search
+msgid "Date"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_cart_rules__date_from
+msgid "Date From"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_partner__date_of_birth
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_users__date_of_birth
+msgid "Date Of Birth"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_cart_rules__date_to
+msgid "Date To"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__product_template__condition__deal
+msgid "Deal"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_gt_prestashop_product_images__is_default_img
+msgid "Default"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_delivery_carrier__delay_comment
+msgid "Delay"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__import_order_workflow__picking_policy__one
+msgid "Deliver all products at once"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__import_order_workflow__picking_policy__direct
+msgid "Deliver each product when available"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__import_order_workflow__invoice_policy__delivery
+msgid "Delivered quantities"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.ui.menu,name:prestashop_connector_gt.delivery_presta_menu
+msgid "Delivery"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.action_delivery_carrier_form_presta
+msgid "Delivery Methods"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.ui.menu,name:prestashop_connector_gt.delivery_presta_submenu
+msgid "Delivery methods"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_cart_rules__description
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_amazon_product_product_form_inherits
+msgid "Description"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__discount_product_id
+msgid "Discount Fee"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:product.template,description_sale:prestashop_connector_gt.product_discount_free_product_template
+#: model:product.template,name:prestashop_connector_gt.product_discount_free_product_template
+msgid "Discount Free"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_bank_statement_line__total_discount_tax_excl
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_move__total_discount_tax_excl
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_payment__total_discount_tax_excl
+msgid "Discount(tax excl.)"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_bank_statement_line__total_discount_tax_incl
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_move__total_discount_tax_incl
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_payment__total_discount_tax_incl
+msgid "Discount(tax incl)"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_cart_rules__display_name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_catalog_price_rules__display_name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_create_prestashop_shop__display_name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_customer_threads__display_name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_gt_prestashop_import_export__display_name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_gt_prestashop_product_images__display_name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_import_order_workflow__display_name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_log_error__display_name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_order_message__display_name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_presta_order_status__display_name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__display_name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_instance__display_name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_language__display_name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_log__display_name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__display_name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_tax_rule__display_name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_feature__display_name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_feature_value__display_name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_listing__display_name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_spec__display_name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_config_instance__display_name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_config_prestashop_instance__display_name
+msgid "Display Name"
+msgstr "Nom affiché"
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,help:prestashop_connector_gt.field_prestashop_shop__website_display_currency
+msgid "Display currency of the magento website."
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestashop_on_board_instance_configuration_wizard
+msgid "Do you have done all the configurations?"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__res_company__sale_quotation_onboarding_state_custom__done
+msgid "Done"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Draft quotations"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_import_prestashop_connector_wizard_form_view
+msgid "EXECUTE"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_customer_threads__email
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_order_message__email
+msgid "Email"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_customer_threads__employee_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_order_message__employee_id
+msgid "Employee"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-python
+#: code:addons/prestashop_connector_gt/wizard/upload_customer.py:0
+#: code:addons/prestashop_connector_gt/wizard/upload_customer.py:0
+#: code:addons/prestashop_connector_gt/wizard/upload_customer.py:0
+#: code:addons/prestashop_connector_gt/wizard/upload_customer.py:0
+#: code:addons/prestashop_connector_gt/wizard/upload_customer.py:0
+#: code:addons/prestashop_connector_gt/wizard/upload_customer.py:0
+#: code:addons/prestashop_connector_gt/wizard/upload_customer.py:0
+#, python-format
+msgid "Error !"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_log__error_lines
+msgid "Error lines"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_import_prestashop_connector_wizard_form_view
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_prestashop_import_export_operation
+msgid "Export"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__export_presta_categories
+msgid "Export Categories"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__export_presta_customer_messages
+msgid "Export Customer Messages"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__export_presta_customers
+msgid "Export Customers"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__export_presta_orders
+msgid "Export Orders"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_log__all_operations__export_categories
+msgid "Export Prestashop categories"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_log__all_operations__export_customer_message
+msgid "Export Prestashop customer message"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_log__all_operations__export_customers
+msgid "Export Prestashop customers"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_log__all_operations__export_order_status
+msgid "Export Prestashop orders"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_log__all_operations__export_product_data
+msgid "Export Prestashop product data"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__export_presta_product_inventory
+msgid "Export Product Inventory"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__export_presta_products
+msgid "Export Products"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__export_presta_products_variants
+msgid "Export Products Variants"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.server,name:prestashop_connector_gt.action_export_product_to_prestashop
+msgid "Export product to Prestashop"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestashop_instance_dashboard_kanban
+msgid "Exported"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_order_product_prestashop_search
+msgid "Extended Filters"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_amazon_product_product_form_inherits
+msgid "Extra Fields"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__combination_price
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__combination_price
+msgid "Extra Price of combination"
+msgstr "Prix spécifique"
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_spec__feature
+msgid "Feature"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_feature_value__feature_id
+msgid "Feature Id"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_feature__name
+msgid "Feature Name"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_feature__features_value_ids
+msgid "Feature Value"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_feature_value__name
+msgid "Feature Value Name"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_gt_prestashop_product_images__file
+msgid "File"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_gt_prestashop_product_images__url
+msgid "File Location"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_product_image_form
+msgid "File Location and Preview (Only when saved)"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-python
+#: code:addons/prestashop_connector_gt/models/prestashop.py:0
+#, python-format
+msgid "First create the Instance"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_cart_rules__free_shipping
+msgid "Free Shipping"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_category__friendly_url
+msgid "Friendly URL"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_catalog_price_rules__from_date
+msgid "From Date"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_catalog_price_rules__from_quantity
+msgid "From Quantity"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_sale_order_line__gift
+msgid "Gift"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_sale_order_line__gift_message
+msgid "Gift Message"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__gift_wrapper_fee_product_id
+msgid "Gift Wrapper Fee"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:product.template,description_sale:prestashop_connector_gt.product_product_gift_wrapp_product_template
+#: model:product.template,name:prestashop_connector_gt.product_product_gift_wrapp_product_template
+msgid "Gift Wrapping"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_order_product_prestashop_search
+msgid "Group By"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_amazon_product_product_form_inherits
+msgid "Généralités"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_cart_rules__id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_catalog_price_rules__id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_create_prestashop_shop__id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_customer_threads__id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_gt_prestashop_import_export__id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_gt_prestashop_product_images__id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_import_order_workflow__id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_log_error__id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_order_message__id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_presta_order_status__id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_instance__id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_language__id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_log__id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_tax_rule__id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_feature__id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_feature_value__id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_listing__id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_spec__id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_config_instance__id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_config_prestashop_instance__id
+msgid "ID"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,help:prestashop_connector_gt.field_res_config_settings__is_use_odoo_order_sequence_prestashop
+msgid "If checked, Odoo Order Sequence is used when import and create orders."
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,help:prestashop_connector_gt.field_prestashop_instance__included_tax
+msgid "If this check box are false tax consider as excluded"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_gt_prestashop_product_images__image
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_product_image_form
+msgid "Image"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_gt_prestashop_product_images__name
+msgid "Image Title"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_gt_prestashop_product_images__image_url
+msgid "Image URL"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_gt_prestashop_product_images__file_db_store
+msgid "Image stored in database"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,help:prestashop_connector_gt.field_gt_prestashop_product_images__link
+msgid ""
+"Images can be linked from files on your file system or remote (Preferred)"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_gt_prestashop_product_images__prest_img_id
+msgid "Img ID"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__prest_img_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__prest_img_id
+msgid "Imge ID"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_import_prestashop_connector_wizard_form_view
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_prestashop_import_export_operation
+msgid "Import"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,help:prestashop_connector_gt.field_prestashop_connector_wizard__import_customers
+msgid ""
+"Import 2000 customer from prestashop to odoo at time and last import "
+"prestashop customer id store in shop. "
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__import_addresses
+msgid "Import Addresses"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__import_carriers
+msgid "Import Carriers"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__import_cart_rules
+msgid "Import Cart Rules"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__import_catalog_rules
+msgid "Import Catalog Rules"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__import_categories
+msgid "Import Categories"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__import_country_state
+msgid "Import Country/State"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__import_customers
+msgid "Import Customers"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__import_inventory
+msgid "Import Inventory"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__import_manufacturers
+msgid "Import Manufacturers"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__import_messages
+msgid "Import Messages"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.import_order_workflow_form_view
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.import_order_workflow_tree_view
+msgid "Import Order Workflow"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_import_order_workflow
+msgid "Import Order Worklow"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__import_orders
+msgid "Import Orders"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__import_orders_status
+msgid "Import Orders Status"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_log__all_operations__import_country_state
+msgid "Import Prestashop Country/State"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_log__all_operations__import_addresses
+msgid "Import Prestashop addresses"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_log__all_operations__import_attributes
+msgid "Import Prestashop attributes"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_log__all_operations__import_carriers
+msgid "Import Prestashop carriers"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_log__all_operations__import_cart_rules
+msgid "Import Prestashop cart rules"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_log__all_operations__import_catalog_rules
+msgid "Import Prestashop catalog rules"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_log__all_operations__import_categories
+msgid "Import Prestashop categories"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_log__all_operations__import_customers
+msgid "Import Prestashop customers"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_log__all_operations__import_inventory
+msgid "Import Prestashop inventory"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_log__all_operations__import_manufacturers
+msgid "Import Prestashop manufacturers"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_log__all_operations__import_messages
+msgid "Import Prestashop messages"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_log__all_operations__import_orders
+msgid "Import Prestashop orders"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_log__all_operations__import_products
+msgid "Import Prestashop products"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_log__all_operations__import_suppliers
+msgid "Import Prestashop suppliers"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__import_product_fetures
+msgid "Import Product Feature"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__import_products
+msgid "Import Products"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__import_product_attributes
+msgid "Import Products Attributes"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__import_products_images
+msgid "Import Products Images"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__import_suppliers
+msgid "Import Suppliers"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__import_taxes
+msgid "Import Taxes"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-python
+#: code:addons/prestashop_connector_gt/models/prestashop_shop.py:0
+#, python-format
+msgid "Imported all status"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__product_instock
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__product_instock
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__product_template__condition__new
+msgid "In Stock"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,help:prestashop_connector_gt.field_prestashop_connector_wizard__import_product_attributes
+msgid "Includes Product Attributes and Categories"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_language__presta_instance_id
+msgid "Instance"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.open_prestashop_instance_kanban
+msgid "Instance Dashboard"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_config_instance__instance_name
+msgid "Instance Name"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.prestashop_on_board_instance_configuration_action
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_gt_prestashop_import_export__prestashops_instance_ids
+msgid "Instances"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.import_order_workflow_form_view
+msgid "Invoice"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_acc_invoice_inherit_presta
+msgid "Invoice Information"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_import_order_workflow__invoice_policy
+msgid "Invoicing Policy"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_partner__manufacturer
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_users__manufacturer
+msgid "Is Manufacturer?"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_sale_order_line__presta_line
+msgid "Is Presta line"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_tax__is_presta
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_tax_group__is_presta
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_attribute__is_presta
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_attribute_value__is_presta
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_category__is_presta
+msgid "Is Prestashop"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_country__is_prestashop
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_country_state__is_prestashop
+msgid "Is Prestashop Country"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_lang__is_prestashop
+msgid "Is Prestashop Lang"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_config_settings__is_use_odoo_order_sequence_prestashop
+msgid "Is Use Odoo Order Sequences?"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_account_move
+msgid "Journal Entry"
+msgstr "Pièce comptable"
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__res_company__sale_quotation_onboarding_state_custom__just_done
+msgid "Just done"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/product_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "KPI"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__prd_label
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__prd_label
+msgid "Label"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.ui.menu,name:prestashop_connector_gt.menu_prestashop_langauge
+msgid "Language"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_res_lang
+msgid "Languages"
+msgstr "Langues"
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__last_address_id_import
+msgid "Last Address ID Import"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__last_prestashop_carrier_import_date
+msgid "Last Carrier Import Time"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__last_cart_rule_id_import
+msgid "Last Cart Rule ID Import"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__last_presta_cart_rule_import_date
+msgid "Last Cart Rule Import Time"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__last_catalog_rule_id_import
+msgid "Last Catalog Rule ID Import"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__last_presta_catalog_rule_import_date
+msgid "Last Catalog Rule Import Time"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__last_prestashop_category_import_date
+msgid "Last Category Import Time"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__last_country_id_import
+msgid "Last Country ID Import"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__last_prestashop_customer_address_import_date
+msgid "Last Customer Address Import Time"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__last_customer_id_import
+msgid "Last Customer ID Import"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__last_prestashop_customer_import_date
+msgid "Last Customer Import Time"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__last_customer_id_import
+msgid "Last ID Import"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__last_prestashop_inventory_import_date
+msgid "Last Inventory Import Time"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__last_manufacturers_id_import
+msgid "Last Manufacturers ID Import"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__last_message_id_import
+msgid "Last Message ID Import"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__last_prestashop_msg_import_date
+msgid "Last Message Import Time"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_cart_rules____last_update
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_catalog_price_rules____last_update
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_create_prestashop_shop____last_update
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_customer_threads____last_update
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_gt_prestashop_import_export____last_update
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_gt_prestashop_product_images____last_update
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_import_order_workflow____last_update
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_log_error____last_update
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_order_message____last_update
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_presta_order_status____last_update
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard____last_update
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_instance____last_update
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_language____last_update
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_log____last_update
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop____last_update
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_tax_rule____last_update
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_feature____last_update
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_feature_value____last_update
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_listing____last_update
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_spec____last_update
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_config_instance____last_update
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_config_prestashop_instance____last_update
+msgid "Last Modified on"
+msgstr "Dernière modification le"
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__last_order_id_id_import
+msgid "Last Order ID Import"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__last_prestashop_order_import_date
+msgid "Last Order Import Time"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__last_product_attrs_id_import
+msgid "Last Product Attributes ID Import"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__last_presta_product_attrs_import_date
+msgid "Last Product Attributes Import Time"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__last_product_attrs_values_id_import
+msgid "Last Product Attributes Values ID Import"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__last_product_category_id_import
+msgid "Last Product Category ID Import"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__prestashop_last_export_product_data_date
+msgid "Last Product Export Time"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__last_product_feature_id_import
+msgid "Last Product Feature ID Import"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__last_product_feature_value_id_import
+msgid "Last Product Feature Value ID Import"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__last_product_id_import
+msgid "Last Product ID Import"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__last_prestashop_product_import_date
+msgid "Last Product Import Time"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__last_product_inventory_import
+msgid "Last Product Inventory ID Import"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__last_delivery_carrier_import
+msgid "Last Product Inventory Import"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__last_state_id_import
+msgid "Last State ID Import"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__last_supplier_id_import
+msgid "Last Supplier ID Import"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_cart_rules__write_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_catalog_price_rules__write_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_create_prestashop_shop__write_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_customer_threads__write_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_gt_prestashop_import_export__write_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_gt_prestashop_product_images__write_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_import_order_workflow__write_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_log_error__write_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_order_message__write_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_presta_order_status__write_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__write_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_instance__write_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_language__write_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_log__write_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__write_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_tax_rule__write_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_feature__write_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_feature_value__write_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_listing__write_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_spec__write_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_config_instance__write_uid
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_config_prestashop_instance__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_create_prestashop_shop__write_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_customer_threads__write_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_gt_prestashop_import_export__write_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_import_order_workflow__write_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_log_error__write_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_order_message__write_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_presta_order_status__write_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__write_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_instance__write_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_language__write_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_log__write_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__write_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_tax_rule__write_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_feature__write_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_feature_value__write_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_listing__write_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_spec__write_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_config_instance__write_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_config_prestashop_instance__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__last_order_import_date
+msgid "Last presta order Import Date"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__product_lngth
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__product_lngth
+msgid "Length"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_gt_prestashop_product_images__link
+msgid "Link?"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_create_prestashop_shop__location
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_instance__location
+msgid "Location"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_log__log_date
+msgid "Log Date"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_log_error__log_id
+msgid "Log Id"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_log__log_name
+msgid "Log Name"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_log_error__log_description
+msgid "Log description"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_order_message__msg_prest_id
+msgid "MSG ID"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_company__magento_onboarding_toggle_state
+msgid "Magento Onboarding Toggle State"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestashop_instance_form_view
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_create_prestashop_shop
+msgid "Main Configuration"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__manufacturer_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__manufacturer_id
+msgid "Manufacturer"
+msgstr "Marque"
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.action_partner_form_manufacturer
+#: model:ir.ui.menu,name:prestashop_connector_gt.menu_manufacturer_form
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_res_partner_filter_inherit
+msgid "Manufacturers"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_create_prestashop_shop__mapped_product_by
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_instance__mapped_product_by
+msgid "Mapped Product By"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Medium"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_order_message__message
+msgid "Message"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_sale_order__message_order_ids
+msgid "Message Info"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_order_message_form
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_order_message_tree
+msgid "Messages"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_amazon_product_product_form_inherits
+msgid "Meta"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_category__meta_title
+msgid "Meta Title"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_category__meta_description
+msgid "Meta description"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_cart_rules__minimum_amount
+msgid "Minimum Amount"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Monthly Salesss"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/product_dashboard.json:0
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_cart_rules__name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_catalog_price_rules__name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_create_prestashop_shop__name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_import_order_workflow__name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_instance__name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_language__name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_company__name
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.import_order_workflow_form_view
+#, python-format
+msgid "Name"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_log_error
+msgid "New Description"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__product_template__condition__nouveaute
+msgid "New Product"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestashop_on_board_instance_configuration_wizard
+msgid "No"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.actions.act_window,help:prestashop_connector_gt.action_prestashop_sale_report
+msgid "No data yet!"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestashop_instance_dashboard_kanban
+msgid "Not Exported"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestashop_instance_dashboard_kanban
+msgid "Not Exported Products"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__res_company__sale_quotation_onboarding_state_custom__not_done
+msgid "Not done"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.actions.act_window,help:prestashop_connector_gt.inherit_action_quotations
+msgid ""
+"Note that once a Quotation becomes a Sale Order, it will be moved\n"
+"                    from the Quotations list to the Sales Order list."
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__odoo_categ_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__odoo_categ_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_stock_valuation_layer__categ_id
+msgid "Odoo Category"
+msgstr "Catégorie Odoo"
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.actions.act_window,help:prestashop_connector_gt.inherit_action_partner_form
+msgid ""
+"Odoo helps you easily track all activities related to\n"
+"                    a customer; discussions, history of business opportunities,\n"
+"                    documents, etc."
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.actions.act_window,help:prestashop_connector_gt.inherit_action_invoice_tree1
+#: model_terms:ir.actions.act_window,help:prestashop_connector_gt.inherit_action_invoice_tree1_done
+#: model_terms:ir.actions.act_window,help:prestashop_connector_gt.inherit_action_invoice_tree1_pending
+msgid ""
+"Odoo's electronic invoicing allows to ease and fasten the\n"
+"                    collection of customer payments. Your customer receives the\n"
+"                    invoice by email and he can pay online and/or import it\n"
+"                    in his own system."
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__create_prestashop_shop__order_policy__picking
+msgid "On Delivery Order"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__create_prestashop_shop__order_policy__manual
+msgid "On Demand"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,help:prestashop_connector_gt.field_create_prestashop_shop__order_policy
+msgid ""
+"On demand: A draft invoice can be created from the sales order when needed. \n"
+"On delivery order: A draft invoice can be created from the delivery order when the products have been delivered. \n"
+"Before delivery: A draft invoice is created from the sales order and must be paid before the products can be delivered."
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__product_onsale
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__product_onsale
+msgid "On sale"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__res_company__bases_onboarding_company_state_custom__open
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__res_company__magento_onboarding_toggle_state__open
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestashop_instance_dashboard_kanban
+msgid "Open"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-python
+#: code:addons/prestashop_connector_gt/models/prestashop.py:0
+#: code:addons/prestashop_connector_gt/wizard/prestashop_import_export_operation.py:0
+#: code:addons/prestashop_connector_gt/wizard/prestashop_import_export_operation.py:0
+#: code:addons/prestashop_connector_gt/wizard/prestashop_import_export_operation.py:0
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_log__all_operations
+#: model:ir.ui.menu,name:prestashop_connector_gt.operation_prestashop_parent_menu
+#, python-format
+msgid "Operations"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_customer_threads__order_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_order_message__new_id
+#, python-format
+msgid "Order"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestaerp_view_shop_form
+msgid "Order Configuration"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_presta_order_status__confirm_order
+msgid "Order Confirm"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_order_product_prestashop_search
+msgid "Order Date"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_order_message
+msgid "Order Message"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.action_order_messages
+msgid "Order Messages"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_sale_order__presta_order_ref
+msgid "Order Reference"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.action_presta_order_status
+#: model:ir.ui.menu,name:prestashop_connector_gt.presta_order_status_menu
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_presta_order_status_form
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_presta_order_status_tree
+msgid "Order Status"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_sale_order__workflow_order_id
+msgid "Order Work Flow"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.action_import_order_workflow
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__workflow_id
+msgid "Order Workflow"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__import_order_workflow__invoice_policy__order
+msgid "Ordered quantities"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Orders"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_presta_order_status__paid
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestashop_instance_dashboard_kanban
+msgid "Paid"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_bank_statement_line__total_paid_tax_excl
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_move__total_paid_tax_excl
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_payment__total_paid_tax_excl
+msgid "Paid (tax excl.)"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_bank_statement_line__total_paid_tax_incl
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_move__total_paid_tax_incl
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_payment__total_paid_tax_incl
+msgid "Paid (tax incl.)"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_cart_rules__partial_use
+msgid "Partial Use"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestashop_instance_dashboard_kanban
+msgid "Partially Available"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_partner__prestashop_paswrd
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_users__prestashop_paswrd
+msgid "Password"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__sale_order__pretsa_payment_mode__cheque
+msgid "Payment By Cheque"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_order_form_inherited
+msgid "Payment Details"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_sale_order__pretsa_payment_mode
+msgid "Payment mode"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/product_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Period"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__shop_physical_url
+msgid "Physical URL"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_feature__position
+msgid "Position"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__prefix
+msgid "Prefix"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.server,name:prestashop_connector_gt.action_wizard_prestashop_import_export_operation
+msgid "Presashop Instance"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_delivery_carrier__is_presta
+msgid "Presta"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__presta_categ_ids
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__presta_categ_ids
+msgid "Presta Categ"
+msgstr "Catégorie Presta"
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_sale_order__presta_order_date
+msgid "Presta Date"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_cart_rules__presta_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_catalog_price_rules__presta_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_customer_threads__presta_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_delivery_carrier__presta_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_presta_order_status__presta_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_language__presta_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_category__presta_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__presta_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_country__presta_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_country_state__presta_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_lang__presta_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_partner__presta_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_users__presta_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_stock_quant__presta_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_stock_warehouse__presta_id
+msgid "Presta ID"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_tax__presta_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_tax_group__presta_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_tax_rule__presta_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_attribute__presta_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_attribute_value__presta_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_feature__presta_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_feature_value__presta_id
+msgid "Presta Id"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__presta_price
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__presta_price
+msgid "Presta Price"
+msgstr "Prix de vente Prestashop"
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_gt_prestashop_product_images__prest_product_id
+msgid "Presta Product ID"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__presta_inventory_id
+msgid "Presta inventory ID"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__prestashop_last_update_cart_rule_date
+msgid "Presta last update cart rule date"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__prestashop_last_update_catalog_rule_date
+msgid "Presta last update catalog rule date"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__prestashop_last_update_category_date
+msgid "Presta last update category date"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__prestashop_last_update_order_status_date
+msgid "Presta last update order status date"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__prestashop_last_update_product_data_date
+msgid "Presta last update product data rule date"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_stock_quant__is_presta
+msgid "Presta stock"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_bank_statement_line__is_prestashop
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_move__is_prestashop
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_payment__is_prestashop
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_cart_rules__prestashop_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_stock_picking__is_presta
+#: model:ir.ui.menu,name:prestashop_connector_gt.prestashop_ecommerce
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_partner_form_inherit_presta
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_prestashopproduct_category_form
+msgid "Prestashop"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__prest_active
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__prest_active
+msgid "Prestashop Active"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_partner__prestashop_address
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_users__prestashop_address
+msgid "Prestashop Address"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__prestashop_product_category
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__prestashop_product_category
+msgid "Prestashop Category"
+msgstr "Catégorie principale Prestashop"
+
+#. module: prestashop_connector_gt
+#: model:res.groups,name:prestashop_connector_gt.group_prestashop_connector_users
+msgid "Prestashop Connector Users"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_prestashop_connector_wizard
+msgid "Prestashop Connector Wizard"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_acc_invoice_inherit_presta
+msgid "Prestashop Details"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.server,name:prestashop_connector_gt.schedular_prestashop_export_product_ir_actions_server
+#: model:ir.cron,cron_name:prestashop_connector_gt.schedular_prestashop_export_product
+msgid "Prestashop Export Product"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.server,name:prestashop_connector_gt.schedular_prestashop_export_customer_ir_actions_server
+#: model:ir.cron,cron_name:prestashop_connector_gt.schedular_prestashop_export_customer
+msgid "Prestashop Exprot Customer"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__product_hght
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__product_hght
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_amazon_product_product_form_inherits
+msgid "Prestashop Height"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_log_error__prestashop_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__presta_id
+msgid "Prestashop ID"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__create_prestashop_shop__mapped_product_by__presta_id
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_instance__mapped_product_by__presta_id
+msgid "Prestashop Id"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.server,name:prestashop_connector_gt.scedular_prestashop_import_address_ir_actions_server
+#: model:ir.cron,cron_name:prestashop_connector_gt.scedular_prestashop_import_address
+msgid "Prestashop Import Address"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.server,name:prestashop_connector_gt.scedular_prestashop_import_customer_ir_actions_server
+#: model:ir.cron,cron_name:prestashop_connector_gt.scedular_prestashop_import_customer
+msgid "Prestashop Import Customer"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.server,name:prestashop_connector_gt.scedular_prestashop_import_inventory_ir_actions_server
+#: model:ir.cron,cron_name:prestashop_connector_gt.scedular_prestashop_import_inventory
+msgid "Prestashop Import Inventory"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.server,name:prestashop_connector_gt.scedular_prestashop_import_order_ir_actions_server
+#: model:ir.cron,cron_name:prestashop_connector_gt.scedular_prestashop_import_order
+msgid "Prestashop Import Orders"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.server,name:prestashop_connector_gt.scedular_prestashop_import_product_ir_actions_server
+#: model:ir.cron,cron_name:prestashop_connector_gt.scedular_prestashop_import_product
+msgid "Prestashop Import Product"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestaerp_view_shop_form
+msgid "Prestashop Information"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-python
+#: code:addons/prestashop_connector_gt/models/prestashop_dashboard.py:0
+#: model:ir.model,name:prestashop_connector_gt.model_prestashop_instance
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__prestashop_instance_id
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestaerp_view_shop_form
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestaerp_view_shop_tree
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.res_config_settings_view_form
+#, python-format
+msgid "Prestashop Instance"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.action_prestashop_instance
+#: model:ir.ui.menu,name:prestashop_connector_gt.menu_prestashop_core_instances
+msgid "Prestashop Instances"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.action_prestashop_language
+#: model:ir.model,name:prestashop_connector_gt.model_prestashop_language
+msgid "Prestashop Language"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_amazon_product_product_form_inherits
+msgid "Prestashop Length"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_prestashop_log
+msgid "Prestashop Log"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.ui.menu,name:prestashop_connector_gt.all_presta_log_menu
+msgid "Prestashop Log History"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.ui.menu,name:prestashop_connector_gt.all_prestashop_log
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.presta_log_error_form_view
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestashop_log_form_view
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestashop_log_tree_view
+msgid "Prestashop Logs"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_order_form_inherited
+msgid "Prestashop Messages"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.action_amazon_operation
+msgid "Prestashop Operation"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.action_wizard_prestashop_instance_import_export_operations
+msgid "Prestashop Operations"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_sale_order__prestashop_order
+msgid "Prestashop Order"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__prestashop_order_data
+msgid "Prestashop Order Data"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_presta_order_status
+msgid "Prestashop Order Status"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__prestashop_product
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__prestashop_product
+msgid "Prestashop Product"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__prestashop_product_id
+msgid "Prestashop Product Id "
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_gt_prestashop_product_images
+msgid "Prestashop Product Images"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__prestashop_product_template_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__prestashop_product_template_id
+msgid "Prestashop Product Template Id "
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.action_prestashop_sale_report
+msgid "Prestashop Sales Analysis"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_order_form_inherited
+msgid "Prestashop Shipping Information"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-python
+#: code:addons/prestashop_connector_gt/models/prestashop_dashboard.py:0
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__prestashop_shop
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_create_prestashop_shop
+#, python-format
+msgid "Prestashop Shop"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.act_prestashop_shop_form
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__tmpl_shop_ids
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__tmpl_shop_ids
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_amazon_product_product_form_inherits
+msgid "Prestashop Shops"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__prestashop_store_view_ids
+msgid "Prestashop Store Views"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_partner__prestashop_supplier
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_users__prestashop_supplier
+msgid "Prestashop Supplier"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.server,name:prestashop_connector_gt.schedular_prestashop_update_product_inventory_ir_actions_server
+#: model:ir.cron,cron_name:prestashop_connector_gt.schedular_prestashop_update_product_inventory
+msgid "Prestashop Update Inventory"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.server,name:prestashop_connector_gt.schedular_prestashop_update_product_ir_actions_server
+#: model:ir.cron,cron_name:prestashop_connector_gt.schedular_prestashop_update_product
+msgid "Prestashop Update Product"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__presta_website_id
+msgid "Prestashop Website"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,help:prestashop_connector_gt.field_prestashop_shop__presta_website_id
+msgid "Prestashop Website Id"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__product_wght
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__product_wght
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_amazon_product_product_form_inherits
+msgid "Prestashop Weight"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__product_width
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__product_width
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_amazon_product_product_form_inherits
+msgid "Prestashop Width"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_partner__prestashop_customer
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_users__prestashop_customer
+msgid "Prestashop customer"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_sale_order__prestashops_order
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_sale_report__prestashops_order
+msgid "Prestashops Order"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Previous"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_catalog_price_rules__price
+msgid "Price"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__demande_catalogue
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__demande_catalogue
+msgid "Price on request / Catalog price"
+msgstr "Prix de vente sur le site web"
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__pricelist_id
+msgid "Pricelist"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_order_message__private
+msgid "Private"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/product_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/product_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: model:ir.model,name:prestashop_connector_gt.model_product_template
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_gt_prestashop_product_images__product_id
+#: model:ir.ui.menu,name:prestashop_connector_gt.product_presta_menu
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_order_product_prestashop_search
+#, python-format
+msgid "Product"
+msgstr "Produit"
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_product_attribute
+msgid "Product Attribute"
+msgstr "Attribut de produit"
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_product_category
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__categ_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__categ_id
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_order_product_prestashop_search
+msgid "Product Category"
+msgstr "Catégorie de produit"
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_amazon_product_product_form_inherits
+msgid "Product Dimension"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.product_feature_action_inherit
+msgid "Product Feature"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.product_feature_value_action_inherit
+msgid "Product Feature Value"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.product_feature_form
+msgid "Product Features"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.product_feature_value_form
+msgid "Product Features Value"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_gt_prestashop_product_images__product_t_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__product_img_ids
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__product_img_ids
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_amazon_product_product_form_inherits
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_product_image_form
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_product_image_tree
+msgid "Product Images"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_product_listing
+msgid "Product Listing"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__product_list_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__product_list_id
+msgid "Product Shops"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__prd_type_name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__prd_type_name
+msgid "Product Type Name"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_product_product
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.product_normal_form_view
+msgid "Product Variant"
+msgstr "Variante de produit"
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.action_product_variants
+#: model:ir.ui.menu,name:prestashop_connector_gt.product_variants_presta_menu
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.product_product_tree_view
+msgid "Product Variants"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__product_to_be_exported
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__product_to_be_exported
+msgid "Product to be exported?"
+msgstr "Article à créer ?"
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.inherit_product_template_action
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestaerp_view_shop_form
+msgid "Products"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__product_template__condition__promo
+msgid "Promo"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_sale_order__prestaa_instance_id
+msgid "Prstashop Instance Id"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_attribute__public_name
+msgid "Public Name"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_cart_rules__quantity
+msgid "Quantity"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_stock_quant
+msgid "Quants"
+msgstr "Quantités"
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: model:ir.ui.menu,name:prestashop_connector_gt.quotation_presta_menu
+#, python-format
+msgid "Quotation"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: model:ir.actions.act_window,name:prestashop_connector_gt.inherit_action_quotations
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestashop_instance_dashboard_kanban
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_order_product_prestashop_search
+#, python-format
+msgid "Quotations"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Quotations by Untaxed Amount"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Quotations sent"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestashop_instance_dashboard_kanban
+msgid "Ready to Transfer"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_catalog_price_rules__reduction
+msgid "Reduction"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_catalog_price_rules__reduction_type
+msgid "Reduction Type"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__create_prestashop_shop__mapped_product_by__default_code
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_instance__mapped_product_by__default_code
+msgid "Refrence"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_import_order_workflow__register_payment
+msgid "Register Payment"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_res_config_instance
+msgid "Res Config Instance"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_res_config_prestashop_instance
+msgid "Res Config Prestashop Instance"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/product_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/product_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/product_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Revenue"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__route_ids
+msgid "Routes"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__sku
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__sku
+msgid "SKU"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__sale_journal
+msgid "Sale Journal"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.ui.menu,name:prestashop_connector_gt.sale_order_presta_menu
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestashop_instance_dashboard_kanban
+msgid "Sale Orders"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_company__sale_quotation_onboarding_state_custom
+msgid "Sale Quotation Onboarding State Custom"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/static/src/xml/dashboard_widget.xml:0
+#: model:ir.ui.menu,name:prestashop_connector_gt.sale_presta_menu
+#, python-format
+msgid "Sales"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_sale_advance_payment_inv
+msgid "Sales Advance Payment Invoice"
+msgstr "Facture de paiement d'avance"
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_order_product_prestashop_search
+msgid "Sales Analysis"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_sale_report
+msgid "Sales Analysis Report"
+msgstr "Rapport d'analyse des ventes"
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Sales Analysis by Customer"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Sales Analysis by Customer Country"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Sales Analysis by Medium"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/product_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Sales Analysis by Product Category"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/product_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Sales Analysis by Product Variant"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Sales Analysis by Sales Team"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Sales Analysis by Salesperson"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Sales Analysis by Source"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_sale_order
+msgid "Sales Order"
+msgstr "Bon de commande"
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Ligne de commande"
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_config_settings__sale_order_prefix
+msgid "Sales Order Prefix"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.inherit_action_orders
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_order_product_prestashop_search
+msgid "Sales Orders"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Sales Orders by Untaxed Amount"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_config_settings__sales_team
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_order_product_prestashop_search
+#, python-format
+msgid "Sales Team"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_config_settings__sales_person
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_order_product_prestashop_search
+#, python-format
+msgid "Salesperson"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestaerp_view_shop_form
+msgid "Schedular Configuration"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__product_template__condition__occasion
+msgid "Second Hand"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_config_settings__select_instance
+msgid "Select Instance"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__shop_ids
+msgid "Select Shops"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_order_form_inherited
+msgid "Send Message"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__seo_name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__seo_name
+msgid "Seo name"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_category__sequence
+msgid "Sequence"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.action_open_base_onboarding_company_custom
+msgid "Set your company data Custom"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.prestashop_settings_action
+#: model:ir.ui.menu,name:prestashop_connector_gt.menu_conf_setting
+msgid "Settings"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.import_order_workflow_form_view
+msgid "Shipment & Order"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__shipment_fee_product_id
+msgid "Shipment Fee"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_presta_order_status__shipped
+msgid "Shipped"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_order_form_inherited
+msgid "Shipping"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_order_form_inherited
+msgid "Shipping Details"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_delivery_carrier
+msgid "Shipping Methods"
+msgstr "Modes d'expédition"
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_import_order_workflow__picking_policy
+msgid "Shipping Policy"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_create_prestashop_shop__shipping_product_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_instance__shipping_product_id
+msgid "Shipping Product"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:product.template,description_sale:prestashop_connector_gt.product_product_shipping_product_template
+#: model:product.template,name:prestashop_connector_gt.product_product_shipping_product_template
+msgid "Shipping and Handling"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_bank_statement_line__total_shipping_tax_excl
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_move__total_shipping_tax_excl
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_payment__total_shipping_tax_excl
+msgid "Shipping(tax excl.)"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_bank_statement_line__total_shipping_tax_incl
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_move__total_shipping_tax_incl
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_payment__total_shipping_tax_incl
+msgid "Shipping(tax incl.)"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_bank_statement_line__shop_ids
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_move__shop_ids
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_payment__shop_ids
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_cart_rules__shop_ids
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_catalog_price_rules__shop_ids
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_delivery_carrier__shop_ids
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_gt_prestashop_product_images__shop_ids
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_order_message__shop_ids
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_attribute__shop_ids
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_attribute_value__shop_ids
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_category__shop_ids
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__prodshop_ids
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_partner__shop_ids
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_users__shop_ids
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_sale_order__shop_ids
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_stock_picking__shop_ids
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_stock_warehouse__shop_ids
+msgid "Shop"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_cart_rules__shop_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_catalog_price_rules__shop_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_customer_threads__id_shop
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_category__shop_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_listing__shop_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_sale_order__shop_id
+msgid "Shop ID"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-python
+#: code:addons/prestashop_connector_gt/wizard/create_shops.py:0
+#, python-format
+msgid "Shop Is Already Created"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__product_shop_count
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__product_shop_count
+#: model:ir.ui.menu,name:prestashop_connector_gt.menu_prestashop_core_shops
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_import_prestashop_connector_wizard_form_view
+msgid "Shops"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_instance__sale_shop_count
+msgid "Shops\\s Count"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__show_price
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__show_price
+msgid "Show Price"
+msgstr "Afficher les prix"
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__product_template__condition__sold
+msgid "Sold"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/static/src/js/prestashop_button.js:0
+#, python-format
+msgid "Something Went Wrong"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Source"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__product_spec_ids
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__product_spec_ids
+msgid "Specification"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_amazon_product_product_form_inherits
+msgid "Specifications"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_customer_threads__status
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_order_message__status
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_presta_order_status__name
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_sale_order__order_status
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_order_product_prestashop_search
+msgid "Status"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestaerp_view_shop_form
+msgid "Stock Configuration"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_stock_move
+msgid "Stock Move"
+msgstr "Mouvement de stock"
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.inherit_action_picking_tree_all
+#: model:ir.actions.act_window,name:prestashop_connector_gt.inherit_action_picking_tree_label
+#: model:ir.actions.act_window,name:prestashop_connector_gt.inherit_action_picking_tree_pending
+msgid "Stock Operations"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_stock_valuation_layer
+msgid "Stock Valuation Layer"
+msgstr "Couche de valorisation d'inventaire"
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_config_settings__prestashop_store_view_id
+msgid "Storeviews"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-python
+#: code:addons/prestashop_connector_gt/models/prestashop_shop.py:0
+#, python-format
+msgid "Successfully Imported feature"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__suffix
+msgid "Suffix"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__summary
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__summary
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_amazon_product_product_form_inherits
+msgid "Summary"
+msgstr "Résumé"
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__supplier_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__supplier_id
+msgid "Supplier"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.action_partner_form_supplier
+#: model:ir.ui.menu,name:prestashop_connector_gt.menu_vendor_form
+msgid "Suppliers"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_config_settings__tags
+msgid "Tags"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_account_tax
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_tax_rule__tax_id
+msgid "Tax"
+msgstr "Taxe"
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_create_prestashop_shop__tax_type
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_instance__tax_type
+msgid "Tax Consider in Odoo"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__create_prestashop_shop__tax_type__tax_exclude
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_instance__tax_type__tax_exclude
+msgid "Tax Exclude?"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_account_tax_group
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_tax_rule__group_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__tax_group_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__tax_group_id
+msgid "Tax Group"
+msgstr "Groupe de taxes"
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_instance__included_tax
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__create_prestashop_shop__tax_type__tax_include
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_instance__tax_type__tax_include
+msgid "Tax Include?"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__sp_eacute_specifications_techniques
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__sp_eacute_specifications_techniques
+msgid "Technical Specifications"
+msgstr "Spécifications techniques"
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_spec__product_tmpl_id
+msgid "Template Id"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestashop_instance_form_view
+msgid "Test"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.actions.act_window,help:prestashop_connector_gt.inherit_action_invoice_tree1
+#: model_terms:ir.actions.act_window,help:prestashop_connector_gt.inherit_action_invoice_tree1_done
+#: model_terms:ir.actions.act_window,help:prestashop_connector_gt.inherit_action_invoice_tree1_pending
+msgid ""
+"The discussions with your customer are automatically displayed at\n"
+"                    the bottom of each invoice."
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-python
+#: code:addons/prestashop_connector_gt/wizard/res_config_prestashop.py:0
+#, python-format
+msgid "The instance already exists for the given name."
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.constraint,message:prestashop_connector_gt.constraint_create_prestashop_shop_name
+msgid "The name already Exists!"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_prestashop_shop
+msgid "The prestashop determines the prestashop view"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.actions.act_window,help:prestashop_connector_gt.inherit_product_template_action
+msgid ""
+"The product form contains information to simplify the sale process: price, notes in the quotation,\n"
+"                    accounting data, procurement methods, etc."
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.mail_view_partner_form_inherit_presta
+msgid "This email is blacklisted for mass mailings. Click to unblacklist."
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,help:prestashop_connector_gt.field_gt_prestashop_import_export__prestashops_instance_ids
+msgid "This field relocates Prestashop Instance"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.sms_view_partner_form_inherit_presta
+msgid ""
+"This phone number is blacklisted for SMS Marketing. Click to unblacklist."
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_order_message__thread_id
+msgid "Thread"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_catalog_price_rules__to_date
+msgid "To Date"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_sale_order__order_status_update
+msgid "To Update Order Status"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_order_message__to_be_exported
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_category__to_be_exported
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_partner__to_be_exported
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_res_users__to_be_exported
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_sale_order__to_be_exported
+msgid "To be exported?"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_customer_threads__token
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_order_message__token
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_sale_order__token
+msgid "Token"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Top Categories"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Top Countries"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Top Customers"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Top Mediums"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Top Products"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Top Quotations"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Top Sales Orders"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Top Sales Teams"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Top Salespeople"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Top Sources"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__count_import
+msgid "Total Import Record"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Total orders"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "Total quotations"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_stock_picking
+msgid "Transfer"
+msgstr "Transfert"
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestashop_instance_dashboard_kanban
+msgid "Transferred"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__video_url
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__video_url
+msgid "URL Vidéo"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__prdct_unit_price
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__prdct_unit_price
+msgid "Unit Price"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/product_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/product_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/product_dashboard.json:0
+#, python-format
+msgid "Units"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_import_prestashop_connector_wizard_form_view
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.view_prestashop_import_export_operation
+msgid "Update"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__update_cart_rules
+msgid "Update Cart Rules"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__update_categories
+msgid "Update Categories"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__product_to_be_updated
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__product_to_be_updated
+msgid "Update On Prestashop"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.server,name:prestashop_connector_gt.update_orders_status_view_action
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__update_order_status
+msgid "Update Order Status"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_log__all_operations__update_cart_rules
+msgid "Update Prestashop cart rules"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_log__all_operations__update_catalog_rules
+msgid "Update Prestashop catalog rules"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_log__all_operations__update_categories
+msgid "Update Prestashop categories"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_log__all_operations__update_customers
+msgid "Update Prestashop customers"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_log__all_operations__update_inventory
+msgid "Update Prestashop inventory"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_log__all_operations__update_order_status
+msgid "Update Prestashop orders"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__prestashop_log__all_operations__update_product_data
+msgid "Update Prestashop product data"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__update_product_data
+msgid "Update Product Data"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__update_product_feature
+msgid "Update Product Feature"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__update_presta_product_inventory
+msgid "Update Product Inventory"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__update_product_price
+msgid "Update Product Price"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__on_fly_update_stock
+msgid "Update on Shop at time of Odoo Inventory Change"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.server,name:prestashop_connector_gt.action_update_prestashop_product
+msgid "Update product on Prestashop"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_connector_wizard__update_catalog_rules
+msgid "Upload Catalog Rules"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_import_order_workflow__validate_invoice
+msgid "Validate Invoice"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_import_order_workflow__validate_order
+msgid "Validate Order"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_spec__feature_value
+msgid "Value"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.product_feature_form
+msgid "Values"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.attribute_form_view_inherit
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.attribute_tree_view_inherit
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.variants_form_view_inherit
+msgid "Variant Values"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_create_prestashop_shop__version
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_instance__version
+msgid "Version"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields.selection,name:prestashop_connector_gt.selection__product_template__condition__vintage
+msgid "Vintage and Rare"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.prestashop_instance_dashboard_kanban
+msgid "Waiting Availability"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_stock_warehouse
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_create_prestashop_shop__warehouse_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_instance__warehouse_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__warehouse_id
+msgid "Warehouse"
+msgstr "Entrepôt"
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,help:prestashop_connector_gt.field_create_prestashop_shop__warehouse_id
+#: model:ir.model.fields,help:prestashop_connector_gt.field_prestashop_instance__warehouse_id
+msgid "Warehouse used to compute the stock quantities."
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/static/src/js/prestashop_button.js:0
+#, python-format
+msgid "Warning"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_create_prestashop_shop__webservice_key
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_instance__webservice_key
+msgid "Webservice key"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__website_display_currency
+msgid "Website Display Currency"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__website_meta_description
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__website_meta_description
+msgid "Website meta description"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__website_meta_keywords
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__website_meta_keywords
+msgid "Website meta keywords"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__website_meta_title
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__website_meta_title
+msgid "Website meta title"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_bank_statement_line__total_products_wt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_move__total_products_wt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_payment__total_products_wt
+msgid "Weight"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_product__wholesale_price
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__wholesale_price
+msgid "Whole Sale Price"
+msgstr "Prix d'achat"
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.import_order_workflow_form_view
+msgid "Workflow Name"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_sale_order_line__wrapping_cost
+msgid "Wrapping Cost"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_bank_statement_line__total_wrapping_tax_excl
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_move__total_wrapping_tax_excl
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_payment__total_wrapping_tax_excl
+msgid "Wrapping(tax excl.)"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_bank_statement_line__total_wrapping_tax_incl
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_move__total_wrapping_tax_incl
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_account_payment__total_wrapping_tax_incl
+msgid "Wrapping(tax incl.)"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_cart_rules__write_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_catalog_price_rules__write_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_gt_prestashop_product_images__write_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_attribute_value__write_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_category__write_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_template__write_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_sale_order__write_date
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_stock_warehouse__write_date
+msgid "Write Date"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.actions.act_window,help:prestashop_connector_gt.inherit_action_picking_tree_all
+#: model_terms:ir.actions.act_window,help:prestashop_connector_gt.inherit_action_picking_tree_label
+#: model_terms:ir.actions.act_window,help:prestashop_connector_gt.inherit_action_picking_tree_pending
+msgid ""
+"You can either do it immediatly or mark it as Todo for future processing. Use your scanner to\n"
+"                    validate the transferred quantity quicker."
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-python
+#: code:addons/prestashop_connector_gt/models/sale.py:0
+#: code:addons/prestashop_connector_gt/models/sale.py:0
+#: code:addons/prestashop_connector_gt/models/sale.py:0
+#: code:addons/prestashop_connector_gt/models/sale.py:0
+#: code:addons/prestashop_connector_gt/models/sale.py:0
+#: code:addons/prestashop_connector_gt/models/sale.py:0
+#, python-format
+msgid "You can select one order status at a time"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.constraint,message:prestashop_connector_gt.constraint_product_attribute_value_value_company_uniq
+msgid ""
+"You cannot create two values with the same name for the same attribute."
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,help:prestashop_connector_gt.field_create_prestashop_shop__webservice_key
+#: model:ir.model.fields,help:prestashop_connector_gt.field_prestashop_instance__webservice_key
+msgid ""
+"You have to put it in 'username' of the PrestaShop Webservice api path "
+"invite"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.actions.act_window,help:prestashop_connector_gt.inherit_product_template_action
+msgid ""
+"You must define a product for everything you sell, whether it's a physical product, a consumable or\n"
+"                    a service you offer to customers."
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.actions.act_window,help:prestashop_connector_gt.inherit_action_quotations
+msgid ""
+"Your next actions should flow efficiently: confirm the Quotation\n"
+"                    to a Sale Order, then create the Invoice and collect the Payment."
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model_terms:ir.ui.view,arch_db:prestashop_connector_gt.onboarding_prestashop_instance_configuration
+msgid "company.looks_great!"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_gt_prestashop_product_images__extention
+msgid "file extention"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_sale_order__presta_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_sale_order_line__presta_id
+msgid "presta_id"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_gt_prestashop_import_export
+msgid "prestashop Import Export Gt"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.actions.act_window,name:prestashop_connector_gt.action_all_prestashop_log
+msgid "prestashop logs"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_prestashop_tax_rule
+msgid "prestashop.tax.rule"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_product_feature
+msgid "product.feature"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_product_feature_value
+msgid "product.feature.value"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model,name:prestashop_connector_gt.model_product_spec
+msgid "product.spec"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_product_listing__product_id
+msgid "product_id"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_instance__presta_id
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_shop__presta_id
+msgid "shop Id"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "since last period"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "so stats - current"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/sales_dashboard.json:0
+#, python-format
+msgid "so stats - previous"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#. odoo-javascript
+#: code:addons/prestashop_connector_gt/data/files/product_dashboard.json:0
+#: code:addons/prestashop_connector_gt/data/files/product_dashboard.json:0
+#, python-format
+msgid "sold"
+msgstr ""
+
+#. module: prestashop_connector_gt
+#: model:ir.model.fields,field_description:prestashop_connector_gt.field_prestashop_tax_rule__state_id
+msgid "state"
+msgstr ""

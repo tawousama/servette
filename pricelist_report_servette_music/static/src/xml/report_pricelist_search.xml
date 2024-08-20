@@ -1,0 +1,14 @@
+<odoo>
+		<t t-name="pricelist_report_servette_music.report_pricelist_sm_search">
+				<form class="form-inline ml-4 o_pricelist_report_form">
+						<div class="form-group">
+								<label class="font-weight-bold">Liste de prix: </label>
+								<div class="row">
+										<div class="col mr-4">
+												<span class="o_pricelist"/>
+										</div>
+								</div>
+						</div>
+				</form>
+		</t>
+</odoo>

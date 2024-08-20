@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_offers_eight" name="Offers Eight">
+		<section class="jewellery-parallax-banner s_cover parallax s_parallax_is_fixed s_parallax_no_overflow_hidden" data-scroll-background-ratio="1" data-name="Cover" style="background-image: none;">
+	        <span class="s_parallax_bg oe_img_bg oe_custom_bg" style="background-image: url('/theme_decor/static/src/img/jewellery-parallax-bg.jpg');background-attachment: fixed;"></span>
+	        <div class=" text-center">
+	        	<div class="container">
+	        		<div class="row">
+	        			<div class="parallex_content">
+	        				<div class="subtitle">Special Discount On All Collection</div>
+	        				<h1 class="title">New Luxurious Collection</h1>
+	        				<h3 class="title2">Chairs, Sofas, Couches</h3>
+	        				<div class="s_btn" data-name="Button">
+    							<a href="#" class="btn btn-secondary bizople_button">Read More</a>
+    						</div>
+	        			</div>
+	        		</div>
+	        	</div>
+	        </div>
+      	</section>
+	</template>
+
+</odoo>

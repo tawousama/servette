@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_newsletter_three" name="Newsletter Three">
+		<section class="yoga-brand-newsletter pt152 pb96" style="background-image: url('/theme_decor/static/src/img/yoga-brand-newsletter-bg.jpg');">
+			<div class="container extended-container">
+				<section class="yoga-newsletter text-center">
+					<h3 class="title">Subscribe to our newsletter</h3>
+					<p>Get Regular updates for your timetable</p>
+					<div class="yoga-subscribe w-md-75 w-xl-50 mx-auto">
+						<form class="input-group js_subscribe" data-list-id="1">
+							<input type="email" name="email" class="js_subscribe_value form-control" placeholder="Enter your Email"/>
+							<span class="input-group-append">
+					            <a role="button" href="#" class="btn btn-primary js_subscribe_btn h-100">Subscribe</a>
+					            <a role="button" href="#" class="btn btn-success js_subscribed_btn h-100 d-none" disabled="disabled">Thanks</a>
+					        </span>
+						</form>
+					</div>
+				</section>
+			</div>
+		</section>
+	</template>
+
+</odoo>

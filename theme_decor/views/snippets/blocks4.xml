@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <template id="blocks4_snippet"  name="Snippet Style Seven">
+       
+        <section class="block4 pt64 pb64">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 overflow-hidden">
+                        <div class="oe_structure oe_empty" data-editor-message="DRAG BUILDING BLOCKS HERE"/>
+                    </div>
+                    <div class="col-lg-8 overflow-hidden">
+                        <div class="oe_structure oe_empty" data-editor-message="DRAG BUILDING BLOCKS HERE"/>
+                    </div>
+                                 
+                </div>
+            </div>
+        </section>
+      
+    </template>
+</odoo>

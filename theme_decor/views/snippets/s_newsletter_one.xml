@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_newsletter_one" name="Newsletter One">
+		<section class="aviat-subscribe pt32 pb64">
+			<div class="container">
+				<div class="subs-title text-center">
+					<span class="text-muted">our news</span>
+					<h1 class="text-secondary down-line mt-1">SIGN UP FOR LATEST NEWS</h1>
+				</div>
+				<div class="input-group js_subscribe" data-list-id="1">
+			        <input type="email" name="email" class="js_subscribe_value form-control bg-light" placeholder="your email..."/>
+			        <span class="input-group-append">
+			            <a role="button" href="#" class="btn btn-primary js_subscribe_btn h-100">Subscribe</a>
+			            <a role="button" href="#" class="btn btn-success js_subscribed_btn h-100 d-none" disabled="disabled">Thanks</a>
+			        </span>
+			    </div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

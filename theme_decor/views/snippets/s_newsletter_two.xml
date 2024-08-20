@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_newsletter_two" name="Newsletter Two">
+		<section class="charity-newsletter" style="background-image: url('/theme_decor/static/src/img/newsletterbg.jpg');">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-lg-4 col-md-6 offset-md-6 offset-lg-8">
+						<div class="content">
+							<h3 class="title">Signup For Latest News</h3>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id lacinia nulla. Nulla suscipit semper mauris et dictum.</p>
+							<div class="charity-subscribe">
+								<form class="input-group js_subscribe" data-list-id="1">
+									<input type="email" name="email" class="js_subscribe_value form-control bg-white" placeholder="Your Email"/>
+									<span class="input-group-append">
+							            <a role="button" href="#" class="btn btn-primary js_subscribe_btn h-100">Subscribe</a>
+							            <a role="button" href="#" class="btn btn-success js_subscribed_btn h-100 d-none" disabled="disabled">Thanks</a>
+							        </span>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

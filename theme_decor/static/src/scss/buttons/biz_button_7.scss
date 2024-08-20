@@ -1,0 +1,104 @@
+.btn-bizople_button_7 {
+    letter-spacing: 0;
+    transition: all 500ms cubic-bezier(0.77, 0, 0.175, 1);
+    color: black;
+    border: 0 !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    position: relative;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.btn-bizople_button_7:before, .btn-bizople_button_7:after {
+    content: '';
+    position: absolute; 
+    transition: inherit;
+    z-index: -1;
+    top: 0;
+    width: 0;
+    height: 100%;
+}
+
+.btn-bizople_button_7:before {
+    right: 0;  
+    border: 1px solid black;
+    border-left: 0;
+    border-right: 0;
+}
+
+.btn-bizople_button_7:after {
+    left: 0;
+}
+
+.btn-bizople_button_7:hover {
+    color: $light !important;
+    transition-delay: .5s;
+}
+.btn-bizople_button_7:active {
+    color: $light !important;
+    transition-delay: .5s;
+}
+
+.btn-bizople_button_7:hover:before {
+    transition-delay: 0s;
+}
+
+.btn-bizople_button_7:hover:after {
+    background-color: black;
+    transition-delay: .35s;
+}
+
+.btn-bizople_button_7:hover:before,
+.btn-bizople_button_7:hover:after {
+    width: 100%;
+}
+
+
+/*::::::::::::: btn-secondary and btn-outline-secondary ::::::::::::::::::::::::::*/
+
+.btn-bizople_button_7.btn-secondary, .btn-bizople_button_7.btn-outline-secondary{
+    color: $secondary !important;
+}
+
+.btn-bizople_button_7.btn-secondary:active, .btn-bizople_button_7.btn-outline-secondary:active{
+    background-color: $secondary !important;
+}
+
+.btn-bizople_button_7.btn-secondary, .btn.btn-bizople_button_7.btn-outline-secondary{
+    &:before{
+        border-color: $secondary !important;
+    }
+}
+
+.btn-bizople_button_7.btn-secondary:hover, .btn-bizople_button_7.btn-outline-secondary:hover {
+    color: $light !important;
+    &:after{
+        background-color: $secondary !important;
+    }
+}
+
+/*::::::::::::: btn-primary and btn-outline-primary ::::::::::::::::::::::::::*/
+
+.btn-bizople_button_7.btn-primary, .btn-bizople_button_7.btn-outline-primary{
+    color: $primary !important;
+}
+
+.btn-bizople_button_7.btn-primary:active, .btn-bizople_button_7.btn-outline-primary:active{
+    background-color: $primary !important;
+}
+
+.btn-bizople_button_7.btn-primary, .btn.btn-bizople_button_7.btn-outline-primary{
+    &:before{
+        border-color: $primary !important;
+    }
+}
+
+.btn-bizople_button_7.btn-primary:hover, .btn-bizople_button_7.btn-outline-primary:hover{
+    color: $light !important;
+    &:after{
+        background-color: $primary !important;
+    }
+}

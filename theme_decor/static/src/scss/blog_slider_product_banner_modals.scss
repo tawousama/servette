@@ -1,0 +1,30 @@
+#s_select_product_banner,#s_blog_slider_filter{
+    .modal-header{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 1rem 1rem;
+        border-bottom: 1px solid #DEE2E6;
+        border-top-left-radius: 4px !important;
+        border-top-right-radius: 4px !important;
+        .modal-title{
+            font-size: 22px !important;
+        }
+    }
+    .modal-body{
+        label{
+            font-weight: 700;
+        }
+        .form-control{
+            padding: 0.5rem 0.75rem !important;
+        }
+    }
+    .modal-footer{
+        border-bottom-left-radius: 4px !important;
+        border-bottom-right-radius: 4px !important;
+        #prod_sub_data{
+            background-color: #020a17 !important;
+            color: #fff !important;
+        }
+    }
+}

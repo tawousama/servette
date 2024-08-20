@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="s_homepage_one_clients" name="Clients">
+      	<div class="oe_structure"/>
+      	
+      	<section class="s_decor_six pt64 pb64">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-md-2">
+						<img class="img img-fluid" src="/theme_decor/static/src/img/furniture-brand1.png"/>
+					</div>
+					<div class="col-md-2">
+						<img class="img img-fluid" src="/theme_decor/static/src/img/furniture-brand2.png"/>
+					</div>
+					<div class="col-md-2">
+						<img class="img img-fluid" src="/theme_decor/static/src/img/furniture-brand3.png"/>
+					</div>
+					<div class="col-md-2">
+						<img class="img img-fluid" src="/theme_decor/static/src/img/furniture-brand4.png"/>
+					</div>
+					<div class="col-md-2">
+						<img class="img img-fluid" src="/theme_decor/static/src/img/furniture-brand5.png"/>
+					</div>
+					<div class="col-md-2">
+						<img class="img img-fluid" src="/theme_decor/static/src/img/furniture-brand1.png"/>
+					</div>
+				</div>
+			</div>
+		</section>
+		
+      	<div class="oe_structure"/>
+	</template>
+</odoo>

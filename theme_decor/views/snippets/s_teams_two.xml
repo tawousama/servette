@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_teams_two" name="Teams Two">
+		<section class="s_estate_team">
+			<div class="pt64 pb64 feature14">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-md-7 text-center">
+							<h3 class="title">Our Teams</h3>
+							<h6 class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+							</h6>
+						</div>
+					</div>
+					<div class="row mt40 pt16">
+						<div class="col-lg-3 col-md-6 wrap-feature14-box">
+							<div class="o_animate_preview o_animate o_anim_flip_in_y" style="animation-duration: 3s !important;">
+								<img class="rounded img img-fluid"
+									src="/theme_decor/static/src/img/a1.jpg" alt="Bizople kit" />
+								<div class="mt32">
+									<h5 class="mb-0">Micheal Anderson</h5>
+									<p class="subtitle">Design Specialist</p>
+									<p class="custom_p mt16 text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+									</p>
+									<a href="#" class="text-800 text-decoration-none">Learn More </a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 wrap-feature14-box">
+							<div class="o_animate_preview o_animate o_anim_flip_in_y" style="animation-duration: 3s !important;">
+								<img class="rounded img-responsive"
+									src="/theme_decor/static/src/img/a2.jpg" alt="Bizople kit" />
+								<div class="mt32">
+									<h5 class=" mb-0">Julia D’Souza</h5>
+									<p class="subtitle">Sales Person</p>
+									<p class="custom_p mt16 text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+									</p>
+									<a href="#" class="text-800 text-decoration-none">Learn More </a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 wrap-feature14-box">
+							<div class="o_animate_preview o_animate o_anim_flip_in_y" style="animation-duration: 3s !important;">
+								<img class="rounded img-responsive"
+									src="/theme_decor/static/src/img/a3.jpg" alt="Bizople kit" />
+								<div class="mt32">
+									<h5 class=" mb-0">Megan Doe</h5>
+									<p class="subtitle">Store Manager</p>
+									<p class="custom_p mt16 text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+									</p>
+									<a href="#" class="text-800 text-decoration-none">Learn More </a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 wrap-feature14-box">
+							<div class="o_animate_preview o_animate o_anim_flip_in_y" style="animation-duration: 3s !important;">
+								<img class="rounded img-responsive"
+									src="/theme_decor/static/src/img/a4.jpg" alt="Bizople kit" />
+								<div class="mt32">
+									<h5 class=" mb-0">Johnathan Birt</h5>
+									<p class="subtitle">Site Consultant</p>
+									<p class="custom_p mt16">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.
+									</p>
+									<a href="#" class="text-800 text-decoration-none">Learn More </a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

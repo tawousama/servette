@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_pricing_one" name="Pricing One">
+		<section class="s_software_pricing_plan s_pricing_one pricing2 pt80 pb80"
+			style="background-image:url('/theme_decor/static/src/img/pbg.jpg')">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1 class="text-white display-5">PRICING PLANS</h1>
+						<h5 class="text-white">Select a plan to continue</h5>
+					</div>
+				</div>
+				<div class="row pricing-box">
+					<div class="col-lg-5 col-md-5">
+						<section class="card shadow">
+							<div class="p-5">
+								<div class="d-flex no-block align-items-center">
+									<div class="plan-text">
+										<h4 class="m-b-0">REGULAR</h4>
+										<h6 class="subtitle">PLAN</h6>
+									</div>
+									<div class="pricing-text ms-auto">
+										<sup>$</sup>
+										<span>0</span>
+									</div>
+								</div>
+								<ul class="list-inline">
+									<li>2 Proto types</li>
+									<li>6 Total Images</li>
+								</ul>
+								<a class="btn btn-outline-primary btn-md arrow-btn"
+									 href="#">
+										START FOR FREE
+										<!-- <span class="fa fa-1x fa-fw fa-long-arrow-right ms-1"></span> -->
+								</a>
+							</div>
+						</section>
+					</div>
+					<div class="col-lg-6 col-md-7 above-card">
+						<section class="card shadow">
+							<div class="p-5">
+								<div class="d-flex no-block align-items-center">
+									<div class="plan-text">
+										<h4 class="m-b-0">AWESOME</h4>
+										<h6 class="subtitle">PLAN</h6>
+									</div>
+									<div class="pricing-text ms-auto">
+										<sup>$</sup>
+										<span>15</span>
+									</div>
+								</div>
+								<ul class="list-inline">
+									<li>Unlimited Proto types</li>
+									<li>Unlimited Images</li>
+									<li>5 Users</li>
+									<li>Quick editer</li>
+								</ul>
+								<a class="btn btn-primary btn-md arrow-btn"
+									 href="#">
+										BUY THE PLAN
+										<!-- <span class="fa fa-1x fa-fw fa-long-arrow-right ms-1"></span> -->
+								</a>
+							</div>
+						</section>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</template>
+
+</odoo>

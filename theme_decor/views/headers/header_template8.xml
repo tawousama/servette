@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="theme_decor_header8" inherit_id="website.layout" name="Header Eight" active="False">
+		<xpath expr="//header" position="attributes">
+			<attribute name="t-attf-class" add="decor-header" separator=" "></attribute>
+		</xpath>
+		<xpath expr="//header//nav" position="replace">
+			<nav data-name="Navbar" id="decor-header8" class="decor-header8">
+				<div class="middle-header">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-md-3 d-flex d-md-block mbl-div header_left">
+								<div class="decor-logo text-start">
+									<a href="/" class="navbar-brand logo m-0">
+							            <span t-field="website.logo" t-options="{'widget': 'image'}" role="img" t-att-aria-label="'Logo of %s' % website.name" t-att-title="website.name" class="default-logo"/>
+							            <span t-field="website.transparent_header_logo" t-options="{'widget': 'image'}" role="img" t-att-aria-label="'Logo of %s' % website.name" t-att-title="website.name" class="transparent-logo"/>
+							        </a>
+								</div>
+								<div class="mobile-sidebar-toggle d-block d-md-none">
+									<button type="button" id="show-sidebar" class="btn btn-sm btn-dark d-block d-md-none">
+										<span class="ti ti-view-grid text-secondary"></span>
+									</button>
+								</div>
+							</div>
+							<div class="col-md-6 d-none d-md-block header-center">
+								<nav class="navbar navbar-expand-md p-0" id="bizople-header-eight">
+									<div class="collapse navbar-collapse justify-content-end" id="header8-menuitem">
+										<ul class="nav navbar-nav justify-content-end" id="top_menu">
+											<t t-foreach="website.menu_id.child_id" t-as="submenu">
+												<t t-call="website.submenu">
+													<t t-set="item_class" t-value="'nav-item'" />
+													<t t-set="link_class" t-value="'nav-link'" />
+												</t>
+											</t>
+										</ul>
+									</div>
+								</nav>
+							</div>
+							<div class="col-md-3 p-xl-0 d-none d-md-block header-center">
+								<div class="s_btn text-end" data-name="Button">
+    								<a href="#" class="btn btn-primary rounded-circle btn-lg shadow">Get Quote</a>
+        						</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</xpath>
+	</template>
+
+</odoo>

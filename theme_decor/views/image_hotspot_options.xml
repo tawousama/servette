@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<template id="image_hotspot_snippet_options_inherit" inherit_id="website.snippet_options">
+		<xpath expr="//div[@data-js='HeaderBox']" position="after">
+			<div data-selector=".img" data-js="add_hotshpot">
+				<we-row string="Add Hotspot">
+	                <we-button class="biz_add_hotspot"><i class="fa fa-fw fa-circle-thin"/></we-button>
+		        </we-row>
+			</div>
+			<div data-selector=".image_hotspot" data-js="hotspot_posi">
+				<we-row>
+	                <we-select class="hotspot_info_type" string="Type">
+	                    <we-button data-name="hotspot_static" data-select-class="hotspot_static">Static</we-button>
+	                    <we-button data-name="hotspot_dynamic" data-select-class="hotspot_dynamic">Dynamic</we-button>
+	                </we-select>
+	                <we-button class="show_preview" data-dependencies="hotspot_static">
+	                	<i class="fa fa-fw fa-eye"/>
+	                </we-button>
+	            </we-row>
+	            <we-row string="Select Product">
+	                <we-button class="select_hotspot_product" data-dependencies="hotspot_dynamic">
+	                	<i class="fa fa-fw fa-shopping-cart"/>
+	                </we-button>
+	            </we-row>
+				<we-range string="Horizontal"
+                    data-no-preview="true"
+                    data-select-data-attribute=""
+                    data-attribute-default-value="50"
+                    data-attribute-name="horizontal_posi"
+                    class="horizontal_posi"
+                    data-min="0"
+                    data-max="100"
+                    data-step="1"/>
+	            <we-range string="Vertical"
+	                    data-no-preview="true"
+	                    data-select-data-attribute=""
+	                    data-attribute-name="vertical_posi"
+	                    class="vertical_posi"
+	                    data-attribute-default-value="50"
+	                    data-min="0"
+	                    data-max="100"
+	                    data-step="1"/>
+			</div>
+		</xpath>
+	</template>
+
+	<template id="dynamic_hotspot_product_data">
+		<div class="oe_structure d-none">
+		<section contentEditable="false" class="dynamic_image_hotspot_info_price" style="display:none !important">
+			<t t-set="combination_info" t-value="product_info._get_combination_info(only_template=True, add_qty=add_qty or 1, pricelist=pricelist)" />
+			<p class="decor-price price">
+				<b>
+					
+					<span class="discounted_price" t-if="combination_info['price']"
+						t-out="combination_info['price']"
+						t-options="{'widget': 'monetary', 'display_currency': website.currency_id}" />
+					<t t-if="True">
+						<t t-if="combination_info['has_discounted_price']">
+							<del
+								t-attf-class="text-primary original_price ml8 {{'' if combination_info['has_discounted_price'] else 'd-none'}}"
+								style="white-space: nowrap;"
+								t-out="combination_info['list_price']"
+								t-options="{'widget': 'monetary', 'display_currency': website.currency_id}" />
+						</t>
+					</t>
+					<span itemprop="price" style="display:none;"
+						t-out="combination_info['price']" />
+					<span itemprop="priceCurrency" style="display:none;"
+						t-out="website.currency_id.name" />
+				</b>
+			</p>
+		</section>
+		</div>
+	</template>
+</odoo>

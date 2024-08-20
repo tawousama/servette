@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_homepage_three_with_bg_imag_para" name="Background imagge with button and paragraph">
+		<section
+			class="s_furniture_with_bg_imag_para  lg-banner-area lg-banner-bg pt80 pb80"
+			style="background-image: url(/theme_decor/static/src/img/furniture_01.jpg); margin-top:0px;margin-bottom:0px;">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-7 col-md-10">
+						<div class="lg-banner-info">
+							<h2>Contrary to popular belief is not simply rand.</h2>
+							<p>
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit
+								<br />
+								sed do eiusmod tempor incid
+							</p>
+							<a class="btn btn-theme more-product-btn" href="#">MORE
+								PRODUCTS
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</template>
+
+</odoo>

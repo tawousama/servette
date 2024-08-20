@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="s_teams_five" name="Teams Five">
+		<section class="app-team">
+			<div class="container">
+				<div class="title">
+					<span>OUR TEAM</span>
+					<h3>Meet Our Team</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut rhoncus enim turpis, et condimentum justo interdum in quisque.</p>
+				</div>
+				<div id="app-team-carousel" class="carousel bs-slider slide control-round indicators-line pt32" data-bs-ride="carousel" data-bs-pause="hover" data-bs-interval="7000">
+		          	<div class="carousel-inner" role="listbox">
+		          		<div class="carousel-item active">
+			            	<div class="container">
+		            			<div class="row">
+		            				<div class="col-lg-3 col-md-6 mb24">
+		            					<div class="single-member text-center">
+		            						<div class="image">
+		            							<img src="/theme_decor/static/src/img/app-team1.png" class="img img-fluid"/>
+		            							<section class="img-hover">
+		            								<ul class="social-icons">
+		            									<li>
+		            										<a class="link" href="#">
+																<i class="fa fa-facebook" />
+															</a>
+		            									</li>
+		            									<li>
+		            										<a class="link" href="#">
+																<i class="fa fa-twitter" />
+															</a>
+		            									</li>
+		            									<li>
+		            										<a class="link" href="#">
+																<i class="fa fa-linkedin" />
+															</a>
+		            									</li>
+		            								</ul>
+		            							</section>
+		            						</div>
+		            						<div class="content">
+		            							<h4>Paul Williams</h4>
+		            							<span>Project Manager</span>
+		            						</div>
+		            					</div>
+		            				</div>
+		            				<div class="col-lg-3 col-md-6 mb24">
+		            					<div class="single-member text-center">
+		            						<div class="image">
+		            							<img src="/theme_decor/static/src/img/app-team2.png" class="img img-fluid"/>
+		            							<section class="img-hover">
+		            								<ul class="social-icons">
+		            									<li>
+		            										<a class="link" href="#">
+																<i class="fa fa-facebook" />
+															</a>
+		            									</li>
+		            									<li>
+		            										<a class="link" href="#">
+																<i class="fa fa-twitter" />
+															</a>
+		            									</li>
+		            									<li>
+		            										<a class="link" href="#">
+																<i class="fa fa-linkedin" />
+															</a>
+		            									</li>
+		            								</ul>
+		            							</section>
+		            						</div>
+		            						<div class="content">
+		            							<h4>Anita Oliver</h4>
+		            							<span>Project Manager</span>
+		            						</div>
+		            					</div>
+		            				</div>
+		            				<div class="col-lg-3 col-md-6 mb24">
+		            					<div class="single-member text-center">
+		            						<div class="image">
+		            							<img src="/theme_decor/static/src/img/app-team3.png" class="img img-fluid"/>
+		            							<section class="img-hover">
+		            								<ul class="social-icons">
+		            									<li>
+		            										<a class="link" href="#">
+																<i class="fa fa-facebook" />
+															</a>
+		            									</li>
+		            									<li>
+		            										<a class="link" href="#">
+																<i class="fa fa-twitter" />
+															</a>
+		            									</li>
+		            									<li>
+		            										<a class="link" href="#">
+																<i class="fa fa-linkedin" />
+															</a>
+		            									</li>
+		            								</ul>
+		            							</section>
+		            						</div>
+		            						<div class="content">
+		            							<h4>Andrew Petersons</h4>
+		            							<span>Project Manager</span>
+		            						</div>
+		            					</div>
+		            				</div>
+		            				<div class="col-lg-3 col-md-6 mb24">
+		            					<div class="single-member text-center">
+		            						<div class="image">
+		            							<img src="/theme_decor/static/src/img/app-team4.png" class="img img-fluid"/>
+		            							<section class="img-hover">
+		            								<ul class="social-icons">
+		            									<li>
+		            										<a class="link" href="#">
+																<i class="fa fa-facebook" />
+															</a>
+		            									</li>
+		            									<li>
+		            										<a class="link" href="#">
+																<i class="fa fa-twitter" />
+															</a>
+		            									</li>
+		            									<li>
+		            										<a class="link" href="#">
+																<i class="fa fa-linkedin" />
+															</a>
+		            									</li>
+		            								</ul>
+		            							</section>
+		            						</div>
+		            						<div class="content">
+		            							<h4>Jessy Pinkman</h4>
+		            							<span>Project Manager</span>
+		            						</div>
+		            					</div>
+		            				</div>
+		            			</div>
+		            		</div>
+			            </div>
+			            <div class="carousel-item">
+			            	<div class="container">
+		            			<div class="row">
+		            				<div class="col-lg-3 col-md-6 mb24">
+		            					<div class="single-member text-center">
+		            						<div class="image">
+		            							<img src="/theme_decor/static/src/img/app-team1.png" class="img img-fluid"/>
+		            							<section class="img-hover">
+		            								<ul class="social-icons">
+		            									<li>
+		            										<a class="link" href="#">
+																<i class="fa fa-facebook" />
+															</a>
+		            									</li>
+		            									<li>
+		            										<a class="link" href="#">
+																<i class="fa fa-twitter" />
+															</a>
+		            									</li>
+		            									<li>
+		            										<a class="link" href="#">
+																<i class="fa fa-linkedin" />
+															</a>
+		            									</li>
+		            								</ul>
+		            							</section>
+		            						</div>
+		            						<div class="content">
+		            							<h4>Paul Williams</h4>
+		            							<span>Project Manager</span>
+		            						</div>
+		            					</div>
+		            				</div>
+		            				<div class="col-lg-3 col-md-6 mb24">
+		            					<div class="single-member text-center">
+		            						<div class="image">
+		            							<img src="/theme_decor/static/src/img/app-team2.png" class="img img-fluid"/>
+		            							<section class="img-hover">
+		            								<ul class="social-icons">
+		            									<li>
+		            										<a class="link" href="#">
+																<i class="fa fa-facebook" />
+															</a>
+		            									</li>
+		            									<li>
+		            										<a class="link" href="#">
+																<i class="fa fa-twitter" />
+															</a>
+		            									</li>
+		            									<li>
+		            										<a class="link" href="#">
+																<i class="fa fa-linkedin" />
+															</a>
+		            									</li>
+		            								</ul>
+		            							</section>
+		            						</div>
+		            						<div class="content">
+		            							<h4>Anita Oliver</h4>
+		            							<span>Project Manager</span>
+		            						</div>
+		            					</div>
+		            				</div>
+		            				<div class="col-lg-3 col-md-6 mb24">
+		            					<div class="single-member text-center">
+		            						<div class="image">
+		            							<img src="/theme_decor/static/src/img/app-team3.png" class="img img-fluid"/>
+		            							<section class="img-hover">
+		            								<ul class="social-icons">
+		            									<li>
+		            										<a class="link" href="#">
+																<i class="fa fa-facebook" />
+															</a>
+		            									</li>
+		            									<li>
+		            										<a class="link" href="#">
+																<i class="fa fa-twitter" />
+															</a>
+		            									</li>
+		            									<li>
+		            										<a class="link" href="#">
+																<i class="fa fa-linkedin" />
+															</a>
+		            									</li>
+		            								</ul>
+		            							</section>
+		            						</div>
+		            						<div class="content">
+		            							<h4>Andrew Petersons</h4>
+		            							<span>Project Manager</span>
+		            						</div>
+		            					</div>
+		            				</div>
+		            				<div class="col-lg-3 col-md-6 mb24">
+		            					<div class="single-member text-center">
+		            						<div class="image">
+		            							<img src="/theme_decor/static/src/img/app-team4.png" class="img img-fluid"/>
+		            							<section class="img-hover">
+		            								<ul class="social-icons">
+		            									<li>
+		            										<a class="link" href="#">
+																<i class="fa fa-facebook" />
+															</a>
+		            									</li>
+		            									<li>
+		            										<a class="link" href="#">
+																<i class="fa fa-twitter" />
+															</a>
+		            									</li>
+		            									<li>
+		            										<a class="link" href="#">
+																<i class="fa fa-linkedin" />
+															</a>
+		            									</li>
+		            								</ul>
+		            							</section>
+		            						</div>
+		            						<div class="content">
+		            							<h4>Jessy Pinkman</h4>
+		            							<span>Project Manager</span>
+		            						</div>
+		            					</div>
+		            				</div>
+		            			</div>
+		            		</div>
+			            </div>
+		          	</div>
+		          	<ol class="carousel-indicators">
+			            <li data-bs-target="#app-team-carousel" data-bs-slide-to="0" class="active"/>
+			            <li data-bs-target="#app-team-carousel" data-bs-slide-to="1"/>
+			        </ol>
+	        	</div>
+			</div>
+		</section>
+	</template>
+
+</odoo>

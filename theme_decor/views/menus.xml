@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<menuitem id="theme_decor_customization_menu" name="Bizople Theme Configuration" groups="base.group_system" action="sale.product_template_action" parent="website.menu_website_configuration" sequence="100"/>
+
+	<menuitem id="menu_product_service_settings" name="Product Services" action="theme_decor.act_open_product_service_view" parent="theme_decor_customization_menu" sequence="8"/>
+	
+	<menuitem id="menu_product_highlights_settings" name="Product Highlights" action="theme_decor.act_open_product_highlights_view" parent="theme_decor_customization_menu" sequence="9"/>
+
+	<menuitem id="menu_product_brand" name="Product Brand" action="theme_decor.act_open_product_brand_view" parent="theme_decor_customization_menu" sequence="30" />
+
+	<menuitem id="menu_product_tab" name="Product Tabs" action="theme_decor.act_open_product_tab_view_bizople" parent="theme_decor_customization_menu" sequence="40" />
+
+	<menuitem id="menu_product_label_bizople" name="Product Label" action="theme_decor.act_open_product_label_view_bizople" parent="theme_decor_customization_menu" sequence="50" />
+		
+	<menuitem id="menu_product_per_page_view" parent="theme_decor_customization_menu" name="Product Per Page" action="theme_decor.product_per_page_action" sequence="60"/>
+
+	<menuitem action="theme_decor.bizcommon_dynamic_blog_slider_action" id="bizcommon_dynamic_blog_slider_menu" name="Blog Slider" parent="theme_decor_customization_menu" sequence="70" />
+
+	
+</odoo>

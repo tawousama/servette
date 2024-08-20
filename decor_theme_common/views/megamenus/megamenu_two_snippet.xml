@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="mega_menu_two_snippet" name="Mega Menu Two" groups="base.group_user">
+		<section class="mega_menu_two_snippet py-3">
+			<section class="s_tabs pt48 pb48 o_colored_level" data-vcss="001" data-snippet="s_tabs" data-name="Tabs">
+		        <div class="container">
+		          	<div class="s_tabs_main row s_col_no_resize s_col_no_bgcolor">
+			            <div class="s_tabs_nav mb-3 col-md-2">
+			              	<ul class="nav nav-pills flex-column" role="tablist">
+				                <li class="nav-item">
+				                  	<a class="nav-link active" id="nav_tabs_link_1621510283143_12" data-bs-toggle="tab" href="#nav_tabs_content_1621510283143_12" role="tab" aria-controls="nav_tabs_content_1621510283143_12" aria-selected="true" data-original-title="" title="" aria-describedby="tooltip661054">Home</a>
+				                </li>
+				                <li class="nav-item">
+				                  	<a class="nav-link" id="nav_tabs_link_1621510283143_13" data-bs-toggle="tab" href="#nav_tabs_content_1621510283143_13" role="tab" aria-controls="nav_tabs_content_1621510283143_13" aria-selected="false" data-original-title="" title="" aria-describedby="tooltip90588">Profile</a>
+				                </li>
+				                <li class="nav-item">
+				                  	<a class="nav-link" id="nav_tabs_link_1621510283143_14" data-bs-toggle="tab" href="#nav_tabs_content_1621510283143_14" role="tab" aria-controls="nav_tabs_content_1621510283143_14" aria-selected="false" data-original-title="" title="" aria-describedby="tooltip148972">Contact</a>
+				                </li>
+			              	</ul>
+			            </div>
+			            <div class="s_tabs_content tab-content col-md-10">
+			              	<div class="tab-pane fade active show" id="nav_tabs_content_1621510283143_12" role="tabpanel" aria-labelledby="nav_tabs_link_1621510283143_12">
+			                	<div class="oe_structure oe_empty" data-editor-message="DRAG BUILDING BLOCKS HERE">
+			                	</div>
+			              	</div>
+			              	<div class="tab-pane fade" id="nav_tabs_content_1621510283143_13" role="tabpanel" aria-labelledby="nav_tabs_link_1621510283143_13">
+			                	<div class="oe_structure oe_empty" data-editor-message="DRAG BUILDING BLOCKS HERE">
+			                	</div>
+			              	</div>
+			              	<div class="tab-pane fade" id="nav_tabs_content_1621510283143_14" role="tabpanel" aria-labelledby="nav_tabs_link_1621510283143_14">
+				                <div class="oe_structure oe_empty" data-editor-message="DRAG BUILDING BLOCKS HERE">
+				                </div>
+			              	</div>
+			            </div>
+		          	</div>
+		        </div>
+	      	</section>
+		</section>
+	</template>
+</odoo>

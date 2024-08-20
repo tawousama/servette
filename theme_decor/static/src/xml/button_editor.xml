@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+
+	<t t-extend="wysiwyg.widgets.linkTools">
+		<t t-jquery="we-row.link-shape-row" t-operation="after">
+            <we-row class="link-shape-row">
+                <we-select class="o_we_user_value_widget o_we_sublevel_1">
+                    <we-title>Hover Style</we-title>
+                    <div>
+                        <div class="dropdown">
+                            <button class="dropdown-toggle"
+                                data-bs-toggle="dropdown" title="" tabindex="-1"
+                                data-original-title="Link Shape" aria-expanded="false">
+                                <we-toggler>
+                                    Default
+                                </we-toggler>
+                            </button>
+                            <we-selection-items name="link_hover_style" class="dropdown-menu link-hover-style">
+                                <we-button class="dropdown-item active" data-value="">Default</we-button>
+
+                                <we-button class="dropdown-item" data-value="bizople_button_1">Bizople Button 1</we-button>
+                                <we-button class="dropdown-item" data-value="bizople_button_2">Bizople Button 2</we-button>
+                                <we-button class="dropdown-item" data-value="bizople_button_3">Bizople Button 3</we-button>
+                                <we-button class="dropdown-item" data-value="bizople_button_4">Bizople Button 4</we-button>
+                                <we-button class="dropdown-item" data-value="bizople_button_5">Bizople Button 5</we-button>
+                                <we-button class="dropdown-item" data-value="bizople_button_6">Bizople Button 6</we-button>
+                                <we-button class="dropdown-item" data-value="bizople_button_7">Bizople Button 7</we-button>
+                                <we-button class="dropdown-item" data-value="bizople_button_8">Bizople Button 8</we-button>
+                                <we-button class="dropdown-item" data-value="bizople_button_9">Bizople Button 9</we-button>
+                                <we-button class="dropdown-item" data-value="bizople_button_10">Bizople Button 10</we-button>
+                                <we-button class="dropdown-item" data-value="bizople_button_11">Bizople Button 11</we-button>
+                                <we-button class="dropdown-item" data-value="bizople_button_12">Bizople Button 12</we-button>
+                            </we-selection-items>
+                        </div>
+                    </div>
+                </we-select>
+            </we-row>
+		</t>
+	</t>
+</templates>

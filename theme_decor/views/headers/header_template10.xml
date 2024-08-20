@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="theme_decor_header10" inherit_id="website.layout" name="Header Ten" active="False">
+		<xpath expr="//header" position="attributes">
+			<attribute name="t-attf-class" add="decor-header" separator=" "></attribute>
+		</xpath>
+		<xpath expr="//header//nav" position="replace">
+			<nav data-name="Navbar" id="decor-header10" t-attf-class="decor-header10">
+				<div class="top-header d-none d-lg-block">
+					<div class="container-fluid">
+						<div class="row align-items-center">
+							<div class="col-md-7">
+								<div class="contact-time d-flex">
+									<p class="text-white mb-0"><span class="fa fa-phone text-primary me-2"/><span t-out="res_company.phone"/></p>
+									<p class="text-white mb-0 ms-4"><span class="fa fa-envelope-o text-primary me-2"/><span>info@bizople.com</span></p>
+								</div>
+							</div>
+							<div class="col-md-5 pe-0">
+								<div class="d-flex justify-content-end align-items-center">
+									<div class="header-media text-end">
+										<a class="link text-primary me-3" t-att-href="website.social_facebook"
+											t-if="website.social_facebook" target="_blank">
+											<i class="fa fa-facebook" />
+										</a>
+										<a class="link text-primary me-3" t-att-href="website.social_twitter"
+											t-if="website.social_twitter" target="_blank">
+											<i class="fa fa-twitter" />
+										</a>
+										<a class="link text-primary me-3" t-att-href="website.social_linkedin"
+											t-if="website.social_linkedin" target="_blank">
+											<i class="fa fa-linkedin" />
+										</a>
+										<a class="link text-primary me-3" t-att-href="website.social_youtube"
+											t-if="website.social_youtube" target="_blank">
+											<i class="fa fa-youtube-play" />
+										</a>
+										<a class="link text-primary me-3" t-att-href="website.social_instagram"
+											t-if="website.social_instagram" target="_blank">
+											<i class="fa fa-instagram"></i>
+										</a>
+									</div>
+									<t t-call="website.placeholder_header_language_selector">
+										<t t-set="_div_classes" t-valuef="my-auto ms-0 header-language"/>
+									</t>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="middle-header">
+					<div class="container-fluid">
+						<div class="row align-items-center">
+							<div class="col-lg-3 d-flex d-lg-block mobile-sidebar-toggle mbl-div header_left">
+								<button type="button" id="show-sidebar" class="btn mobile-sidebar-toggle btn-md d-block d-lg-none">
+									<span class="ti ti-view-grid text-secondary"></span>
+								</button>
+								<div class="decor-logo text-center text-lg-start mx-auto mx-lg-0">
+									<a href="/" class="navbar-brand logo m-0">
+							            <span t-field="website.logo" t-options="{'widget': 'image'}" role="img" t-att-aria-label="'Logo of %s' % website.name" t-att-title="website.name" />
+							        </a>
+								</div>
+								<t t-call="theme_decor.decor_header_mobile_cart"/>
+							</div>
+							<div class="col-md-6 d-none d-lg-block header-center">
+								<nav class="navbar navbar-expand-lg p-0" id="bizople-header-ten">
+									<div class="collapse navbar-collapse justify-content-center" id="header10-menuitem">
+										<ul class="nav navbar-nav justify-content-center" id="top_menu">
+											<t t-foreach="website.menu_id.child_id" t-as="submenu">
+												<t t-call="website.submenu">
+													<t t-set="item_class" t-value="'nav-item'" />
+													<t t-set="link_class" t-value="'nav-link'" />
+												</t>
+											</t>
+										</ul>
+									</div>
+								</nav>
+							</div>
+							<div class="col-md-3 text-end right_icons d-none d-lg-flex align-items-center justify-content-end header_right">
+								<div class="header-search align-middle d-inline-block">
+									<a href="#" onclick="openSearchPopup()" class="nav-link">
+										<span class="text-secondary ri ri-search-2-line show-search align-middle"></span>
+									</a>
+								</div>
+								<div class="bizople-add-to-cart align-middle d-none d-lg-inline-block" id="">
+									<!-- <t t-if="is_view_active('website_sale.products_add_to_cart')"> -->
+									<t t-set="website_sale_order" t-value="website.sale_get_order()" />
+									<t t-call="website_sale.header_cart_link">
+										<t t-set="_icon" t-value="True"/>
+										<t t-set="_item_class" t-value="'nav-item'"/>
+										<t t-set="_link_class" t-value="'nav-link'"/>
+									</t>
+							        <!-- </t> -->
+								</div>
+								<div class="wishlist align-middle d-none d-lg-inline-block">
+									<!-- <t t-if="is_view_active('website_sale_wishlist.add_to_wishlist')"> -->
+										<t t-call="website_sale_wishlist.header_wishlist_link">
+							                <t t-set="_icon" t-value="True"/>
+							                <t t-set="_item_class" t-value="'nav-item'"/>
+							                <t t-set="_link_class" t-value="'nav-link'"/>
+							            </t>
+									<!-- </t> -->
+								</div>
+								<t t-call="theme_decor.theme_decor_signin_main_template">
+									<t t-set="_myaccount_class" t-value="'d-flex align-items-center'"/>
+									<t t-set="_icon" t-value="True"/>
+									<t t-set="_text" t-value="False"/>
+								</t>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- <t t-call="theme_decor.bizople_mbl_side_bar"/> -->
+				<t t-call="theme_decor.bizople_mbl_category_bar"/>
+			</nav>
+		</xpath>
+		<xpath expr="//header" position="before">
+			<div class="d-block d-md-none">
+				<t t-call="theme_decor.bizople_mobile_bottom_icon_bar"/>
+			</div>
+			<t t-call="theme_decor.search_popup"/>
+		</xpath>
+	</template>
+
+	<!-- <template id="header10_cart_sidebar_open" inherit_id="theme_decor.theme_decor_header10" name="Show Cart Sidebar" customize_show="True" active="True">
+		<xpath expr="//nav[@id='decor-header10']" position="attributes">
+    		<attribute name="t-attf-class" add="header-cart-sidebar" separator=" "></attribute>
+    	</xpath>
+	</template> -->
+
+</odoo>

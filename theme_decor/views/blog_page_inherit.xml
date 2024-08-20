@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+	<template id="blog_page_template_inherit" inherit_id="website_blog.blog_post_short" name="Blog Page Template Inherit">
+		<xpath expr="//section[@id='o_wblog_index_content']//div[hasclass('container')]" position="attributes">
+			<attribute name="class" add="extended-container Decor-blog" separator=" "/>
+		</xpath>
+	</template>
+
+	<template id="blog_navs_template_inherit" inherit_id="website_blog.blogs_nav" name="Blog Navs Template Inherit">
+		<xpath expr="//div[hasclass('container')]" position="attributes">
+			<attribute name="class" add="extended-container" separator=" "/>
+		</xpath>
+	</template>
+
+	<template id="blog_top_banner_template_inherit" inherit_id="website_blog.opt_blog_cover_post" name="Blog Top Banner Template Inherit">
+		<xpath expr="//div[hasclass('justify-content-around')]" position="attributes">
+			<attribute name="class" add="extended-container" separator=" "/>
+		</xpath>
+	</template>
+
+</odoo>

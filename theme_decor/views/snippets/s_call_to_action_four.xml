@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="s_call_to_action_four" name="Call To Action Four">
+		<section class="s_call_to_action pt96 pb96 o_colored_level undefined" data-snippet="s_call_to_action" data-name="Call to Action" style="background-image: url('/theme_decor/static/src/img/slider-bg-image-cta.png'); background-position: center; background-size: cover;">
+	        <div class="container">
+	          	<div class="text-center">
+	          		<h6 class="text-800">Feel the Taste</h6>
+	          		<h3 class="mt-2 text-800">More than coffee &amp; Tea</h3>
+	          		<img src="/theme_decor/static/src/img/bean-line-primary.png" class="img img-fluid mb-3"/>
+          		  	<h6 class="text-800">Write one or two paragraphs describing your product, services or a specific feature.<br/> To be successful your content needs to be useful to your readers.</h6>
+          		  	<p>
+              			<a href="/shop" class="btn btn-primary btn-lg flat mt-4 me-3" data-original-title="" title="">Shop Now</a>
+              			<a href="/contactus" class="btn btn-secondary btn-lg flat mt-4" data-original-title="" title="">Contact Us</a>
+            		</p>
+	          	</div>
+	        </div>
+      	</section>
+	</template>
+</odoo>

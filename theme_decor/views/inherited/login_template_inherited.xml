@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+	<template id="login_template_inherited" inherit_id="website.login_layout" name="Login/Signup Template">
+		<xpath expr="//div[hasclass('oe_website_login_container')]" position="attributes">
+			 <attribute name="t-attf-style" add="background-image: url('#{website.image_url(website, 'login_page_banner_image')}');" separator=" "/>
+		</xpath>
+	</template>
+	
+	<template id="portal_layout_loginsignup_popup_bizt" name="Login Popup Frontend Layout" inherit_id="web.frontend_layout">
+        <xpath expr="//div[@id='wrapwrap']" position="inside">
+            <t t-if="request.website.viewref('theme_decor.loginsignup_popup_bizt').active" t-call="theme_decor.loginsignup_popup_bizt_template"/>
+        </xpath>
+    </template>
+
+  
+    <template id="loginsignup_popup_bizt" name="Login Signup Popup option" inherit_id="portal.user_sign_in" customize_show="True" active="False">
+        <xpath expr="." position="inside"/>
+    </template>
+
+    <template id="login_form_ajax_bizt" name="Login Popup Ajax">
+        <form class="oe_login_form" role="form" t-attf-action="/web/login" method="post" onsubmit="this.action = '/web/login' + location.hash">
+            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+            
+            <div class="mb-3" t-if="databases and len(databases) &gt; 1">
+                <label for="db" class="col-form-label d-block text-start">Database</label>
+                <div t-attf-class="input-group {{'input-group-sm' if form_small else ''}}">
+                    <input type="text" name="db" t-att-value="request.db" id="db" t-attf-class="form-control #{'form-control-sm' if form_small else ''}" required="required" readonly="readonly"/>
+                    <a role="button" href="/web/database/selector" class="btn btn-secondary">Select <i class="fa fa-database" role="img" aria-label="Database" title="Database"></i></a>
+                </div>
+            </div>
+            
+            <div class="form-group field-login d-flex">
+                <label for="login">Email</label>
+                <span class="icons ri ri-lock-line align-middle me-2"></span>
+                <input type="text" placeholder="Email" name="login" t-att-value="login" id="login" t-attf-class="form-control #{'form-control-sm' if form_small else ''}" required="required" autofocus="autofocus" autocapitalize="off"/>
+            </div>
+            <div class="form-group field-password d-flex">
+                <label for="password">Password</label>
+                <span class="icons ri ri-key-line align-middle me-2"></span>
+                <input type="password" placeholder="Password" name="password" id="password" t-attf-class="form-control #{'form-control-sm' if form_small else ''}" required="required" autocomplete="current-password" t-att-autofocus="'autofocus' if login else None" maxlength="4096"/>
+            </div>
+            <p class="alert alert-danger" id="errormsg" role="alert" style="display:none"></p>
+            <div t-attf-class="clearfix oe_login_buttons text-center mb-1 {{'pt-2' if form_small else 'pt-3'}}">
+                <button type="submit" class="btn btn-primary btn-block loginbtn ">Log in</button>
+
+                <div class="justify-content-between mt-2 d-flex small">
+                    <span t-if="reset_password_enabled" class="resetpass resetbtn">Reset Password</span>
+                    <span class="createbtn ms-auto">Create Account</span>
+                </div>
+                <div class="o_login_auth">
+                    <t t-if="len(providers) &gt; 0" t-call="auth_oauth.providers"/>
+                </div>
+            </div>
+        </form>
+    </template>
+
+    <template id="signup_form_ajax_bizt" name="Signup Popup Ajax">
+        <form class="oe_signup_form" role="form" method="post" t-if="not message">
+            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+            <t t-set="only_passwords" t-value="bool(token and not invalid_token)"/>
+            <div class="form-group field-login d-flex">
+                <label for="login">Your Email</label>
+                <span class="icons ri ri-lock-line align-middle me-2"></span>
+                <input type="text" name="login" t-att-value="login" id="logins" class="form-control form-control-sm" autofocus="autofocus" placeholder="Email"
+                    autocapitalize="off" required="required" t-att-readonly="'readonly' if only_passwords else None"/>
+            </div>
+            <div class="form-group field-name d-flex">
+                <label for="name">Your Name</label>
+                <span class="icons ri ri-user-line align-middle me-2"></span>
+                <input type="text" name="name" t-att-value="name" id="names" class="form-control form-control-sm" placeholder="e.g. John Doe"
+                    required="required" t-att-readonly="'readonly' if only_passwords else None"
+                    t-att-autofocus="'autofocus' if login and not only_passwords else None" />
+            </div>
+            <div class="form-group field-password pt-2 d-flex">
+                <label for="password">Password</label>
+                <span class="icons ri ri-key-line align-middle me-2"></span>
+                <input type="password" name="password" id="passwords" class="form-control form-control-sm" placeholder="Password"
+                    required="required" t-att-autofocus="'autofocus' if only_passwords else None"/>
+            </div>
+            <div class="form-group field-confirm_password d-flex">
+                <label for="confirm_password">Confirm Password</label>
+                <span class="icons ri ri-key-line align-middle me-2"></span>
+                <input type="password" name="confirm_password" id="confirm_passwords" class="form-control form-control-sm" required="required" placeholder="Confirm Password"/>
+            </div>
+            <p class="alert alert-danger" id="errors" style="display:none;" ></p>
+            <div class="text-center oe_login_buttons pt-3">
+                <button type="submit" class="btn btn-primary btn-block signupbtn mb-2"> Sign up</button>
+                <span class="alreadyuser small">Already have an account?</span>
+                <div class="o_login_auth">
+                    <t t-if="len(providers) &gt; 0" t-call="auth_oauth.providers"/>
+                </div>
+            </div>
+        </form>
+    </template>
+
+    <template id="password_reset_ajax" name="Password Reset Popup">
+        <div class="oe_login_form clearfix" id="msgbox" style="display:none">
+            <p class="alert alert-success" id="messager" role="status">
+            </p>
+            <span class="alreadyuser">Back to Login</span>
+        </div>
+        <form class="oe_reset_password_form" role="form" method="post" id="reset_form">
+            <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+
+            <div class="form-group field-login d-flex">
+                <label for="login" class="col-form-label">Your Email</label>
+                <span class="icons ri ri-lock-line align-middle me-2"></span>
+                <input type="text" name="login" t-att-value="login" id="resetlogin" class="form-control" placeholder="Email"
+                    autofocus="autofocus" required="required" autocapitalize="off"/>
+            </div>
+            <p class="alert alert-danger" id="error" style="display:none"></p>
+            <div class="clearfix oe_login_buttons">
+                <button type="submit" class="btn btn-primary btn-block respass">Confirm</button>
+                <div class="d-flex justify-content-between align-items-center small mt-2">
+                    <span class="alreadyuser">Back to Login</span>
+                </div>
+                <div class="o_login_auth">
+                    <t t-if="len(providers) &gt; 0" t-call="auth_oauth.providers"/>
+                </div>
+            </div>
+        </form>
+    </template>
+
+    <template id="loginsignup_popup_bizt_template" name="Login Signup Popup Template">
+        <div class="modal fade login-modal" id="popupuserlogin" tabindex="-1" role="dialog" aria-labelledby="popupuserlogin" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content rounded-0">
+                    <div class="modal-body p-0">
+                        <div class="row m-0">
+                            <div class="col-md-6 p-0 d-none d-md-block">
+                                <div class="login_side_image h-100" t-attf-style="background-image:url('#{website.image_url(website, 'login_popup_image')}'); background-size:cover; background-position: center;">
+                                    <!-- <img class="img img-fluid" t-attf-src="#{website.image_url(website, 'login_popup_image')}"></img> -->
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="login_part text-center my-4">
+                                    <ul class="nav nav-tabs d-none" id="myTab" role="tablist">
+                                        <li class="nav-item" role="presentation">
+                                            <button class="nav-link active" id="nav-login-tab" data-bs-toggle="tab" data-bs-target="#nav-login" type="button" role="tab" aria-controls="nav-login" aria-selected="true">nav-login</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button t-if="request.env['res.users']._get_signup_invitation_scope() == 'b2c'" class="nav-link" id="nav-register-tab" data-bs-toggle="tab" data-bs-target="#nav-register" type="button" role="tab" aria-controls="nav-register" aria-selected="false">nav-register</button>
+                                        </li>
+                                        <li class="nav-item" role="presentation">
+                                            <button t-if="request.env['ir.config_parameter'].sudo().get_param('auth_signup.reset_password') == 'True'" class="nav-link" id="nav-reset-tab" data-bs-toggle="tab" data-bs-target="#nav-reset" type="button" role="tab" aria-controls="nav-reset" aria-selected="false">nav-reset</button>
+                                        </li>
+                                    </ul>
+                                    <div class="w-100">
+                                        <span t-field="website.logo" t-options="{'widget': 'image', 'style':'max-width: 200px;'}" role="img" t-att-aria-label="'Logo of %s' % website.name" t-att-title="website.name" />
+                                        <div class="nav-tab-content" id="myTabContent">
+                                            <div class="tab-pane fade show active" id="nav-login" role="tabpanel" aria-labelledby="nav-login-tab">1</div>
+                                            <div t-if="request.env['res.users']._get_signup_invitation_scope() == 'b2c'" class="tab-pane fade" id="nav-register" role="tabpanel" aria-labelledby="nav-register-tab">2</div>
+                                            <div t-if="request.env['ir.config_parameter'].sudo().get_param('auth_signup.reset_password') == 'True'" class="tab-pane fade" id="nav-reset" role="tabpanel" aria-labelledby="nav-reset-tab">3</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+	
+</odoo>

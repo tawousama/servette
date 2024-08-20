@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<template id="page_404_template" inherit_id="website.page_404">
+		<xpath expr="//div[hasclass('container')]" position="replace">
+			<div class="container">
+				<div class="oe_structure">
+					<div class="alert alert-info mt32">
+		                <p>This page does not exist, but you can create it as you are administrator of this site.</p>
+		                <a role="button" class="btn btn-primary js_disable_on_click" t-attf-href="/website/add/#{ path }#{ from_template and '?template=%s' % from_template }">Create Page</a>
+		            </div>
+		            <div class="text-center text-muted">Edit the content below this line to adapt the default "page not found" page.</div>
+				</div>
+			</div>
+		</xpath>
+	</template>
+
+	<template id="404_template" inherit_id="http_routing.404">
+		<xpath expr="//div[hasclass('container')]" position="replace">
+			<div class="oe_structure oe_empty"/>
+			<section class="template_404_page pt80 pb80">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-md-6">
+							<div class="image">
+								<img class="img img-fluid" src="/theme_decor/static/src/img/404-image.png">
+								</img>
+							</div>
+						</div>
+						<div class="col-md-6 mt-3 mt-md-0">
+							<div class="data text-end">
+								<h1 class="text-primary"><b>ERROR!</b></h1>
+								<h4 class="text-800 mt-2">PAGE NOT FOUND</h4>
+								<p class="mt-4 text-muted">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="oe_structure oe_empty"/>
+		</xpath>
+	</template>
+</odoo>

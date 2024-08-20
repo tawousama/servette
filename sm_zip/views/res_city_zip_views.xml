@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+		<record model="ir.ui.view" id="city_zip_form">
+				<field name="name">res.city.zip.form</field>
+				<field name="model">res.city.zip</field>
+				<field name="inherit_id" ref="base_location.city_zip_form"/>
+				<field name="arch" type="xml">
+						<field name="name" position="after">
+								<field name="additional_digit"/>
+						</field>
+						<field name="city_id" position="after">
+								<field name="state_id"/>
+								<field name="country_id"/>
+								<field name="latitude"/>
+								<field name="longitude"/>
+								<field name="lang_id"/>
+								<field name="communitynumber_bfs"/>
+								<field name="commune_name"/>
+						</field>
+				</field>
+		</record>
+		<record model="ir.ui.view" id="city_zip_tree">
+				<field name="name">res.city.zip.tree</field>
+				<field name="model">res.city.zip</field>
+				<field name="inherit_id" ref="base_location.city_zip_tree"/>
+				<field name="arch" type="xml">
+						<field name="name" position="after">
+								<field name="additional_digit" optional="show"/>
+						</field>
+						<field name="city_id" position="after">
+								<field name="state_id" optional="show"/>
+								<field name="country_id" optional="show"/>
+								<field name="latitude" optional="show"/>
+								<field name="longitude" optional="show"/>
+								<field name="lang_id" optional="show"/>
+								<field name="communitynumber_bfs" optional="show"/>
+								<field name="commune_name" optional="show"/>
+						</field>
+				</field>
+		</record>
+
+		<record id="view_city_zip_filter" model="ir.ui.view">
+				<field name="name">res.city.zip.select</field>
+				<field name="model">res.city.zip</field>
+				<field name="inherit_id" ref="base_location.view_city_zip_filter"/>
+				<field name="arch" type="xml">
+						<field name="city_id" position="after">
+								<field name="state_id"/>
+								<field name="country_id"/>
+								<field name="lang_id"/>
+								<field name="communitynumber_bfs"/>
+								<field name="commune_name"/>
+						</field>
+				</field>
+		</record>
+
+</odoo>
