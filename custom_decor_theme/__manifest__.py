@@ -28,6 +28,7 @@
     'assets': {
         'web.assets_frontend': [
             'custom_decor_theme/static/src/js/hide_categ.js',
+            'custom_decor_theme/static/src/css/style.scss',
         ],
     },
     'pre_init_hook': 'disable_products_tab_bizople',

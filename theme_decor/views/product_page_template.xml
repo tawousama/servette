@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
     <template id="product_page_product_bg_color" inherit_id="website_sale.product" name="Product Background Color" customize_show="True" active="True"/>
-	
+
 	<template id="decor_image_zoom" inherit_id="website_sale.shop_product_carousel">
 		 <xpath expr="//div[contains(@t-attf-class, 'carousel-item')]" position="replace">
             <t t-set="image_zoom" t-value="is_view_active('website_sale.product_picture_magnify')" />
@@ -30,7 +30,7 @@
                 </t>
             </div>
         </xpath>
-       
+
 	</template>
 
     <template id="remove_recommended_product" inherit_id="website_sale.alternative_products" name="alternative products">
@@ -57,12 +57,12 @@
 
     <template id="decor_product_page_banner" inherit_id="website_sale.product" name="Product Page Banner" customize_show="True" active="True">
     </template>
-	
+
     <template id="decor_product_detail_inherited" inherit_id="website_sale.product" name="Product Details">
         <xpath expr="//section[@id='product_detail']" position="before">
             <section class="position-relative">
                 <section t-if="is_view_active('theme_decor.decor_product_page_banner')" class="category_banner pt88 pb88 o_editable" style="background-image: url('/theme_decor/static/src/img/login-banner.jpg');">
-                
+
                 </section>
                 <section t-if="is_view_active('theme_decor.decor_product_page_banner')" class="category_banner product_page_banner position-absolute">
                     <div class="container">
@@ -71,14 +71,14 @@
                                 <li class="breadcrumb-item">
                                     <a href="/">Accueil</a>
                                     <t t-foreach="product.public_categ_ids.parents_and_self" t-as="cat">
-                
+
                                         <li  class="breadcrumb-item">
                                             <a t-att-href="keep('/shop/category/%s' % slug(cat), category=0)" t-field="cat.name"/>
                                         </li>
                                     </t>
                                 </li>
                                 <!-- <li class="breadcrumb-item">
-                                   
+
                                     <a href="/">  <span t-out="product.public_categ_ids[0].display_name"></span></a>
                                 </li> -->
                                 <li class="breadcrumb-item active oe_structure">
@@ -103,9 +103,9 @@
         </xpath>
         <xpath expr="//div[@id='product_details']//div[hasclass('js_product')]//div[1]" position="after">
             <t t-if="is_view_active('website_sale.product_comment')">
-                <t t-call="theme_decor.product_item_stars"/> 
+                <t t-call="theme_decor.product_item_stars"/>
             </t>
-            
+
             <t t-if="combination_info['has_discounted_price'] and combination_info['list_price'] &gt; 0">
                 <t t-set="diff_amount" t-value="round(combination_info['list_price'] - combination_info['price'],2)" />
                 <t t-set="dis_per" t-value="round(diff_amount*100/combination_info['list_price'])" />
@@ -136,7 +136,7 @@
             </div>
         </xpath>
         <xpath expr="//div[@id='product_details']//div[@id='product_option_block']" position="after">
-            <div class="product_info_list w-100">            
+            <div class="product_info_list w-100">
                 <t t-if="product.brand_id">
                     <div class="product-brand">
                         <div class="row align-items-center">
@@ -149,7 +149,7 @@
                                 </p>
                             </div>
                             <div class="col-md-4">
-                                
+
                                 <a t-field="product.brand_id.image" t-options="{'widget': 'image'}" t-att-href="'/shop?brand=' + slug(product.brand_id)"/>
                             </div>
                         </div>
@@ -198,20 +198,20 @@
                     <a href="https://www.facebook.com/sharer/sharer.php?u={url}" target="_blank" class="s_share_facebook d-flex align-items-center mr-5">
                         <i style="color: #454545;" class="fa fa-1x fa-facebook"></i>
                     </a>
-                
+
                     <a href="https://twitter.com/intent/tweet?text={title}&amp;url={url}" target="_blank" class="s_share_twitter d-flex align-items-center mr-5">
                         <i style="color: #454545;"  class="fa fa-1x fa-twitter"></i>
-                    </a> 
-                    
+                    </a>
+
                     <a href="https://www.pinterest.com/pin/create/button/?media={url}&amp;;" target="_blank" class="s_share_pinterest d-flex align-items-center">
                         <i style="color: #454545;" class="fa fa-1x fa-pinterest"></i>
                     </a>
                 </div>
-                
-                
-               
-               
-               
+
+
+
+
+
             </div>
         </xpath>
     </template>
@@ -230,7 +230,7 @@
                 </div>
                 <div class="prod-attribute-value control-qty-cart d-flex">
                     <input type="text" class="form-control quantity text-center" data-min="1" name="add_qty" t-att-value="add_qty or 1"/>
-                
+
                     <div class="control-qty">
                         <div class="input-group-append">
                             <a t-attf-href="#" class="btn btn-link float_left js_add_cart_json" aria-label="Add one" title="Add one">
@@ -251,7 +251,7 @@
         <xpath expr="//div[hasclass('product_info_list')]" position="inside">
             <div class="product_internal_reference mt-1">
                 <div class="product_ref_code mt16 mb16">
-			</div>	
+			</div>
             </div>
         </xpath>
     </template>
@@ -307,7 +307,7 @@
         </xpath>
     </template>
 
-  
+
 
 
      <!-- alternative and accessory products slider start -->
@@ -316,7 +316,7 @@
             <div class="container mt32 alternative_and_accessory_slider">
 
                 <div class="row mt16" style="">
-                    
+
                     <t t-if="is_view_active('theme_decor.bizople_accessory_product_slider')">
                         <div class="col-12 accessory_products">
                             <h4 class='text-center' t-if="product.accessory_product_ids">Suggested Accessories:</h4>
@@ -371,7 +371,7 @@
         <xpath expr="//div[hasclass('o_shop_discussion_rating')]" position="replace">
         </xpath>
     </template>
-    
+
     <template id="product_attributes_body_bizople" inherit_id="website_sale_comparison.product_attributes_body" priority="20" >
     </template>
 
@@ -380,12 +380,10 @@
                 <attribute name="class" separator=" " add="d-none" />
         </xpath>
     </template> -->
-    
+
     <template id="product_buynow_bizople" inherit_id="website_sale.product_buy_now">
         <xpath expr="//a[contains(@t-attf-class,'o_we_buy_now')]" position="replace">
-            <a role="button"  id="buy_now" t-attf-class="btn btn-primary btn-lg sticky_cart_button d-block d-md-inline-block mt-3 mt-md-0  o_we_buy_now #{'btn-lg' if ctaSizeBig else ''}" href="#">
-                <span class="ri ri-share-forward-line align-middle me-2 text-white"/>BUY NOW
-            </a>
+
         </xpath>
     </template>
 
@@ -425,8 +423,8 @@
              <attribute name="class" separator=" " add="bizople_button" />
         </xpath>
     </template>
-    
-    <template id="product_default_code">		
+
+    <template id="product_default_code">
 		<p itemprop="sku" t-if="default_code">
             <strong> SKU </strong>
             <span><t t-out="default_code"/></span>
@@ -454,7 +452,7 @@
                                             <t t-call="website_sale.product_price"/>
                                         </div>
                                     </div>
-            
+
                                     <div class="cart_product_sticky_details">
                                         <div class="oe_website_sale">
                                               <t t-set="buynow_enabled"

@@ -6,7 +6,7 @@
             <xpath expr="//section[@id='product_detail']" position="before">
                 <section class="position-relative">
                     <section t-if="is_view_active('theme_decor.decor_product_page_banner')" class="category_banner pt88 pb88 o_editable" style="background-image: url('/theme_decor/static/src/img/login-banner.jpg');">
-                    
+
                     </section>
                     <section style="color: #929292!important" t-if="is_view_active('theme_decor.decor_product_page_banner')" class="category_banner product_page_banner position-absolute">
                         <div class="container">
@@ -15,14 +15,14 @@
                                     <li class="breadcrumb-item">
                                         <a href="/">Accueil</a>
                                         <t t-foreach="product.public_categ_ids.parents_and_self" t-as="cat">
-                    
+
                                             <li  class="breadcrumb-item">
                                                 <a t-att-href="keep('/shop/category/%s' % slug(cat), category=0)" t-field="cat.name"/>
                                             </li>
                                         </t>
                                     </li>
                                     <!-- <li class="breadcrumb-item">
-                                       
+
                                         <a href="/">  <span t-out="product.public_categ_ids[0].display_name"></span></a>
                                     </li> -->
                                     <li class="breadcrumb-item active oe_structure">
@@ -47,13 +47,13 @@
             </xpath>
             <xpath expr="//div[@id='product_details']//div[hasclass('js_product')]//div[1]" position="after">
                 <t t-if="is_view_active('website_sale.product_comment')">
-                    <t t-call="theme_decor.product_item_stars"/> 
+                    <t t-call="theme_decor.product_item_stars"/>
                 </t>
-                
+
                 <t t-if="combination_info['has_discounted_price'] and combination_info['list_price'] &gt; 0">
                     <t t-set="diff_amount" t-value="round(combination_info['list_price'] - combination_info['price'],2)" />
                     <t t-set="dis_per" t-value="round(diff_amount*100/combination_info['list_price'])" />
-    
+
                     <div class="discount-label my-3 d-flex product-detail-label-value">
                         <div class="prod-attribute-label">
                             <span class="text-label">You Save</span>
@@ -75,15 +75,15 @@
                 <attribute name="invisible">True</attribute>
             </xpath>
             <xpath expr="//div[@id='product_details']//div[@id='product_option_block']" position="after">
-                <div class="product_info_list w-100">            
+                <div class="product_info_list w-100">
                     <t t-if="product.brand_id">
                         <div class="product-brand">
                             <div class="row ">
 
                             test
-                               
+
                                 <!-- <div class="pb-2" t-if="product.website_meta_description" style="border-top: 1px solid  #454545; padding:10px; color: white;
-            
+
                                 font-size: 15px!important;
                                 line-height: 28px!important;
                                 margin-bottom: 15px!important;
@@ -92,13 +92,13 @@
                                     <p class="description mb-0" t-field="product.website_meta_description" />
                                 </div> -->
 
-                            
+
                                 <!-- <div class="col-md-4 brand-img">
-            
+
                                     <a t-field="product.brand_id.image" t-options="{'widget': 'image'}" t-att-href="'/shop?brand=' + slug(product.brand_id)"/>
                                 </div> -->
 
-                                
+
                             </div>
 
                         </div>
@@ -110,7 +110,7 @@
                             <span style="color:#FFF;font-weight: 300;" t-field="product.default_code"/>
                             </div>
                     </t> -->
-                    
+
                      <t t-if="product.product_tag_ids">
                          <div class="decor_tags mb-2">
                             <p>
@@ -120,22 +120,22 @@
                                         <span class="tag-name d-block">
                                             <t t-out="tags.name"/>
                                         </span>
-                                     
+
                                     </span>
                                 </t>
                             </p>
                         </div>
                      </t>
-                 
+
                 </div>
             </xpath>
         </template>
 
-        
 
 
 
-    
+
+
 
 
     </data>

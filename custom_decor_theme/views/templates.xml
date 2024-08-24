@@ -1,6 +1,10 @@
 <odoo>
     <data>
+        <template id="product_buynow_hide" inherit_id="website_sale.product_buy_now">
+            <xpath expr="//a[contains(@t-attf-class,'o_we_buy_now')]" position="replace">
 
+            </xpath>
+        </template>
         <template id="custom_products_categories_list" inherit_id="website_sale.products_categories_list">
             <xpath expr="//div[hasclass('wsale_products_categories_list')]" position="replace">
                 <div class="wsale_products_categories_list">
@@ -27,7 +31,7 @@
 
         <template id="products_tab_bizople" inherit_id="website_sale.product" name="Product Tab Bizople" priority="25">
             <xpath expr="//div[@id='product_full_description']" position="attributes">
-                <attribute name="class" separator=" " add="d-none" />
+                <attribute name="class" separator=" " add="d-none"/>
             </xpath>
             <xpath expr="//section[@id='product_detail']" position="after">
                 <t t-set="first" t-value="0"/>
@@ -40,7 +44,7 @@
                             <ul class="nav nav-tabs tabs" role="tablist" id="product_detail_tabs">
                                 <t t-if="product.website_description or request.env.user._is_admin()">
                                     <li class="nav-item" priority="1">
-                                        <a  style="color: #e32125!important;
+                                        <a style="color: #e32125!important;
                                             font-family: Gotham-Bold, sans-serif;
                                             font-weight: bold;
                                             font-size: 17px;
@@ -48,10 +52,10 @@
                                             padding: 10px 0px;
                                             border-bottom: 1px solid #e32125 !important;
                                             color: #e32125 !important;
-                                        
-                                        "   class="nav-link active show" id="nav-home-tab1" data-bs-toggle="tab"
+
+                                        " class="nav-link active show" id="nav-home-tab1" data-bs-toggle="tab"
                                            href="#nav-home1" role="tab" aria-controls="nav-home1" aria-selected="true">
-                                            DESCRIPTION 
+                                            DESCRIPTION
                                         </a>
                                     </li>
                                 </t>
@@ -93,15 +97,15 @@
                             <div class="tab-pane fade active show" id="nav-home1" role="tabpanel"
                                  aria-labelledby="nav-home-tab1">
 
-                                 <t t-if="product.video">
+                                <t t-if="product.video">
                                     <div class="embed-responsive embed-responsive-16by9">
                                         <iframe width="560" height="315" t-att-src="product.video"
                                                 title="YouTube video player" frameborder="0"
                                                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                                 allowfullscreen=""></iframe>
                                     </div>
-                                 </t>
-                                    
+                                </t>
+
                                 <div itemprop="description" t-field="product.website_description"
                                      class="oe_structure mt16" id="product_full_description_decor">
                                 </div>
@@ -152,7 +156,8 @@
                                                                 <td>
                                                                     <t t-foreach="single_value_attributes[attribute]"
                                                                        t-as="ptal">
-                                                                        <span t-field="ptal.product_template_value_ids._only_active().name"/>
+                                                                        <span
+                                                                            t-field="ptal.product_template_value_ids._only_active().name"/>
                                                                         <t t-if="not ptal_last">,</t>
                                                                     </t>
                                                                 </td>
@@ -198,37 +203,41 @@
             </xpath>
 
 
-         
             <xpath expr="//div[@id='o_product_terms_and_share']" position="before">
                 <div>
-                            <p><span style="font-size: 15px!important; color: #e32125; font-weight:bold;"> SPÉCIFICATIONS TECHNIQUES
-                                 </span></p>
-                            <p>
-                                <span style="font-size: 14px!important;" t-esc="product.spec_technique"/>
-                                <br/>
-                            </p>
+                    <p>
+                        <span style="font-size: 15px!important; color: #e32125; font-weight:bold;">SPÉCIFICATIONS
+                            TECHNIQUES
+                        </span>
+                    </p>
+                    <p>
+                        <span style="font-size: 14px!important;" t-esc="product.spec_technique"/>
+                        <br/>
+                    </p>
                 </div>
             </xpath>
 
             <xpath expr="//div[@id='o_product_terms_and_share']" position="after">
                 <div class="blockreassurance_product">
                     <div>
-                    <span class="item-product">
-                                                                <img class="svg" src="https://www.servette-music.ch/modules/blockreassurance/img/ic_verified_user_black_36dp_1x.png" />
-                                            
-                    </span>
-                                  <p class="block-title" style="color:#ffffff;  display:inline">TVA 8.1% incluse</p>
-                            </div>
+                        <span class="item-product">
+                            <img class="svg"
+                                 src="https://www.servette-music.ch/modules/blockreassurance/img/ic_verified_user_black_36dp_1x.png"/>
+
+                        </span>
+                        <p class="block-title" style="color:#ffffff;  display:inline">TVA 8.1% incluse</p>
+                    </div>
                     <div>
-                    <br />
-                    <span class="item-product">
-                                                                <img class="svg" src="https://www.servette-music.ch/modules/blockreassurance/img/ic_local_shipping_black_36dp_1x.png" />
-                                          
-                    </span>
-                                  <p class="block-title" style="color:#ffffff; display:inline">Hors Frais de Port</p>
-                            </div>
-                <div class="clearfix"></div>
-        </div>
+                        <br/>
+                        <span class="item-product">
+                            <img class="svg"
+                                 src="https://www.servette-music.ch/modules/blockreassurance/img/ic_local_shipping_black_36dp_1x.png"/>
+
+                        </span>
+                        <p class="block-title" style="color:#ffffff; display:inline">Hors Frais de Port</p>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
             </xpath>
         </template>
         <template id="total_empty">
@@ -236,7 +245,8 @@
         </template>
         <template id="decor_cart_popover" inherit_id="website_sale.cart_popover" name="Decor Cart Popover">
             <xpath expr="//div[hasclass('alert-info')]" position="replace">
-                <div t-if="not website_sale_order or not website_sale_order.website_order_line" class="empty-cart-button my-3 text-center">
+                <div t-if="not website_sale_order or not website_sale_order.website_order_line"
+                     class="empty-cart-button my-3 text-center">
                     <img src="/theme_decor/static/src/img/empty_cart.svg" class="mb32 w-75 img img-fluid"/>
                     <h5 class="text-secondary mb-3 fw-light mx-3">Oops! Your cart is empty!</h5>
                     <a class="btn btn-secondary bizople_button rounded-0" href="/shop">
@@ -247,7 +257,9 @@
             </xpath>
             <xpath expr="//a[@role='button']" position="replace">
                 <a role="button" class="btn btn-primary" href="/shop/cart">
-                    Voir les réservations (<span class="o_wsale_cart_quantity" t-esc="website_sale_order.cart_quantity" /> items)
+                    Voir les réservations (
+                    <span class="o_wsale_cart_quantity" t-esc="website_sale_order.cart_quantity"/>
+                    items)
                 </a>
             </xpath>
             <xpath expr="//t[@t-call='website_sale.total']" position="replace">
@@ -273,8 +285,9 @@
                                               data-success-page="/contactus-thank-you" data-pre-fill="false">
                                             <div class="s_website_form_rows row s_col_no_bgcolor">
 
-                                                <div class="form-group col-12 s_website_form_field s_website_form_custom s_website_form_required"
-                                                     data-type="char" data-name="Field">
+                                                <div
+                                                    class="form-group col-12 s_website_form_field s_website_form_custom s_website_form_required"
+                                                    data-type="char" data-name="Field">
                                                     <div class="row  s_col_no_bgcolor">
                                                         <label class="col-form-label col-sm-auto s_website_form_label"
                                                                style="width: 100px" for="last_name">
@@ -300,8 +313,9 @@
                                                     </div>
                                                 </div>
 
-                                                <div class="form-group col-12 s_website_form_field s_website_form_custom"
-                                                     data-type="char" data-name="Field">
+                                                <div
+                                                    class="form-group col-12 s_website_form_field s_website_form_custom"
+                                                    data-type="char" data-name="Field">
                                                     <div class="row s_col_no_resize s_col_no_bgcolor">
                                                         <label class="col-form-label col-sm-auto s_website_form_label"
                                                                style="width: 100px" for="contact2">
@@ -315,8 +329,9 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="form-group col-12 s_website_form_field s_website_form_required"
-                                                     data-type="email" data-name="Field">
+                                                <div
+                                                    class="form-group col-12 s_website_form_field s_website_form_required"
+                                                    data-type="email" data-name="Field">
                                                     <div class="row s_col_no_resize s_col_no_bgcolor">
                                                         <label class="col-form-label col-sm-auto s_website_form_label"
                                                                style="width: 100px" for="contact3">
@@ -331,8 +346,9 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="form-group col-12 s_website_form_field s_website_form_required"
-                                                     data-type="char" data-name="Field">
+                                                <div
+                                                    class="form-group col-12 s_website_form_field s_website_form_required"
+                                                    data-type="char" data-name="Field">
                                                     <div class="row s_col_no_resize s_col_no_bgcolor">
                                                         <label class="col-form-label col-sm-auto s_website_form_label"
                                                                style="width: 100px" for="contact5">
@@ -346,8 +362,9 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="form-group col-12 s_website_form_field s_website_form_custom s_website_form_required"
-                                                     data-type="text" data-name="Field">
+                                                <div
+                                                    class="form-group col-12 s_website_form_field s_website_form_custom s_website_form_required"
+                                                    data-type="text" data-name="Field">
                                                     <div class="row s_col_no_resize s_col_no_bgcolor">
                                                         <label class="col-form-label col-sm-auto s_website_form_label"
                                                                style="width: 100px" for="contact6">
@@ -361,8 +378,9 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="form-group col-12 s_website_form_field s_website_form_custom s_website_form_required"
-                                                     data-type="text" data-name="Field">
+                                                <div
+                                                    class="form-group col-12 s_website_form_field s_website_form_custom s_website_form_required"
+                                                    data-type="text" data-name="Field">
                                                     <div class="row s_col_no_resize s_col_no_bgcolor">
                                                         <label class="col-form-label col-sm-auto s_website_form_label"
                                                                style="width: 100px" for="files">
@@ -383,7 +401,8 @@
                                                        class="btn btn-primary btn-lg s_website_form_send">ENVOYER
                                                         MAINTENANT
                                                     </a>
-                                                    <input type="hidden" t-att-value="website_sale_order.id" name="products" id="products"/>
+                                                    <input type="hidden" t-att-value="website_sale_order.id"
+                                                           name="products" id="products"/>
                                                     <span id="s_website_form_result"></span>
                                                 </div>
                                             </div>
@@ -456,7 +475,7 @@
         <template id="hide_qty_price" inherit_id="website_sale.cart_lines">
 
             <xpath expr="//th[hasclass('td-qty')]" position="attributes">
-                	<attribute name="t-attf-style" add="display: none;" separator=" "/>
+                <attribute name="t-attf-style" add="display: none;" separator=" "/>
             </xpath>
 
             <xpath expr="//th[hasclass('td-price')]" position="attributes">
@@ -494,14 +513,15 @@
         <template id="modal_demandeInfo">
             <style>
                 .form-control {
-                    color: black!important;
-                    background-color: white!important;
+                color: black!important;
+                background-color: white!important;
                 }
             </style>
-            <div class="modal fade"  style="max-width:100%; " id="demandeInfoModal" tabindex="-1" role="dialog" aria-labelledby="demandeInfoModalLabel" aria-hidden="true">
-                <div class="modal-dialog"  style="max-width:100%;" role="document">
-                  <div class="modal-content" style="max-width:100%; background-color: black!important; color:white;">
-                    <div id="loadingdiv" style="
+            <div class="modal fade" style="max-width:100%; " id="demandeInfoModal" tabindex="-1" role="dialog"
+                 aria-labelledby="demandeInfoModalLabel" aria-hidden="true">
+                <div class="modal-dialog" style="max-width:100%;" role="document">
+                    <div class="modal-content" style="max-width:100%; background-color: black!important; color:white;">
+                        <div id="loadingdiv" style="
                                             position: absolute;
                                             top: 0;
                                             left: 0;
@@ -513,105 +533,121 @@
                                             justify-content: center;
                                             align-items: center;
                                 ">
-                                <div id="loading">
-                                    <img  src="/web/static/img/spin.png"  class="m-2 fa-pulse"/>
-                                    <span style="font-size: 20px">Envoi du formulaire...</span>
-                                </div>
-                                <div id="loadingsuccess" style="display:none">
-                                    <span style="font-size: 20px">Envoi réussi, nous vous contacterons dans les plus bref delais</span>
-                                </div>
+                            <div id="loading">
+                                <img src="/web/static/img/spin.png" class="m-2 fa-pulse"/>
+                                <span style="font-size: 20px">Envoi du formulaire...</span>
                             </div>
-                    <div class="modal-header" style="max-width:100%">
-                                    <h4 class="modal-title" id="send_guest_formLabel">Envoyer une question sur ce produit</h4>
-                    </div>
-                    <div class="modal-body"  style="max-width:100%" id="send-guest-form-body">
-                                       
-                                        <!-- <div id="send_error_formproduct"></div> -->
-                                            <!-- <span class="required">* Champs requis.</span> -->
-                            
-                                <div id="demandeInfoForm"  >
-                                    <input type="hidden" id="product_template_id" name="product_template_id" />
-                                    <div class="form-outline">
-                                        <label class="form-label" for="product_template_name">Produit *</label>
-                                        <input class="form-control texte" id="product_template_name"  readonly="readonly"/>
-                                   </div>
-                                    <!-- Name input -->
-                                    <div  class="form-outline">
-                                        <label class="form-label" for="name2">Votre Nom *</label>
-                                        <input type="text" id="name2" name="Votre Nom" class="form-control" required="required" />
-                                    </div>
-                
-                                    <!-- Email input -->
-                                    <div  class="form-outline">
-                                        <label class="form-label" for="email2">Votre Adresse Mail *</label>
-                                        <input type="email" id="email2"  name="Votre Adresse Mail" class="form-control" required="required" />
-                                    </div>
-
-                                    <div  class="form-outline">
-                                        <label class="form-label" for="phone2">Votre Téléphone</label>
-                                        <input type="text" id="phone2" name="Votre Téléphone" class="form-control" />
-                                    </div>
-                
-                
-                                    <!-- password input -->
-                                    <div  class="form-outline mb-4">
-                                        <label for="message" class="col-md-4 form-control-label">Votre Question *</label>
-                                        
-                                        <textarea id="guest_questions" name="Votre Question" class="form-control" placeholder="" type="text" style="min-height:100px;width:100%;
-                                                resize:both;
-                                                resize: none;" required="required"></textarea>
-                                        
-                                    </div>
-                                    <div class="col-md-12"><label>Comment être contacté</label></div>
-                                                
-                                    <div class="col-md-12  mb-4">
-                                                    <label class="radio-inline">
-                                                            <input id="indifferent" name="guest_choix" type="radio" valeur="Indifférent" checked="checked" />
-                                                            Indifférent</label>
-                                                        <label class="radio-inline">
-                                                        <input id="email" name="guest_choix" type="radio" valeur="Email"/>
-                                                            Par Adresse Mail</label>
-                                                    <label class="radio-inline">
-                                                        <input id="phone" name="guest_choix" type="radio" valeur="Téléphone"/>
-                                                            Par Téléphone</label>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-md-12">
-                                            <p>En soumettant ce formulaire, j'accepte que les données saisies soient utilisées pour répondre à ma demande d'information concernant ce produit ou service.</p>
-                                        </div>
-                                    </div>
-                                    <div class="form-group row">
-                                        <div class="col-md-12">
-                                            <span id="warningMessage" style="color:red;"></span>
-                                        </div>
-                                    </div>
-                                    <!-- Submit button -->
-                                    <div style="text-align: right;">
-                                        <button type="submit" id="demande_info_submit" class="btn btn-primary btn-block ">Envoyer mon message</button>
-                                        <button type="button"  id="demande_info_close" class="btn btn-secondary ">Annuler</button>
-                                    </div>
-                                    
-                                </div>
-                             
-                            
+                            <div id="loadingsuccess" style="display:none">
+                                <span style="font-size: 20px">Envoi réussi, nous vous contacterons dans les plus bref
+                                    delais
+                                </span>
                             </div>
                         </div>
-                    </div>
-                    
-                    <!-- <div class="modal-footer">
-                     
-                      <button type="button" id="demande_info_submit" class="btn btn-primary" >Envoyer mon message</button>
-                    </div> -->
-                  
-    
-            </div>
+                        <div class="modal-header" style="max-width:100%">
+                            <h4 class="modal-title" id="send_guest_formLabel">Envoyer une question sur ce produit</h4>
+                        </div>
+                        <div class="modal-body" style="max-width:100%" id="send-guest-form-body">
 
+                            <!-- <div id="send_error_formproduct"></div> -->
+                            <!-- <span class="required">* Champs requis.</span> -->
+
+                            <div id="demandeInfoForm">
+                                <input type="hidden" id="product_template_id" name="product_template_id"/>
+                                <div class="form-outline">
+                                    <label class="form-label" for="product_template_name">Produit *</label>
+                                    <input class="form-control texte" id="product_template_name" readonly="readonly"/>
+                                </div>
+                                <!-- Name input -->
+                                <div class="form-outline">
+                                    <label class="form-label" for="name2">Votre Nom *</label>
+                                    <input type="text" id="name2" name="Votre Nom" class="form-control"
+                                           required="required"/>
+                                </div>
+
+                                <!-- Email input -->
+                                <div class="form-outline">
+                                    <label class="form-label" for="email2">Votre Adresse Mail *</label>
+                                    <input type="email" id="email2" name="Votre Adresse Mail" class="form-control"
+                                           required="required"/>
+                                </div>
+
+                                <div class="form-outline">
+                                    <label class="form-label" for="phone2">Votre Téléphone</label>
+                                    <input type="text" id="phone2" name="Votre Téléphone" class="form-control"/>
+                                </div>
+
+
+                                <!-- password input -->
+                                <div class="form-outline mb-4">
+                                    <label for="message" class="col-md-4 form-control-label">Votre Question *</label>
+
+                                    <textarea id="guest_questions" name="Votre Question" class="form-control"
+                                              placeholder="" type="text" style="min-height:100px;width:100%;
+                                                resize:both;
+                                                resize: none;" required="required"></textarea>
+
+                                </div>
+                                <div class="col-md-12">
+                                    <label>Comment être contacté</label>
+                                </div>
+
+                                <div class="col-md-12  mb-4">
+                                    <label class="radio-inline">
+                                        <input id="indifferent" name="guest_choix" type="radio" valeur="Indifférent"
+                                               checked="checked"/>
+                                        Indifférent
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input id="email" name="guest_choix" type="radio" valeur="Email"/>
+                                        Par Adresse Mail
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input id="phone" name="guest_choix" type="radio" valeur="Téléphone"/>
+                                        Par Téléphone
+                                    </label>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <p>En soumettant ce formulaire, j'accepte que les données saisies soient
+                                            utilisées pour répondre à ma demande d'information concernant ce produit ou
+                                            service.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col-md-12">
+                                        <span id="warningMessage" style="color:red;"></span>
+                                    </div>
+                                </div>
+                                <!-- Submit button -->
+                                <div style="text-align: right;">
+                                    <button type="submit" id="demande_info_submit" class="btn btn-primary btn-block ">
+                                        Envoyer mon message
+                                    </button>
+                                    <button type="button" id="demande_info_close" class="btn btn-secondary ">Annuler
+                                    </button>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="modal-footer">
+
+                  <button type="button" id="demande_info_submit" class="btn btn-primary" >Envoyer mon message</button>
+                </div> -->
+
+
+            </div>
 
 
         </template>
 
         <template id="products_inherit" inherit_id="website_sale.products">
-            
+
             <xpath expr="//div[@id='wrap']" position="before">
                 <t t-call="custom_decor_theme.modal_demandeInfo"/>
             </xpath>
@@ -619,19 +655,18 @@
         </template>
 
         <template id="product_inherit" inherit_id="website_sale.product">
-            
+
             <xpath expr="//div[@id='product_detail_main']" position="before">
                 <t t-call="custom_decor_theme.modal_demandeInfo"/>
             </xpath>
 
         </template>
-
         <template id="products_add_to_cart" inherit_id="website_sale.products_description" name="Add to Cart">
-            
+
             <xpath expr="//div[hasclass('oe_subdescription')]" position="after">
-                
-                <input type="hidden" class="product_id" name="product_id" t-att-value="product.id" />
-                
+
+                <input type="hidden" class="product_id" name="product_id" t-att-value="product.id"/>
+
                 <!-- <div id="contact_us_wrapper">
                     <a t-att-href="website.contact_us_button_url" class="btn btn-link btn_cta"
                        title="Contact Us" style="background-color: white;">
@@ -639,34 +674,53 @@
                         <span class="">Demande d'informations</span>
                     </a>
                 </div> -->
-                <button  class="btn btn-link btn_cta demande_info_button"   style="background-color: white; color:red;" type="button">
+                <button class="btn btn-link btn-black btn_cta demande_info_button"
+                        style="background-color: white; color:red;"
+                        type="button">
                     <span class="fa fa-envelope"></span>
                     <span class="">Demande d'informations</span>
-                  </button>
-                
-                <div id="add_to_cart" >
-                    <a style="background-color: white; margin-top:5px" href="#" role="button" class="btn btn-link a-submit shop-cart"
+                </button>
+
+                <div id="add_to_cart">
+                    <a style="background-color: white; margin-top:5px" href="#" role="button"
+                       class="btn btn-link btn-black a-submit shop-cart"
                        aria-label="Add to Cart" title="Add to Cart">
                         <span class="fa fa-music"></span>
                     </a>
                 </div>
 
-                
-                
-                   
-                           
-                        
-                      
-                        
-                        
-                       
-
-                
-
 
             </xpath>
         </template>
 
-
+        <template id="products_hide_add_to_cart" inherit_id="website_sale.product" name="Hide Add to Cart">
+            <xpath expr="//div[@id='add_to_cart_wrap']" position="replace">
+                <input type="hidden" class="product_id" name="product_id" t-att-value="product.id"/>
+                <div id="add_to_cart_btn">
+                    <a role="button" id="add_to_cart"
+                       t-attf-class="btn btn-primary btn-black js_check_product a-submit flex-grow-1 #{'btn-lg' if ctaSizeBig else ''}"
+                       href="#">
+                        <i class=" me-2">
+                            <span class="fa fa-music"></span>
+                        </i>
+                    </a>
+                </div>
+                <div id="ask_for_info">
+                    <button class="btn btn-link btn-black btn_cta demande_info_button"
+                            style="background-color: white; color:red;"
+                            type="button">
+                        <span class="fa fa-envelope"></span>
+                        <span class="">Demande d'informations</span>
+                    </button>
+                </div>
+            </xpath>
+        </template>
+        <template id="product_details_size" inherit_id="website_sale.product" name="Product Details">
+            <xpath expr="//div[@id='product_details']" position="attributes">
+                <attribute name="class">
+                    <value expr="replace(attribute('class'), 'col-lg-6', 'col-lg-7')"/>
+                </attribute>
+            </xpath>
+        </template>
     </data>
 </odoo>
