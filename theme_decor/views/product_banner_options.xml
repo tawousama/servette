@@ -33,7 +33,7 @@
 		        <t t-set="combination_info" t-value="product._get_combination_info(combination, add_qty=add_qty or 1, pricelist=pricelist)"/>
 		        <t t-set="product_variant" t-value="product.env['product.product'].browse(combination_info['product_id'])"/>
 				<div id="product_detail_main" class="row justify-content-center align-items-center" t-att-data-image_width="website.product_page_image_width" t-att-data-image_layout="website.product_page_image_layout">
-		            <div class="pt-3 pt-lg-0 col-md-12 col-lg-6 order-1 order-lg-0" id="product_details">
+		            <div class="pt-3 pt-lg-0 col-md-12 col-lg-8 order-1 order-lg-0" id="product_details">
 		            	<!-- ajax cart popup t-call start -->
             			<t t-call='theme_decor.model_add_cart_ajax_template'/>
 		            	<!-- ajax cart popup t-call end -->
@@ -49,7 +49,7 @@
 		                               <t t-set="dis_per"
 		                                  t-value="round(diff_amount*100/combination_info['list_price'])"/>
 		                                   <div class="decor-product-discount-label">
-		                                       <span class="decor-pro-label-disc"> 
+		                                       <span class="decor-pro-label-disc">
 		                                        <t t-out="'-'+'%s'%(dis_per)+'&#x25;'"/></span>
 		                                   </div>
 		                            </t>
@@ -69,10 +69,10 @@
 			                        <t t-call="website_sale.product_price" />
 				                    <div class="ms-auto align-items-center">
 				                        <t t-if="is_view_active('website_sale.product_comment')">
-				                            <t t-call="theme_decor.product_item_stars"/> 
+				                            <t t-call="theme_decor.product_item_stars"/>
 				                        </t>
 				                        <a t-att-href="'/shop/%s' % slug(product)" class="view-detail number-2 text-decoration-none text-muted mb-2 d-inline-block">
-				                            View full product details 
+				                            View full product details
 				                            <span class="ri ri-arrow-right-line align-middle"/>
 				                        </a>
 				                    </div>
@@ -87,12 +87,12 @@
 			                                <ul class="d-none js_add_cart_variants" t-att-data-attribute_exclusions="{'exclusions: []'}"/>
 			                            </t>
 			                        </t>
-			                       
+
 			                        <p t-if="True" class="css_not_available_msg alert alert-warning">This combination does not exist.</p>
 			                        <div id="o_wsale_cta_wrapper"  class="d-block d-md-flex align-items-center product-btns">
-			                            
+
 		                                <div class="ajax_cart_modal_tools position-relative">
-		                                    <a class="button btn btn-cart btn-lg btn-secondary a-submit ajax-cart-btn d-block" data-bs-toggle="modal" t-att-data-bs-target="'#AjaxcartModal-%s' %(product.id)"> 
+		                                    <a class="button btn btn-cart btn-lg btn-secondary a-submit ajax-cart-btn d-block" data-bs-toggle="modal" t-att-data-bs-target="'#AjaxcartModal-%s' %(product.id)">
 				                            	<span class="ri ri-shopping-cart-line align-middle me-2 text-white"></span>
 				                            	<span class="align-middle">ADD TO CART</span>
 											</a>
@@ -104,14 +104,14 @@
 			                                </a>
 			                            </div>
 			                        </div>
-			                        
+
 			                    </div>
 			                </form>
 			                <p t-elif="not product.active" class="alert alert-warning">This product is no longer available.</p>
 			                <p t-else="" class="alert alert-warning">This product has no valid combination.</p>
 			            </div>
 		            </div>
-		         	<div class="col-md-12 col-lg-6 product-img-section">
+		         	<div class="col-md-12 col-lg-4 product-img-section">
 		                <!-- Product Slider -->
 		                <div class="product-img-box">
 		                    <t t-call="website_sale.shop_product_carousel">

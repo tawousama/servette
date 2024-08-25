@@ -199,12 +199,12 @@
 			&:not(.collapsed)::after {
 				transform: rotate(-45deg);
 			}
-			
+
 		}
 		.brand_filter_content{
 			.accordion-body{
 				padding-top: 0 !important;
-			}	
+			}
 		}
 	}
 	.o_wsale_products_main_row{
@@ -266,8 +266,8 @@
 				 font-size: 18px;
 			}
 		    font-size: 16px;
-		    color: black;
-		    background-color: #e6e6e6;
+		    color: #ffffff;
+		    background-color: #000000;
 		    line-height: 22px;
 		    font-weight: 700;
 		    text-transform: capitalize;
@@ -343,8 +343,8 @@
 			}
 			#decor_brands_title{
 				font-size: 16px;
-				color: black;
-				background-color: #e6e6e6;
+				color: #ffffff;
+				background-color: #000000;
 				line-height: 22px;
 				font-weight: 700;
 				text-transform: capitalize;
@@ -647,7 +647,7 @@
 			    background: white;
 			    border: 5px solid black;
 			    box-shadow: none !important;
-			    
+
 			    &:hover{
 			    	background: $primary !important;
 			    }
@@ -657,7 +657,7 @@
 			    background: black !important;
 			    border: none !important;
 		    }
-		   
+
 		   .irs-line {
 		    height: 0px !important;
 		    top: 33px;
@@ -665,8 +665,8 @@
 		    border: none !important;
 		    border-radius: 0px;
 		    -moz-border-radius: 0px;
-			}	
-			
+			}
+
 			.irs-from, .irs-to, .irs-single {
 				background: black !important;
 				color: #fff !important;
@@ -684,9 +684,11 @@
 	    -moz-border-radius: 0px;
 	    -webkit-border-radius: 0px;
 	    padding: 15px 20px;
-    	background-color: #e6e6e6;
+    	//background-color: #e6e6e6;
+    	background-color: black;
 	    .title-left > h4 {
-		    color: #6e6e6e;
+		    //color: #6e6e6e;
+		    color: white;
 		    font-size: 20px;
    	 		line-height: 28px;
    	 		padding-top:0.575rem;
@@ -698,7 +700,7 @@
 			    display: inline-block;
 			    height: 40px;
 			    text-align: center;
-			    color: #000000;
+			    color: white;
 			    transition: 0.2s;
 			    -moz-transition: 0.2s;
 			    -webkit-transition: 0.2s;
@@ -716,7 +718,8 @@
 				font-weight: 400;
 		        font-size: 20px;
 	    		line-height: 28px;
-	    		color: #1b1b1b;
+	    		//color: #1b1b1b;
+	    		color: #FFFFFF;
 	    		margin: 0;
 	    		@media (width: 320px) {
 	    	        font-size: 14px;
@@ -725,9 +728,11 @@
 		}
 		.o_wsale_apply_layout:not(.decor_grid_button){
 			display : none !important;
+			color: white;
 		}
 		.dropdown_sorty_by:not(.decor_sortby){
 			display : none !important;
+			color: white;
 		}
 	    .o_wsale_apply_grid.active{
 	    	color:$primary !important;
@@ -741,7 +746,7 @@
 			    display: inline-block;
 			    height: 40px;
 			    text-align: center;
-			    color: #000000;
+			    color: #FFFFFF;
 			    transition: 0.2s;
 			    -moz-transition: 0.2s;
 			    -webkit-transition: 0.2s;
@@ -772,7 +777,7 @@
 		    border-radius: 0px !important;
 		    -webkit-border-radius: 0px !important;
 		    line-height: 40px;
-		    color: black;
+		    color: white;
 		    font-size: 12px;
 		    letter-spacing: 0.6px;
 		    text-transform: uppercase;
@@ -892,7 +897,7 @@
 					        }
 						}
 					    display: block !important;
-						width: 100% !important; 
+						width: 100% !important;
 					}
 					display: block;
 					width: 100%;
@@ -917,7 +922,7 @@
 					        margin-bottom: 0;
 						}
 						display: block !important;
-						width: 100% !important; 
+						width: 100% !important;
 					}
 					display: block;
 					width: 100%;
@@ -942,7 +947,7 @@
 					        margin-bottom: 0;
 						}
 						display: block !important;
-						width: 100% !important; 
+						width: 100% !important;
 					}
 					display: block;
 					width: 100%;
@@ -1063,7 +1068,7 @@
 		}
 
 		/* -------------------------------- ajax cart scss  start --------------------------------------- */
-		
+
 		@media (min-width: 1200px) {
 			.oe_product_cart{
 				&[addcart="active"]{
@@ -1295,11 +1300,11 @@
 						text-decoration: none !important;
 					}
 				}
-				.oe_subdescription > div {
+				/**.oe_subdescription > div {
 					text-overflow: ellipsis;
 				    overflow: hidden;
 					font-size: 12px;
-				}
+				}**/
 			}
 			.o_wsale_product_sub{
 				.o_wsale_product_btn:not(.optional-btn){
@@ -1488,7 +1493,7 @@
 					}
 				}
 			}
-			
+
 		}
 
 		@media (min-width: 768px) and (max-width: 1199.98px) {
@@ -1503,7 +1508,7 @@
 					}
 				}
 			}
-			
+
 			.o_wsale_product_grid_wrapper{
 				.oe_product_cart{
 					.oe_product_image{
@@ -1596,7 +1601,7 @@
 			}
 		}
 	}
-	
+
 
 	#products_grid.o_wsale_layout_list{
 		table{

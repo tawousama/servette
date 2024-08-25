@@ -148,7 +148,7 @@
                                     <span t-out="product.brand_id.brand_decription"/>
                                 </p>
                             </div>
-                            <div class="col-md-4">
+                            <div class="col-md-4 col-lg-6">
 
                                 <a t-field="product.brand_id.image" t-options="{'widget': 'image'}" t-att-href="'/shop?brand=' + slug(product.brand_id)"/>
                             </div>

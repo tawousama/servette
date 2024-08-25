@@ -33,7 +33,12 @@
             <field name="arch" type="xml">
                 <xpath expr="//field[@name='alternative_product_ids']" position="after">
                         <field name="spec_technique"/>
+                        <field name="spec_technique_eng"/>
                         <field name="description_courte"/>
+                        <field name="description_courte_eng"/>
+                </xpath>
+                <xpath expr="//field[@name='website_description']" position="after">
+                        <field name="website_description_eng"/>
                 </xpath>
             </field>
       </record>
@@ -48,13 +53,13 @@
 
                 <label for="produits" class="oe_inline"/>
                 <div class="o_row o_row_readonly">
-                    
+
                     <field name="produits" id="produits" widget="many2many_tags"/>
 
                 </div>
-                
+
             </xpath>
-           
+
         </field>
     </record>
 

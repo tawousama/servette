@@ -24,6 +24,7 @@
 #o_product_terms_and_share{
 	display:none;
 	}
+
 	.availability_messages{
 		> div{
 			margin: 0 !important;
@@ -33,7 +34,7 @@
     		font-weight: bold;
 		}
 		//display: inline-block;
-	    
+
 	}
 	#o-carousel-product {
 		.carousel-outer{
@@ -151,14 +152,15 @@
 		#add_to_cart_wrap{
 			@media (max-width: 767.98px) {
 	    		flex-direction: column !important;
-				width: 100% !important;
+				width: 50% !important;
 				a{
-					width: 100% !important;
+					width: 50% !important;
 				}
 	    	}
 		}
 		.product_price{
-			.oe_default_price{
+		    display: none !important;
+			/**.oe_default_price{
 			    font-size: 15px;
 		        color: #a6a6a6 !important;
 			}
@@ -171,9 +173,9 @@
 				margin-bottom: 0px;
 				color: #000000 !important;
 				font-weight: bold;
-			}
+			}**/
 		}
-		
+
 		#product_attributes_simple{
 			p{
 				//display: flex;
@@ -215,7 +217,7 @@
 			ul.flex-column > li > a {
 			    padding: 2px 2px !important;
 			}
-		
+
 			.headline {
 				margin-top: 5px;
 	    		font-weight: 600;
@@ -228,7 +230,7 @@
 			    flex: 1;
 		        //margin-left: 115px;
 			}
-		
+
 			.point-ul {
 				padding-top: 3px;
 				padding-left: 16px;
@@ -239,9 +241,9 @@
 					font-weight: 400;
 				}
 			}
-		
-			.modal-header { 
-				border-bottom:0px;	
+
+			.modal-header {
+				border-bottom:0px;
 			}
 			.modal-content {
 				    border-radius: 0px;
@@ -268,7 +270,7 @@
 			}
 		}
 		.product_info_list{
-			
+            color: #ffffff;
 			a:hover{
 				text-decoration: none !important;
 			}
@@ -436,7 +438,7 @@
 					    border: 3px solid $primary;
 
 					}
-					
+
 				    //border-radius: 50%;
 				}
 			}
@@ -444,7 +446,7 @@
 		.product-name{
 			letter-spacing: 0.6px;
 		}
-		
+
 		.product-rating{
 			float: unset !important;
 			display: block !important;
@@ -502,7 +504,7 @@
 				padding:0
 			}
 			.btn-group-toggle {
-				
+
 				li{
 					display: inline-table !important;
 					margin-right: 8px !important;
@@ -645,9 +647,9 @@
 				}
 			}
 		}
-		#add_to_cart , #buy_now, .qv-ajax-cart{
+		#add_to_cart , .demande_info_button, #buy_now, .qv-ajax-cart{
 			//background: $primary !important;
-			color: #fff;
+            color: #ff0000;
 			border-radius: 0px !important;
 			font-size: 15px;
 		    line-height: 23px;
@@ -659,11 +661,25 @@
 		}
 		#add_to_cart{
 			background-color: $secondary !important;
-			border-color: $secondary !important;	
+			border-color: $secondary !important;
+		}
+		#add_to_cart:hover{
+			background-color: #ff0000 !important;
+			color: $secondary !important;
+			border-color: #ff0000 !important;
+		}
+		.demande_info_button {
+			background-color: $secondary !important;
+			border-color: $secondary !important;
+		}
+		.demande_info_button:hover{
+			background-color: #ff0000 !important;
+			color: $secondary !important;
+			border-color: #ff0000 !important;
 		}
 		#buy_now{
 			background-color: $primary !important;
-			border-color: $primary !important;	
+			border-color: $primary !important;
 
 		}
 		.o_add_wishlist{
@@ -701,9 +717,13 @@
     		font-size: 15px;
     		font-weight: 400;
 		}
+
 	}
 	padding: 50px 15px 0 !important;
 }
+#product_full_description_decor{
+            text-align: justify;
+		}
 .product-share-icons{
 	a{
 		border-radius: 0;
@@ -757,7 +777,7 @@
 		    background-color: #121212;
 		    border: 1px solid #121212;
 		}
-		
+
 		.nav-link.active, .nav-link:hover, .nav-link:focus  {
 			border-color:transparent !important;
 		}
@@ -862,7 +882,7 @@
     	background-color: unset !important;
     	border-top: 0 !important;
 	    padding:15px 0px 0px !important;
-	
+
 		.fw-bold{
 			font-size: 17px;
 		    font-weight: bold;
@@ -993,7 +1013,7 @@
 			display:none;
 		}
 	}
-	@media (min-width: 768px) and (max-width: 991.98px) {	
+	@media (min-width: 768px) and (max-width: 991.98px) {
 		.card-footer{
 			.js_add_cart{
 				transform: translateX(0px) !important;
@@ -1003,7 +1023,7 @@
 			display:none;
 		}
 	}
-	@media (min-width: 992px) and (max-width: 1199.98px) {	
+	@media (min-width: 992px) and (max-width: 1199.98px) {
 		.card-footer{
 			.js_add_cart{
 				transform: translateX(0px) !important;
@@ -1064,7 +1084,7 @@
 	}
 	#vogue_alternative_product_slider{
 		.owl-nav{
-			top: 35% !important; 
+			top: 35% !important;
 			button{
 				width: 44px;
 			    height: 44px;
@@ -1227,7 +1247,7 @@
 				}
 			}
 			.owl-nav{
-				top: 35% !important; 
+				top: 35% !important;
 				button{
 					width: 44px;
 				    height: 44px;
@@ -1310,7 +1330,7 @@
 
 // 		font-size: 20px !important;
 // 		position: relative;
-		
+
 
 // 		&:before {
 // 			content: "";
@@ -1796,13 +1816,13 @@
 	}
 }
 
-// Common Shop 
+// Common Shop
 
 .oe_website_sale .o_payment_form .card {
     border-radius: 0px !important;
 }
 
-.card { 
+.card {
 	border-radius: 0px !important;
 }
 
@@ -1818,7 +1838,7 @@
 }
 
 .js_delete_product  {
-	
+
     font-size: 20px !important;
 }
 
@@ -1839,7 +1859,7 @@
 		background-color: $primary;
 		border-radius: 50%;
 		top: 36%;
-		transform: translateY(-50%);	
+		transform: translateY(-50%);
 		opacity: 1 !important;
 		span{
 			background: transparent !important;

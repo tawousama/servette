@@ -8,14 +8,15 @@ class Product(models.Model):
 
     video = fields.Char("Video")
     spec_technique = fields.Html("Spécifications Téchniques", translate=True )
-
 class ProductTemplate(models.Model):
     _inherit = 'product.template'
 
     video = fields.Char("Video")
-    spec_technique = fields.Html("Spécifications Téchniques", translate=True)
-    description_courte = fields.Char("Déscription Courte", translate=True)
-
+    spec_technique = fields.Html("Spécifications Téchniques (FR)", translate=True)
+    spec_technique_eng = fields.Html("Spécifications Téchniques (ENG)")
+    description_courte = fields.Html("Déscription Courte (FR)", translate=True)
+    description_courte_eng = fields.Html("Déscription Courte (ENG)")
+    website_description_eng = fields.Html("Description (ENG)",)
 
 class ProductPublicCategoryInherit(models.Model):
     _inherit = "product.public.category"
@@ -36,5 +37,4 @@ class CrmLead(models.Model):
     _inherit = "crm.lead"
 
     produits = fields.Many2many("product.template", string="Produits")
-  
-    
+
